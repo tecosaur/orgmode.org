@@ -10,7 +10,6 @@
 #+LINK_UP: index.html
 #+LINK_HOME: http://orgmode.org
 
-
 * Version 6.29
  :PROPERTIES:
  :CUSTOM_ID: v6.29
