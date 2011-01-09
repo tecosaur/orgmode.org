@@ -1,11 +1,9 @@
-
 #+TITLE:     Org-Mode: Your Life in Plain Text
 #+LANGUAGE:  en
 #+EMAIL:     carsten at orgmode dot org
 #+OPTIONS:   H:3 num:nil toc:2 \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+STYLE: <base href="http://orgmode.org/index.html" />
 #+STYLE: <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
-
 
 #+begin_html
 <!-- The logo links to the root of the website -->
@@ -88,30 +86,33 @@
   </table>
 #+end_html
 
-- Simplicity :: At its core, Org-mode is a simple outliner for
-     note-taking and list management. You can learn the basics for
-     using it in [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][five minutes]].  This may be all you need, and Org-mode
-     will not impose more complex features on you.
-- Portability :: Org files are [[http://en.wikipedia.org/wiki/Plain_text][plain text]].  You can view and edit them
-     in any editor, or add and extract data with custom-made scripts.
-     Your data will never be locked into an obscure or proprietary
-     data format.  Org-mode runs in [[http://www.gnu.org/software/emacs/][Emacs]], which is available for
-     nearly every platform.
-- Depth :: Org-mode will not let you down when you need more than a
-     simple outline.  The full feature set is both broad and deep,
-     easy to access, but unobtrusive.  The [[http://orgmode.org/worg/org-faq.php][typical answer]] to "/Can it
-     do X?/" is "/Yes!/".
-- Flexibility :: Org-mode is like a Swiss army knife.  People use it
-     for [[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]], as a [[http://www.newartisans.com/blog_files/org.mode.day.planner.php][Day Planner]], as a [[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][Notebook]],
-     for Web and PDF [[http://orgmode.org][Authoring]], and much more.
-- Support :: Org-mode is [[http://orgmode.org/manual/index.html][documented extensively]], and many [[http://orgmode.org/worg/org-tutorials/index.php][tutorials]]
-     put spotlights on particular features.  Org-mode is supported by
-     an active [[id:0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26][mailing list]] where questions are answered quickly and
-     effectively.
-- It's free! :: Org is [[http://en.wikipedia.org/wiki/Open-source_software][open source software]], it is [[http://www.gnu.org/licenses/licenses.html#GPL][free]], like Emacs.
+- Simplicity :: At its core, Org-mode is a simple outliner for note-taking
+     and list management. You can learn the basics for using it in [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][five
+     minutes]].  This may be all you need, and Org-mode will not impose more
+     complex features on you.
 
-If you'd like to know what other people have said about Org-mode, take
-a look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org]].
+- Portability :: Org files are [[http://en.wikipedia.org/wiki/Plain_text][plain text]].  You can view and edit them in
+     any editor, or add and extract data with custom-made scripts.  Your
+     data will never be locked into an obscure or proprietary data format.
+     Org-mode runs in [[http://www.gnu.org/software/emacs/][Emacs]], which is available for nearly every platform.
+
+- Depth :: Org-mode will not let you down when you need more than a simple
+     outline.  The full feature set is both broad and deep, easy to access,
+     but unobtrusive.  The [[http://orgmode.org/worg/org-faq.php][typical answer]] to "/Can it do X?/" is "/Yes!/".
+
+- Flexibility :: Org-mode is like a Swiss army knife.  People use it for
+     [[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]], as a [[http://www.newartisans.com/blog_files/org.mode.day.planner.php][Day Planner]], as a [[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][Notebook]], for Web
+     and PDF [[http://orgmode.org][Authoring]], and much more.
+
+- Support :: Org-mode is [[http://orgmode.org/manual/index.html][documented extensively]], and many [[http://orgmode.org/worg/org-tutorials/index.php][tutorials]] put
+     spotlights on particular features.  Org-mode is supported by an active
+     [[id:0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26][mailing list]] where questions are answered quickly and effectively.
+
+- It's free! :: Org is [[http://en.wikipedia.org/wiki/Open-source_software][free software]], it is published under the [[http://www.gnu.org/licenses/licenses.html#GPL][GNU GPL
+     license]], like [[http://www.gnu.org/software/emacs/][GNU Emacs]]
+
+If you'd like to know what other people have said about Org-mode, take a
+look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org]].
 
 * News
 #+ATTR_HTML: style="float:right;"
@@ -131,12 +132,12 @@ a look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about O
 
 * Current Version (7.4)
 
-The current version is 7.4.  To see what has changed in recent
-releases, check this detailed list of [[file:Changes.html][user-visible changes]].
+The current version is 7.4.  To see what has changed in recent releases,
+check this detailed list of [[file:Changes.html][user-visible changes]].
 
-This package works on Emacs 23 and 22, and (with minor restrictions)
-on XEmacs 21.  Emacs 22.2 ships with Org-mode version 4.67d, Emacs
-23.1 with 6.21b.  The latest CVS Emacs trunk usually contains a fairly
+This package works on GNU Emacs 23 and 22, and (with minor restrictions) on
+XEmacs 21.  Emacs 22.2 ships with Org-mode version 4.67d, Emacs 23.1 with
+6.21b.  The latest Emacs development version usually contains a fairly
 recent version, but may lag a bit behind the website release.
 
 * Downloads
@@ -150,24 +151,25 @@ formats.  Follow the instructions for [[http://orgmode.org/manual/Installation.h
 ** The development version
 
 You can check out the latest Org development version (along with every
-release we ever had) by using git.  The git repository is [[http://repo.or.cz/w/org-mode.git][browsable
+release we ever had) by using git.  The git repository is [[http://orgmode.org/w/org-mode.git][browsable
 online]].  At any time you can get a [[http://repo.or.cz/w/org-mode.git/snapshot][snapshot]] of the files in it.  To
 get a local clone of the repository use something like the following
 (from the command line....):
 
-: git clone git://repo.or.cz/org-mode.git
+: git clone git://orgmode.org/org-mode.git
 
-Some more information about this can be found in the [[http://orgmode.org/worg/org-faq.php][FAQ]], under [[http://orgmode.org/worg/org-faq.php#keeping-current-with-Org-mode-development][How do
-I keep current with Org mode development?]].  For people who cannot use
-git, we provide [[file:org-latest.zip][zip]] or [[file:org-latest.tar.gz][tar.gz]] snapshot release files updated each day
-and corresponding to the latest git version.  Alternatively, you can
-also download a [[http://repo.or.cz/w/org-mode.git/snapshot][tar.gz snapshot]] from the repo.or.cz server.
+Some more information about this can be found in the [[http://orgmode.org/worg/org-faq.php][FAQ]], under [[http://orgmode.org/worg/org-faq.php#keeping-current-with-Org-mode-development][How do I
+keep current with Org mode development?]].  For people who cannot use git, we
+provide [[file:org-latest.zip][zip]] or [[file:org-latest.tar.gz][tar.gz]] snapshot release files updated each day and
+corresponding to the latest git version.  Alternatively, you can also
+download a [[http://repo.or.cz/w/org-mode.git/snapshot][tar.gz snapshot]] from the repo.or.cz server (a mirror of the git
+repo on orgmode.org).
 
 ** Alternative distributions
 
-   There are several alternative distributions of Org.  Some of these
-   are more up-to-date than others, so check if this package really
-   has a recent version
+   There are several alternative distributions of Org.  Some of these are
+   more up-to-date than others, so check if this package really has a
+   recent version
 
    - The [[http://packages.debian.org/sid/main/org-mode][Debian package]] is maintained by Sebastien Delafond.
    - There is also a package on [[http://aur.archlinux.org/packages.php?do_Details&ID=18206][Archlinux]], by Jiyunatori.
@@ -200,23 +202,24 @@ also download a [[http://repo.or.cz/w/org-mode.git/snapshot][tar.gz snapshot]] f
 
 ** Reference card
    - Download the [[file:orgcard.pdf][Refcard]] for org-mode
-   - There is also a [[file:orgcard.txt][text version]] of the
-     reference card.
+   - There is also a [[file:orgcard.txt][text version]] of the reference card.
+
 ** The FAQ
    - The [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] is user-editable and is maintained by the [[http://orgmode.org/worg/][Worg
-     project]]. 
+     project]].
 
 ** Tutorials
-   - A complete list of [[http://orgmode.org/worg/org-tutorials/index.php][Tutorials and screencasts]] is maintained by the
-     [[http://orgmode.org/worg][Worg project]].
+   - A complete list of [[http://orgmode.org/worg/org-tutorials/index.php][Tutorials and screencasts]] is maintained by the [[http://orgmode.org/worg][Worg
+     project]].
 
 * Links
 
 ** Talks about Org-mode
-   Check out the [[file:talks/index.html#sec-1][Google Tech Talk]] about Org-mode, or another talk
-   given at the [[file:talks/index.html#sec-2][Max Planck Institute for Neurological Research]].  On
-   FLOSS Weekly [[http://twit.tv/floss136][show number 136]] Randal Schwartz interviews Carsten
-   about Org mode.
+
+   Check out the [[file:talks/index.html#sec-1][Google Tech Talk]] about Org-mode, or another talk given at
+   the [[file:talks/index.html#sec-2][Max Planck Institute for Neurological Research]].  On FLOSS Weekly
+   [[http://twit.tv/floss136][show number 136]] Randal Schwartz interviews Carsten about Org mode.
+
 ** Mailing list
    :PROPERTIES:
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
@@ -225,22 +228,24 @@ also download a [[http://repo.or.cz/w/org-mode.git/snapshot][tar.gz snapshot]] f
    There is a mailing list for discussion about org-mode.
 
    - [[http://lists.gnu.org/mailman/listinfo/emacs-orgmode][Subscribe to it]] at the web interface.
+
    - Directly [[mailto:emacs-orgmode@gnu.org][send mail to it]].  If you are not subscribed, a moderator
      will look at the message before passing it through to the list.
+
    - Read the list on [[http://www.gmane.org][Gmane]] through a [[http://news.gmane.org/gmane.emacs.orgmode][web interface]] or with a
      [[news://news.gmane.org/gmane.emacs.orgmode][newsreader]].
+
    - Please read the [[http://orgmode.org/manual/Feedback.html][Feedback]] section of Org's manual before posting a
-     question, it helps getting useful answer.  [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions
-     The Smart Way]], by E. S. Raymond is also worth reading.
+     question, it helps getting useful answer.  [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The
+     Smart Way]], by E. S. Raymond is also worth reading.
 
-
-#+BEGIN_HTML
+#+begin_html
 </li><li><form method="get" action="http://search.gmane.org/"><div>
 <input type="text" name="query" />
 <input type="hidden" name="group" value="gmane.emacs.orgmode" />
 <input type="submit" value="Search gmane.emacs.orgmode" />
 </div></form>
-#+END_HTML
+#+end_html
 
 ** MobileOrg
    [[http://mobileorg.ncogni.to/][MobileOrg]] is an excellent open source application to read and
@@ -251,18 +256,18 @@ also download a [[http://repo.or.cz/w/org-mode.git/snapshot][tar.gz snapshot]] f
    Android, and this project is [[http://wiki.github.com/matburt/mobileorg-android/][hosted here]].
 ** Worg
 
-[[http://orgmode.org/worg/][Worg]], created by [[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]], is a setup to allow users to jointly
-edit a number of Org-mode files containing documentation about
-Org-mode, including the [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] and [[http://orgmode.org/worg/org-tutorials/index.php][Tutorials]].  Worg is similar
-to a wiki in that allows community to edit the contents.  However,
-since it uses a distributed version control system, you do not have to
-be online while editing it.  If you'd like to contribute to Worg,
-please go to [[http://orgmode.org/worg/][the Worg page]], and start from there.
+[[http://orgmode.org/worg/][Worg]], created by [[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]], is a setup to allow users to jointly edit
+a number of Org-mode files containing documentation about Org-mode,
+including the [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] and [[http://orgmode.org/worg/org-tutorials/index.php][Tutorials]].  Worg is similar to a wiki in
+that allows community to edit the contents.  However, since it uses a
+distributed version control system, you do not have to be online while
+editing it.  If you'd like to contribute to Worg, please go to [[http://orgmode.org/worg/][the Worg
+page]], and start from there.
 
 ** Contributing to Org-mode
 
-You can always contribute with ideas and bug reports on the mailing
-list.  If you want to contribute a patch, code snippets, or a full
-add-on, this is very welcome too!  Detailed information on how and
-what to contribute can be found [[http://orgmode.org/worg/org-contribute.php][here]].
+You can always contribute with ideas and bug reports on the mailing list.
+If you want to contribute a patch, code snippets, or a full add-on, this is
+very welcome too!  Detailed information on how and what to contribute can
+be found [[http://orgmode.org/worg/org-contribute.php][here]].
 
