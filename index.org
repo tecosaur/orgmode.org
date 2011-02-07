@@ -219,6 +219,10 @@ download a [[http://orgmode.org/w/org-mode.git/snapshot][tar.gz snapshot]] from 
    the [[file:talks/index.html#sec-2][Max Planck Institute for Neurological Research]].  On FLOSS Weekly
    [[http://twit.tv/floss136][show number 136]] Randal Schwartz interviews Carsten about Org mode.
 
+   Bastien presented Org at [[http://fosdem.org/2011/][FOSDEM 2011]], with the help of Stefan Wollmar
+   (presenting a use-case from his lab) and Sébastien Vauban (presenting
+   Org Babel).  You can find the slides of Bastien's presentation [[http://lumiere.ens.fr/~guerry/u/org-fosdem-presentation-beamer.pdf][here]].
+
 ** Mailing list
    :PROPERTIES:
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
