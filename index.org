@@ -81,6 +81,14 @@
               </div>
             </td>
           </tr>
+          <tr>
+          <td>
+          <span style="font-size: 90%;margin-top:10px;">... or by "flattring" us!</span>
+          </td>
+          <td>
+            <a class="FlattrButton" style="display:none;" href="http://orgmode.org"></a>
+          </td>
+          </tr>
         </table>
       </td>
   </table>
