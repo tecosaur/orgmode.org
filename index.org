@@ -82,11 +82,12 @@
             </td>
           </tr>
           <tr>
+            <td>
+              <span style="font-size: 90%;margin-top:10px;">... or by "flattring" us!</span>
+            </td>
           <td>
-          <span style="font-size: 90%;margin-top:10px;">... or by "flattring" us!</span>
-          </td>
-          <td>
-            <a class="FlattrButton" style="display:none;" href="http://orgmode.org"></a>
+            <a href="http://flattr.com/thing/129410/Org-mode-for-Emacs" target="_blank">
+            <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
           </td>
           </tr>
         </table>
