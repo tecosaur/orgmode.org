@@ -6,6 +6,78 @@
 
 #+STARTUP: indent hidestars
 
+* Version 7.5 (upcoming release)
+** Incompatible changes
+*** Code block variable initialized with Emacs Lisp code in tables and lists
+It is no longer possible to assign code block variables using
+executable Emacs Lisp statements contained in tables or lists.
+As per the following example.
+#+tblname: table
+| (a b c) |
+
+#+begin_src perl :var data=table[0,0]
+  $data
+#+end_src
+
+#+results:
+: (a b c)
+
+Thanks to Vladimir Alexiev for raising this issue.
+** Details
+*** Babel
+**** Calc code blocks can now accept vectors
+For example;
+
+#+begin_src calc :var y=[1 2 3]
+  3 y
+#+end_src
+
+#+results:
+: [3, 6, 9]
+
+Thanks to Eric S. Fraga for raising this issue
+**** Code blocks with empty bodies are now acceptable
+Previously these caused errors on export.  Thanks to Martyn Jago
+for this patch.
+**** Emacs Lisp variable assignments which don't eval cleanly passed literally
+This makes it possible to easily pass through non-elisp variable
+assignments which may initially look like valid elisp.
+**** Imagemagick post-processing of LaTeX code block results
+It is now possible to use imagemagick to process the output of
+LaTeX code blocks through to a wide variety of output formats.
+This patch is thanks to Andreas Leha, the following description
+is from his email to the mailing list.
+
+LaTeX source blocks now have three new options:
+- :imagemagick
+  When not nil the source block is processed to pdf and the pdf is
+  converted with imagemagick to whatever is given as :file
+  Thus, the format is not limited to png.
+- :iminoptions
+  This is passed to imagemagick before the pdf file
+- :imoutoptions
+  This is passed to imagemagick before the output file
+
+Small Example:
+#+begin_src org
+  #+headers: :imagemagick yes
+  #+headers: :iminoptions -density 300 :imoutoptions -geometry 400
+  #+begin_src latex ... :file test.jpg ...
+#+end_src
+
+will use this command for conversion:
+: convert -density 300 <tmp-pdf> -geometry 400 test.jpg
+**** Unified naming of =c++= functions to =C++=
+Thanks to Martyn Jago for this patch.
+**** `ob-exec-buf' and `ob-exec-tree' now eval inline code blocks as well
+**** new :mkdirp header argument creates parent dirs of tangle targets
+**** new ":comments noweb" option for wrapping noweb references in comment links
+This can be useful to allow backward linking from tangle code
+files to the original code block holding noweb-expanded content.
+**** allow detangling of text containing '\'s -- Thanks to Seth Burleigh
+**** =:sep= specifies table separator when opening or writing tabular results
+
+
 * Version 7.4
 :PROPERTIES:
 :VISIBILITY: content
