@@ -25,6 +25,43 @@ As per the following example.
 Thanks to Vladimir Alexiev for raising this issue.
 ** Details
 *** Babel
+**** :file argument causes results to be written to file for all languages
+:file <filename> should be understood as saying "write the result
+to <filename> and return a link to <filename>".
+
+This works for all languages. For graphics languages (e.g. ditaa, dot,
+gnuplot) there is no change in behavior: "result" in the above is the
+graphics, and a link to the image is placed in the org buffer. For
+general-purpose languages (e.g. emacs-lisp, python, R, ruby, shell),
+the "result" written to file is the normal org-babel result (string,
+number, table).
+
+In order to return a file link from a src block without telling babel
+to save any results to that file, use :results <filename> and do not
+use :file. The code block can of course write arbitrary content to
+<filename>.
+
+Some examples:
+
+Save the output of ls -l as a .csv file (recall that :results value is
+the default):
+
+#+begin_src sh :file dirlisting.csv :sep ,
+ ls -l
+#+end_src
+
+Send the text output of ls -l directly to file:
+
+#+begin_src sh :results output :file dirlisting.txt
+ ls -l
+#+end_src
+
+**** R requires :results graphics :file filename when generating graphics
+":results graphics" is now required in addition to ":file
+filename" in order for graphical output to be sent automatically
+to file. If :file is supplied, but not ":results graphics", then
+non-graphical, "value" or "output" results are written to file,
+depending on which of those options is in effect.
 **** Calc code blocks can now accept vectors
 For example;
 
@@ -69,7 +106,7 @@ will use this command for conversion:
 : convert -density 300 <tmp-pdf> -geometry 400 test.jpg
 **** Unified naming of =c++= functions to =C++=
 Thanks to Martyn Jago for this patch.
-**** `ob-exec-buf' and `ob-exec-tree' now eval inline code blocks as well
+**** `org-babel-execute-buffer' and `org-babel-execute-subtree' now eval inline code blocks as well
 **** new :mkdirp header argument creates parent dirs of tangle targets
 **** new ":comments noweb" option for wrapping noweb references in comment links
 This can be useful to allow backward linking from tangle code
@@ -77,7 +114,13 @@ files to the original code block holding noweb-expanded content.
 **** allow detangling of text containing '\'s -- Thanks to Seth Burleigh
 **** =:sep= specifies table separator when opening or writing tabular results
 
-
+**** `org-edit-src-content-indentation' can now be a buffer-local variable
+*** New user options for latex source code export via minted and listings packages
+New variables `org-export-latex-listings-options' and
+`org-export-latex-minted-options' allow package options to be
+controlled; `org-export-latex-custom-lang-environments' allows
+arbitrary configuration on a per-language basis.
+*** All export configuration variables can now be buffer-local variables
 * Version 7.4
 :PROPERTIES:
 :VISIBILITY: content
