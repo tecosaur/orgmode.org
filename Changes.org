@@ -4,11 +4,102 @@
 <a href="/"><img src="http://orgmode.org/img/org-mode-unicorn.png" class="logo-link" /></a>
 #+end_html
 
-#+STARTUP: indent hidestars
+#+STARTUP: noindent hidestars
 
 * Version 7.5 (upcoming release)
+
+** Improvements
+
+*** Implement formulas applying to field ranges
+
+Carsten implemented this:
+
+"A frequently requested feature for tables has been to be able to define
+row formulas in a way similar to column formulas.  The patch below allows
+things like
+
+: @3=
+: @2$2..@5$7=
+: @I$2..@II$4=
+
+as the left hand side for table formulas in order to write a formula that
+is valid for an entire column or for a rectangular section in a table."
+
+*** Better handling of lists
+
+Nicolas improved the handlings of lists.  FIXME
+
+*** Simplification of org-export-html-preamble/postamble
+
+When set to `t', export the preamble/postamble as usual, honoring the
+=org-export-email/author/creator-info= variables.
+
+When set to a formatting string, insert this string.  See the docstring of
+these variable for details about available %-sequences.
+
+You can set =:html-preamble= in publishing project in the same way: `t'
+means to honor =:email/creator/author-info=, and a formatting string will
+insert a string.
+
+*** New command `org-agenda-append-agenda'
+
+You can now use `org-agenda-append-agenda' to dynamically add new agendas
+views to the current one.  It is particularily useful to compare multiple
+small agendas.
+
+*** Localized clock tables
+
+Clock tables now support a new :lang parameter, allowing the user to set
+the language of the table headers.  =org-clock-clocktable-language-setup=
+controls available translations.
+
+*** New sorting options when publishing projects
+
+The :sitemap-sort-file option now allows to sort (anti-)alphabetically and
+(anti-)chronogically.  Thanks to Manuel Giraud for a patch to this effet.
+
+*** Improvement of org-link-escape
+
+David Maus worked on `org-link-escape'.
+
+*** Testing with ERT
+
+Martyn Jago added new tests to =testing/= - thanks to him!
+*** New file in contrib/: org-notmuch.el
+
+Org is now distributed with org-notmuch.el, by Matthieu Lemerre.
+
+*** org-gnus.el now allows link creation from messages
+
+You can now create links from messages.  This is particularily useful when
+the user wants to stored messages that he sends, for later check.  Thanks
+to Ulf Stegemann for the patch.
+
+** Important bug fixes
+
+*** Capturing to narrowed buffers
+
+You can now safely capture entries to narrowed buffers.
+
+*** Better handling of the new `org-agenda-span' variable
+
+Agendas were a bit confused by the introduction of this variable, in
+particular block agendas.  This is now fixed.
+
+*** Stay clocked-in when capturing with (:immediate-finish t :clock-in t)
+
+A capture template with =:immediate-finish t :clock-in t= used to clock
+out.  You can now use both options safely.
+
+*** Security warning: using org-crypt with auto-save
+
+To prevent Emacs from auto-saving encrypted entries in clear text, the user
+should not use auto-save with org-crypt.el.  We now send a warning when
+users are both using auto-saving and org-crypt.el.
 ** Incompatible changes
+
 *** Code block variable initialized with Emacs Lisp code in tables and lists
+
 It is no longer possible to assign code block variables using
 executable Emacs Lisp statements contained in tables or lists.
 As per the following example.
@@ -23,7 +114,109 @@ As per the following example.
 : (a b c)
 
 Thanks to Vladimir Alexiev for raising this issue.
+
+*** Misc
+
+**** org-complete.el has been renamed to org-pcomplete.el
+
+**** `org-bbdb-anniversary-format-alist' has changed 
+
+Please check the docstring and update your settings accordingly.
 ** Details
+
+*** Agenda
+
+**** New command `org-agenda-bulk-mark-regexp'
+
+M-x org-agenda-bulk-mark-regexp RET will mark agenda entries which heading
+match against a regular expression.  You can call this command with the `%'
+from an agenda buffer.
+
+**** New command `org-agenda-reset-view'
+
+Julien Danjou implemented this:
+
+This new command lets you switch to day/week/month/year view.
+
+When switching to day or week view, this setting becomes the default for
+subsequent agenda refreshes.  Since month and year views are slow to
+create, they do not become the default.  A numeric prefix argument may be
+used to jump directly to a specific day of the year, ISO week, month, or
+year, respectively.  For example, `32 d' jumps to February 1st, `9 w' to
+ISO week number 9.  When setting day, week, or month view, a year may be
+encoded in the prefix argument as well.  For example, `200712 w' will jump
+to week 12 in 2007.  If such a year specification has only one or two
+digits, it will be mapped to the interval 1938-2037. `v SPC'' will reset to
+what is set in `org-agenda-span'.
+
+**** New options for ignoring past or future items in the global todo list
+
+This patch gives users greater control over which past or future items
+they would like to ignore in the global todo list. By setting
+org-agenda-todo-ignore-scheduled to 7, for instance, a user can ignore all
+items scheduled 7 or more days in the future. Similarly, by setting
+org-agenda-todo-ignore-scheduled to -1, a user can ignore all items that
+are truly in the past (unlike the 'past setting, which ignores items
+scheduled today).
+
+See the docstrings of these variables:
+
+- org-agenda-todo-ignore-deadlines
+- org-agenda-todo-ignore-scheduled
+- org-agenda-todo-ignore-timestamp
+
+Thanks to Matt Lundin for implementing this new functionality, and to Paul
+Sexton for the idea.
+
+*** Tables
+
+**** New variable `org-export-table-remove-empty-lines'
+
+When set to `nil', don't remove empty tables when exporting tables.
+
+**** New variable `org-table-fix-formulas-confirm'
+
+Sometime, editing the structure of a table should not edit the
+corresponding formulas.  This new variable lets the user decide 
+whether he wants to confirm formula fixes or not.
+
+*** Export
+
+**** New variable `org-export-initial-scope'
+
+This variable controls the initial scope when exporting with `org-export'.
+It can be set to 'buffer or 'subtree.  If there is an active region, tell
+it when prompting the user for an export command.
+
+*** Refile
+
+**** Show and use the default refile location
+
+M-x org-refile RET now shows the default refile location.  Thanks to
+Tassilo Horn for a patch to this effect.
+
+*** Archiving
+
+**** New variable `org-archive-subtree-add-inherited-tags'
+
+Non-nil means append inherited tags when archiving a subtree.
+
+*** Effort duration
+
+Effort duration can now be set as 2h (for 2 hours).  This will be converted
+to minutes automatically when clocking in an entry with an effort property.
+
+Thanks to Lawrence Mitchell for this patch.
+
+*** LaTeX export
+
+**** = emphasis now uses \protectedtexttt
+
+**** You can now include author's email in the LaTeX title
+
+When `org-export-email-info' is non-nil, the LaTeX title will also include
+the author's email.
+
 *** Babel
 **** :file argument causes results to be written to file for all languages
 :file <filename> should be understood as saying "write the result
@@ -73,29 +266,39 @@ For example;
 : [3, 6, 9]
 
 Thanks to Eric S. Fraga for raising this issue
+
 **** Code blocks with empty bodies are now acceptable
+
 Previously these caused errors on export.  Thanks to Martyn Jago
 for this patch.
+
 **** Emacs Lisp variable assignments which don't eval cleanly passed literally
+
 This makes it possible to easily pass through non-elisp variable
 assignments which may initially look like valid elisp.
+
 **** Imagemagick post-processing of LaTeX code block results
+
 It is now possible to use imagemagick to process the output of
 LaTeX code blocks through to a wide variety of output formats.
 This patch is thanks to Andreas Leha, the following description
 is from his email to the mailing list.
 
 LaTeX source blocks now have three new options:
+
 - :imagemagick
   When not nil the source block is processed to pdf and the pdf is
   converted with imagemagick to whatever is given as :file
   Thus, the format is not limited to png.
+
 - :iminoptions
   This is passed to imagemagick before the pdf file
+
 - :imoutoptions
   This is passed to imagemagick before the output file
 
-Small Example:
+Small example:
+
 #+begin_src org
   #+headers: :imagemagick yes
   #+headers: :iminoptions -density 300 :imoutoptions -geometry 400
@@ -103,30 +306,69 @@ Small Example:
 #+end_src
 
 will use this command for conversion:
+
 : convert -density 300 <tmp-pdf> -geometry 400 test.jpg
+
 **** Unified naming of =c++= functions to =C++=
 Thanks to Martyn Jago for this patch.
+
 **** `org-babel-execute-buffer' and `org-babel-execute-subtree' now eval inline code blocks as well
-**** new :mkdirp header argument creates parent dirs of tangle targets
-**** new ":comments noweb" option for wrapping noweb references in comment links
+
+**** New :mkdirp header argument creates parent dirs of tangle targets
+
+**** New ":comments noweb" option for wrapping noweb references in comment links
+
 This can be useful to allow backward linking from tangle code
 files to the original code block holding noweb-expanded content.
-**** allow detangling of text containing '\'s -- Thanks to Seth Burleigh
+
+**** Allow detangling of text containing '\'s -- Thanks to Seth Burleigh
+
 **** =:sep= specifies table separator when opening or writing tabular results
 
 **** `org-edit-src-content-indentation' can now be a buffer-local variable
-*** New user options for latex source code export via minted and listings packages
+
+*** New user options for LaTeX source code export via minted and listings packages
+
 New variables `org-export-latex-listings-options' and
-`org-export-latex-minted-options' allow package options to be
-controlled; `org-export-latex-custom-lang-environments' allows
-arbitrary configuration on a per-language basis.
+`org-export-latex-minted-options' allow package options to be controlled;
+`org-export-latex-custom-lang-environments' allows arbitrary configuration
+on a per-language basis.
+
 *** All export configuration variables can now be buffer-local variables
+
+*** Misc
+
+**** Update contrib/scripts/ditaa.jar to ditaa v0.9 of 2009-11-24
+
+**** New variable `org-mobile-files-exclude-regexp'
+
+This variable lets you exclude files that you don't want in
+org-mobile-files.
+
+**** New variable `org-confirm-elisp-link-not-regexp'
+
+Set this to a regexp if you want to skip the confirmation step for
+Elisp/Shell code matching this regexp.
+     
+**** New variable `org-attach-store-link-p'
+
+When set to `t', store link to the attached file, at its original location.
+
+**** `org-table-use-standard-references' now defaults to 'from
+
+**** Better `org-agenda-repeating-timestamp-show-all'
+
+When this is set to a list of TODO keywords, the agenda will only show
+occurrences of repeating stamps for these TODO keywords.
+
+**** New command `org-narrow-to-block'
+
+This command (`C-x n b') will narrow the buffer to the current block.
 * Version 7.4
 :PROPERTIES:
 :VISIBILITY: content
 :CUSTOM_ID: v7.4
 :END:
-
 
 ** Incompatible changes
 
@@ -306,7 +548,6 @@ code files tangled from embedded code blocks in Org-mode files back to
 the original code blocks in the Org-mode file.  This can be used on
 collaborative projects to keep embedded code blocks up to date with
 edits made in pure source code files.
-
 
 
 
