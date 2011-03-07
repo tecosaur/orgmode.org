@@ -395,13 +395,18 @@ exporting to HTML, LaTeX, etc.  Possible values are 'html,
 'latex, 'ascii, 'docbook.  Thanks to Eric Schulte and Dan Davison
 for ideas and patches in this area.
 
+**** New hook `org-clock-before-select-task-hook'
+
+Hook called in task selection just before prompting the user.
+
+Thanks to Benjamin Drieu for the patch.
+
 **** = = emphasis now uses \protectedtexttt
 **** Author's email now included in the LaTeX title
 
 When `org-export-email-info' is non-nil, the LaTeX title will
 also include the author's email.  Thanks to Lawrence Mitchell for
 the patch.
-
 
 
 **** Update contrib/scripts/ditaa.jar to ditaa v0.9 of 2009-11-24
