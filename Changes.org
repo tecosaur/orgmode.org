@@ -169,11 +169,6 @@ Thanks to Julien and Carsten for helping find the right fix for
 this issue, and to Michael Brand and Matt Lundin for their
 patient testing and reporting.
 
-*** Stay clocked-in when capturing with (:immediate-finish t :clock-in t)
-
-A capture template with =:immediate-finish t :clock-in t= used to clock
-out.  You can now use both options safely.
-
 *** Security warning: using org-crypt with auto-save
 
 To prevent Emacs from auto-saving encrypted entries in clear
@@ -314,6 +309,14 @@ entry with an effort property.   See the =org-effort-durations=
 variable.
 
 Thanks a lot to Lawrence Mitchell for this patch.
+
+*** New option :no-clock-out for capture templates
+
+A capture template with =:no-clock-out t= will prevent the
+refiling process from clocking out the entry.
+
+So now =:immediate-finish t :clock-in t :no-clock-out t= makes
+sense: it will capture a new task and clock it.
 
 *** Misc
 
