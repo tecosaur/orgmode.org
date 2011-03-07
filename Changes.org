@@ -310,12 +310,14 @@ variable.
 
 Thanks a lot to Lawrence Mitchell for this patch.
 
-*** New option :no-clock-out for capture templates
+*** New option :clock-keep for capture templates
 
-A capture template with =:no-clock-out t= will prevent the
-refiling process from clocking out the entry.
+A capture template with =:clock-keep t= will prevent the refiling
+process from clocking out the entry.  If =:clock-resume= is also
+`t', =:clock-keep= will take precedence and =:clock-resume= will
+be ignored.
 
-So now =:immediate-finish t :clock-in t :no-clock-out t= makes
+So now =:immediate-finish t :clock-in t :clock-keep t= makes
 sense: it will capture a new task and clock it.
 
 *** Misc
