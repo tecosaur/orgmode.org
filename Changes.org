@@ -238,38 +238,6 @@ for this patch.
 This makes it possible to easily pass through non-elisp variable
 assignments which may initially look like valid elisp.
 
-**** Imagemagick post-processing of LaTeX code block results
-
-It is now possible to use imagemagick to process the output of
-LaTeX code blocks through to a wide variety of output formats.
-This patch is thanks to Andreas Leha, the following description
-is from his email to the mailing list.
-
-LaTeX source blocks now have three new options:
-
-- :imagemagick
-  When not nil the source block is processed to pdf and the pdf is
-  converted with imagemagick to whatever is given as :file
-  Thus, the format is not limited to png.
-
-- :iminoptions
-  This is passed to imagemagick before the pdf file
-
-- :imoutoptions
-  This is passed to imagemagick before the output file
-
-Small example:
-
-#+begin_src org
-  #+headers: :imagemagick yes
-  #+headers: :iminoptions -density 300 :imoutoptions -geometry 400
-  #+begin_src latex ... :file test.jpg ...
-#+end_src
-
-will use this command for conversion:
-
-: convert -density 300 <tmp-pdf> -geometry 400 test.jpg
-
 **** Unified naming of =c++= functions to =C++=
 Thanks to Martyn Jago for this patch.
 
