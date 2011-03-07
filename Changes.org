@@ -4,98 +4,10 @@
 <a href="/"><img src="http://orgmode.org/img/org-mode-unicorn.png" class="logo-link" /></a>
 #+end_html
 
-#+STARTUP: noindent hidestars
+#+STARTUP: indent hidestars
 
 * Version 7.5 (upcoming release)
 
-** Improvements
-
-*** Implement formulas applying to field ranges
-
-Carsten implemented this:
-
-"A frequently requested feature for tables has been to be able to define
-row formulas in a way similar to column formulas.  The patch below allows
-things like
-
-: @3=
-: @2$2..@5$7=
-: @I$2..@II$4=
-
-as the left hand side for table formulas in order to write a formula that
-is valid for an entire column or for a rectangular section in a table."
-
-*** Better handling of lists
-
-Nicolas improved the handlings of lists.  FIXME
-
-*** Simplification of org-export-html-preamble/postamble
-
-When set to `t', export the preamble/postamble as usual, honoring the
-=org-export-email/author/creator-info= variables.
-
-When set to a formatting string, insert this string.  See the docstring of
-these variable for details about available %-sequences.
-
-You can set =:html-preamble= in publishing project in the same way: `t'
-means to honor =:email/creator/author-info=, and a formatting string will
-insert a string.
-
-*** New command `org-agenda-append-agenda'
-
-You can now use `org-agenda-append-agenda' to dynamically add new agendas
-views to the current one.  It is particularily useful to compare multiple
-small agendas.
-
-*** Localized clock tables
-
-Clock tables now support a new :lang parameter, allowing the user to set
-the language of the table headers.  =org-clock-clocktable-language-setup=
-controls available translations.
-
-*** New sorting options when publishing projects
-
-The :sitemap-sort-file option now allows to sort (anti-)alphabetically and
-(anti-)chronogically.  Thanks to Manuel Giraud for a patch to this effet.
-
-*** Improvement of org-link-escape
-
-David Maus worked on `org-link-escape'.
-
-*** Testing with ERT
-
-Martyn Jago added new tests to =testing/= - thanks to him!
-*** New file in contrib/: org-notmuch.el
-
-Org is now distributed with org-notmuch.el, by Matthieu Lemerre.
-
-*** org-gnus.el now allows link creation from messages
-
-You can now create links from messages.  This is particularily useful when
-the user wants to stored messages that he sends, for later check.  Thanks
-to Ulf Stegemann for the patch.
-
-** Important bug fixes
-
-*** Capturing to narrowed buffers
-
-You can now safely capture entries to narrowed buffers.
-
-*** Better handling of the new `org-agenda-span' variable
-
-Agendas were a bit confused by the introduction of this variable, in
-particular block agendas.  This is now fixed.
-
-*** Stay clocked-in when capturing with (:immediate-finish t :clock-in t)
-
-A capture template with =:immediate-finish t :clock-in t= used to clock
-out.  You can now use both options safely.
-
-*** Security warning: using org-crypt with auto-save
-
-To prevent Emacs from auto-saving encrypted entries in clear text, the user
-should not use auto-save with org-crypt.el.  We now send a warning when
-users are both using auto-saving and org-crypt.el.
 ** Incompatible changes
 
 *** Code block variable initialized with Emacs Lisp code in tables and lists
@@ -115,107 +27,161 @@ As per the following example.
 
 Thanks to Vladimir Alexiev for raising this issue.
 
-*** Misc
-
-**** org-complete.el has been renamed to org-pcomplete.el
-
-**** `org-bbdb-anniversary-format-alist' has changed 
+*** `org-bbdb-anniversary-format-alist' has changed
 
 Please check the docstring and update your settings accordingly.
+** New features and user-visible improvements
+
+*** Implement formulas applying to field ranges
+
+Carsten implemented this field-ranges formulas.
+
+: A frequently requested feature for tables has been to be able to define
+: row formulas in a way similar to column formulas.  The patch below allows
+: things like
+:
+: @3=
+: @2$2..@5$7=
+: @I$2..@II$4=
+:
+: as the left hand side for table formulas in order to write a formula that
+: is valid for an entire column or for a rectangular section in a
+: table.
+
+Thanks a lot to Carsten for this.
+
+*** Improved handling of lists
+
+Nicolas Goaziou extended and improved the way Org handles lists.
+
+1. Indentation of text determines again end of items in
+   lists. So, some text less indented than the previous item
+   doesn't close the whole list anymore, only all items more
+   indented than it.
+
+2. Alphabetical bullets are implemented, through the use of the
+   variable `org-alphabetical-lists'. This also adds alphabetical
+   counters like [@c] or [@W].
+
+3. Lists can now safely contain drawers, inline tasks, or various
+   blocks, themselves containing lists. Two variables are
+   controlling this: `org-list-forbidden-blocks', and
+   `org-list-export-context'.
+
+4. Improve `newline-and-indent' (C-j): used in an item, it will
+   keep text from moving at column 0. This allows to split text
+   and make paragraphs and still not break the list.
+
+5. Improve `org-toggle-item' (C-c -): used on a region with
+   standard text, it will change the region into one item. With a
+   prefix argument, it will fallback to the previous behavior and
+   make every line in region an item. It permits to easily
+   integrate paragraphs inside a list.
+
+6. `fill-paragraph' (M-q) now understands lists. It can freely be
+   used inside items, or on text just after a list, even with no
+   blank line around, without breaking list structure.
+
+Thanks a lot to Nicolas for all this!
+
+*** Modified link escaping
+
+David Maus worked on `org-link-escape'.  See [[http://article.gmane.org/gmane.emacs.orgmode/37888][his message]]:
+
+: Percent escaping is used in Org mode to escape certain characters
+: in links that would either break the parser (e.g. square brackets
+: in link target oder description) or are not allowed to appear in
+: a particular link type (e.g. non-ascii characters in a http:
+: link).
+:
+: With this change in place Org will apply percent escaping and
+: unescaping more consistently especially for non-ascii characters.
+: Additionally some of the outstanding bugs or glitches concerning
+: percent escaped links are solved.
+
+Thanks a lot to David for this work.
+
+*** Simplification of org-export-html-preamble/postamble
+
+When set to `t', export the preamble/postamble as usual, honoring
+the =org-export-email/author/creator-info= variables.
+
+When set to a formatting string, insert this string.  See the
+docstring of these variable for details about available
+%-sequences.
+
+You can set =:html-preamble= in publishing project in the same
+way: `t' means to honor =:email/creator/author-info=, and a
+formatting string will insert a string.
+
+*** New command `org-agenda-append-agenda'
+
+You can now use `org-agenda-append-agenda' to dynamically add new
+agendas views to the current one.  It is particularily useful to
+compare multiple small agendas.
+
+*** Localized clock tables
+
+Clock tables now support a new new =:lang= parameter, allowing
+the user to customize the localization of the table headers.  See
+the variable =org-clock-clocktable-language-setup= which controls
+available translated strings.
+
+*** New sorting options when publishing projects
+
+The =:sitemap-sort-file= option now allows sorting the sitemap
+file (anti-)alphabetically and (anti-)chronogically.  Thanks a
+lot to Manuel Giraud for a patch to this effet.
+
+*** Testing with ERT
+
+Martyn Jago added new tests to =testing/= - thanks to him!
+*** New file in contrib/: org-notmuch.el
+
+Org is now distributed with =org-notmuch.el=, by Matthieu
+Lemerre.  See explanations in the header of =org-notmuch.el=:
+
+: =org-notmuch.el= implements links to notmuch messages and
+: "searchs". A search is a query to be performed by notmuch; it is
+: the equivalent to folders in other mail clients. Similarly, mails
+: are refered to by a query, so both a link can refer to several
+: mails.
+
+*** org-gnus.el now allows link creation from messages
+
+You can now create links from messages.  This is particularily
+useful when the user wants to stored messages that he sends, for
+later check.  Thanks to Ulf Stegemann for the patch.
+
+** Important bug fixes
+
+*** Capturing to narrowed buffers
+
+You can now safely capture entries to narrowed buffers.  Thanks a
+lot to Memnon Anon for bringing this up.
+
+*** Better handling of the new `org-agenda-span' variable
+
+Agendas were a bit confused by the introduction of this variable,
+in particular block agendas.  This is now fixed.
+
+Thanks to Julien and Carsten for helping find the right fix for
+this issue, and to Michael Brand and Matt Lundin for their
+patient testing and reporting.
+
+*** Stay clocked-in when capturing with (:immediate-finish t :clock-in t)
+
+A capture template with =:immediate-finish t :clock-in t= used to clock
+out.  You can now use both options safely.
+
+*** Security warning: using org-crypt with auto-save
+
+To prevent Emacs from auto-saving encrypted entries in clear
+text, the user should not use auto-save with org-crypt.el.  We
+now send a warning when users are both using auto-saving and
+org-crypt.el.  Thanks to Peter Jones for bringing this up.
+
 ** Details
-
-*** Agenda
-
-**** New command `org-agenda-bulk-mark-regexp'
-
-M-x org-agenda-bulk-mark-regexp RET will mark agenda entries which heading
-match against a regular expression.  You can call this command with the `%'
-from an agenda buffer.
-
-**** New command `org-agenda-reset-view'
-
-Julien Danjou implemented this:
-
-This new command lets you switch to day/week/month/year view.
-
-When switching to day or week view, this setting becomes the default for
-subsequent agenda refreshes.  Since month and year views are slow to
-create, they do not become the default.  A numeric prefix argument may be
-used to jump directly to a specific day of the year, ISO week, month, or
-year, respectively.  For example, `32 d' jumps to February 1st, `9 w' to
-ISO week number 9.  When setting day, week, or month view, a year may be
-encoded in the prefix argument as well.  For example, `200712 w' will jump
-to week 12 in 2007.  If such a year specification has only one or two
-digits, it will be mapped to the interval 1938-2037. `v SPC'' will reset to
-what is set in `org-agenda-span'.
-
-**** New options for ignoring past or future items in the global todo list
-
-This patch gives users greater control over which past or future items
-they would like to ignore in the global todo list. By setting
-org-agenda-todo-ignore-scheduled to 7, for instance, a user can ignore all
-items scheduled 7 or more days in the future. Similarly, by setting
-org-agenda-todo-ignore-scheduled to -1, a user can ignore all items that
-are truly in the past (unlike the 'past setting, which ignores items
-scheduled today).
-
-See the docstrings of these variables:
-
-- org-agenda-todo-ignore-deadlines
-- org-agenda-todo-ignore-scheduled
-- org-agenda-todo-ignore-timestamp
-
-Thanks to Matt Lundin for implementing this new functionality, and to Paul
-Sexton for the idea.
-
-*** Tables
-
-**** New variable `org-export-table-remove-empty-lines'
-
-When set to `nil', don't remove empty tables when exporting tables.
-
-**** New variable `org-table-fix-formulas-confirm'
-
-Sometime, editing the structure of a table should not edit the
-corresponding formulas.  This new variable lets the user decide 
-whether he wants to confirm formula fixes or not.
-
-*** Export
-
-**** New variable `org-export-initial-scope'
-
-This variable controls the initial scope when exporting with `org-export'.
-It can be set to 'buffer or 'subtree.  If there is an active region, tell
-it when prompting the user for an export command.
-
-*** Refile
-
-**** Show and use the default refile location
-
-M-x org-refile RET now shows the default refile location.  Thanks to
-Tassilo Horn for a patch to this effect.
-
-*** Archiving
-
-**** New variable `org-archive-subtree-add-inherited-tags'
-
-Non-nil means append inherited tags when archiving a subtree.
-
-*** Effort duration
-
-Effort duration can now be set as 2h (for 2 hours).  This will be converted
-to minutes automatically when clocking in an entry with an effort property.
-
-Thanks to Lawrence Mitchell for this patch.
-
-*** LaTeX export
-
-**** = emphasis now uses \protectedtexttt
-
-**** You can now include author's email in the LaTeX title
-
-When `org-export-email-info' is non-nil, the LaTeX title will also include
-the author's email.
 
 *** Babel
 **** :file argument causes results to be written to file for all languages
@@ -326,17 +292,110 @@ files to the original code block holding noweb-expanded content.
 **** =:sep= specifies table separator when opening or writing tabular results
 
 **** `org-edit-src-content-indentation' can now be a buffer-local variable
+*** All export configuration variables can now be buffer-local variables
+*** org-complete.el has been renamed to org-pcomplete.el
+
+In case you were manually loading =org-complete.el= (which is
+*not* necessary anyway), please be aware that the name of this
+library was changed to =org-pcomplete.el=.
 
 *** New user options for LaTeX source code export via minted and listings packages
 
 New variables `org-export-latex-listings-options' and
-`org-export-latex-minted-options' allow package options to be controlled;
-`org-export-latex-custom-lang-environments' allows arbitrary configuration
-on a per-language basis.
+`org-export-latex-minted-options' allow package options to be
+controlled; `org-export-latex-custom-lang-environments' allows
+arbitrary configuration on a per-language basis.
 
-*** All export configuration variables can now be buffer-local variables
+*** Effort durations now support 2d, 2m, etc.
+
+Effort duration can now be set as 2h (for 2 hours), etc.  This
+will be converted to minutes automatically when clocking in an
+entry with an effort property.   See the =org-effort-durations=
+variable.
+
+Thanks a lot to Lawrence Mitchell for this patch.
 
 *** Misc
+
+**** New command `org-agenda-bulk-mark-regexp'
+
+=M-x org-agenda-bulk-mark-regexp RET= will mark agenda entries
+which headings match against a regular expression.  You can call
+this command with the `%' key from an agenda buffer.
+
+**** New command `org-agenda-reset-view'
+
+Julien Danjou implemented this:
+
+: This new command lets you switch to day/week/month/year view.
+:
+: When switching to day or week view, this setting becomes the default for
+: subsequent agenda refreshes.  Since month and year views are slow to
+: create, they do not become the default.  A numeric prefix argument may be
+: used to jump directly to a specific day of the year, ISO week, month, or
+: year, respectively.  For example, `32 d' jumps to February 1st, `9 w' to
+: ISO week number 9.  When setting day, week, or month view, a year may be
+: encoded in the prefix argument as well.  For example, `200712 w' will jump
+: to week 12 in 2007.  If such a year specification has only one or two
+: digits, it will be mapped to the interval 1938-2037. `v SPC'' will reset to
+: what is set in `org-agenda-span'.
+
+Thanks a lot to Julien for this.
+
+**** New options for ignoring past or future items in the global todo list
+
+This patch gives users greater control over which past or future items
+they would like to ignore in the global todo list. By setting
+org-agenda-todo-ignore-scheduled to 7, for instance, a user can ignore all
+items scheduled 7 or more days in the future. Similarly, by setting
+org-agenda-todo-ignore-scheduled to -1, a user can ignore all items that
+are truly in the past (unlike the 'past setting, which ignores items
+scheduled today).
+
+See the docstrings of these variables:
+
+- org-agenda-todo-ignore-deadlines
+- org-agenda-todo-ignore-scheduled
+- org-agenda-todo-ignore-timestamp
+
+Thanks a lot to Matt Lundin for implementing this and to Paul
+Sexton for the idea.
+
+**** New variable `org-export-table-remove-empty-lines'
+
+When set to `nil', don't remove empty tables when exporting
+tables.  This was requested by Eric S Fraga.
+
+**** New variable `org-table-fix-formulas-confirm'
+
+Sometime, editing the structure of a table should not edit the
+corresponding formulas.  This new variable lets the user decide
+whether he wants to confirm formula fixes or not.
+
+**** New variable `org-export-initial-scope'
+
+This variable controls the initial scope when exporting with `org-export'.
+It can be set to 'buffer or 'subtree.  If there is an active region, tell
+it when prompting the user for an export command.
+
+**** Show and use the default refile location
+
+M-x org-refile RET now shows the default refile location.  Thanks to
+Tassilo Horn for a patch to this effect.
+
+**** New variable `org-archive-subtree-add-inherited-tags'
+
+Non-nil means append inherited tags when archiving a subtree.
+
+**** = = emphasis now uses \protectedtexttt
+**** Author's email now included in the LaTeX title
+
+When `org-export-email-info' is non-nil, the LaTeX title will
+also include the author's email.  Thanks to Lawrence Mitchell for
+the patch.
+
+
+
 
 **** Update contrib/scripts/ditaa.jar to ditaa v0.9 of 2009-11-24
 
@@ -349,7 +408,7 @@ org-mobile-files.
 
 Set this to a regexp if you want to skip the confirmation step for
 Elisp/Shell code matching this regexp.
-     
+
 **** New variable `org-attach-store-link-p'
 
 When set to `t', store link to the attached file, at its original location.
@@ -373,7 +432,7 @@ This command (`C-x n b') will narrow the buffer to the current block.
 ** Incompatible changes
 
 *** Agenda: rework ndays and span handling
-    
+
 The variable =org-agenda-ndays= is obsolete - please use
 =org-agenda-span= instead.
 
@@ -389,7 +448,7 @@ the new variable =org-inlinetask-export-templates=.
 Thanks to Nicolas Goaziou for coding these changes.
 
 *** Agenda: Added a bulk "scattering" command
-    
+
 =B S= in the agenda buffer will cause tasks to be rescheduled a random
 number of days into the future, with 7 as the default.  This is useful
 if you've got a ton of tasks scheduled for today, you realize you'll
@@ -421,7 +480,7 @@ Times in the agenda can now be displayed in am/pm format.  See the new
 variable =org-agenda-timegrid-use-ampm=.  Thanks to C. A. Webber for
 a patch to this effect.
 
-*** Rewriten clock table code 
+*** Rewriten clock table code
 
 The entire clocktable code has been rewritten to add more options and
 to make hacking time reports easier.
@@ -485,7 +544,7 @@ export.  For example
   ,#+begin_src emacs-lisp :results wrap
   ,  "code block results"
   ,#+end_src
-  
+
   ,#+results:
   ,#+BEGIN_RESULT
   ,: code block results
@@ -508,7 +567,7 @@ contents from and to Org-mode buffers.  For example
   ,- babel
   ,- and
   ,- org-mode
-  
+
   ,#+source: a-list
   ,#+begin_src emacs-lisp :var lst=a-list :results list
   ,  (reverse lst)
@@ -529,15 +588,15 @@ calculation.  For example
   ,  9
   ,  '*
   ,#+end_src
-  
+
   ,#+results: calc-stack
   ,: 81
-  
+
   ,#+source: calc-arithmetic
   ,#+begin_src calc :var in=calc-stack
   ,  in / 9
   ,#+end_src
-  
+
   ,#+results: calc-arithmetic
   ,: 9
 #+end_src
@@ -655,7 +714,7 @@ Examples are given below.
   : #+begin_src emacs-lisp :var data2=2
   :   (message "data1:%S, data2:%S" data1 data2)
   : #+end_src
-  : 
+  :
   : #+results:
   : : data1:1, data2:2
 
@@ -665,7 +724,7 @@ Examples are given below.
   :   #+begin_src emacs-lisp
   :     (message "data:%S" data)
   :   #+end_src
-  : 
+  :
   :   #+results: named-block
   :   : data:2
 
@@ -686,15 +745,15 @@ can provide intuition for the new behavior.
   ,#+begin_src R :cache yes
   ,runif(1)
   ,#+end_src
-  
+
   ,#+results[a2a72cd647ad44515fab62e144796432793d68e1]: random
   ,: 0.4659510825295
-  
+
   ,#+srcname: caller
   ,#+begin_src emacs-lisp :var x=random :cache yes
   ,x
   ,#+end_src
-  
+
   ,#+results[bec9c8724e397d5df3b696502df3ed7892fc4f5f]: caller
   ,: 0.254227238707244
 #+end_src
@@ -708,7 +767,7 @@ accepts either a single string or a list, e.g.
   ,#+begin_src latex :headers \usepackage{lmodern} :file name1.pdf
   ,  latex body
   ,#+end_src
-  
+
   ,#+begin_src latex :headers '("\\usepackage{mathpazo}" "\\usepackage{fullpage}") :file name2.pdf
   ,  latex body
   ,#+end_src
@@ -767,10 +826,10 @@ implementation will follow, but is currently still missing.
 *** Update freemind converter to include body text
 
 The freemind exporter now incorporates body text into the mind
-map. 
+map.
 
 Thanks to Lennard Borgman for this patch.
-    
+
 *** Make footnotes work correctly in message-mode
 The footnotes code now searches for =message-signature-separator=
 (which is "-- " by default) in order to place footnotes before the
@@ -783,7 +842,7 @@ package is installed.
 
 Thanks to Uwe Bauer, Volker Ziegler, Michael Sperber and others
 for a discussion that lead to this nice result.
-    
+
 *** Make it configurable wether agenda jumping prefers the future
 
 When jumping to a date from the agenda using the =j= key, you may
@@ -794,7 +853,7 @@ configured using the variable =org-agenda-jump-prefer-future'.
 *** Add publishing functions for ASCII, Latin-1 and UTF-8
 
 There are now publishing functions =org-publish-org-to-ascii=,
-=org-publish-org-to-latin1=, and =org-publish-org-to-utf8=. 
+=org-publish-org-to-latin1=, and =org-publish-org-to-utf8=.
 
 Thanks to Matthias Danzl for showing how to do this.
 
@@ -809,7 +868,7 @@ As soon as MobilOrg 1.5 hits the Apple's AppStore, you can
 encrypt your org files on public servers.  Please see the
 documentation of MobileOrg and Appendix B of the manual for more
 details.
-    
+
 *** MobileOrg: Do not force to insert IDs
 
 If you dislike the property of MobileOrg to insert ID properties
@@ -849,7 +908,7 @@ Thanks to Olivier Schwander for the rubber part.
 If you want to inline images whenever you visit an Org file, use
 
 : #+STARTUP: inlineimages
- 
+
 *** Support for user-extensible speed commands.
 
 There is a new hook =org-speed-command-hook=.  Thanks to
@@ -884,7 +943,7 @@ However, "-" is also allowed in property names.  So you can now
 write "SOME\-NAME" to work around this issue.
 
 This was a request by Ilya Shlyakhter.
-    
+
 *** Document quick insertion of empty structural elements
 
 Org-mode has a built-in template mechanism for inserting block
@@ -907,7 +966,7 @@ into web pages, you would have to set
 or on a per-file basis
 
 : #+OPTIONS: LaTeX:dvipng
-    
+
 *** Agenda: Allow compact two-column display in agenda dispatcher
 
 If you have many custom agenda commands, you can have the display
@@ -1014,7 +1073,7 @@ of Babel (both core functionality and language specific support).
           (sql . nil)
           (sqlite . t)))
      #+end_src
-     
+
 	   Despite this change it is still possible to add
 	   language support through the use of =require=
 	   statements, however to conform to Emacs file-name
@@ -1032,7 +1091,7 @@ of Babel (both core functionality and language specific support).
 We have eliminated the =org-babel-tangle-w-comments= variable as
 well as the two main internal lists of languages, namely
 - =org-babel-interpreters= and
-- =org-babel-tangle-langs= 
+- =org-babel-tangle-langs=
 
 so any config lines which mention those variables, can/should be
 stripped out in their entirety.  This includes any calls to the
@@ -1057,7 +1116,7 @@ code block level, e.g.
 #+begin_src org
   ,#+begin_src clojure :shebang #!/usr/bin/env clj
   ,  (println "with a shebang line, I can be run as a script!")
-  ,#+end_src  
+  ,#+end_src
 #+end_src
 
 Note that whenever a file is tangled which includes a /shebang/
@@ -1072,10 +1131,10 @@ language, e.g.
   ;; ensure this variable is defined defined
   (unless (boundp 'org-babel-default-header-args:sh)
     (setq org-babel-default-header-args:sh '()))
-  
+
   ;; add a default shebang header argument
   (add-to-list 'org-babel-default-header-args:sh
-               '(:shebang . "#!/bin/bash"))  
+               '(:shebang . "#!/bin/bash"))
 #+end_src
 
 The final important change included in this release is the
@@ -1177,7 +1236,7 @@ possibilities for capturing different types of data.  See
 
 To switch over to the new system:
 
-1. Run 
+1. Run
 
    : M-x org-capture-import-remember-templates RET
 
@@ -1185,13 +1244,13 @@ To switch over to the new system:
    new variable =org-capture-templates=.  This will "mostly" work,
    but maybe not for all cases.  At least it will give you a good
    place to modify your templates.  After running this command,
-   enter the customize buffer for this variable with 
+   enter the customize buffer for this variable with
 
    : M-x customize-variable RET org-capture-templates RET
 
    and convince yourself that everything is OK.  Then save the
    customization.
-   
+
 2. Bind the command =org-capture= to a key, similar to what you did
    with org-remember:
 
@@ -1236,9 +1295,9 @@ offers a deleted one, press =C-0 C-c C-w=.
 *** Enhanced functionality of the clock resolver
 
 Here are the new options for the clock resolver:
-    
+
 : i/q/C-g  Ignore this question; the same as keeping all the idle time.
-: 
+:
 : k/K      Keep X minutes of the idle time (default is all).  If this
 :          amount is less than the default, you will be clocked out
 :          that many minutes after the time that idling began, and then
@@ -1251,7 +1310,7 @@ Here are the new options for the clock resolver:
 : C        Cancel the open timer altogether.  It will be as though you
 :          never clocked in.
 : j/J      Jump to the current clock, to make manual adjustments.
-    
+
 For all these options, using uppercase makes your final state
 to be CLOCKED OUT.  Thanks to John Wiegley for making these
 changes.
@@ -1272,10 +1331,10 @@ Thanks to Leo who has been on a year-long quest to get this fixed
 and finally found the right way to do it.
 
 *** Make it possible to protect hidden subtrees from being killed by =C-k=
-    
+
 This was a request by Scott Otterson.
 See the new variable =org-ctrl-k-protect-subtree=.
-    
+
 *** New module org-mac-link-grabber.el
 
 This module allows to grab links to all kinds of applications on
@@ -1284,7 +1343,7 @@ a mac.  It is available in the contrib directory.
 Thanks to Anthony Lander for this contribution.
 
 *** LaTeX export: Implement table* environment for wide tables
-    
+
 Thanks to Chris Gray for a patch to this effect.
 
 *** When cloning entries, remove or renew ID property
@@ -1308,16 +1367,16 @@ that have no description part will be inlined.
 
 If you want to start an ordered plain list with a number
 different from 1, you can now do it like this:
-    
+
 : 1. [@start:12] will star a lit a number 12
 
 *** Extensions to storing and opening links to Wanderlust messages
-    
+
 - Remove filter conditions for messages in a filter folder
-    
+
   If customization variable `org-wl-link-remove-filter' is non-nil,
   filter conditions are stripped of the folder name.
-    
+
 - Create web links for messages in a Shimbun folder
 
   If customization variable `org-wl-shimbun-prefer-web-links' is
@@ -1437,7 +1496,7 @@ put the following macro-like place holders into the header:
 #+begin_example
 [DEFAULT-PACKAGES]      \usepackage statements for default packages
 [NO-DEFAULT-PACKAGES]   do not include any of the default packages
-[PACKAGES]              \usepackage statements for packages 
+[PACKAGES]              \usepackage statements for packages
 [NO-PACKAGES]           do not include the packages
 [EXTRA]                 the stuff from #+LaTeX_HEADER
 [NO-EXTRA]              do not include #+LaTeX_HEADER stuff
@@ -1490,23 +1549,23 @@ write code using it - this is why I am mentioning it here.
 ** Editing Convenience and Appearance
 
 *** New faces for title, date, author and email address lines.
-    
+
 The keywords in these lines are now dimmed out, and the title is
 displayed in a larger font, and a special font is also used for
 author, date, and email information.  This is implemented by the
 following new faces:
-    
+
 org-document-title
 org-document-info
 org-document-info-keyword
-    
+
 In addition, the variable =org-hidden-keywords= can be used to
 make the corresponding keywords disappear.
 
 Thanks to Dan Davison for this feature.
 
 *** Simpler way to specify faces for tags and todo keywords
-    
+
 The variables =org-todo-keyword-faces=, =org-tag-faces=, and
 =org-priority-faces= now accept simple color names as
 specifications.  The colors will be used as either foreground or
@@ -1518,7 +1577,7 @@ This is really a great simplification for setting keyword faces.
 The change is based on an idea and patch by Ryan Thompson.
 
 *** <N> in tables now means fixed width, not maximum width
-    
+
 Requested by Michael Brand.
 
 *** Better level cycling function
@@ -1529,20 +1588,20 @@ version of this function, which does not depend upon when exactly
 this command is used.  Thanks to Ryan for this improvement.
 
 *** Adaptive filling
-    
+
 For paragraph text, =org-adaptive-fill-function= did not handle the
 base case of regular text which needed to be filled.  This is now
 fixed.  Among other things, it allows email-style ">" comments
 to be filled correctly.
 
-Thanks to Dan Hackney for this patch.    
+Thanks to Dan Hackney for this patch.
 
 *** `org-reveal' (=C-c C-r=) also decrypts encrypted entries (org-crypt.el)
-    
+
 Thanks to Richard Riley for triggering this change.
 
 *** Better automatic letter selection for TODO keywords
-    
+
 When all first letters of keywords have been used, Org now assigns
 more meaningful characters based on the keywords.
 
@@ -1557,7 +1616,7 @@ they need to be in LaTeX math mode and are formatted accordingly.
 
 Thanks to Ulf Stegemann for the tedious work to make this
 possible.
-    
+
 *** LaTeX export: Set coding system automatically
 
 The coding system of the LaTeX class will now be set to the value
@@ -1589,12 +1648,12 @@ implemented in the LaTeX, Docbook, and HTML interfaces.
 =\ref{xxx}= is expanded to a valid link in all backends.
 
 *** BEAMER export: Title of the outline frame is now customizable
-    
-The new option =org-outline-frame-title= allows to set the 
+
+The new option =org-outline-frame-title= allows to set the
 title for outline frames in Beamer presentations.
 
 Patch by Łukasz Stelmach.
-    
+
 *** BEAMER export: fragile frames are better recognized
 
 A =lstlisting= environment now also triggers the fragile option in
@@ -1610,12 +1669,12 @@ brackets.  These are now protected just like normal arguments.
 Requested by Bill Jackson.
 
 *** HTML export: Add class to outline containers using property
-    
+
 The =HTML_CONTAINER_CLASS= property can now be used to add a
 class name to the outline container of a node in HTML export.
 
 *** New option =org-export-email-info= to turn off export of the email address
-    
+
 Default is actually off now.
 
 *** Throw an error when creating an image from a LaTeX snippet fails
@@ -1624,7 +1683,7 @@ This behavior can be configured with the new option variable
 =org-format-latex-signal-error=.
 
 ** Index generation
-    
+
 Org-mode can now produce a 2-level subject index spanning an
 entire publishing project.  Write index entries in your files as
 
@@ -1696,7 +1755,7 @@ acceptable.
 ** Agenda
 
 *** Specify entry types as an option
-    
+
 Custom Agenda commands can now limit the sets of entry types
 considered for this command by binding =org-agenda-entry-types=
 temporarily in the options section of the command.  This can lead
@@ -1708,7 +1767,7 @@ For more information see the new section in
 Thanks to Matt Lundin for this feature.
 
 *** Speed up multiple calls to org-diary by only doing buffer prep once
-    
+
 Also a patch by Matt Lundin.
 
 *** Show and hide deadlines in the agenda
@@ -1724,7 +1783,7 @@ The the docstring of the variable
 =org-agenda-skip-deadline-prewarning-if-scheduled=.
 
 *** Expand file names in org-agenda-files (external file case)
-    
+
 If you are using a file to manage the list of agenda files, the
 names in this file can now contain environment variables and "~"
 to write them more compactly and portable.
@@ -1772,14 +1831,14 @@ Thanks to Łukasz Stelmach for patches to this effect.
 ** Hyperlinks
 
 *** Make =org-store-link= point to directory in a dired buffer
-    
+
 When, in a dired buffer, the cursor is not in a line listing a
 file, `org-store-link' will store a link to the directory.
 
 Patch by Stephen Eglen.
 
 *** Allow regexps in =org-file-apps= to capture link parameters
-    
+
 The way extension regexps in =org-file-apps= are handled has
 changed.  Instead of matching against the file name, the regexps
 are now matched against the whole link, and you can use grouping
@@ -1811,7 +1870,7 @@ Thanks to Richard Riley for a patch to this effect.
 ** Tables
 
 *** Repair the broken support for table.el tables again.
-    
+
 Tables created with the table.el package now finally work again
 in Org-mode.  While you cannot edit the table directly in the
 buffer, you can use  =C-c '= to edit it nicely in a temporary
@@ -1834,7 +1893,7 @@ tables to be broken.
 Whenever you refile an item, a time stamp and even a note can be
 added to this entry.  For details, see the new option
 =org-log-refile=.
-    
+
 Thanks to Charles Cave for this idea.
 
 *** New helper functions in org-table.el
@@ -1850,7 +1909,7 @@ org-table-goto-line
 #+end_example
 
 *** Tables: Field coordinates for formulas, and improved docs
-    
+
 Calc and Emacs-Lisp formulas for tables can access the current
 field coordinates with =@#= and =$#= for row and column,
 respectively.  These can be useful in some formulas.  For
@@ -1863,15 +1922,15 @@ the manual for details.
 Thanks to Michael Brand for this feature.
 
 *** Archiving: Allow to reverse order in target node
-    
+
 The new option =org-archive-reversed-order= allows to have
 archived entries inserted in a last-on-top fashion in the target
 node.
-    
+
 Requested by Tom.
 
 *** Better documentation on calc accuracy in tables
-    
+
 Thanks to Michael Brand for this fix.
 
 *** Clock reports can now include the running, incomplete clock
@@ -1881,7 +1940,7 @@ into the scope when creating a clock table, the time so far spent
 can be added to the total.  This behavior depends on the setting
 of =org-clock-report-include-clocking-task=.  The default is
 =nil=.
-    
+
 Thanks to Bernt Hansen for this useful addition.
 
 *** American-style dates are now understood by =org-read-date=
@@ -1891,7 +1950,7 @@ So when you are prompted for a date, you can now answer like this
 #+begin_example
 2/5/3         --> 2003-02-05
 2/5           --> <CURRENT-YEAR>-02-05
-#+end_example    
+#+end_example
 
 *** org-timer.el now allows just one timer
 
@@ -1900,14 +1959,14 @@ Thanks to Bastien for cleaning this up, after a bug report in
 this area by Frédéric Couchet.
 
 *** Remember: Allow to file as sibling of current clock
-    
+
 =C-3 C-c C-c= will file the remember entry as a sibling of the
 last filed entry.
 
 Patch by Łukasz Stelmach.
 
 *** Org-reveal: Double prefix arg shows the entire subtree of the parent
-    
+
 This can help to get out of an inconsistent state produced for
 example by viewing from the agenda.
 
@@ -2019,9 +2078,9 @@ page 131 of the Org-mode manual:
 : [[docview:~/.elisp/org/doc/org.pdf::131][Org-Mode Manual]]
 
 Thanks to Jan Böcker for this contribution.
-    
+
 **** New link types that force special ways of opening the file
-    
+
 - =file+sys:/path/to/file=  will use the system to open the file,
   like double-clicking would.
 - file+emacs:/path/to/file will force opening the linked file
@@ -2059,7 +2118,7 @@ This was a request by Thierry Volpiatto.
 This was a request by Daniel Martins.
 
 **** Empty matcher means prompt in agenda custom commands
-    
+
 When an agenda custom command has an empty string as MATCH
 element, so far this would lead to a meaningless search using an
 empty matcher.  Now an empty (or white) string will be
@@ -2072,7 +2131,7 @@ If you use tags very extensively, you might want to exclude some
 from being displayed in the agenda, in order to keep the display
 compact.  See the new option =org-agenda-hide-tags-regexp= for
 details.
-    
+
 This was largely a patch by Martin Pohlack.
 
 *** Export
@@ -2106,7 +2165,7 @@ to a substantial reduction in export/publishing times.
 Thanks to Eric Schulte for a patch to this effect.
 
 **** Preserving line breaks for export no longer works
-    
+
 ASCII export always preserves them - no other export format
 does.  We had attempted to use =\obeylines= for this in LaTeX,
 but that does create too many problems.
@@ -2144,7 +2203,7 @@ of =utf8=, see the variable =org-export-latex-inputenc-alist=.
 This was a request by Francesco Pizzolante.
 
 *** Property API enhancements
-    
+
 **** Make a new special property BLOCKED, indicating if entry is blocked
 
 A new special property BLOCKED returns "t" when the entry is
@@ -2201,7 +2260,7 @@ regexp is adopted from [[http://daringfireball.net/2009/11/liberal_regex_for_mat
 Thanks to William Henney for the pointer.
 
 **** Implement tag completion of all tags in all agenda files
-    
+
 The new option =org-complete-tags-always-offer-all-agenda-tags=
 makes Org complete all tags from all agenda files if non-nil.
 Usually, setting it locally to t in org-remember buffers is the
@@ -2217,14 +2276,14 @@ Thanks to Tassilo Horn for a patch to this effect.
 ** Incompatible changes
 
 *** Reorganize key bindings for archiving
-    
+
 The following keys now do archiving
 
 - C-c C-x C-a :: archive using the command specified in
      =org-archive-default-command=.  This variable is by default
      set to =org-archive-subtree=, which means arching to the
      archive file.
-    
+
 The three specific archiving commands are available through
 
 - C-c C-x C-s ::    archive to archive file
@@ -2234,11 +2293,11 @@ The three specific archiving commands are available through
 These bindings work the same in an Org file, and in the agenda.
 
 In addition:
-    
+
 - In the agenda you can also use =a= to call the default archiving
   command, but you need to confirm the command with =y= so that this
   cannot easily happen by accident.
-  
+
 - For backward compatibility, =C-c $= in an org-mode file, and
   =$= in the agenda buffer continue to archive to archive file.
 
@@ -2340,23 +2399,23 @@ i.e. if the variable `org-export-with-drawers' is t or a list
 containing the drawers to export.
 
 *** Min/Max/Mean age operators in Column View.
-    
+
 This lets you see how much time has passed since the specified
 timestamp property each entry. The three operators (=@min=,
 =@max=, =@mean=) show either the age of the youngest or oldest
 entry or the average age of the children.
 
 Thanks to James TD Smith for a patch to this effect.
-    
+
 *** Allow source code block indentation to be preserved
-    
+
 If =org-src-preserve-indentation= is non-nil, or if a block has a
 =-i= switch, then the behavior of org-exp-blocks is altered as
 follows:
 
 1. Indentation is not removed before passing the block contents
    to the block-transforming plugin.
-   
+
 2. The result returned by the plugin is not re-indented.
 
 3. Editing the source code block with =C-c '= preserves it's
@@ -2365,7 +2424,7 @@ follows:
 Thanks to Dan Davison for this feature.
 
 *** Frame/window control when switching to source code edit buffer.
-    
+
 When switching to a source code editing buffer with =C-c '=, you
 can now control the frame / window setup using the new variable
 =org-src-window-setup=.
@@ -2388,7 +2447,7 @@ attachment directory instead.
 This was a request/patch by John Wiegley.
 
 *** org-mac-iCal.el: work with calendar "groups"
-    
+
 Some calendar systems (Google, Zimbra) handle subscriptions to
 multiple calendars (or to an account) by grouping them under a
 single caldav directory in the calendar tree.  org-mac-iCal used
@@ -2448,7 +2507,7 @@ MobileOrg is currently under review at the iPhone App Store.  You
 will need Org-mode version 6.32 to interact with it.
 
 ** Added support for habit consistency tracking
-    
+
 /org-habit.el/ contains new code to track habits.  Please
 configure the variable org-modules to activate it.  When active,
 habits (a special TODO entry) will be displayed in the agenda
@@ -2456,12 +2515,12 @@ together with a "consistency graph".  Habit tracking is described
 in a new [[http://orgmode.org/manual/Tracking-your-habits.html][manual section]].
 
 Thanks to John Wiegley for this contribution.
-    
-** New context-aware tag auto-exclusion 
+
+** New context-aware tag auto-exclusion
 
 After writing a function relating to location and context
 information, you will be able to press =/ RET= in the agenda to
-exclude tasks that cannot be done in the current context. 
+exclude tasks that cannot be done in the current context.
 For details, see the information about filtering in the manual.
 
 Thanks to John Wiegley for a patch to this effect.
@@ -2473,20 +2532,20 @@ checks for orphaned CLOCK lines and offers to repair these before
 starting the clock.  You can also configure this feature to check
 for idle time and prompt you to subtract that time from the
 running timer.
-    
+
 See the new [[http://orgmode.org/manual/Resolving-idle-time.html][manual section]] for more details.
-    
+
 Thanks to John Wiegley for a patch to this effect.
 
 ** Mutually exclusive tag groups can now have a name in the tags interface
 
 The customize interface allows to optionally add a string to the
 beginning or end of such a group.
-    
+
 Thanks to James TD Smith for a patch to this effect.
 
 ** Agenda Search view: Search for substrings
-    
+
 The default in search view (/C-c a s/)is now that the search
 expression is searched for as a /substring/, i.e. the different
 words must occur in direct sequence, and it may be only part of
@@ -2502,13 +2561,13 @@ another window will make the entire subtree visible, and show
 scroll it.  Backspace and DEL will scroll back.
 
 This was a request by Eric Fraga.
-    
+
 ** File tags are now offered for completion during a tag prompts
 
 Requested by Matt Lundin.
 
 ** Make `- SPC' an agenda filter that selects entries without any tags
-    
+
 Request by John Wiegley.
 
 ** Better way to edit multi-line macro definitions
@@ -2526,12 +2585,12 @@ which contains both the markup rules (moved there from the Export
 chapter) and the documentation for embedded LaTeX.
 
 ** Improved figure placement in LaTeX and HTML export
-    
+
 Text can now be wrapped around figures.  See the manual for
 details.
 
 ** Allow date to be shifted into the future if time given is earlier than now
-    
+
 By setting
 
 :     (setq org-read-date-prefer-future 'time)
@@ -2639,7 +2698,7 @@ structure, you can now have indented comment lines that start
 with "#+ ".
 
 ** New STARTUP keyword `showeverything'
-    
+
 This will make even drawer contents visible upon startup.
 Requested by Jeff Kowalczyk.
 
@@ -2657,7 +2716,7 @@ of individual subtrees in Org-mode outlines.  Thanks to John and
 Peter for this contribution.
 
 ** Agenda: Support for including a link in the category string
-    
+
 The category (as specified by an #+CATEGORY line or CATEGORY
 property can contain a bracket link.  While this sort-of worked
 in the past, it now is officially supported and should cause no
@@ -2680,7 +2739,7 @@ Up to now, the Org-mode agenda used the cursor keys =left= and
 time.  However, many people found this confusing, and others
 wanted to be able to do cursor motion in the agenda, for example
 to select text.  Therefore, after an extensive discussion on
-=emacs-orgmode@gnu.org=, it was decided to use the =b= and 
+=emacs-orgmode@gnu.org=, it was decided to use the =b= and
 =f= keys instead, and to let the cursor keys do cursor motion
 again.
 
@@ -2725,7 +2784,7 @@ Up to now, the Org-mode agenda used the cursor keys =left= and
 time.  However, many people found this confusing, and others
 wanted to be able to do cursor motion in the agenda, for example
 to select text.  Therefore, after an extensive discussion on
-=emacs-orgmode@gnu.org=, it was decided to use the =b= and 
+=emacs-orgmode@gnu.org=, it was decided to use the =b= and
 =f= keys instead, and to let the cursor keys do cursor motion
 again.
 
@@ -2754,7 +2813,7 @@ customized with the variable =org-agenda-entry-text-maxlines=.
 This was a request by Anthony Fairchild, Manish, and others.
 
 **** Improve following links from the agenda
-    
+
 =C-c C-o= in the agenda will now offer all links in the headline
 and text of an entry.  If there is only a single link, it will be
 followed immediately.
@@ -2767,7 +2826,7 @@ If that is set, it avoids that an entry shows up in the agenda for
 today for both a scheduling and a deadline entry.  See the
 docstring of the variables for more details.
 
-This partially addresses a request by Samuel Wales. 
+This partially addresses a request by Samuel Wales.
 
 **** Mark the running clock in the agenda.
 
@@ -2790,7 +2849,7 @@ http://orgmode.org/worg/org-faq.php#fontified_source_code_w_latex
 Thanks to Eric Schulte for this patch.
 
 **** Remove table rows that only contain width and alignment markers
-    
+
 The width and alignment in table columns can be set with a cookie
 like "<10>" or "<r>" or "<r10>".  In order to keep Org from
 exporting such lines, the first column of a line should contain
@@ -2818,7 +2877,7 @@ in a small menu.  If there is only a single link, it will be
 followed without a prompt.
 
 **** Visibility Cycling: Allow to show all empty lines after a headline
-    
+
 =org-cycle-separator-lines= can now be set to a negative value,
 to indicate that, if the number of empty lines before a visible
 entry is greater than the specified number, then *all* empty
@@ -2831,13 +2890,13 @@ This was a request by "PT" whatever this means.
 Sometimes a language uses a major mode which can't be guessed
 from it's name.  There is now a new variable =org-src-lang-modes=
 which can be used to map language names to major modes when this
-is the case.  This is used when editing a source-code 
+is the case.  This is used when editing a source-code
 block, or when exporting fontified source-code with htmlize.
 
 Thanks to Eric Schulte for a patch to this effect.
 
 **** iswitchb support for many completion prompts
-    
+
 This is enabled using =org-completion-use-iswitchb=, and follows
 the same model of usage as for ido users.
 
