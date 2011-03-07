@@ -6,7 +6,7 @@
 
 #+STARTUP: indent hidestars
 
-* Version 7.5 (upcoming release)
+* Version 7.5
 
 ** Incompatible changes
 
