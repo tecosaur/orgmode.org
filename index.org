@@ -124,6 +124,7 @@ look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org
 #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
+- <2011-03-07 lun.> Release 7.5.
 - <2010-12-17 Fri> The Org manual is now available as [[http://www.network-theory.co.uk/org/manual/][book published
   by Network Theory Ltd]], at a retail price of $14.95.  For each book
   sold, $1 is donated to the Org project.
@@ -136,10 +137,10 @@ look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org
 - <2010-06-06 Sun>: iPhone App [[http://mobileorg.ncogni.to/][MobileOrg]] version 1.5 introduces
   encryption.
 
-* Current Version (7.4)
+* Current Version (7.5)
 
-The current version is 7.4.  To see what has changed in recent releases,
-check this detailed list of [[file:Changes.html][user-visible changes]].
+The current version is 7.5.  To see what has changed in recent releases,
+check this detailed list of [[file:Changes.html][changes]].
 
 This package works on GNU Emacs 23 and 22, and (with minor restrictions) on
 XEmacs 21.  Emacs 22.2 ships with Org-mode version 4.67d, Emacs 23.1 with
@@ -187,7 +188,7 @@ download a [[http://orgmode.org/w/org-mode.git/snapshot][tar.gz snapshot]] from 
 
    - Links below point to the /development version/ of the manual.  If
      you want to read the latest released manuals (currently for Org
-     7.4), please browse [[http://orgmode.org/manual/release_7.4/][this directory]].
+     7.5), please browse [[http://orgmode.org/manual/release_7.4/][this directory]].
    - Read the [[file:guide/index.html][online compact guide]] or download it as a [[file:orgguide.pdf][PDF document]].
      The compact guide is a 40-page introduction to Org mode.  It
      covers all features in a basic way and has links to in-depth
