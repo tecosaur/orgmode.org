@@ -7807,7 +7807,7 @@ list of small improvements and some new significant features.
    - The handling of `mailto:' links can be customized, see the new
      variable `org-link-mailto-program'.
    - `mailto' links can specify a subject after a double colon,
-     like [[mailto:carsten@orgmode.org::Org-mode is buggy]].
+     like [[mailto:dominik@science.uva.nl::Org-mode%20is%20buggy][mailto:dominik@xxx.uva.nl::Org-mode is buggy]].
    - In the #+STARTUP line, M-TAB completes valid keywords.
    - In the #+TAGS: line, M-TAB after ":" inserts all currently used tags.
    - Again full Emacs 21 support:  Checkboxes and publishing are fixed.
