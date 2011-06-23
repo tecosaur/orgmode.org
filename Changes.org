@@ -6,6 +6,13 @@
 
 #+STARTUP: indent hidestars
 
+* Version 7.6
+
+** Incompatible changes
+** New features and user-visible improvements
+** Important bugfixes
+** Details
+
 * Version 7.5
 
 ** Incompatible changes
