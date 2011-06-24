@@ -10,7 +10,78 @@
 
 ** Incompatible changes
 ** New features and user-visible improvements
+
+*** Org-Bibtex
+
+Provides support for managing bibtex bibliographical references
+data in headline properties.  Each headline corresponds to a
+single reference and the relevant bibliographic meta-data is
+stored in headline properties, leaving the body of the headline
+free to hold notes and comments.  Org-bibtex is aware of all
+standard bibtex reference types and fields.
+
+The key new functions are
+
+- org-bibtex-check :: queries the user to flesh out all required
+     (and with prefix argument optional) bibtex fields available
+     for the specific reference =type= of the current headline.
+
+- org-bibtex-create :: Create a new entry at the given level,
+     using org-bibtex-check to flesh out the relevant fields.
+
+- org-bibtex-yank :: Yank a bibtex entry on the kill ring as a
+     formatted Org-mode headline into the current buffer
+
+- org-bibtex-export-to-kill-ring :: Export the current headline
+     to the kill ring as a formatted bibtex entry.
+
+*** =org-babel-tangle-body-hook= for reprocessing code block bodies during tangling
+*** =padline= header argument controls newline padding during tangling
+*** Maxima code blocks are now supported
+
+Thanks to Eric Fraga for contributing this support.
+
+*** =awk= code blocks are now supported
+*** Added =xmpfilter= to Ruby code blocks for annotated code output
+*** New =noweb-ref= header argument
+
+This header argument may be used to concatenate the bodies of
+many code blocks into a single noweb reference.  This brings
+Org-mode's tangling functionality in line with traditional noweb
+tangling.
+
+A no web reference like the following
+
+#+begin_src org
+  ,#+begin_src sh
+  ,  <<the-ref>>
+  ,#+end_src
+#+end_src
+
+will now expand to include the bodies of all code blocks which
+are named =the-ref=, as well as all code blocks which have a
+=:noweb-ref= header argument set to the value =the-ref=.
+
 ** Important bugfixes
+
+*** Org-exp-blocks --- proper handling of recursively nested blocks
+
+During export pre-processing org-exp-blocks will now ensure that
+all matched blocks contain a proper balanced number of
+recursively nested blocks.
+
+Before this fix nested blocks such as the following would break
+during export.
+
+#+begin_src org
+  ,#+begin_src org
+  ,  ,#+begin_example
+  ,  ,  nested example
+  ,  ,#+end_example
+  ,#+end_src
+#+end_src
+
+
 ** Details
 
 * Version 7.5
