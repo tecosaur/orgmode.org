@@ -117,7 +117,7 @@ insert a new item.
 *** Many small bug fixes have been applied to list handling
   
 - fix `org-timer-item',
-- fix insertion of a new item with a non-nil `org-indent-mode',
+- fix insertion of a new item with a non-nil `indent-tabs-mode',
 - fix use of `fill-region' in an item,
 - correct export lists within footnotes and footnotes within lists,
 - correctly export lists containing macros,
