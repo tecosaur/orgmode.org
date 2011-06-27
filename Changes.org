@@ -35,6 +35,29 @@ The key new functions are
 - org-bibtex-export-to-kill-ring :: Export the current headline
      to the kill ring as a formatted bibtex entry.
 
+*** In line code block call syntax
+It is now possible to call code blocks from within blocks of
+prose.
+
+The new syntax is exactly analogous to the existing =#+call:=
+line syntax, only it may be present embedded in a block of prose
+for example =call_double(num=8)= would call the =double= code
+block assigning the =num= variable to the value =8=.
+
+*** Optionally variable names in code block calls
+Variable names are now optional when passing variables to a code
+block reference.  Un-named variables will be assigned in order as
+shown below.
+
+: #+source: minus
+: #+begin_src emacs-lisp :var a=0 :var b=0
+:   (- a b)
+: #+end_src
+: 
+: #+call: minus(a=8, b=4)
+: 
+: #+call: minus(8,4)
+
 *** =org-babel-tangle-body-hook= for reprocessing code block bodies during tangling
 *** =padline= header argument controls newline padding during tangling
 *** Maxima code blocks are now supported
@@ -80,7 +103,6 @@ during export.
   ,  ,#+end_example
   ,#+end_src
 #+end_src
-
 
 ** Details
 
@@ -670,12 +692,6 @@ code files tangled from embedded code blocks in Org-mode files back to
 the original code blocks in the Org-mode file.  This can be used on
 collaborative projects to keep embedded code blocks up to date with
 edits made in pure source code files.
-
-
-
-
-
-
 
 * Version 7.02
 
