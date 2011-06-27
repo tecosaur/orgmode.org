@@ -104,7 +104,27 @@ during export.
   ,#+end_src
 #+end_src
 
+*** List handling
+
+Fix an infinite loop when a list has an end of block string
+without the corresponding beginning.
+
+Auto-filling cannot happen at a location where it would otherwise
+insert a new item.
+
 ** Details
+
+*** Many small bug fixes have been applied to list handling
+  
+- fix `org-timer-item',
+- fix insertion of a new item with a non-nil `org-indent-mode',
+- fix use of `fill-region' in an item,
+- correct export lists within footnotes and footnotes within lists,
+- correctly export lists containing macros,
+- don't ignore with-case specification when sorting a list,
+- better indentation handling when changing an item to an headline
+  or the other way,
+- fix check-boxes' cookies updating.
 
 * Version 7.5
 
