@@ -11,6 +11,16 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
+***  It is now possible to have links within inlined footnotes.
+
+It as also possible to have footnotes side-by-side correctly
+exported. New variables `org-export-latex-footnote-separator',
+`org-export-html-footnote-separator' and
+`org-export-docbook-footnote-separator' are used to separate them
+in that case.
+
+Fontification of footnotes is also more accurate.
+
 *** Org-Bibtex
 
 Provides support for managing bibtex bibliographical references
@@ -53,9 +63,9 @@ shown below.
 : #+begin_src emacs-lisp :var a=0 :var b=0
 :   (- a b)
 : #+end_src
-: 
+:
 : #+call: minus(a=8, b=4)
-: 
+:
 : #+call: minus(8,4)
 
 *** =org-babel-tangle-body-hook= for reprocessing code block bodies during tangling
@@ -114,8 +124,17 @@ insert a new item.
 
 ** Details
 
+*** Footnotes have gone through some bug-fixing:
+
+- properly ignore footnotes in comments,
+- export calls to previously defined footnotes in LaTeX using
+  \footnotemark,
+- export footnotes before first heading (LaTeX),
+- export footnotes when selecting a subtree not holding their
+  definition (LaTeX).
+
 *** Many small bug fixes have been applied to list handling
-  
+
 - fix `org-timer-item',
 - fix insertion of a new item with a non-nil `indent-tabs-mode',
 - fix use of `fill-region' in an item,
