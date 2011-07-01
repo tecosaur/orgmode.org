@@ -95,6 +95,12 @@ will now expand to include the bodies of all code blocks which
 are named =the-ref=, as well as all code blocks which have a
 =:noweb-ref= header argument set to the value =the-ref=.
 
+*** New =org-export-latex-timestamp-inactive-markup= variable
+
+This variable allows the user to define the LaTeX markup for
+inactive timestamps.  It defaults to the same markup than active
+timestamps.  Thanks to Eric S Fraga for this patch.
+
 ** Important bugfixes
 
 *** Org-exp-blocks --- proper handling of recursively nested blocks
