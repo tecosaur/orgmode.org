@@ -11,16 +11,6 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
-***  It is now possible to have links within inlined footnotes.
-
-It as also possible to have footnotes side-by-side correctly
-exported. New variables `org-export-latex-footnote-separator',
-`org-export-html-footnote-separator' and
-`org-export-docbook-footnote-separator' are used to separate them
-in that case.
-
-Fontification of footnotes is also more accurate.
-
 *** Org-Bibtex
 
 Provides support for managing bibtex bibliographical references
@@ -44,6 +34,51 @@ The key new functions are
 
 - org-bibtex-export-to-kill-ring :: Export the current headline
      to the kill ring as a formatted bibtex entry.
+
+*** Links within inlined footnotes.
+
+It as also possible to have footnotes side-by-side correctly
+exported. New variables `org-export-latex-footnote-separator',
+`org-export-html-footnote-separator' and
+`org-export-docbook-footnote-separator' are used to separate them
+in that case.
+
+Fontification of footnotes is also more accurate.
+
+*** Spreadsheet computation of durations and time values
+
+If you want to compute time values use the =T= flag, either in
+Calc formulas or Elisp formulas:
+
+| Task 1 | Task 2 |   Total |
+|--------+--------+---------|
+|  35:00 |  35:00 | 1:10:00 |
+#+TBLFM: @2$3=$1+$2;T
+
+Values must be of the form =[HH:]MM:SS=, where hours are
+optional.
+
+Thanks to Eric Schulte and Carsten for code and feedback on this.
+
+*** New variable =org-export-with-tasks=
+
+Non-nil means include TODO items for export.
+
+This may have the following values:
+
+- t                    include tasks independent of state.
+- todo                 include only tasks that are not yet done.
+- done                 include only tasks that are already done.
+- nil                  remove all tasks before export
+- list of TODO kwds    keep only tasks with these keywords
+
+Thanks to Carsten for implementing this!
+
+*** New variable =org-export-latex-timestamp-inactive-markup=
+
+This variable allows the user to define the LaTeX markup for
+inactive timestamps.  It defaults to the same markup than active
+timestamps.  Thanks to Eric S Fraga for this patch.
 
 *** In line code block call syntax
 It is now possible to call code blocks from within blocks of
@@ -94,12 +129,6 @@ A no web reference like the following
 will now expand to include the bodies of all code blocks which
 are named =the-ref=, as well as all code blocks which have a
 =:noweb-ref= header argument set to the value =the-ref=.
-
-*** New =org-export-latex-timestamp-inactive-markup= variable
-
-This variable allows the user to define the LaTeX markup for
-inactive timestamps.  It defaults to the same markup than active
-timestamps.  Thanks to Eric S Fraga for this patch.
 
 ** Important bugfixes
 
