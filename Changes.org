@@ -11,7 +11,16 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
-*** Org-Bibtex
+*** Ob-Lilypond -- new Babel language to allow score generation
+
+ob-lilypond - an org-babel language, provided to allow LilyPond
+music score generation, complete with optional auditioning via
+midi, whilst leveraging the full power of org mode, and literate
+programming.
+
+Thanks to Martyn Jago for this addition.
+
+*** Org-Bibtex -- major improvements
 
 Provides support for managing bibtex bibliographical references
 data in headline properties.  Each headline corresponds to a
@@ -38,9 +47,9 @@ The key new functions are
 *** Links within inlined footnotes.
 
 It as also possible to have footnotes side-by-side correctly
-exported. New variables `org-export-latex-footnote-separator',
-`org-export-html-footnote-separator' and
-`org-export-docbook-footnote-separator' are used to separate them
+exported. New variables =org-export-latex-footnote-separator=,
+=org-export-html-footnote-separator= and
+=org-export-docbook-footnote-separator= are used to separate them
 in that case.
 
 Fontification of footnotes is also more accurate.
@@ -58,7 +67,8 @@ Calc formulas or Elisp formulas:
 Values must be of the form =[HH:]MM:SS=, where hours are
 optional.
 
-Thanks to Eric Schulte and Carsten for code and feedback on this.
+Thanks to Martin Halder, Eric Schulte and Carsten for code and
+feedback on this.
 
 *** New variable =org-export-with-tasks=
 
