@@ -16,7 +16,8 @@
 ob-lilypond - an org-babel language, provided to allow LilyPond
 music score generation, complete with optional auditioning via
 midi, whilst leveraging the full power of org mode, and literate
-programming.
+programming.  See https://github.com/mjago/ob-lilypond for more
+documentation.
 
 Thanks to Martyn Jago for this addition.
 
