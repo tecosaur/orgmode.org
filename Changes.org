@@ -28,9 +28,9 @@ this module can be enabled in one of the following ways:
    OpenDocumentText exporter using the package manager.  Check
    the list of available packages with =M-x list-packages= and
    install the =org-odt= package.
-   
+
 Thanks a lot to Jambunathan K for this great contribution.
-    
+
 **** Keybindings
 
 The following interactive commands are provided:
@@ -133,7 +133,7 @@ line syntax, only it may be present embedded in a block of prose
 for example =call_double(num=8)= would call the =double= code
 block assigning the =num= variable to the value =8=.
 
-*** Optionally variable names in code block calls
+*** Optional variable names in code block calls
 Variable names are now optional when passing variables to a code
 block reference.  Un-named variables will be assigned in order as
 shown below.
@@ -146,6 +146,33 @@ shown below.
 : #+call: minus(a=8, b=4)
 :
 : #+call: minus(8,4)
+
+*** Sub-tree ID as valid code block variable reference
+It is now possible to assign the textual contents of an Org-mode
+subtree to a code block variable using the ID of the subtree.
+Both custom IDs and Org-mode IDs may be used.  For example;
+
+#+begin_src org
+  ,#+begin_src sh :var text=foo
+  ,  echo "$text"|wc
+  ,#+end_src
+
+  ,#+results:
+  ,: 8      58     415
+
+  ,* example foo
+  ,  :PROPERTIES:
+  ,  :CUSTOM_ID: foo
+  ,  :END:
+
+  ,Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+  ,hendrerit tempor tellus. Donec pretium posuere tellus. Proin quam
+  ,nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis
+  ,natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+  ,mus. Nulla posuere. Donec vitae dolor. Nullam tristique diam non
+  ,turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum
+  ,accumsan nisl.
+#+end_src
 
 *** =org-babel-tangle-body-hook= for reprocessing code block bodies during tangling
 *** =padline= header argument controls newline padding during tangling
