@@ -11,6 +11,39 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
+*** Integration of Jambunathan's OpenDocumentText Exporter
+
+**** Activation
+
+Org-mode 7.6 supports exporting to OpenDocument Text (=odt=)
+format using org-odt.el.  Depending on how you installed Org,
+this module can be enabled in one of the following ways:
+
+1. If you have downloaded the Org from the Web, either as a
+   distribution =.zip= or =.tar.gz= file, or as a Git archive,
+   enable the =odt= option in the variable =org-modules=.
+
+2. If you are using Org-mode 7.6 that comes bundled with
+   Emacs-24.0.50 (or future Emacs-24.1), then you can install the
+   OpenDocumentText exporter using the package manager.  Check
+   the list of available packages with =M-x list-packages= and
+   install the =org-odt= package.
+   
+Thanks a lot to Jambunathan K for this great contribution.
+    
+**** Keybindings
+
+The following interactive commands are provided:
+
+1. =C-c C-e o= (=org-export-as-odt=): Export as an =odt= file.
+
+2. =C-c C-e O= (=org-export-as-odt-and-open=): Export as an =odt=
+   file and open the resulting file.
+
+See the =contrib/odt/README.org= file for further details; you
+may check in particular the commands =M-x org-lparse= and =M-x
+org-export-convert=.
+
 *** Ob-Lilypond -- new Babel language to allow score generation
 
 ob-lilypond - an org-babel language, provided to allow LilyPond
