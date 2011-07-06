@@ -78,16 +78,6 @@ The key new functions are
 - org-bibtex-export-to-kill-ring :: Export the current headline
      to the kill ring as a formatted bibtex entry.
 
-*** Links within inlined footnotes.
-
-It as also possible to have footnotes side-by-side correctly
-exported. New variables =org-export-latex-footnote-separator=,
-=org-export-html-footnote-separator= and
-=org-export-docbook-footnote-separator= are used to separate them
-in that case.
-
-Fontification of footnotes is also more accurate.
-
 *** Spreadsheet computation of durations and time values
 
 If you want to compute time values use the =T= flag, either in
@@ -103,6 +93,16 @@ optional.
 
 Thanks to Martin Halder, Eric Schulte and Carsten for code and
 feedback on this.
+
+*** Links within inlined footnotes.
+
+It as also possible to have footnotes side-by-side correctly
+exported. New variables =org-export-latex-footnote-separator=,
+=org-export-html-footnote-separator= and
+=org-export-docbook-footnote-separator= are used to separate them
+in that case.
+
+Fontification of footnotes is also more accurate.
 
 *** New variable =org-export-with-tasks=
 
@@ -124,7 +124,13 @@ This variable allows the user to define the LaTeX markup for
 inactive timestamps.  It defaults to the same markup than active
 timestamps.  Thanks to Eric S Fraga for this patch.
 
-*** In line code block call syntax
+*** New =org-default= face
+
+=M-x customize-face RET org-default RET= will let you define the
+default face for =org-mode= buffers.
+
+*** Babel improvements
+**** In line code block call syntax
 It is now possible to call code blocks from within blocks of
 prose.
 
@@ -133,7 +139,7 @@ line syntax, only it may be present embedded in a block of prose
 for example =call_double(num=8)= would call the =double= code
 block assigning the =num= variable to the value =8=.
 
-*** Optional variable names in code block calls
+**** Optional variable names in code block calls
 Variable names are now optional when passing variables to a code
 block reference.  Un-named variables will be assigned in order as
 shown below.
@@ -147,7 +153,7 @@ shown below.
 :
 : #+call: minus(8,4)
 
-*** Sub-tree ID as valid code block variable reference
+**** Sub-tree ID as valid code block variable reference
 It is now possible to assign the textual contents of an Org-mode
 subtree to a code block variable using the ID of the subtree.
 Both custom IDs and Org-mode IDs may be used.  For example;
@@ -174,15 +180,15 @@ Both custom IDs and Org-mode IDs may be used.  For example;
   ,accumsan nisl.
 #+end_src
 
-*** =org-babel-tangle-body-hook= for reprocessing code block bodies during tangling
-*** =padline= header argument controls newline padding during tangling
-*** Maxima code blocks are now supported
+**** =org-babel-tangle-body-hook= for reprocessing code block bodies during tangling
+**** =padline= header argument controls newline padding during tangling
+**** Maxima code blocks are now supported
 
 Thanks to Eric Fraga for contributing this support.
 
-*** =awk= code blocks are now supported
-*** Added =xmpfilter= to Ruby code blocks for annotated code output
-*** New =noweb-ref= header argument
+**** =awk= code blocks are now supported
+**** Added =xmpfilter= to Ruby code blocks for annotated code output
+**** New =noweb-ref= header argument
 
 This header argument may be used to concatenate the bodies of
 many code blocks into a single noweb reference.  This brings
