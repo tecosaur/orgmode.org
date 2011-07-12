@@ -11,6 +11,25 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
+*** Lists: new variable =org-list-use-circular-motion=
+
+This variable allows some commands to consider lists as cyclic
+structures.  For example, when non-nil, moving past the last item
+of a list with S-down will bring you back to the first one.
+
+*** New variable =org-list-indent-offset=
+
+This variable helps improving readability of sub-items by
+increasing their indentation.  E.g., if =org-list-indent-offset=
+is set to 2, you may see the following list:
+
+#+begin_example
+- First item
+	  - Sub-item 1
+	  - Sub-item 2
+- Second item
+#+end_example
+
 *** Allow synchronous update of timestamps in CLOCK log
 
 Using =S-M-<up/down>= on CLOCK log timestamps will
