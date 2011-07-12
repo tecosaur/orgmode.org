@@ -6,6 +6,94 @@
 
 #+STARTUP: indent hidestars
 
+* Current HEAD of the git repository
+
+** Incompatible changes
+** New features and user-visible improvements
+
+*** Allow synchronous update of timestamps in CLOCK log
+
+Using =S-M-<up/down>= on CLOCK log timestamps will
+increase/decrease the two timestamps on this line so that
+duration will keep the same.  Note that duration can still be
+slightly modified in case a timestamp needs some rounding.
+
+Thanks to Rainer Stengele for this idea.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Ddb731a971546aef8a1003df8f73462fc6dfd6a5a][(git commit)]]
+
+*** =org-set-property= defaults to the last interactively modified property
+
+When setting a property with =C-c C-x p=, it will offered the
+last interactively modified property as a default choice.  If
+this command is called on a property line, the property in this
+line will take precedence over the last set property.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D9a2bf023467ad97fd171422c06541651c24b6014][(git commit)]]
+
+*** New variable =org-agenda-bulk-custom-functions= for custom bulk functions
+
+When using =org-agenda-bulk-action= in agenda view, the user
+could already call custom functions by pressing =f= and entering
+the function's name.  
+
+This variable lets the user add custom choices and reach them
+more quickly.  Set the variable to an alist of keys (chars) and
+functions, and these keys will be accessible through the
+=org-agenda-bulk-action= interface.
+
+If there is a conflict between custom keys and hardcoded choices,
+the latter ones take precedence.
+
+Thanks to Julien Cubizolles for triggering this idea.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D1029a9251741c2cdf10281866a2fbbdaf2e1cb25][(git commit)]]
+
+*** New function =org-clock-remove-empty-clock-drawer=
+
+This function removes empty =CLOCK= drawers and has been added to
+=org-clock-out-hook=: when clocking out, if no CLOCK log has been
+inserted and the drawer is empty, the drawer will be removed.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D65b64bea53e73ea73a4b791a1057b074db144b23][(git commit)]]
+
+*** New variable =org-export-latex-quotes= to customize quotes in LaTeX export
+
+This allows users to define what quotes they want to use as a
+replacement of english double-quotes while exporting to LaTeX.
+
+In particular, if you use the csquote package, you can configure
+Org to output something like \endquote{some quoted text} instead
+of "some quoted text".
+
+Thanks to Frederik for bringing this issue up, and to Thomas S.
+Dye, Nick Dokos and Stefan Nobis for elaborating this solution.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D2b9afb9e63d2fd60a3bb09e33c9d4abb01586339][(git commit)]]
+
+*** New variable =org-export-html-before-content-div=
+
+HTML code in this variable will be inserted /before/ the content
+div.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dd20aa46a49370dd3eec583b26d6dd79bb4eb9ab2][(git commit)]]
+
+*** New variable =org-lparse-use-flashy-warning= defaulting to =nil=
+
+Flashy and verbose warnings while exporting to ODT have been
+disabled.  Set this to =t= if you want it back.
+
+*** Babel now supports [[http://fomus.sourceforge.net/][fomus]] language
+
+=ob-fomus.el= has been added to =contrib/langs/=.
+
+Thanks to Torsten Anders for contributing this functionality
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dbaa83dacc732c51e15a593b02218bc5f9ef7fb2e][git commit]]
+
+** Important bugfixes
+** Details
+
 * Version 7.6
 
 ** Incompatible changes
