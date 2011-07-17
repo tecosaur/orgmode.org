@@ -113,6 +113,13 @@ Thanks to Torsten Anders for contributing this functionality
 ** Important bugfixes
 ** Details
 
+*** New default value for =org-export-latex-image-default-option=
+
+This used to be =width=10em= and this is now width=.9\linewidth,
+which makes more sense.
+
+Thanks to Sebastien Vauban for this suggestion.
+
 * Version 7.6
 
 ** Incompatible changes
