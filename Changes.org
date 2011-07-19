@@ -11,6 +11,15 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
+
+*** New escape sequence =%F= for capture templates
+
+Using =%F= in capture templates will insert the full path of the
+file or the directory the capture mechanism was called from
+(whereas =%f= only insert the filename.)
+
+Thanks to Nicolas Goaziou for this change.
+
 *** Lists: new variable =org-list-use-circular-motion=
 
 This variable allows some commands to consider lists as cyclic
