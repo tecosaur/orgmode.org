@@ -11,6 +11,7 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
+
 *** Allow some commands to loop over siblings
 
 =org-loop-over-siblings-within-active-region-p= is a new variable
@@ -105,7 +106,34 @@ is set to 2, you may see the following list:
 - Second item
 #+end_example
 
-*** Babel: support for the =fortran= by Sergey Litvinov
+*** Babel: support for =java= code blocks
+
+Evaluation of blocks of Java code is now possible.  Currently
+only external evaluation of Java code is supported (i.e., no
+session evaluation) and only the =:results output= results are
+collected.  Code blocks are compiled to a Java class file which
+are then evaluated and the values printed to STDOUT are returned.
+
+Java code blocks required a =:classname= header argument which is
+used by the compiler to name =.java= and =.class= files.
+
+Example Java code block:
+#+begin_src org
+  ,#+begin_src java :classname myfirstjavaprog
+  ,  class myfirstjavaprog
+  ,  {  
+  ,      public static void main(String args[])
+  ,      {
+  ,          System.out.println("Hello World!");
+  ,      }
+  ,  }
+  ,#+end_src
+  
+  ,#+results:
+  ,: Hello World!
+#+end_src
+
+*** Babel: support for =fortran= code blocks by Sergey Litvinov
 
 The =contrib/babel/langs/= contains the new library
 =ob-fortran.el= by Sergey Litvinov.  
