@@ -73,7 +73,7 @@ Thanks to Nicolas Goaziou for this change.
 
 When using =org-agenda-bulk-action= in agenda view, the user
 could already call custom functions by pressing =f= and entering
-the function's name.  
+the function's name.
 
 This variable lets the user add custom choices and reach them
 more quickly.  Set the variable to an alist of keys (chars) and
@@ -121,14 +121,14 @@ Example Java code block:
 #+begin_src org
   ,#+begin_src java :classname myfirstjavaprog
   ,  class myfirstjavaprog
-  ,  {  
+  ,  {
   ,      public static void main(String args[])
   ,      {
   ,          System.out.println("Hello World!");
   ,      }
   ,  }
   ,#+end_src
-  
+
   ,#+results:
   ,: Hello World!
 #+end_src
@@ -136,7 +136,7 @@ Example Java code block:
 *** Babel: support for =fortran= code blocks by Sergey Litvinov
 
 The =contrib/babel/langs/= contains the new library
-=ob-fortran.el= by Sergey Litvinov.  
+=ob-fortran.el= by Sergey Litvinov.
 
 Thanks to him for this addition.
 
