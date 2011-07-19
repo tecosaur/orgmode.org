@@ -11,44 +11,24 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
+*** Allow some commands to loop over siblings
 
-*** New escape sequence =%F= for capture templates
+=org-loop-over-siblings-within-active-region-p= is a new variable
+that controls whether to use this new feature or not.  When set
+to =non-nil=, the user can perform actions on several headlines
+within the current active region.
 
-Using =%F= in capture templates will insert the full path of the
-file or the directory the capture mechanism was called from
-(whereas =%f= only insert the filename.)
+The list of commands is this:
 
-Thanks to Nicolas Goaziou for this change.
+- org-archive-subtree
+- org-archive-to-archive-sibling
+- org-toggle-archive-tag
+- org-archive-set-tag
+- org-deadline
+- org-schedule
 
-*** Lists: new variable =org-list-use-circular-motion=
-
-This variable allows some commands to consider lists as cyclic
-structures.  For example, when non-nil, moving past the last item
-of a list with S-down will bring you back to the first one.
-
-*** New variable =org-list-indent-offset=
-
-This variable helps improving readability of sub-items by
-increasing their indentation.  E.g., if =org-list-indent-offset=
-is set to 2, you may see the following list:
-
-#+begin_example
-- First item
-	  - Sub-item 1
-	  - Sub-item 2
-- Second item
-#+end_example
-
-*** Allow synchronous update of timestamps in CLOCK log
-
-Using =S-M-<up/down>= on CLOCK log timestamps will
-increase/decrease the two timestamps on this line so that
-duration will keep the same.  Note that duration can still be
-slightly modified in case a timestamp needs some rounding.
-
-Thanks to Rainer Stengele for this idea.
-
-[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Ddb731a971546aef8a1003df8f73462fc6dfd6a5a][(git commit)]]
+For example, typing =C-c C-s= an a region with several headlines
+will prompt for a =SCHEDULED= date for each entry successively.
 
 *** =org-set-property= defaults to the last interactively modified property
 
@@ -59,7 +39,36 @@ line will take precedence over the last set property.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D9a2bf023467ad97fd171422c06541651c24b6014][(git commit)]]
 
-*** New variable =org-agenda-bulk-custom-functions= for custom bulk functions
+*** Clock: Allow synchronous update of timestamps in CLOCK log
+
+Using =S-M-<up/down>= on CLOCK log timestamps will
+increase/decrease the two timestamps on this line so that
+duration will keep the same.  Note that duration can still be
+slightly modified in case a timestamp needs some rounding.
+
+Thanks to Rainer Stengele for this idea.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Ddb731a971546aef8a1003df8f73462fc6dfd6a5a][(git commit)]]
+
+*** Clock: New function =org-clock-remove-empty-clock-drawer=
+
+This function removes empty =CLOCK= drawers and has been added to
+=org-clock-out-hook=: when clocking out, if no CLOCK log has been
+inserted and the drawer is empty, the drawer will be removed.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D65b64bea53e73ea73a4b791a1057b074db144b23][(git commit)]]
+
+*** Capture: new escape sequence =%F= for templates
+
+Using =%F= in capture templates will insert the full path of the
+file or the directory the capture mechanism was called from
+(whereas =%f= only insert the filename.)
+
+Thanks to Nicolas Goaziou for this change.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D819fbec64160c3c33884b116734c01f56be7606b][(git commit)]]
+
+*** Agenda: new variable =org-agenda-bulk-custom-functions= for custom bulk functions
 
 When using =org-agenda-bulk-action= in agenda view, the user
 could already call custom functions by pressing =f= and entering
@@ -77,15 +86,52 @@ Thanks to Julien Cubizolles for triggering this idea.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D1029a9251741c2cdf10281866a2fbbdaf2e1cb25][(git commit)]]
 
-*** New function =org-clock-remove-empty-clock-drawer=
+*** Lists: new variable =org-list-use-circular-motion=
 
-This function removes empty =CLOCK= drawers and has been added to
-=org-clock-out-hook=: when clocking out, if no CLOCK log has been
-inserted and the drawer is empty, the drawer will be removed.
+This variable allows some commands to consider lists as cyclic
+structures.  For example, when non-nil, moving past the last item
+of a list with S-down will bring you back to the first one.
 
-[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D65b64bea53e73ea73a4b791a1057b074db144b23][(git commit)]]
+*** Lists: New variable =org-list-indent-offset=
 
-*** New variable =org-export-latex-quotes= to customize quotes in LaTeX export
+This variable helps improving readability of sub-items by
+increasing their indentation.  E.g., if =org-list-indent-offset=
+is set to 2, you may see the following list:
+
+#+begin_example
+- First item
+	  - Sub-item 1
+	  - Sub-item 2
+- Second item
+#+end_example
+
+*** Babel: support for the =fortran= by Sergey Litvinov
+
+The =contrib/babel/langs/= contains the new library
+=ob-fortran.el= by Sergey Litvinov.  
+
+Thanks to him for this addition.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D2249abb8ad4bb266c5eb808fce1f7e6be9173628][(git commit)]]
+
+*** Babel: support for the [[http://fomus.sourceforge.net/][fomus]] language by Torsten Anders
+
+=ob-fomus.el= has been added to =contrib/babel/langs/=.
+
+Thanks to Torsten Anders for contributing this functionality.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dbaa83dacc732c51e15a593b02218bc5f9ef7fb2e][(git commit)]]
+
+*** Export: new experimental exporter to MoinMoin by Puneeth Chaganti.
+
+The =EXPERIMENTAL/= directory contains a new file org-mm.el that
+allows you to export an Org file to a MoinMoin file.
+
+Thanks to Puneeth Chaganti for this addition.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Da90b876b936820f6a80cc2ffa807bc29a9de73eb][(git commit)]]
+
+*** Export: new variable =org-export-latex-quotes= to customize quotes in LaTeX export
 
 This allows users to define what quotes they want to use as a
 replacement of english double-quotes while exporting to LaTeX.
@@ -99,25 +145,17 @@ Dye, Nick Dokos and Stefan Nobis for elaborating this solution.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D2b9afb9e63d2fd60a3bb09e33c9d4abb01586339][(git commit)]]
 
-*** New variable =org-export-html-before-content-div=
+*** Export: new variable =org-export-html-before-content-div=
 
 HTML code in this variable will be inserted /before/ the content
 div.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dd20aa46a49370dd3eec583b26d6dd79bb4eb9ab2][(git commit)]]
 
-*** New variable =org-lparse-use-flashy-warning= defaulting to =nil=
+*** Export: New variable =org-lparse-use-flashy-warning= defaulting to =nil=
 
 Flashy and verbose warnings while exporting to ODT have been
 disabled.  Set this to =t= if you want it back.
-
-*** Babel now supports [[http://fomus.sourceforge.net/][fomus]] language
-
-=ob-fomus.el= has been added to =contrib/langs/=.
-
-Thanks to Torsten Anders for contributing this functionality
-
-[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dbaa83dacc732c51e15a593b02218bc5f9ef7fb2e][git commit]]
 
 ** Important bugfixes
 ** Details
