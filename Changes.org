@@ -11,7 +11,6 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
-
 *** Allow some commands to loop over siblings
 
 =org-loop-over-siblings-within-active-region-p= is a new variable
@@ -86,6 +85,17 @@ the latter ones take precedence.
 Thanks to Julien Cubizolles for triggering this idea.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D1029a9251741c2cdf10281866a2fbbdaf2e1cb25][(git commit)]]
+
+*** Refile: exclude irrelevant headings
+
+When refiling from an org-mode buffer, the current heading and
+its subheadings will be excluded from the list of possible
+targets.
+
+This only works when =org-refile-use-cache= is =nil= and in
+org-mode buffers, not in agenda buffers.
+
+Thanks to Jason Dunsmore for this idea!
 
 *** Lists: new variable =org-list-use-circular-motion=
 
