@@ -212,9 +212,13 @@ download a [[http://orgmode.org/w/org-mode.git/snapshot][tar.gz snapshot]] from 
    - Download the [[file:orgcard.pdf][Refcard]] for org-mode
    - There is also a [[file:orgcard.txt][text version]] of the reference card.
 
-** The FAQ
-   - The [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] is user-editable and is maintained by the [[http://orgmode.org/worg/][Worg
-     project]].
+** Worg FAQ and "org-mode" tag on StackOverflow
+
+   - The [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] is part the [[http://orgmode.org/worg/][Worg project]] and is collaboratively
+     maintained by Worg's contributors.
+
+   - A social FAQ is available at http://ask.orgmode.org, which forwards to
+     the org-mode tag of [[http://stackoverflow.com/questions/tagged/org-mode][StackOverflow.com]].
 
 ** Tutorials
    - A complete list of [[http://orgmode.org/worg/org-tutorials/index.php][Tutorials and screencasts]] is maintained by the [[http://orgmode.org/worg][Worg
