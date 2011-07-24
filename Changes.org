@@ -11,6 +11,13 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
+*** New hook =org-ctrl-c-ctrl-c-final-hook=
+
+This hook will be called when nothing special can be performed by
+the busy =C-c C-c= key.  Thanks to Paul Sexton for this idea!
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Deaafa42948427da37c065c8294edd0d0f30cccd4][(git commit)]]
+
 *** Allow some commands to loop over siblings
 
 =org-loop-over-siblings-within-active-region-p= is a new variable
@@ -29,6 +36,23 @@ The list of commands is this:
 
 For example, typing =C-c C-s= an a region with several headlines
 will prompt for a =SCHEDULED= date for each entry successively.
+
+*** Allow relative time when scheduling/adding a deadline
+
+You can now use relative duration strings like "-2d" or "++3w"
+when calling =org-schedule= or =org-deadline=: it will schedule
+(or set the deadline for) the item respectively two days before
+today and three weeks after the current timestamp, if any.
+
+You can use this programmatically: =(org-schedule nil "+2d")=
+will work on the current entry.
+
+You can also use this while (bulk-)rescheduling and
+(bulk-)resetting the deadline of (several) items from the agenda.
+
+Thanks to Memnon Anon for a heads up about this!
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D88eada52a63539b8866b9be861ea72ffbcafb37e][(git commit)]]
 
 *** =org-set-property= defaults to the last interactively modified property
 
@@ -169,6 +193,21 @@ Thanks to Puneeth Chaganti for this addition.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Da90b876b936820f6a80cc2ffa807bc29a9de73eb][(git commit)]]
 
+*** Export: new variable =org-export-html-divs= to allow custom divs
+
+The default value of =org-export-html-divs= is =("preamble"
+"content" "postamble")= and is used to define the =<div "%s">=
+for the main structure of the exported HTML file.  
+
+Note that the variable =org-export-html-content-div= will still
+be checked for compatibility reasons but is not a custom variable
+anymore.
+
+Thanks to Sébastian Vauban for a preliminary version of this
+patch.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D2f1fbc58be1dc48621217d666da7bc46c3c5d84e][(git commit)]]
+
 *** Export: new variable =org-export-latex-quotes= to customize quotes in LaTeX export
 
 This allows users to define what quotes they want to use as a
@@ -190,12 +229,17 @@ div.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dd20aa46a49370dd3eec583b26d6dd79bb4eb9ab2][(git commit)]]
 
-*** Export: New variable =org-lparse-use-flashy-warning= defaulting to =nil=
+*** Export: new variable =org-lparse-use-flashy-warning= defaulting to =nil=
 
 Flashy and verbose warnings while exporting to ODT have been
 disabled.  Set this to =t= if you want it back.
 
 ** Important bugfixes
+
+*** Duration calculation now work for complex ranges in tables
+
+Thanks to Christian Moe for signaling this problem.
+
 ** Details
 
 *** New default value for =org-export-latex-image-default-option=
