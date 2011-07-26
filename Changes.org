@@ -257,6 +257,13 @@ which makes more sense.
 
 Thanks to Sebastien Vauban for this suggestion.
 
+*** org-latex: allow =org-export-latex-href-format= to have only one "%s"
+
+This is useful when you want to use \url{link} instead of the
+default \href{link}{path}.
+
+Thanks to Henri-Paul Indiogine for bringing this up.
+
 * Version 7.6
 
 ** Incompatible changes
