@@ -11,6 +11,14 @@
 ** Incompatible changes
 ** New features and user-visible improvements
 
+*** New command =org-copy-visible= (=C-c C-x v=)
+
+This command will copy the visible text in the region into the
+kill ring.
+
+Thanks to Florian Beck for this function and to Carsten for
+adding it to org.el and documenting it!
+
 *** New hook =org-ctrl-c-ctrl-c-final-hook=
 
 This hook will be called when nothing special can be performed by
