@@ -6,9 +6,17 @@
 
 #+STARTUP: indent hidestars
 
-* Current HEAD of the git repository
+* COMMENT Current HEAD of the git repository
 
 ** Incompatible changes
+** New features and user-visible improvements
+** Important bugfixes
+** Details
+** Known issues
+
+* Version 7.7
+
+** COMMENT Incompatible changes
 ** New features and user-visible improvements
 
 *** New command =org-copy-visible= (=C-c C-x v=)
@@ -26,25 +34,6 @@ the busy =C-c C-c= key.  Thanks to Paul Sexton for this idea!
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Deaafa42948427da37c065c8294edd0d0f30cccd4][(git commit)]]
 
-*** Allow some commands to loop over siblings
-
-=org-loop-over-siblings-within-active-region-p= is a new variable
-that controls whether to use this new feature or not.  When set
-to =non-nil=, the user can perform actions on several headlines
-within the current active region.
-
-The list of commands is this:
-
-- org-archive-subtree
-- org-archive-to-archive-sibling
-- org-toggle-archive-tag
-- org-archive-set-tag
-- org-deadline
-- org-schedule
-
-For example, typing =C-c C-s= an a region with several headlines
-will prompt for a =SCHEDULED= date for each entry successively.
-
 *** Allow relative time when scheduling/adding a deadline
 
 You can now use relative duration strings like "-2d" or "++3w"
@@ -61,6 +50,14 @@ You can also use this while (bulk-)rescheduling and
 Thanks to Memnon Anon for a heads up about this!
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D88eada52a63539b8866b9be861ea72ffbcafb37e][(git commit)]]
+
+*** New functions: =org-todo-yesterday= and =org-agenda-todo-yesterday=
+
+This is useful when you need to mark things done yesterday.
+
+Thanks to Max Mikhanosha for this patch.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Ddea1a6f87b1fcd0122796a6603948bf131d4ff69][(git commit)]]
 
 *** =org-set-property= defaults to the last interactively modified property
 
@@ -148,6 +145,32 @@ is set to 2, you may see the following list:
 - Second item
 #+end_example
 
+*** Table: New flag ";t" to tailor the display of computed durations
+
+See the new variable =org-table-duration-custom-format= and the
+updated example from the manual:
+
+|  Task 1 |   Task 2 | Total |
+|---------+----------+-------|
+| 3:02:20 | -2:07:00 |  0.92 |
+#+TBLFM: @2$3=$1+$2;t
+
+In this example, =0.92= is a fraction of hour, the default for
+=org-table-duration-custom-format=.
+
+Thanks to Daniel E. Doherty for discussions about this.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D70fab165e1966b32e08ed05776ca19e711d1d1e9][(git commit)]]
+
+*** Table: display field's coordinates when editing it with =C-c `=
+
+When editing a field with =C-c `=, the field's coordinate will
+the displayed in the buffer.
+
+Thanks to Michael Brand for a patch to this effect.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3De7eb56f39b5b843bc1487bb49c58e99e51c81fc1][(git commit)]]
+
 *** Babel: support for =java= code blocks
 
 Evaluation of blocks of Java code is now possible.  Currently
@@ -192,24 +215,31 @@ Thanks to Torsten Anders for contributing this functionality.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dbaa83dacc732c51e15a593b02218bc5f9ef7fb2e][(git commit)]]
 
-*** Export: new experimental exporter to MoinMoin by Puneeth Chaganti.
+*** Publish: hide .orgx files and use theindex.org directly
 
-The =EXPERIMENTAL/= directory contains a new file org-mm.el that
-allows you to export an Org file to a MoinMoin file.
+When :makeindex is `non-nil' in the publishing options, Org will
+export an index.  It populates the directory with .orgx files:
+those files are now hidden (.file.orgx).  Also the index is
+directly stored in the file =theindex.org=, not in the file
+=theindex.inc= (which you can delete).
 
-Thanks to Puneeth Chaganti for this addition.
+Thanks to Nathan Neff and Carsten for pointing at the problems
+and solutions.
 
-[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Da90b876b936820f6a80cc2ffa807bc29a9de73eb][(git commit)]]
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Df0d7acfb7867518529d63fe3d111f5f3cf39a61f][(git commit)]]
 
 *** Export: new variable =org-export-html-divs= to allow custom divs
 
 The default value of =org-export-html-divs= is =("preamble"
 "content" "postamble")= and is used to define the =<div "%s">=
-for the main structure of the exported HTML file.  
+for the main structure of the exported HTML file.
 
-Note that the variable =org-export-html-content-div= will still
-be checked for compatibility reasons but is not a custom variable
-anymore.
+Note that modifying the default value will break compatibility
+with the =org-info.js= script.
+
+Also note that the variable =org-export-html-content-div= will
+still be checked for compatibility reasons but is not a custom
+variable anymore.
 
 Thanks to Sébastian Vauban for a preliminary version of this
 patch.
@@ -230,39 +260,84 @@ Dye, Nick Dokos and Stefan Nobis for elaborating this solution.
 
 [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D2b9afb9e63d2fd60a3bb09e33c9d4abb01586339][(git commit)]]
 
-*** Export: new variable =org-export-html-before-content-div=
+** Important bugfixes
 
-HTML code in this variable will be inserted /before/ the content
-div.
+*** Duration computations now work for complex ranges in tables
 
-[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dd20aa46a49370dd3eec583b26d6dd79bb4eb9ab2][(git commit)]]
+Thanks to Christian Moe for signaling this problem.
+
+*** Handle recursive setup files correctly
+
+Thanks to Stefan Vollmar for mentioning this problem.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Dbbb2ef510ae8fbf28296c8968b99a24408c7c3ce][(git commit)]]
+
+** Details
+
+*** =org-map-entries= can now have 'region as its scope
+
+Thanks to David Maus for suggesting related improvements to
+=org-map-entries=.  This one prepares the possibility of letting
+some commands to loop over the active region.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D59e7fc4d3a4ee441d4716ca37fd41a2fa64e04d5][(git commit)]]
+
+*** org-depend.el: new chain-find-next trigger option
+
+See the updated docstring of this file.
+
+Thanks a lot to Max Mikhanosha for this!
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Db1279dde0fec5e043b294117d9b999eb99be9a0f][(git commit)]]
+
+*** Export: new experimental exporter to MoinMoin by Puneeth Chaganti.
+
+The =EXPERIMENTAL/= directory contains a new file org-mm.el that
+allows you to export an Org file to a MoinMoin file.
+
+Thanks to Puneeth Chaganti for this addition.
+
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Da90b876b936820f6a80cc2ffa807bc29a9de73eb][(git commit)]]
+
+*** Export: new default for =org-export-html-preamble=
+
+The default value included the title.  It now defaults to the
+empty string, as the title is hardcoded and included in the
+"content" div.  Including the title here is necessary to let
+=org-info.js= find it and display the page properly.
 
 *** Export: new variable =org-lparse-use-flashy-warning= defaulting to =nil=
 
 Flashy and verbose warnings while exporting to ODT have been
 disabled.  Set this to =t= if you want it back.
 
-** Important bugfixes
-
-*** Duration calculation now work for complex ranges in tables
-
-Thanks to Christian Moe for signaling this problem.
-
-** Details
-
-*** New default value for =org-export-latex-image-default-option=
+*** Export: new default value for =org-export-latex-image-default-option=
 
 This used to be =width=10em= and this is now width=.9\linewidth,
 which makes more sense.
 
 Thanks to Sebastien Vauban for this suggestion.
 
-*** org-latex: allow =org-export-latex-href-format= to have only one "%s"
+[[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3D46a5bde601980c47eccd06d87b82dbae85b20704][(git commit)]]
+
+*** Export: allow =org-export-latex-href-format= to have only one "%s"
 
 This is useful when you want to use \url{link} instead of the
 default \href{link}{path}.
 
 Thanks to Henri-Paul Indiogine for bringing this up.
+
+** Known issues
+
+*** The ODT exporter will choke when using some Org-defined strings
+
+For example, using the hungarian version of the table of
+contents, as defined in =org-export-language-setup=, the ODT
+exporter will complain about a problem with the translated
+string.
+
+The workaround is to customize =org-export-language-setup= 
+and to use accents directly.
 
 * Version 7.6
 
