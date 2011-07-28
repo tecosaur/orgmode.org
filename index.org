@@ -124,6 +124,7 @@ look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org
 #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
+- <2011-07-28 jeu.> Release 7.7.
 - <2011-07-06 mer.> Release 7.6.
 - <2011-03-07 lun.> Release 7.5.
 - <2010-12-17 Fri> The Org manual is now available as [[http://www.network-theory.co.uk/org/manual/][book published
@@ -138,9 +139,9 @@ look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org
 - <2010-06-06 Sun>: iPhone App [[http://mobileorg.ncogni.to/][MobileOrg]] version 1.5 introduces
   encryption.
 
-* Current Version (7.6)
+* Current Version (7.7)
 
-The current version is 7.6.  To see what has changed in recent releases,
+The current version is 7.7.  To see what has changed in recent releases,
 check this detailed list of [[file:Changes.html][changes]].
 
 This package works on GNU Emacs 24, 23 and 22, and (with minor
@@ -153,7 +154,7 @@ release.
 
 ** The standard distribution
 
-Download as [[file:org-7.6.zip][zip file]] or [[file:org-7.6.tar.gz][gzipped tar archive]].  These archives contain
+Download as [[file:org-7.7.zip][zip file]] or [[file:org-7.7.tar.gz][gzipped tar archive]].  These archives contain
 both the Lisp file org.el and the documentation in PDF and (TeX)Info
 formats.  Follow the instructions for [[http://orgmode.org/manual/Installation.html#Installation][Installation]] and [[http://orgmode.org/manual/Activation.html#Activation][Activation]].
 
@@ -190,7 +191,7 @@ download a [[http://orgmode.org/w/org-mode.git/snapshot][tar.gz snapshot]] from 
 
    - Links below point to the /development version/ of the manual.  If
      you want to read the latest released manuals (currently for Org
-     7.6), please browse [[http://orgmode.org/manual/release_7.6/][this directory]].
+     7.7), please browse [[http://orgmode.org/manual/release_7.7/][this directory]].
    - Read the [[file:guide/index.html][online compact guide]] or download it as a [[file:orgguide.pdf][PDF document]].
      The compact guide is a 40-page introduction to Org mode.  It
      covers all features in a basic way and has links to in-depth
