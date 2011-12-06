@@ -8,6 +8,22 @@
 
 * COMMENT Current HEAD of the git repository
 
+** New committers who signed the FSF copyright assigment
+
+Here is the list of new contributors who signed the FSF papers
+since Org 7.7 - thanks and welcome to them!
+
+- Andreas Leha
+- Christian Moe
+- Julian Gehring
+- Max Mikhanosha
+- Michael Brand
+- Niels Giessen
+- Pieter Praet
+- Sergey Litvinov
+- Thomas Holst
+- Thorsten Jolitz
+
 ** Incompatible changes
 *** Standardized code block keywords
 :PROPERTIES:
