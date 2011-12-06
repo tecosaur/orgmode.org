@@ -30,6 +30,7 @@ since Org 7.7 - thanks and welcome to them!
 :PROPERTIES:
 :CUSTOM_ID: standardized-code-block-keywords
 :END:
+
 Following a round of on-list discussion many code block synonyms
 have been removed, moving forward the following syntax is valid.
 - call lines are specified with #+call:
@@ -74,11 +75,21 @@ buffer to the new syntax.
       ob.el file.
 
 *** Removed the =#+BABEL:= keyword
+
 Code block header arguments may now be specified using the
 standard =#+Property:= keyword, see [[#accumulating-property-keywords][Property names ending in =+=
 accumulate]] for information on the extended property syntax.
 
+*** Deleted =org-mode-p= ([[git:4bbdfd22][git]])
+*** Delete =org-link-display-descriptive= ([[git:7475d7da1fcc73e9c619b2d620d370c9f54867c9][git]])
+
 ** New features and user-visible improvements
+
+*** =org-agenda-custom-commands= has a default value ([[git:b3de2dbb953dcadacafeb179899ab9df184da4ff][git]])
+
+This option used to be `nil' by default.  This now has a default
+value, displaying an agenda and all TODOs.  See the docstring for
+details.  Thanks to Carsten for this.
 
 *** New option =org-catch-invisible-edits= ([[git:31d9fd44][git]])
 
@@ -96,6 +107,22 @@ See the docstring for more details.
 
 Thanks to Carsten for implementing this.
 
+*** New option =org-loop-over-headlines-in-active-region= ([[git:e67a28e9][git]])
+
+When set to `t', some commands will loop over the active
+region.  Currently, =org-schedule= and =org-deadline= uses this
+option: pressing =C-c C-s= or =C-c C-d= when the region is active
+will let you schedule/deadline all the visible headlines in the
+region.
+
+Thanks a lot to David Maus for implementing this.
+
+*** New face =org-agenda-filter-tags= ([[git:63969951][git]])
+
+This face is used for highlighting the tag(s) filter in the
+modeline.  Thanks to Sébastien Vauban for this idea and its
+implementation.
+
 *** Use prefix arg 0 to inhibit note taking for TODO change ([[git:773596e3][git]])
 
 See Carsten's comment: "Sometimes I want to quickly make a few TODOs done
@@ -109,6 +136,72 @@ Thanks to Carsten for implementing this.
 You can type "<2011-12-12>" or [2011-12-12] and modify this timestamps with
 S-<right> like other timestamps.  Thanks to Carsten for implementing this.
 
+*** Improved filtering through =org-agenda-to-appt= ([[git:db04ef74][git]])
+
+The new function allows the user to refine the scope of entries
+to pass to =org-agenda-get-day-entries= and allows to filter out
+entries using a function.
+    
+Thanks to Peter Münster for raising a related issue and to
+Tassilo Horn for this idea.  Also thanks to Peter Münster for
+[[git:68ffb7a7][fixing a small bug]] in the final implementation.
+
+*** =outline-demote/promote= points to =org-demote/promote-subtree=
+
+Users who use this outline commands in =outline-mode= will want
+them to behave the Org way in Org.  Thanks to Michael Brand for
+the suggestion.
+
+*** =org-agenda-date-later= jumps to today when modifying past date ([[git:f20eef318e9e66481dde560dc5e388e911b28aab][git]])
+
+The command =org-agenda-date-later= (<S-right> in the Agenda
+Mode) directly jumps to today.  Thanks to Carsten for
+implementing this.
+
+*** New option =org-export-latex-table-caption-above=
+
+Let the user place a caption above its table in LaTeX.
+Thanks to Thomas Dye for a patch to this effect.
+
+*** New option =org-agenda-follow-indirect= ([[git:e53f62eba9569b78540481bda4b5e7a6b4016983][git]])
+
+By setting `org-agenda-follow-indirect' to a non-nil value,
+`org-agenda-follow-mode' will use an indirect buffer to display
+only the current item, rather than the whole agenda file in which
+it lives.  
+
+Thanks to Dave Abrahams for implementing this.
+
+*** New escape characters for =org-log-note-headings= ([[git:a5d4783a7eacf6bf67317408e7c4feaea71b746e][git]])
+
+The option =org-log-note-headings= now supports %d and %D for
+inactive and active timestamps.  This affect the behavior of the
+command =org-store-log-note=.  Thanks to John J Foerch for a
+patch for this.
+
+*** Allow recursive edit of minibuffer ([[git:5091facd7f4ec80cce86049d6d84a164cb017970][git]])
+
+You can now use the command =C-c != (=org-time-stamp-inactive=)
+when prompted e.g. for a link name.  This is because the central
+function =org-completing-read= now support recursive edit.  Only
+=C-c != is available at the moment, but if you can think of a
+useful command to use, please let me know.
+
+Thanks to Skip Collins for the idea and to Nick Dokos for the
+implementation.
+
+*** New option =org-latex-to-mathml-convert-command= 
+
+This option lets you specify a way to convert LaTeX fragments to
+MathML.  See also =org-latex-to-mathml-jar-file= and the
+docstring of =org-create-math-formula=.
+
+Thanks to Jambunathan K for implementing this.
+
+*** Allow dynamic construction of the publishing destination ([[git:af0789a5a8951a87f050abb79313012f261bf4f0][git]])
+
+Thanks to Kai Tetzlaff for adding this.
+
 *** Set the capture default time to the prompt time ([[git:acfd6ff3][git]])
 
 In the file+datetree+promt target type, the user is being asked
@@ -119,6 +212,18 @@ so that, also at %t and %u, the date to use is the one entered at
 the prompt.
     
 Reported by Erik Hetzner and fixed by Carsten.
+
+*** =org-agenda-skip-additional-timestamps-same-entry= defaults to `nil' ([[git:aefd49b9098950a6bf8ebf95160d9b5ae94f2ec0][git]])
+*** New options =org-habit-today-glyph= and =org-habit-completed-glyph= ([[git:0c099370691469d8078121ba2b0567bd19a628c3][git]])
+
+This gives you control over the character used for displaying
+today (default is `!') and days on which a task has been
+completed (default is `*').  Thanks to John Wiegley for this.
+
+*** New option =org-bibtex-type-property-name= ([[git:4fbefd87aa6ce30e6d6bc7c115c9b59042ed02f0][git]])
+
+Configurable property name for bibtex entry types.  Thanks to
+Eric Schulte for this.
 
 *** Added [[http://cran.r-project.org/web/packages/tikzDevice/index.html][tikzDevice]] support to ob-R.el
 *** Support for Pico Lisp code blocks
@@ -223,6 +328,10 @@ ELPA.
 *** Respect =org-export-with-tags= when exporting a subtree ([[git:a0815816][git]])
 
 Thanks to Suvayu Ali for spotting this problem and fixing it.
+
+*** Fix XEmacs compatibility issue when creating an indirect buffer ([[git:d493a0ec][git]])
+
+Thanks to Michael Sperber for this fix.
 
 ** Testing
 *** New test function =org-test-with-temp-text-in-file= ([[git:1f206ed4]])
