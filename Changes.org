@@ -5,6 +5,7 @@
 #+end_html
 
 #+STARTUP: indent hidestars
+#+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 
 * COMMENT Current HEAD of the git repository
 
@@ -78,6 +79,48 @@ standard =#+Property:= keyword, see [[#accumulating-property-keywords][Property 
 accumulate]] for information on the extended property syntax.
 
 ** New features and user-visible improvements
+
+*** New option =org-catch-invisible-edits= ([[git:31d9fd44][git]])
+
+This option makes it possible to check what is the right thing to do before
+editing invisible regions.  Here are the possible values of this option:
+
+: +nil              Do not check, so just do invisible edits.
+: +error            Throw an error and do nothing.
+: +show             Make point visible, and do the requested edit.
+: +show-and-error   Make point visible, then throw an error and abort the edit.
+: +smart            Make point visible, and do insertion/deletion if it is
+:                   adjacent to visible text and the change feels predictable.
+
+See the docstring for more details.
+
+Thanks to Carsten for implementing this.
+
+*** Use prefix arg 0 to inhibit note taking for TODO change ([[git:773596e3][git]])
+
+See Carsten's comment: "Sometimes I want to quickly make a few TODOs done
+in the agenda and I want to bypass the note taking I have normally set
+up.  With this change, I can press `0 t d' in the agenda to do this."
+
+Thanks to Carsten for implementing this.
+
+*** Day names are optional when you type timestamps manually ([[git:278d5afa][git]])
+
+You can type "<2011-12-12>" or [2011-12-12] and modify this timestamps with
+S-<right> like other timestamps.  Thanks to Carsten for implementing this.
+
+*** Set the capture default time to the prompt time ([[git:acfd6ff3][git]])
+
+In the file+datetree+promt target type, the user is being asked
+for a date, where to file an entry.  In the template, he can use
+the escape placeholders for active and inactive time stamps.  So
+far, these were filled with todays date.  This behavior changed
+so that, also at %t and %u, the date to use is the one entered at
+the prompt.
+    
+Reported by Erik Hetzner and fixed by Carsten.
+
+*** Added [[http://cran.r-project.org/web/packages/tikzDevice/index.html][tikzDevice]] support to ob-R.el
 *** Support for Pico Lisp code blocks
 Thanks to Thorsten Jolitz Pico Lisp code blocks are now
 supported.  See =ob-picolisp.el= for more information.
@@ -93,10 +136,13 @@ possible values the meaning of which is shown in the table below.
 | query-export              | Evaluation of the code block during export will    |
 |                           | require a query.                                   |
 *** Update of intermediate results during code block evaluation
-The new =org-babel-update-intermediate= will update in-buffer
-results for code blocks which are evaluated in the resolution of
-a variable reference.  This can be used to ensure that the latest
-returned results are always shown in buffer.
+
+When set to t, the new =org-babel-update-intermediate= option
+will update in-buffer results for code blocks which are evaluated
+in the resolution of a variable reference.  This can be used to
+ensure that the latest returned results are always shown in
+buffer.
+
 *** Property names ending in =+= accumulate
 :PROPERTIES:
 :CUSTOM_ID: accumulating-property-keywords
@@ -173,6 +219,13 @@ A major mode for shen code blocks is available through the GNU
 ELPA.
 
 ** Important bugfixes
+
+*** Respect =org-export-with-tags= when exporting a subtree ([[git:a0815816][git]])
+
+Thanks to Suvayu Ali for spotting this problem and fixing it.
+
+** Testing
+*** New test function =org-test-with-temp-text-in-file= ([[git:1f206ed4]])
 ** Details
 ** Known issues
 
