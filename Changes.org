@@ -125,6 +125,70 @@ Nicolas Goaziou worked on refactoring and improving
 =org-indent.el=, which should now be faster.  It also better
 combines with =visual-line-mode=.
 
+*** Property names ending in =+= accumulate
+:PROPERTIES:
+:CUSTOM_ID: accumulating-property-keywords
+:END:
+
+This results in the following behavior.
+
+#+begin_src org
+  ,#+property: var  foo=1
+  ,#+property: var+ bar=2
+  
+  ,#+begin_src emacs-lisp
+  ,  (+ foo bar)
+  ,#+end_src
+  
+  ,#+results:
+  ,: 3
+  
+  ,#+begin_src emacs-lisp
+  ,  (org-entry-get (point) "var" t)
+  ,#+end_src
+  
+  ,#+results:
+  ,: foo=1 bar=2
+  
+  ,* overwriting a file-wide property
+  ,  :PROPERTIES:
+  ,  :var:      foo=7
+  ,  :END:
+  
+  ,#+begin_src emacs-lisp
+  ,  foo
+  ,#+end_src
+  
+  ,#+results:
+  ,: 7
+  
+  ,#+begin_src emacs-lisp
+  ,  (org-entry-get (point) "var" t)
+  ,#+end_src
+  
+  ,#+results:
+  ,: foo=7
+  
+  ,* appending to a file-wide property
+  ,  :PROPERTIES:
+  ,  :var+:      baz=3
+  ,  :END:
+  
+  ,#+begin_src emacs-lisp
+  ,  (+ foo bar baz)
+  ,#+end_src
+  
+  ,#+results:
+  ,: 6
+  
+  ,#+begin_src emacs-lisp
+  ,  (org-entry-get (point) "var" t)
+  ,#+end_src
+  
+  ,#+results:
+  ,: foo=1 bar=2 baz=3
+#+end_src
+
 *** =org-agenda-custom-commands= has a default value ([[git:b3de2dbb953dcadacafeb179899ab9df184da4ff][git]])
 
 This option used to be `nil' by default.  This now has a default
@@ -208,70 +272,6 @@ in the resolution of a variable reference.  This can be used to
 ensure that the latest returned results are always shown in
 buffer.
 
-*** Property names ending in =+= accumulate
-:PROPERTIES:
-:CUSTOM_ID: accumulating-property-keywords
-:END:
-
-This results in the following behavior.
-
-#+begin_src org
-  ,#+property: var  foo=1
-  ,#+property: var+ bar=2
-  
-  ,#+begin_src emacs-lisp
-  ,  (+ foo bar)
-  ,#+end_src
-  
-  ,#+results:
-  ,: 3
-  
-  ,#+begin_src emacs-lisp
-  ,  (org-entry-get (point) "var" t)
-  ,#+end_src
-  
-  ,#+results:
-  ,: foo=1 bar=2
-  
-  ,* overwriting a file-wide property
-  ,  :PROPERTIES:
-  ,  :var:      foo=7
-  ,  :END:
-  
-  ,#+begin_src emacs-lisp
-  ,  foo
-  ,#+end_src
-  
-  ,#+results:
-  ,: 7
-  
-  ,#+begin_src emacs-lisp
-  ,  (org-entry-get (point) "var" t)
-  ,#+end_src
-  
-  ,#+results:
-  ,: foo=7
-  
-  ,* appending to a file-wide property
-  ,  :PROPERTIES:
-  ,  :var+:      baz=3
-  ,  :END:
-  
-  ,#+begin_src emacs-lisp
-  ,  (+ foo bar baz)
-  ,#+end_src
-  
-  ,#+results:
-  ,: 6
-  
-  ,#+begin_src emacs-lisp
-  ,  (org-entry-get (point) "var" t)
-  ,#+end_src
-  
-  ,#+results:
-  ,: foo=1 bar=2 baz=3
-#+end_src
-
 *** Support for Fortran code block is now in the core
 
 Thanks to Sergey Litvinov for contributing this support.
@@ -288,7 +288,6 @@ See http://www.shenlanguage.org/ for information on Shen.
 
 A major mode for shen code blocks is available through the GNU
 ELPA.
-
 
 ** New options and faces
 
