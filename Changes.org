@@ -182,8 +182,7 @@ connection), so I hacked a small SUDOKU solver that reads a 9x9
 Org table and solves it as a sudoku puzzle.  A little silly, but
 maybe fun for someone - I have pushed it into the contrib/lisp
 directory."
-** Babel-related features and improvements
-
+** Code Block related features and improvements
 *** Added [[http://cran.r-project.org/web/packages/tikzDevice/index.html][tikzDevice]] support to ob-R.el
 *** Support for Pico Lisp code blocks
 Thanks to Thorsten Jolitz Pico Lisp code blocks are now
