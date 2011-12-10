@@ -9,6 +9,47 @@
 
 * COMMENT Current HEAD of the git repository
 
+** The ODT exporter is now part of Org's core
+
+*** Info
+
+- Full refresh of OpenDocument Text section. All new features
+  listed below are fully-documented.
+    
+*** New
+    
+1. General
+
+   - Lots of bug fixes
+   - Associate custom styles on per-file basis
+     using #+ODT_STYLES_FILE: directive.
+
+3. Src and Example blocks
+   - Fontify code listings using an enhanced version of
+     htmlfontify.el.
+   - Generate line numbers natively
+
+4. LaTeX Math Fragments and Equations 
+   - Embed MathML and OpenDocument formula files
+   - Use LaTeX to MathML converter - say MathToWeb
+     (http://www.mathtoweb.com/) - for handling LaTeX Math
+     fragments
+
+5. Tables
+   - Use column width cookies to control relative width of
+     columns
+   - Specify custom styles using #+ATTR_ODT: lines
+
+*** Experimental
+
+The following features are /experimental/.  These features are
+specific to the ODT export engine and their implementation and
+usage could change considerably in future versions.
+
+- Support for list tables -- see this [[http://lists.gnu.org/archive/html/emacs-orgmode/2011-09/msg00017.html][message on the list]].
+
+- Support for annotation blocks -- see this [[http://lists.gnu.org/archive/html/emacs-orgmode/2011-10/msg01251.html][message on the list]].
+
 ** New committers who signed the FSF copyright assigment
 
 Here is the list of new contributors who signed the FSF papers
