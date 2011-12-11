@@ -249,6 +249,11 @@ inactive and active timestamps.  This affect the behavior of the
 command =org-store-log-note=.  Thanks to John J Foerch for a
 patch for this.
 
+*** New command =org-table-transpose-table-at-point= ([[git:b67b6b7844f619f40a79dff69e700f24ac8d6ac9][git]])
+
+See the docstring.  This hack from Juan Pechiar is now part of
+Org's core.  Thanks to Juan!
+
 *** Allow recursive edit of minibuffer ([[git:5091facd7f4ec80cce86049d6d84a164cb017970][git]])
 
 You can now use the command =C-c != (=org-time-stamp-inactive=)
@@ -331,6 +336,25 @@ A major mode for shen code blocks is available through the GNU
 ELPA.
 
 ** New options and faces
+
+*** New option =org-export-html-headline-anchor-format= ([[git:b7f5efdc4e1ed07f295d28a05fab3588c4194110][git]])
+
+Format for anchors in HTML headlines.
+
+It requires to %s: both will be replaced by the anchor referring
+to the headline (e.g. "sec-2").  When set to `nil', don't insert
+HTML anchors in headlines.
+
+This was requested by Alan L Tyree.
+
+*** New option =org-table-formula-field-format= ([[git:7a513b2c00e83f81c8bf1d3abe482d00a2946abc][git]])
+
+Format for fields which contain the result of a formula.
+For example, using \"~%s~\" will display the result within tilde
+characters.  Beware that modifying the display can prevent the
+field from being used in another formula.
+
+Thanks to Dov Grobgeld for this idea.
 
 *** New option =org-loop-over-headlines-in-active-region= ([[git:e67a28e9][git]])
 
