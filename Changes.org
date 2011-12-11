@@ -460,6 +460,14 @@ This face is used for highlighting the tag(s) filter in the
 modeline.  Thanks to Sébastien Vauban for this idea and its
 implementation.
 
+*** New faces =org-agenda-calendar-event= and =org-agenda-calendar-sexp= ([[git:bfe779fe677e8a23dbf712dd42160a35af1285fa][git]])
+
+=org-agenda-calendar-event= is the face used to show events and
+appointments in the agenda, and =org-agenda-calendar-sexp= the
+one used to show events computed from a S-expression.  
+
+Thanks to Sébastien Vauban for this addition.
+
 ** Important bugfixes
 
 *** Respect =org-export-with-tags= when exporting a subtree ([[git:a0815816][git]])
