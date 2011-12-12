@@ -6,7 +6,7 @@
 #+STARTUP: hidestars
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+OPTIONS: H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:{} *:t TeX:t LaTeX:nil
+#+OPTIONS: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:{} *:t TeX:t LaTeX:nil
 #+STYLE:     <base href="http://localhost/org-mode/index.html" />
 #+STYLE:     <link rel="stylesheet" href="org2.css" type="text/css" />
 
