@@ -10,7 +10,7 @@
 * Version actuelle : Org 7.8
 
 La version actuelle est la version 7.8.  Pour voir les changements 
-récents, lisez la liste détaillée des [[http://orgmode.org/Changes.org][modifications]] (en anglais).
+récents, lisez la liste détaillée des [[http://orgmode.org/Changes.html][modifications]] (en anglais).
 
 Ce paquet fonctionne sur GNU Emacs 24, 23 et 22, et (avec quelques
 restrictions mineures) sur XEmacs 21.  Emacs 22.2 est livré avec la version
