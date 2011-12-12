@@ -9,46 +9,15 @@
 
 * COMMENT Current HEAD of the git repository
 
-** The ODT exporter is now part of Org's core
+** Summary
 
-*** Info
+- Jambunathan's ODT exporter is now part of Org's core.
+- Nicolas' new export engine is now part of =contrib/=
+- Standard code block keywords
+- 10 new committers
+- Many bugfixes
 
-- Full refresh of OpenDocument Text section. All new features
-  listed below are fully-documented.
-    
-*** New
-    
-1. General
-
-   - Lots of bug fixes
-   - Associate custom styles on per-file basis
-     using #+ODT_STYLES_FILE: directive.
-
-3. Src and Example blocks
-   - Fontify code listings using an enhanced version of
-     htmlfontify.el.
-   - Generate line numbers natively
-
-4. LaTeX Math Fragments and Equations 
-   - Embed MathML and OpenDocument formula files
-   - Use LaTeX to MathML converter - say MathToWeb
-     (http://www.mathtoweb.com/) - for handling LaTeX Math
-     fragments
-
-5. Tables
-   - Use column width cookies to control relative width of
-     columns
-   - Specify custom styles using #+ATTR_ODT: lines
-
-*** Experimental
-
-The following features are /experimental/.  These features are
-specific to the ODT export engine and their implementation and
-usage could change considerably in future versions.
-
-- Support for list tables -- see this [[http://lists.gnu.org/archive/html/emacs-orgmode/2011-09/msg00017.html][message on the list]].
-
-- Support for annotation blocks -- see this [[http://lists.gnu.org/archive/html/emacs-orgmode/2011-10/msg01251.html][message on the list]].
+See below for details.
 
 ** New committers who signed the FSF copyright assigment
 
@@ -66,7 +35,49 @@ since Org 7.7 - welcome, and thanks for your contributions!
 - Thomas Holst
 - Thorsten Jolitz
 
+** The ODT exporter is now part of Org's core
+
+- Full refresh of the OpenDocument Text section in the
+  manual.  All new features listed below are fully-documented.
+- Associate custom styles on per-file basis using
+  =#+ODT_STYLES_FILE:= directive.
+- Fontify code listings using an enhanced version of
+  =htmlfontify.el= and generate line numbers natively.
+- Embed MathML and OpenDocument formula files.
+- Use LaTeX to MathML converter -- say MathToWeb
+  (http://www.mathtoweb.com/) -- for handling LaTeX Math
+  fragments.
+- In tables, use column width cookies to control relative width
+  of columns.
+- Also for tables, you can specify custom styles using
+  =#+ATTR_ODT:= lines.
+- Lots of bug fixes.
+
+*Experimental*
+
+The following features are /experimental/.  These features are
+specific to the ODT export engine and their implementation and
+usage could change considerably in future versions.
+
+- Support for list tables -- see this [[http://lists.gnu.org/archive/html/emacs-orgmode/2011-09/msg00017.html][message on the list]].
+- Support for annotation blocks -- see this [[http://lists.gnu.org/archive/html/emacs-orgmode/2011-10/msg01251.html][message on the list]].
+
+Special thanks to Jambunathan for his work and his patience
+through the process of integrating this vital contribution into
+Org's core.
+
+** New export engine by Nicolas
+
+See the comment sections in org-element.el and in org-export.el
+(in =contrib/lisp/=).  Also check the experimental LaTeX exporter
+using in =EXPERIMENTAL/org-e-latex.el=.
+
+Check Nicolas' announcement [[http://comments.gmane.org/gmane.emacs.orgmode/49416][on the list]] and hack around!
+
+Thanks a lot to Nicolas for this great and promising achievement.
+
 ** Incompatible changes
+
 *** Standardized code block keywords
 :PROPERTIES:
 :CUSTOM_ID: standardized-code-block-keywords
@@ -295,8 +306,10 @@ directory."
 ** Code Block related features and improvements
 *** Added [[http://cran.r-project.org/web/packages/tikzDevice/index.html][tikzDevice]] support to ob-R.el
 *** Support for Pico Lisp code blocks
+
 Thanks to Thorsten Jolitz Pico Lisp code blocks are now
 supported.  See =ob-picolisp.el= for more information.
+
 *** Extension to the =eval= code block header argument
 
 The =eval= code block header argument now accepts four (six)
@@ -312,7 +325,7 @@ possible values the meaning of which is shown in the table below.
 
 *** Update of intermediate results during code block evaluation
 
-When set to t, the new =org-babel-update-intermediate= option
+When set to t, the new =org-babel-update-intermediate= variable
 will update in-buffer results for code blocks which are evaluated
 in the resolution of a variable reference.  This can be used to
 ensure that the latest returned results are always shown in
