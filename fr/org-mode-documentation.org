@@ -9,10 +9,6 @@
 
 * Le guide et le manuel Org
 
-- Les liens ci-dessous pointent vers la /version de développement/ du
-  manuel.  Si vous voulez lire les derniers manuels sortis (présentement
-  pour Org 7.8), allez dans [[http://orgmode.org/manual/release_7.6/][répertoire]].
-
 - Lire le [[http://orgmode.org/guide/index.html][guide compact en ligne]] ou le télécharger comme un [[http://orgmode.org/orgguide.pdf][document
   PDF]].  Le guide compact est une introduction d'environ 40 pages à Org.  Il
   couvre toutes les fonctionnalités de manière basique et contient des
