@@ -13,7 +13,7 @@ body {
 }
 
 .title {
-    background: url(http://localhost/org-mode/images/org-mode-unicorn.png) no-repeat 12px 5px;
+    background: url(http://orgmode.org/org-mode-unicorn.png) no-repeat 12px 5px;
     position: fixed;
     display: inline;
     left: 0px;
@@ -249,7 +249,7 @@ dt {
 li {
     margin: 10px;
     text-align: justify;
-    list-style-image : url(http://localhost/org-mode/images/triangle.png);
+    list-style-image : url(http://orgmode.org/triangle.png);
 }
 
 #table-of-contents {
