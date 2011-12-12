@@ -119,3 +119,10 @@ new TWTR.Widget({
 
 
 
+
+* THE famous Org shirt!
+
+#+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
+
+Promote Org-mode and support its development by getting your Org-mode
+T-shirt, bag, or mug in either the [[http://orgmode.spreadshirt.com][US shop]] or the [[http://orgmode.spreadshirt.de][EU shop]].
