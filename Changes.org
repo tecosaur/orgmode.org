@@ -10,6 +10,7 @@
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 
 * COMMENT Current HEAD of the git repository 
 
