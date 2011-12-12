@@ -1,11 +1,15 @@
 #   -*- mode: org; fill-column: 65 -*-
 
-#+begin_html
-<a href="/"><img src="http://orgmode.org/img/org-mode-unicorn.png" class="logo-link" /></a>
-#+end_html
-
+#+TITLE: List of Org-mode user-visible changes
+#+AUTHOR:  Carsten Dominik
+#+EMAIL:  carsten at orgmode dot org
+#+LANGUAGE:  en
 #+STARTUP: indent hidestars
-#+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+STYLE:     <base href="http://orgmode.org/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
 * COMMENT Current HEAD of the git repository 
 
@@ -3967,12 +3971,9 @@ This was a request by Michael Gilbert
 
 Thanks to Dan Davison for a patch to this effect
 
-
 * Older changes
 
-  For older Changes, see [[file:Changes_old.org]]
-
-
+For older Changes, see [[file:Changes_old.org][old changes]].
 
 * COMMENT Setup
 

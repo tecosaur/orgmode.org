@@ -1,0 +1,34 @@
+#+TITLE: Org-Mode: Liens
+#+AUTHOR: Bastien
+#+LANGUAGE:  fr
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs outline planneur note publication projet text brut LaTeX HTML
+#+DESCRIPTION: Org: un mode Emacs pour la prise de notes, la planification et la publication
+#+STYLE:     <base href="http://orgmode.org/fr/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+* Présentations au sujet d'Org-mode
+
+  Carsten Dominik a donné un /GoogleTech talk/ au sujet d'Org-mode et a
+  fait une autre présentation au [[http://www.nf.mpg.de/index.php?L%3D1][Max Planck Institute for Neurological
+  Research]].  Carsten est aussi interviewé par Randal Schwartz dans le
+  [[http://twit.tv/floss136][numéro 136 de FLOSS Weekly]].
+
+  Bastien a présenté Org au [[http://fosdem.org/2011/][FOSDEM 2011]], avec l'aide de Stefan Vollmar (qui
+  a présenté une utilisation d'Org dans son labo) et Sébastien Vauban (qui
+  a présenté Org Babel).  Vous trouverez les PDF de la présentation
+  [[http://lumiere.ens.fr/~guerry/u/org-fosdem-presentation-beamer.pdf][ici]].  En août 2011, Bastien a fait une présentation similaire (mais mise
+  à jour) au GNU Hackers Meeting à Paris.
+
+  Allez sur la [[http://orgmode.org/fr/talks.org][page dédiée aux présentations]] pour en voir plus. 
+
+* Org pour téléphone mobile
+
+  [[http://mobileorg.ncogni.to/][MobileOrg]] est une excellente application libre pour lire et modifier des
+  fichiers Org pendant que vous vous déplacez avec votre iPhone, puis pour
+  synchroniser les changements sur votre ordinateur.  Allez voir [[http://mobileorg.ncogni.to/][la page de
+  Richard]].
+
+  Matt Jones est en train de développer une application compatible pour
+  Android, et ce projet est [[http://wiki.github.com/matburt/mobileorg-android/][hébergé ici]].
+

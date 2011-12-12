@@ -1,0 +1,42 @@
+#+TITLE: Org-mode: Latest News
+#+AUTHOR: Bastien
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+STYLE:     <base href="http://orgmode.org/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+#+begin_html
+<script type="text/javascript">
+if (navigator.appName == 'Netscape') 
+var language = navigator.language; 
+else 
+var language = navigator.browserLanguage; 
+if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-nouvelles.html'; 
+</script>
+#+end_html
+
+* Latest news
+
+  #+ATTR_HTML: style="float:right;"
+  [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
+
+- <2011-12-08> Release 7.8.
+- <2011-12-12> The design and content of org's website has been refreshed.
+- <2011-12-02> The Worg git repo is now hosted on [[http://orgmode.org/w/worg.git][orgmode.org.]]
+- <2011-07-28> Release 7.7.
+- <2011-07-06> Release 7.6.
+- <2011-03-07> Release 7.5.
+- <2011-01-01> Bastien is now the new maintainer.
+- <2010-12-17> The Org manual is now available as [[http://www.network-theory.co.uk/org/manual/][book published by Network
+  Theory Ltd]], at a retail price of $14.95.  For each book sold, $1 is
+  donated to the Org project.
+- <2010-12-10> Release 7.04.
+- <2010-12-03> MobileOrg for Android supports Voice Capture.
+- <2010-11-25> Maybe the times where Org mode could change hard-core vi
+  users into honorable Emacs users are coming to an end?  A [[https://github.com/hsitz/VimOrganizer][Vim clone of
+  Org]] mode is be written by Herbert Sitz, and judging by the [[http://vimeo.com/17182850][videos]] it
+  looks promising.
+- <2010-06-06> iPhone App [[http://mobileorg.ncogni.to/][MobileOrg]] version 1.5 introduces encryption.
+

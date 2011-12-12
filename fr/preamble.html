@@ -1,0 +1,60 @@
+<div id="linklist">
+  <ul>
+    <li><a href="http://orgmode.org/fr/index.html">Accueil</a></li>
+    <li><a href="http://orgmode.org/fr/org-mode-download.html">Télécharger</a></li>
+    <li><a href="http://orgmode.org/fr/org-mode-documentation.html">Documentation</a></li>
+    <li><a href="http://orgmode.org/fr/org-mode-support.html">Communité</a></li>
+    <li><a href="http://orgmode.org/fr/org-mode-news.html">Nouvelles</a></li>
+    <li><a href="http://orgmode.org/fr/org-mode-links.html">Plus</a></li>
+  </ul>
+</div>
+
+<div id="twit">
+  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+  <script>
+    new TWTR.Widget({
+    version: 2,
+    type: 'search',
+    search: '#orgmode',
+    interval: 30000,
+    title: 'Références à Org-mode',
+    subject: '#orgmode',
+    width: 180,
+    height: 140,
+    theme: {
+    shell: {
+    background: '#eee',
+    color: '#537d7b'
+    },
+    tweets: {
+    background: '#ffffff',
+    color: '#444444',
+    links: '#A34D32'
+    }
+    },
+    features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    behavior: 'default'
+    }
+    }).render().start();
+  </script>
+</div>
+
+<div id="orgquote">
+  <script type="text/javascript" src="org-quote.js"></script>
+</div>
+
+<div id="paypal">
+  <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post"> 
+    <input type="hidden" name="cmd" value="_xclick" /> 
+    <input type="hidden" name="business" value="bastien1@free.fr" /> 
+    <input type="hidden" name="item_name" value="Maintainance d'Org-mode (Emacs)" /> 
+    <input type="hidden" name="item_number" value="1" /> 
+    <input type="hidden" name="lc" value="FR" /> 
+    <input type="hidden" name="currency_code" value="EUR" /> 
+    <input type="hidden" name="tax" value="0" /> 
+    <button name="submit" alt="Faire un paiement avec PayPal" />Soutenir!</button>
+  </form>
+</div>
