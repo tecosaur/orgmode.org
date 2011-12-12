@@ -20,7 +20,7 @@
   [[http://lumiere.ens.fr/~guerry/u/org-fosdem-presentation-beamer.pdf][ici]].  En août 2011, Bastien a fait une présentation similaire (mais mise
   à jour) au GNU Hackers Meeting à Paris.
 
-  Allez sur la [[http://orgmode.org/fr/talks.org][page dédiée aux présentations]] pour en voir plus. 
+  Allez sur la [[file:talks.org][page dédiée aux présentations]] pour en voir plus.
 
 * Org pour téléphone mobile
 
