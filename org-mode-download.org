@@ -17,9 +17,9 @@ if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-telechar
 </script>
 #+end_html
 
-* Current Version: Org 7.8
+* Current Version: Org 7.8.01
 
-The current version is 7.8.  To see what has changed in recent releases,
+The current version is 7.8.01.  To see what has changed in recent releases,
 check this detailed list of [[file:Changes.html][changes (english)]].
 
 This package works on GNU Emacs 24, 23 and 22, and (with minor

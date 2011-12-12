@@ -7,9 +7,9 @@
 #+STYLE:     <base href="http://orgmode.org/fr/" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
-* Version actuelle : Org 7.8
+* Version actuelle : Org 7.8.01
 
-La version actuelle est la version 7.8.  Pour voir les changements 
+La version actuelle est la version 7.8.01.  Pour voir les changements
 récents, lisez la liste détaillée des [[http://orgmode.org/Changes.html][modifications]] (en anglais).
 
 Ce paquet fonctionne sur GNU Emacs 24, 23 et 22, et (avec quelques
