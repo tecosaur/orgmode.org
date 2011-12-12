@@ -9,7 +9,7 @@
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+STYLE:     <base href="http://orgmode.org/" />
-#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org2.css" type="text/css" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
 * COMMENT Current HEAD of the git repository 
 
