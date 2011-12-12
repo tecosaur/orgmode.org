@@ -181,22 +181,6 @@ pre {
     padding-bottom: 5pt;
 }
 
-.outline-3 {
-    position: relative;
-    left: 215px;
-    top: 105px;
-    width: 75%;
-    padding-bottom: 5pt;
-}
-
-.outline-4 {
-    position: relative;
-    left: 215px;
-    top: 105px;
-    width: 75%;
-    padding-bottom: 5pt;
-}
-
 #twit {
     -moz-opacity:.2;
     opacity: .2;
@@ -221,7 +205,7 @@ pre {
 }
 
 #outline-container-1 {
-    padding-top: 5pt;
+    padding-top: 10pt;
 }
 
 .outline-2 h2 {
