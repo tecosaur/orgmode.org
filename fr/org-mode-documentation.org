@@ -1,0 +1,48 @@
+#+TITLE: Org-Mode: Documentation
+#+AUTHOR: Bastien
+#+LANGUAGE:  fr
+#+KEYWORDS:  Org Emacs outline planneur note publication projet text brut LaTeX HTML
+#+DESCRIPTION: Org: un mode Emacs pour la prise de notes, la planification et la publication
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+STYLE:     <base href="http://orgmode.org/fr/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+* Le guide et le manuel Org
+
+- Les liens ci-dessous pointent vers la /version de développement/ du
+  manuel.  Si vous voulez lire les derniers manuels sortis (présentement
+  pour Org 7.8), allez dans [[http://orgmode.org/manual/release_7.6/][répertoire]].
+
+- Lire le [[http://orgmode.org/guide/index.html][guide compact en ligne]] ou le télécharger comme un [[http://orgmode.org/orgguide.pdf][document
+  PDF]].  Le guide compact est une introduction d'environ 40 pages à Org.  Il
+  couvre toutes les fonctionnalités de manière basique et contient des
+  liens vers de la documentation détaillée dans le manuel et en ligne.
+
+- Lire le [[http://orgmode.org/manual/index.html][manuel en ligne]].  Le manuel couvre l'ensemble complet des
+  fonctionnalités de manière systématique.  La structure principale est
+  identique à celle du guide, il est donc facile d'aller et venir entre le
+  guide et la documentation avancée.
+
+- Vous pouvez aussi lire le manuel entier en ligne [[http://orgmode.org/org.html][dans un seul fichier]].
+
+- Télécharger le manuel (~200 pages) comme [[http://orgmode.org/org.pdf][document PDF]].
+
+- Acheter une version papier du manuel via [[http://www.network-theory.co.uk/org/manual/][Network Theory Ltd.]]  Pour chaque
+  livre acheté, un dollar US est reversé au projet Org mode.
+
+- Traductions du manuel :
+  - Une [[http://hpcgi1.nifty.com/spen/index.cgi?OrgMode/Manual][traduction japonaise]] d'une version ancienne (4.60), par Takeshi Okano.
+  - Une [[http://gnu.manticore.es/manual-org-emacs][traduction espagnole]] (version 6.21b).
+    
+* La refcard Org 
+  - Télécharger la [[http://orgmode.org/orgcard.pdf][Refcard]] d'org-mode.
+  - Il y a aussi une [[http://orgmode.org/orgcard.txt][version texte]] de la refcard.
+
+* La FAQ Org-mode
+  - La [[http://orgmode.org/worg/org-faq.php][FAQ Org Mode]] est éditable par les utilisateurs et maintenu par la
+    communauté derrière le [[http://orgmode.org/worg/][projet Worg]].
+
+* Tutoriels
+  - Une liste complète de [[http://orgmode.org/worg/org-tutorials/index.php][Tutoriels et de screencasts]] est maintainu par la
+    communauté derrière le [[http://orgmode.org/worg/][projet Worg]].
+

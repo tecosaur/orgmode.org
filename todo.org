@@ -1,23 +1,30 @@
 #         -*- mode:org -*-
 
 #+STARTUP:   align
+#+TITLE:     The Org-mode TODO list
+#+EMAIL:     carsten.dominik@gmail.com
 #+TYP_TODO:  TODO IDEA WISH QUESTION INCONSISTENCY BUG | DONE DECLINED 
 #+TAGS:      NEW(n)
+#+LANGUAGE: en
 #+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t
 #+ARCHIVE:   ::** Archived Tasks
-#+EMAIL:     carsten.dominik@gmail.com
-#+TITLE:     The Org-mode TODO list
+#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+STYLE:     <base href="http://orgmode.org/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
 * Introduction
 
+/This page is not maintained anymore.  Still, there are a few ideas that
+can be useful for further development./
+
 This is a loose collection of ideas and TODO items for the future
-development of Org-mode.  These ideas come from various sources,
-mostly from emacs-orgmode@gnu.org, from direct emails to me, or from
-my own day-dreaming.  I don't always mention the source of an idea,
-out of laziness.  However, when I implement a good idea, I try to
-mention the origin of this idea in the /Acknowledgments/ section of
-the manual - let me know if I forgot to give /you/ credit for
-something.
+development of Org-mode.  These ideas come from various sources, mostly
+from emacs-orgmode@gnu.org, from direct emails to me, or from my own
+day-dreaming.  I don't always mention the source of an idea, out of
+laziness.  However, when I implement a good idea, I try to mention the
+origin of this idea in the /Acknowledgments/ section of the manual - let me
+know if I forgot to give /you/ credit for something.
 
 ** Nomenclature
    On this page, I am using TODO keywords in the following way:

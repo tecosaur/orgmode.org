@@ -1,0 +1,60 @@
+#+TITLE: Org-Mode: Télécharger et Installer
+#+AUTHOR: Bastien
+#+LANGUAGE:  fr
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs outline planneur note publication projet text brut LaTeX HTML
+#+DESCRIPTION: Org: un mode Emacs pour la prise de notes, la planification et la publication
+#+STYLE:     <base href="http://orgmode.org/fr/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+* Version actuelle : Org 7.8
+
+La version actuelle est la version 7.8.  Pour voir les changements 
+récents, lisez la liste détaillée des [[http://orgmode.org/Changes.org][modifications]] (en anglais).
+
+Ce paquet fonctionne sur GNU Emacs 24, 23 et 22, et (avec quelques
+restrictions mineures) sur XEmacs 21.  Emacs 22.2 est livré avec la version
+4.67d d'Org-mode, Emacs 23.1 avec la version 6.21b.  La version de
+développement d'Emacs contient en habituellement une version assez récente
+d'Org, mais peut dater un peu par rapport à la version disponible sur ce
+site web.
+
+* Télécharger
+
+** La distribution standard
+
+Télécharger Org comme [[http://orgmode.org/org-7.6.zip][fichier zip]] ou comme [[http://orgmode.org/org-7.6.tar.gz][archive tar gzippée]].  Ces
+archives contiennent à la fois les fichiers Lisp =org*.el= et la
+documentation en PDF et (TeX)Info.  Suivez les instructions pour
+[[http://orgmode.org/manual/Installation.html#Installation][l'installation]] et [[http://orgmode.org/manual/Activation.html#Activation][l'activation]].
+
+** La version de développement
+
+Vous pouvez vérifier la version de développement d'Org (en même temps que
+toutes les versions passées) en utilisant git.  Le dépôt git est [[http://orgmode.org/w/org-mode.git][navigable
+en ligne]].  À tout moment vous pouvez avoir télécharger un [[http://orgmode.org/w/org-mode.git/snapshot][snapshot]] des
+fichiers du dépôt.  Pour cloner localement le dépôt, tapez ceci (depuis la
+ligne de commande) :
+
+: git clone git://orgmode.org/org-mode.git
+
+Vous trouverez plus d'information là-dessus dans la [[http://orgmode.org/worg/org-faq.php][FAQ]], dans la section
+[[http://orgmode.org/worg/org-faq.php#keeping-current-with-Org-mode-development]["How do I keep current with Org mode development?"]].  Pour ceux qui ne
+peuvent pas utiliser git, nous fournissons des archives [[http://orgmode.org/org-latest.zip][zip]] ou [[http://orgmode.org/org-latest.tar.gz][tar.gz]]
+actualisées tous les jours et correspondant à la dernière version
+git.  Alternativement, vous pouvez aussi télécharger un [[http://orgmode.org/w/org-mode.git/snapshot][snapshot tar.gz]]
+depuis le serveur orgmode.org.
+
+** Distributions alternatives
+
+   Il y a plusieurs distributions alternatives d'Org.  Certaines sont plus
+   à jour que d'autres, donc vérifiez bien que le paquet contient une
+   version récente.
+
+   - Le [[http://packages.debian.org/sid/main/org-mode][paquet Debian]] est maintainu par Sebastien Delafond.
+   - Il y a aussi un paquet pour [[http://aur.archlinux.org/packages.php?do_Details&ID=18206][Archlinux]], par Jiyunatori.
+   - La version de développement d'[[https://savannah.gnu.org/projects/emacs/][Emacs]] contient une version plus ou moins
+     récente.
+   - Le [[http://pdb.finkproject.org/pdb/package.php/org-mode][paquet Fink]] pour Mac OS X par Jesse Alama.
+   - La [[https://launchpad.net/~hexmode/%2Barchive][paquet Ubuntu]] par Mark A. Hershberger.
+

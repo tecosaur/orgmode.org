@@ -1,0 +1,58 @@
+#+TITLE: Org-Mode: Documentation
+#+AUTHOR: Bastien
+#+LANGUAGE:  en
+#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+STYLE:     <base href="http://orgmode.org/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+#+begin_html
+<script type="text/javascript">
+if (navigator.appName == 'Netscape') 
+var language = navigator.language; 
+else 
+var language = navigator.browserLanguage; 
+if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-documentation.html'; 
+</script>
+#+end_html
+
+* The Org guide and manual
+
+- Links below point to the /development version/ of the manual.  If you
+  want to read the latest released manuals (currently for Org 7.7), please
+  browse [[http://orgmode.org/manual/release_7.6/][this directory]].
+
+- Read the [[file:guide/index.html][online compact guide]] or download it as a [[file:orgguide.pdf][PDF document]].  The
+  compact guide is a ~40-pages introduction to Org mode.  It covers all
+  features in a basic way and has links to in-depth documentation in the
+  manual and on the web.
+
+- Read the [[file:manual/index.html][online manual]].  The manual covers the complete feature set with
+  all the bells and whistles, in a systematic way.  The main structure is
+  identical to the guide, so it is easy to go back and forth between basic
+  and advanced documentation.
+
+- You can also read the entire manual online in a [[file:org.html][single monolithic file]].
+
+- Download the manual as a ~200-pages [[file:org.pdf][PDF document]].
+
+- Buy a paperback edition of the manual from [[http://www.network-theory.co.uk/org/manual/][Network Theory Ltd.]]  One USD
+  of each book sold is donated to Org mode project.
+
+- Translations of the manual:
+  - A [[http://hpcgi1.nifty.com/spen/index.cgi?OrgMode%2fManual][Japanese translation]] of an older version (4.60), by Takeshi Okano.
+  - A [[http://gnu.manticore.es/manual-org-emacs][Spanish translation]] (version 6.21b).
+    
+* The Org Reference card
+  - Download the [[file:orgcard.pdf][Refcard]] for org-mode.
+  - There is also a [[file:orgcard.txt][text version]] of the reference card.
+
+* The Org-mode FAQ
+  - The [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] is user-editable and is maintained by the community
+    behind the [[http://orgmode.org/worg/][Worg project]].
+
+* Tutorials
+  - A complete list of [[http://orgmode.org/worg/org-tutorials/index.php][Tutorials and screencasts]] is maintained by the [[http://orgmode.org/worg][Worg
+    project]].
+

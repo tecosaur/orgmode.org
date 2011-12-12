@@ -2,23 +2,25 @@
 #+AUTHOR:    Charles Cave
 #+EMAIL:     charles.cave@gmail.com
 #+LANGUAGE:  en
-#+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:t d:nil tags:not-in-toc
-#+INFOJS_OPT: view:info toc:1 path:org-info.js tdepth:1 ftoc:t
+#+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:nil tags:not-in-toc
 #+LINK_UP: index.html
 #+LINK_HOME: http://orgmode.org
+#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+STYLE:     <base href="http://orgmode.org/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
 * Survey introduction
 
 A survey was conducted of org-mode users during November 2007.  An
-invitation was sent to the org-mode users list as well as announced on
-the http://orgmode.org web site.  About 80 people responded.  This file
-contains a complete list of the answers, as the base of further
-discussion.
+invitation was sent to the org-mode users list as well as announced on the
+http://orgmode.org web site.  About 80 people responded.  This file
+contains a complete list of the answers, as the base of further discussion.
 
-Survey created and summarised by Charles Cave
-mailto:charlesweb@optusnet.com.au
+Survey created and summarised by [[mailto:charlesweb@optusnet.com.au][Charles Cave]].
 
 * 1. Which operating system, version and Linux distribution?
+
 | OS       |  N | bar                                                     |
 |----------+----+---------------------------------------------------------|
 | Windows  | 31 | *******************************                         |
@@ -47,6 +49,7 @@ The different Linux distributions:
 * 2. Which Emacs are you using (GNU/Xemacs, etc) and which version? Paste the result of M-x version.
 
 Summary: 
+
 | Emacs/XEmacs | Number of answers |
 |--------------+-------------------|
 | XEmacs       |                 7 |
@@ -332,10 +335,8 @@ The raw replies can be found [[Raw Emacs versions][here]].
 
 * 5. New features and product maturity?
 
-Original question:
-
-What new features (if any) would you like to see in org-mode or do you
-think the product has reached maturity?
+Original question: "What new features (if any) would you like to see in
+org-mode or do you think the product has reached maturity?"
 
 - case sensitive search in tag completion - multilingual day name
   input product has reached maturity in my opinion	
@@ -990,172 +991,170 @@ documentation or as a tutorial or screencast?
 - org-mode is a fantastic program, supported by a lively helpful email
   list. Carsten is very responsive to feature requests and helping.
 
-
--end-
-
-* Appendix: Raw data for some questions:
+* Appendix: Raw data for some questions
 
 ** <<Raw Emacs versions>>
+
 Here are the detailed responses, for reference.
 
-:GNU Emacs 22.1.1 (powerpc-unknown-linux-gnu, GTK+ Version 2.10.13) of 2007-07-08 on malo, modified by Debian 2. GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE	
-:21.3.1 and 22.1.1	 
-:22.0.96.1 on Windows CVS from the unicode2 branch on Linux	
-:Emacs 22.1 GNU Emacs 22.1.1 (i686-pc-linux-gnu, GTK+ Version 2.10.11) of 2007-09-16 on zen	
-:Emacs 22.1. Where I happen to be sitting, M-x version says: GNU Emacs 22.1.1 (sparc-sun-solaris2.8, X toolkit) of 2007-06-15 on sa
-:Emacs 23	 
-:Emacs from CVS GNU Emacs 23.0.60.1 (i486-pc-linux-gnu, GTK+ Version 2.12.0) of 2007-10-31 on samarium	 
-:Emacs22	 
-:GNU 22.0.98.1	 
-:GNU Emacs 21.3.1	 
-:GNU Emacs 22.0.50.1 (i386-mingw-nt5.1.2600) of 2006-03-21 on YAMALOK	
-:GNU Emacs 22.0.91.1	
-:GNU Emacs 22.0.95.1 (i486-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-03-02 on pacem, modified by Debian	
-:GNU Emacs 22.0.96.1 (i386-mingw-nt5.1.2600) of 2007-03-24 on NEUTRINO	 
-:GNU Emacs 22.0.990.1 (i386-mingw-nt5.1.2600) of 2007-05-23 on LENNART-69DE564 (patched)
-:GNU Emacs 22.1	
-:GNU Emacs 22.1	
-:GNU Emacs 22.1.1	
-:GNU Emacs 22.1.1	
-:GNU Emacs 22.1.1	
-:GNU Emacs 22.1.1 (i386-apple-darwin9, Carbon Version 1.6.0)	 
-:GNU Emacs 22.1.1 (i386-apple-darwin9.0.0, X toolkit) of 2007-11-05 on selenium. dmg	
-:GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE
-:GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE	
-:GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE	
-:GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE	
-:GNU Emacs 22.1.1 (i486-pc-linux-gnu, GTK+ Version 2.8.20) of 2007-07-22 on nautilus, modified by Debian"	 
-:GNU Emacs 22.1.1 (i486-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-08-22 on raven, modified by Debian	 
-:GNU Emacs 22.1.1 (i486-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-11-03 on pacem, modified by Debian	
-:GNU Emacs 22.1.1 (i486-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-11-03 on pacem, modified by Debian - Gnu Emacs 22.1 windows version
-:GNU Emacs 22.1.1 (i586-suse-linux-gnu, GTK+ Version 2.12.0) of 2007-11-06 on balada	  
-:GNU Emacs 22.1.1 (i686-pc-linux-gnu) of 2007-09-27	 
-:GNU Emacs 22.1.1 (i686-pc-linux-gnu, GTK+ Version 2.10.4)
-:GNU Emacs 22.1.1 (i686-pc-linux-gnu, GTK+ Version 2.10.6) of 2007-09-14, in an Eterm
-:GNU Emacs 22.1.1 (powerpc-apple-darwin7.9.0, Carbon Version 1.6.0) of 2007-07-22 on applecore.inf.ed.ac.uk - Aquamacs Distribution 1.
-:GNU Emacs 22.1.1 (powerpc-apple-darwin8.10.0, Carbon Version 1.6.0) of 2007-10-04 on malibu.local	 
-:GNU Emacs 22.1.1 (x86_64-pc-linux-gnu, GTK+ Version 2.12.0) of 2007-11-06 on king, modified by Ubuntu	 
-:GNU Emacs 22.1.2 (i386-unknown-openbsd4.1, X toolkit) of 2007-06-10 on lucien.my.domain	
-:GNU Emacs 22.1.50.1	 
-:GNU Emacs 22.1.50.1 (i386-apple-darwin8.10.1, Carbon Version 1.6.0) of 2007-10-02 on plume.sr.unh.edu - Aquamacs Distribution 1.2a	 
-:GNU Emacs 22.1.50.1 (i386-mingw-nt5.1.2600) of 2007-07-07 on NEUTRINO	 
-:GNU Emacs 22.1.50.1 (i686-pc-linux-gnu, X toolkit) of 2007-06-18 on ...	 
-:GNU Emacs 23.0.0.1 (i386-mingw-nt5.1.2600) of 2007-07-10 on BREP	 
-:GNU Emacs 23.0.0.1 (i386-mingw-nt5.1.2600) of 2007-08-18 on TPAD	 
-:GNU Emacs 23.0.0.1 (i686-pc-linux-gnu, GTK+ Version 2.8.20) of 2007-03-18	 
-:GNU Emacs 23.0.0.1 (i686-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-08-13 on cera" (emacs-unicode2), Emacs 22.1 under Windows.	 
-:GNU Emacs 23.0.50.1 (i386-mingw-nt5.1.2600) of 2007-11-13 (via CVS, compiled with GnuWin32 native tools rather than cygwin)	 
-:GNU Emacs 23.0.50.1 (i486-pc-linux-gnu, GTK+ Version 2.12.1) of 2007-11-11 on elegiac, modified by Debian	
-:GNU Emacs 23.0.50.1 (i486-pc-linux-gnu, GTK+ Version 2.8.20) of 2007-10-14 on elegiac, modified by Debian"	
-:GNU Emacs 23.0.50.1 (i686-pc-linux-gnu, GTK+ Version 2.12.1) of 2007-11-15 on baldur	
-:GNU Emacs 23.0.60.1
-:GNU Emacs 23.0.60.1 (i486-pc-linux-gnu, GTK+ Version 2.12.0) of 2007-10-31 on samarium	 
-:GNU Emacs 23.0.60.1 (i686-pc-linux-gnu, GTK+ Version 2.10.14) of 2007-10-29	 
-:GNU Emacs 23.0.60.1 (i686-suse-linux-gnu, GTK+ Version 2.12.0)	 
-:GNU Emacs 23.0.60.1 (i686-suse-linux-gnu, GTK+ Version 2.12.0)	 
-:GNU Emacs 23.0.60.1 (x86_64-unknown-linux-gnu, GTK+ Version 2.12.1)
-:GNU Emacs CVS (~23.0.50.1)	
-:GNU Emacs CVS 20071101	 
-:GNU Emacs CVS 23.0.0	 
-:GNU Emacs On Windows XP: GNU Emacs 22.0.990.1 (i386-mingw-nt5.1.2600) of 2007-05-23 on LENNART-69DE564 (patched) On Linux: GNU Emacs 22.1.50.1 (armv5tel-unknown-linux-gnu) of 2007-06-22 on homehub	 
-:GNU Emacs and Carbon Emacs, both 22.1	 
-:GNU. On Debian: GNU Emacs 23.0.50.1 (x86_64-pc-linux-gnu, GTK+ Version 2.12.1) of 2007-11-11 on elegiac, modified by Debian The other isn't available right now.	 
-:Gnu Emacs 22.1.1 and 21.4 (patch 20) "Double Solitaire" XEmacs Lucid	 
-:Gnu Emacs v22.1.50.1	
-:Gnu/Emacs GNU Emacs 23.0.60.1 (x86_64-unknown-linux-gnu, GTK+ Version 2.12.0) of 2007-11-11
-:Carbon Emacs, an OS X distro of GNU Emacs 22.1.50	 
-:XEmacs 21.4 (patch 19) "Constant Variable" [Lucid] (i486-linux-gnu, Mule) of Fri Nov 3 2006 on penell	
-:XEmacs 21.4 (patch 20) "Double Solitaire" [Lucid] (i486-linux-gnu) of Fri Oct 19 2007 on penell	  
-:XEmacs 21.4 (patch 20) "Double Solitaire" [Lucid] (i686-pc-cygwin, Mule) of Fri Dec 15 2006 on vzell-de	 
-:XEmacs 21.4 (patch 20) \"Double Solitaire\" [Lucid] (i686-pc-cygwin, Mule) of Fri Dec 15 2006 on vzell-d
-:XEmacs 21.4.20 (distributed with Cygwin)	
-:XEmacs 21.5 (beta28) "fuki" [Lucid] (i686-pc-linux, Mule) of Wed Jun 13 2007 on n2	 
-:XEmacs Lucid 21.4 (patch 19) "Constant Variable" - on Windows, Similar on linux (not at machine)	 
-:Emacs	
-:Emacs 21.4.1 emacs 21.?.? (at work, I'm not certain)	 
-:GNU	 
-:GNU 22.1.1	 
-:GNU emacs	 
-:GNU emacs 22.1.50.1 (snapshot)
-:GNU emacs GNU Emacs 22.0.97.1 (i686-pc-linux-gnu, GTK+ Version 2.4.13)
+: GNU Emacs 22.1.1 (powerpc-unknown-linux-gnu, GTK+ Version 2.10.13) of 2007-07-08 on malo, modified by Debian 2. GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE	
+: 21.3.1 and 22.1.1	 
+: 22.0.96.1 on Windows CVS from the unicode2 branch on Linux	
+: Emacs 22.1 GNU Emacs 22.1.1 (i686-pc-linux-gnu, GTK+ Version 2.10.11) of 2007-09-16 on zen	
+: Emacs 22.1. Where I happen to be sitting, M-x version says: GNU Emacs 22.1.1 (sparc-sun-solaris2.8, X toolkit) of 2007-06-15 on sa
+: Emacs 23	 
+: Emacs from CVS GNU Emacs 23.0.60.1 (i486-pc-linux-gnu, GTK+ Version 2.12.0) of 2007-10-31 on samarium	 
+: Emacs22	 
+: GNU 22.0.98.1	 
+: GNU Emacs 21.3.1	 
+: GNU Emacs 22.0.50.1 (i386-mingw-nt5.1.2600) of 2006-03-21 on YAMALOK	
+: GNU Emacs 22.0.91.1	
+: GNU Emacs 22.0.95.1 (i486-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-03-02 on pacem, modified by Debian	
+: GNU Emacs 22.0.96.1 (i386-mingw-nt5.1.2600) of 2007-03-24 on NEUTRINO	 
+: GNU Emacs 22.0.990.1 (i386-mingw-nt5.1.2600) of 2007-05-23 on LENNART-69DE564 (patched)
+: GNU Emacs 22.1	
+: GNU Emacs 22.1	
+: GNU Emacs 22.1.1	
+: GNU Emacs 22.1.1	
+: GNU Emacs 22.1.1	
+: GNU Emacs 22.1.1 (i386-apple-darwin9, Carbon Version 1.6.0)	 
+: GNU Emacs 22.1.1 (i386-apple-darwin9.0.0, X toolkit) of 2007-11-05 on selenium. dmg	
+: GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE
+: GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE	
+: GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE	
+: GNU Emacs 22.1.1 (i386-mingw-nt5.1.2600) of 2007-06-02 on RELEASE	
+: GNU Emacs 22.1.1 (i486-pc-linux-gnu, GTK+ Version 2.8.20) of 2007-07-22 on nautilus, modified by Debian"	 
+: GNU Emacs 22.1.1 (i486-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-08-22 on raven, modified by Debian	 
+: GNU Emacs 22.1.1 (i486-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-11-03 on pacem, modified by Debian	
+: GNU Emacs 22.1.1 (i486-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-11-03 on pacem, modified by Debian - Gnu Emacs 22.1 windows version
+: GNU Emacs 22.1.1 (i586-suse-linux-gnu, GTK+ Version 2.12.0) of 2007-11-06 on balada	  
+: GNU Emacs 22.1.1 (i686-pc-linux-gnu) of 2007-09-27	 
+: GNU Emacs 22.1.1 (i686-pc-linux-gnu, GTK+ Version 2.10.4)
+: GNU Emacs 22.1.1 (i686-pc-linux-gnu, GTK+ Version 2.10.6) of 2007-09-14, in an Eterm
+: GNU Emacs 22.1.1 (powerpc-apple-darwin7.9.0, Carbon Version 1.6.0) of 2007-07-22 on applecore.inf.ed.ac.uk - Aquamacs Distribution 1.
+: GNU Emacs 22.1.1 (powerpc-apple-darwin8.10.0, Carbon Version 1.6.0) of 2007-10-04 on malibu.local	 
+: GNU Emacs 22.1.1 (x86_64-pc-linux-gnu, GTK+ Version 2.12.0) of 2007-11-06 on king, modified by Ubuntu	 
+: GNU Emacs 22.1.2 (i386-unknown-openbsd4.1, X toolkit) of 2007-06-10 on lucien.my.domain	
+: GNU Emacs 22.1.50.1	 
+: GNU Emacs 22.1.50.1 (i386-apple-darwin8.10.1, Carbon Version 1.6.0) of 2007-10-02 on plume.sr.unh.edu - Aquamacs Distribution 1.2a	 
+: GNU Emacs 22.1.50.1 (i386-mingw-nt5.1.2600) of 2007-07-07 on NEUTRINO	 
+: GNU Emacs 22.1.50.1 (i686-pc-linux-gnu, X toolkit) of 2007-06-18 on ...	 
+: GNU Emacs 23.0.0.1 (i386-mingw-nt5.1.2600) of 2007-07-10 on BREP	 
+: GNU Emacs 23.0.0.1 (i386-mingw-nt5.1.2600) of 2007-08-18 on TPAD	 
+: GNU Emacs 23.0.0.1 (i686-pc-linux-gnu, GTK+ Version 2.8.20) of 2007-03-18	 
+: GNU Emacs 23.0.0.1 (i686-pc-linux-gnu, X toolkit, Xaw3d scroll bars) of 2007-08-13 on cera" (emacs-unicode2), Emacs 22.1 under Windows.	 
+: GNU Emacs 23.0.50.1 (i386-mingw-nt5.1.2600) of 2007-11-13 (via CVS, compiled with GnuWin32 native tools rather than cygwin)	 
+: GNU Emacs 23.0.50.1 (i486-pc-linux-gnu, GTK+ Version 2.12.1) of 2007-11-11 on elegiac, modified by Debian	
+: GNU Emacs 23.0.50.1 (i486-pc-linux-gnu, GTK+ Version 2.8.20) of 2007-10-14 on elegiac, modified by Debian"	
+: GNU Emacs 23.0.50.1 (i686-pc-linux-gnu, GTK+ Version 2.12.1) of 2007-11-15 on baldur	
+: GNU Emacs 23.0.60.1
+: GNU Emacs 23.0.60.1 (i486-pc-linux-gnu, GTK+ Version 2.12.0) of 2007-10-31 on samarium	 
+: GNU Emacs 23.0.60.1 (i686-pc-linux-gnu, GTK+ Version 2.10.14) of 2007-10-29	 
+: GNU Emacs 23.0.60.1 (i686-suse-linux-gnu, GTK+ Version 2.12.0)	 
+: GNU Emacs 23.0.60.1 (i686-suse-linux-gnu, GTK+ Version 2.12.0)	 
+: GNU Emacs 23.0.60.1 (x86_64-unknown-linux-gnu, GTK+ Version 2.12.1)
+: GNU Emacs CVS (~23.0.50.1)	
+: GNU Emacs CVS 20071101	 
+: GNU Emacs CVS 23.0.0	 
+: GNU Emacs On Windows XP: GNU Emacs 22.0.990.1 (i386-mingw-nt5.1.2600) of 2007-05-23 on LENNART-69DE564 (patched) On Linux: GNU Emacs 22.1.50.1 (armv5tel-unknown-linux-gnu) of 2007-06-22 on homehub	 
+: GNU Emacs and Carbon Emacs, both 22.1	 
+: GNU. On Debian: GNU Emacs 23.0.50.1 (x86_64-pc-linux-gnu, GTK+ Version 2.12.1) of 2007-11-11 on elegiac, modified by Debian The other isn't available right now.	 
+: Gnu Emacs 22.1.1 and 21.4 (patch 20) "Double Solitaire" XEmacs Lucid	 
+: Gnu Emacs v22.1.50.1	
+: Gnu/Emacs GNU Emacs 23.0.60.1 (x86_64-unknown-linux-gnu, GTK+ Version 2.12.0) of 2007-11-11
+: Carbon Emacs, an OS X distro of GNU Emacs 22.1.50	 
+: XEmacs 21.4 (patch 19) "Constant Variable" [Lucid] (i486-linux-gnu, Mule) of Fri Nov 3 2006 on penell	
+: XEmacs 21.4 (patch 20) "Double Solitaire" [Lucid] (i486-linux-gnu) of Fri Oct 19 2007 on penell	  
+: XEmacs 21.4 (patch 20) "Double Solitaire" [Lucid] (i686-pc-cygwin, Mule) of Fri Dec 15 2006 on vzell-de	 
+: XEmacs 21.4 (patch 20) \"Double Solitaire\" [Lucid] (i686-pc-cygwin, Mule) of Fri Dec 15 2006 on vzell-d
+: XEmacs 21.4.20 (distributed with Cygwin)	
+: XEmacs 21.5 (beta28) "fuki" [Lucid] (i686-pc-linux, Mule) of Wed Jun 13 2007 on n2	 
+: XEmacs Lucid 21.4 (patch 19) "Constant Variable" - on Windows, Similar on linux (not at machine)	 
+: Emacs	
+: Emacs 21.4.1 emacs 21.?.? (at work, I'm not certain)	 
+: GNU	 
+: GNU 22.1.1	 
+: GNU emacs	 
+: GNU emacs 22.1.50.1 (snapshot)
+: GNU emacs GNU Emacs 22.0.97.1 (i686-pc-linux-gnu, GTK+ Version 2.4.13)
 
 ** <<Raw ages>>
 
-:22	 Sun, 11/25/07 6:38 PM 
-:22	 Thu, 11/15/07 11:55 PM 
-:24	 Fri, 11/16/07 4:15 AM 
-:25	 Sun, 11/18/07 10:05 PM 
-:25	 Sun, 11/25/07 12:04 PM 
-:
-:26	 Mon, 11/19/07 10:29 AM 
-:26	 Sat, 11/24/07 4:38 AM 
-:26	 Thu, 11/15/07 2:45 PM 
-:26	 Thu, 11/15/07 7:22 PM 
-:27	 Fri, 11/16/07 9:20 AM 
-:27	 Wed, 11/28/07 3:20 AM 
-:28	 Sun, 12/2/07 5:32 AM 
-:28	 Thu, 11/15/07 10:06 PM 
-:28	 Thu, 11/15/07 12:04 PM 
-:28	 Thu, 11/15/07 12:17 PM 
-:29	 Mon, 11/19/07 8:06 PM 
-:29	 Thu, 11/15/07 11:27 AM 
-:30	 Fri, 11/16/07 3:26 AM 
-:30	 Thu, 11/15/07 10:07 PM 
-:30	 Thu, 11/15/07 3:01 PM 
-:
-:31	 Fri, 11/16/07 2:30 AM 
-:31	 Sun, 11/18/07 3:14 PM 
-:31 yrs.	 Fri, 11/23/07 7:04 PM 
-:32	 Fri, 11/23/07 10:11 PM 
-:32	 Thu, 11/15/07 12:02 PM 
-:33	 Fri, 11/16/07 12:54 PM 
-:33	 Sat, 11/17/07 4:41 AM 
-:33	 Sat, 11/24/07 2:28 AM 
-:33	 Thu, 11/15/07 11:23 AM 
-:33	 Thu, 11/15/07 11:34 PM 
-:33	 Thu, 11/15/07 12:27 PM 
-:33	 Wed, 11/21/07 11:57 PM 
-:34	 Fri, 11/16/07 1:24 AM 
-:34	 Mon, 11/19/07 7:31 PM 
-:34	 Thu, 11/22/07 6:59 AM 
-:35	 Fri, 11/16/07 3:23 AM 
-:35	 Fri, 11/16/07 7:53 AM 
-:35	 Mon, 11/19/07 10:03 AM 
-:35	 Sun, 12/9/07 2:40 AM 
-:35	 Thu, 11/22/07 6:47 PM 
-:35	 Tue, 11/27/07 11:04 AM 
-:
-:36	 Fri, 11/16/07 3:19 AM 
-:37	 Fri, 11/16/07 12:11 PM 
-:37	 Fri, 11/16/07 12:36 AM 
-:37	 Fri, 11/23/07 1:13 AM 
-:37	 Thu, 11/15/07 9:09 PM 
-:37	 Thu, 11/22/07 3:39 AM 
-:37	 Tue, 11/20/07 10:55 PM 
-:38	 Sun, 12/23/07 1:43 AM 
-:39	 Sun, 11/18/07 9:52 PM 
-:39	 Thu, 11/15/07 4:53 PM 
-:40	 Thu, 11/15/07 6:00 PM 
-:
-:41	 Fri, 11/16/07 7:36 AM 
-:41	 Sat, 11/17/07 9:27 AM 
-:42	 Fri, 11/23/07 7:58 AM 
-:42	 Mon, 11/19/07 9:18 AM 
-:42	 Sat, 11/17/07 2:31 AM 
-:42	 Sat, 11/17/07 4:32 AM 
-:42	 Thu, 11/15/07 11:45 PM 
-:42	 Thu, 11/15/07 8:23 PM 
-:43	 Mon, 12/10/07 12:58 AM 
-:45	 Fri, 11/16/07 3:21 AM 
-:45	 Fri, 11/16/07 4:40 AM 
-:45	 Fri, 11/16/07 4:40 AM 
-:45	 Sun, 11/18/07 7:39 PM 
-:
-:46	 Fri, 11/16/07 4:18 AM 
-:47	 Thu, 11/15/07 8:42 PM 
-:49	 Thu, 11/15/07 11:15 AM 
-
-52	 Mon, 11/19/07 12:40 AM 
-54	 Thu, 11/15/07 11:38 AM 
-54	 Thu, 11/15/07 12:27 PM 
+: 22	 Sun, 11/25/07 6:38 PM 
+: 22	 Thu, 11/15/07 11:55 PM 
+: 24	 Fri, 11/16/07 4:15 AM 
+: 25	 Sun, 11/18/07 10:05 PM 
+: 25	 Sun, 11/25/07 12:04 PM 
+: 
+: 26	 Mon, 11/19/07 10:29 AM 
+: 26	 Sat, 11/24/07 4:38 AM 
+: 26	 Thu, 11/15/07 2:45 PM 
+: 26	 Thu, 11/15/07 7:22 PM 
+: 27	 Fri, 11/16/07 9:20 AM 
+: 27	 Wed, 11/28/07 3:20 AM 
+: 28	 Sun, 12/2/07 5:32 AM 
+: 28	 Thu, 11/15/07 10:06 PM 
+: 28	 Thu, 11/15/07 12:04 PM 
+: 28	 Thu, 11/15/07 12:17 PM 
+: 29	 Mon, 11/19/07 8:06 PM 
+: 29	 Thu, 11/15/07 11:27 AM 
+: 30	 Fri, 11/16/07 3:26 AM 
+: 30	 Thu, 11/15/07 10:07 PM 
+: 30	 Thu, 11/15/07 3:01 PM 
+: 
+: 31	 Fri, 11/16/07 2:30 AM 
+: 31	 Sun, 11/18/07 3:14 PM 
+: 31 yrs.	 Fri, 11/23/07 7:04 PM 
+: 32	 Fri, 11/23/07 10:11 PM 
+: 32	 Thu, 11/15/07 12:02 PM 
+: 33	 Fri, 11/16/07 12:54 PM 
+: 33	 Sat, 11/17/07 4:41 AM 
+: 33	 Sat, 11/24/07 2:28 AM 
+: 33	 Thu, 11/15/07 11:23 AM 
+: 33	 Thu, 11/15/07 11:34 PM 
+: 33	 Thu, 11/15/07 12:27 PM 
+: 33	 Wed, 11/21/07 11:57 PM 
+: 34	 Fri, 11/16/07 1:24 AM 
+: 34	 Mon, 11/19/07 7:31 PM 
+: 34	 Thu, 11/22/07 6:59 AM 
+: 35	 Fri, 11/16/07 3:23 AM 
+: 35	 Fri, 11/16/07 7:53 AM 
+: 35	 Mon, 11/19/07 10:03 AM 
+: 35	 Sun, 12/9/07 2:40 AM 
+: 35	 Thu, 11/22/07 6:47 PM 
+: 35	 Tue, 11/27/07 11:04 AM 
+: 
+: 36	 Fri, 11/16/07 3:19 AM 
+: 37	 Fri, 11/16/07 12:11 PM 
+: 37	 Fri, 11/16/07 12:36 AM 
+: 37	 Fri, 11/23/07 1:13 AM 
+: 37	 Thu, 11/15/07 9:09 PM 
+: 37	 Thu, 11/22/07 3:39 AM 
+: 37	 Tue, 11/20/07 10:55 PM 
+: 38	 Sun, 12/23/07 1:43 AM 
+: 39	 Sun, 11/18/07 9:52 PM 
+: 39	 Thu, 11/15/07 4:53 PM 
+: 40	 Thu, 11/15/07 6:00 PM 
+: 
+: 41	 Fri, 11/16/07 7:36 AM 
+: 41	 Sat, 11/17/07 9:27 AM 
+: 42	 Fri, 11/23/07 7:58 AM 
+: 42	 Mon, 11/19/07 9:18 AM 
+: 42	 Sat, 11/17/07 2:31 AM 
+: 42	 Sat, 11/17/07 4:32 AM 
+: 42	 Thu, 11/15/07 11:45 PM 
+: 42	 Thu, 11/15/07 8:23 PM 
+: 43	 Mon, 12/10/07 12:58 AM 
+: 45	 Fri, 11/16/07 3:21 AM 
+: 45	 Fri, 11/16/07 4:40 AM 
+: 45	 Fri, 11/16/07 4:40 AM 
+: 45	 Sun, 11/18/07 7:39 PM 
+: 
+: 46	 Fri, 11/16/07 4:18 AM 
+: 47	 Thu, 11/15/07 8:42 PM 
+: 49	 Thu, 11/15/07 11:15 AM 
+: 
+: 52	 Mon, 11/19/07 12:40 AM 
+: 54	 Thu, 11/15/07 11:38 AM 
+: 54	 Thu, 11/15/07 12:27 PM 
 
