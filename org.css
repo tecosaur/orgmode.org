@@ -204,6 +204,10 @@ pre {
     z-index: 100;
 }
 
+#outline-container-1 {
+    padding-top: 10pt;
+}
+
 .outline-2 h2 {
     font-family: Courier New; 
 }
