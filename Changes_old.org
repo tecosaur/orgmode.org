@@ -1,6 +1,6 @@
 #   -*- mode: org; fill-column: 72 -*-
 
-#+TITLE: Archive list of Org-mode user-visible changes
+#+TITLE: Archive list of Org-mode changes
 #+AUTHOR:  Carsten Dominik
 #+EMAIL:  carsten at orgmode dot org
 #+STARTUP: hidestars
