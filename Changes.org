@@ -7,7 +7,9 @@
 #+STARTUP: indent hidestars
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 
-* COMMENT Current HEAD of the git repository
+* COMMENT Current HEAD of the git repository 
+
+* Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
 ** Summary
 
