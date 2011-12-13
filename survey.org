@@ -8,7 +8,7 @@
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+STYLE:     <base href="http://orgmode.org/" />
-#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.ico" />
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
 * Survey introduction
