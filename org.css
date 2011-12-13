@@ -57,7 +57,7 @@ body {
     right: 14px;
     top: 15px;
     width: 90px; 
-    height: 40px;
+    height: 35px;
     box-shadow: 5px 5px 5px #888;
     -webkit-box-shadow: 5px 5px 5px #888;
     -moz-box-shadow: 5px 5px 5px #888;
@@ -65,7 +65,7 @@ body {
     -moz-border-radius: 10px;
     background-color: #53e1e3;
     font-weight: bold;
-    padding-top: 7pt;
+    padding-top: 10px;
 }
 
 #paypal a:hover {
@@ -74,7 +74,7 @@ body {
     right: 9px;
     top: 15px;
     width: 90px; 
-    height: 40px;
+    height: 35px;
     margin-top: 5px;
     margin-left: 5px;
     box-shadow: 0px 0px 0px #888;
@@ -84,7 +84,7 @@ body {
     -moz-border-radius: 10px;
     background-color: #49f4f6;
     font-weight: bold;
-    padding-top: 7pt;
+    padding-top: 10px;
 }
 
 h1.title {
