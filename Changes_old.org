@@ -8,6 +8,7 @@
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+OPTIONS: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:{} *:t TeX:t LaTeX:nil
 #+STYLE:     <base href="http://localhost/org-mode/index.html" />
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.ico" />
 #+STYLE:     <link rel="stylesheet" href="org2.css" type="text/css" />
 
 * Version 6.36

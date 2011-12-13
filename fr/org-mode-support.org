@@ -5,6 +5,7 @@
 #+KEYWORDS:  Org Emacs outline planneur note publication projet text brut LaTeX HTML
 #+DESCRIPTION: Org: un mode Emacs pour la prise de notes, la planification et la publication
 #+STYLE:     <base href="http://orgmode.org/fr/" />
+#+STYLE:     <link rel="icon" type="image/png" href="http://orgmode.org/org-mode-unicorn.ico" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
 * Support via la liste de discussion d'Org-mode
