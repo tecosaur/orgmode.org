@@ -6,6 +6,7 @@
 #+DESCRIPTION: Org: un mode Emacs pour la prise de notes, la planification et la publication
 #+STYLE:     <base href="http://orgmode.org/fr/" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/css/lightbox.css" type="text/css" />
 
 * Org: un mode d'Emacs pour les notes, la gestion de tâches et la publication
 

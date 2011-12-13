@@ -6,6 +6,7 @@
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/css/lightbox.css" type="text/css" />
 
 #+begin_html
 <script type="text/javascript">
