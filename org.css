@@ -65,9 +65,10 @@ body {
     -moz-border-radius: 10px;
     background-color: #53e1e3;
     font-weight: bold;
+    padding-top: 7pt;
 }
 
-#paypal button:hover {
+#paypal a:hover {
     position:fixed;
     display: block;
     right: 9px;
@@ -83,6 +84,7 @@ body {
     -moz-border-radius: 10px;
     background-color: #49f4f6;
     font-weight: bold;
+    padding-top: 7pt;
 }
 
 h1.title {
