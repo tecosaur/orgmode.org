@@ -35,7 +35,7 @@ Please consider making a donation through paypal:
   <input type="hidden" name="lc" value="US" />
   <input type="hidden" name="currency_code" value="USD" />
   <input type="hidden" name="tax" value="0" />
-  <button name="submit" alt="Make payments with PayPal" />Support!</button>
+  <button name="submit" alt="Make payments with PayPal" />Support Org!</button>
 </form>
 #+end_html
 

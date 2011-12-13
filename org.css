@@ -48,7 +48,7 @@ body {
     z-index: 100;
 }
 
-#paypal button {
+#paypal a {
     font-family: Courier new;
     cursor: pointer;
     color: white;
