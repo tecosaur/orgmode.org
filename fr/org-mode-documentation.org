@@ -9,6 +9,7 @@
 
 * Le guide et le manuel Org
 
+
 - Lire le [[http://orgmode.org/guide/index.html][guide compact en ligne]] ou le télécharger comme un [[http://orgmode.org/orgguide.pdf][document
   PDF]].  Le guide compact est une introduction d'environ 40 pages à Org.  Il
   couvre toutes les fonctionnalités de manière basique et contient des
@@ -20,6 +21,14 @@
   guide et la documentation avancée.
 
 - Vous pouvez aussi lire le manuel entier en ligne [[http://orgmode.org/org.html][dans un seul fichier]].
+
+  #+begin_html
+  <a href="http://www.network-theory.co.uk/org/manual/">
+  <img src="http://www.network-theory.co.uk/org/manual/9781906966089-small" 
+       alt="Org Manual paper version by Network Theory" 
+       style="float:right;margin:5pt;" width="120px" />
+  </a>
+  #+end_html
 
 - Télécharger le manuel (~200 pages) comme [[http://orgmode.org/org.pdf][document PDF]].
 
