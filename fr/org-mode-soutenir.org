@@ -7,16 +7,6 @@
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape')
-var language = navigator.language;
-else
-var language = navigator.browserLanguage;
-if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-soutenir.html';
-</script>
-#+end_html
-
 * Pourquoi ?
 
 Org Mode is still growing fast, donation helps the maintainer dedicate more
