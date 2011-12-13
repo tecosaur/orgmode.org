@@ -32,7 +32,7 @@ release.
 
 ** The standard distribution
 
-Download as [[file:org-7.6.zip][zip file]] or [[file:org-7.6.tar.gz][gzipped tar archive]].  These archives contain both
+Download as [[file:org-7.8.02.zip][zip file]] or [[file:org-7.8.02.tar.gz][gzipped tar archive]].  These archives contain both
 the =org*.el= Lisp files and the documentation in PDF and (TeX)Info
 formats.  Follow the instructions for [[http://orgmode.org/manual/Installation.html#Installation][Installation]] and [[http://orgmode.org/manual/Activation.html#Activation][Activation]].
 

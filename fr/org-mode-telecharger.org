@@ -23,7 +23,7 @@ site web.
 
 ** La distribution standard
 
-Télécharger Org comme [[http://orgmode.org/org-7.6.zip][fichier zip]] ou comme [[http://orgmode.org/org-7.6.tar.gz][archive tar gzippée]].  Ces
+Télécharger Org comme [[http://orgmode.org/org-7.8.02.zip][fichier zip]] ou comme [[http://orgmode.org/org-7.8.02.tar.gz][archive tar gzippée]].  Ces
 archives contiennent à la fois les fichiers Lisp =org*.el= et la
 documentation en PDF et (TeX)Info.  Suivez les instructions pour
 [[http://orgmode.org/manual/Installation.html#Installation][l'installation]] et [[http://orgmode.org/manual/Activation.html#Activation][l'activation]].
