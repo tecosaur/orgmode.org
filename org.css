@@ -185,9 +185,9 @@ pre {
 }
 
 #twit {
-    -moz-opacity:.2;
-    opacity: .2;
-    filter:alpha(opacity=20);
+    /* -moz-opacity:.2; */
+    /* opacity: .2; */
+    /* filter:alpha(opacity=20); */
     position: fixed;
     top: 362px;
     box-shadow: 8px 8px 12px #ccc;
@@ -196,16 +196,16 @@ pre {
     z-index: 100;
 }
 
-#twit:hover {
-    -moz-opacity:1;
-    opacity: 1;
-    filter:alpha(opacity=100);
+/* #twit:hover { */
+/*     -moz-opacity:1; */
+/*     opacity: 1; */
+/*     filter:alpha(opacity=100); */
 
-    position: fixed;
-    top: 362px;
-    box-shadow: 8px 8px 12px #ccc;
-    z-index: 100;
-}
+/*     position: fixed; */
+/*     top: 362px; */
+/*     box-shadow: 8px 8px 12px #ccc; */
+/*     z-index: 100; */
+/* } */
 
 #outline-container-1 {
     padding-top: 3pt;
