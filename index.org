@@ -52,6 +52,8 @@ document.write( b[i] )
 </script>
 #+end_html
 
+(Click to enlarge the picture - press =Escape= to lower it.)
+
 Org-mode is for keeping notes, maintaining TODO lists, doing project
 planning, and authoring with a fast and effective plain-text system.
 
