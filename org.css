@@ -164,13 +164,13 @@ pre {
     width: 100px;
 }
 
-.ok {
-    -moz-opacity:.2;
-    opacity: .2;
-    filter:alpha(opacity=20);
-}
+/* .ok { */
+/*     -moz-opacity:.2; */
+/*     opacity: .2; */
+/*     filter:alpha(opacity=20); */
+/* } */
 
-.ok:hover {
+.ok {
     -moz-opacity:1;
     opacity: 1;
     filter:alpha(opacity=100);
