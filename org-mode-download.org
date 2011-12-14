@@ -10,11 +10,12 @@
 
 #+begin_html
 <script type="text/javascript">
-if (navigator.appName == 'Netscape') 
-var language = navigator.language; 
-else 
-var language = navigator.browserLanguage; 
-if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-telecharger.html'; 
+if (navigator.appName == 'Netscape')
+var language = navigator.language;
+else
+var language = navigator.browserLanguage;
+if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-telecharger.html';
+if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-download.html';
 </script>
 #+end_html
 
@@ -63,4 +64,3 @@ download a [[http://orgmode.org/w/org-mode.git/snapshot][tar.gz snapshot]] from 
    - The [[https://savannah.gnu.org/projects/emacs/][Emacs]] development version contains a more-or-less recent version.
    - The [[http://pdb.finkproject.org/pdb/package.php/org-mode][Fink package]] for Mac OS X by Jesse Alama.
    - The [[https://launchpad.net/~hexmode/+archive][Ubuntu package]] by Mark A. Hershberger.
-

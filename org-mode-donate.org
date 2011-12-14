@@ -15,6 +15,7 @@ var language = navigator.language;
 else
 var language = navigator.browserLanguage;
 if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-soutenir.html';
+if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-donate.html';
 </script>
 #+end_html
 
