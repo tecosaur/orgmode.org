@@ -21,12 +21,6 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-document
 
 * The Org guide and manual
 
-#+begin_html
-<a href="http://www.network-theory.co.uk/org/manual/">
-<img src="http://www.network-theory.co.uk/org/manual/9781906966089-small" style="float:right;"/>
-</a>
-#+end_html
-
 - Read the [[file:guide/index.html][online compact guide]] or download it as a [[file:orgguide.pdf][PDF document]].  The
   compact guide is a ~40-pages introduction to Org mode.  It covers all
   features in a basic way and has links to in-depth documentation in the
