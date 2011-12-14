@@ -58,7 +58,7 @@ the maintainer.
 
 The shop's revenue goes to Carsten, the original author of Org-mode, still
 a very active contributor.  It's also a nice way to tell the world you like
-Org-mode!
+Org-mode!  You can buy at the [[http://orgmode.spreadshirt.com][US shop]] or at the [[http://orgmode.spreadshirt.de][EU shop]]...
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 

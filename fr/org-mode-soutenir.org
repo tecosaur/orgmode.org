@@ -47,7 +47,9 @@ Pour chaque [[http://www.network-theory.co.uk/org/manual/][manuel Org vendu par 
 
 Les revenus des boutiques vont à Carsten, l'auteur original d'Org-mode,
 toujours contributeur très actif.  C'est aussi une manière sympa de dire au
-monde que vous aimez Org-mode !
+monde que vous aimez Org-mode !  Vous pouvez acheter dans la boutique aux
+[[http://orgmode.spreadshirt.com][États-Unis]] ou en [[http://orgmode.spreadshirt.de][Europe]]...
+
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
