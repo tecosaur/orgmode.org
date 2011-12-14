@@ -25,11 +25,11 @@ if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-document
 </a>
 #+end_html
 
-- [[file:guide/index.html][オンラインコンパクトガイド]] を読むか、[[file:orgguide.pdf][PDF]] をダウンロードする。このコンパクトガイドは、40ページ程度の Org-mode の概要です。すべての機能を簡潔に網羅していて、マニュアルとウェブの詳細な資料へのリンクが載せられています。
+- [[http://orgmode.org/guide/index.html][オンラインコンパクトガイド]] を読むか、[[http://orgmode.org/orgguide.pdf][PDF]] をダウンロードする。このコンパクトガイドは、40ページ程度にまとめられた Org-mode の概要です。すべての機能を簡潔に網羅していて、マニュアルとウェブの詳細な資料へのリンクが載せられています。
 
-- [[file:manual/index.html][オンラインマニュアル]] を読む。マニュアルは、すべての機能を解説しています。あまり役立たないかもしれない情報も含んでいますが、体系的にまとめられています。主要な構造がコンパクトガイドと一致しているので、基本的な説明と詳細な記述を気軽に移動できます。
+- [[http://orgmode.org/manual/index.html][オンラインマニュアル]] を読む。マニュアルは、すべての機能を解説しています。あまり役立たないかもしれない情報も含んでいますが、体系的にまとめられています。主要な構造がコンパクトガイドと一致しているので、基本的な説明と詳細な記述を気軽に移動できます。
 
-- マニュアルのすべてを[[file:org.html][一つのファイル]] で読む。
+- マニュアルのすべてを [[http://orgmode.org/org.html][一つのファイル]] で読む。
 
   #+begin_html
   <a href="http://www.network-theory.co.uk/org/manual/">
@@ -39,7 +39,7 @@ if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-document
   </a>
   #+end_html
 
-- 約200ページにおよぶ [[file:org.pdf][PDF]] をダウンロードする。
+- 約200ページにおよぶ [[http://orgmode.org/org.pdf][PDF]] をダウンロードする。
 
 - ペーパーバック版のマニュアルを[[http://www.network-theory.co.uk/org/manual/][Network Theory Ltd.]] で購入する。一冊販売されると、そのうち1ドルが Org-mode プロジェクトに寄付されます。
 
@@ -48,11 +48,11 @@ if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-document
   - [[http://gnu.manticore.es/manual-org-emacs][スペイン語翻訳 (6.21b)]]
     
 * Org-mode のリファレンスカード
-  - [[file:orgcard.pdf][PDF]] のリファレンスカードをダウンロードする
-  - [[file:orgcard.txt][テキスト版]] をダウンロードする
+  - [[http://orgmode.org/orgcard.pdf][PDF]] のリファレンスカードをダウンロードする
+  - [[http://orgmode.org/orgcard.txt][テキスト版]] をダウンロードする
 
 * よくある質問
-  - [[http://orgmode.org/worg/org-faq.php][org-modeのよくある質問]] は、ユーザ自身が編集でき、コミュニティが[[http://orgmode.org/worg/][Worgプロジェクト]] で管理しています。
+  - Org-mode の [[http://orgmode.org/worg/org-faq.php][よくある質問]] は、ユーザ自身が編集でき、[[http://orgmode.org/worg/][Worgプロジェクト]] でコミュニティが管理しています。
 
 * チュートリアル
-  - [[http://orgmode.org/worg/org-tutorials/index.php][チュートリアルとスクリーンキャスト]] の完全なリストが[[http://orgmode.org/worg][Worgプロジェクト]] で管理されています。
+  - [[http://orgmode.org/worg/org-tutorials/index.php][チュートリアルとスクリーンキャスト]] の完全なリストが [[http://orgmode.org/worg][Worgプロジェクト]] で管理されています。

@@ -19,15 +19,15 @@ if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-telechar
 
 * 最新のバージョン：Org 7.8.02
 
-最新のバージョンは、7.8.02 です。最近のリリースで加えられた変更点は、[[file:Changes.html][こちら]] のリストを見てください。
+最新のバージョンは、7.8.02 です。最近のリリースで加えられた変更点は、[[http://orgmode.org/Changes.html][こちら]] のリストを見てください。
 
-Org-mode は、GNU Emacs 24、23、22で動作します。XEmacs 21でも動作しますが、若干の制限があります。Emacs 22.2 には、バージョン 4.67d の Org-mode が含まれています。また、Emacs 23.1 には、6.21bが含まれています。Emacsの最新の開発版には、通常、ほぼ最新の Org-mode が含まれています。ただし、Org-modeのサイトで頒布するバージョンから少し遅れているかもしれません。
+Org-mode は、GNU Emacs 24、23、22で動作します。XEmacs 21でも動作しますが、若干の制限があります。Emacs 22.2 には、バージョン 4.67d の Org-mode が含まれています。また、Emacs 23.1 には、6.21b が含まれています。Emacsの最新の開発版には、通常、ほぼ最新の Org-mode が含まれています。ただし、Org-mode のサイトで頒布するバージョンからは、少し遅れているかもしれません。
 
 * ダウンロード
 
 ** 安定版
 
-[[file:org-7.8.02.zip][zip形式]] もしくは、[[file:org-7.8.02.tar.gz][tarball形式]] の圧縮ファイルをダウンロードしてください。これらの圧縮ファイルには、 Lispファイル（=org*.el=）とPDFおよび (Tex)Info 形式のドキュメントが含まれます。続いて、[[http://orgmode.org/manual/Installation.html#Installation][インストール]] と[[http://orgmode.org/manual/Activation.html#Activation][アクティベーション]] を読んでください。
+[[http://orgmode.org/org-7.8.02.zip][zip形式]] もしくは、[[http://orgmode.org/org-7.8.02.tar.gz][tarball形式]] の圧縮ファイルをダウンロードしてください。これらの圧縮ファイルには、 Lispファイル群( =org*.el= )とPDFおよび (Tex)Info 形式のドキュメントが含まれます。続いて、[[http://orgmode.org/manual/Installation.html#Installation][インストール]] と[[http://orgmode.org/manual/Activation.html#Activation][アクティベーション]] を読んでください。
 
 ** 開発版
 
@@ -35,14 +35,14 @@ Git を使って、最新の開発版を入手できます。これまでにリ�
 
 : git clone git://orgmode.org/org-mode.git
 
-より詳しい情報は、[[http://orgmode.org/worg/org-faq.php][よくある質問]] の [[http://orgmode.org/worg/org-faq.php#keeping-current-with-Org-mode-development]["How do I keep current with Org mode development?"]] にあります。Git を利用しないユーザのために、[[file:org-latest.zip][zip形式]] と[[file:org-latest.tar.gz][tarball形式]] でスナップショットを提供します。これらは毎日更新され、Gitリポジトリの最新版に対応しています。別の方法として、orgmode.orgのサーバから[[http://orgmode.org/w/org-mode.git/snapshot][tarball形式]] のスナップショットをダウンロードできます。
+より詳しい情報は、[[http://orgmode.org/worg/org-faq.php][よくある質問]] の [[http://orgmode.org/worg/org-faq.php#keeping-current-with-Org-mode-development]["How do I keep current with Org mode development?"]] にあります。Git を利用しないユーザのために、[[http://orgmode.org/org-latest.zip][zip形式]] と [[http://orgmode.org/org-latest.tar.gz][tarball形式]] でスナップショットを提供します。これらは毎日更新され、Gitリポジトリの最新版に対応しています。別の方法として、orgmode.orgのサーバから[[http://orgmode.org/w/org-mode.git/snapshot][tarball形式]] のスナップショットをダウンロードできます。
 
 ** その他の入手方法
 
-安定版と開発版以外にも、Org-modeを入手する方法がいくつかあります。ただし、他のパッケージよりも古い場合があるので、入手したパッケージが本当に最新版かをチェックしてください。
+安定版と開発版以外にも、Org-modeを入手する方法がいくつかあります。ただし、他のパッケージよりも古い場合があるので、入手したパッケージが本当に最新版なのかをチェックしてください。
 
    - Sebastien Delafond氏が管理する[[http://packages.debian.org/sid/main/org-mode][Debian パッケージ]]
-   - Jiyunatori氏が管理する[[http://aur.archlinux.org/packages.php?do_Details&ID=18206][Archlinuxパッケージ]]
-   - [[https://savannah.gnu.org/projects/emacs/][開発版のEmacs]] に含まれるほぼ最新のバージョン
+   - Jiyunatori氏が管理する[[http://aur.archlinux.org/packages.php?do_Details&ID=18206][Archlinux パッケージ]]
+   - [[https://savannah.gnu.org/projects/emacs/][開発版の Emacs]] に含まれるほぼ最新バージョン
    - Jesse Alama氏の Mac OS X 向け [[http://pdb.finkproject.org/pdb/package.php/org-mode][Finkパッケージ]]
    - Mark A. Hershberger氏の[[https://launchpad.net/~hexmode/+archive][Ubuntuパッケージ]]

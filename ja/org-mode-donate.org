@@ -1,0 +1,60 @@
+#+TITLE: Org-Mode: 寄付しましょう
+#+AUTHOR: Bastien
+#+LANGUAGE:  ja
+#+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
+#+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+STYLE:     <base href="http://orgmode.org/ja/" />
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+#+begin_html
+<script type="text/javascript">
+if (navigator.appName == 'Netscape')
+var language = navigator.language;
+else
+var language = navigator.browserLanguage;
+if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-soutenir.html';
+</script>
+#+end_html
+
+* なぜ寄付が必要か？
+
+Org-mode は、今も成長し続けています。あなたの寄付でメンテナーを助けて下さい。メンテナーは、さらにOrg-modeのメンテナンスに専念できます。
+
+* Paypal を使って寄付する
+
+Paypal を使った寄付を検討してみてください。
+
+#+begin_html
+<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <input type="hidden" name="cmd" value="_xclick" />
+  <input type="hidden" name="business" value="bastien1@free.fr" />
+  <input type="hidden" name="item_name" value="Emacs Org-mode maintainance" />
+  <input type="hidden" name="item_number" value="1" />
+  <input type="hidden" name="lc" value="US" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <input type="hidden" name="tax" value="0" />
+  <button name="submit" alt="Make payments with PayPal" />Support Org!</button>
+</form>
+#+end_html
+
+* Flattr!
+
+flatter を使うことでも org-mode を支援できます。愛するプロジェクトをしっかり褒めましょう。If you are an Org-mode user and want us to flattr a project, please tell us on the  [[file:org-mode-support.org][mailing list]].
+
+#+HTML: <a class="FlattrButton" style="display:none;" href="http://orgmode.org"></a>
+
+* Network Theory LTD でマニュアルを購入する
+
+[[http://www.network-theory.co.uk/org/manual/][Network Theory LTD]] でマニュアルが一冊売れると、1ドルがメンテナーに支払われます。
+
+* Org-mode のTシャツ／マグカップ／バッグを購入する
+
+ショップの売上げは、org-mode を生み出した Carsten 氏に支払われます。Carsten 氏は、現在も非常にアクティブな貢献者です。また、これらのグッズを使うことで、あなたが Org-mode のファンであると世界中の人に伝えのもいいですね。
+
+#+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
+
+* FSF フランス によるサポート
+
+[[http://fsffrance.org/][FSF フランス]] が、毎月100ユーロを寄付しています。FSF フランスの支援に感謝します。
