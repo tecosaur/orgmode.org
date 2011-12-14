@@ -10,12 +10,6 @@
 
 * Org-mode のガイドとマニュアル
 
-#+begin_html
-<a href="http://www.network-theory.co.uk/org/manual/">
-<img src="http://www.network-theory.co.uk/org/manual/9781906966089-small" style="float:right;"/>
-</a>
-#+end_html
-
 - [[http://orgmode.org/guide/index.html][オンラインコンパクトガイド]] を読むか、[[http://orgmode.org/orgguide.pdf][PDF]] をダウンロードする。このコンパクトガイドは、40ページ程度にまとめられた Org-mode の概要です。すべての機能を簡潔に網羅していて、マニュアルとウェブの詳細な資料へのリンクが載せられています。
 
 - [[http://orgmode.org/manual/index.html][オンラインマニュアル]] を読む。マニュアルは、すべての機能を解説しています。あまり役立たないかもしれない情報も含んでいますが、体系的にまとめられています。主要な構造がコンパクトガイドと一致しているので、基本的な説明と詳細な記述を気軽に移動できます。
