@@ -1,0 +1,113 @@
+#+TITLE: Org-Mode: コミュニティとサポート
+#+AUTHOR: Bastien
+#+LANGUAGE:  ja
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
+#+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
+#+STYLE:     <base href="http://orgmode.org/ja/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+#+begin_html
+<script type="text/javascript">
+if (navigator.appName == 'Netscape') 
+var language = navigator.language; 
+else 
+var language = navigator.browserLanguage; 
+if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-support.html';
+</script>
+#+end_html
+
+* Org-mode のメーリングリストによるサポート
+   :PROPERTIES:
+   :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
+   :END:
+
+Org-mode について議論するメーリングリストがあります。
+
+- ウェブ経由での[[http://lists.gnu.org/mailman/listinfo/emacs-orgmode][購読]]
+
+- メーリングリストに直接[[mailto:emacs-orgmode@gnu.org][投稿]] する。メーリングリストを購読して場合、管理者がメールの内容を確認してからメーリングリストに流します。
+
+- [[http://news.gmane.org/gmane.emacs.orgmode][ブラウザ]] もしくは[[news://news.gmane.org/gmane.emacs.orgmode][ニュースリーダー]] を使って[[http://www.gmane.org][Gmane]] のメールを読む
+
+- 質問を投稿する前に、Org-modeのマニュアルにある[[http://orgmode.org/manual/Feedback.html][フィードバック]] を読んでください。きっと有用な答えを得られるでしょう。E. S. Raymond氏の[[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]] も一読の価値があります。
+
+#+begin_html
+<form method="get" action="http://search.gmane.org/">
+<input type="text" name="query" />
+<input type="hidden" name="group" value="gmane.emacs.orgmode" />
+<input type="submit" value="Search gmane.emacs.orgmode" />
+</form>
+#+end_html
+
+* Worg - Org-mode のコミュニティサイト
+[[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]] 氏が作った[[http://orgmode.org/worg/][Worg]] は、Org-modeに関する資料が含まれるたくさんのOrgファイル（Org-modeで記述された文書）を、複数のユーザが共同編集できるように設定されています。これには、[[http://orgmode.org/worg/org-faq.php][よくある質問]] と[[http://orgmode.org/worg/org-tutorials/index.php][チュートリアル]] が含まれています。Worg はコミュニティ内でコンテンツを編集できる wiki に似ていますが、分散型のバージョン管理システムを利用しているので、オフラインでも編集できます。Worg の編集に貢献したくなったら、[[http://orgmode.org/worg/][Worgのサイト]] を訪問することから始めてください。
+
+* Org-mode に貢献する
+
+新しいアイディアやバグの報告があれば、いつでもメーリングリストに投稿できます。パッチやコード片、もしくは完全なアドオンの投稿も、もちろん歓迎します。どうやって、もしくは、何を投稿すればよいのかについての具体的な情報は、[[http://orgmode.org/worg/org-contribute.php][ここ]] にあります。
+
+** 3 latest git commits
+
+#+begin_html
+<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Forgmode.org%2Fw%2F%3Fp%3Dorg-mode.git%3Ba%3Drss%3Bopt%3D--no-merges&num=3&au=y&date=y&targ=y&utf=y&css=feed"  charset="UTF-8" type="text/javascript"></script>
+
+<noscript>
+<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Forgmode.org%2Fw%2F%3Fp%3Dorg-mode.git%3Ba%3Drss%3Bopt%3D--no-merges&num=3&au=y&date=y&targ=y&utf=y&css=feed&html=y">View RSS feed</a>
+</noscript>
+#+end_html
+
+* ウェブにあるその他の情報
+
+** フリーノードの IRC チャネル（#org-mode）
+
+[[http://webchat.freenode.net/][ウェブ]] 経由か、お気に入りの IRC クライアントを利用して、フリーノードの IRC チャネル（=#org-mode=）に参加できます。
+
+** Google+ ページ
+
+[[https://plus.google.com/b/102778904320752967064/][Google+ Org-mode ページ]] があります。すでに60人以上がフォローしています。
+
+** Twitter フィード
+
+Takaaki ISHIKAWA 氏が、[[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] を動かしています。
+
+#+begin_html
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 500,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#dfe0e3',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#615161',
+      links: '#7a0a2b'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('orgmode_bot').start();
+</script>
+#+end_html
+
+
+
+
+
+* あの有名なOrgのTシャツ！
+
+#+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
+
+Org-modeのTシャツ、バッグ、マグカップを手に入れて、Org-mode を普及させましょう。同時に、開発者をサポートしよう！[[http://orgmode.spreadshirt.com][US shop]] か [[http://orgmode.spreadshirt.de][EU shop]] で販売しています。
