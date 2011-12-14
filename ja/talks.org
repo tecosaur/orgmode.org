@@ -1,0 +1,46 @@
+#+TITLE: Org-Mode: 講演
+#+AUTHOR: Bastien
+#+LANGUAGE:  ja
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
+#+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
+#+STYLE:     <base href="http://orgmode.org/ja/" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+#+begin_html
+<script type="text/javascript">
+if (navigator.appName == 'Netscape') 
+var language = navigator.language; 
+else 
+var language = navigator.browserLanguage; 
+if (language.indexOf('fr') > -1) document.location.href = '/fr/talks.html'; 
+</script>
+#+end_html
+
+* Carsten Dominik 氏による GoogleTech Talk の講演 (2008)
+
+Carsten Dominik 氏が、[[http://research.google.com/video.html][Google Tech Talk]] で org-mode について講演したときの映像です。2008年7月15日に、カリフォルニア州マウンテンビューにあるグーグルキャンパスで行われました。Carsten Dominik 氏から [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] 氏と [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] 氏へのメッセージ「滞在中にお世話になりました。ありがとう。」
+
+#+begin_html
+<iframe width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
+#+end_html
+
+*  [[http://twit.tv/show/floss-weekly/136][FLOSSウィークリィ]] のCarsten Dominik氏へのインタビュー (2010)
+
+#+begin_html
+<iframe src="http://twit.tv/embed/8239" width="640" height="320" scrolling="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0"></iframe>
+#+end_html
+
+* Bastien氏による org-mode のプレゼンテーション (2011)
+
+** FOSDEM 2011 で行われたプレゼンテーション
+
+#+begin_html
+<iframe style="border:none;width:650px;height:541px;" src="http://icant.co.uk/slidesharehtml/embed.php?url=http://www.slideshare.net/bzg/org-fosdem2011&width=600"></iframe>
+#+end_html
+
+** GNU Hackers meeting (2011年8月、パリ）で行われたプレゼンテーション
+
+#+begin_html
+<iframe src="http://player.vimeo.com/video/30721952?title=0&amp;byline=0&amp;portrait=0" width="480" height="354" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+end_html
