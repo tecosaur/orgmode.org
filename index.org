@@ -82,7 +82,7 @@ planning, and authoring with a fast and effective plain-text system.
 
 - Support :: Org-mode is [[http://orgmode.org/manual/index.html][documented extensively]], and many [[http://orgmode.org/worg/org-tutorials/index.php][tutorials]] put
              spotlights on particular features.  Org-mode is supported by
-             an active [[id:0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26][mailing list]] where questions are answered quickly
+             an active [[file:org-mode-support.org][mailing list]] where questions are answered quickly
              and effectively.
 
 - It's free! :: Org is [[http://en.wikipedia.org/wiki/Free_software][free software]], it is published under the [[http://www.gnu.org/licenses/licenses.html#GPL][GNU GPL
