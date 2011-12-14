@@ -8,16 +8,6 @@
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape')
-var language = navigator.language;
-else
-var language = navigator.browserLanguage;
-if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-soutenir.html';
-</script>
-#+end_html
-
 * なぜ寄付が必要か？
 
 Org-mode は、今も成長し続けています。あなたの寄付でメンテナーを助けて下さい。メンテナーは、さらにOrg-modeのメンテナンスに専念できます。
