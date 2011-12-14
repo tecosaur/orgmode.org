@@ -10,11 +10,12 @@
 
 #+begin_html
 <script type="text/javascript">
-if (navigator.appName == 'Netscape') 
-var language = navigator.language; 
-else 
-var language = navigator.browserLanguage; 
-if (language.indexOf('fr') > -1) document.location.href = '/fr/index.html'; 
+if (navigator.appName == 'Netscape')
+var language = navigator.language;
+else
+var language = navigator.browserLanguage;
+if (language.indexOf('fr') > -1) document.location.href = '/fr/index.html';
+if (language.indexOf('ja') > -1) document.location.href = '/ja/index.html';
 </script>
 #+end_html
 
@@ -47,7 +48,7 @@ b[n++]= "<a href='http://orgmode.org/img/screenshots/weekly-agenda-view-zenburn.
 b[n++]= "<a href='http://orgmode.org/img/screenshots/david_o_toole.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/david_o_toole.jpg' alt='' /></a>"
 b[n++]= "<a href='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' alt='' class='active'/></a>"
 b[n++]= "<a href='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' alt='' /></a>"
-i=Math.floor(Math.random() * n) ; 
+i=Math.floor(Math.random() * n) ;
 document.write( b[i] )
 </script>
 #+end_html
@@ -89,4 +90,3 @@ planning, and authoring with a fast and effective plain-text system.
 
 If you'd like to know what other people have said about Org-mode, take a
 look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org]].
-
