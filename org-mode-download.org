@@ -62,5 +62,5 @@ download a [[http://orgmode.org/w/org-mode.git/snapshot][tar.gz snapshot]] from 
    - The [[http://packages.debian.org/sid/main/org-mode][Debian package]] is maintained by Sebastien Delafond.
    - There is also a package on [[http://aur.archlinux.org/packages.php?do_Details&ID=18206][Archlinux]], by Jiyunatori.
    - The [[https://savannah.gnu.org/projects/emacs/][Emacs]] development version contains a more-or-less recent version.
-   - The [[http://pdb.finkproject.org/pdb/package.php/org-mode][Fink package]] for Mac OS X by Jesse Alama.
+   - The [[http://pdb.finkproject.org/pdb/package.php/org-mode][Fink package]] for Mac OS X by Jesse Alama. [[http://www.macports.org/ports.php?by=name&substr=org-mode][MacPorts]] is also available.
    - The [[https://launchpad.net/~hexmode/+archive][Ubuntu package]] by Mark A. Hershberger.

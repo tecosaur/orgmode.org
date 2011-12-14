@@ -35,5 +35,5 @@ Git を使って、最新の開発版を入手できます。これまでにリ�
    - Sebastien Delafond氏が管理する[[http://packages.debian.org/sid/main/org-mode][Debian パッケージ]]
    - Jiyunatori氏が管理する[[http://aur.archlinux.org/packages.php?do_Details&ID=18206][Archlinux パッケージ]]
    - [[https://savannah.gnu.org/projects/emacs/][開発版の Emacs]] に含まれるほぼ最新バージョン
-   - Jesse Alama氏の Mac OS X 向け [[http://pdb.finkproject.org/pdb/package.php/org-mode][Finkパッケージ]]
+   - Jesse Alama氏の Mac OS X 向け [[http://pdb.finkproject.org/pdb/package.php/org-mode][Finkパッケージ]]。 もしくは、[[http://www.macports.org/ports.php?by=name&substr=org-mode][MacPortsパッケージ]]
    - Mark A. Hershberger氏の[[https://launchpad.net/~hexmode/+archive][Ubuntuパッケージ]]
