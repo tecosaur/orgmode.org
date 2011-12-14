@@ -19,14 +19,14 @@ if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-plus.htm
 
 * Org-modeについての講演
 
-GoogleTech talk と [[http://www.nf.mpg.de/index.php?L%3D1][Max Planck Institute for Neurological Research]] にて、Carsten Dominik 氏が Org-mode について講演しました。FLOSS ウィークリィ [[http://twit.tv/floss136][show number 136]] では、Randal Schwartz氏が、Carsten Dominik 氏へ、Org-mode についてのインタビューしました。
+GoogleTech talk と [[http://www.nf.mpg.de/index.php?L%3D1][Max Planck Institute for Neurological Research]] にて、Carsten Dominik 氏が Org-mode について講演しました。FLOSS ウィークリィ [[http://twit.tv/floss136][show number 136]] では、Randal Schwartz氏が、Carsten Dominik 氏へ、Org-mode についてのインタビューを行いました。
 
-[[http://fosdem.org/2011/][FOSDEM 2011]] にて、Bastien 氏が Org-mode についてのプレゼンテーションを行いました（Stefan Vollmar 氏による、研究室内での利用例と、Sébastien Vauban 氏による Org Babel のプレゼンを含む）。プレゼンテーションのスライドを[[http://lumiere.ens.fr/~guerry/u/org-fosdem-presentation-beamer.pdf][PDF]] で入手できます。2011年8月に、Bastien 氏は、パリで開催された GNU Hackers Meeting でも同じプレゼン（一部更新あり）を行いました。
+[[http://fosdem.org/2011/][FOSDEM 2011]] にて、Bastien 氏が Org-mode についてのプレゼンテーションを行いました（Stefan Vollmar 氏による研究室内での利用例と、Sébastien Vauban 氏による Org Babel のプレゼンを含む）。プレゼンテーションのスライドを [[http://lumiere.ens.fr/~guerry/u/org-fosdem-presentation-beamer.pdf][PDF]] で入手できます。2011年8月に、Bastien 氏は、パリで開催された GNU Hackers Meeting でも同じプレゼン（一部更新あり）を行いました。
 
-すべての公演は、 [[file:talks.org][専用の「講演」ページ]] で観られます。
+すべての講演は、 [[http://orgmode.org/talks.org][専用の「講演」ページ]] で観られます。
 
 * モバイルアプリケーション
 
-[[http://mobileorg.ncogni.to/][MobileOrg]] は、素晴らしいオープンソースのアプリケーションです。iPhone を使って、移動中に orgファイルを読んだり変更したりできます。オフィスや自宅に戻ったら、変更点を自分のパソコンに同期します。Richard 氏の[[http://mobileorg.ncogni.to/][ウェブサイト]] をチェックしてください。
+[[http://mobileorg.ncogni.to/][MobileOrg]] は、素晴らしいオープンソースのアプリケーションです。iPhone を使って、移動中に orgファイルを読んだり変更したりできます。オフィスや自宅に戻ったら、差分を自分のパソコンに同期します。Richard 氏の[[http://mobileorg.ncogni.to/][ウェブサイト]] をチェックしてください。
 
-現在、Matt Jones 氏がAndroid向けのアプリケーションを開発しています。プロジェクトは、[[http://wiki.github.com/matburt/mobileorg-android/][Github]] にあります。
+現在、Matt Jones 氏が Android 向けのアプリケーションを開発しています。プロジェクトは、[[http://wiki.github.com/matburt/mobileorg-android/][Github]] にあります。

@@ -52,20 +52,22 @@ document.write( b[i] )
 
 #+end_html
 
-Org-mode は、ノートの保存、TODOリストの管理、プロジェクトの計画を、高速かつ効率的なプレーンテキストのシステムで扱うためのモードです。
+（クリックで拡大。 =Escape= で戻る）
+
+Org-mode は、ノートの保存、TODOリストの管理、プロジェクトの計画のためのモードです。高速かつ効率的なプレーンテキストのシステムを使って編集します。
 
 * シンプルさを保ちながら、もっと便利に
 
-- とてもシンプルです :: Org-mode の中心にあるのは、メモを取ったりリストを管理したりするための、シンプルなアウトライナーです。たった [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][5分間]] あれば基本的な使い方を理解できます。基本さえ知っていれば、Org-modeはそれ以上の複雑なことをあなたに押し付けないでしょう。
+- とてもシンプルです :: Org-mode の中心にあるのは、メモを取ったりリストを管理したりするための、シンプルなアウトライナーです。たった [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][5分間]] あれば、基本的な使い方を理解できます。基本さえ知っていれば、Org-modeはそれ以上の複雑なことをあなたに押し付けないでしょう。
 
 - 汎用的です :: Org-mode で扱うファイルは [[http://ja.wikipedia.org/wiki/プレーンテキスト][プレーンテキスト]] です。どんなエディタを使っても表示でき、編集できます。または、オリジナルなスクリプトでデータを追加したり、抽出できます。作成したデータは、曖昧なデータ形式や商標で守られたデータ形式に縛られません。Org-modeは [[http://www.gnu.org/software/emacs/][Emacs]] で動くので、ほとんどすべてのプラットフォームで利用できます。
 
-- 奥深いです :: シンプルなアウトライン機能よりも、より高度な機能を必要とするときに、Org-mode はあなたをがっかりさせません。Org-modeがサポートする機能は幅広くかつ奥深いものです。簡単に使うことができ、それでいてでしゃばりません。「これはできますか？」という [[http://orgmode.org/worg/org-faq.php][よくある質問]] に、「できるよ！」と答えてくれます。
+- 奥深いです :: シンプルなアウトライン機能に留まらず、より高度な機能を必要とするときでも、Org-mode はあなたをがっかりさせません。Org-modeがサポートする機能は幅広く、かつ奥深いものです。簡単に使うことができ、それでいてでしゃばりません。「これはできますか？」という [[http://orgmode.org/worg/org-faq.php][よくある質問]] に、「できるよ！」と答えてくれます。
 
-- 柔軟です :: Org-modeは十徳ナイフのようです。[[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]] を実践するために使う人も居れば、[[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][手帳]] として使う人も居ます。[[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][ノートブック]] や、ウェブやPDFを[[http://org-mode.org][制作するため]] に使うこともできます。もちろんそれ以外にも使えます。
+- 柔軟です :: Org-modeは十徳ナイフのようです。[[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]] を実践するために使う人も居れば、[[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][手帳]] として使う人も居ます。[[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][ノートブック]] や、ウェブやPDFを[[http://orgmode.org][制作するため]] に使うこともできます。もちろんそれ以外にも使えます。
 
-- サポートが充実しています :: Org-modeは、[[http://orgmode.org/manual/index.html][幅広く文書化]] されています。また、たくさんの[[http://orgmode.org/manual/index.html][チュートリアル]] によって個々の機能が解説されています。とても活発な[[id:0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26][メーリングリスト]] があり、迅速かつ効果的に疑問を解決できます。
+- サポートが充実しています :: Org-modeは、[[http://orgmode.org/manual/index.html][幅広く文書化]] されています。また、たくさんの[[http://orgmode.org/manual/index.html][チュートリアル]] によって個々の機能が解説されています。とても活発な[[file:org-mode-support.org][メーリングリスト]] があり、迅速かつ効果的に疑問を解決できます。
 
-- 無料です :: Org-modeは、[[http://ja.wikipedia.org/wiki/Free_software][フリーソフト]] です。[[http://www.gnu.org/software/emacs/][GNU Emacs]] と同様に、 [[http://www.gnu.org/licenses/licenses.html#GPL][GNU GPL license version 3]] の元に公開されています。
+- 無料です :: Org-modeは、[[http://ja.wikipedia.org/wiki/Free_software][フリーソフト]] です。[[http://www.gnu.org/software/emacs/][GNU Emacs]] と同様に、 [[http://www.gnu.org/licenses/licenses.html#GPL][GNU GPL license version 3]] の元で公開されています。
 
-もし、他の人が Org-mode をどう評価しているのか知りたいなら、Org-modeについての[[http://orgmode.org/worg/org-quotes.php][コメント集]] を見てください。
+もし、他の人が Org-mode をどう評価しているのか知りたくなったら、Org-mode についての[[http://orgmode.org/worg/org-quotes.php][コメント集]] を見てください。
