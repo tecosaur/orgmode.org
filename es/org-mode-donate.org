@@ -1,0 +1,68 @@
+#+TITLE: Org-Mode: Make a donation
+#+AUTHOR: Bastien
+#+LANGUAGE:  en
+#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+STYLE:     <base href="http://orgmode.org/" />
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+
+#+begin_html
+<script type="text/javascript">
+if (navigator.appName == 'Netscape')
+var language = navigator.language;
+else
+var language = navigator.browserLanguage;
+if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-soutenir.html';
+if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-donate.html';
+</script>
+#+end_html
+
+* Why?
+
+Org Mode is still growing fast, donation helps the maintainer dedicate more
+time to Org's maintainance.
+
+* Make a donation using Paypal
+
+Please consider making a donation through paypal:
+
+#+begin_html
+<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <input type="hidden" name="cmd" value="_xclick" />
+  <input type="hidden" name="business" value="bastien1@free.fr" />
+  <input type="hidden" name="item_name" value="Emacs Org-mode maintainance" />
+  <input type="hidden" name="item_number" value="1" />
+  <input type="hidden" name="lc" value="US" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <input type="hidden" name="tax" value="0" />
+  <button name="submit" alt="Make payments with PayPal" />Support Org!</button>
+</form>
+#+end_html
+
+* Flattr!
+
+You can also use flattr to support Org-mode.  We flattr projects we
+love.  If you are an Org-mode user and want us to flattr a project, please
+tell us on the [[file:org-mode-support.org][mailing list]].
+
+#+HTML: <a class="FlattrButton" style="display:none;" href="http://orgmode.org"></a>
+
+* Buy the Org Manual via Network Theory LTD
+
+For each [[http://www.network-theory.co.uk/org/manual/][Org Manual you buy at Network Theory LTD]], there is 1 USD given to
+the maintainer.
+
+* Buy the Org-mode shirt/mug/bag!
+
+The shop's revenue goes to Carsten, the original author of Org-mode, still
+a very active contributor.  It's also a nice way to tell the world you like
+Org-mode!  You can buy at the [[http://orgmode.spreadshirt.com][US shop]] or at the [[http://orgmode.spreadshirt.de][EU shop]]...
+
+#+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
+
+* They support us
+
+[[http://fsffrance.org/][FSF France]] is making a monthly donation of 100€.  Thanks to FSF France for
+their support!

@@ -1,0 +1,92 @@
+#+TITLE:     Org: Your Life in Plain Text
+#+EMAIL:     carsten at orgmode dot org
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+STYLE:     <base href="http://orgmode.org/" />
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/css/lightbox.css" type="text/css" />
+
+#+begin_html
+<script type="text/javascript">
+if (navigator.appName == 'Netscape')
+var language = navigator.language;
+else
+var language = navigator.browserLanguage;
+if (language.indexOf('fr') > -1) document.location.href = '/fr/index.html';
+if (language.indexOf('ja') > -1) document.location.href = '/ja/index.html';
+</script>
+#+end_html
+
+* Org: an Emacs Mode for Notes, Planning, and Authoring
+
+# See http://jonraasch.com/blog/a-simple-jquery-slideshow for a slideshow
+
+#+begin_html
+<script language="Javascript">
+function banner() { } ; b = new banner() ; n = 0
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-plot1.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-plot1.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-R3.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-R3.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-spreadsheet-system.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-spreadsheet-system.jpg' alt='' class='active'/></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/screenshots/org-mode-publishing.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/screenshots/org-mode-publishing.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/screenshots/davison-minimal-research.png' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/screenshots/davison-minimal-research.png' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/big-table.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/big-table.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/column-view-big-project.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/column-view-big-project.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-plot-page-in-worg.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-plot-page-in-worg.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/bernt3.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/bernt3.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/column-view.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/column-view.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/customize.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/customize.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/using-date-time-charles-cave.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/using-date-time-charles-cave.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/vmap-org-export-to-pdf2.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/vmap-org-export-to-pdf2.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/vmap-org-sources-iimage-mode2.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/vmap-org-sources-iimage-mode2.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/grades.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/grades.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org_andreas.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org_andreas.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/web_site_org_code.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/web_site_org_code.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-mode-zenburn.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-mode-zenburn.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/weekly-agenda-view-zenburn.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/weekly-agenda-view-zenburn.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/david_o_toole.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/david_o_toole.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' alt='' class='active'/></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' alt='' /></a>"
+i=Math.floor(Math.random() * n) ;
+document.write( b[i] )
+</script>
+#+end_html
+
+(Click to enlarge the picture - press =Escape= to lower it.)
+
+Org-mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system.
+
+* Keep simple things simple... and do more
+
+- Simplicity :: At its core, Org-mode is a simple outliner for note-taking
+                and list management. You can learn the basics for using it
+                in [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][five minutes]].  This may be all you need, and Org-mode
+                will not impose more complex features on you.
+
+- Portability :: Org files are [[http://en.wikipedia.org/wiki/Plain_text][plain text]].  You can view and edit them in
+                 any editor, or add and extract data with custom-made
+                 scripts.  Your data will never be locked into an obscure
+                 or proprietary data format.  Org-mode runs in [[http://www.gnu.org/software/emacs/][Emacs]], which
+                 is available for nearly every platform.
+
+- Depth :: Org-mode will not let you down when you need more than a simple
+           outline.  The full feature set is both broad and deep, easy to
+           access, but unobtrusive.  The [[http://orgmode.org/worg/org-faq.php][typical answer]] to "/Can it do X?/"
+           is "/Yes!/".
+
+- Flexibility :: Org-mode is like a Swiss army knife.  People use it for
+                 [[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]], as a [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Day Planner]], as a
+                 [[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][Notebook]], for Web and PDF authoring, and much more.
+
+- Support :: Org-mode is [[http://orgmode.org/manual/index.html][documented extensively]], and many [[http://orgmode.org/worg/org-tutorials/index.php][tutorials]] put
+             spotlights on particular features.  Org-mode is supported by
+             an active [[file:org-mode-support.org][mailing list]] where questions are answered quickly
+             and effectively.
+
+- It's free! :: Org is [[http://en.wikipedia.org/wiki/Free_software][free software]], it is published under the [[http://www.gnu.org/licenses/licenses.html#GPL][GNU GPL
+                license version 3]], like [[http://www.gnu.org/software/emacs/][GNU Emacs]].
+
+If you'd like to know what other people have said about Org-mode, take a
+look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org]].

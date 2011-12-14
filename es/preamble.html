@@ -1,0 +1,51 @@
+<div id="linklist">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="org-mode-download.html">Download</a></li>
+    <li><a href="org-mode-documentation.html">Documentation</a></li>
+    <li><a href="org-mode-support.html">Community</a></li>
+    <li><a href="org-mode-news.html">News</a></li>
+    <li><a href="org-mode-links.html">More</a></li>
+  </ul>
+</div>
+
+<div id="twit">
+  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+  <script>
+    new TWTR.Widget({
+    version: 2,
+    type: 'search',
+    search: '#orgmode',
+    interval: 30000,
+    title: 'Mentions of Org-mode',
+    subject: '#orgmode',
+    width: 180,
+    height: 140,
+    theme: {
+    shell: {
+    background: '#eee',
+    color: '#537d7b'
+    },
+    tweets: {
+    background: '#ffffff',
+    color: '#444444',
+    links: '#A34D32'
+    }
+    },
+    features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    behavior: 'default'
+    }
+    }).render().start();
+  </script>
+</div>
+
+<div id="orgquote">
+  <script type="text/javascript" src="http://orgmode.org/org-quotes.js"></script>
+</div>
+
+<div id="paypal">
+  <a href="http://orgmode.org/org-mode-donate.html" title="Make a donation">Support!</a>
+</div>
