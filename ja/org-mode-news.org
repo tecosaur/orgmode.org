@@ -5,17 +5,8 @@
 #+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
 #+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
 #+STYLE:     <base href="http://orgmode.org/ja/" />
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
-
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape') 
-var language = navigator.language; 
-else 
-var language = navigator.browserLanguage; 
-if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-nouvelles.html'; 
-</script>
-#+end_html
 
 * ニュース
 

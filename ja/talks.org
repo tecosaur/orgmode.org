@@ -5,17 +5,8 @@
 #+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
 #+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
 #+STYLE:     <base href="http://orgmode.org/ja/" />
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
-
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape') 
-var language = navigator.language; 
-else 
-var language = navigator.browserLanguage; 
-if (language.indexOf('fr') > -1) document.location.href = '/fr/talks.html'; 
-</script>
-#+end_html
 
 * Carsten Dominik 氏による GoogleTech Talk の講演 (2008)
 
@@ -25,7 +16,7 @@ Carsten Dominik 氏が、[[http://research.google.com/video.html][Google Tech Ta
 <iframe width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
 #+end_html
 
-*  [[http://twit.tv/show/floss-weekly/136][FLOSSウィークリィ]] のCarsten Dominik氏へのインタビュー (2010)
+* [[http://twit.tv/show/floss-weekly/136][FLOSSウィークリィ]] のCarsten Dominik氏へのインタビュー (2010)
 
 #+begin_html
 <iframe src="http://twit.tv/embed/8239" width="640" height="320" scrolling="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0"></iframe>

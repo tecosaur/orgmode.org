@@ -5,17 +5,8 @@
 #+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+STYLE:     <base href="http://orgmode.org/ja/" />
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
-
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape') 
-var language = navigator.language; 
-else 
-var language = navigator.browserLanguage; 
-if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-documentation.html'; 
-</script>
-#+end_html
 
 * Org-mode のガイドとマニュアル
 

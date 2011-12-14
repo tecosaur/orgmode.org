@@ -5,51 +5,41 @@
 #+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
 #+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
 #+STYLE:     <base href="http://orgmode.org/ja/" />
-#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
-
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape') 
-var language = navigator.language; 
-else 
-var language = navigator.browserLanguage; 
-if (language.indexOf('fr') > -1) document.location.href = '/ja/index.html'; 
-</script>
-#+end_html
+#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
+#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/css/lightbox.css" type="text/css" />
 
 * Org: ノート、計画、編集のための Emacs モード
 
 # See http://jonraasch.com/blog/a-simple-jquery-slideshow for a slideshow
-#+begin_html
 
+#+begin_html
 <script language="Javascript">
 function banner() { } ; b = new banner() ; n = 0
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/org-plot1.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/org-R3.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/org-spreadsheet-system.jpg' alt='' class='active'/>"
-b[n++]= "<img class='random' src='http://orgmode.org/worg/images/screenshots/org-mode-publishing.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/worg/images/screenshots/davison-minimal-research.png' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/big-table.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/column-view-big-project.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/org-plot-page-in-worg.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/bernt3.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/column-view.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/customize.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/using-date-time-charles-cave.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/vmap-org-export-to-pdf2.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/vmap-org-sources-iimage-mode2.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/grades.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/org_andreas.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/web_site_org_code.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/org-mode-zenburn.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/weekly-agenda-view-zenburn.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/david_o_toole.jpg' alt='' />"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' alt='' class='active'/>"
-b[n++]= "<img class='random' src='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' alt='' />"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-plot1.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-plot1.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-R3.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-R3.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-spreadsheet-system.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-spreadsheet-system.jpg' alt='' class='active'/></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/screenshots/org-mode-publishing.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/screenshots/org-mode-publishing.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/screenshots/davison-minimal-research.png' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/screenshots/davison-minimal-research.png' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/big-table.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/big-table.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/column-view-big-project.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/column-view-big-project.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-plot-page-in-worg.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-plot-page-in-worg.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/bernt3.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/bernt3.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/column-view.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/column-view.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/customize.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/customize.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/using-date-time-charles-cave.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/using-date-time-charles-cave.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/vmap-org-export-to-pdf2.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/vmap-org-export-to-pdf2.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/vmap-org-sources-iimage-mode2.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/vmap-org-sources-iimage-mode2.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/grades.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/grades.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org_andreas.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org_andreas.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/web_site_org_code.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/web_site_org_code.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/org-mode-zenburn.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-mode-zenburn.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/weekly-agenda-view-zenburn.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/weekly-agenda-view-zenburn.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/david_o_toole.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/david_o_toole.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' alt='' class='active'/></a>"
+b[n++]= "<a href='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' alt='' /></a>"
 i=Math.floor(Math.random() * n) ; 
 document.write( b[i] )
 </script>
-
 #+end_html
 
 （クリックで拡大。 =Escape= で戻る）
