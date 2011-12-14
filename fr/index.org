@@ -77,7 +77,7 @@ avec un système en text brut, simple et effectif.
 
 - Support :: Org-mode est [[http://orgmode.org/manual/index.html][largement documenté]] et de nombreux [[http://orgmode.org/worg/org-tutorials/index.php][tutoriels]]
              portent un éclairage sur des fonctionnalités
-             particulières.  Org-mode est soutenu par une [[id:0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26][liste de
+             particulières.  Org-mode est soutenu par une [[file:org-mode-support.org][liste de
              discussion active]] où les questions reçoivent des réponses
              rapides et efficaces.
 
