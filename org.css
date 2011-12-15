@@ -13,7 +13,6 @@ body {
 }
 
 .title {
-    background-color: #EEEEEE;
     position: fixed;
     display: inline;
     left: 0px;
@@ -174,6 +173,7 @@ body {
 @media all and (min-width: 650px){
     .title{
         background: url(http://orgmode.org/org-mode-unicorn.png) no-repeat 12px 5px;
+        background-color: #eee;
     }
 }
 
