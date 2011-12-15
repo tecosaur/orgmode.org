@@ -11,7 +11,7 @@
 * Présentations au sujet d'Org-mode
 
   Carsten Dominik a donné un /GoogleTech talk/ au sujet d'Org-mode et a
-  fait une autre présentation au [[http://www.nf.mpg.de/index.php?L%3D1][Max Planck Institute for Neurological
+  fait une autre présentation au [[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][Max Planck Institute for Neurological
   Research]].  Carsten est aussi interviewé par Randal Schwartz dans le
   [[http://twit.tv/floss136][numéro 136 de FLOSS Weekly]].
 
