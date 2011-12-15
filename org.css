@@ -13,6 +13,7 @@ body {
 }
 
 .title {
+    background-color: #EEEEEE;
     position: fixed;
     display: inline;
     left: 0px;
