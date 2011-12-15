@@ -23,6 +23,7 @@ body {
     background-color: #eee;
     padding: 0;
     z-index: 99;
+    text-align: center;
 }
 
 #orgquote {
@@ -164,7 +165,9 @@ body {
 }
 
 @media all and (min-width: 1400px){
-    padding-left: 75pt;
+    .title{
+        padding-left: 75pt;
+    }
 }
 
 @media all and (min-width: 650px){
