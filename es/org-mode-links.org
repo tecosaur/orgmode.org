@@ -22,7 +22,7 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-links.ht
 * Talks about Org-mode
 
   Carsten Dominik gave a GoogleTech talk about Org-mode and another one at
-  the [[http://www.nf.mpg.de/index.php?L%3D1][Max Planck Institute for Neurological Research]].  FLOSS Weekly [[http://twit.tv/floss136][show
+  the [[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][Max Planck Institute for Neurological Research]].  FLOSS Weekly [[http://twit.tv/floss136][show
   number 136]] Randal Schwartz interviews Carsten about Org mode.
 
   Bastien presented Org at [[http://fosdem.org/2011/][FOSDEM 2011]], with the help of Stefan Vollmar
