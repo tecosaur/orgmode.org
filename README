@@ -1,0 +1,27 @@
+# -*- mode:org -*-
+#+Title: Org-mode web page
+
+This repository holds the Org-mode web page, http://orgmode.org/.
+
+The following org-mode publishing project (see [[info:org#Publishing][(org)Publishing]]) may be
+used to export the Org-mode web page locally for development.
+#+begin_src emacs-lisp
+  (let ((base-dir (file-name-directory (or load-file-name buffer-file-name))))
+    (setq org-publish-project-alist
+          `(("orgweb"
+             :base-directory ,base-dir
+             :base-extension "org"
+             :publishing-directory ,(expand-file-name "pub" base-dir)
+             :publishing-function org-publish-org-to-html
+             :auto-sitemap nil
+             :section-numbers nil
+             :table-of-contents nil
+             :html-preamble ,(org-get-file-contents
+                              (expand-file-name "preamble.html" base-dir))
+             :html-postamble ,(org-get-file-contents
+                               (expand-file-name "postamble.html" base-dir)))
+            ("orgweb_extra"
+             :base-directory "~/install/git/orgweb/"
+             :base-extension "css\\|html\\|png"
+             :publishing-function org-publish-attachment))))
+#+end_src
