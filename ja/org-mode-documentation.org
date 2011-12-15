@@ -1,5 +1,5 @@
 #+TITLE: Org-Mode: ドキュメント
-#+AUTHOR: Bastien
+#+AUTHOR: Takaaki Ishikawa
 #+LANGUAGE:  ja
 #+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
 #+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード

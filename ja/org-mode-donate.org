@@ -1,5 +1,5 @@
 #+TITLE: Org-Mode: 寄付しましょう
-#+AUTHOR: Bastien
+#+AUTHOR: Takaaki Ishikawa
 #+LANGUAGE:  ja
 #+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
 #+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
@@ -41,7 +41,7 @@ flatter を使うことでも org-mode を支援できます。愛するプロ�
 
 * Org-mode のTシャツ／マグカップ／バッグを購入する
 
-ショップの売上げは、org-mode を生み出した Carsten 氏に支払われます。Carsten 氏は、現在も非常にアクティブな貢献者です。また、これらのグッズを使うことで、あなたが Org-mode のファンであると世界中の人に伝えのもいいですね。
+ショップの売上げは、org-mode を生み出した Carsten 氏に支払われます。Carsten 氏は、現在も非常にアクティブな貢献者です。また、これらのグッズを使うことで、あなたが Org-mode のファンであると世界中の人に伝えのもいいですね。[[http://orgmode.spreadshirt.com][US shop]] か [[http://orgmode.spreadshirt.de][EU shop]] で販売しています。
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
