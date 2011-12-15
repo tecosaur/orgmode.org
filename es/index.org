@@ -26,28 +26,14 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/index.html';
 #+begin_html
 <script language="Javascript">
 function banner() { } ; b = new banner() ; n = 0
-b[n++]= "<a href='http://orgmode.org/img/screenshots/org-plot1.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-plot1.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/org-R3.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-R3.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/org-spreadsheet-system.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-spreadsheet-system.jpg' alt='' class='active'/></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/screenshots/org-mode-publishing.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/screenshots/org-mode-publishing.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/screenshots/davison-minimal-research.png' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/screenshots/davison-minimal-research.png' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/big-table.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/big-table.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/column-view-big-project.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/column-view-big-project.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/org-plot-page-in-worg.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-plot-page-in-worg.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/bernt3.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/bernt3.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/column-view.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/column-view.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/customize.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/customize.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/using-date-time-charles-cave.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/using-date-time-charles-cave.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/vmap-org-export-to-pdf2.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/vmap-org-export-to-pdf2.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/vmap-org-sources-iimage-mode2.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/vmap-org-sources-iimage-mode2.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/grades.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/grades.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/org_andreas.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org_andreas.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/web_site_org_code.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/web_site_org_code.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/org-mode-zenburn.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/org-mode-zenburn.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/weekly-agenda-view-zenburn.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/weekly-agenda-view-zenburn.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/david_o_toole.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/david_o_toole.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/orgmode-inlinetasks.jpg' alt='' class='active'/></a>"
-b[n++]= "<a href='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' rel='lightbox'><img class='random' src='http://orgmode.org/img/screenshots/clocking-and-overlays.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/1.jpg' title='Org mode file with Timeline' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/1.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/2.jpg' title='Org mode lets you manipulate tables easily' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/2.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/3.jpg' title='View your Org mode with as an Agenda' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/3.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/4.jpg' title='Integration of Org mode and Emacs calendar' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/4.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/5.jpg' title='Export Org mode files to HTML' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/5.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/6.jpg' title='Export Org mode files to LaTeX' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/5.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/7.jpg' title='Org mode: schedule items and add deadlines' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/6.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/8.jpg' title='Org mode: managing TODO lists' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/7.jpg' alt='' /></a>"
 i=Math.floor(Math.random() * n) ;
 document.write( b[i] )
 </script>
