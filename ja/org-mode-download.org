@@ -1,5 +1,5 @@
 #+TITLE: Org-Mode: ダウンロードとインストール
-#+AUTHOR: Bastien
+#+AUTHOR: Takaaki Ishikawa
 #+LANGUAGE:  ja
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML

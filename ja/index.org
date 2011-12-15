@@ -1,4 +1,4 @@
-#+TITLE:     Org: プレーンテキストな生活を
+#+TITLE:     Org: あなたの生活をプレーンテキストで
 #+EMAIL:     carsten at orgmode dot org
 #+LANGUAGE:  ja
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -54,7 +54,7 @@ Org-mode は、ノートの保存、TODOリストの管理、プロジェクト�
 
 - 奥深いです :: シンプルなアウトライン機能に留まらず、より高度な機能を必要とするときでも、Org-mode はあなたをがっかりさせません。Org-modeがサポートする機能は幅広く、かつ奥深いものです。簡単に使うことができ、それでいてでしゃばりません。「これはできますか？」という [[http://orgmode.org/worg/org-faq.php][よくある質問]] に、「できるよ！」と答えてくれます。
 
-- 柔軟です :: Org-modeは十徳ナイフのようです。[[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]] を実践するために使う人も居れば、[[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][手帳]] として使う人も居ます。[[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][ノートブック]] や、ウェブやPDFを[[http://orgmode.org][制作するため]] に使うこともできます。もちろんそれ以外にも使えます。
+- 柔軟です :: Org-modeは十徳ナイフのようです。[[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]] を実践するために使う人も居れば、[[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][手帳]] として使う人も居ます。[[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][ノートブック]] 、ウェブやPDFを作成するためにも使えます。もちろんそれ以外にも。
 
 - サポートが充実しています :: Org-modeは、[[http://orgmode.org/manual/index.html][幅広く文書化]] されています。また、たくさんの[[http://orgmode.org/manual/index.html][チュートリアル]] によって個々の機能が解説されています。とても活発な[[file:org-mode-support.org][メーリングリスト]] があり、迅速かつ効果的に疑問を解決できます。
 
