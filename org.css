@@ -13,7 +13,6 @@ body {
 }
 
 .title {
-    background: url(http://orgmode.org/org-mode-unicorn.png) no-repeat 12px 5px;
     position: fixed;
     display: inline;
     left: 0px;
@@ -39,14 +38,6 @@ body {
     font-size: 90%;
     font-family: Courier new;
     z-index: 98;
-}
-
-#paypal {
-    position:fixed;
-    right: 10px;
-    top: 15px;
-    z-index: 100;
-    text-align: center;
 }
 
 #paypal a {
@@ -88,15 +79,23 @@ body {
     padding-top: 15px;
 }
 
-h1.title {
-    text-shadow: 2px 2px 4px #999;
-    padding-top: 23px;
-    padding-left: 70pt;
-    font-size: 23pt;
-    font-family: Courier New;
-}
-
 @media all {
+    #paypal {
+        position:fixed;
+        right: 10px;
+        top: 15px;
+        z-index: 100;
+        text-align: center;
+    }
+
+    h1.title {
+        text-shadow: 2px 2px 4px #999;
+        padding-top: 23px;
+        padding-left: 0pt;
+        font-size: 23pt;
+        font-family: Courier New;
+    }
+
     #linklist 
     {
         position: fixed;
@@ -164,7 +163,36 @@ h1.title {
     }
 }
 
+@media all and (min-width: 1400px){
+    padding-left: 75pt;
+}
+
+@media all and (min-width: 650px){
+    .title{
+        background: url(http://orgmode.org/org-mode-unicorn.png) no-repeat 12px 5px;
+    }
+}
+
+@media all and (max-width: 750px){
+    #paypal{
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+    #paypal a{
+        width: 60px;
+        font-size: 8pt;
+    }
+    #paypal a:hover {
+        width: 60px; 
+        font-size: 8pt;
+    }
+}
+
 @media all and (max-width: 700px){
+    h1.title{
+        padding-left: 0pt;
+    }
     #linklist{
         width: 130px;
     }
@@ -174,8 +202,13 @@ h1.title {
     #twit{
         display: none;
     }
-    .outline-2 {
+    .outline-2{
         left: 145px;
+    }
+    #paypal{
+        position:fixed;
+        left: 0px;
+        top: 362px;
     }
 }
 
