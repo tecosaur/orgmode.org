@@ -16,6 +16,16 @@ Carsten Dominik 氏が、[[http://research.google.com/video.html][Google Tech Ta
 <iframe width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
 #+end_html
 
+* Carsten's talk at the Max Planck Institute for Neurological Research (2010)
+
+This is a talk presented on February 8th 2010 at the Max Planck Institute
+for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
+[[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][this page]] for details.
+
+#+begin_html
+<iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+end_html
+
 * [[http://twit.tv/show/floss-weekly/136][FLOSSウィークリィ]] のCarsten Dominik氏へのインタビュー (2010)
 
 #+begin_html
