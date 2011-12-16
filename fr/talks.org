@@ -18,6 +18,16 @@ to [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] and [[http://technica
 <iframe width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
 #+end_html
 
+* Présentation de Carsten's au Max Planck Institute for Neurological Research (2010)
+
+Voici la présentation faite par Carsten le 8 février 2010 à l'Institut
+Max Planck pour la recherche en neurologie, à Cologne, Allemagne
+(http://nf.mpg.de).  Voyez [[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][les détails]] ici.
+
+#+begin_html
+<iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+end_html
+
 * Entretien avec Carsten Dominik sur [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
 
 #+begin_html
