@@ -47,8 +47,8 @@ body {
     color: white;
     position:absolute;
     display: block;
-    right: 14px;
-    top: 15px;
+    right: 10px;
+    top: 5px;
     width: 120px; 
     height: 30px;
     box-shadow: 5px 5px 5px #888;
@@ -65,7 +65,7 @@ body {
     position:absolute;
     display: block;
     right: 9px;
-    top: 15px;
+    top: 5px;
     width: 120px; 
     height: 30px;
     margin-top: 5px;
@@ -84,7 +84,7 @@ body {
     #paypal {
         position:absolute;
         right: 10px;
-        top: 15px;
+        top: 10px;
         z-index: 100;
         text-align: center;
     }
@@ -177,11 +177,11 @@ body {
     }
 }
 
-@media all and (max-width: 750px){
+@media all and (max-width: 800px){
     #paypal{
         position: absolute;
-        top: 2px;
-        right: 2px;
+        top: 10px;
+        right: 5px;
     }
     #paypal a{
         width: 60px;
@@ -193,7 +193,7 @@ body {
     }
 }
 
-@media all and (max-width: 700px){
+@media all and (max-width: 625px){
     h1.title{
         padding-left: 0pt;
     }
@@ -211,8 +211,17 @@ body {
     }
     #paypal{
         position:absolute;
-        left: 0px;
-        top: 362px;
+        left: 5px;
+        top: 340px;
+        width: 100px;
+    }
+    #paypal a{
+        left: 5px;
+        width: 100px;
+    }
+    #paypal a:hover{
+        left: 5px;
+        width: 100px;
     }
 }
 
