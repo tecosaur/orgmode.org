@@ -8,12 +8,13 @@
 #+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+STYLE:     <base href="http://orgmode.org/" />
-#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
+#+STYLE:     <link rel="icon" type="image/png" href="http://orgmode.org/org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 
 * COMMENT Current HEAD of the git repository 
+
+** Use theindex.inc back again ([[git:dd98619286f84c4ced735a052ff13e3fe343c980][git]])
 
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
