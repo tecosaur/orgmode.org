@@ -13,7 +13,7 @@ body {
 }
 
 .title {
-    position: fixed;
+    position: absolute;
     display: inline;
     left: 0px;
     top: 0px;
@@ -27,7 +27,7 @@ body {
 }
 
 #orgquote {
-    position: fixed;
+    position: absolute;
     display: block;
     top: 77px;
     padding: 5pt;
@@ -45,7 +45,7 @@ body {
     font-family: Courier new;
     cursor: pointer;
     color: white;
-    position:fixed;
+    position:absolute;
     display: block;
     right: 14px;
     top: 15px;
@@ -62,7 +62,7 @@ body {
 }
 
 #paypal a:hover {
-    position:fixed;
+    position:absolute;
     display: block;
     right: 9px;
     top: 15px;
@@ -82,7 +82,7 @@ body {
 
 @media all {
     #paypal {
-        position:fixed;
+        position:absolute;
         right: 10px;
         top: 15px;
         z-index: 100;
@@ -99,7 +99,7 @@ body {
 
     #linklist 
     {
-        position: fixed;
+        position: absolute;
         font-size: 13pt;
         font-family: Courier New; 
         padding-top: 0px;
@@ -147,7 +147,7 @@ body {
         /* -moz-opacity:.2; */
         /* opacity: .2; */
         /* filter:alpha(opacity=20); */
-        position: fixed;
+        position: absolute;
         top: 362px;
         box-shadow: 8px 8px 12px #ccc;
         -webkit-border-bottom-right-radius: 10px;
@@ -210,7 +210,7 @@ body {
         left: 145px;
     }
     #paypal{
-        position:fixed;
+        position:absolute;
         left: 0px;
         top: 362px;
     }
@@ -255,7 +255,7 @@ pre {
 /*     opacity: 1; */
 /*     filter:alpha(opacity=100); */
 
-/*     position: fixed; */
+/*     position: absolute; */
 /*     top: 362px; */
 /*     box-shadow: 8px 8px 12px #ccc; */
 /*     z-index: 100; */
