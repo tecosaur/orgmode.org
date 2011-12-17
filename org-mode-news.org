@@ -24,7 +24,7 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-news.htm
   #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
-- <2011-12-12> Release 7.8, 7.8.01 and 7.8.02.
+- <2011-12-12> Release 7.8, 7.8.01 and 7.8.02.  See the list of [[file:/orgmode.org/Changes.html][changes]].
 - <2011-12-12> The design and content of org's website has been refreshed.
 - <2011-12-02> The Worg git repo is now hosted on [[http://orgmode.org/w/worg.git][orgmode.org.]]
 - <2011-07-28> Release 7.7.

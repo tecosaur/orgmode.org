@@ -13,7 +13,8 @@
   #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
-- <2011-12-12> Sortie de la version 7.8, 7.8.01 et 7.8.02.
+- <2011-12-12> Sortie de la version 7.8, 7.8.01 et 7.8.02.  Voir la [[http://orgmode.org/Changes.html][liste
+  des changements]].
 - <2011-12-12> Le design et le contenu du site web ont été mis à jour.
 - <2011-12-02> Le dépôt git de Worg est désormais hébergé sur [[http://orgmode.org/w/worg.git][orgmode.org]].
 - <2011-07-28> Sortie de la version 7.7.
