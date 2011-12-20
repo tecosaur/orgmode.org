@@ -10,23 +10,21 @@
 
 * Carsten Dominik 氏による GoogleTech Talk の講演 (2008)
 
-Carsten Dominik 氏が、[[http://research.google.com/video.html][Google Tech Talk]] で org-mode について講演したときの映像です。2008年7月15日に、カリフォルニア州マウンテンビューにあるグーグルキャンパスで行われました。Carsten Dominik 氏から [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] 氏と [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] 氏へのメッセージ「滞在中にお世話になりました。ありがとう。」
+[[http://research.google.com/video.html][Google Tech Talk]] で Carsten Dominik 氏が、org-mode について講演したときの映像です。2008年7月15日に、カリフォルニア州マウンテンビューにあるグーグルキャンパスで行われました。Carsten Dominik 氏から [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] 氏と [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] 氏へのメッセージ：「滞在中にお世話になりました。ありがとう。」
 
 #+begin_html
 <iframe width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
 #+end_html
 
-* Carsten's talk at the Max Planck Institute for Neurological Research (2010)
+* Carsten 氏による the Max Planck Institute for Neurological Research での講演(2010)
 
-This is a talk presented on February 8th 2010 at the Max Planck Institute
-for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
-[[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][this page]] for details.
+この講演は、2010年2月8日に the Max Planck Institute for Neurological Research in Cologne, Germany (http://nf.mpg.de) で行われました。詳細は[[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][こちら]]のページをチェックしてください。
 
 #+begin_html
 <iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+end_html
 
-* [[http://twit.tv/show/floss-weekly/136][FLOSSウィークリィ]] のCarsten Dominik氏へのインタビュー (2010)
+* [[http://twit.tv/show/floss-weekly/136][FLOSSウィークリィ]] の Carsten Dominik 氏へのインタビュー (2010)
 
 #+begin_html
 <iframe src="http://twit.tv/embed/8239" width="640" height="320" scrolling="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0"></iframe>

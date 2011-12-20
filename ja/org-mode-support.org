@@ -13,15 +13,15 @@
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
    :END:
 
-Org-mode について議論するメーリングリストがあります。
+Org-modeについて議論するメーリングリストがあります。
 
 - ウェブ経由での[[http://lists.gnu.org/mailman/listinfo/emacs-orgmode][購読]]
 
-- メーリングリストに直接[[mailto:emacs-orgmode@gnu.org][投稿]] する。メーリングリストを購読していない場合、管理者がメールの内容を確認してからメーリングリストに流します。
+- メーリングリストに直接[[mailto:emacs-orgmode@gnu.org][投稿]]する。メーリングリストを購読していない場合、管理者がメールの内容を確認してからメーリングリストに流します。
 
-- [[http://news.gmane.org/gmane.emacs.orgmode][ブラウザ]] もしくは[[news://news.gmane.org/gmane.emacs.orgmode][ニュースリーダー]] を使って [[http://www.gmane.org][Gmane]] のメールを読む
+- [[http://news.gmane.org/gmane.emacs.orgmode][ブラウザ]]もしくは[[news://news.gmane.org/gmane.emacs.orgmode][ニュースリーダー]]を使って [[http://www.gmane.org][Gmane]] のメールを読む
 
-- 質問を投稿する前に、Org-modeのマニュアルにある[[http://orgmode.org/manual/Feedback.html][フィードバック]] を読んでください。きっと有益な答えが得られるでしょう。E. S. Raymond氏の[[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]] も一読の価値があります。
+- 質問を投稿する前に、Org-modeのマニュアルにある[[http://orgmode.org/manual/Feedback.html][フィードバック]]を読んでください。きっと有益な答えが得られるでしょう。E. S. Raymond氏の [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]] も一読の価値があります。
 
 #+begin_html
 <form method="get" action="http://search.gmane.org/">
@@ -32,11 +32,11 @@ Org-mode について議論するメーリングリストがあります。
 #+end_html
 
 * Worg - Org-mode のコミュニティサイト
-[[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]] 氏が作った[[http://orgmode.org/worg/][Worg]] は、Org-modeに関する資料が含まれた、たくさんのOrgファイル（Org-modeで記述された文書）を、複数のユーザが共同編集できるように設定されています。これには、[[http://orgmode.org/worg/org-faq.php][よくある質問]] と[[http://orgmode.org/worg/org-tutorials/index.php][チュートリアル]] が含まれています。Worg はコミュニティ内でコンテンツを編集できる wiki に似ていますが、分散型のバージョン管理システムを利用しているので、オフラインでも編集できます。Worg の編集に貢献したくなったら、[[http://orgmode.org/worg/][Worgのサイト]] を訪問することから始めてください。
+[[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]] 氏が作った [[http://orgmode.org/worg/][Worg]] は、Org-modeに関する資料が含まれた、たくさんのOrgファイル（Org-modeで記述された文書）を、複数のユーザで共同編集できるように設定されています。ここには、[[http://orgmode.org/worg/org-faq.php][よくある質問]]と[[http://orgmode.org/worg/org-tutorials/index.php][チュートリアル]]が含まれています。Worg は、コミュニティ内でコンテンツを編集できる wiki に似ていますが、分散型のバージョン管理システムを利用しているので、オフラインでも編集できます。Worg の編集に貢献したくなったら、[[http://orgmode.org/worg/][Worgのサイト]]を訪問することから始めてください。
 
 * Org-mode に貢献する
 
-新しいアイディアやバグの報告があれば、いつでもメーリングリストに投稿できます。パッチやコード片、もしくは完全なアドオンの投稿も、もちろん歓迎します。投稿の方法と、投稿する素材についての具体的な情報は、[[http://orgmode.org/worg/org-contribute.php][ここ]] にあります。
+新しいアイディアやバグの報告があれば、いつでもメーリングリストに投稿してください。パッチやコード片、もしくは完全なアドオンの投稿も、もちろん歓迎します。投稿の方法と、投稿する素材についての具体的な情報は、[[http://orgmode.org/worg/org-contribute.php][ここ]]にあります。
 
 ** Gitへのコミット（最新の3件）
 
@@ -52,7 +52,7 @@ Org-mode について議論するメーリングリストがあります。
 
 ** フリーノードの IRC チャネル（#org-mode）
 
-[[http://webchat.freenode.net/][ウェブ]] 経由か、お気に入りの IRC クライアントを利用して、フリーノードの IRC チャネル( =#org-mode= )に参加できます。
+[[http://webchat.freenode.net/][ウェブ]]経由か、お気に入りの IRC クライアントを利用して、フリーノードの IRC チャネル( =#org-mode= )に参加できます。
 
 ** Google+ ページ
 
@@ -93,12 +93,8 @@ new TWTR.Widget({
 </script>
 #+end_html
 
-
-
-
-
 * あの有名なOrgのTシャツ！
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-Org-modeのTシャツ、バッグ、マグカップを手に入れて、Org-mode を普及させましょう。同時に、開発者をサポートしましょう！[[http://orgmode.spreadshirt.com][US shop]] か [[http://orgmode.spreadshirt.de][EU shop]] で販売しています。
+Org-modeのTシャツ、バッグ、マグカップを手に入れて、Org-modeを普及させましょう。同時に、開発者をサポートしましょう！[[http://orgmode.spreadshirt.com][US shop]] か [[http://orgmode.spreadshirt.de][EU shop]] で販売しています。
