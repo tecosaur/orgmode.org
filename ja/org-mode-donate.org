@@ -10,7 +10,7 @@
 
 * なぜ寄付が必要か？
 
-Org-mode は、今も成長し続けています。あなたの寄付でメンテナーを助けて下さい。メンテナーは、さらにOrg-modeのメンテナンスに専念できます。
+Org-modeは、今この瞬間にも成長し続けています。あなたの寄付でメンテナーを助けて下さい。メンテナーは、Org-modeの維持管理にもっと専念できます。
 
 * Paypal を使って寄付する
 
@@ -31,7 +31,7 @@ Paypal を使った寄付を検討してみてください。
 
 * Flattr!
 
-flatter を使うことでも org-mode を支援できます。愛するプロジェクトをしっかり褒めましょう。If you are an Org-mode user and want us to flattr a project, please tell us on the  [[file:org-mode-support.org][mailing list]].
+flatter を使うことでも org-mode を支援できます。Org-modeユーザが気に入る他のプロジェクトを flattr できるので、もしあなたがOrg-modeのユーザで、flattr して欲しいプロジェクトがあるならば、[[http://orgmode.org/org-mode-support.org][メーリングリスト]]に連絡してください。
 
 #+HTML: <a class="FlattrButton" style="display:none;" href="http://orgmode.org"></a>
 
@@ -41,10 +41,10 @@ flatter を使うことでも org-mode を支援できます。愛するプロ�
 
 * Org-mode のTシャツ／マグカップ／バッグを購入する
 
-ショップの売上げは、org-mode を生み出した Carsten 氏に支払われます。Carsten 氏は、現在も非常にアクティブな貢献者です。また、これらのグッズを使うことで、あなたが Org-mode のファンであると世界中の人に伝えのもいいですね。[[http://orgmode.spreadshirt.com][US shop]] か [[http://orgmode.spreadshirt.de][EU shop]] で販売しています。
+ショップの売上げは、org-modeの生みの親である Carsten 氏に支払われます。Carsten 氏は、現在も非常にアクティブな貢献者です。また、これらのグッズを使うことで、Org-modeのファンであることを世界中の人に伝えるのもいいですね。[[http://orgmode.spreadshirt.com][US shop]] か [[http://orgmode.spreadshirt.de][EU shop]] で販売しています。
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
 * FSF フランス によるサポート
 
-[[http://fsffrance.org/][FSF フランス]] が、毎月100ユーロを寄付しています。FSF フランスの支援に感謝します。
+[[http://fsffrance.org/][FSF フランス]]が、毎月100ユーロを寄付しています。FSF フランスの支援に感謝します。

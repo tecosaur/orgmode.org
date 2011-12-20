@@ -23,5 +23,5 @@
 - <2010-12-17> マニュアルが本になりました。14.95ドルで、[[http://www.network-theory.co.uk/org/manual/][Network Theory Ltd]] から出版されています。一冊につき1ドルがorg-modeプロジェクトに寄付されます。
 - <2010-12-10> バージョン 7.04 を公開
 - <2010-12-03> Android 版の MobileOrg が音声入力をサポート
-- <2010-11-25> Org-modeを使うために、熱烈なviユーザが尊敬するEmacsユーザになる時代は終わったかもしれません。Herbert Sitz氏が[[https://github.com/hsitz/VimOrganizer][Vim用の Org-mode クローン]] を作成しています。この[[http://vimeo.com/17182850][ビデオ]] 見ると、今後が楽しみです。
-- <2010-06-06> iPhone アプリケーションの[[http://mobileorg.ncogni.to/][MobileOrg]] が、バージョン 1.5 になり暗号化をサポート
+- <2010-11-25> Org-modeを使うために、熱烈なviユーザが尊敬するEmacsユーザになる時代は終わったかもしれません。Herbert Sitz氏が[[https://github.com/hsitz/VimOrganizer][Vim用の Org-mode クローン]]を作成しています。この[[http://vimeo.com/17182850][ビデオ]]見ると、今後が楽しみです。
+- <2010-06-06> iPhone アプリケーションの [[http://mobileorg.ncogni.to/][MobileOrg]] が、バージョン 1.5 になり暗号化をサポート
