@@ -10,6 +10,7 @@
 #+STYLE:     <base href="http://localhost/org-mode/index.html" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="org2.css" type="text/css" />
+#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
 * Version 6.36
 

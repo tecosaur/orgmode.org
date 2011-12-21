@@ -7,6 +7,7 @@
 #+STYLE:     <base href="http://orgmode.org/ja/" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
 * なぜ寄付が必要か？
 

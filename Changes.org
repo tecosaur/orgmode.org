@@ -10,6 +10,7 @@
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+STYLE:     <link rel="icon" type="image/png" href="http://orgmode.org/org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 
 * COMMENT Current HEAD of the git repository 

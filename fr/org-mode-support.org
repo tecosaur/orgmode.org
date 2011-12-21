@@ -7,6 +7,7 @@
 #+STYLE:     <base href="http://orgmode.org/fr/" />
 #+STYLE:     <link rel="icon" type="image/png" href="http://orgmode.org/org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
 * Support via la liste de discussion d'Org-mode
    :PROPERTIES:
