@@ -8,6 +8,7 @@
 #+STYLE:     <link rel="icon" type="image/png" href="http://orgmode.org/org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/css/lightbox.css" type="text/css" />
+#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
 * Org: un mode d'Emacs pour les notes, la gestion de tâches et la publication
 
