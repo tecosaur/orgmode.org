@@ -14,8 +14,11 @@
 
 * COMMENT Current HEAD of the git repository 
 
-** Use theindex.inc back again ([[git:dd98619286f84c4ced735a052ff13e3fe343c980][git]])
+** org-eshell.el by Konrad Hinsen now in Org's core ([[git:a0f2396f8f45f489ecddae24e34bdfb46abd4c2f][git]])
 
+=org-eshell.el= allows you to create links from [[http://www.gnu.org/software/emacs/manual/html_node/eshell/index.html][Eshell]].
+
+** Use theindex.inc back again ([[git:dd98619286f84c4ced735a052ff13e3fe343c980][git]])
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
 ** Summary
