@@ -35,7 +35,7 @@
     
 * Org-mode のリファレンスカード
   - [[http://orgmode.org/orgcard.pdf][PDF]] のリファレンスカードをダウンロードする
-  - [[http://orgmode.org/orgcard.txt][テキスト版]]をダウンロードする
+  - [[http://orgmode.jp/orgcard-ja.txt][テキスト版]]をダウンロードする
 
 * よくある質問
   - Org-modeの[[http://orgmode.org/worg/org-faq.php][よくある質問]]は、ユーザ自身が編集でき、[[http://orgmode.org/worg/][Worgプロジェクト]]でコミュニティによって管理されています。
