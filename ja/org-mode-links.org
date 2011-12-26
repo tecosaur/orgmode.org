@@ -15,7 +15,7 @@ GoogleTech talk と [[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][Max 
 
 [[http://fosdem.org/2011/][FOSDEM 2011]] にて、Bastien 氏が Org-mode についてのプレゼンテーションを行いました（Stefan Vollmar 氏による研究室内での利用例と、Sébastien Vauban 氏による Org Babel のプレゼンを含む）。プレゼンテーションのスライドを [[http://lumiere.ens.fr/~guerry/u/org-fosdem-presentation-beamer.pdf][PDF]] で入手できます。2011年8月に、Bastien 氏は、パリで開催された GNU Hackers Meeting でも同じプレゼン（一部更新あり）を行いました。
 
-すべての講演は、 [[http://orgmode.org/talks.org][専用の「講演」ページ]]で観られます。
+すべての講演は、 [[http://orgmode.org/talks.html][専用の「講演」ページ]]で観られます。
 
 * モバイルアプリケーション
 
