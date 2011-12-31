@@ -52,6 +52,10 @@ first headline in the region.
 within a range of dates.  This is inspired by code and discussion
 with Marc-Oliver Ihm, thanks to him!
 
+** Incompatible changes
+
+*** =org-write-agenda= renamed to =org-agenda-write=
+
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
 ** Summary
