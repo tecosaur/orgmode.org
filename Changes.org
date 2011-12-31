@@ -46,6 +46,12 @@ When =org-loop-over-headlines-in-active-region= is set to
 will only act upon entries that are of the same level than the
 first headline in the region.
 
+** =org-sparse-tree= can now check for time ranges
+
+=C-c / D= will now check for deadlines and scheduled entries
+within a range of dates.  This is inspired by code and discussion
+with Marc-Oliver Ihm, thanks to him!
+
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
 ** Summary
