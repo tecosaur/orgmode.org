@@ -13,13 +13,39 @@
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 
-* COMMENT Current HEAD of the git repository 
+* COMMENT Current HEAD of the git repository
+:PROPERTIES:
+:test+: sdf
+:END: 
 
 ** org-eshell.el by Konrad Hinsen now in Org's core ([[git:a0f2396f8f45f489ecddae24e34bdfb46abd4c2f][git]])
 
 =org-eshell.el= allows you to create links from [[http://www.gnu.org/software/emacs/manual/html_node/eshell/index.html][Eshell]].
 
 ** Use theindex.inc back again ([[git:dd98619286f84c4ced735a052ff13e3fe343c980][git]])
+** New option =org-export-date-timestamp-format=
+
+Org timestamps in the =#+DATE= field are now automatically
+converted at export time.  You can use the new option
+=org-export-date-timestamp-format= to define the format to use
+for the date.
+
+Thanks to Torsten Wagner for this idea.
+
+** =org-todo= and =org-archive-*= now loop in the active region
+
+When =org-loop-over-headlines-in-active-region= is non-nil, using
+=org-todo= or =org-archive-*= commands in the active region will
+loop over headlines.  This is handy if you want to set the TODO
+keyword for several items, or archive them quickly.
+
+** New possible value for =org-loop-over-headlines-in-active-region=
+
+When =org-loop-over-headlines-in-active-region= is set to
+=start-level=, the command will loop over the active region but
+will only act upon entries that are of the same level than the
+first headline in the region.
+
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
 ** Summary
