@@ -14,7 +14,7 @@
   #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
-- <2012-01-03> Release 7.8.03 (bugfix release)
+- <2012-01-03> バージョン 7.8.03 を公開（バグフィックス）
 - <2011-12-12> バージョン 7.8、7.8.01、7.8.02 を公開（[[http://orgmode.org/Changes.html][変更点]]）
 - <2011-12-12> ウェブサイトのデザインとコンテンツを更新
 - <2011-12-02> Worg の Git リポジトリを [[http://orgmode.org/w/worg.git][orgmode.org]] でホスティング開始
