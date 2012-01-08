@@ -1,8 +1,8 @@
-#+TITLE: Org-Mode: Make a donation
-#+AUTHOR: Bastien
-#+LANGUAGE:  en
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+TITLE: Org-Mode: Haz una donación
+#+EMAIL:     davidam at gmail dot com
+#+LANGUAGE:  es
+#+KEYWORDS:  Org Emacs outline planificación nota autoría proyecto texto-plano LaTeX HTML
+#+DESCRIPTION: Org: un Modo Emacs para Notas, Planificación y Autoría
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
@@ -17,17 +17,18 @@ else
 var language = navigator.browserLanguage;
 if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-soutenir.html';
 if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-donate.html';
+if (language.indexOf('es') > -1) document.location.href = '/es/org-mode-donate.html';
 </script>
 #+end_html
 
-* Why?
+* ¿Por qué?
 
-Org Mode is still growing fast, donation helps the maintainer dedicate more
-time to Org's maintainance.
+Org Mode está todavía creciendo rápido, las donaciones ayudan al
+mantenedor a dedicar más tiempo al mantenimientos de Org.
 
-* Make a donation using Paypal
+* Haz una donación usando Paypal
 
-Please consider making a donation through paypal:
+Por favor, considere hacer una donación a través de paypal:
 
 #+begin_html
 <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -38,32 +39,34 @@ Please consider making a donation through paypal:
   <input type="hidden" name="lc" value="US" />
   <input type="hidden" name="currency_code" value="USD" />
   <input type="hidden" name="tax" value="0" />
-  <button name="submit" alt="Make payments with PayPal" />Support Org!</button>
+  <button name="submit" alt="Haz pagos con PayPal" />¡Donar a Org!</button>
 </form>
 #+end_html
 
 * Flattr!
 
-You can also use flattr to support Org-mode.  We flattr projects we
-love.  If you are an Org-mode user and want us to flattr a project, please
-tell us on the [[file:org-mode-support.org][mailing list]].
+También puede usar flattr para dar soporte a Org-mode. Hacemos flattr
+a proyectos que amamos. Si eres un usuario de Org-mode y quieres que
+hagamos flattr a un proyecto, por favor, dínoslo en la [[file:org-mode-support.org][lista de
+correo]]. 
 
 #+HTML: <a class="FlattrButton" style="display:none;" href="http://orgmode.org"></a>
 
-* Buy the Org Manual via Network Theory LTD
+* Compra el Manual de Org vía Network Theory LTD
 
-For each [[http://www.network-theory.co.uk/org/manual/][Org Manual you buy at Network Theory LTD]], there is 1 USD given to
-the maintainer.
+Por cada [[http://www.network-theory.co.uk/org/manual/][Org Manual que compres en Network Theory LTD]], se donará 1$ al
+mantenedor.
 
-* Buy the Org-mode shirt/mug/bag!
+* ¡Compra la camiseta/mochila/mochila Org-mode!
 
-The shop's revenue goes to Carsten, the original author of Org-mode, still
-a very active contributor.  It's also a nice way to tell the world you like
-Org-mode!  You can buy at the [[http://orgmode.spreadshirt.com][US shop]] or at the [[http://orgmode.spreadshirt.de][EU shop]]...
+Los ingresos de la tienda son para Carsten, el autor original de
+Org-mode y todavía un contribuidor muy activo. Es también un buena
+manera manera de contarle al mundo que te gusta Org-mode!. Se puede
+comprar en la [[http://orgmode.spreadshirt.com][tienda de EEUU]] o en la [[http://orgmode.spreadshirt.de][tienda europea]]...
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-* They support us
+* Ellos nos financian
 
-[[http://fsffrance.org/][FSF France]] is making a monthly donation of 100€.  Thanks to FSF France for
-their support!
+[[http://fsffrance.org/][FSF Francia]] está haciendo una donación mensual de 100€. ¡Gracias a FSF
+Francia por esta aportación!

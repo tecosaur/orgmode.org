@@ -1,9 +1,9 @@
-#+TITLE: Org-Mode: Community and Support
+#+TITLE: Org-Mode: Comunidad y Soporte
 #+AUTHOR: Bastien
-#+LANGUAGE:  en
+#+LANGUAGE:  es
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+KEYWORDS:  Org Emacs outline planificación nota autoría proyecto texto-plano LaTeX HTML
+#+DESCRIPTION: Org: un Modo Emacs para Notas, Planificación y Autoría
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
@@ -17,26 +17,28 @@ else
 var language = navigator.browserLanguage;
 if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-support.html';
 if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-support.html';
+if (language.indexOf('es') > -1) document.location.href = '/es/org-mode-support.html';
 </script>
 #+end_html
 
-* Support from the Org-mode mailing list
+* Soporte desde la lista de correo de Org-mode
    :PROPERTIES:
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
    :END:
 
-There is a mailing list for discussion about org-mode.
+Hay una lista de correo para discutir acerca de org-mode.
 
-- [[http://lists.gnu.org/mailman/listinfo/emacs-orgmode][Subscribe to it]] at the web interface.
+- [[http://lists.gnu.org/mailman/listinfo/emacs-orgmode][Suscríbase]] a través del interfaz web.
 
-- Directly [[mailto:emacs-orgmode@gnu.org][send mail to it]].  If you are not subscribed, a moderator will
-  look at the message before passing it through to the list.
+- Directamente [[mailto:emacs-orgmode@gnu.org][envíe un correo]]. Si no está suscrito, un moderador
+  mirará el mensaje antes de pasarlo a la lista
 
-- Read the list on [[http://www.gmane.org][Gmane]] through a [[http://news.gmane.org/gmane.emacs.orgmode][web interface]] or with a [[news://news.gmane.org/gmane.emacs.orgmode][newsreader]].
+- Lea la lista en [[http://www.gmane.org][Gmane]] a través de un [[http://news.gmane.org/gmane.emacs.orgmode][interfaz web]] o con un [[news://news.gmane.org/gmane.emacs.orgmode][lector de news]].
 
-- Please read the [[http://orgmode.org/manual/Feedback.html][Feedback]] section of Org's manual before posting a
-  question, it helps getting useful answer.  [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart
-  Way]], by E. S. Raymond is also worth reading.
+- Por favor, lea la sección de [[http://orgmode.org/manual/Feedback.html][Feedback]] del manual de Org antes de
+  enviar preguntas, ayudará a tener útiles
+  respuestas. [[http://www.sindominio.net/ayuda/preguntas-inteligentes.html][Cómo Hacer Preguntas de Manera Inteligente]], de
+  E. S. Raymond es también una lectura interesante.
 
 #+begin_html
 <form method="get" action="http://search.gmane.org/">
@@ -46,24 +48,25 @@ There is a mailing list for discussion about org-mode.
 </form>
 #+end_html
 
-* Worg - the Org community Website
+* Worg - el Sitio Web de la comunidad Org
 
-[[http://orgmode.org/worg/][Worg]], created by [[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]], is a setup to allow users to jointly edit
-a number of Org-mode files containing documentation about Org-mode,
-including the [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] and [[http://orgmode.org/worg/org-tutorials/index.php][Tutorials]].  Worg is similar to a wiki in
-that allows community to edit the contents.  However, since it uses a
-distributed version control system, you do not have to be online while
-editing it.  If you'd like to contribute to Worg, please go to [[http://orgmode.org/worg/][the Worg
-page]], and start from there.
+[[http://orgmode.org/worg/][Worg]], creado por [[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]], es una configuración que permite a
+sus usuarios editar conjuntamente un número de ficheros Org-mode
+que contienen documentación de Org-mode, incluyendo la [[http://orgmode.org/worg/org-faq.php][FAQ de Org Mode]]
+and [[http://orgmode.org/worg/org-tutorials/index.php][Tutoriales]].  Worg es similar a un wiki ya que permite que la
+comunidad edite los contenidos. Sin embargo, debido a que usa un
+sistema de control de versiones distribuido, no es necesario estar
+online mientras se está editando. Si le gustaría contribuir a Worg,
+por favor, vaya a la [[http://orgmode.org/worg/][página de Worg]], y empiece desde allí.
 
-* Contributing to Org-mode
+* Contribuyendo a Org-mode
 
-You can always contribute with ideas and bug reports on the mailing
-list.  If you want to contribute a patch, code snippets, or a full add-on,
-this is very welcome too!  Detailed information on how and what to
-contribute can be found [[http://orgmode.org/worg/org-contribute.php][here]].
+Siempre puede contribuir con ideas e informes de error en las listas
+de correo. Puede contribuir con un parche, trozos de código, o una
+extensión completa ¡será muy bienvenida!. La información detallada de
+cómo y qué contribuir se puede encontrar [[http://orgmode.org/worg/org-contribute.php][aquí]].
 
-** 3 latest git commits
+** 3 últimos git commits
 
 #+begin_html
 <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Forgmode.org%2Fw%2F%3Fp%3Dorg-mode.git%3Ba%3Drss%3Bopt%3D--no-merges&num=3&au=y&date=y&targ=y&utf=y&css=feed"  charset="UTF-8" type="text/javascript"></script>
@@ -73,20 +76,20 @@ contribute can be found [[http://orgmode.org/worg/org-contribute.php][here]].
 </noscript>
 #+end_html
 
-* Elsewhere on the Web
+* En otras partes de la Web
 
-** #org-mode IRC channel on freenode
+** El canal de IRC #org-mode en freenode
 
-You can join the =#org-mode= IRC channel on Freenode through a [[http://webchat.freenode.net/][web
-interface]] or through your favorite IRC client.
+Se puede entrar al canal de IRC =#org-mode= en Freenode a través de un [[http://webchat.freenode.net/][interfaz
+web]] a través de su cliente de IRC favorito.
 
-** Google+ Page
+** Página en Google+
 
-There is [[https://plus.google.com/b/102778904320752967064/][Google+ Org-mode page]], already followed by about *200* persons.
+Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org-mode en Google+]], que ya siguen unas *200* personas
 
-** Twitter feed
+** Twitter
 
-Takaaki ISHIKAWA is running the [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] account on twitter.
+Takaaki ISHIKAWA está corriendo la cuenta [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] en twitter.
 
 #+begin_html
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -121,11 +124,9 @@ new TWTR.Widget({
 
 
 
-
-
-* THE famous Org shirt!
+* ¡LA famosa camiseta Org!
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-Promote Org-mode and support its development by getting your Org-mode
-T-shirt, bag, or mug in either the [[http://orgmode.spreadshirt.com][US shop]] or the [[http://orgmode.spreadshirt.de][EU shop]].
+Promueve Org-mode y financia su desarrollo consiguiendo tu camiseta,
+mochila, o taza Org-mode en la [[http://orgmode.spreadshirt.com][tienda de EEUU]] o en la [[http://orgmode.spreadshirt.de][tienda de la UE]].

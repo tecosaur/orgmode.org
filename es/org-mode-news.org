@@ -1,9 +1,9 @@
-#+TITLE: Org-mode: Latest News
+#+TITLE: Org-mode: Últimas Noticias
 #+AUTHOR: Bastien
-#+LANGUAGE:  en
+#+LANGUAGE:  es
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+KEYWORDS:  Org Emacs outline planificación nota autoría proyecto texto-plano LaTeX HTML
+#+DESCRIPTION: Org: un Modo Emacs para Notas, Planificación y Autoría
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
@@ -17,10 +17,11 @@ else
 var language = navigator.browserLanguage;
 if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-nouvelles.html';
 if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-news.html';
+if (language.indexOf('ja') > -1) document.location.href = '/es/org-mode-news.html';
 </script>
 #+end_html
 
-* Latest news
+* Últimas Noticias
 
   #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
