@@ -1,9 +1,9 @@
-#+TITLE: Org-Mode: Talks
+#+TITLE: Org-Mode: Charlas
 #+AUTHOR: Bastien
-#+LANGUAGE:  en
+#+LANGUAGE:  es
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+KEYWORDS:  Org Emacs outline planificación nota autoría proyecto texto-plano LaTeX HTML
+#+DESCRIPTION: Org: un Modo Emacs para Notas, Planificación y Autoría
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
@@ -30,31 +30,31 @@ to [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] and [[http://technica
 <iframe width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
 #+end_html
 
-* Carsten's talk at the Max Planck Institute for Neurological Research (2010)
+* Charla de Carsten's en el Instituto Max Planck para la Investigación Neurológica (2010)
 
-This is a talk presented on February 8th 2010 at the Max Planck Institute
-for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
-[[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][this page]] for details.
+Esta es una charla presentada el 8 de Febrero de 2010 en el Instituto
+Max Plank para la Investigación Neurológica en Colonia, Alemania
+(http://nf.mpg.de). Visite [[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][esta página]] para más detalles.
 
 #+begin_html
 <iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+end_html
 
-* Interview of Carsten Dominik at [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
+* Entrevista de Carsten Dominik en [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
 
 #+begin_html
 <iframe src="http://twit.tv/embed/8239" width="640" height="320" scrolling="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0"></iframe>
 #+end_html
 
-* Org-mode presentations by Bastien (2011)
+* Presentaciones de Org-mode por Bastien (2011)
 
-** Org presentation at FOSDEM 2011
+** Presentación de Org en FOSDEM 2011
 
 #+begin_html
 <iframe style="border:none;width:650px;height:541px;" src="http://icant.co.uk/slidesharehtml/embed.php?url=http://www.slideshare.net/bzg/org-fosdem2011&width=600"></iframe>
 #+end_html
 
-** GNU Hackers meeting in Paris, august 2011
+** GNU Hackers meeting en París, Agosto de 2011
 
 #+begin_html
 <iframe src="http://player.vimeo.com/video/30721952?title=0&amp;byline=0&amp;portrait=0" width="480" height="354" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>

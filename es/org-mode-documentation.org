@@ -1,8 +1,8 @@
 #+TITLE: Org-Mode: Documentation
 #+AUTHOR: Bastien
-#+LANGUAGE:  en
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+LANGUAGE:  es
+#+KEYWORDS:  Org Emacs outline planificación nota autoría proyecto texto-plano LaTeX HTML
+#+DESCRIPTION: Org: un Modo Emacs para Notas, Planificación y Autoría
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />

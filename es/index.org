@@ -1,9 +1,10 @@
-#+TITLE:     Org: Your Life in Plain Text
-#+EMAIL:     carsten at orgmode dot org
-#+LANGUAGE:  en
+
+#+TITLE:     Org: Tu vida en texto plano
+#+EMAIL:     davidam at gmail dot com
+#+LANGUAGE:  es
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+KEYWORDS:  Org Emacs outline planificación nota autoría proyecto texto-plano LaTeX HTML
+#+DESCRIPTION: Org: un Modo Emacs para Notas, Planificación y Autoría
 #+STYLE:     <base href="http://orgmode.org/" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/css/lightbox.css" type="text/css" />
@@ -17,63 +18,69 @@ else
 var language = navigator.browserLanguage;
 if (language.indexOf('fr') > -1) document.location.href = '/fr/index.html';
 if (language.indexOf('ja') > -1) document.location.href = '/ja/index.html';
+if (language.indexOf('es') > -1) document.location.href = '/es/index.html';
 </script>
 #+end_html
 
-* Org: an Emacs Mode for Notes, Planning, and Authoring
+* Org: un modo Emacs para Notas, Planificación de Tareas y Autoría
 
 # See http://jonraasch.com/blog/a-simple-jquery-slideshow for a slideshow
 
 #+begin_html
 <script language="Javascript">
 function banner() { } ; b = new banner() ; n = 0
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/1.jpg' title='Org mode file with Timeline' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/1.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/2.jpg' title='Org mode lets you manipulate tables easily' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/2.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/3.jpg' title='View your Org mode with as an Agenda' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/3.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/4.jpg' title='Integration of Org mode and Emacs calendar' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/4.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/5.jpg' title='Export Org mode files to HTML' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/5.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/6.jpg' title='Export Org mode files to LaTeX' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/5.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/7.jpg' title='Org mode: schedule items and add deadlines' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/6.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/8.jpg' title='Org mode: managing TODO lists' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/7.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/1.jpg' title='Fichero Org mode con Línea de Tiempo' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/1.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/2.jpg' title='Org mode permite manipular tablas fácilmente' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/2.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/3.jpg' title='Visita Org Mode como si fuera una Agenda' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/3.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/4.jpg' title='Integración de Org mode y Emacs calendar' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/4.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/5.jpg' title='Exporta ficheros Org mode a HTML' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/5.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/6.jpg' title='Exporta ficheros Org mode a LaTeX' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/5.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/7.jpg' title='Org mode: planifica items y añade fechas límite' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/6.jpg' alt='' /></a>"
+b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/8.jpg' title='Org mode: gestiona listas de tareas' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/7.jpg' alt='' /></a>"
 i=Math.floor(Math.random() * n) ;
 document.write( b[i] )
 </script>
 #+end_html
 
-(Click to enlarge the picture - press =Escape= to lower it.)
+(Haz click para agrandar la imagen - presione =Escape= para hacerla pequeña.)
 
-Org-mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.
+Org-mode es para guardar notas, mantener listas de tareas (TODO), y
+para trabajos de autor con un efectivo sistema de texto plano
 
-* Keep simple things simple... and do more
+* Mantén de manera simple cosas simples ... y haz más
 
-- Simplicity :: At its core, Org-mode is a simple outliner for note-taking
-                and list management. You can learn the basics for using it
-                in [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][five minutes]].  This may be all you need, and Org-mode
-                will not impose more complex features on you.
+- Simplicidad :: En su núcleo, Org-mode es una estructura simple para
+                 tomar notas y gestionar listas. Se puede aprender lo
+                 básico para usarlo en [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto-es.php][cinco minutos]]. Esto puede ser
+                 todo lo que necesite, y Org-mode no impondrá más
+                 funcionalidades complejas. 
 
-- Portability :: Org files are [[http://en.wikipedia.org/wiki/Plain_text][plain text]].  You can view and edit them in
-                 any editor, or add and extract data with custom-made
-                 scripts.  Your data will never be locked into an obscure
-                 or proprietary data format.  Org-mode runs in [[http://www.gnu.org/software/emacs/][Emacs]], which
-                 is available for nearly every platform.
+- Portabilidad :: Los ficheros Org son [[http://es.wikipedia.org/wiki/Archivo_de_texto][texto plano]]. Se pueden ver y
+                  editar en cualquier editor, o añadir y extraer datos
+                  con scripts personalizados. Tus datos nunca serán
+                  bloqueados en un formato de datos oscuro o
+                  privativo. Org-mode se ejecuta en [[http://www.gnu.org/software/emacs/][Emacs]], que está
+                  disponible en cualquier plataforma. 
 
-- Depth :: Org-mode will not let you down when you need more than a simple
-           outline.  The full feature set is both broad and deep, easy to
-           access, but unobtrusive.  The [[http://orgmode.org/worg/org-faq.php][typical answer]] to "/Can it do X?/"
-           is "/Yes!/".
+- Profundidad :: Org-mode no le fallará cuando necesite más de una
+                 simple nota. El conjunto completo de funcionalidades
+                 es amplio y profundo, fácil de acceder, pero no
+                 intrusivo. La [[http://orgmode.org/worg/org-faq.php][típica respuesta]] a "/¿Puedo hacer X?/"
+                 es "/Sí/".
 
-- Flexibility :: Org-mode is like a Swiss army knife.  People use it for
-                 [[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]], as a [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Day Planner]], as a
-                 [[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][Notebook]], for Web and PDF authoring, and much more.
+- Flexibilidad :: Org-mode es como una navaja Suiza. La gente para
+                  [[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Tener el Trabajo Hecho]], como [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Planificador Diario]],
+                  como [[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][Libro de Notas]], para publicación Web y de PDFs
+                  y mucho más.
 
-- Support :: Org-mode is [[http://orgmode.org/manual/index.html][documented extensively]], and many [[http://orgmode.org/worg/org-tutorials/index.php][tutorials]] put
-             spotlights on particular features.  Org-mode is supported by
-             an active [[file:org-mode-support.org][mailing list]] where questions are answered quickly
-             and effectively.
+- Soporte :: Org-mode está [[http://orgmode.org/manual/index.html][extensivamente documentado]], y muchos
+             [[http://orgmode.org/worg/org-tutorials/index.php][tutoriales]] ponen el foco de atención en funcionalidades
+             particulares. Org-mode da soporte en una activa [[file:org-mode-support.org][lista de
+             correo]] donde las preguntas son respondidas
+             de manera rápida y efectiva.
 
-- It's free! :: Org is [[http://en.wikipedia.org/wiki/Free_software][free software]], it is published under the [[http://www.gnu.org/licenses/licenses.html#GPL][GNU GPL
-                license version 3]], like [[http://www.gnu.org/software/emacs/][GNU Emacs]].
+- ¡Es libre! :: Org es [[http://es.wikipedia.org/wiki/Software_Libre][software libre]], está publicado bajo la [[http://www.gnu.org/licenses/licenses.html#GPL][licencia
+                GNU GPL version 3]], como [[http://www.gnu.org/software/emacs/][GNU Emacs]].
 
-If you'd like to know what other people have said about Org-mode, take a
-look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org]].
+Si le gustaría saber que han dicho otras personas acerca de Org-mode,
+eche un vistazo a nuestra [[http://orgmode.org/worg/org-quotes.php][collección de citas acerca de Org]].
