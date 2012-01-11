@@ -85,7 +85,7 @@ web]] a través de su cliente de IRC favorito.
 
 ** Página en Google+
 
-Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org-mode en Google+]], que ya siguen unas *200* personas
+Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org-mode en Google+]], que ya siguen unas *400* personas
 
 ** Twitter
 
