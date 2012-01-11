@@ -50,7 +50,7 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-document
 - Translations of the manual:
   - A [[http://hpcgi1.nifty.com/spen/index.cgi?OrgMode%2fManual][Japanese translation]] of an older version (4.60), by Takeshi Okano.
   - A [[http://gnu.manticore.es/manual-org-emacs][Spanish translation]] (version 6.21b).
-    
+
 * The Org Reference card
   - Download the [[file:orgcard.pdf][Refcard]] for org-mode.
   - There is also a [[file:orgcard.txt][text version]] of the reference card.
