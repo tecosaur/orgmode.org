@@ -9,17 +9,6 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape') 
-var language = navigator.language; 
-else 
-var language = navigator.browserLanguage; 
-if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-documentation.html'; 
-if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-documentation.html'; 
-</script>
-#+end_html
-
 * Manuales y Guías de Org mode
 
 - Lea la [[file:guide/index.html][guía compacta online]] o bájela como un  [[file:orgguide.pdf][documento PDF]]. la

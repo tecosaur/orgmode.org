@@ -9,18 +9,6 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape')
-var language = navigator.language;
-else
-var language = navigator.browserLanguage;
-if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-plus.html';
-if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-links.html';
-if (language.indexOf('es') > -1) document.location.href = '/es/org-mode-links.html';
-</script>
-#+end_html
-
 * Charlas acerca de Org-mode
 
   Carsten Dominik dió una charla en GoogleTech acerca de Org-mode y
