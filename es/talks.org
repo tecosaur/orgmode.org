@@ -9,17 +9,6 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape')
-var language = navigator.language;
-else
-var language = navigator.browserLanguage;
-if (language.indexOf('fr') > -1) document.location.href = '/fr/talks.html';
-if (language.indexOf('ja') > -1) document.location.href = '/ja/talks.html';
-</script>
-#+end_html
-
 * GoogleTech Talk by Carsten Dominik (2008)
 
 Here is the video of the [[http://research.google.com/video.html][Google Tech Talk]] about Org-mode that I gave on

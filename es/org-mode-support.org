@@ -9,18 +9,6 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape')
-var language = navigator.language;
-else
-var language = navigator.browserLanguage;
-if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-support.html';
-if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-support.html';
-if (language.indexOf('es') > -1) document.location.href = '/es/org-mode-support.html';
-</script>
-#+end_html
-
 * Soporte desde la lista de correo de Org-mode
    :PROPERTIES:
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26

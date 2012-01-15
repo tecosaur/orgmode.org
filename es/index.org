@@ -1,4 +1,3 @@
-
 #+TITLE:     Org: Tu vida en texto plano
 #+EMAIL:     davidam at gmail dot com
 #+LANGUAGE:  es
@@ -9,18 +8,6 @@
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/css/lightbox.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
-
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape')
-var language = navigator.language;
-else
-var language = navigator.browserLanguage;
-if (language.indexOf('fr') > -1) document.location.href = '/fr/index.html';
-if (language.indexOf('ja') > -1) document.location.href = '/ja/index.html';
-if (language.indexOf('es') > -1) document.location.href = '/es/index.html';
-</script>
-#+end_html
 
 * Org: un modo Emacs para Notas, Planificación de Tareas y Autoría
 
