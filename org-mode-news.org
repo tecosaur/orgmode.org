@@ -16,6 +16,7 @@ var language = navigator.language;
 else
 var language = navigator.browserLanguage;
 if (language.indexOf('fr') > -1) document.location.href = '/fr/org-mode-nouvelles.html';
+if (language.indexOf('es') > -1) document.location.href = '/es/org-mode-news.html';
 if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-news.html';
 </script>
 #+end_html
