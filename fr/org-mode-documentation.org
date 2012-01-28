@@ -11,7 +11,6 @@
 
 * Le guide et le manuel Org
 
-
 - Lire le [[http://orgmode.org/guide/index.html][guide compact en ligne]] ou le télécharger comme un [[http://orgmode.org/orgguide.pdf][document
   PDF]].  Le guide compact est une introduction d'environ 40 pages à Org.  Il
   couvre toutes les fonctionnalités de manière basique et contient des
@@ -26,8 +25,8 @@
 
   #+begin_html
   <a href="http://www.network-theory.co.uk/org/manual/">
-  <img src="http://www.network-theory.co.uk/org/manual/9781906966089-small" 
-       alt="Org Manual paper version by Network Theory" 
+  <img src="http://www.network-theory.co.uk/org/manual/9781906966089-small"
+       alt="Org Manual paper version by Network Theory"
        style="float:right;margin:5pt;" width="120px" />
   </a>
   #+end_html
@@ -40,8 +39,9 @@
 - Traductions du manuel :
   - Une [[http://hpcgi1.nifty.com/spen/index.cgi?OrgMode/Manual][traduction japonaise]] d'une version ancienne (4.60), par Takeshi Okano.
   - Une [[http://gnu.manticore.es/manual-org-emacs][traduction espagnole]] (version 6.21b).
-    
-* La refcard Org 
+
+* La carte de référence pour Org
+
   - Télécharger la [[http://orgmode.org/orgcard.pdf][Refcard]] d'org-mode.
   - Il y a aussi une [[http://orgmode.org/orgcard.txt][version texte]] de la refcard.
 
@@ -53,3 +53,8 @@
   - Une liste complète de [[http://orgmode.org/worg/org-tutorials/index.php][Tutoriels et de screencasts]] est maintainu par la
     communauté derrière le [[http://orgmode.org/worg/][projet Worg]].
 
+* Publications
+
+- Eric Schulte, Dan Davison, Thomas Dye, Carsten Dominik, [[http://www.jstatsoft.org/v46/i03][A Multi-Language
+  Computing Environment for Literate Programming and Reproducible Research]]
+  ([[http://www.jstatsoft.org/v46/i03/paper][pdf]]).  Journal of Statistical Software, Vol. 46, Issue 3, Jan 2012.

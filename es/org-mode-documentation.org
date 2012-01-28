@@ -50,3 +50,8 @@
 
 * Tutoriales
   - Una lista completa de [[http://orgmode.org/worg/org-tutorials/index.php][tutoriales y screencasts]] es mantenida por el [[http://orgmode.org/worg][Worg project]].
+* Publications
+
+- Eric Schulte, Dan Davison, Thomas Dye, Carsten Dominik, [[http://www.jstatsoft.org/v46/i03][A Multi-Language
+  Computing Environment for Literate Programming and Reproducible Research]]
+  ([[http://www.jstatsoft.org/v46/i03/paper][pdf]]).  Journal of Statistical Software, Vol. 46, Issue 3, Jan 2012.
