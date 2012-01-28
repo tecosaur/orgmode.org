@@ -68,12 +68,12 @@ cómo y qué contribuir se puede encontrar [[http://orgmode.org/worg/org-contrib
 
 ** El canal de IRC #org-mode en freenode
 
-Se puede entrar al canal de IRC =#org-mode= en Freenode a través de un [[http://webchat.freenode.net/][interfaz
-web]] a través de su cliente de IRC favorito.
+Se puede entrar al canal de IRC =#org-mode= en Freenode a través de un
+[[http://webchat.freenode.net/][interfaz web]] a través de su cliente de IRC favorito.
 
 ** Página en Google+
 
-Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org-mode en Google+]], que ya siguen unas *400* personas
+Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org-mode en Google+]], que ya siguen unas *500* personas.
 
 ** Twitter
 
