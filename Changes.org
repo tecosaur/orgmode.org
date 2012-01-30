@@ -23,6 +23,13 @@
 =org-eshell.el= allows you to create links from [[http://www.gnu.org/software/emacs/manual/html_node/eshell/index.html][Eshell]].
 
 ** Use theindex.inc back again ([[git:dd98619286f84c4ced735a052ff13e3fe343c980][git]])
+** New option =org-inlinetask-show-first-star=
+
+Non-nil means display the first star of an inline task as
+additional marker.  When nil, the first star is not shown.
+
+Thanks to Carsten Dominik for implementing this.
+
 ** New option =org-export-date-timestamp-format=
 
 Org timestamps in the =#+DATE= field are now automatically
