@@ -57,4 +57,7 @@
 
 - Eric Schulte, Dan Davison, Thomas Dye, Carsten Dominik, [[http://www.jstatsoft.org/v46/i03][A Multi-Language
   Computing Environment for Literate Programming and Reproducible Research]]
-  ([[http://www.jstatsoft.org/v46/i03/paper][pdf]]).  Journal of Statistical Software, Vol. 46, Issue 3, Jan 2012.
+  ([[http://www.jstatsoft.org/v46/i03/paper][pdf]]).  Journal of Statistical Software, Vol. 46, Issue 3, January 2012.
+
+- Schulte, E.; Davison, D.; [[http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber%3D5756277][Active Documents with Org-Mode]], Computing in
+  Science & Engineering, Vol. 13, Issue 3, May-June 2011.
