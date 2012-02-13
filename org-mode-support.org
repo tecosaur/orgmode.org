@@ -83,7 +83,7 @@ interface]] or through your favorite IRC client.
 
 ** Google+ Page
 
-There is [[https://plus.google.com/b/102778904320752967064/][Google+ Org-mode page]], already followed by about *500* persons.
+There is [[https://plus.google.com/b/102778904320752967064/][Google+ Org-mode page]], already followed by about *600* persons.
 
 ** Twitter feed
 
