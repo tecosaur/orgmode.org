@@ -66,9 +66,13 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-document
 
 * Publications
 
-- Eric Schulte, Dan Davison, Thomas Dye, Carsten Dominik, [[http://www.jstatsoft.org/v46/i03][A Multi-Language
-  Computing Environment for Literate Programming and Reproducible Research]]
-  ([[http://www.jstatsoft.org/v46/i03/paper][pdf]]).  Journal of Statistical Software, Vol. 46, Issue 3, January 2012.
+- Schulte E., Davison D, Dye T., Dominik C., [[http://www.jstatsoft.org/v46/i03][A Multi-Language Computing
+  Environment for Literate Programming and Reproducible Research]] ([[http://www.jstatsoft.org/v46/i03/paper][pdf]]).
+  Journal of Statistical Software, Vol. 46, Issue 3, January 2012.
 
 - Schulte, E.; Davison, D.; [[http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber%3D5756277][Active Documents with Org-Mode]], Computing in
   Science & Engineering, Vol. 13, Issue 3, May-June 2011.
+
+- Delescluse M., Franconville R., Joucla S., Lieury T. and Pouzat C.,
+  [[http://hal.archives-ouvertes.fr/hal-00591455][Making neurophysiological data analysis reproducible: Why and how?]], 
+  Journal of Physiology-Paris, N°0, 2011.
