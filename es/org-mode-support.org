@@ -73,7 +73,7 @@ Se puede entrar al canal de IRC =#org-mode= en Freenode a través de un
 
 ** Página en Google+
 
-Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org-mode en Google+]], que ya siguen unas *600* personas.
+Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org-mode en Google+]], que ya siguen unas *700* personas.
 
 ** Twitter
 
