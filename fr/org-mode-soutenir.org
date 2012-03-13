@@ -11,7 +11,7 @@
 
 * Pourquoi ?
 
-Org Mode continue d'être développé rapidement, les dons aides le mainteneur
+Org Mode continue d'être développé rapidement, les dons aident le mainteneur
 à consacrer plus de temps à cette tâche.
 
 * Faire un don via Paypal
