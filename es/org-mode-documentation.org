@@ -4,7 +4,7 @@
 #+KEYWORDS:  Org Emacs outline planificación nota autoría proyecto texto-plano LaTeX HTML
 #+DESCRIPTION: Org: un Modo Emacs para Notas, Planificación y Autoría
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+STYLE:     <base href="http://orgmode.org/" />
+#+STYLE:     <base href="http://orgmode.org/es/" />
 #+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
