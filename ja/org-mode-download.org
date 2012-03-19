@@ -9,9 +9,9 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-* 現在の最新バージョン：Org 7.8.05
+* 現在の最新バージョン：Org 7.8.06
 
-現在の最新バージョンは、7.8.05 です。最近のリリースで加えられた変更点は、[[http://orgmode.org/Changes.html][こちら]] のリストを見てください。
+現在の最新バージョンは、7.8.06 です。最近のリリースで加えられた変更点は、[[http://orgmode.org/Changes.html][こちら]] のリストを見てください。
 
 Org-modeは、GNU Emacs 24、23、22 で動作します。XEmacs 21 でも動作しますが、若干の制限があります。Emacs 22.2 には、バージョン 4.67d の Org-mode が含まれています。また、Emacs 23.1 には、6.21b が含まれています。Emacsの最新の開発版には、通常、ほぼ最新の Org-mode が含まれています。ただし、Org-mode のサイトから頒布されるパッケージからは、少し遅れているかもしれません。
 
@@ -19,7 +19,7 @@ Org-modeは、GNU Emacs 24、23、22 で動作します。XEmacs 21 でも動作
 
 ** 安定版
 
-[[http://orgmode.org/org-7.8.05.zip][zip形式]]もしくは、[[http://orgmode.org/org-7.8.05.tar.gz][tarball形式]]の圧縮ファイルをダウンロードしてください。これらの圧縮ファイルには、 Lispファイル群( =org*.el= )とPDFおよび (Tex)Info 形式のドキュメントが含まれます。続いて、[[http://orgmode.org/manual/Installation.html#Installation][インストール]]と[[http://orgmode.org/manual/Activation.html#Activation][アクティベーション]]を読んでください。
+[[http://orgmode.org/org-7.8.06.zip][zip形式]]もしくは、[[http://orgmode.org/org-7.8.06.tar.gz][tarball形式]]の圧縮ファイルをダウンロードしてください。これらの圧縮ファイルには、 Lispファイル群( =org*.el= )とPDFおよび (Tex)Info 形式のドキュメントが含まれます。続いて、[[http://orgmode.org/manual/Installation.html#Installation][インストール]]と[[http://orgmode.org/manual/Activation.html#Activation][アクティベーション]]を読んでください。
 
 ** 開発版
 

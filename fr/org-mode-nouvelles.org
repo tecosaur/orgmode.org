@@ -14,8 +14,9 @@
   #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
-- <2012-03-17> Sortie de la version 7.8.05 (corrections mineures).
-- <2012-03-16> Sortie de la version 7.8.04 (corrections mineures).
+- <2012-03-17> Sortie de la version 7.8.06 (corrections mineures).
+- <2012-03-17> Sortie de la version 7.8.05 *Ne pas utiliser*
+- <2012-03-16> Sortie de la version 7.8.04 *Ne pas utiliser*
 - <2012-01-03> Sortie de la version 7.8.03 (corrections mineures).
 - <2011-12-12> Sortie de la version 7.8, 7.8.01 et 7.8.02.  Voir la [[http://orgmode.org/Changes.html][liste
   des changements]].
