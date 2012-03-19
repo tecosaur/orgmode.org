@@ -4,7 +4,7 @@ html {
     padding: 0;
 }
 
-body { 
+body {
     font-family: "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", Verdana, sans-serif;
     font-size: 11pt;
     line-height: 1.3;
@@ -27,7 +27,7 @@ body {
 }
 
 .copyright {
-    font-size: 30%;
+    font-size: 70%;
 }
 
 #orgquote {
@@ -53,7 +53,7 @@ body {
     display: block;
     right: 10px;
     top: 5px;
-    width: 120px; 
+    width: 120px;
     height: 30px;
     box-shadow: 5px 5px 5px #888;
     -webkit-box-shadow: 5px 5px 5px #888;
@@ -70,7 +70,7 @@ body {
     display: block;
     right: 9px;
     top: 5px;
-    width: 120px; 
+    width: 120px;
     height: 30px;
     margin-top: 5px;
     margin-left: 5px;
@@ -101,11 +101,11 @@ body {
         font-family: Courier New;
     }
 
-    #linklist 
+    #linklist
     {
         position: absolute;
         font-size: 13pt;
-        font-family: Courier New; 
+        font-family: Courier New;
         padding-top: 0px;
         padding-right: 0px;
         top: 107px;
@@ -122,7 +122,7 @@ body {
 
     #linklist a {
         color: black;
-        font-weight: normal; 
+        font-weight: normal;
         text-decoration: none;
         display:block;
         padding: 7pt;
@@ -192,7 +192,7 @@ body {
         font-size: 8pt;
     }
     #paypal a:hover {
-        width: 60px; 
+        width: 60px;
         font-size: 8pt;
     }
 }
@@ -239,7 +239,7 @@ pre {
     padding: 12pt;
     font-family: Courier New;
     font-size: 95%;
-    overflow: auto; 
+    overflow: auto;
 }
 
 #buttons {
@@ -279,32 +279,32 @@ pre {
 }
 
 .outline-2 h2 {
-    font-family: Courier New; 
+    font-family: Courier New;
 }
 
 .outline-2 h3 {
-    font-family: Courier New; 
+    font-family: Courier New;
 }
 
-p { 
-    margin-top: 0; 
+p {
+    margin-top: 0;
     text-align: justify;
 }
 
-a:link { 
-    font-weight: bold; 
-    text-decoration: none; 
+a:link {
+    font-weight: bold;
+    text-decoration: none;
     color: #A34D32;
 }
 
-a:visited { 
-    font-weight: normal; 
-    text-decoration: none; 
+a:visited {
+    font-weight: normal;
+    text-decoration: none;
     color: #6E2432;
 }
 
-a:hover, a:active { 
-    text-decoration: none; 
+a:hover, a:active {
+    text-decoration: none;
     color: #537d7b;
 }
 
@@ -340,7 +340,7 @@ li {
     text-align: right;
     /* ensure doesn't flow off the screen when expanded */
     max-height: 80%;
-    overflow: auto; 
+    overflow: auto;
     z-index: 200;
 }
 
@@ -350,11 +350,11 @@ li {
     font-weight: normal;
     padding-left: 0.5em;
     padding-top: 0.05em;
-    padding-bottom: 0.05em; 
+    padding-bottom: 0.05em;
 }
 
 #table-of-contents ul {
-    margin-left: 14pt; 
+    margin-left: 14pt;
     margin-bottom: 10pt;
     padding: 0
 }
@@ -377,7 +377,7 @@ li {
 #table-of-contents:hover #text-table-of-contents {
     display: block;
     padding: 0.5em;
-    margin-top: -1.5em; 
+    margin-top: -1.5em;
 }
 
 img.random {
@@ -396,4 +396,3 @@ img.random {
     overflow: auto;
   }
 } /* END OF @media screen */
-
