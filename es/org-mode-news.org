@@ -14,8 +14,9 @@
   #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
-- <2012-03-17> Release 7.8.05 (bugfix release)
-- <2012-03-16> Release 7.8.04 (bugfix release)
+- <2012-03-19> Release 7.8.06 (bugfix release)
+- <2012-03-17> Release 7.8.05 *!broken release!*
+- <2012-03-16> Release 7.8.04 *!broken release!*
 - <2012-01-03> Release 7.8.03 (bugfix release)
 - <2011-12-12> Release 7.8, 7.8.01 and 7.8.02.  See the list of [[file:/orgmode.org/Changes.html][changes]].
 - <2011-12-12> The design and content of org's website has been refreshed.
