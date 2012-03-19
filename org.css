@@ -26,6 +26,10 @@ body {
     text-align: center;
 }
 
+.copyright {
+    font-size: 30%;
+}
+
 #orgquote {
     position: absolute;
     display: block;
