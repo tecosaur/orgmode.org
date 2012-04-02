@@ -9,9 +9,9 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-* Version actuelle : Org 7.8.07
+* Version actuelle : Org 7.8.08
 
-La version actuelle est la version 7.8.07.  Pour voir les changements
+La version actuelle est la version 7.8.08.  Pour voir les changements
 récents, lisez la liste détaillée des [[http://orgmode.org/Changes.html][modifications]] (en anglais).
 
 Ce paquet fonctionne sur GNU Emacs 24, 23 et 22, et (avec quelques
@@ -25,7 +25,7 @@ site web.
 
 ** La distribution standard
 
-Télécharger Org comme [[http://orgmode.org/org-7.8.07.zip][fichier zip]] ou comme [[http://orgmode.org/org-7.8.07.tar.gz][archive tar gzippée]].  Ces
+Télécharger Org comme [[http://orgmode.org/org-7.8.08.zip][fichier zip]] ou comme [[http://orgmode.org/org-7.8.08.tar.gz][archive tar gzippée]].  Ces
 archives contiennent à la fois les fichiers Lisp =org*.el= et la
 documentation en PDF et (TeX)Info.  Suivez les instructions pour
 [[http://orgmode.org/manual/Installation.html#Installation][l'installation]] et [[http://orgmode.org/manual/Activation.html#Activation][l'activation]].
