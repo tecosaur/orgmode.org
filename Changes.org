@@ -14,9 +14,6 @@
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 
 * Current HEAD of the git repository
-:PROPERTIES:
-:test+: sdf
-:END: 
 
 ** org-eshell.el by Konrad Hinsen now in Org's core ([[git:a0f2396f8f45f489ecddae24e34bdfb46abd4c2f][git]])
 
