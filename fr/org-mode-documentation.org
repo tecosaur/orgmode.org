@@ -43,7 +43,7 @@
 * La carte de référence pour Org
 
   - Télécharger la [[http://orgmode.org/orgcard.pdf][Refcard]] d'org-mode.
-  - Il y a aussi une [[http://orgmode.org/orgcard.txt][version texte]] de la refcard.
+  - Il y a aussi une [[http://orgmode.org/orgcard.html][version HTML]] et [[http://orgmode.org/orgcard.txt][texte]] de la refcard.
 
 * La FAQ Org-mode
   - La [[http://orgmode.org/worg/org-faq.php][FAQ Org Mode]] est éditable par les utilisateurs et maintenu par la
