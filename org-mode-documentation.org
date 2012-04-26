@@ -54,7 +54,7 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-document
     
 * The Org Reference card
   - Download the [[file:orgcard.pdf][Refcard]] for org-mode.
-  - There is also a [[file:orgcard.txt][text version]] of the reference card.
+  - There is also a [[http://orgmode.org/orgcard.html][HTML]] and a [[file:orgcard.txt][text version]] of the reference card.
 
 * The Org-mode FAQ
   - The [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] is user-editable and is maintained by the community
