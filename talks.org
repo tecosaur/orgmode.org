@@ -38,7 +38,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 [[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][this page]] for details.
 
 #+begin_html
-<iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+end_html
 
 * Interview of Carsten Dominik at [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
@@ -52,7 +52,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 ** Org presentation at FOSDEM 2011
 
 #+begin_html
-<iframe style="border:none;width:650px;height:541px;" src="http://icant.co.uk/slidesharehtml/embed.php?url=http://www.slideshare.net/bzg/org-fosdem2011&width=600"></iframe>
+<iframe src="http://www.slideshare.net/slideshow/embed_code/8401331" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 #+end_html
 
 ** GNU Hackers meeting in Paris, august 2011

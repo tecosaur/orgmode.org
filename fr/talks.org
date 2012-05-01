@@ -26,7 +26,7 @@ Max Planck pour la recherche en neurologie, à Cologne, Allemagne
 (http://nf.mpg.de).  Voyez [[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][les détails]] ici.
 
 #+begin_html
-<iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+end_html
 
 * Entretien avec Carsten Dominik sur [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
@@ -40,7 +40,7 @@ Max Planck pour la recherche en neurologie, à Cologne, Allemagne
 ** Présentation d'Org au FOSDEM 2011
 
 #+begin_html
-<iframe style="border:none;width:650px;height:541px;" src="http://icant.co.uk/slidesharehtml/embed.php?url=http://www.slideshare.net/bzg/org-fosdem2011&width=600"></iframe>
+<iframe src="http://www.slideshare.net/slideshow/embed_code/8401331" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 #+end_html
 
 ** GNU Hackers meeting in Paris, août 2011
