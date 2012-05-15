@@ -15,19 +15,155 @@
 
 * Current HEAD of the git repository
 
+** Sticky agendas
+
+There is a new option `org-agenda-sticky' which enables "sticky"
+agendas.  Sticky agendas remain opened in the background so that
+you don't need to regenerate them each time you hit the
+corresponding keystroke.  This is a big time saver.
+
+Thanks to Max Mikhanosha and Carsten for this great addition.
+
+** Implement category filtering. ([[git:8c36e92f][git]])
+
+You can now filter the agenda by category.  
+
+Hitting `<' on a line will filter out entries of a different
+category, leaving only entries from one category.  `C-u <' will
+filter our entries from the current category.
+
+Hitting `^' will filter by "Top" category: only remain entries
+that are of the same category than the Top category of the entry
+at point.  Thanks to John Wiegley for this feature.
+
+** Add support for creating symbolic links in org-attach ([[git:0c302d41][git]])
+
+`org-attach-method' now supports a new method =lns=, allowing to
+attach symbolic links.
+
+Thanks to John Wiegley for implementing this.
+
+** Allow setting tags for headlines in the region ([[git:de400170][git]])
+
+When `org-loop-over-headlines-in-active-region' is non-nil,
+hitting `C-c C-q' will set tags for the headlines in the current
+region, one by one.
+
+** Add new todo-unblocked and nottodo-unblocked skip conditions ([[git:f426dade][git]])
+
+This adds two new tests to `org-agenda-skip-if': 'todo-unblocked
+and 'nottodo-unblocked.  These match like 'todo and 'nottodo, but
+only on unblocked todo items.  This type of test is useful when
+compiling custom agenda views containing lists of currently
+actionable todo items.
+
+Thanks to Toby S. Cubitt for this change.
+
+** Allow to use imagemagick for previewing LaTeX fragements. ([[git:a9d3ce0b][git]])
+
+There is a new option `org-latex-create-formula-image-program' to
+let Org know what program to use to create images from LaTeX
+formulas.
+
+Thanks to Feng Shu for this patch.
+
+** New option `org-export-date-timestamp-format'. ([[git:e9e249ea][git]])
+
+The option allows to set a time string format for Org timestamps
+in the #+DATE option.
+
+** New option =org-ditaa-jar-option=. ([[git:d3a45bd7][git]])
+
+Allow to set the path for the ditaa jar file. 
+Thanks to Waldemar Reusch for reporting this need.
+
+** New option =org-export-html-date-format-string=. ([[git:b05e7cdf][git]])
+
+Format string to format the date and time in HTML export.
+Thanks to Sébastien Vauban for this patch.
+
+** New option =org-protocol-data-separator=. ([[git:d87ec54d][git]])
+
+Allow to use a different separator than "/+" for the protocol
+URL.  Thanks to Harri Kiiskinen for this patch.
+
+** New options for controlling the clockreport display ([[git:7686a81c][git]])
+
+`org-clock-file-time-cell-format': Format string for the file
+time cells in clockreport.
+
+̀org-clock-total-time-cell-format': Format string for the total
+time cells in clockreport.
+
+** New options for controlling the clock/timer display
+
+`org-clock-clocked-in-display': control whether the current clock
+is displayed in the mode line and/or frame title.
+    
+`org-timer-display': control whether the current timer is
+displayed in the mode line and/or frame title.
+    
+This allows the clock and timer to be displayed in the frame
+title instead of, or as well as, the mode line.  This is useful
+for people with limited space in the mode line but with ample
+space in the frame title.
+
+Thanks to George Kettleborough for this work.
+
+** New option =org-beamer-inherited-properties= ([[git:6fdfa1ed][git]])
+
+This option allows Beamer export to inherit some properties.
+Thanks to Carsten for implementing this.
+
+** New options for the LaTeX export of table rules ([[git:549c498b][git]])
+
+`org-export-latex-tables-tstart' `org-export-latex-tables-hline'
+`org-export-latex-tables-tend' allow to set the tstart, tend and
+hline for LaTeX tables.
+
+Thanks to Niels Giessen for this patch.
+
+** New option =org-agenda-persistent-marks= defaulting to nil. ([[git:5add9cde][git]])
+
+When non-nil, keep marks after a bulk action.
+
+** New option =org-src-prevent-auto-filling= defaulting to nil. ([[git:578a7f5a][git]])
+
+New option to prevent auto-filling in src blocks.  This defaults
+to nil to avoid people being surprised that no auto-fill occurs
+in Org buffers where they use `auto-fill-mode'.
+
+Thanks to Ken Williams for this feature request and to Charles
+C. Berry for a preliminary patch for this.
+
+** New option =org-agenda-bulk-mark-char=. ([[git:a16814a4][git]])
+
+New option to set the character to use for marks in the agenda.
+
+** New option =org-clock-frame-title-format=. ([[git:7c513b30][git]])
+
+New option to set the format of the frame title when clocking in.
+
+** New option =org-allow-promoting-top-level-subtree= ([[git:10aba6b1][git]])
+
+When `non-nil', S-M-<left> will promote level-1 subtrees
+containing other subtrees.  The level-1 headline will be
+commented out.  You can revert to the previous state with M-x
+undo RET.
+
 ** org-eshell.el by Konrad Hinsen now in Org's core ([[git:a0f2396f8f45f489ecddae24e34bdfb46abd4c2f][git]])
 
 =org-eshell.el= allows you to create links from [[http://www.gnu.org/software/emacs/manual/html_node/eshell/index.html][Eshell]].
 
 ** Use theindex.inc back again ([[git:dd98619286f84c4ced735a052ff13e3fe343c980][git]])
-** New option =org-inlinetask-show-first-star=
+** New option =org-inlinetask-show-first-star= ([[git:88c07b54][git]])
 
 Non-nil means display the first star of an inline task as
 additional marker.  When nil, the first star is not shown.
 
 Thanks to Carsten Dominik for implementing this.
 
-** New option =org-export-date-timestamp-format=
+** New option =org-export-date-timestamp-format= ([[git:e9e249ea][git]])
 
 Org timestamps in the =#+DATE= field are now automatically
 converted at export time.  You can use the new option
@@ -50,7 +186,7 @@ When =org-loop-over-headlines-in-active-region= is set to
 will only act upon entries that are of the same level than the
 first headline in the region.
 
-** =org-sparse-tree= can now check for time ranges
+** =org-sparse-tree= can now check for time ranges ([[git:e5d5a1e7][git]])
 
 =C-c / D= will now check for deadlines and scheduled entries
 within a range of dates.  This is inspired by code and discussion
@@ -58,7 +194,7 @@ with Marc-Oliver Ihm, thanks to him!
 
 ** Incompatible changes
 
-*** =org-write-agenda= renamed to =org-agenda-write=
+*** =org-write-agenda= has been renamed to =org-agenda-write=.
 
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
