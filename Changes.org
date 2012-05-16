@@ -49,7 +49,7 @@ When `org-loop-over-headlines-in-active-region' is non-nil,
 hitting `C-c C-q' will set tags for the headlines in the current
 region, one by one.
 
-** Add new todo-unblocked and nottodo-unblocked skip conditions ([[git:f426dade][git]])
+** Add new =todo-unblocked= and =nottodo-unblocked= skip conditions ([[git:f426dade][git]])
 
 This adds two new tests to `org-agenda-skip-if': 'todo-unblocked
 and 'nottodo-unblocked.  These match like 'todo and 'nottodo, but
@@ -67,7 +67,7 @@ formulas.
 
 Thanks to Feng Shu for this patch.
 
-** New option `org-export-date-timestamp-format'. ([[git:e9e249ea][git]])
+** New option =org-export-date-timestamp-format=. ([[git:e9e249ea][git]])
 
 The option allows to set a time string format for Org timestamps
 in the #+DATE option.
