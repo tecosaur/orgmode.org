@@ -21,9 +21,9 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-download
 </script>
 #+end_html
 
-* Current Version: Org 7.8.10
+* Current Version: Org 7.8.11
 
-The current version is 7.8.10.  To see what has changed in recent releases,
+The current version is 7.8.11.  To see what has changed in recent releases,
 check this detailed list of [[file:Changes.html][changes (english)]].
 
 This package works on GNU Emacs 24, 23 and 22, and (with minor
@@ -36,7 +36,7 @@ release.
 
 ** The standard distribution
 
-Download as [[file:org-7.8.10.zip][zip file]] or [[file:org-7.8.10.tar.gz][gzipped tar archive]].  These archives contain both
+Download as [[file:org-7.8.11.zip][zip file]] or [[file:org-7.8.11.tar.gz][gzipped tar archive]].  These archives contain both
 the =org*.el= Lisp files and the documentation in PDF and (TeX)Info
 formats.  Follow the instructions for [[http://orgmode.org/manual/Installation.html#Installation][Installation]] and [[http://orgmode.org/manual/Activation.html#Activation][Activation]].
 
