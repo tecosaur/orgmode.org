@@ -13,7 +13,7 @@
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 
-* Current HEAD of the git repository
+* Current HEAD of the git repository (not yet released)
 
 ** Sticky agendas
 
