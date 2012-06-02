@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Communauté et support
+#+TITLE: Org mode: Communauté et support
 #+AUTHOR: Bastien
 #+LANGUAGE:  fr
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -9,7 +9,7 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-* Support via la liste de discussion d'Org-mode
+* Support via la liste de discussion d'Org mode
    :PROPERTIES:
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
    :END:
@@ -39,14 +39,14 @@ Il y a une liste de discussion pour org-mode.
 * Worg - le site communautaire d'Org
 
 [[http://orgmode.org/worg/][Worg]], créé par [[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]], permet aux utilisateurs d'éditer ensemble
-des fichiers Org contenant de la documentation au sujet d'Org-mode, comme
+des fichiers Org contenant de la documentation au sujet d'Org mode, comme
 par exemple [[http://orgmode.org/worg/org-faq.php][la FAQ Org Mode]] et [[http://orgmode.org/worg/org-tutorials/index.php][les tutoriels]].  Worg est similaire à un wiki
 parce qu'il permet à plusieurs personnes d'éditer du contenu.  Cependant,
 comme il repose sur un système de gestion de version distribué, vous n'avez
 pas à être en ligne pour éditer.  Si vous voulez contribuer à Worg, merci
 de commencer par lire [[http://orgmode.org/worg/][la page Worg]].
 
-* Contribuer à Org-mode
+* Contribuer à Org mode
 
 Vous pouvez toujours contribuer avec des idées et des rapports de bug sur
 la liste de discussion.  Si vous voulez envoyer un correctif, un bout de
@@ -72,7 +72,7 @@ Vous pouvez rejoindre le canal IRC =#org-mode= sur Freenode via une
 
 ** Page Google+
 
-Il existe une [[https://plus.google.com/b/102778904320752967064/][page Google+ pour Org-mode]], déjà suivie par environ *1000*
+Il existe une [[https://plus.google.com/b/102778904320752967064/][page Google+ pour Org mode]], déjà suivie par environ *1000*
 personnes.
 
 ** Flux Twitter 
@@ -117,5 +117,5 @@ new TWTR.Widget({
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-Faites la promotion de Org-mode et soutenez son développement en achetant
+Faites la promotion de Org mode et soutenez son développement en achetant
 votre T-shirt, sac, ou mug dans la boutique aux [[http://orgmode.spreadshirt.com][États-Unis]] ou en [[http://orgmode.spreadshirt.de][Europe]]...

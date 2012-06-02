@@ -1,7 +1,7 @@
 #         -*- mode:org -*-
 
 #+STARTUP:   align
-#+TITLE:     The Org-mode TODO list
+#+TITLE:     The Org mode TODO list
 #+EMAIL:     carsten.dominik@gmail.com
 #+TYP_TODO:  TODO IDEA WISH QUESTION INCONSISTENCY BUG | DONE DECLINED 
 #+TAGS:      NEW(n)
@@ -21,7 +21,7 @@
 can be useful for further development./
 
 This is a loose collection of ideas and TODO items for the future
-development of Org-mode.  These ideas come from various sources, mostly
+development of Org mode.  These ideas come from various sources, mostly
 from emacs-orgmode@gnu.org, from direct emails to me, or from my own
 day-dreaming.  I don't always mention the source of an idea, out of
 laziness.  However, when I implement a good idea, I try to mention the
@@ -38,7 +38,7 @@ know if I forgot to give /you/ credit for something.
    | *WISH*          | A wish, probably voiced by someone on  emacs-orgmode@gnu.org.  This is less than a new idea, more a change in existing behavior. |
    | *QUESTION*      | A question someone asked, that needs some thinking before it can be answered |
    | *DECLINED*      | I have decided not to implement this feature, but I am keeping it in the list so that people can see it, complain, or still try to convince me. |
-   | *INCONSISTENCY* | Some behavior in Org-mode that is not as clean and consistent as I would like it to be. |
+   | *INCONSISTENCY* | Some behavior in Org mode that is not as clean and consistent as I would like it to be. |
    | *BUG*           | This needs to be fixed, as soon as possible.       |
    | *DONE*          | Well, done is done.                                |
    | /NEW/           | This is a tag, indicating recently added entries   |

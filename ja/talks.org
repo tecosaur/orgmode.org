@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: 講演
+#+TITLE: Org mode: 講演
 #+AUTHOR: Takaaki Ishikawa
 #+LANGUAGE:  ja
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t

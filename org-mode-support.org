@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Community and Support
+#+TITLE: Org mode: Community and Support
 #+AUTHOR: Bastien
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -21,7 +21,7 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-support.
 </script>
 #+end_html
 
-* Support from the Org-mode mailing list
+* Support from the Org mode mailing list
    :PROPERTIES:
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
    :END:
@@ -50,14 +50,14 @@ There is a mailing list for discussion about org-mode.
 * Worg - the Org community Website
 
 [[http://orgmode.org/worg/][Worg]], created by [[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]], is a setup to allow users to jointly edit
-a number of Org-mode files containing documentation about Org-mode,
+a number of Org mode files containing documentation about Org mode,
 including the [[http://orgmode.org/worg/org-faq.php][Org Mode FAQ]] and [[http://orgmode.org/worg/org-tutorials/index.php][Tutorials]].  Worg is similar to a wiki in
 that allows community to edit the contents.  However, since it uses a
 distributed version control system, you do not have to be online while
 editing it.  If you'd like to contribute to Worg, please go to [[http://orgmode.org/worg/][the Worg
 page]], and start from there.
 
-* Contributing to Org-mode
+* Contributing to Org mode
 
 You can always contribute with ideas and bug reports on the mailing
 list.  If you want to contribute a patch, code snippets, or a full add-on,
@@ -83,7 +83,7 @@ interface]] or through your favorite IRC client.
 
 ** Google+ Page
 
-There is [[https://plus.google.com/b/102778904320752967064/][Google+ Org-mode page]], already followed by about *1000* persons.
+There is [[https://plus.google.com/b/102778904320752967064/][Google+ Org mode page]], already followed by about *1000* persons.
 
 ** Twitter feed
 
@@ -128,5 +128,5 @@ new TWTR.Widget({
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-Promote Org-mode and support its development by getting your Org-mode
+Promote Org mode and support its development by getting your Org mode
 T-shirt, bag, or mug in either the [[http://orgmode.spreadshirt.com][US shop]] or the [[http://orgmode.spreadshirt.de][EU shop]].

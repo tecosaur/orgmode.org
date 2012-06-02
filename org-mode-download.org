@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Download and Install
+#+TITLE: Org mode: Download and Install
 #+AUTHOR: Bastien
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -27,7 +27,7 @@ The current version is 7.8.11.  To see what has changed in recent releases,
 check this detailed list of [[file:Changes.html][changes (english)]].
 
 This package works on GNU Emacs 24, 23 and 22, and (with minor
-restrictions) on XEmacs 21.  Emacs 22.2 ships with Org-mode version 4.67d,
+restrictions) on XEmacs 21.  Emacs 22.2 ships with Org mode version 4.67d,
 Emacs 23.1 with 6.21b.  The latest Emacs development version usually
 contains a fairly recent version, but may lag a bit behind the website
 release.
@@ -49,7 +49,7 @@ local clone of the repository, type this (from the command line):
 
 : git clone git://orgmode.org/org-mode.git
 
-Some more information about this can be found in the [[http://orgmode.org/worg/org-faq.php][FAQ]], under [[http://orgmode.org/worg/org-faq.php#keeping-current-with-Org-mode-development]["How do I
+Some more information about this can be found in the [[http://orgmode.org/worg/org-faq.php][FAQ]], under [[http://orgmode.org/worg/org-faq.php#keeping-current-with-Org mode-development]["How do I
 keep current with Org mode development?"]].  For people who cannot use git,
 we provide [[file:org-latest.zip][zip]] or [[file:org-latest.tar.gz][tar.gz]] snapshot release files updated each day and
 corresponding to the latest git version.  Alternatively, you can also

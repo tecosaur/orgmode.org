@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Documentation
+#+TITLE: Org mode: Documentation
 #+AUTHOR: Bastien
 #+LANGUAGE:  fr
 #+KEYWORDS:  Org Emacs outline planneur note publication projet text brut LaTeX HTML
@@ -45,7 +45,7 @@
   - Télécharger la [[http://orgmode.org/worg/images/bzg/fr-orgcard.pdf][Refcard]] d'org-mode ([[http://orgmode.org/orgcard.pdf][ici]] pour la version anglaise)
   - Il y a aussi une [[http://orgmode.org/orgcard.html][version HTML]] et [[http://orgmode.org/orgcard.txt][texte]] de la refcard en anglais.
 
-* La FAQ Org-mode
+* La FAQ Org mode
   - La [[http://orgmode.org/worg/org-faq.php][FAQ Org Mode]] est éditable par les utilisateurs et maintenu par la
     communauté derrière le [[http://orgmode.org/worg/][projet Worg]].
 
@@ -59,7 +59,7 @@
   Environment for Literate Programming and Reproducible Research]] ([[http://www.jstatsoft.org/v46/i03/paper][pdf]]).
   Journal of Statistical Software, Vol. 46, Issue 3, January 2012.
 
-- Schulte, E.; Davison, D.; [[http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber%3D5756277][Active Documents with Org-Mode]], Computing in
+- Schulte, E.; Davison, D.; [[http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber%3D5756277][Active Documents with Org mode]], Computing in
   Science & Engineering, Vol. 13, Issue 3, May-June 2011.
 
 - Delescluse M., Franconville R., Joucla S., Lieury T. and Pouzat C.,

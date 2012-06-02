@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Talks
+#+TITLE: Org mode: Talks
 #+AUTHOR: Bastien
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -23,7 +23,7 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/talks.html';
 
 * GoogleTech Talk by Carsten Dominik (2008)
 
-Here is the video of the [[http://research.google.com/video.html][Google Tech Talk]] about Org-mode that I gave on
+Here is the video of the [[http://research.google.com/video.html][Google Tech Talk]] about Org mode that I gave on
 July 15th, 2008 on the Google campus in Mountain View, California.  Thanks
 to [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] and [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] for being my hosts during my stay.
 
@@ -47,7 +47,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 <iframe src="http://twit.tv/embed/8239" width="640" height="320" scrolling="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0"></iframe>
 #+end_html
 
-* Org-mode presentations by Bastien (2011)
+* Org mode presentations by Bastien (2011)
 
 ** Org presentation at FOSDEM 2011
 

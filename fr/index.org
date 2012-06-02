@@ -32,39 +32,39 @@ document.write( b[i] )
 
 (Cliquez pour agrandir l'image - touche =Escape= pour la fermer.)
 
-Org-mode est une outil pour prendre des notes, maintenir des TODO listes,
+Org mode est une outil pour prendre des notes, maintenir des TODO listes,
 faire de la gestion de projet, de la planification et de la publication
 avec un système en text brut, simple et effectif.
 
 * Rester simple... et faire encore plus
 
-- Simplicité :: Fondamentalement, Org-mode est un simple outliner pour la
+- Simplicité :: Fondamentalement, Org mode est un simple outliner pour la
                 prise de notes et la gestion de listes.  Vous pouvez
                 apprendre les bases pour l'utiliser en [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto-fr.html][cinq minutes]].  C'est
-                peut-être tout ce dont vous avez besoin, et Org-mode ne
+                peut-être tout ce dont vous avez besoin, et Org mode ne
                 vous imposera pas de fonctions plus complexes.
 
 - Portabilité :: Les fichiers Org sont en [[http://fr.wikipedia.org/wiki/Fichier_texte][texte brut]].  Vous pouvez les voir
                  et les lire avec n'importe quel éditeur, ou ajouter et
                  extraire des données supplémentaires avec des scripts
                  faits main.  Vos données ne seront jamais captives d'un
-                 obscur format propriétaire.  Org-mode tourne sous [[http://www.gnu.org/software/emacs/][Emacs]],
+                 obscur format propriétaire.  Org mode tourne sous [[http://www.gnu.org/software/emacs/][Emacs]],
                  qui est disponible pour presque toutes les plates-formes.
 
-- Profondeur :: Org-mode ne vous laissera pas tomber quand vous aurez
+- Profondeur :: Org mode ne vous laissera pas tomber quand vous aurez
                 besoin de plus qu'un outliner.  L'ensemble complet des
                 fonctionnalités est à la fois large et profond, facile à
                 atteindre, et non intrusif.  La [[http://orgmode.org/worg/org-faq.php][réponse typique]] à la
                 question «/Puis-je faire X ?/» est "/Oui !/".
 
-- Flexibilité :: Org-mode est comme un couteau Suisse. Les gens l'utilisent
+- Flexibilité :: Org mode est comme un couteau Suisse. Les gens l'utilisent
                  pour la méthodologie [[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]], comme un
                  [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][agenda]], comme un [[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][carnet de notes]], pour la publication Web
                  et PDF, et bien plus.
 
-- Support :: Org-mode est [[http://orgmode.org/manual/index.html][largement documenté]] et de nombreux [[http://orgmode.org/worg/org-tutorials/index.php][tutoriels]]
+- Support :: Org mode est [[http://orgmode.org/manual/index.html][largement documenté]] et de nombreux [[http://orgmode.org/worg/org-tutorials/index.php][tutoriels]]
              portent un éclairage sur des fonctionnalités
-             particulières.  Org-mode est soutenu par une [[file:org-mode-support.org][liste de
+             particulières.  Org mode est soutenu par une [[file:org-mode-support.org][liste de
              discussion active]] où les questions reçoivent des réponses
              rapides et efficaces.
 

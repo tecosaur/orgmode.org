@@ -43,38 +43,38 @@ document.write( b[i] )
 
 (Click to enlarge the picture - press =Escape= to lower it.)
 
-Org-mode is for keeping notes, maintaining TODO lists, doing project
+Org mode is for keeping notes, maintaining TODO lists, doing project
 planning, and authoring with a fast and effective plain-text system.
 
 * Keep simple things simple... and do more
 
-- Simplicity :: At its core, Org-mode is a simple outliner for note-taking
+- Simplicity :: At its core, Org mode is a simple outliner for note-taking
                 and list management. You can learn the basics for using it
-                in [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][five minutes]].  This may be all you need, and Org-mode
+                in [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][five minutes]].  This may be all you need, and Org mode
                 will not impose more complex features on you.
 
 - Portability :: Org files are [[http://en.wikipedia.org/wiki/Plain_text][plain text]].  You can view and edit them in
                  any editor, or add and extract data with custom-made
                  scripts.  Your data will never be locked into an obscure
-                 or proprietary data format.  Org-mode runs in [[http://www.gnu.org/software/emacs/][Emacs]], which
+                 or proprietary data format.  Org mode runs in [[http://www.gnu.org/software/emacs/][Emacs]], which
                  is available for nearly every platform.
 
-- Depth :: Org-mode will not let you down when you need more than a simple
+- Depth :: Org mode will not let you down when you need more than a simple
            outline.  The full feature set is both broad and deep, easy to
            access, but unobtrusive.  The [[http://orgmode.org/worg/org-faq.php][typical answer]] to "/Can it do X?/"
            is "/Yes!/".
 
-- Flexibility :: Org-mode is like a Swiss army knife.  People use it for
+- Flexibility :: Org mode is like a Swiss army knife.  People use it for
                  [[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]], as a [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Day Planner]], as a
                  [[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][Notebook]], for Web and PDF authoring, and much more.
 
-- Support :: Org-mode is [[http://orgmode.org/manual/index.html][documented extensively]], and many [[http://orgmode.org/worg/org-tutorials/index.php][tutorials]] put
-             spotlights on particular features.  Org-mode is supported by
+- Support :: Org mode is [[http://orgmode.org/manual/index.html][documented extensively]], and many [[http://orgmode.org/worg/org-tutorials/index.php][tutorials]] put
+             spotlights on particular features.  Org mode is supported by
              an active [[file:org-mode-support.org][mailing list]] where questions are answered quickly
              and effectively.
 
 - It's free! :: Org is [[http://en.wikipedia.org/wiki/Free_software][free software]], it is published under the [[http://www.gnu.org/licenses/licenses.html#GPL][GNU GPL
                 license version 3]], like [[http://www.gnu.org/software/emacs/][GNU Emacs]].
 
-If you'd like to know what other people have said about Org-mode, take a
+If you'd like to know what other people have said about Org mode, take a
 look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org]].

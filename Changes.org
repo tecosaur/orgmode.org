@@ -1,6 +1,6 @@
 #   -*- mode: org; fill-column: 65 -*-
 
-#+TITLE: List of Org-mode user-visible changes
+#+TITLE: List of Org mode user-visible changes
 #+AUTHOR:  Carsten Dominik
 #+EMAIL:  carsten at orgmode dot org
 #+LANGUAGE:  en
@@ -282,12 +282,12 @@ syntax:
   code block may still be labeled with #+results:, and tables
   named with #+tblname: will be considered to be named results
 
-The following function may be used to update an existing Org-mode
+The following function may be used to update an existing Org mode
 buffer to the new syntax:
 
 #+begin_src emacs-lisp
   (defun update-org-buffer ()
-    "Update an Org-mode buffer to the new data, code block and call line syntax."
+    "Update an Org mode buffer to the new data, code block and call line syntax."
     (interactive)
     (save-excursion
       (flet ((to-re (lst) (concat "^[ \t]*#\\+" (regexp-opt lst t)
@@ -303,7 +303,7 @@ buffer to the new syntax:
           (update lob-re "call")))))
 #+end_src
 
-*Note*: If an old version of Org-mode (e.g., the one shipped with
+*Note*: If an old version of Org mode (e.g., the one shipped with
 Emacs) is installed on your system, many of the important
 variables will be pre-defined with a =defvar= and *will not* have
 their values automatically updated -- these include the
@@ -316,7 +316,7 @@ following:
 - =org-babel-src-name-w-name-regexp=
 
 It may be necessary to either remove the source code of older
-versions of Org-mode or to explicitly evaluate the ob.el file.
+versions of Org mode or to explicitly evaluate the ob.el file.
 
 *** Removed the =#+BABEL:= keyword
 
@@ -1018,7 +1018,7 @@ and to use accents directly.
 
 **** Activation
 
-Org-mode 7.6 supports exporting to OpenDocument Text (=odt=)
+Org mode 7.6 supports exporting to OpenDocument Text (=odt=)
 format using org-odt.el.  Depending on how you installed Org,
 this module can be enabled in one of the following ways:
 
@@ -1026,7 +1026,7 @@ this module can be enabled in one of the following ways:
    distribution =.zip= or =.tar.gz= file, or as a Git archive,
    enable the =odt= option in the variable =org-modules=.
 
-2. If you are using Org-mode 7.6 that comes bundled with
+2. If you are using Org mode 7.6 that comes bundled with
    Emacs-24.0.50 (or future Emacs-24.1), then you can install the
    OpenDocumentText exporter using the package manager.  Check
    the list of available packages with =M-x list-packages= and
@@ -1076,7 +1076,7 @@ The key new functions are
      using org-bibtex-check to flesh out the relevant fields.
 
 - org-bibtex-yank :: Yank a bibtex entry on the kill ring as a
-     formatted Org-mode headline into the current buffer
+     formatted Org mode headline into the current buffer
 
 - org-bibtex-export-to-kill-ring :: Export the current headline
      to the kill ring as a formatted bibtex entry.
@@ -1157,9 +1157,9 @@ shown below.
 : #+call: minus(8,4)
 
 **** Sub-tree ID as valid code block variable reference
-It is now possible to assign the textual contents of an Org-mode
+It is now possible to assign the textual contents of an Org mode
 subtree to a code block variable using the ID of the subtree.
-Both custom IDs and Org-mode IDs may be used.  For example;
+Both custom IDs and Org mode IDs may be used.  For example;
 
 #+begin_src org
   ,#+begin_src sh :var text=foo
@@ -1195,7 +1195,7 @@ Thanks to Eric Fraga for contributing this support.
 
 This header argument may be used to concatenate the bodies of
 many code blocks into a single noweb reference.  This brings
-Org-mode's tangling functionality in line with traditional noweb
+Org mode's tangling functionality in line with traditional noweb
 tangling.
 
 A no web reference like the following
@@ -1761,7 +1761,7 @@ Thanks to Tom Dye for this suggestion.
 
 **** Clojure code blocks results insertion
 The results of Clojure code blocks have been improved in two ways.
-1. lazy sequences are now expanded for insertion into the Org-mode
+1. lazy sequences are now expanded for insertion into the Org mode
    buffer
 2. pretty printing of results is now possible with both "code" and
    "data" pretty print formats
@@ -1803,7 +1803,7 @@ buffer is now cleaned before every interactive code block evaluation.
 
 **** Lists now recognized by code blocks
 It is now possible for code blocks to both read and write list
-contents from and to Org-mode buffers.  For example
+contents from and to Org mode buffers.  For example
 
 #+begin_src org
   ,#+results: a-list
@@ -1846,8 +1846,8 @@ calculation.  For example
 
 **** "org-babel-detangle" propagates change to source code files into code blocks
 `org-babel-detangle' can be used to propagate changes to pure source
-code files tangled from embedded code blocks in Org-mode files back to
-the original code blocks in the Org-mode file.  This can be used on
+code files tangled from embedded code blocks in Org mode files back to
+the original code blocks in the Org mode file.  This can be used on
 collaborative projects to keep embedded code blocks up to date with
 edits made in pure source code files.
 
@@ -1876,7 +1876,7 @@ org-test.el to throw errors.
 *** Org-babel speed commands
 All Org-babel commands (behind the C-c C-v key prefix) are now
 available as speed commands when the point is on the first line of a
-code block.  This uses the existing Org-mode speed key mechanisms.
+code block.  This uses the existing Org mode speed key mechanisms.
 
 Thanks to Jambunathan K for implementation this new feature.
 
@@ -1911,7 +1911,7 @@ Users can make these more convenient, e.g.
 
 (define-key org-mode-map "\M-;" 'my/org-comment-dwim)
 
-A common instance of this general pattern is built in to Org-mode,
+A common instance of this general pattern is built in to Org mode,
 controlled by the variable `org-src-tab-acts-natively': if this
 variable is set, then TAB in a code block has the effect that it would
 have in the language major mode buffer.
@@ -1971,7 +1971,7 @@ arguments has now been consolidated.  This both simplifies the
 code base (especially the language-specific files), and ensures
 that the arguments to a code block will not be evaluated multiple
 times.  This change should not be externally visible to the
-Org-mode user.
+Org mode user.
 *** Improved Caching
 Code block caches now notice if the value of a variable argument
 to the code block has changed, if this is the case the cache is
@@ -2074,7 +2074,7 @@ signature.  Thanks to Tassilo Horn for this patch.
 
 *** Improve XEmacs compatibility
 
-Org-mode 7.02 now runs again in 21.4.22 if the new XEmacs base
+Org mode 7.02 now runs again in 21.4.22 if the new XEmacs base
 package is installed.
 
 Thanks to Uwe Bauer, Volker Ziegler, Michael Sperber and others
@@ -2183,14 +2183,14 @@ This was a request by Ilya Shlyakhter.
 
 *** Document quick insertion of empty structural elements
 
-Org-mode has a built-in template mechanism for inserting block
+Org mode has a built-in template mechanism for inserting block
 templates.  This was undocumented until now.
 
 Thanks to Jambunathan K for the patch.
 
 *** Implement MathJax support
 
-Org-mode now uses MathJax to display math on web pages.  We serve
+Org mode now uses MathJax to display math on web pages.  We serve
 MathJax from the orgmode.org server, at least for the time being
 (thanks Bastien!).  If you are going to use this for pages which
 are viewed often, please install MathJax on your own webserver.
@@ -2253,7 +2253,7 @@ this is not yet done.
 :CUSTOM_ID: ob-configuration-changes
 :END:
 
-Babel took the integration into Org-mode as an opportunity to do
+Babel took the integration into Org mode as an opportunity to do
 some much needed house cleaning.  Most importantly we have
 simplified the enabling of language support, and cleared out
 unnecessary configuration variables -- which is great unless you
@@ -2262,8 +2262,8 @@ already have a working configuration under the old model.
 The most important changes regard the /location/ and /enabling/
 of Babel (both core functionality and language specific support).
 
-- Babel :: Babel is now part of the core of Org-mode, so it is
-     now loaded along with the rest of Org-mode.  That means that
+- Babel :: Babel is now part of the core of Org mode, so it is
+     now loaded along with the rest of Org mode.  That means that
      there is /no configuration/ required to enable the main
      Babel functionality.  For current users, this means that
      statements like
@@ -2279,7 +2279,7 @@ of Babel (both core functionality and language specific support).
 - load path :: Babel (including all language specific files --
      aside from those which are located in the =contrib/=
      directory for reasons of licencing) now lives in the base of
-     the Org-mode lisp directory, so /no additional directories/
+     the Org mode lisp directory, so /no additional directories/
      need to be added to your load path to use babel.  For Babel
      users this means that statements adding babel-specific
      directories to your load-path should now be removed from
@@ -2453,10 +2453,10 @@ See [[#ob-configuration-changes][Org-babel configuration changes]] for instructi
 update your babel configuration.
 
 The most significant result of this change is that Babel now has
-documentation!  It is part of Org-mode's documentation, see
+documentation!  It is part of Org mode's documentation, see
 Chapter 14 [[http://orgmode.org/manual/Working-with-source-code.html#Working-with-source-code][Working With Source Code]].  The Babel keybindings
 are now listed in the refcard, and can be viewed from any
-Org-mode buffer by pressing =C-c C-v h=.  In addition this
+Org mode buffer by pressing =C-c C-v h=.  In addition this
 integration has included a number of bug fixes, and a significant
 amount of internal code cleanup.
 

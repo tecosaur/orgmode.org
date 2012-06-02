@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Documentation
+#+TITLE: Org mode: Documentation
 #+AUTHOR: Bastien
 #+LANGUAGE:  es
 #+KEYWORDS:  Org Emacs outline planificación nota autoría proyecto texto-plano LaTeX HTML
@@ -44,8 +44,8 @@
   - Baje la [[file:orgcard.pdf][ficha de referencia]] de org-mode.
   - Tambien hay una [[file:orgcard.txt][versión de texto]] de la ficha de referencia.
 
-* Las FAQ de Org-mode
-  - Las [[http://orgmode.org/worg/org-faq.php][FAQ de Org-mode]] es editable por el usuario y es mantenido por la comunidad
+* Las FAQ de Org mode
+  - Las [[http://orgmode.org/worg/org-faq.php][FAQ de Org mode]] es editable por el usuario y es mantenido por la comunidad
      detrás de [[http://orgmode.org/worg/][Worg project]].
 
 * Tutoriales
@@ -56,7 +56,7 @@
   Environment for Literate Programming and Reproducible Research]] ([[http://www.jstatsoft.org/v46/i03/paper][pdf]]).
   Journal of Statistical Software, Vol. 46, Issue 3, January 2012.
 
-- Schulte, E.; Davison, D.; [[http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber%3D5756277][Active Documents with Org-Mode]], Computing in
+- Schulte, E.; Davison, D.; [[http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber%3D5756277][Active Documents with Org mode]], Computing in
   Science & Engineering, Vol. 13, Issue 3, May-June 2011.
 
 - Delescluse M., Franconville R., Joucla S., Lieury T. and Pouzat C.,
