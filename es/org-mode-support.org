@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Comunidad y Soporte
+#+TITLE: Org mode: Comunidad y Soporte
 #+AUTHOR: Bastien
 #+LANGUAGE:  es
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -9,7 +9,7 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-* Soporte desde la lista de correo de Org-mode
+* Soporte desde la lista de correo de Org mode
    :PROPERTIES:
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
    :END:
@@ -39,15 +39,15 @@ Hay una lista de correo para discutir acerca de org-mode.
 * Worg - el Sitio Web de la comunidad Org
 
 [[http://orgmode.org/worg/][Worg]], creado por [[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]], es una configuración que permite a
-sus usuarios editar conjuntamente un número de ficheros Org-mode
-que contienen documentación de Org-mode, incluyendo la [[http://orgmode.org/worg/org-faq.php][FAQ de Org Mode]]
+sus usuarios editar conjuntamente un número de ficheros Org mode
+que contienen documentación de Org mode, incluyendo la [[http://orgmode.org/worg/org-faq.php][FAQ de Org Mode]]
 and [[http://orgmode.org/worg/org-tutorials/index.php][Tutoriales]].  Worg es similar a un wiki ya que permite que la
 comunidad edite los contenidos. Sin embargo, debido a que usa un
 sistema de control de versiones distribuido, no es necesario estar
 online mientras se está editando. Si le gustaría contribuir a Worg,
 por favor, vaya a la [[http://orgmode.org/worg/][página de Worg]], y empiece desde allí.
 
-* Contribuyendo a Org-mode
+* Contribuyendo a Org mode
 
 Siempre puede contribuir con ideas e informes de error en las listas
 de correo. Puede contribuir con un parche, trozos de código, o una
@@ -73,7 +73,7 @@ Se puede entrar al canal de IRC =#org-mode= en Freenode a través de un
 
 ** Página en Google+
 
-Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org-mode en Google+]], que ya siguen unas *1000* personas.
+Hay una [[https://plus.google.com/b/102778904320752967064/][Página de Org mode en Google+]], que ya siguen unas *1000* personas.
 
 ** Twitter
 
@@ -116,5 +116,5 @@ new TWTR.Widget({
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-Promueve Org-mode y financia su desarrollo consiguiendo tu camiseta,
-mochila, o taza Org-mode en la [[http://orgmode.spreadshirt.com][tienda de EEUU]] o en la [[http://orgmode.spreadshirt.de][tienda de la UE]].
+Promueve Org mode y financia su desarrollo consiguiendo tu camiseta,
+mochila, o taza Org mode en la [[http://orgmode.spreadshirt.com][tienda de EEUU]] o en la [[http://orgmode.spreadshirt.de][tienda de la UE]].

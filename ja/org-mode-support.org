@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: コミュニティとサポート
+#+TITLE: Org mode: コミュニティとサポート
 #+AUTHOR: Takaaki Ishikawa
 #+LANGUAGE:  ja
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -9,12 +9,12 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-* Org-mode のメーリングリストによるサポート
+* Org mode のメーリングリストによるサポート
    :PROPERTIES:
    :ID:       0B280B26-A3AB-4E5C-B4EE-B7FFC52C4D26
    :END:
 
-Org-modeについて議論するメーリングリストがあります。
+Org modeについて議論するメーリングリストがあります。
 
 - ウェブ経由での[[http://lists.gnu.org/mailman/listinfo/emacs-orgmode][購読]]
 
@@ -22,7 +22,7 @@ Org-modeについて議論するメーリングリストがあります。
 
 - [[http://news.gmane.org/gmane.emacs.orgmode][ブラウザ]]もしくは[[news://news.gmane.org/gmane.emacs.orgmode][ニュースリーダー]]を使って [[http://www.gmane.org][Gmane]] のメールを読む
 
-- 質問を投稿する前に、Org-modeのマニュアルにある[[http://orgmode.org/manual/Feedback.html][フィードバック]]を読んでください。きっと有益な答えが得られるでしょう。E. S. Raymond氏の [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]] も一読の価値があります。
+- 質問を投稿する前に、Org modeのマニュアルにある[[http://orgmode.org/manual/Feedback.html][フィードバック]]を読んでください。きっと有益な答えが得られるでしょう。E. S. Raymond氏の [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]] も一読の価値があります。
 
 #+begin_html
 <form method="get" action="http://search.gmane.org/">
@@ -32,10 +32,10 @@ Org-modeについて議論するメーリングリストがあります。
 </form>
 #+end_html
 
-* Worg - Org-mode のコミュニティサイト
-[[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]] 氏が作った [[http://orgmode.org/worg/][Worg]] は、Org-modeに関する資料が含まれた、たくさんのOrgファイル（Org-modeで記述された文書）を、複数のユーザで共同編集できるように設定されています。ここには、[[http://orgmode.org/worg/org-faq.php][よくある質問]]と[[http://orgmode.org/worg/org-tutorials/index.php][チュートリアル]]が含まれています。Worg は、コミュニティ内でコンテンツを編集できる wiki に似ていますが、分散型のバージョン管理システムを利用しているので、オフラインでも編集できます。Worg の編集に貢献したくなったら、[[http://orgmode.org/worg/][Worgのサイト]]を訪問することから始めてください。
+* Worg - Org mode のコミュニティサイト
+[[http://www.cognition.ens.fr/~guerry/][Bastien Guerry]] 氏が作った [[http://orgmode.org/worg/][Worg]] は、Org modeに関する資料が含まれた、たくさんのOrgファイル（Org modeで記述された文書）を、複数のユーザで共同編集できるように設定されています。ここには、[[http://orgmode.org/worg/org-faq.php][よくある質問]]と[[http://orgmode.org/worg/org-tutorials/index.php][チュートリアル]]が含まれています。Worg は、コミュニティ内でコンテンツを編集できる wiki に似ていますが、分散型のバージョン管理システムを利用しているので、オフラインでも編集できます。Worg の編集に貢献したくなったら、[[http://orgmode.org/worg/][Worgのサイト]]を訪問することから始めてください。
 
-* Org-mode に貢献する
+* Org mode に貢献する
 
 新しいアイディアやバグの報告があれば、いつでもメーリングリストに投稿してください。パッチやコード片、もしくは完全なアドオンの投稿も、もちろん歓迎します。投稿の方法と、投稿する素材についての具体的な情報は、[[http://orgmode.org/worg/org-contribute.php][ここ]]にあります。
 
@@ -57,7 +57,7 @@ Org-modeについて議論するメーリングリストがあります。
 
 ** Google+ ページ
 
-[[https://plus.google.com/b/102778904320752967064/][Google+ Org-mode ページ]] があります。すでに1000人以上がフォローしています。
+[[https://plus.google.com/b/102778904320752967064/][Google+ Org mode ページ]] があります。すでに1000人以上がフォローしています。
 
 ** Twitter フィード
 
@@ -98,4 +98,4 @@ new TWTR.Widget({
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-Org-modeのTシャツ、バッグ、マグカップを手に入れて、Org-modeを普及させましょう。同時に、開発者をサポートしましょう！[[http://orgmode.spreadshirt.com][US shop]] か [[http://orgmode.spreadshirt.de][EU shop]] で販売しています。
+Org modeのTシャツ、バッグ、マグカップを手に入れて、Org modeを普及させましょう。同時に、開発者をサポートしましょう！[[http://orgmode.spreadshirt.com][US shop]] か [[http://orgmode.spreadshirt.de][EU shop]] で販売しています。

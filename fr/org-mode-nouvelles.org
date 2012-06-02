@@ -1,4 +1,4 @@
-#+TITLE: Org-mode: Dernières nouvelles
+#+TITLE: Org mode: Dernières nouvelles
 #+AUTHOR: Bastien
 #+LANGUAGE:  fr
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -38,7 +38,7 @@
 - <2010-12-03> MobileOrg pour Android supporte la capture vocale
 - <2010-11-25> Peut-être que les jours où Org pouvaient convertir les
   utilisateurs de vi en utilisateurs d'Emacs sont comptés ?  Un [[https://github.com/hsitz/VimOrganizer][clone
-  d'Org-mode pour Vim]] a été écrit par Herbert Sitz : à en juger par [[http://vimeo.com/17182850][cette
+  d'Org mode pour Vim]] a été écrit par Herbert Sitz : à en juger par [[http://vimeo.com/17182850][cette
   vidéo]], ça a l'air prometteur.
 - <2010-06-06> L'application pour iPhone [[http://mobileorg.ncogni.to/][MobileOrg]] version 1.5 introduit
   le support du chiffrement.

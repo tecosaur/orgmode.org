@@ -1,4 +1,4 @@
-#+TITLE: Org-mode: Latest News
+#+TITLE: Org mode: Latest News
 #+AUTHOR: Bastien
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t

@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Faire un don
+#+TITLE: Org mode: Faire un don
 #+AUTHOR: Bastien
 #+LANGUAGE:  en
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
@@ -22,7 +22,7 @@ Vous pouvez faire un don direct via Paypal:
   <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_xclick" />
     <input type="hidden" name="business" value="bastien1@free.fr" />
-    <input type="hidden" name="item_name" value="Maintainance d'Org-mode (Emacs)" />
+    <input type="hidden" name="item_name" value="Maintainance d'Org mode (Emacs)" />
     <input type="hidden" name="item_number" value="1" />
     <input type="hidden" name="lc" value="FR" />
     <input type="hidden" name="currency_code" value="EUR" />
@@ -33,9 +33,9 @@ Vous pouvez faire un don direct via Paypal:
 
 * Flattr!
 
-Vous pouvez aussi utiliser flattr pour soutenir Org-mode.  Nous
+Vous pouvez aussi utiliser flattr pour soutenir Org mode.  Nous
 "flattr'ons" les projects que nous aimons.  Si vous êtes utilisateur
-d'Org-mode et que vous voulez que nous flatt'ions un projet, merci de le
+d'Org mode et que vous voulez que nous flatt'ions un projet, merci de le
 dire sur le [[file:org-mode-support.org][liste de discussion]].
 
 #+HTML: <a class="FlattrButton" style="display:none;" href="http://orgmode.org"></a>
@@ -44,11 +44,11 @@ dire sur le [[file:org-mode-support.org][liste de discussion]].
 
 Pour chaque [[http://www.network-theory.co.uk/org/manual/][manuel Org vendu par Network Theory LTD]], 1 dollar va au mainteneur.
 
-* Acheter un t-shirt/mug/sac Org-mode !
+* Acheter un t-shirt/mug/sac Org mode !
 
-Les revenus des boutiques vont à Carsten, l'auteur original d'Org-mode,
+Les revenus des boutiques vont à Carsten, l'auteur original d'Org mode,
 toujours contributeur très actif.  C'est aussi une manière sympa de dire au
-monde que vous aimez Org-mode !  Vous pouvez acheter dans la boutique aux
+monde que vous aimez Org mode !  Vous pouvez acheter dans la boutique aux
 [[http://orgmode.spreadshirt.com][États-Unis]] ou en [[http://orgmode.spreadshirt.de][Europe]]...
 
 

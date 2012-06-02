@@ -1,4 +1,4 @@
-#+TITLE:     Org-Mode Survey Results
+#+TITLE:     Org mode Survey Results
 #+AUTHOR:    Charles Cave
 #+EMAIL:     charles.cave@gmail.com
 #+LANGUAGE:  en
@@ -515,7 +515,7 @@ org-mode or do you think the product has reached maturity?"
   could be outlined like in an org buffer. I guess that's possible
   with some CSS.
 - Task dependency for project planing
-- At the moment, I'm still on the learning curve. Org-mode has
+- At the moment, I'm still on the learning curve. Org mode has
   soooooooooo many features I have not even discovered yet. I almost
   daily open the manual pages to see I there is something I can use.
 - Probably, customization of built-in agenda view. But I'd rather see
@@ -604,9 +604,9 @@ documentation or as a tutorial or screencast?
 - Use of drawers and properties.
 - How to organize multiple projects; auto-archival.
 - org spreadsheet	
-- Since Org-mode is (to me) a collection of "orthogonal" features, but
+- Since Org mode is (to me) a collection of "orthogonal" features, but
   doesn't much impose structure, I'd be interested in seeing how
-  others organise their data and "bring it to life" with the Org-mode
+  others organise their data and "bring it to life" with the Org mode
   features.
 - none
 - more documentation for org's lisp functions (in fact more examples
@@ -925,7 +925,7 @@ documentation or as a tutorial or screencast?
 - Has increased my productivity a lot!
 - Really a great thank to the author "Carsten Dominik", "chapeau" as
   they say in France!!!!
-- Org-mode was relatively immature when I started using it, and I have
+- Org mode was relatively immature when I started using it, and I have
   kept with it for 2 simple reasons: 1. The maintainer (Carsten) is
   friendly, fast, accurate, and thorough 2. It works -- it does what
   it claims to do, and does it well
@@ -976,7 +976,7 @@ documentation or as a tutorial or screencast?
   hearing what his users are doing, responding to expressed needs, and
   even being clear if/when he decides not to do what someone would
   like him to do. Other heavy users and scripters are great as well.
-- I started using Org-mode as an outliner. It is the best outliner
+- I started using Org mode as an outliner. It is the best outliner
   I've used an much more. The community is valuable but Carsten's
   skill and judgement has made org-mode what it is.
 - It's a killer tool that I could not live without.

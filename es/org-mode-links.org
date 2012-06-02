@@ -1,4 +1,4 @@
-#+TITLE: Org-Mode: Enlaces
+#+TITLE: Org mode: Enlaces
 #+AUTHOR: Bastien
 #+LANGUAGE:  es
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
@@ -9,9 +9,9 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
-* Charlas acerca de Org-mode
+* Charlas acerca de Org mode
 
-  Carsten Dominik dió una charla en GoogleTech acerca de Org-mode y
+  Carsten Dominik dió una charla en GoogleTech acerca de Org mode y
   otra en el [[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][Max Planck Institute for Neurological Research]]. En FLOSS
   Weekly [[tp://twit.tv/floss136][number 136]] Randal Schwartz entrevista a Carsten acerca de Org
   mode.

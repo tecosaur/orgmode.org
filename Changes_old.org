@@ -1,6 +1,6 @@
 #   -*- mode: org; fill-column: 72 -*-
 
-#+TITLE: Archive list of Org-mode changes
+#+TITLE: Archive list of Org mode changes
 #+AUTHOR:  Carsten Dominik
 #+EMAIL:  carsten at orgmode dot org
 #+STARTUP: hidestars
@@ -131,12 +131,12 @@ the corresponding =\usepackage= calls (see below).
 The two new variables are:
 
 1. =org-export-latex-default-packages-alist= :: This is the
-     variable where Org-mode itself puts the packages it needs.
+     variable where Org mode itself puts the packages it needs.
      Normally you should not change this variable.  The only
      reason to change it anyway is when one of these packages
      causes a conflict with another package you want to use.
      Then you can remove that packages and hope that you are not
-     using Org-mode functionality that needs it.
+     using Org mode functionality that needs it.
 
 2. =org-export-latex-packages-alist= :: This is the variable
      where you can put the packages that you'd like to use across
@@ -346,18 +346,18 @@ This behavior can be configured with the new option variable
 
 ** Index generation
 
-Org-mode can now produce a 2-level subject index spanning an
+Org mode can now produce a 2-level subject index spanning an
 entire publishing project.  Write index entries in your files as
 
 #+begin_src org
-,* What is org-mode?
-#+index: Org-mode
-#+index: Definitions!Org-mode
+  ,* What is org-mode?
+  ,#+index: Org mode
+  ,#+index: Definitions!Org mode
 #+end_src
 
-where the first line will produce an index entry /Org-mode/,
+where the first line will produce an index entry /Org mode/,
 while the second line will create /Definitions/ with a sub-item
-/Org-mode/.  Three-level entries are not supported.
+/Org mode/.  Three-level entries are not supported.
 
 To produce the index, set
 
@@ -384,7 +384,7 @@ included into any project file using
   ,#+include: "theindex.inc"
 #+end_src
 
-Org-mode will also create a file "theindex.org" with this include
+Org mode will also create a file "theindex.org" with this include
 statement, and you can build a more complex structure (for
 example style definitions, top and home links, etc) around this
 statement.  When this file already exists, it will not be
@@ -534,7 +534,7 @@ Thanks to Richard Riley for a patch to this effect.
 *** Repair the broken support for table.el tables again.
 
 Tables created with the table.el package now finally work again
-in Org-mode.  While you cannot edit the table directly in the
+in Org mode.  While you cannot edit the table directly in the
 buffer, you can use  =C-c '= to edit it nicely in a temporary
 buffer.
 
@@ -637,7 +637,7 @@ This was a request by Matt Lundin.
 *** Add org-secretary.el by Juan Reyero to the contrib directory
 
 org-secretary.el is a possible setup for group work using
-Org-mode.
+Org mode.
 
 Thanks to Juan Reyero for this contribution.
 
@@ -703,9 +703,9 @@ originally.
 
 ** Details
 
-*** Support for creating BEAMER presentations from Org-mode documents
+*** Support for creating BEAMER presentations from Org mode documents
 
-Org-mode documents or subtrees can now be converted directly in
+Org mode documents or subtrees can now be converted directly in
 to BEAMER presentation.  Turning a tree into a simple
 presentations is straight forward, and there is also quite some
 support to make richer presentations as well.  See the [[http://orgmode.org/manual/Beamer-class-export.html#Beamer-class-export][BEAMER
@@ -721,8 +721,8 @@ individual could.
 **** Add Paul Sexton's org-ctags.el
 
 Targets like =<<my target>>= can now be found by Emacs' etag
-functionality, and Org-mode links can be used to to link to
-etags, also in non-Org-mode files.  For details, see the file
+functionality, and Org mode links can be used to to link to
+etags, also in non-Org mode files.  For details, see the file
 /org-ctags.el/.
 
 This feature uses a new hook =org-open-link-functions= which will
@@ -735,9 +735,9 @@ Thanks to Paul Sexton for this contribution.
 This new module allows links to various file types using docview,
 where Emacs displays images of document pages.  Docview link
 types can point to a specific page in a document, for example to
-page 131 of the Org-mode manual:
+page 131 of the Org mode manual:
 
-: [[docview:~/.elisp/org/doc/org.pdf::131][Org-Mode Manual]]
+: [[docview:~/.elisp/org/doc/org.pdf::131][Org mode Manual]]
 
 Thanks to Jan Böcker for this contribution.
 
@@ -835,7 +835,7 @@ but that does create too many problems.
 **** New symbols =\EUR= and =\checkmark=
 
 =\EUR= symbols from Marvosym package, and =\checkmark= are now
-supported symbols in Org-mode, i.e. they will be exported
+supported symbols in Org mode, i.e. they will be exported
 properly to the various backends.
 
 **** Allow LaTeX_CLASS_OPTIONS to set options, also from a property
@@ -1044,7 +1044,7 @@ section).
 
 This was a request by Stephen Eglen.
 
-*** A new freemind exporter has been integrated with Org-mode
+*** A new freemind exporter has been integrated with Org mode
 
 org-freemind.el has a number of entry points (for details, see
 the source code), but you can also use Org's =C-c C-e m= to
@@ -1166,7 +1166,7 @@ Org now contains a new freemind exporter, /org-freemind.el/.
 ** Rewrite of org-mobile.org, for MobileOrg 1.0 (build 20)
 
 MobileOrg is currently under review at the iPhone App Store.  You
-will need Org-mode version 6.32 to interact with it.
+will need Org mode version 6.32 to interact with it.
 
 ** Added support for habit consistency tracking
 
@@ -1302,7 +1302,7 @@ but now you can make it work for times as well.
 Org-babel provides the ability to execute source code in many
 different languages within org-mode documents.  The results of
 code execution -- text, tables and graphics -- can be integrated
-into Org-mode documents and can be automatically updated during
+into Org mode documents and can be automatically updated during
 publishing.  Since Org-babel allows execution of arbitrary code,
 the range of tasks that can be addressed from within an Org mode
 file becomes very large.  Examples of ways in which Org-babel
@@ -1312,13 +1312,13 @@ might be used include
   automatically repeatable
 - Creating dynamic (executable) reports that respond to changes
   in the underlying data (Reproducible Research)
-- Exportation of code contained in an Org-mode document into
+- Exportation of code contained in an Org mode document into
   regular source code files (Literate Programming)
 
 Additionally, Org-babel provides a programming environment within
 Org files, in which data can be transmitted between parameterised
 source code blocks in different languages, as well as between
-source code blocks and Org-mode tables.
+source code blocks and Org mode tables.
 
 A simple API is defined so that users can add support for new
 "languages" (broadly construed).  Languages currently supported
@@ -1346,7 +1346,7 @@ significant help on both accounts from Dan Davison.
 
 Richard Morelands iPhone/iPod Touch program [[http://mobileorg.ncogni.to/][MobileOrg]] can view
 Org files, mark entries as DONE, flag entries for later
-attention, and capture new entries on the road.  Org-mode has now
+attention, and capture new entries on the road.  Org mode has now
 support to produce a staging area where MobileOrg can download
 its files, and to integrate changes done on the phone in a half
 automatic, half interactive way.  See the new appendix B in the
@@ -1374,7 +1374,7 @@ Thanks to Peter Jones for this contribution.
 ** Encrypting subtrees
 
 /org-crypt.el/ by John Wiegley and Peter Jones allows encryption
-of individual subtrees in Org-mode outlines.  Thanks to John and
+of individual subtrees in Org mode outlines.  Thanks to John and
 Peter for this contribution.
 
 ** Agenda: Support for including a link in the category string
@@ -1396,7 +1396,7 @@ This was a request by Peter Westlake.
 
 *** Agenda now uses =f= and =b= to move through time
 
-Up to now, the Org-mode agenda used the cursor keys =left= and
+Up to now, the Org mode agenda used the cursor keys =left= and
 =right= to switch the agenda view forward an backward through
 time.  However, many people found this confusing, and others
 wanted to be able to do cursor motion in the agenda, for example
@@ -1418,7 +1418,7 @@ This was necessary to free up the =f= key, see above.
 There is now a special command =M-x org-submit-bug-report=.  This
 command will create a mail buffer with lots of useful details.
 In particular, it contains complete version information for Emacs
-and Org-mode.  It will also (if you agree to it) contain all
+and Org mode.  It will also (if you agree to it) contain all
 non-standard settings of org-mode and outline-mode related
 variables.  Even if you do not sent your emails from within
 Emacs, please still use this command to generate the information
@@ -1433,7 +1433,7 @@ information, see the [[http://orgmode.org/manual/Feedback.html#Feedback][feedbac
 This package allows to keep up-to-date with current Org
 development, using only Emacs on-board means.  So if you don't
 want or cannot use =git=, but still want to run the latest and
-hottest Org-mode, this is for you.
+hottest Org mode, this is for you.
 
 Thanks to Sebastian Rose for this contribution.
 
@@ -1441,7 +1441,7 @@ Thanks to Sebastian Rose for this contribution.
 
 **** Agenda now uses =f= and =b= to move through time
 
-Up to now, the Org-mode agenda used the cursor keys =left= and
+Up to now, the Org mode agenda used the cursor keys =left= and
 =right= to switch the agenda view forward an backward through
 time.  However, many people found this confusing, and others
 wanted to be able to do cursor motion in the agenda, for example
@@ -1979,11 +1979,11 @@ the document better and allows for proper plain list structure editing.
 *** Protected blocks
 
 Some =#+begin_ ... +#end_...= blocks contain text that should not be
-processed like normal Org-mode text.  =example= and =src= block fall into
+processed like normal Org mode text.  =example= and =src= block fall into
 this class, and so do =ditaa= blocks, for example.  The content in such
 blocks is now properly fontified in a single face (called
 =org-block=).  This was a frequently requested feature.  The list of blocks
-that should be protected from normal Org-mode fontification is defined in
+that should be protected from normal Org mode fontification is defined in
 the variable =org-protecting-blocks=.  Modules defining new blocks should
 add to this variable when needed.  =org-exp-blocks.el= does this already.
 
@@ -2377,7 +2377,7 @@ entry will stay in that file.  See also the variable
 *** Remember to non-org files
 
 If the target headline part of a remember template definition entry is
-=top= or =bottom=, the target file may now be a non-Org-mode file.  In this
+=top= or =bottom=, the target file may now be a non-Org mode file.  In this
 case, the content of the remember buffer will be added to that file without
 enforcing an Org-like headline.  Sorry, Russel, that this took so long.
 
@@ -2594,7 +2594,7 @@ subprojects can still be identified.
 
 *** Citations: Use RefTeX to insert citations
 
-RefTeX can now be used to create a citation in Org-mode buffers.  Setup the
+RefTeX can now be used to create a citation in Org mode buffers.  Setup the
 buffer with
 
 #+begin_src org
@@ -2830,9 +2830,9 @@ these changes so quicky.
 
 *** Clustering characters for undo
 
-When typing in Org-mode, undo will now remove up to 20 characters at a
+When typing in Org mode, undo will now remove up to 20 characters at a
 time with a single undo command.  This is how things work normally in
-Emacs, but the special binding of characters in Org-mode made this
+Emacs, but the special binding of characters in Org mode made this
 impossible until now.
 
 Thanks to Martin Pohlack for a patch which mimicks the behavior of the
@@ -2857,12 +2857,12 @@ Thanks to Alan Davis for this proposal.
 
 *** orgstruct++-mode improvements
 
-In addition to =orgstruct-mode= which allows to use some Org-mode
+In addition to =orgstruct-mode= which allows to use some Org mode
 structure commands in other major modes, there is a more invasive
 version of this mode: =orgstruct++-mode=.  This mode will import all
 paragraph and line wrapping variables into the major mode, so that, for
 example, during typing the auto-fill wrapping of items will work just
-like in Org-mode.  This change is not reversible, so turning off
+like in Org mode.  This change is not reversible, so turning off
 =orgstruct++-mode= will not remove these settings
 again. =orgstruct++-mode= is most useful in text modes like message-mode
 or =magit-log-edit-mode=.  Furthermore, =orgstruct++-mode= will
@@ -3231,7 +3231,7 @@ Here are the new default values:
 *** Support for simple TODO dependencies
 
 John Wiegley's code for enforcing simple TODO dependencies has been
-integrated into Org-mode.  Thanks John!
+integrated into Org mode.  Thanks John!
 
 The structure of Org files (hierarchy and lists) makes it easy to define
 TODO dependencies.  A parent TODO task should not be marked DONE until
@@ -3484,8 +3484,8 @@ contain empty lines.
 
 *** Footnote support
 
-Org-mode now directly supports the creation of footnotes.  In contrast
-to the /footnote.el/ package, Org-mode's footnotes are designed for work
+Org mode now directly supports the creation of footnotes.  In contrast
+to the /footnote.el/ package, Org mode's footnotes are designed for work
 on a larger document, not only for one-off documents like emails.  The
 basic syntax is similar to the one used by /footnote.el/, i.e. a
 footnote is defined in a paragraph that is started by a footnote marker
@@ -3499,7 +3499,7 @@ The Org homepage[fn:1] now looks a lot better than it used to.
 [fn:1] The link is: http://orgmode.org
 #+end_src
 
-Org-mode extends the number-based syntax to /named/ footnotes and
+Org mode extends the number-based syntax to /named/ footnotes and
 optional inline definition.  Using plain numbers as markers is supported
 for backward compatibility, but not encouraged because of possible
 conflicts with LaTeX syntax.  Here are the valid references:
@@ -3561,8 +3561,8 @@ The following command handles footnotes:
      corresponding definition/reference, and you can use the usual
      commands to follow these links.
 
-Org-mode's footnote support is designed so that it should also work in
-buffers that are not in Org-mode, for example in email messages.  Just
+Org mode's footnote support is designed so that it should also work in
+buffers that are not in Org mode, for example in email messages.  Just
 bind =org-footnote-action= to a global key like =C-c f=.
 
 The main trigger for this development came from a hook function written
@@ -3577,12 +3577,12 @@ footnotes and his prompt testing of the new features.
 
 Literal examples introduced with =#+BEGIN_EXAMPLE= or =#+BEGIN_SRC= do
 now allow optional line numbering in the example.  Furthermore, links to
-specific code lines are supported, greatly increasing Org-mode's utility
+specific code lines are supported, greatly increasing Org mode's utility
 for writing tutorials and other similar documents.
 
 Code references use special labels embedded directly into the source
 code.  Such labels look like "(ref:name)" and must be unique within a
-document.  Org-mode links with "(name)" in the link part will be
+document.  Org mode links with "(name)" in the link part will be
 correctly interpreted, both while working with an Org file (internal
 links), and while exporting to the different backends.  Line numbering
 and code references are supported for all three major backends, HTML,
@@ -3803,7 +3803,7 @@ also select the method by hand, using the variable =org-id-method=.
 If the ID system ever gets confused about where a certain ID is, it
 initiates a global scan of all agenda files with associated archives,
 all files previously known containing any IDs, and all currently visited
-Org-mode files to rebuild the hash.  You can also initiate this by hand:
+Org mode files to rebuild the hash.  You can also initiate this by hand:
 =M-x org-id-update-id-locations=.  Running this command will also dump
 into the =*Messages*= buffer information about any duplicate IDs.  These
 should not exist, and Org will never /make/ the same ID twice, but if
@@ -3822,15 +3822,15 @@ the overhead with tracking IDs by customizing the variable
 =org-id-track-globally=.  IDs can then still be used for links inside a
 single file.
 
-IDs will also be used when you create a new link to an Org-mode
+IDs will also be used when you create a new link to an Org mode
 buffer.  If you use =org-store-link= (normally at =C-c l=) inside en
-entry in an Org-mode buffer, and ID property will be created if it does
+entry in an Org mode buffer, and ID property will be created if it does
 not exist, and the stored link will be an =id:= link.  If you prefer the
 much less secure linking to headline text, you can configure the
 variable =org-link-to-org-use-id=.  The default setting for this
 variable is =create-if-interactive=, meaning that an ID will be created
 when you store a link interactively, but not if you happen to be in an
-Org-mode file while you create a remember note (which usually has a link
+Org mode file while you create a remember note (which usually has a link
 to the place where you were when starting remember).
 
 *** Spreadsheet references to the last table line.
@@ -3956,8 +3956,8 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
 
     You can now use the key =C-c C-x M-w= in a w3m buffer with HTML
     content to copy either the region or the entire file in a special
-    way.  When you yank this text back into an Org-mode buffer, all
-    links from the w3m buffer will continue to work under Org-mode.
+    way.  When you yank this text back into an Org mode buffer, all
+    links from the w3m buffer will continue to work under Org mode.
 
     For this to work you need to load the new file /org-w3m.el./
     Please check your org-modules variable to make sure that this
@@ -3998,9 +3998,9 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
 *** Keybindings in Remember buffers can be configured
 
     The remember buffers created with Org's extensions are in
-    Org-mode, which is nice to prepare snippets that will
-    actually be stored in Org-mode files.  However, this makes it
-    hard to configure key bindings without modifying the Org-mode
+    Org mode, which is nice to prepare snippets that will
+    actually be stored in Org mode files.  However, this makes it
+    hard to configure key bindings without modifying the Org mode
     keymap.  There is now a minor mode active in these buffers,
     `org-remember-mode', and its keymap org-remember-mode-map can
     be used for key bindings.  By default, this map only contains
@@ -4072,7 +4072,7 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
     Kudos to Eric Schulte for this new functionality, after
     /org-plot.el/ already his second major contribution.  Thanks
     to Stathis for this excellent program, and for allowing us to
-    bundle it with Org-mode.
+    bundle it with Org mode.
 
 *** New contributed file /org-eval-light.el/
 
@@ -4085,10 +4085,10 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
 
     You can now configure Org to understand many links created
     with the Emacs Planner package, so you can cut text from
-    planner pages and paste them into Org-mode files without
+    planner pages and paste them into Org mode files without
     having to re-write the links.  Among other things, this means
     that the command =org-open-at-point-global= which follows
-    links not only in Org-mode, but in arbitrary files like
+    links not only in Org mode, but in arbitrary files like
     source code files etc, will work also with links created by
     planner. The following customization is needed to make all of
     this work
@@ -5753,10 +5753,10 @@ list of small improvements and some new significant features.
 
 *** Loading modules
 
-    Org-mode has now a system for loading modules by simply
+    Org mode has now a system for loading modules by simply
     configuring an option that lists all the modules you want to
     use.  Customize the variable `org-modules'.  That variable
-    lists both modules that are part of the Org-mode core (and in
+    lists both modules that are part of the Org mode core (and in
     this way part of Emacs), and modules that are contributed
     packages.  Contributed modules will only be available when
     you have installed them properly (most likely by downloading
@@ -6069,7 +6069,7 @@ list of small improvements and some new significant features.
 
 *** Many new extensions available in the CONTRIB directory
 
-    - Phil Jackson's /org-irc.el/ is now part of the Org-mode
+    - Phil Jackson's /org-irc.el/ is now part of the Org mode
       core, which means it will become part of Emacs soon.
 
     - The new development model already starts to pay off, a
@@ -6344,7 +6344,7 @@ list of small improvements and some new significant features.
       isearch from the beginning of the buffer.  The isearch is
       special also because it only matches in headline.  This
       goes some way toward saving org-goto from being removed
-      from Org-mode.  Thanks to Piotr Zielinski for the code, and
+      from Org mode.  Thanks to Piotr Zielinski for the code, and
       sorry that it took me so long to put it in.  If you prefer
       to use single letters n,p,f,b,u,q for navigation as before,
       configure the variable `org-goto-auto-isearch'.
@@ -6621,23 +6621,23 @@ list of small improvements and some new significant features.
 
 *** Imenu and Speedbar support
 
-    - Org-mode now supports Imenu.  For example, with the setting
+    - Org mode now supports Imenu.  For example, with the setting
 
       : (add-hook 'org-mode-hook 
       :    (lambda () 'imenu-add-to-menubar "Imenu"))
 
-      a menu will be created in each Org-mode buffer that
+      a menu will be created in each Org mode buffer that
       provides access to all level 1 and level 2 headings.  The
       depth of the menu can be set with the variable
       `org-imenu-depth'.
 
     - org-mode now supports Speedbar.  This means that you can
       drill into the first and second level headlines of an
-      Org-mode file right from the speedbar frame.
+      Org mode file right from the speedbar frame.
 
-    - You can set a restriction lock for the Org-mode agenda to a
+    - You can set a restriction lock for the Org mode agenda to a
       file or a subtree directly from the speedbar frame.  Just
-      press "<" with the cursor on an Org-mode file or subtree to
+      press "<" with the cursor on an Org mode file or subtree to
       set the lock and immediately update the agenda if it is
       visible.  Use ">" to get rid of the lock again.
 
@@ -6773,7 +6773,7 @@ list of small improvements and some new significant features.
       Thanks to Adam Spiers and Tim O'Callaghan.
 
     - New function `org-remember-insinuate' that makes is easier
-      to set Org-mode specific values for remember variables.
+      to set Org mode specific values for remember variables.
       Thanks to Michael Olson for this proposal.  It is
       equivalent to:
 
@@ -6795,7 +6795,7 @@ list of small improvements and some new significant features.
     - Font-lock now can hide the emphasis markers, just like Muse
       does.  Configure the variable `org-hide-emphasis-markers'
       if you want this.  Showing the characters continues to be
-      the default in Org-mode.
+      the default in Org mode.
 
     - Text in the "=" emphasis is now exported verbatim, i.e. no
       further parsing and interpretation of this text takes place.  So
@@ -6815,7 +6815,7 @@ list of small improvements and some new significant features.
       again.
 
     - New variable `org-highlight-latex-fragments-and-specials'.
-      When turned on, Org-mode will highlight all strings that
+      When turned on, Org mode will highlight all strings that
       are treated in a special way by the exporters.  This is
       great for export-oriented writing, but maybe a bit noisy
       for note taking, so this feature is off by default.
@@ -6854,7 +6854,7 @@ list of small improvements and some new significant features.
 
     - The date prompt now prefers to select the future.  If you enter a
       date without a month, and the day number is before today (for
-      example, on the 16th of the month you enter "9"), Org-mode will
+      example, on the 16th of the month you enter "9"), Org mode will
       assume next month.  Similarly, if you enter a month and no year,
       next year will be assumed if the entered month is before the
       current, for example if you enter "May" in September.  Thanks to
@@ -7585,7 +7585,7 @@ list of small improvements and some new significant features.
      :     ("CANCELED"  . (:foreground "blue" :weight bold
      :                    :underline t))))
 
-     Org-mode continue still use `org-todo' and `org-done' for
+     Org mode continue still use `org-todo' and `org-done' for
      keywords that have no specific face assigned.
 
    - Some People use TODO states more like tags.  For them the
@@ -7622,7 +7622,7 @@ list of small improvements and some new significant features.
 
    - `Org-ellipsis' can now also be a face to make the folding
      ellipsis more visible.  This is based on a post by Tassilo
-     Horn.  Since `org-ellipsis' only works in Org-mode, you
+     Horn.  Since `org-ellipsis' only works in Org mode, you
      might want to use Tassilo Horn's hack directly in order to
      affect the folding ellipsis globally.
 
@@ -7667,7 +7667,7 @@ list of small improvements and some new significant features.
    - New command to set or remove a tag from all headlines in a
      region.
 
-   - When Org-mode visits a file, it will initially hide all
+   - When Org mode visits a file, it will initially hide all
      drawers.
 
    - The default of the variable `org-cycle-global-at-bob' is now
@@ -7694,7 +7694,7 @@ list of small improvements and some new significant features.
 
    - Store remember notes with only 2 keys: C-c C-c
 
-   - Appointment reminders from Org-mode.
+   - Appointment reminders from Org mode.
 
    - Global values for selected properties.
 
@@ -7704,7 +7704,7 @@ list of small improvements and some new significant features.
 ** Details
 
    - Bastien's `org-export-latex.el' is now part of the org-mode
-     distribution.  You can export an Org-mode document to a
+     distribution.  You can export an Org mode document to a
      LaTeX file with `C-c C-e l'.  For more options, see the
      manual, and the commentary in the Lisp file.  Kudos to
      Bastien for contributing this frequently requested feature.
@@ -7712,10 +7712,10 @@ list of small improvements and some new significant features.
      ways I have been allowing LaTeX snippets and environments to
      be incorporated in lazy free-format ways.
 
-   - Org-mode has now an extension mechanism for the hyperlink
+   - Org mode has now an extension mechanism for the hyperlink
      system.  This should clear the road for all those mairix and
      other ideas that have been floating around.  Now it is on
-     *you* to write and share new link types for Org-mode.  The
+     *you* to write and share new link types for Org mode.  The
      interface for adding a new link type is described in the
      appendix of the manual, section A2.  The unsolved problem is
      currently how to handle the new link types for
@@ -7723,7 +7723,7 @@ list of small improvements and some new significant features.
 
    - New *global* commands `org-open-at-point-global' and
      `org-insert-link-global'.  You can bind these commands to
-     global keys and use them to insert and follow Org-mode-like
+     global keys and use them to insert and follow Org mode-like
      links anywhere in Emacs.  Thanks to Adam Spiers for this
      excellent idea.
 
@@ -7827,7 +7827,7 @@ list of small improvements and some new significant features.
 
   - New option `org-n-level-faces' can be used to set the number
     of different faces that are used for headlines.  Default is
-    all 8 faces Org-mode defines for this purpose, level 9 uses
+    all 8 faces Org mode defines for this purpose, level 9 uses
     again the level-1 face.  However, you can use fewer, and then
     the level-1 face will be reused already for level N+1, etc.
 
@@ -7888,7 +7888,7 @@ list of small improvements and some new significant features.
 
      These additions lead to the exciting fact that the example
      from [[http://www.omnigroup.com/images/applications/omnioutliner/features/multicolumn.jpg][omni outliner]] posted by Scott Jaderholm can now be
-     accurately [[file:omni-org.jpg][reproduced by Org-mode]].
+     accurately [[file:omni-org.jpg][reproduced by Org mode]].
 
    - The space after the stars is now required in a headline, in
      order to remove the conflict with bold words at the
@@ -7904,7 +7904,7 @@ list of small improvements and some new significant features.
 
 ** Overview
 
-   - A new minor mode, orgstruct-mode, exports the Org-mode
+   - A new minor mode, orgstruct-mode, exports the Org mode
      structure editing commands into any other mode.
 
    - DRAWERS are a new level off folding for special sections
@@ -7938,7 +7938,7 @@ list of small improvements and some new significant features.
 
     There is a new minor mode, orgstruct-mode.  This modes works
     in a similar way as Orgtbl-mode.  It can be used to export
-    the Org-mode structure-editing commands into arbitrary major
+    the Org mode structure-editing commands into arbitrary major
     modes in Emacs.  For example, you can use it in Mail-mode to
     easily create lists.
 
@@ -7947,7 +7947,7 @@ list of small improvements and some new significant features.
     like the first line of a plain list item.  Then the commands
     `TAB', `M-cursor', `M-S-cursor', `M-RET', `M-S-RET', `C-c ^',
     `C-c C-c', and `C-c -' will do structure-related editing just
-    like in Org-mode.  If the cursor is not in such a line, all
+    like in Org mode.  If the cursor is not in such a line, all
     these keys will do whatever the major mode or other active
     minor modes have assigned to them.
 
@@ -7978,8 +7978,8 @@ list of small improvements and some new significant features.
 
 *** Properties and Column View
 
-    - Entries in Org-mode can now have arbitrary /properties/
-      associated with them.  Org-mode handles some default
+    - Entries in Org mode can now have arbitrary /properties/
+      associated with them.  Org mode handles some default
       properties like the TODO state, the priority, the local
       tags, and planning information like DEADLINE and SCHEDULED.
       In addition, you can assign arbitrary properties by creating
@@ -7987,7 +7987,7 @@ list of small improvements and some new significant features.
 
       :   :PROPNAME: This is the value of the property
 
-      Org-mode has an API for properties, if you want to write a
+      Org mode has an API for properties, if you want to write a
       program using properties, use the functions
       `org-entry-properties', `org-entry-get', `org-entry-put',
       and `org-entry-delete'.
@@ -8567,7 +8567,7 @@ list of small improvements and some new significant features.
      In Emacs 22, if you want to make full use of this, make sure
      that you have not set `outline-blank-line'.
 
-   - When the clock is running, Org-mode will put info about it
+   - When the clock is running, Org mode will put info about it
      into the modeline.  The info consists of the elapsed time
      and the heading of the clocked item.  This was a proposal
      from Bastien who got the idea from Muse.
@@ -8698,7 +8698,7 @@ list of small improvements and some new significant features.
       agenda commands.  Thanks to Jason F. McBrayer for pointing
       out this omission.
 
-  - If you have configured Org-mode to export also the text
+  - If you have configured Org mode to export also the text
     before the first headline (this is done by setting the
     variable `org-export-skip-text-before-1st-heading' to nil),
     then the first normal text line in the buffer becomes the
@@ -8707,7 +8707,7 @@ list of small improvements and some new significant features.
     normal text.  Thanks to David House for this proposal.
 
   - TTY replacement keys.  Some of the key bindings used by
-    Org-mode do not work on a tty, so replacement key sequences
+    Org mode do not work on a tty, so replacement key sequences
     are provided on ttys.  In version 4.70, there are some
     changes in the tty replacements.  Thanks to Jason F. McBrayer
     for coming up with the idea to use C-c <cursor> keys.
@@ -8765,7 +8765,7 @@ list of small improvements and some new significant features.
      : #+TYP_TODO: Fred Laura Peter Me OK
 
      Each sub-sequence has its own DONE state.  It is best to use
-     different keywords in all sequences, to make sure Org-mode does not
+     different keywords in all sequences, to make sure Org mode does not
      loose track in which specific sequence it is working.  You could
      use the same word for all DONE states, but then cycling through to
      a TODO state might not bring you where you want to be.
@@ -8783,7 +8783,7 @@ list of small improvements and some new significant features.
      Thanks to Rick Moynihan for triggering this development.
 
    - Text before the first headline can now be exported if you configure
-     Org-mode accordingly.  Either set the variable
+     Org mode accordingly.  Either set the variable
      `org-export-skip-text-before-1st-heading' to nil, or use the new
      in-buffer option
 
@@ -8818,7 +8818,7 @@ list of small improvements and some new significant features.
      cursor into the table line below it.  Thanks to Bastien for
      this proposal.
 
-   - Org-mode always offers you to record a note when a TODO item
+   - Org mode always offers you to record a note when a TODO item
      automatically repeats, even if you are not logging state
      changes.  The new variable `org-log-repeat' allows to turn
      this off, so that notes are really only been taken if you
@@ -9229,7 +9229,7 @@ list of small improvements and some new significant features.
    - The handling of `mailto:' links can be customized, see the new
      variable `org-link-mailto-program'.
    - `mailto' links can specify a subject after a double colon,
-     like [[mailto:dominik@science.uva.nl::Org-mode%20is%20buggy][mailto:dominik@xxx.uva.nl::Org-mode is buggy]].
+     like [[mailto:dominik@science.uva.nl::Org mode%20is%20buggy][mailto:dominik@xxx.uva.nl::Org mode is buggy]].
    - In the #+STARTUP line, M-TAB completes valid keywords.
    - In the #+TAGS: line, M-TAB after ":" inserts all currently used tags.
    - Again full Emacs 21 support:  Checkboxes and publishing are fixed.
@@ -9261,9 +9261,9 @@ list of small improvements and some new significant features.
 
 * Version 4.39
    - Special tag ARCHIVE keeps a subtree closed and away from agenda lists.
-   - LaTeX code in Org-mode files can be converted to images for HTML.
+   - LaTeX code in Org mode files can be converted to images for HTML.
    - Bug fixes.
-   - CDLaTeX-mode features can be used in Org-mode to help inserting
+   - CDLaTeX-mode features can be used in Org mode to help inserting
      LaTeX environment and math.
 
 * Version 4.38
@@ -9392,7 +9392,7 @@ list of small improvements and some new significant features.
 [...]
 
 Version 4.00
-   - Headlines can contain TAGS, and Org-mode can produced a list
+   - Headlines can contain TAGS, and Org mode can produced a list
      of matching headlines based on a TAG search expression.
    - `org-agenda' has now become a dispatcher that will produce the agenda
      and other views on org-mode data with an additional keypress.
@@ -9452,7 +9452,7 @@ Version 4.00
      variable `org-table-auto-blank-field'.
    - Inactive timestamps with `C-c !'.  These do not trigger the agenda
      and are not linked to the calendar.
-   - Additional key bindings to allow Org-mode to function on a tty emacs.
+   - Additional key bindings to allow Org mode to function on a tty emacs.
    - `C-c C-h' prefix key replaced by `C-c C-x', and `C-c C-x C-h' replaced
      by `C-c C-x b' (b=Browser).  This was necessary to recover the
      standard meaning of C-h after a prefix key (show prefix bindings).
@@ -9531,7 +9531,7 @@ Version 4.00
 * Version 3.04
    - Table editor optimized to need fewer realignments, and to keep
      table shape when typing in fields.
-   - A new minor mode, orgtbl-mode, introduces the Org-mode table editor
+   - A new minor mode, orgtbl-mode, introduces the Org mode table editor
      into arbitrary major modes.
    - Fixed bug with realignment in XEmacs.
    - Startup options can be set with special #+STARTUP line.
