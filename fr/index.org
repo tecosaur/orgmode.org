@@ -32,7 +32,7 @@ document.write( b[i] )
 
 (Cliquez pour agrandir l'image - touche =Escape= pour la fermer.)
 
-Org mode est une outil pour prendre des notes, maintenir des TODO listes,
+Org mode est un outil pour prendre des notes, maintenir des TODO listes,
 faire de la gestion de projet, de la planification et de la publication
 avec un système en text brut, simple et effectif.
 
