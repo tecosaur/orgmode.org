@@ -40,6 +40,12 @@ Download as [[file:org-7.8.11.zip][zip file]] or [[file:org-7.8.11.tar.gz][gzipp
 the =org*.el= Lisp files and the documentation in PDF and (TeX)Info
 formats.  Follow the instructions for [[http://orgmode.org/manual/Installation.html#Installation][Installation]] and [[http://orgmode.org/manual/Activation.html#Activation][Activation]].
 
+** Downloading from GNU ELPA
+
+The [[http://elpa.gnu.org/][GNU Emacs Lisp Package Archive]] contains a daily snapshot of the latest
+git repository.  With Emacs version >= 24.1, simply =M-x list-packages= and
+install Org from there.
+
 ** The development version
 
 You can check out the latest Org development version (along with every
@@ -50,10 +56,12 @@ local clone of the repository, type this (from the command line):
 : git clone git://orgmode.org/org-mode.git
 
 Some more information about this can be found in the [[http://orgmode.org/worg/org-faq.php][FAQ]], under [[http://orgmode.org/worg/org-faq.php#keeping-current-with-Org mode-development]["How do I
-keep current with Org mode development?"]].  For people who cannot use git,
-we provide [[file:org-latest.zip][zip]] or [[file:org-latest.tar.gz][tar.gz]] snapshot release files updated each day and
-corresponding to the latest git version.  Alternatively, you can also
-download a [[http://orgmode.org/w/org-mode.git/snapshot][tar.gz snapshot]] from orgmode.org server.
+keep current with Org mode development?"]].  
+
+For people who cannot use git, we provide [[file:org-latest.zip][zip]] or [[file:org-latest.tar.gz][tar.gz]] snapshot release
+files updated each day and corresponding to the latest git version.
+Alternatively, you can also download a [[http://orgmode.org/w/org-mode.git/snapshot][tar.gz snapshot]] from orgmode.org
+server.
 
 ** Alternative distributions
 
