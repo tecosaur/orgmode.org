@@ -30,6 +30,12 @@ archives contiennent à la fois les fichiers Lisp =org*.el= et la
 documentation en PDF et (TeX)Info.  Suivez les instructions pour
 [[http://orgmode.org/manual/Installation.html#Installation][l'installation]] et [[http://orgmode.org/manual/Activation.html#Activation][l'activation]].
 
+** Depuis GNU ELPA
+
+[[http://elpa.gnu.org/][GNU Emacs Lisp Package Archive]] contient un snapshot quotidien du dépôt git.
+Si vous utilisez une version d'Emacs supérieure à 24.1, vous pouvez faire
+=M-x list-packages= et installer Org de là.
+
 ** La version de développement
 
 Vous pouvez vérifier la version de développement d'Org (en même temps que
