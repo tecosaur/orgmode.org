@@ -12,10 +12,20 @@
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 #+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
+#+LINK: doc http://orgmode.org/worg/doc.html#%s
 
 * Current HEAD of the git repository (not yet released)
 
+
+** COMMENT Online documentation for hooks, commands and options
+
+You can read the documentation for hooks, commands (interactive
+functions) and options (customizable variables) [[http://orgmode.org/worg/doc.html][online]].  Clicking
+on a command/option in this ChangeLog will take you to the online
+documentation for that command/option.
+
 ** New build system and new packages
+
 *** New build system
 
 Achim implemented a new build system.
@@ -39,6 +49,9 @@ See http://orgmode.org/worg/dev/org-build-system.html for details.
 
 *** New packages in contrib/
 
+Note: The =EXPERIMENTAL/= directory has been deleted.  The files
+have been moved to the =contrib/lisp/= directory.
+
 **** =org-notify.el= by Peter Münster
 
 From the comment section:
@@ -59,11 +72,13 @@ From the comment section:
 : are stored as Org-mode headlines using org-bibtex.el.  Most
 : features expect that you keep all of your reading notes in a single
 : file, set the `obe-bibtex-file' variable to the path to this file.
-*** New export engine and new exporters in contrib/
 
-Nicolas new export engine org-export.el now lives in the =contrib/=
+*** New exporters in contrib/
+
+Nicolas export engine org-export.el lives in the =contrib/lisp/=
 directory.  To use it:
 
+: Make sure contrib/lisp/ is in your load-path
 : M-: (require 'org-export) RET
 : M-: (require 'org-e-latex) RET ; or any other library
 : M-x org-export-dispatch RET
@@ -74,9 +89,12 @@ There are new exporters available for this export engine:
 - org-e-md.el by Nicolas Goaziou
 - org-e-texinfo.el by Jonathan Leech-Pepin
 
-If we have enough testers, the new export engine is very likely to 
-replace the current one for the next major release.  Please report
-any problem on the mailing list!
+If we have enough testers, the new export engine is very likely
+to replace the current one for the next major release.  Please
+report any problem on the mailing list!
+
+If you want to write a new export backend based on this export
+engine, please check the [[http://orgmode.org/worg/dev/org-export-reference.html][online documentation]].
 
 *** New Babel languages
 
@@ -92,13 +110,24 @@ has been renamed to =org-agenda-write= and the latter has been deleted.
 
 *** Org Element
 
-org-element is a toolbox for parsing and analysing "elements" in 
-an Org-mode buffer.  This has been written by Nicolas Goaziou and 
-has been tested for quite some time.  It is now part of Org's core 
-and many core functions rely on this package.
+org-element.el is a toolbox for parsing and analysing "elements"
+in an Org-mode buffer.  This has been written by Nicolas Goaziou
+and has been tested for quite some time.  It is now part of Org's
+core and many core functions rely on this package.
 
-Below is a list of editing and navigating commands that now rely on
-org-element.el.
+Two functions might be particularily handy for users:
+=org-element-at-point= and =org-element-context=.  See the
+docstrings for more details.
+
+Below is a list of editing and navigating commands that now rely
+on org-element.el.
+
+**** =org-fill-paragraph= has been completely rewritten
+
+The filling mechanisms now rely on org-element, trying to do the
+right thing on each element in various contexts.  E.g. filling in
+a list item will preserve indentation; filling in message-mode
+will fall back on the relevant filling functions; etc.
 
 **** =org-metaup/down= will drag the element backward/forward
 
@@ -107,13 +136,14 @@ can first select the line as an active region, then =org-metaup/down= to
 move the region backward/forward.  This also works with regions bigger than
 just one line.
 
-**** =org-up/down-element= (=C-c C-^= and =C-c C-_=)
+**** =org-up/down-element= (respectively =C-c C-^= and =C-c C-_=)
 
 This will move the point up/down in the hierarchy of elements.
 
-**** =org-backward/forward-element= (=M-{= and =M-{=)
+**** =org-backward/forward-element= (respectively =M-{= and =M-}=)
 
-This will move the point backward/forward in the hierarchy of elements.
+This will move the point backward/forward in the hierarchy of
+elements.
 
 **** =org-narrow-to-element= will narrow to the element at point
 **** =org-mark-element= will mark the element at point
@@ -147,7 +177,7 @@ generating new ones.  When nil, `q' will kill the single agenda buffer.
 
 **** =N= and =P= in the agenda will move to the next/previous item
 
-**** New command =org-agenda-bulk-mark-all= to mark all items
+**** New command =[[http://orgmode.org][org-agenda-bulk-mark-all]]= to mark all items
 
 This new command is bound to =*= in agenda mode.
 
@@ -248,7 +278,6 @@ the region and hitting =C-c C-q= will set the tags for all headlines in the
 region.
 
 **** New command =org-insert-drawer= to insert a drawer interactively
-
 **** Comments start with "^[ \t]*# " anywhere on a line
 
 Note that the space after the hashtag is mandatory.  Comments with "^#+"
@@ -265,10 +294,6 @@ You can unindent the buffer with =M-x org-unindent-buffer RET=.
 When `non-nil', S-M-<left> will promote level-1 subtrees containing other
 subtrees.  The level-1 headline will be commented out.  You can revert to
 the previous state with M-x undo RET.
-
-**** New option =org-src-prevent-auto-filling=
-
-When non-nil, prevent auto-filling in source blocks.
 
 *** Org Clock
     
@@ -460,8 +485,7 @@ Thanks to Carsten for implementing this.
 Format string to format the date and time in HTML export.
 Thanks to Sébastien Vauban for this patch.
 
-
-*** Misc
+*** Miscellaneous
 
 **** Org allows a new property =APPT_WARNTIME=
 
@@ -503,8 +527,7 @@ level list items.
 
 Fall back on using =org-list-end-re= only, which see.
 
-**** org-feed now expand %(sexp) templates
-
+**** org-feed.el now expands %(sexp) templates
 **** New option =org-protocol-data-separator=
 
 **** New option =org-ditaa-jar-option= to specify the ditaa jar file
@@ -520,10 +543,12 @@ first headline in the region.
 
 When set to =t=, show all (even unscheduled) habits on today's agenda.
 
-
 ** Important bug fixes
 
-*** M-TAB on options keywords (like #+TITLE) completes again
+*** M-TAB on options keywords perform completion correctly again
+
+If you hit =M-TAB= on keywords like =#+TITLE=, Org will try to
+perform completion with meaningful values.
 
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
