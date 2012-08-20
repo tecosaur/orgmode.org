@@ -15,186 +15,524 @@
 
 * Current HEAD of the git repository (not yet released)
 
-** Sticky agendas
+** New build system and new packages
+*** New build system
 
-There is a new option `org-agenda-sticky' which enables "sticky"
-agendas.  Sticky agendas remain opened in the background so that
-you don't need to regenerate them each time you hit the
-corresponding keystroke.  This is a big time saver.
+Achim implemented a new build system.
 
-Thanks to Max Mikhanosha and Carsten for this great addition.
+The basic method for installing Org is the same:
 
-** Implement category filtering. ([[git:8c36e92f][git]])
+1. Download or clone Org.
+2. run `make && make install' from the Org directory.
+3. Add (require 'org-install) in your .emacs.el.
 
-You can now filter the agenda by category.  
+But the build system is now more flexible and can be more easily
+adapted to suit your needs.
 
-Hitting `<' on a line will filter out entries of a different
-category, leaving only entries from one category.  `C-u <' will
-filter our entries from the current category.
+See http://orgmode.org/worg/dev/org-build-system.html for details.
 
-Hitting `^' will filter by "Top" category: only remain entries
-that are of the same category than the Top category of the entry
-at point.  Thanks to John Wiegley for this feature.
+*** New packages in core
 
-** Add support for creating symbolic links in org-attach ([[git:0c302d41][git]])
+**** =org-eshell.el= by Konrad Hinsen is now in Org's core
 
-`org-attach-method' now supports a new method =lns=, allowing to
-attach symbolic links.
+=org-eshell.el= allows you to create links from [[http://www.gnu.org/software/emacs/manual/html_node/eshell/index.html][Eshell]].
 
-Thanks to John Wiegley for implementing this.
+*** New packages in contrib/
 
-** Allow setting tags for headlines in the region ([[git:de400170][git]])
+**** =org-notify.el= by Peter Münster
 
-When `org-loop-over-headlines-in-active-region' is non-nil,
-hitting `C-c C-q' will set tags for the headlines in the current
-region, one by one.
+From the comment section:
 
-** Add new =todo-unblocked= and =nottodo-unblocked= skip conditions ([[git:f426dade][git]])
+: Get notifications, when there is something to do.
+: Sometimes, you need a reminder a few days before a deadline, e.g. to buy a
+: present for a birthday, and then another notification one hour before to
+: have enough time to choose the right clothes.
+: For other events, e.g. rolling the dustbin to the roadside once per week,
+: you probably need another kind of notification strategy.
+: This package tries to satisfy the various needs.
 
-This adds two new tests to `org-agenda-skip-if': 'todo-unblocked
-and 'nottodo-unblocked.  These match like 'todo and 'nottodo, but
-only on unblocked todo items.  This type of test is useful when
-compiling custom agenda views containing lists of currently
-actionable todo items.
+**** =org-bibtex-extras.el= by Eric Schulte
 
-Thanks to Toby S. Cubitt for this change.
+From the comment section:
 
-** Allow to use imagemagick for previewing LaTeX fragements. ([[git:a9d3ce0b][git]])
+: This file add some extra functionality to your bibtex entries which
+: are stored as Org-mode headlines using org-bibtex.el.  Most
+: features expect that you keep all of your reading notes in a single
+: file, set the `obe-bibtex-file' variable to the path to this file.
+*** New export engine and new exporters in contrib/
 
-There is a new option `org-latex-create-formula-image-program' to
-let Org know what program to use to create images from LaTeX
-formulas.
+Nicolas new export engine org-export.el now lives in the =contrib/=
+directory.  To use it:
 
-Thanks to Feng Shu for this patch.
+: M-: (require 'org-export) RET
+: M-: (require 'org-e-latex) RET ; or any other library
+: M-x org-export-dispatch RET
 
-** New option =org-export-date-timestamp-format=. ([[git:e9e249ea][git]])
+There are new exporters available for this export engine:
+
+- org-e-groff.el and org-e-man.el by Luis Anaya
+- org-e-md.el by Nicolas Goaziou
+- org-e-texinfo.el by Jonathan Leech-Pepin
+
+If we have enough testers, the new export engine is very likely to 
+replace the current one for the next major release.  Please report
+any problem on the mailing list!
+
+*** New Babel languages
+
+**** Support for execution of Scala code blocks (see lisp/ob-scala.el)
+**** Support for execution of IO code blocks (see lisp/ob-io.el)
+
+** Incompatible changes
+
+If your code relies on =org-write-agenda= or =org-make-link=: the former
+has been renamed to =org-agenda-write= and the latter has been deleted.
+
+** New features and user-visible changes
+
+*** Org Agenda
+
+**** New option =org-agenda-sticky=
+
+There is a new option `org-agenda-sticky' which enables "sticky" agendas.
+Sticky agendas remain opened in the background so that you don't need to
+regenerate them each time you hit the corresponding keystroke.  This is a
+big time saver.
+
+When =org-agenda-sticky= is non-nil, the agenda =q= key will bury the
+agenda buffers.  Agenda commands will then show existing buffer instead of
+generating new ones.  When nil, `q' will kill the single agenda buffer.
+
+**** =N= and =P= in the agenda will move to the next/previous item
+
+**** New command =org-agenda-bulk-mark-all= to mark all items
+
+This new command is bound to =*= in agenda mode.
+
+There is also a new option =org-agenda-bulk-mark-char= to set the
+character to use as a mark for bulk actions.
+
+**** New option =org-agenda-persistent-marks=
+
+When set to non-nil, marks will remain visible after a bulk action.  You
+can temporarily toggle this by pressing =p= when invoking
+=org-agenda-bulk-action=.
+
+**** New option =org-agenda-skip-timestamp-if-deadline-is-shown=
+
+Non-nil means skip timestamp line if same entry shows because of deadline.
+
+In the agenda of today, an entry can show up multiple times because it has
+both a plain timestamp and has a nearby deadline.  When this variable is t,
+then only the deadline is shown and the fact that the entry has a timestamp
+for or including today is not shown.  When this variable is nil, the entry
+will be shown several times.
+
+**** New =todo-unblocked= and =nottodo-unblocked= skip conditions
+
+See the [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3Df426da][git commit]] for more explanations.
+
+**** Allow category filtering in the agenda
+
+You can now filter the agenda by category.  Pressing "<" will filter by
+the category of the item on the current line, and pressing "<" again will
+remove the filter.  You can combine tag filters and category filters.
+
+You can use =org-agenda-category-filter= in your custom agenda views and
+=org-agenda-category-filter-preset= in your main configuration.
+
+See also the new command =org-agenda-filter-by-top-category=: hitting `^'
+will filter by "Top" category: only show entries that are of the same
+category than the Top category of the entry at point.
+
+*** Org Links
+
+**** Inserting links
+
+When inserting links through =org-insert-link=, the description is now
+displayed first, followed by the literal link, as the description is often
+more useful when you look for the link you want to insert.
+
+Completion now complete both literal links and description.  If you
+complete a description, the literal link and its description will be
+inserted directly, whereas when you complete the literal link, you will be
+prompted for a description (as with Org 7.8.)
+
+In the completion buffer, links to the current buffer are now highlighted.
+
+**** New templates =%h= and =%(sexp)= for abbreviated links
+
+On top of =%s= template, which is replaced by the link tag in abbreviated
+links, you can now use =%h= (which does the same than =%s= but does not
+hexify the tag) and =%(sexp)= (which can run a function that takes the tag
+as its own argument.)
+
+**** New link type =help=
+
+You can now create links from =help= buffers.
+
+For example, if you request help for the command =org-agenda= with =C-h f
+org-agenda RET=, creating a link from this buffer will let you go back to
+the same buffer.
+
+**** New command =org-insert-all-links=
+
+This will insert all links as list items.  With a universal prefix
+argument, links will not be deleted from =org-stored-links=.
+
+This new command is bound to =C-c C-M-l=.
+
+**** New option =org-url-hexify-p=
+
+When set to nil, the URL part of a link will not be hexified.
+
+**** Org can now open multiple shell links
+
+
+**** New option =org-doi-server-url= to specify an alternate DOI server
+
+**** RET now follows time stamps links
+*** Org Element
+
+org-element is a toolbox for parsing and analysing "elements" in 
+an Org-mode buffer.  This has been written by Nicolas Goaziou and 
+has been tested for quite some time.  It is now part of Org's core 
+and many core functions rely on this package.
+
+Below is a list of editing and navigating commands that now rely on
+org-element.el.
+
+**** =org-metaup/down= will drag the element backward/forward
+
+If you want to get the old behavior (i.e. moving a line up and down), you
+can first select the line as an active region, then =org-metaup/down= to
+move the region backward/forward.  This also works with regions bigger than
+just one line.
+
+**** =org-up/down-element= (=C-c C-^= and =C-c C-_=)
+
+This will move the point up/down in the hierarchy of elements.
+
+**** =org-backward/forward-element= (=M-{= and =M-{=)
+
+This will move the point backward/forward in the hierarchy of elements.
+
+**** =org-narrow-to-element= will narrow to the element at point
+**** =org-mark-element= will mark the element at point
+
+This command is bound to =M-h= and will mark the element at point.  If the
+point is at a paragraph, it will mark the paragraph.  If the point is at a
+list item, it will mark the list item.  Etc.
+
+Note that if point is at the beginning of a list, it will mark the whole
+list.
+
+To mark a subtree, you can either use =M-h= on the headline (since there is
+no ambiguity about the element you're at) or =org-mark-subtree= (=C-c @=)
+anywhere in the subtree.
+
+Invoking =org-mark-element= repeatedly will try to mark the next element on
+top of the previous one(s).  E.g. hitting =M-h= twice on a headline will
+mark the current subtree and the next one on the same level.
+
+*** Org Editing
+
+**** =org-todo= and =org-archive-*= can now loop in the active region
+
+When =org-loop-over-headlines-in-active-region= is non-nil, using
+=org-todo= or =org-archive-*= commands in the active region will loop over
+headlines.  This is handy if you want to set the TODO keyword for several
+items, or archive them quickly.
+**** You can now set tags for headlines in a region
+
+If =org-loop-over-headlines-in-active-region= is non-nil, then selecting
+the region and hitting =C-c C-q= will set the tags for all headlines in the
+region.
+
+**** New command =org-insert-drawer= to insert a drawer interactively
+
+**** Comments start with "^[ \t]*# " anywhere on a line
+
+Note that the space after the hashtag is mandatory.  Comments with "^#+"
+are not supported anymore.
+
+**** New speed key =#= to toggle the COMMENT cookie on a headline
+**** =indent-region-function= is now set to =org-indent-region=
+
+=C-M-\= should now produce useful results.
+
+You can unindent the buffer with =M-x org-unindent-buffer RET=.
+**** New option =org-allow-promoting-top-level-subtree=
+
+When `non-nil', S-M-<left> will promote level-1 subtrees containing other
+subtrees.  The level-1 headline will be commented out.  You can revert to
+the previous state with M-x undo RET.
+
+**** New option =org-src-prevent-auto-filling=
+
+When non-nil, prevent auto-filling in source blocks.
+
+*** Org Clock
+    
+**** New keybinding =C-c C-x C-z= for =org-clock-resolve=
+**** New keybinding =C-c C-x C-q= for =org-clock-cancel=
+**** New command =org-clock-in-last= to clock in the last clocked item
+
+This command is bound to =C-c C-x C-x= and will clock in the last clocked
+entry, if any.
+
+**** =C-u M-x org-clock-out RET= now prompts for a state to switch to
+**** =S-M-<up/down>= on a clock timestamps adjusts the previous/next clock
+**** New option =org-clock-continuously=
+
+When set to nil, clocking in a task will first try to find the last clocked
+out task and restart from when that task was clocked out.
+
+You can temporarily activate continuous clocking with =C-u C-u C-u M-x
+org-clock-in RET= (three universal prefix arguments) and =C-u C-u M-x
+org-clock-in-last RET= (two universal prefix arguments).
+
+**** New option =org-clock-frame-title-format=
+
+This option sets the value of =frame-title-format= when clocking in.
+
+**** New options for controlling the clockreport display
+
+=org-clock-file-time-cell-format=: Format string for the file time cells in
+clockreport.
+
+=org-clock-total-time-cell-format=: Format string for the total time cells
+in clockreport.
+
+**** New options for controlling the clock/timer display
+
+=org-clock-clocked-in-display=: control whether the current clock is
+displayed in the mode line and/or frame title.
+
+=org-timer-display=: control whether the current timer is displayed in the
+mode line and/or frame title.
+
+This allows the clock and timer to be displayed in the frame title instead
+of, or as well as, the mode line.  This is useful for people with limited
+space in the mode line but with ample space in the frame title.
+
+*** Org Appearance
+
+**** New option =org-custom-properties=
+
+The visibility of properties listed in this options can be turn on/off with
+=org-toggle-custom-properties-visibility=.  This might be useful for
+properties used by third-part tools or that you don't want to see
+temporarily.
+
+**** New command =org-redisplay-inline-images=
+
+This will redisplay all images.  It is bound to =C-c C-x C-M-v=.
+
+**** New entities in =org-entities.el=
+
+There are these new entities:
+
+:     ("tilde" "\\~{}" nil "&tilde;" "~" "~" "~")
+:     ("slash" "/" nil "/" "/" "/" "/")
+:     ("plus" "+" nil "+" "+" "+" "+")
+:     ("under" "\\_" nil "_" "_" "_" "_")
+:     ("equal" "=" nil "=" "=" "=" "=")
+:     ("asciicirc" "\\textasciicircum{}" nil "^" "^" "^" "^")
+
+**** New face =org-list-dt= for definition terms
+**** New face =org-date-selected= for the selected calendar day
+**** New face value for =org-document-title=
+
+The face is back to a normal height.
+
+*** Org Columns
+
+**** New speed command ":" to activate the column view
+**** New special property =CLOCKSUM_T= to display today's clocked time
+
+You can use =CLOCKSUM_T= the same way you use =CLOCKSUM=.  It will display
+the time spent on tasks for today only.
+
+**** Use the =:COLUMNS:= property in columnview dynamic blocks
+
+If the =:COLUMNS:= is set in a subtree, the columnview dynamic block will
+use its value as the column format.
+
+**** Consider inline tasks when computing a sum
+
+*** Org Dates and Time Stamps
+
+**** Enhanced =org-sparse-tree=
+
+=C-c /= can now check for time ranges.
+
+When checking for dates with =C-c /= it is useful to change the type of
+dates that you are interested in.  You can now do this interactively with
+=c= after =C-c /= and/or by setting =org-sparse-tree-default-date-type= to
+the default value you want.
+
+**** Support for hourly repeat cookies
+
+You can now use
+
+: SCHEDULED: <2012-08-20 lun. 08:00 +1h>
+
+if you want to add an hourly repeater to an entry.
+
+**** =C-u C-u C-c .= inserts a time-stamp with no prompt
+**** When =(setq org-read-date-prefer-future 'time)=, accept days in the prompt
+
+"8am Wed" and "Wed 8am" are now acceptable values when entering a date from
+the prompt.  If =org-read-date-prefer-future= is set to ='time=, this will
+produce the expected prompt indication.
+
+**** New option =org-datetree-add-timestamp=
+
+When set to `non-nil', datetree entries will also have a timestamp.  This
+is useful if you want to see these entries in a sparse tree with =C-c /=.
+
+*** Org Capture
+
+**** New command =org-capture-string=
+
+=M-x org-capture-string RET= will prompt for a string and a capture
+template.  The string will be used as an annotation for the template.
+This is useful when capturing in batch mode as it lets you define the
+content of the template without being in Emacs.
+
+**** New =%l= template to insert the literal link
+**** New option =org-capture-bookmark=
+
+Org used to automatically add a bookmark with capture a note.  You can now
+turn this on by setting =org-capture-bookmark= to nil.
+
+**** Expand =%<num>= escape sequences into text entered for <num>'th =%^{PROMPT}= escape
+
+See the manual for more explanations.
+
+**** More control over empty lines
+
+You can use =:empty-lines-before= and =:empty-lines-after= to control the
+insertion of empty lines.  Check the manual for more explanations.
+
+**** New hook =org-capture-prepare-finalize-hook=
+
+This new hook runs before the finalization process starts.
+
+*** Org Table
+
+*** Org Habit
+
+**** New option =org-habit-show-all-today=
+
+When set to =t=, show all (even unscheduled) habits on today's agenda.
+
+*** Org Export
+
+**** New command =orgtbl-to-table.el= and =orgtbl-to-unicode=
+
+=orgtbl-to-table.el= will convert the table to a =table.el= table, and
+=orgtbl-to-unicode= will use ascii-art-to-unicode.el (when available) to
+print beautiful tables.
+
+**** =org-table-export= now a bit clever about the target format
+
+When you specify a file name like =table.csv=, =org-table-export= will now
+suggest =orgtbl-to-csv= as the default method for exporting the table.
+
+**** New option =org-export-date-timestamp-format=
 
 The option allows to set a time string format for Org timestamps
 in the #+DATE option.
+**** LaTeX: New options for exporting table rules :tstart, :hline and :tend
 
-** New option =org-ditaa-jar-option=. ([[git:d3a45bd7][git]])
+See =org-export-latex-tables-hline=, =org-export-latex-tables-tend=.
 
-Allow to set the path for the ditaa jar file. 
-Thanks to Waldemar Reusch for reporting this need.
+**** LaTeX: You can now set =:hfmt= from =#+ATTR_LaTeX=
+**** Beamer: Add support and keybinding for the =exampleblock= environment
 
-** New option =org-export-html-date-format-string=. ([[git:b05e7cdf][git]])
+Add support for these languages in =org-export-language-setup=.  More
+languages are always welcome.
 
-Format string to format the date and time in HTML export.
-Thanks to Sébastien Vauban for this patch.
-
-** New option =org-protocol-data-separator=. ([[git:d87ec54d][git]])
-
-Allow to use a different separator than "/+" for the protocol
-URL.  Thanks to Harri Kiiskinen for this patch.
-
-** New options for controlling the clockreport display ([[git:7686a81c][git]])
-
-`org-clock-file-time-cell-format': Format string for the file
-time cells in clockreport.
-
-̀org-clock-total-time-cell-format': Format string for the total
-time cells in clockreport.
-
-** New options for controlling the clock/timer display
-
-`org-clock-clocked-in-display': control whether the current clock
-is displayed in the mode line and/or frame title.
-    
-`org-timer-display': control whether the current timer is
-displayed in the mode line and/or frame title.
-    
-This allows the clock and timer to be displayed in the frame
-title instead of, or as well as, the mode line.  This is useful
-for people with limited space in the mode line but with ample
-space in the frame title.
-
-Thanks to George Kettleborough for this work.
-
-** New option =org-beamer-inherited-properties= ([[git:6fdfa1ed][git]])
+**** Beamer: New option =org-beamer-inherited-properties=
 
 This option allows Beamer export to inherit some properties.
 Thanks to Carsten for implementing this.
 
-** New options for the LaTeX export of table rules ([[git:549c498b][git]])
+**** ODT: Add support for ODT export in org-bbdb.el
+**** ODT: Add support for indented tables (see [[http://orgmode.org/w/?p%3Dorg-mode.git%3Ba%3Dcommit%3Bh%3De9fd33][this commit]] for details)
+**** ODT: Improve the conversion from ODT to other formats
+**** ASCII: Swap the level-1/level-2 characters to underline the headlines
+**** Support for Chinese, simplified Chinese, Russian, Ukrainian and Japanese
+**** HTML: New option =org-export-html-date-format-string=
 
-`org-export-latex-tables-tstart' `org-export-latex-tables-hline'
-`org-export-latex-tables-tend' allow to set the tstart, tend and
-hline for LaTeX tables.
+Format string to format the date and time in HTML export.
+Thanks to Sébastien Vauban for this patch.
 
-Thanks to Niels Giessen for this patch.
 
-** New option =org-agenda-persistent-marks= defaulting to nil. ([[git:5add9cde][git]])
 
-When non-nil, keep marks after a bulk action.
+*** Org Properties
 
-** New option =org-src-prevent-auto-filling= defaulting to nil. ([[git:578a7f5a][git]])
+**** New command =org-inc-effort=
 
-New option to prevent auto-filling in src blocks.  This defaults
-to nil to avoid people being surprised that no auto-fill occurs
-in Org buffers where they use `auto-fill-mode'.
+This will increment the effort value.
 
-Thanks to Ken Williams for this feature request and to Charles
-C. Berry for a preliminary patch for this.
+It is bound to =C-c C-x E= and to =E= as a speedy command.
 
-** New option =org-agenda-bulk-mark-char=. ([[git:a16814a4][git]])
+**** Org allows a new property =APPT_WARNTIME=
 
-New option to set the character to use for marks in the agenda.
+You can set it with the =W= speedy key or set it manually.  When set,
+exporting to iCalendar and =org-agenda-to-appt= will use the value of this
+property as the number of minutes for the warning alarm.
 
-** New option =org-clock-frame-title-format=. ([[git:7c513b30][git]])
+*** Misc
 
-New option to set the format of the frame title when clocking in.
+**** Attach: Add support for creating symbolic links
 
-** New option =org-allow-promoting-top-level-subtree= ([[git:10aba6b1][git]])
+`org-attach-method' now supports a new method =lns=, allowing to attach
+symbolic links.
+**** Archive: you can now archive to a datetree
 
-When `non-nil', S-M-<left> will promote level-1 subtrees
-containing other subtrees.  The level-1 headline will be
-commented out.  You can revert to the previous state with M-x
-undo RET.
-
-** org-eshell.el by Konrad Hinsen now in Org's core ([[git:a0f2396f8f45f489ecddae24e34bdfb46abd4c2f][git]])
-
-=org-eshell.el= allows you to create links from [[http://www.gnu.org/software/emacs/manual/html_node/eshell/index.html][Eshell]].
-
-** Use theindex.inc back again ([[git:dd98619286f84c4ced735a052ff13e3fe343c980][git]])
-** New option =org-inlinetask-show-first-star= ([[git:88c07b54][git]])
+**** New option =org-inlinetask-show-first-star=
 
 Non-nil means display the first star of an inline task as
 additional marker.  When nil, the first star is not shown.
 
-Thanks to Carsten Dominik for implementing this.
+**** New option =org-latex-preview-ltxpng-directory=
 
-** New option =org-export-date-timestamp-format= ([[git:e9e249ea][git]])
+This lets you define the path for the =ltxpng/= directory.
 
-Org timestamps in the =#+DATE= field are now automatically
-converted at export time.  You can use the new option
-=org-export-date-timestamp-format= to define the format to use
-for the date.
+**** You can now use imagemagick instead of dvipng to preview LaTeX fragments
+**** You can now turn off =orgstruct++-mode= safely
+**** =C-u C-c C-c= on list items to add check boxes
 
-Thanks to Torsten Wagner for this idea.
+=C-u C-c C-c= will add an empty check box on a list item.
 
-** =org-todo= and =org-archive-*= now loop in the active region
+When hit from the top of the list, it will add check boxes for all top
+level list items.
 
-When =org-loop-over-headlines-in-active-region= is non-nil, using
-=org-todo= or =org-archive-*= commands in the active region will
-loop over headlines.  This is handy if you want to set the TODO
-keyword for several items, or archive them quickly.
+**** =org-list-ending-method= and =org-list-end-regexp= are now obsolete
 
-** New possible value for =org-loop-over-headlines-in-active-region=
+Fall back on using =org-list-end-re= only, which see.
+
+**** org-feed now expand %(sexp) templates
+
+**** New option =org-protocol-data-separator=
+
+**** New option =org-ditaa-jar-option= to specify the ditaa jar file
+
+
+**** New possible value for =org-loop-over-headlines-in-active-region=
 
 When =org-loop-over-headlines-in-active-region= is set to
 =start-level=, the command will loop over the active region but
 will only act upon entries that are of the same level than the
 first headline in the region.
 
-** =org-sparse-tree= can now check for time ranges ([[git:e5d5a1e7][git]])
+** Important bug fixes
 
-=C-c / D= will now check for deadlines and scheduled entries
-within a range of dates.  This is inspired by code and discussion
-with Marc-Oliver Ihm, thanks to him!
-
-** Incompatible changes
-
-*** =org-write-agenda= has been renamed to =org-agenda-write=.
+*** M-TAB on options keywords (like #+TITLE) completes again
 
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
