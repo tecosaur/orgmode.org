@@ -90,6 +90,48 @@ has been renamed to =org-agenda-write= and the latter has been deleted.
 
 ** New features and user-visible changes
 
+*** Org Element
+
+org-element is a toolbox for parsing and analysing "elements" in 
+an Org-mode buffer.  This has been written by Nicolas Goaziou and 
+has been tested for quite some time.  It is now part of Org's core 
+and many core functions rely on this package.
+
+Below is a list of editing and navigating commands that now rely on
+org-element.el.
+
+**** =org-metaup/down= will drag the element backward/forward
+
+If you want to get the old behavior (i.e. moving a line up and down), you
+can first select the line as an active region, then =org-metaup/down= to
+move the region backward/forward.  This also works with regions bigger than
+just one line.
+
+**** =org-up/down-element= (=C-c C-^= and =C-c C-_=)
+
+This will move the point up/down in the hierarchy of elements.
+
+**** =org-backward/forward-element= (=M-{= and =M-{=)
+
+This will move the point backward/forward in the hierarchy of elements.
+
+**** =org-narrow-to-element= will narrow to the element at point
+**** =org-mark-element= will mark the element at point
+
+This command is bound to =M-h= and will mark the element at point.  If the
+point is at a paragraph, it will mark the paragraph.  If the point is at a
+list item, it will mark the list item.  Etc.
+
+Note that if point is at the beginning of a list, it will mark the whole
+list.
+
+To mark a subtree, you can either use =M-h= on the headline (since there is
+no ambiguity about the element you're at) or =org-mark-subtree= (=C-c @=)
+anywhere in the subtree.
+
+Invoking =org-mark-element= repeatedly will try to mark the next element on
+top of the previous one(s).  E.g. hitting =M-h= twice on a headline will
+mark the current subtree and the next one on the same level.
 *** Org Agenda
 
 **** New option =org-agenda-sticky=
@@ -144,7 +186,6 @@ You can use =org-agenda-category-filter= in your custom agenda views and
 See also the new command =org-agenda-filter-by-top-category=: hitting `^'
 will filter by "Top" category: only show entries that are of the same
 category than the Top category of the entry at point.
-
 *** Org Links
 
 **** Inserting links
@@ -192,49 +233,6 @@ When set to nil, the URL part of a link will not be hexified.
 **** New option =org-doi-server-url= to specify an alternate DOI server
 
 **** RET now follows time stamps links
-*** Org Element
-
-org-element is a toolbox for parsing and analysing "elements" in 
-an Org-mode buffer.  This has been written by Nicolas Goaziou and 
-has been tested for quite some time.  It is now part of Org's core 
-and many core functions rely on this package.
-
-Below is a list of editing and navigating commands that now rely on
-org-element.el.
-
-**** =org-metaup/down= will drag the element backward/forward
-
-If you want to get the old behavior (i.e. moving a line up and down), you
-can first select the line as an active region, then =org-metaup/down= to
-move the region backward/forward.  This also works with regions bigger than
-just one line.
-
-**** =org-up/down-element= (=C-c C-^= and =C-c C-_=)
-
-This will move the point up/down in the hierarchy of elements.
-
-**** =org-backward/forward-element= (=M-{= and =M-{=)
-
-This will move the point backward/forward in the hierarchy of elements.
-
-**** =org-narrow-to-element= will narrow to the element at point
-**** =org-mark-element= will mark the element at point
-
-This command is bound to =M-h= and will mark the element at point.  If the
-point is at a paragraph, it will mark the paragraph.  If the point is at a
-list item, it will mark the list item.  Etc.
-
-Note that if point is at the beginning of a list, it will mark the whole
-list.
-
-To mark a subtree, you can either use =M-h= on the headline (since there is
-no ambiguity about the element you're at) or =org-mark-subtree= (=C-c @=)
-anywhere in the subtree.
-
-Invoking =org-mark-element= repeatedly will try to mark the next element on
-top of the previous one(s).  E.g. hitting =M-h= twice on a headline will
-mark the current subtree and the next one on the same level.
-
 *** Org Editing
 
 **** =org-todo= and =org-archive-*= can now loop in the active region
@@ -420,14 +418,6 @@ insertion of empty lines.  Check the manual for more explanations.
 
 This new hook runs before the finalization process starts.
 
-*** Org Table
-
-*** Org Habit
-
-**** New option =org-habit-show-all-today=
-
-When set to =t=, show all (even unscheduled) habits on today's agenda.
-
 *** Org Export
 
 **** New command =orgtbl-to-table.el= and =orgtbl-to-unicode=
@@ -471,14 +461,7 @@ Format string to format the date and time in HTML export.
 Thanks to Sébastien Vauban for this patch.
 
 
-
-*** Org Properties
-
-**** New command =org-inc-effort=
-
-This will increment the effort value.
-
-It is bound to =C-c C-x E= and to =E= as a speedy command.
+*** Misc
 
 **** Org allows a new property =APPT_WARNTIME=
 
@@ -486,7 +469,11 @@ You can set it with the =W= speedy key or set it manually.  When set,
 exporting to iCalendar and =org-agenda-to-appt= will use the value of this
 property as the number of minutes for the warning alarm.
 
-*** Misc
+**** New command =org-inc-effort=
+
+This will increment the effort value.
+
+It is bound to =C-c C-x E= and to =E= as a speedy command.
 
 **** Attach: Add support for creating symbolic links
 
@@ -522,13 +509,17 @@ Fall back on using =org-list-end-re= only, which see.
 
 **** New option =org-ditaa-jar-option= to specify the ditaa jar file
 
-
 **** New possible value for =org-loop-over-headlines-in-active-region=
 
 When =org-loop-over-headlines-in-active-region= is set to
 =start-level=, the command will loop over the active region but
 will only act upon entries that are of the same level than the
 first headline in the region.
+
+**** New option =org-habit-show-all-today=
+
+When set to =t=, show all (even unscheduled) habits on today's agenda.
+
 
 ** Important bug fixes
 
