@@ -103,8 +103,11 @@ engine, please check the [[http://orgmode.org/worg/dev/org-export-reference.html
 
 ** Incompatible changes
 
-If your code relies on =org-write-agenda= or =org-make-link=: the former
-has been renamed to =org-agenda-write= and the latter has been deleted.
+- If your code relies on =org-write-agenda=, use
+  =org-agenda-write= from now on.
+
+- If your code relies on =org-make-link=, please use =concat=
+  instead.
 
 ** New features and user-visible changes
 
