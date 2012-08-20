@@ -83,11 +83,17 @@ directory.  To use it:
 : M-: (require 'org-e-latex) RET ; or any other library
 : M-x org-export-dispatch RET
 
-There are new exporters available for this export engine:
+These are the currently available exporters:
 
-- org-e-groff.el and org-e-man.el by Luis Anaya
+- org-e-ascii.el by Nicolas
+- org-e-beamer.el by Nicolas
+- org-e-groff.el by Luis Anaya
+- org-e-html.el by Jambunathan
+- org-e-latex.el by Nicolas
+- org-e-man.el by Luis Anaya
+- org-e-odt.el by Jambunathan
 - org-e-texinfo.el by Jonathan Leech-Pepin
-- org-md.el by Nicolas Goaziou
+- org-md.el by Nicolas 
 
 If we have enough testers, the new export engine is very likely
 to replace the current one for the next major release.  Please
