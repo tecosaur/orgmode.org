@@ -86,8 +86,8 @@ directory.  To use it:
 There are new exporters available for this export engine:
 
 - org-e-groff.el and org-e-man.el by Luis Anaya
-- org-e-md.el by Nicolas Goaziou
 - org-e-texinfo.el by Jonathan Leech-Pepin
+- org-md.el by Nicolas Goaziou
 
 If we have enough testers, the new export engine is very likely
 to replace the current one for the next major release.  Please
