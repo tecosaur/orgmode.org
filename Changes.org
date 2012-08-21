@@ -559,6 +559,24 @@ When set to =t=, show all (even unscheduled) habits on today's agenda.
 If you hit =M-TAB= on keywords like =#+TITLE=, Org will try to
 perform completion with meaningful values.
 
+*** Add licenses to javascript embedded and external code snippets
+
+Embedded javascript code is now licensed under GPLv3 (or later),
+the copyright is owned by the Free Software Foundation, Inc.
+
+The javascript code for embedding MathJax in the browser mentions
+the MathJax copyright and the Apache 2.0 license.
+
+The javascript code for embedding org-injo.js in the browser
+mentions the copyright of Sebastian Rose and the GPLv3 (or later)
+license.
+
+=org-export-html-scripts= is now a variable, so that you can
+adapt the code and license to your needs.
+
+See http://www.gnu.org/philosophy/javascript-trap.html for
+explanations on why these changes were necessary.
+
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
 ** Summary
