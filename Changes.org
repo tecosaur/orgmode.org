@@ -108,10 +108,16 @@ please check the [[http://orgmode.org/worg/dev/org-export-reference.html][online
 
 ** Incompatible changes
 
-- If your code relies on =org-write-agenda=, please use [[doc::org-agenda-write][org-agenda-write]]
-  from now on.
+- If your code relies on =org-write-agenda=, please use
+  [[doc::org-agenda-write][org-agenda-write]] from now on.
 
-- If your code relies on =org-make-link=, please use =concat= instead.
+- If your code relies on =org-make-link=, please use =concat=
+  instead.
+
+- The default value of [[doc::org-table-number-regexp][org-table-number-regexp]] now allows commas as the
+  mark to separate decimals from integers in numbers.  If your code relies
+  on the previous behavior, please customize this variable.  See the
+  announcement on the mailing list.
 
 ** New features and user-visible changes
 
@@ -412,10 +418,10 @@ You can now use
 if you want to add an hourly repeater to an entry.
 
 **** =C-u C-u C-c .= inserts a time-stamp with no prompt
-**** When =(setq [[doc::org-read-date-prefer-future][org-read-date-prefer-future]] 'time)=, accept days in the prompt
+**** When (setq [[doc::org-read-date-prefer-future][org-read-date-prefer-future]] 'time), accept days in the prompt
 
 "8am Wed" and "Wed 8am" are now acceptable values when entering a date from
-the prompt.  If [[doc::org-read-date-prefer-future][org-read-date-prefer-future]] is set to ='time=, this will
+the prompt.  If [[doc::org-read-date-prefer-future][org-read-date-prefer-future]] is set to =time=, this will
 produce the expected prompt indication.
 
 **** New option [[doc::org-datetree-add-timestamp][org-datetree-add-timestamp]]
@@ -427,10 +433,10 @@ is useful if you want to see these entries in a sparse tree with =C-c /=.
 
 **** New command [[doc::org-capture-string][org-capture-string]]
 
-=M-x [[doc::org-capture-string][org-capture-string]] RET= will prompt for a string and a capture
-template.  The string will be used as an annotation for the template.
-This is useful when capturing in batch mode as it lets you define the
-content of the template without being in Emacs.
+M-x [[doc::org-capture-string][org-capture-string]] RET will prompt for a string and a capture template.
+The string will be used as an annotation for the template.  This is useful
+when capturing in batch mode as it lets you define the content of the
+template without being in Emacs.
 
 **** New =%l= template to insert the literal link
 **** New option [[doc::org-capture-bookmark][org-capture-bookmark]]
@@ -561,21 +567,21 @@ perform completion with meaningful values.
 
 *** Add licenses to javascript embedded and external code snippets
 
-Embedded javascript code is now licensed under GPLv3 (or later),
-the copyright is owned by the Free Software Foundation, Inc.
+Embedded javascript code produced when exporting an Org file to HTML is now
+licensed under GPLv3 (or later), and the copyright is owned by the Free
+Software Foundation, Inc.
 
-The javascript code for embedding MathJax in the browser mentions
-the MathJax copyright and the Apache 2.0 license.
+The javascript code for embedding MathJax in the browser mentions the
+MathJax copyright and the Apache 2.0 license.
 
-The javascript code for embedding org-injo.js in the browser
-mentions the copyright of Sebastian Rose and the GPLv3 (or later)
-license.
+The javascript code for embedding =org-injo.js= in the browser mentions the
+copyright of Sebastian Rose and the GPLv3 (or later) license.
 
-[[doc::org-export-html-scripts][org-export-html-scripts]] is now a variable, so that you can
-adapt the code and license to your needs.
+[[doc::org-export-html-scripts][org-export-html-scripts]] is now a variable, so that you can adapt the code
+and the license to your needs.
 
-See http://www.gnu.org/philosophy/javascript-trap.html for
-explanations on why these changes were necessary.
+See http://www.gnu.org/philosophy/javascript-trap.html for explanations on
+why these changes were necessary.
 
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
