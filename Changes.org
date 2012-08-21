@@ -495,6 +495,7 @@ Thanks to Sébastien Vauban for this patch.
 
 *** Miscellaneous
 
+**** [[doc::org-table-number-regexp][org-table-number-regexp]] accept comma as a decimal mark to represent numbers
 **** Org allows a new property =APPT_WARNTIME=
 
 You can set it with the =W= speedy key or set it manually.  When set,
