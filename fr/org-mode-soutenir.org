@@ -54,7 +54,8 @@ monde que vous aimez Org mode !  Vous pouvez acheter dans la boutique aux
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-* COMMENT Il nous soutiennent
+* Merci
 
-[[http://fsffrance.org/][FSF France]] fait une donation mensuelle de 100€.  Merci à eux pour leur
-soutien !
+De mars 2011 à mars 2012, FSF France a fait une donation mensuelle de 100€.
+
+Merci !

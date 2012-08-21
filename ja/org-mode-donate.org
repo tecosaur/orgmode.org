@@ -46,6 +46,9 @@ flatter を使うことでも org-mode を支援できます。Org modeユーザ
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-* COMMENT FSF フランス によるサポート
+* Thanks
 
-[[http://fsffrance.org/][FSF フランス]]が、毎月100ユーロを寄付しています。FSF フランスの支援に感謝します。
+From March 2011 to March 2012, FSF France made a monthly donation of 100€.
+
+Thanks!
+

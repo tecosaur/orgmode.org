@@ -64,7 +64,8 @@ Org mode!  You can buy at the [[http://orgmode.spreadshirt.com][US shop]] or at 
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-* COMMENT They support us
+* Thanks
 
-[[http://fsffrance.org/][FSF France]] is making a monthly donation of 100€.  Thanks to FSF France for
-their support!
+From March 2011 to March 2012, FSF France made a monthly donation of 100€.
+
+Thanks!
