@@ -54,7 +54,7 @@ comprar en la [[http://orgmode.spreadshirt.com][tienda de EEUU]] o en la [[http:
 
 #+HTML: <img src="http://orgmode.org/img/shirts.jpg" style="border:1px solid black; width:200px" alt="http://orgmode.org/img/shirts.jpg" />
 
-* Ellos nos financian
+* COMMENT Ellos nos financian
 
 [[http://fsffrance.org/][FSF Francia]] está haciendo una donación mensual de 100€. ¡Gracias a FSF
 Francia por esta aportación!
