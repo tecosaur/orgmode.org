@@ -32,7 +32,7 @@ Achim implemented a new build system.
 The basic method for installing Org is the same:
 
 1. Download or clone Org.
-2. run `make && make install' from the Org directory.
+2. run `make install' from the Org directory.
 3. Add (require 'org-install) in your .emacs.el.
 
 But the build system is now more flexible and can be more easily
