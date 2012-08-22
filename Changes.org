@@ -16,6 +16,25 @@
 
 * Current HEAD of the git repository (not yet released)
 
+** New committers who signed the FSF copyright assigment
+
+Welcome and thanks to these new core contributors:
+
+- Andrew Hyatt
+- Andrzej Lichnerowicz
+- Ethan Ligon
+- Feng Shu
+- George Kettleborough
+- Henning Dietmar Weiss
+- Ilya Shlyakhter
+- Ivan Kanis
+- Konrad Hinsen
+- Madan Ramakrishnan
+- Max Mikhanosha
+- Moritz Ulrich
+- Rick Frankel
+- Toby Cubitt
+
 ** Online documentation for hooks, commands and options
 
 You can read the documentation for hooks, commands (i.e. interactive
@@ -84,15 +103,15 @@ To use it:
 
 These are the currently available exporters:
 
-- org-e-ascii.el by Nicolas
-- org-e-beamer.el by Nicolas
-- org-e-groff.el by Luis Anaya
-- org-e-html.el by Jambunathan
-- org-e-latex.el by Nicolas
-- org-e-man.el by Luis Anaya
-- org-e-odt.el by Jambunathan
-- org-e-texinfo.el by Jonathan Leech-Pepin
-- org-md.el by Nicolas 
+- =org-e-ascii.el= by Nicolas
+- =org-e-beamer.el= by Nicolas
+- =org-e-groff.el= by Luis Anaya
+- =org-e-html.el= by Jambunathan
+- =org-e-latex.el= by Nicolas
+- =org-e-man.el= by Luis Anaya
+- =org-e-odt.el= by Jambunathan
+- =org-e-texinfo.el= by Jonathan Leech-Pepin
+- =org-md.el= by Nicolas 
 
 If we have enough testers, the new export engine is very likely to replace
 the current one for the next major release.  Please report any problem on
