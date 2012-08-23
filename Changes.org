@@ -206,6 +206,21 @@ When [[doc::org-agenda-sticky][org-agenda-sticky]] is =non-nil=, the agenda =q= 
 agenda buffers.  Agenda commands will then show existing buffer instead of
 generating new ones.  When =nil=, =q= will kill the single agenda buffer.
 
+**** New option [[doc::org-agenda-custom-commands-contexts][org-agenda-custom-commands-contexts]]
+
+Setting this option allows you to define specific context where
+agenda commands should be available from.  For example, when set
+to this value
+
+#+BEGIN_SRC emacs-lisp
+  (setq org-agenda-custom-commands-contexts
+        '(("p" (in-file . "\\.txt"))))
+#+END_SRC
+
+then the =p= agenda command will only be available from buffers
+visiting *.txt files.  See the docstring and the manual for more
+details on how to use this.
+
 **** =N= and =P= in the agenda will move to the next/previous item
 
 **** New command [[doc::org-agenda-bulk-mark-all][org-agenda-bulk-mark-all]] to mark all items
@@ -456,6 +471,21 @@ M-x [[doc::org-capture-string][org-capture-string]] RET will prompt for a string
 The string will be used as an annotation for the template.  This is useful
 when capturing in batch mode as it lets you define the content of the
 template without being in Emacs.
+
+**** New option [[doc::org-capture-templates-contexts][org-capture-templates-contexts]]
+
+Setting this option allows you to define specific context where
+capture templates should be available from.  For example, when
+set to this value
+
+#+BEGIN_SRC emacs-lisp
+  (setq org-capture-templates-contexts
+        '(("c" (in-mode . "message-mode"))))
+#+END_SRC
+
+then the =c= capture template will only be available from
+=message-mode= buffers.  See the docstring and the manual for
+more details on how to use this.
 
 **** New =%l= template to insert the literal link
 **** New option [[doc::org-capture-bookmark][org-capture-bookmark]]
