@@ -42,6 +42,22 @@ functions) and options (i.e. customizable variables) [[http://orgmode.org/worg/d
 command/option in this ChangeLog will take you to the online documentation
 for that command/option.
 
+** Overview of the new keybindings
+
+| Keybinding      | Speedy | Command                     |
+|-----------------+--------+-----------------------------|
+| =C-c C-x C-z=   |        | [[doc::org-clock-resolve][org-clock-resolve]]           |
+| =C-c C-x C-q=   |        | [[doc::org-clock-cancel][org-clock-cancel]]            |
+| =C-c C-x C-x=   |        | [[doc::org-clock-in-last][org-clock-in-last]]           |
+| =M-h=           |        | [[doc::org-mark-element][org-mark-element]]            |
+| =*=             |        | [[doc::org-agenda-bulk-mark-all][org-agenda-bulk-mark-all]]    |
+| =C-c C-M-l=     |        | [[doc::org-insert-all-links][org-insert-all-links]]        |
+| =C-c C-x C-M-v= |        | [[doc::org-redisplay-inline-images][org-redisplay-inline-images]] |
+| =C-c C-x E=     | =E=    | [[doc::org-inc-effort][org-inc-effort]]              |
+|                 | =#=    | [[doc::org-toggle-comment][org-toggle-comment]]          |
+|                 | =:=    | [[doc::org-columns][org-columns]]                 |
+|                 | =W=    | Set =APPT_WARNTIME=         |
+
 ** New build system and new packages
 
 *** New build system
@@ -419,7 +435,7 @@ The face is back to a normal height.
 
 *** Org Columns
 
-**** New speed command ":" to activate the column view
+**** New speed command =:= to activate the column view
 **** New special property =CLOCKSUM_T= to display today's clocked time
 
 You can use =CLOCKSUM_T= the same way you use =CLOCKSUM=.  It will display
