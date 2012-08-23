@@ -143,16 +143,18 @@ please check the [[http://orgmode.org/worg/dev/org-export-reference.html][online
 
 ** Incompatible changes
 
+- The =UTILITIES/= directory has been renamed to =utils/=.
+
 - If your code relies on =org-write-agenda=, please use
   [[doc::org-agenda-write][org-agenda-write]] from now on.
 
 - If your code relies on =org-make-link=, please use =concat=
   instead.
 
-- The default value of [[doc::org-table-number-regexp][org-table-number-regexp]] now allows commas as the
-  mark to separate decimals from integers in numbers.  If your code relies
-  on the previous behavior, please customize this variable.  See the
-  announcement on the mailing list.
+- The default value of [[doc::org-table-number-regexp][org-table-number-regexp]] now allows commas
+  as the mark to separate decimals from integers in numbers.  If
+  your code relies on the previous behavior, please customize
+  this variable.  See the announcement on the mailing list.
 
 ** New features and user-visible changes
 
