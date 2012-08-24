@@ -14,7 +14,7 @@
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 #+LINK: doc http://orgmode.org/worg/doc.html#%s
 
-* Current HEAD of the git repository (not yet released)
+* Version 7.9 ([[git:d44b56e81e7cf2f0afd03e1e1962b996ffa61305][git]])
 
 ** New committers who signed the FSF copyright assigment
 

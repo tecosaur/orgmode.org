@@ -26,6 +26,7 @@ if (language.indexOf('ja') > -1) document.location.href = '/ja/org-mode-news.htm
   #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
+- <2012-08-24> Release 7.9
 - <2012-05-25> Release 7.8.11 (bugfix release)
 - <2012-05-16> Release 7.8.10 (bugfix release)
 - <2012-04-11> Release 7.8.09 (bugfix release)
