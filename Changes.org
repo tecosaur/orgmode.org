@@ -609,7 +609,7 @@ level list items.
 
 Fall back on using [[doc::org-list-end-re][org-list-end-re]] only, which see.
 
-**** org-feed.el now expands %(sexp) templates
+**** org-feed.el now expands =%(sexp)= templates
 **** New option [[doc::org-protocol-data-separator][org-protocol-data-separator]]
 
 **** New option [[doc::org-ditaa-jar-option][org-ditaa-jar-option]] to specify the ditaa jar file
