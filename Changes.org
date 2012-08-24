@@ -370,7 +370,7 @@ the previous state with =M-x undo RET=.
 This command is bound to =C-c C-x C-x= and will clock in the last clocked
 entry, if any.
 
-**** =C-u M-x [[doc::org-clock-out][org-clock-out]] RET= now prompts for a state to switch to
+**** =C-u M-x= [[doc::org-clock-out][org-clock-out]] =RET= now prompts for a state to switch to
 **** =S-M-<up/down>= on a clock timestamps adjusts the previous/next clock
 **** New option [[doc::org-clock-continuously][org-clock-continuously]]
 
