@@ -165,8 +165,8 @@ Org-mode buffer.  This has been written by Nicolas Goaziou and has been
 tested for quite some time.  It is now part of Org's core and many core
 functions rely on this package.
 
-Two functions might be particularily handy for users: [[doc::org-element-at-point][org-element-at-point]]
-and [[doc::org-element-context][org-element-context]].  See the docstrings for more details.
+Two functions might be particularily handy for users: =org-element-at-point=
+and =org-element-context=.  See the docstrings for more details.
 
 Below is a list of editing and navigating commands that now rely on
 org-element.el.
@@ -275,8 +275,8 @@ You can now filter the agenda by category.  Pressing "<" will filter by
 the category of the item on the current line, and pressing "<" again will
 remove the filter.  You can combine tag filters and category filters.
 
-You can use [[doc::org-agenda-category-filter][org-agenda-category-filter]] in your custom agenda views and
-[[doc::org-agenda-category-filter-preset][org-agenda-category-filter-preset]] in your main configuration.
+You can use =org-agenda-category-filter= in your custom agenda views and
+=org-agenda-category-filter-preset= in your main configuration.
 
 See also the new command [[doc::org-agenda-filter-by-top-category][org-agenda-filter-by-top-category]]: hitting `^'
 will filter by "Top" category: only show entries that are of the same
@@ -314,7 +314,7 @@ the same buffer.
 **** New command [[doc::org-insert-all-links][org-insert-all-links]]
 
 This will insert all links as list items.  With a universal prefix
-argument, links will not be deleted from [[doc::org-stored-links][org-stored-links]].
+argument, links will not be deleted from =org-stored-links=.
 
 This new command is bound to =C-c C-M-l=.
 
@@ -377,9 +377,10 @@ entry, if any.
 When set to =nil=, clocking in a task will first try to find the last
 clocked out task and restart from when that task was clocked out.
 
-You can temporarily activate continuous clocking with =C-u C-u C-u M-x
-[[doc::org-clock-in][org-clock-in]] RET= (three universal prefix arguments) and =C-u C-u M-x
-[[doc::org-clock-in-last][org-clock-in-last]] RET= (two universal prefix arguments).
+You can temporarily activate continuous clocking with =C-u C-u
+C-u M-x= [[doc::org-clock-in][org-clock-in]] =RET= (three universal prefix arguments) and
+=C-u C-u M-x= [[org-clock-in-last][org-clock-in-last]] =RET= (two universal prefix
+arguments).
 
 **** New option [[doc::org-clock-frame-title-format][org-clock-frame-title-format]]
 
@@ -526,16 +527,16 @@ This new hook runs before the finalization process starts.
 
 *** Org Export
 
-**** New command [[doc::orgtbl-to-table.el][orgtbl-to-table.el]] and [[doc::orgtbl-to-unicode][orgtbl-to-unicode]]
+**** New functions =orgtbl-to-table.el= and =orgtbl-to-unicode=
 
-[[doc::orgtbl-to-table.el][orgtbl-to-table.el]] will convert the table to a =table.el= table, and
-[[doc::orgtbl-to-unicode][orgtbl-to-unicode]] will use ascii-art-to-unicode.el (when available) to
-print beautiful tables.
+=orgtbl-to-table.el= convert the table to a =table.el= table, and
+=orgtbl-to-unicode= will use =ascii-art-to-unicode.el= (when
+available) to print beautiful tables.
 
 **** [[doc::org-table-export][org-table-export]] now a bit clever about the target format
 
 When you specify a file name like =table.csv=, [[doc::org-table-export][org-table-export]] will now
-suggest [[doc::orgtbl-to-csv][orgtbl-to-csv]] as the default method for exporting the table.
+suggest =orgtbl-to-csv= the default method for exporting the table.
 
 **** New option [[doc::org-export-date-timestamp-format][org-export-date-timestamp-format]]
 
@@ -607,7 +608,7 @@ level list items.
 
 **** =org-list-ending-method= and =org-list-end-regexp= are now obsolete
 
-Fall back on using [[doc::org-list-end-re][org-list-end-re]] only, which see.
+Fall back on using =org-list-end-re= only, which see.
 
 **** org-feed.el now expands =%(sexp)= templates
 **** New option [[doc::org-protocol-data-separator][org-protocol-data-separator]]
@@ -644,12 +645,11 @@ MathJax copyright and the Apache 2.0 license.
 The javascript code for embedding =org-injo.js= in the browser mentions the
 copyright of Sebastian Rose and the GPLv3 (or later) license.
 
-[[doc::org-export-html-scripts][org-export-html-scripts]] is now a variable, so that you can adapt the code
-and the license to your needs.
+=org-export-html-scripts= is now a variable, so that you can
+adapt the code and the license to your needs.
 
-See http://www.gnu.org/philosophy/javascript-trap.html for explanations on
-why these changes were necessary.
-
+See http://www.gnu.org/philosophy/javascript-trap.html for
+explanations on why these changes were necessary.
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])
 
 ** Summary
