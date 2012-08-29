@@ -20,6 +20,7 @@
 
 Welcome and thanks to these new core contributors:
 
+- Abdó Roig-Maranges
 - Andrew Hyatt
 - Andrzej Lichnerowicz
 - Ethan Ligon
