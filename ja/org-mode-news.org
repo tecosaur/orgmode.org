@@ -14,6 +14,7 @@
   #+ATTR_HTML: style="float:right;"
   [[http://mobileorg.ncogni.to/][http://mobileorg.ncogni.to/images/screenshot-browse.png]]
 
+- <2012-09-03> バージョン 7.9.1 を公開
 - <2012-08-24> バージョン 7.9 を公開
 - <2012-05-25> バージョン 7.8.11 を公開（バグフィックス）
 - <2012-05-16> バージョン 7.8.10 を公開（バグフィックス）
