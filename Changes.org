@@ -14,7 +14,7 @@
 #+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
 #+LINK: doc http://orgmode.org/worg/doc.html#%s
 
-* Version 7.9 ([[git:d44b56e81e7cf2f0afd03e1e1962b996ffa61305][git]])
+* Version 7.9.1
 
 ** New committers who signed the FSF copyright assigment
 
@@ -58,6 +58,7 @@ for that command/option.
 |                 | =#=    | [[doc::org-toggle-comment][org-toggle-comment]]          |
 |                 | =:=    | [[doc::org-columns][org-columns]]                 |
 |                 | =W=    | Set =APPT_WARNTIME=         |
+| =k=             |        | [[doc::org-agenda-capture][org-agenda-capture]]          |
 
 ** New build system and new packages
 
@@ -216,14 +217,18 @@ mark the current subtree and the next one on the same level.
 
 **** New option [[doc::org-agenda-sticky][org-agenda-sticky]]
 
-There is a new option `org-agenda-sticky' which enables "sticky" agendas.
-Sticky agendas remain opened in the background so that you don't need to
-regenerate them each time you hit the corresponding keystroke.  This is a
-big time saver.
+There is a new option =org-agenda-sticky= which enables "sticky"
+agendas.  Sticky agendas remain opened in the background so that you
+don't need to regenerate them each time you hit the corresponding
+keystroke.  This is a big time saver.
 
-When [[doc::org-agenda-sticky][org-agenda-sticky]] is =non-nil=, the agenda =q= key will bury the
-agenda buffers.  Agenda commands will then show existing buffer instead of
-generating new ones.  When =nil=, =q= will kill the single agenda buffer.
+When [[doc::org-agenda-sticky][org-agenda-sticky]] is =non-nil=, the agenda buffer will be named
+using the agenda key and its description.  In sticky agendas, the =q=
+key will just bury the agenda buffers and further agenda commands will
+show existing buffer instead of generating new ones.  
+
+If [[doc::org-agenda-sticky][org-agenda-sticky]] is set to =nil=, =q= will kill the single agenda
+buffer.
 
 **** New option [[doc::org-agenda-custom-commands-contexts][org-agenda-custom-commands-contexts]]
 
@@ -239,6 +244,23 @@ to this value
 then the =p= agenda command will only be available from buffers
 visiting *.txt files.  See the docstring and the manual for more
 details on how to use this.
+
+**** Changes in bulk actions
+
+The set of commands starting with =k ...= as been deleted and the
+features have been merged into the "bulk action" feature.
+
+After you marked some entries in the agenda, if you call =B s=, the
+agenda entries will be rescheduled using the date at point if on a
+date header.  If you are on an entry with a timestamp, you will be
+prompted for a date to reschedule your marked entries to, using the
+timestamp at point as the default prompt.
+
+You can now use =k= to capture the marked entry and use the date at
+point as an overriding date for the capture template.
+
+To bind this behavior to =M-x org-capture RET= (or its keybinding),
+set the new option [[doc::org-capture-use-agenda-date][org-capture-use-agenda-date]] to =t=.
 
 **** =N= and =P= in the agenda will move to the next/previous item
 
