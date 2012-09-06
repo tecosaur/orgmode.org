@@ -1,18 +1,13 @@
-#   -*- mode: org; fill-column: 65 -*-
-
-#+TITLE: List of Org mode user-visible changes
-#+AUTHOR:  Carsten Dominik
-#+EMAIL:  carsten at orgmode dot org
+#+TITLE: Org-mode -- release notes
+#+AUTHOR:    Carsten Dominik
+#+EMAIL:     carsten at orgmode dot org
 #+LANGUAGE:  en
-#+STARTUP: indent hidestars
+#+STARTUP:   indent hidestars
+#+LINK:      git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
+#+LINK:      doc http://orgmode.org/worg/doc.html#%s
 #+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+STYLE:     <link rel="icon" type="image/png" href="http://orgmode.org/org-mode-unicorn.png" />
-#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
-#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
-#+LINK: git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
-#+LINK: doc http://orgmode.org/worg/doc.html#%s
+#+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org Org-mode Emacs Changes ChangeLog release notes
 
 * Version 7.9.1
 

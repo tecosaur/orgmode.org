@@ -1,16 +1,10 @@
-#   -*- mode: org; fill-column: 72 -*-
-
 #+TITLE: Archive list of Org mode changes
-#+AUTHOR:  Carsten Dominik
-#+EMAIL:  carsten at orgmode dot org
+#+AUTHOR: Carsten Dominik
+#+EMAIL: carsten at orgmode dot org
 #+STARTUP: hidestars
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org Org-mode Emacs Changes ChangeLog release notes archives
 #+OPTIONS: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:{} *:t TeX:t LaTeX:nil
-#+STYLE:     <base href="http://localhost/org-mode/index.html" />
-#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
-#+STYLE:     <link rel="stylesheet" href="org2.css" type="text/css" />
-#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
 
 * Version 6.36
 
