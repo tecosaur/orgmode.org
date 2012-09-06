@@ -1,25 +1,11 @@
-#+TITLE: Org mode: Talks
-#+AUTHOR: Bastien
+#+TITLE:     Org mode: Talks
+#+AUTHOR:    Bastien
+#+EMAIL:     bzg at gnu dot org
+#+STARTUP:   hidestars
 #+LANGUAGE:  en
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+STYLE:     <base href="http://orgmode.org/" />
-#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
-#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
-#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
-
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape')
-var language = navigator.language;
-else
-var language = navigator.browserLanguage;
-if (language.indexOf('fr') > -1) document.location.href = '/fr/talks.html';
-if (language.indexOf('es') > -1) document.location.href = '/es/talks.html';
-if (language.indexOf('ja') > -1) document.location.href = '/ja/talks.html';
-</script>
-#+end_html
+#+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org Org-mode Emacs Talks about Org-mode
 
 * GoogleTech Talk by Carsten Dominik (2008)
 
