@@ -1,4 +1,4 @@
-#+TITLE:     The Org mode TODO list
+#+TITLE:     Org mode for Emacs -- TODO list (obsolete)
 #+EMAIL:     carsten at orgmode dot org
 #+STARTUP:   align hidestars
 #+TYP_TODO:  TODO IDEA WISH QUESTION INCONSISTENCY BUG | DONE DECLINED 

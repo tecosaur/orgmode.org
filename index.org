@@ -6,15 +6,40 @@
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 
-/Une phrase pour résumer./
+#+BEGIN_HTML
+<script type="text/javascript" src="js/org.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+#+END_HTML
 
-* Text
+/Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system./
 
-Download Org 7.9.1 as a zip or tar.gz
+* Download and install
+  :PROPERTIES:
+  :CUSTOM_ID: text-1
+  :END:
 
-* Image
-
-#+ATTR_HTML: width="500px"
+#+ATTR_HTML: style="float: right;" width="500px"
 [[file:orgmode.png]]
 
+Latest stable version of Org mode is *7.9.1* (sept. 2012).
+
+Download it as a [[http://orgmode.org/org-7.9.1.tar.gz][.tar.gz]] or [[http://orgmode.org/org-7.9.1.zip][.zip]] archive.
+
+=git clone git://orgmode.org/org-mode.git=
+
+Since Emacs 24.1, Org is available from =M-x list-packages RET=
+
+#+BEGIN_HTML
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+#+END_HTML
+
+* Documentation
+  :PROPERTIES:
+  :CUSTOM_ID: text-2
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:orgmode.png]]
 
