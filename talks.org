@@ -1,4 +1,4 @@
-#+TITLE:     Org mode: Talks
+#+TITLE:     Org mode for Emacs -- Talks and presentations
 #+AUTHOR:    Bastien
 #+EMAIL:     bzg at gnu dot org
 #+STARTUP:   hidestars
@@ -17,6 +17,11 @@ to [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] and [[http://technica
 <iframe width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
 #+end_html
 
+#+BEGIN_HTML
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+#+END_HTML
+
 * Carsten's talk at the Max Planck Institute for Neurological Research (2010)
 
 This is a talk presented on February 8th 2010 at the Max Planck Institute
@@ -27,22 +32,37 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 <iframe src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+end_html
 
+#+BEGIN_HTML
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+#+END_HTML
+
 * Interview of Carsten Dominik at [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
 
 #+begin_html
 <iframe src="http://twit.tv/embed/8239" width="640" height="320" scrolling="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0"></iframe>
 #+end_html
 
+#+BEGIN_HTML
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+#+END_HTML
+
 * Org mode presentations by Bastien (2011)
-
-** Org presentation at FOSDEM 2011
-
-#+begin_html
-<iframe src="http://www.slideshare.net/slideshow/embed_code/8401331" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-#+end_html
 
 ** GNU Hackers meeting in Paris, august 2011
 
 #+begin_html
 <iframe src="http://player.vimeo.com/video/30721952?title=0&amp;byline=0&amp;portrait=0" width="480" height="354" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+end_html
+
+#+BEGIN_HTML
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+#+END_HTML
+
+** COMMENT Org presentation at FOSDEM 2011
+
+#+begin_html
+<iframe src="http://www.slideshare.net/slideshow/embed_code/8401331" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 #+end_html
