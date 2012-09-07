@@ -145,7 +145,7 @@ please check the [[http://orgmode.org/worg/dev/org-export-reference.html][online
 
 ** Incompatible changes
 
-- The =UTILITIES/= directory has been renamed to =utils/=.
+- The =UTILITIES/= directory has been renamed to =mk/=.
 
 - If your code relies on =org-write-agenda=, please use
   [[doc::org-agenda-write][org-agenda-write]] from now on.
