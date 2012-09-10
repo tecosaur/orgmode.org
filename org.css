@@ -14,6 +14,7 @@ html {
 }
 
 #buttons {
+    display:block;
     position:absolute;
     top:10pt;
     right:10pt;
@@ -41,12 +42,12 @@ a:hover {
 
 #content {
     font-size: 16pt;
-    margin-left: 150px;
+    margin-left: 130px;
     line-height: 24pt;
 }
 
 #content p {
-    padding-right: 30pt;
+    padding-right: 7pt;
 }
 
 h1.title {
@@ -84,7 +85,7 @@ h2 {
     font-size: 13pt;
     line-height: 16pt;
     margin-top: 40px;
-    margin-left: -150px;
+    margin-left: -130px;
     min-height: 600pt;
 }
 
