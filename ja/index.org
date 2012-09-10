@@ -1,0 +1,97 @@
+#+TITLE:     Org mode for Emacs: あなたの生活をプレーンテキストで
+#+EMAIL:     carsten at orgmode dot org
+#+LANGUAGE:  ja
+#+STARTUP:   hidestars
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
+#+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
+#+MACRO: next #+BEGIN_HTML\n<div class="move">\n> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a>\n</div>\n#+END_HTML
+#+MACRO: previous #+BEGIN_HTML\n<div class="move">\n< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a>\n</div>\n#+END_HTML
+#+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
+
+#+BEGIN_HTML
+<div style="margin-top:0pt;"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system.<br />
+
+<span style="font-size:70%;">It was created by <a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003 and
+is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> since 2011.</span></em></p></div>
+#+END_HTML
+
+* ダウンロードとインストール
+  :PROPERTIES:
+  :CUSTOM_ID: intro
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:../img/main.jpg]
+
+安定版 *7.9.1* （2012年9月） --- [[http://orgmode.org/org-7.9.1.tar.gz][tar.gz]] or [[http://orgmode.org/org-7.9.1.zip][zip]]
+
+リリースノートを読む => [[file:Changes.org][release notes]]（英語）
+
+開発版（[[http://orgmode.org/w/org-mode.git][gitweb]]）：
+
+=git://orgmode.org/org-mode.git=
+
+=M-x list-packages RET=
+
+ナイトリー版：[[http://orgmode.org/org-latest.tar.gz][tar.gz]]／[[http://orgmode.org/org-latest.zip][zip]]
+
+- [[file:features.org][List of features]]
+- [[#docs][Manuals and tutorials]]
+- [[file:talks.org][Talks about Org mode]]
+- [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]
+- [[file:community.org][Mailing list and goodies]]
+
+** More
+
+More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode]] (Worg)
+
+[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]] (Worg)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{next(docs)}}}
+
+* ドキュメント
+  :PROPERTIES:
+  :CUSTOM_ID: docs
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="300px"
+[[file:../img/org-mode-7-network-theory.jpg]]
+
+Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org's manual ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)  
+
+For each book sold, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] is making a $1 donation to the
+maintainer of Org mode.
+
+Read the complete manual: [[http://orgmode.org/org.html][HTML]] or [[http://orgmode.org/org.pdf][PDF]]
+
+Read the compact guide: [[http://orgmode.org/guide/][HTML]] or [[http://orgmode.org/orgguide.pdf][PDF]]
+
+Check the [[http://orgmode.org/worg/org-faq.html][FAQ]], the [[http://orgmode.org/worg/org-hacks.html][hacks]], and [[http://orgmode.org/worg/org-tutorials/][tutorials]] on [[http://orgmode.org/worg/][Worg]].
+
+Check the reference [[http://orgmode.org/worg/doc.html][docs]] about Org's internals.
+
+Check the list of [[http://orgmode.org/worg/org-papers.html][(scientific) papers]] about Org mode.
+
+Before submitting a bug report, make sure you read the [[http://orgmode.org/org.html#Feedback]["Feedback"]] section
+of the manual.  
+
+You may also read [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]], by Eric S. Raymond
+and Rick Moen.
+
+=M-x org-submit-bug-report RET=
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{previous(intro)}}}
