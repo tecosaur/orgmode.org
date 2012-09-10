@@ -19,7 +19,7 @@ planning, and authoring with a fast and effective plain-text system./
 #+ATTR_HTML: style="float: right;" width="500px"
 [[file:img/structure.jpg]]
 
-Org is build on top of =outline.el=
+Org is built on top of =outline.el=.
 
 You can easily navigate through headlines and (un)fold (sub)sections of
 your Org documents.
@@ -52,7 +52,7 @@ Org can be used as a TODO lists manager and as a planner.
 Each headline can be turned into a task.
 
 Switching from one TODO keyword to another is =C-c C-t= or
-=S-<left/right>=
+=S-<left/right>=.
 
 Each item can also receive planning meta-data: scheduled and/or deadline
 cookies, tags, properties, etc.
@@ -79,9 +79,9 @@ Handling [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates
 #+ATTR_HTML: style="float: right;" width="500px"
 [[file:img/clocking.jpg]]
 
-Clocking in a task is =C-c C-x C-i=
+Clocking in a task is =C-c C-x C-i=.
 
-Clocking out a task is =C-c C-x C-o=
+Clocking out a task is =C-c C-x C-o=.
 
 You can use =I= and =O= from an agenda buffer.
 
