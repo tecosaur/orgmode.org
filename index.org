@@ -1,80 +1,97 @@
-#+TITLE:     Org: Your Life in Plain Text
+#+TITLE:     Org mode for Emacs -- Your Life in Plain Text
 #+EMAIL:     carsten at orgmode dot org
 #+LANGUAGE:  en
+#+STARTUP:   hidestars
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+STYLE:     <base href="http://orgmode.org/" />
-#+STYLE:     <link rel="publisher" href="https://plus.google.com/102778904320752967064" />
-#+STYLE:     <link rel="icon" type="image/png" href="org-mode-unicorn.png" />
-#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/css/lightbox.css" type="text/css" />
+#+MACRO: next #+BEGIN_HTML\n<div class="move">\n> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a>\n</div>\n#+END_HTML
+#+MACRO: previous #+BEGIN_HTML\n<div class="move">\n< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a>\n</div>\n#+END_HTML
+#+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
 
-#+begin_html
-<script type="text/javascript">
-if (navigator.appName == 'Netscape')
-var language = navigator.language;
-else
-var language = navigator.browserLanguage;
-if (language.indexOf('fr') > -1) document.location.href = '/fr/index.html';
-if (language.indexOf('es') > -1) document.location.href = '/es/index.html';
-if (language.indexOf('ja') > -1) document.location.href = '/ja/index.html';
-</script>
-#+end_html
+#+BEGIN_HTML
+<div style="margin-top:0pt;"><em>Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system. </div>
 
-* Org: an Emacs Mode for Notes, Planning, and Authoring
+<div style="margin:0;font-size:70%;"> It was created by <a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003 and
+is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> since 2011. </em></div>
+#+END_HTML
 
-# See http://jonraasch.com/blog/a-simple-jquery-slideshow for a slideshow
+* Download and install
+  :PROPERTIES:
+  :CUSTOM_ID: intro
+  :END:
 
-#+begin_html
-<script language="Javascript">
-function banner() { } ; b = new banner() ; n = 0
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/1.jpg' title='Org mode file with Timeline' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/1.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/2.jpg' title='Org mode lets you manipulate tables easily' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/2.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/3.jpg' title='View your Org mode with as an Agenda' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/3.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/4.jpg' title='Integration of Org mode and Emacs calendar' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/4.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/5.jpg' title='Export Org mode files to HTML' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/5.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/6.jpg' title='Export Org mode files to LaTeX' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/5.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/7.jpg' title='Org mode: schedule items and add deadlines' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/6.jpg' alt='' /></a>"
-b[n++]= "<a href='http://orgmode.org/worg/images/orgweb/8.jpg' title='Org mode: managing TODO lists' rel='lightbox'><img class='random' src='http://orgmode.org/worg/images/orgweb/7.jpg' alt='' /></a>"
-i=Math.floor(Math.random() * n) ;
-document.write( b[i] )
-</script>
-#+end_html
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/main.jpg]]
 
-(Click to enlarge the picture - press =Escape= to lower it.)
+Stable version *7.9.1* (sept. 2012) --- [[http://orgmode.org/org-7.9.1.tar.gz][tar.gz]] or [[http://orgmode.org/org-7.9.1.zip][zip]]
 
-Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.
+Read the [[file:Changes.org][release notes]].
 
-* Keep simple things simple... and do more
+Development version ([[http://orgmode.org/w/org-mode.git][gitweb]]):
 
-- Simplicity :: At its core, Org mode is a simple outliner for note-taking
-                and list management. You can learn the basics for using it
-                in [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.php][five minutes]].  This may be all you need, and Org mode
-                will not impose more complex features on you.
+=git://orgmode.org/org-mode.git=
 
-- Portability :: Org files are [[http://en.wikipedia.org/wiki/Plain_text][plain text]].  You can view and edit them in
-                 any editor, or add and extract data with custom-made
-                 scripts.  Your data will never be locked into an obscure
-                 or proprietary data format.  Org mode runs in [[http://www.gnu.org/software/emacs/][Emacs]], which
-                 is available for nearly every platform.
+=M-x list-packages RET=
 
-- Depth :: Org mode will not let you down when you need more than a simple
-           outline.  The full feature set is both broad and deep, easy to
-           access, but unobtrusive.  The [[http://orgmode.org/worg/org-faq.php][typical answer]] to "/Can it do X?/"
-           is "/Yes!/".
+Daily snapshots: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
 
-- Flexibility :: Org mode is like a Swiss army knife.  People use it for
-                 [[http://members.optusnet.com.au/~charles57/GTD/orgmode.html][Getting Things Done (GTD)]], as a [[http://newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Day Planner]], as a
-                 [[http://sachachua.com/wp/2008/01/18/outlining-your-notes-with-org/][Notebook]], for Web and PDF authoring, and much more.
+- [[file:features.org][List of features]]
+- [[#docs][Manuals and tutorials]]
+- [[file:talks.org][Talks about Org mode]]
+- [[http://localhost/org-mode/community.html#gsoc][Google Summer of Code 2012]]
+- [[file:community.org][Mailing list and goodies]]
 
-- Support :: Org mode is [[http://orgmode.org/manual/index.html][documented extensively]], and many [[http://orgmode.org/worg/org-tutorials/index.php][tutorials]] put
-             spotlights on particular features.  Org mode is supported by
-             an active [[file:org-mode-support.org][mailing list]] where questions are answered quickly
-             and effectively.
+** More
 
-- It's free! :: Org is [[http://en.wikipedia.org/wiki/Free_software][free software]], it is published under the [[http://www.gnu.org/licenses/licenses.html#GPL][GNU GPL
-                license version 3]], like [[http://www.gnu.org/software/emacs/][GNU Emacs]].
+More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode]] (Worg)
 
-If you'd like to know what other people have said about Org mode, take a
-look at our [[http://orgmode.org/worg/org-quotes.php][collected quotes about Org]].
+[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]] (Worg)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{next(docs)}}}
+
+* Documentation and literature
+  :PROPERTIES:
+  :CUSTOM_ID: docs
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="300px"
+[[file:img/org-mode-7-network-theory.jpg]]
+
+Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org's manual ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)  
+
+For each book sold, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] is making a $1 donation to the
+maintainer of Org mode.
+
+Read the complete manual: [[http://orgmode.org/org.html][HTML]] or [[http://orgmode.org/org.pdf][PDF]]
+
+Read the compact guide: [[http://orgmode.org/guide/][HTML]] or [[http://orgmode.org/orgguide.pdf][PDF]]
+
+Check the [[http://orgmode.org/worg/org-faq.html][FAQ]], the [[http://orgmode.org/worg/org-hacks.html][hacks]], and [[http://orgmode.org/worg/org-tutorials/][tutorials]] on [[http://orgmode.org/worg/][Worg]].
+
+Check the reference [[http://orgmode.org/worg/doc.html][docs]] about Org's internals.
+
+Check the list of [[http://orgmode.org/worg/org-papers.html][(scientific) papers]] about Org mode.
+
+Before submitting a bug report, make sure you read the [[http://orgmode.org/org.html#Feedback]["Feedback"]] section
+of the manual.  
+
+You may also read [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]], by Eric S. Raymond
+and Rick Moen.
+
+=M-x org-submit-bug-report RET=
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{previous(intro)}}}
