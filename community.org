@@ -1,0 +1,194 @@
+#+TITLE:     Org mode for Emacs -- Community
+#+EMAIL:     carsten at orgmode dot org
+#+LANGUAGE:  en
+#+STARTUP:   hidestars
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+MACRO: updown #+BEGIN_HTML\n<div class="move">\n<a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a>\n</div>\n#+END_HTML
+#+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
+
+/Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system./
+
+* Mailing list and IRC channel
+  :PROPERTIES:
+  :ID:       list
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/list.png]]
+
+Subscribe to the [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][mailing list]].
+
+Browse it [[http://news.gmane.org/gmane.emacs.orgmode][through Gmane]].
+
+#+begin_html
+<form id="searchgmane" method="get" action="http://search.gmane.org/">
+<input type="text" name="query" />
+<input type="hidden" name="group" value="gmane.emacs.orgmode" />
+<input type="submit" value="Search gmane.emacs.orgmode" />
+</form>
+#+end_html
+
+The mailing list is /the/ central place for anything related to Org: help
+users, report bugs, suggest new features, etc.  Don't hesitate!
+
+Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.net][freenode]].
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(list,worg)}}}
+
+* "Hello Worg !"
+  :PROPERTIES:
+  :ID:       worg
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/worg.png]]
+
+=git://orgmode.org/worg.git=
+
+Worg is a community-driven Git repository of =.org= pages published as a
+=HTML= website.  
+
+Think of a /wiki/, powered by Git and Emacs+Org.
+
+You can browse [[http://orgmode.org/worg/][Worg here]].
+
+You can read the list of changes from the [[http://orgmode.org/w/worg.git][gitweb interface.]]
+
+New contributors are welcome -- just send your public key to Bastien.
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(list,gsoc)}}}
+
+* Google Summer of Code
+  :PROPERTIES:
+  :ID:       gsoc
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/gsoc2012.png]]
+
+In 2012, two students successfully achieved and Org mode [[http://code.google.com/soc/][Google Summer of
+Code]] project.
+
+Read the [[http://thread.gmane.org/gmane.emacs.orgmode/59279][summary email]] about their achievements.
+
+/Aurélien Aptel/ wrote a tool to synchronize keep local Org files in sync
+with several online bug trackers.
+
+=git://orgmode.org/org-sync.git=
+
+/Andrew Young/ wrote a merge driver for Org files.
+
+This is useful if you have a Git repository of Org files or even just a
+=README.org= file in your project.
+
+=git://orgmode.org/org-merge-driver.git=
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(worg,vim)}}}
+
+* VimOrganizer
+  :PROPERTIES:
+  :ID:       vim
+  :END:
+
+#+BEGIN_HTML
+<iframe class="iframe" src="http://player.vimeo.com/video/17182850" width="500" height="404" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+END_HTML
+
+Herbert Sitz wrote [[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]], a pluging for [[http://www.vim.org/][Vim]] which emulates many of
+the Org features.
+
+Check out the many screencasts were VimOrganizer is demonstrated.
+
+=https://github.com/hsitz/VimOrganizer=
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(gsoc,more)}}}
+
+
+* Twitter, G+ and the Org shirt!
+  :PROPERTIES:
+  :ID:       more
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/gplus.png]]
+
+/Takaaki Ishikawa/ is maintaining [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] on twitter and you can
+generally check [[https://twitter.com/#!/search/%2523orgmode][#orgmode]].
+
+#+BEGIN_HTML
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 300,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#dfe0e3',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#615161',
+      links: '#7a0a2b'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('orgmode_bot').start();
+</script>
+#+END_HTML
+
+There is also a [[https://plus.google.com/b/102778904320752967064/102778904320752967064/posts][Google+ page for Org mode]] (see screenshot).
+
+Many people ask questions about Org mode on [[http://stackoverflow.com/questions/tagged/org-mode][stackoverflow.com]], which is
+nice, but we do encourage people to ask questions on the [[id:list][mailing list]].
+
+If you want to find other Org friends around, one way is to wear the famous
+Org shirt.  You can buy it [[http://orgmode.spreadshirt.com/][from the US]] or [[http://orgmode.spreadshirt.de/][from Europe]].
+
+#+ATTR_HTML: style="float: center;" width="300px"
+[[file:img/shirts.jpg]]
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(gsoc,more)}}}
+
