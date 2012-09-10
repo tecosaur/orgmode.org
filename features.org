@@ -5,3 +5,290 @@
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+MACRO: updown #+BEGIN_HTML\n<div class="move">\n<a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a>\n</div>\n#+END_HTML
+#+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
+
+/Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system./
+
+* Editing
+  :PROPERTIES:
+  :ID: editing
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/structure.jpg]]
+
+Org is build on top of =outline.el=
+
+You can easily navigate through headlines and (un)fold (sub)sections of
+your Org documents.
+
+Org enhances =outline.el= with faster keybindings and more editing
+facilities.
+
+** More
+
+More on [[http://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure]] (manual)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(editing,planning)}}}
+
+* Planning
+  :PROPERTIES:
+  :ID: planning
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/planning.jpg]]
+
+Org can be used as a TODO lists manager and as a planner.
+
+Each headline can be turned into a task.
+
+Switching from one TODO keyword to another is =C-c C-t= or
+=S-<left/right>=
+
+Each item can also receive planning meta-data: scheduled and/or deadline
+cookies, tags, properties, etc.
+
+** More
+
+More on [[http://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] (manual)
+
+Handling [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] (manual)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(editing,clocking)}}}
+
+* Clocking
+  :PROPERTIES:
+  :ID: clocking
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/clocking.jpg]]
+
+Clocking in a task is =C-c C-x C-i=
+
+Clocking out a task is =C-c C-x C-o=
+
+You can use =I= and =O= from an agenda buffer.
+
+Clocking logs are stored in a drawer.
+
+Org makes it easy to clock in and out and to produce nice reports, which
+you can customize to suit the needs of your hairy boss.
+
+** More
+
+More on [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] (manual)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(planning,agendas)}}}
+
+* Agendas
+  :PROPERTIES:
+  :ID: agendas
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/agenda.jpg]]
+
+Even with large =.org= files and thousands of tasks, it is easy to focus on
+what you need to do for each context.
+
+The built-in agenda views display the scheduled and deadline task for the
+week, TODO lists and stuck projects.
+
+The notion of /agenda view/ can be customized to display what you need: a
+view for the day/month, restricted to a set of TODO keywords, using
+specific tag, etc.
+
+This is one of the key aspect of Org: you can adapt Org to your workflow
+while stabilizing it.
+
+** More
+
+More on [[http://orgmode.org/manual/Agenda-Views.html#Agenda-Views][agendas views]] (manual)
+
+Tutorial on [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(clocking,capturing)}}}
+
+* Capturing
+  :PROPERTIES:
+  :ID: capturing
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/capture.jpg]]
+
+Adding TODO items to your =.org= files is called /capturing/.
+
+You can capture from everywhere, both within Emacs and from other
+applications like your web browser, pdf viewer, etc.
+
+Capture templates allow you to tell what information you want to capture
+from various contexts (the file name, the current date, the region, etc.)
+
+** More
+
+More on [[http://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(agendas,tables)}}}
+
+* Tables
+  :PROPERTIES:
+  :ID: tables
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/table2.jpg]]
+
+Org is a great plain-text table editor.
+
+You can import tables from =.csv= and =.tsv= files, or directly from the
+current buffer; you can then export them in all the formats supported by
+Org (see below).
+
+Org can also be used as a /spreadsheet/ system.  
+
+You can add formulas using the [[http://www.gnu.org/software/emacs/manual/html_mono/calc.html][Calc Emacs package]] or Emacs lisp code.
+
+** More
+
+The [[http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]] (manual)
+
+Org as a [[http://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system (manual)
+
+Introduction to [[http://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
+
+Using [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(capturing,exporting)}}}
+
+* Exporting
+  :PROPERTIES:
+  :ID: exporting
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/export.jpg]]
+
+Org is an authoring and publication tool.
+
+You can use intuitive markup then have it converted to =HTML=, $\LaTeX{}$,
+=ODT= -- and much more.
+
+Developers can easily create new backends for their favorite format (see
+the [[http://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
+
+You can also define /publishing projects/ with one or more =.org= file(s),
+and one or more publication backends.
+
+** More
+
+More on [[http://orgmode.org/manual/Markup.html#Markup][markup]] (manual)
+
+More on [[http://orgmode.org/manual/Exporting.html#Exporting][exporting]] (manual)
+
+More on [[http://orgmode.org/manual/Publishing.html#Publishing][publishing]] (manual)
+
+[[http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to =HTML= (Worg)
+
+[[http://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX{}$ (Worg)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(tables,babel)}}}
+
+* Working with source code
+  :PROPERTIES:
+  :ID: babel
+  :END:
+
+#+ATTR_HTML: style="float: right;" width="500px"
+[[file:img/babel.jpg]]
+
+Org makes [[http://en.wikipedia.org/wiki/Literate_programming][literate programming]] a handy and natural way to deal with code.
+
+You can insert code snippets, have them fontified in the Org buffer,
+compute the results in-file and tangle your Org file to get a code source
+file.
+
+** More
+
+[[http://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]] (manual)
+
+List of [[http://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(exporting,mobile)}}}
+
+* With your mobile phone
+  :PROPERTIES:
+  :ID: mobile
+  :END:
+
+#+ATTR_HTML: style="float: right; box-shadow: none;" width="200px"
+[[file:img/mobile.png]]
+
+/Richard Moreland/ has developed [[http://mobileorg.ncogni.to/][MobileOrg]], a free software for iPhone and
+iPod Touch for storing, searching, viewing and editing your Org-mode files
+(check the source code on [[https://github.com/richard/mobileorg][github]]).
+
+/Matt Jones/ has developed an equivalent [[https://play.google.com/store/apps/details?id%3Dcom.matburt.mobileorg#?t%3DW251bGwsMSwxLDIxMiwiY29tLm1hdGJ1cnQubW9iaWxlb3JnIl0.][MobileOrg]] for the Android platform
+(check the source code on [[https://github.com/matburt/mobileorg-android][github]]).
+
+** COMMENT More
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(babel,mobile)}}}

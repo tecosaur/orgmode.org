@@ -1,7 +1,0 @@
-#+TITLE:     Org mode for Emacs -- Google Summer of Code
-#+EMAIL:     carsten at orgmode dot org
-#+LANGUAGE:  en
-#+STARTUP:   hidestars
-#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring

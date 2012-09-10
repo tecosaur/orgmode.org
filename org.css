@@ -1,5 +1,23 @@
 html {
     margin: 0;
+    font: 300 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
+}
+
+#searchgmane {
+    margin-left: 10pt;
+}
+
+#logo {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+#buttons {
+    position:absolute;
+    top:10pt;
+    right:10pt;
+    text-align: right;
 }
 
 body {
@@ -8,34 +26,130 @@ body {
     margin-right: 30px;
 }
 
+a {
+    text-decoration: none;
+    color: #537d7b
+}
+a:visited {
+    text-decoration: none;
+    color: #98855b
+}
+a:hover {
+    text-decoration: underline;
+    color: #a34d32
+}
+
 #content {
-    font-size: 14pt;
+    font-size: 16pt;
+    margin-left: 150px;
+    line-height: 24pt;
+}
+
+#content p {
+    padding-right: 10pt;
 }
 
 h1.title {
     display: none;
 }
 
-/* h2 { */
-/*     display: none; */
-/* } */
+h3 {
+    display: none;
+}
+
+.outline-3 {
+    background-color: #eee;
+    color: black;
+    box-shadow: 1px 1px 1px #aaa;
+    padding: 5pt;
+    width: 250pt;
+    font-size: 85%;
+    margin-top: 20pt;
+}
+
+.outline-3 p {
+    margin:3pt; 
+    padding:0;
+}
+
+h2 {
+    display: block;
+    padding-top: 30px;
+    font-size: 22pt;
+    margin-top: 0;
+    margin-bottom: 30pt;
+}
 
 .outline-2 {
-    font-size: 12pt;
-    margin-top: 70px;
-    min-height: 800px;
+    font-size: 13pt;
+    line-height: 16pt;
+    margin-top: 40px;
+    margin-left: -150px;
+    min-height: 600pt;
 }
 
-img {    
+*.outline-2 img {
     box-shadow: 5px 5px 5px #aaa;
-    margin-top: -35px;
+    /* margin-top: -35px; */
+    margin-left: 50px;
 }
 
-iframe {
-    position: relative;
+.iframe {
+    float: right;
 }
 
-/* #postamble { */
-/*     clear: both; */
-/*     background: #cc9; */
-/* } */
+*.outline-2 p {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+code {
+    font-size: 85%;
+    background-color: #eeeeee;
+    padding: 1pt;
+    margin-right: 1pt;
+    box-shadow: 1px 1px 1px #aaa;
+}
+
+#orgquote {
+    z-index: 1000;
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    font-size:90%;
+    padding: 20px;
+    background-color: #eee;
+    -moz-opacity:0;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+#orgquote:hover {
+    -moz-opacity:1;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+.move { 
+    float: right:
+    font-weight: 800;
+    font-size: 18pt;
+    color: #ccc;
+    letter-spacing: 1.4pt;
+    background-color: white;
+    box-shadow: 0px 0px 0px white;
+}
+
+.move a {
+    color: #ccc;
+}
+
+.move a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+
