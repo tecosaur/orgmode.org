@@ -5,41 +5,93 @@
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+MACRO: next #+BEGIN_HTML\n<div class="move">\n> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a>\n</div>\n#+END_HTML
+#+MACRO: previous #+BEGIN_HTML\n<div class="move">\n< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a>\n</div>\n#+END_HTML
+#+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
 
 #+BEGIN_HTML
-<script type="text/javascript" src="js/org.js"></script>
-<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-#+END_HTML
+<div style="margin-top:0pt;"><em>Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system. </div>
 
-/Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system./
+<div style="margin:0;font-size:70%;"> It was created by <a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003 and
+is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> since 2011. </em></div>
+#+END_HTML
 
 * Download and install
   :PROPERTIES:
-  :CUSTOM_ID: text-1
+  :CUSTOM_ID: intro
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:orgmode.png]]
+[[file:img/main.jpg]]
 
-Latest stable version of Org mode is *7.9.1* (sept. 2012).
+Stable version *7.9.1* (sept. 2012) --- [[http://orgmode.org/org-7.9.1.tar.gz][tar.gz]] or [[http://orgmode.org/org-7.9.1.zip][zip]]
 
-Download it as a [[http://orgmode.org/org-7.9.1.tar.gz][.tar.gz]] or [[http://orgmode.org/org-7.9.1.zip][.zip]] archive.
+Read the [[file:Changes.org][release notes]].
 
-=git clone git://orgmode.org/org-mode.git=
+Development version ([[http://orgmode.org/w/org-mode.git][gitweb]]):
 
-Since Emacs 24.1, Org is available from =M-x list-packages RET=
+=git://orgmode.org/org-mode.git=
 
-#+BEGIN_HTML
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-#+END_HTML
+=M-x list-packages RET=
 
-* Documentation
+Daily snapshots: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
+
+- [[file:features.org][List of features]]
+- [[#docs][Manuals and tutorials]]
+- [[file:talks.org][Talks about Org mode]]
+- [[http://localhost/org-mode/community.html#gsoc][Google Summer of Code 2012]]
+- [[file:community.org][Mailing list and goodies]]
+
+** More
+
+More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode]] (Worg)
+
+[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]] (Worg)
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{next(docs)}}}
+
+* Documentation and literature
   :PROPERTIES:
-  :CUSTOM_ID: text-2
+  :CUSTOM_ID: docs
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
-[[file:orgmode.png]]
+#+ATTR_HTML: style="float: right;" width="300px"
+[[file:img/org-mode-7-network-theory.jpg]]
 
+Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org's manual ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)  
+
+For each book sold, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] is making a $1 donation to the
+maintainer of Org mode.
+
+Read the complete manual: [[http://orgmode.org/org.html][HTML]] or [[http://orgmode.org/org.pdf][PDF]]
+
+Read the compact guide: [[http://orgmode.org/guide/][HTML]] or [[http://orgmode.org/orgguide.pdf][PDF]]
+
+Check the [[http://orgmode.org/worg/org-faq.html][FAQ]], the [[http://orgmode.org/worg/org-hacks.html][hacks]], and [[http://orgmode.org/worg/org-tutorials/][tutorials]] on [[http://orgmode.org/worg/][Worg]].
+
+Check the reference [[http://orgmode.org/worg/doc.html][docs]] about Org's internals.
+
+Check the list of [[http://orgmode.org/worg/org-papers.html][(scientific) papers]] about Org mode.
+
+Before submitting a bug report, make sure you read the [[http://orgmode.org/org.html#Feedback]["Feedback"]] section
+of the manual.  
+
+You may also read [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]], by Eric S. Raymond
+and Rick Moen.
+
+=M-x org-submit-bug-report RET=
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{previous(intro)}}}
