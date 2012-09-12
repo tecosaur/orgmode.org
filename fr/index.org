@@ -48,9 +48,9 @@ Dernière version du jour : [[http://orgmode.org/org-latest.tar.gz][tar.gz]] ou 
 
 ** More
 
-More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode]] (Worg)
+Plus sur [[http://orgmode.org/worg/dev/org-build-system.html][l'installation d'Org mode]] (Worg)
 
-[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]] (Worg)
+[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Comment utiliser la dernière version]] (Worg)
 
 ** Move
    :PROPERTIES:
