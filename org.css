@@ -13,6 +13,12 @@ html {
     left: 20px;
 }
 
+#translate {
+    position: absolute;
+    left: 30px;
+    top: 150px;
+}
+
 #buttons {
     display:block;
     position:absolute;
