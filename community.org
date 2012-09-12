@@ -118,7 +118,7 @@ This is useful if you have a Git repository of Org files or even just a
 Herbert Sitz wrote [[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]], a [[http://www.vim.org/][Vim]] plugin which emulates many of the
 Org features.
 
-Check out the many screencasts were VimOrganizer is demonstrated.
+Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer is demonstrated.
 
 =https://github.com/hsitz/VimOrganizer=
 
