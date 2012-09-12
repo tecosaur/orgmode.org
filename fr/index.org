@@ -79,7 +79,7 @@ Lire le guide compact: [[http://orgmode.org/guide/][HTML]] ou [[http://orgmode.o
 
 Voir la [[http://orgmode.org/worg/org-faq.html][FAQ]], les [[http://orgmode.org/worg/org-hacks.html][hacks]], et les [[http://orgmode.org/worg/org-tutorials/][tutoriels]] sur [[http://orgmode.org/worg/][Worg]].
 
-Voir les [[http://orgmode.org/worg/doc.html][docs]] de référence sur les commands et les options d'Org.
+Voir les [[http://orgmode.org/worg/doc.html][docs]] de référence sur les /hooks/, les commandes et les options.
 
 Voir la liste des [[http://orgmode.org/worg/org-papers.html][papiers (scientifiques)]] au sujet d'Org mode.
 
