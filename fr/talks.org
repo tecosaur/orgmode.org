@@ -9,7 +9,6 @@
 #+MACRO: updown #+BEGIN_HTML\n<div class="move">\n<< <a onclick="goToByScroll('$1');return false;" href="#">$1</a><br /><br />>> <a onclick="goToByScroll('$2');return false;" href="#">$2</a>\n</div>\n#+END_HTML
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
-
 /Org mode permet de prendre des notes, de maintenir des listes TODO, de planifier des projets et de publier des documents, le tout à partir de texte brut./
 
 * GoogleTech Talk par Carsten Dominik (2008)
