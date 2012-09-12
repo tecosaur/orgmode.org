@@ -139,7 +139,7 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
 #+ATTR_HTML: style="float: right;" width="500px"
 [[file:img/gplus.png]]
 
-/Takaaki Ishikawa/ is maintaining [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] on twitter and you can
+/Takaaki Ishikawa/ is maintaining [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] on Twitter and you can
 generally check [[https://twitter.com/#!/search/%2523orgmode][#orgmode]].
 
 #+BEGIN_HTML
@@ -176,7 +176,8 @@ new TWTR.Widget({
 There is also a [[https://plus.google.com/b/102778904320752967064/102778904320752967064/posts][Google+ page for Org mode]] (see screenshot).
 
 Many people ask questions about Org mode on [[http://stackoverflow.com/questions/tagged/org-mode][stackoverflow.com]], which is
-nice, but we do encourage people to ask questions on the [[id:list][mailing list]].
+nice, but we do encourage people to ask questions directly on the [[id:list][mailing
+list]].
 
 If you want to find other Org friends around, one way is to wear the famous
 Org shirt.  You can buy it [[http://orgmode.spreadshirt.com/][from the US]] or [[http://orgmode.spreadshirt.de/][from Europe]].
