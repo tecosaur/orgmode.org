@@ -55,7 +55,7 @@ Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.n
 =git://orgmode.org/worg.git=
 
 Worg is a community-driven Git repository of =.org= pages published as a
-=HTML= website.  
+=HTML= website.
 
 Think of a /wiki/, powered by Git and Emacs+Org.
 
@@ -115,8 +115,8 @@ This is useful if you have a Git repository of Org files or even just a
 <iframe class="iframe" src="http://player.vimeo.com/video/17182850" width="500" height="404" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+END_HTML
 
-Herbert Sitz wrote [[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]], a pluging for [[http://www.vim.org/][Vim]] which emulates many of
-the Org features.
+Herbert Sitz wrote [[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]], a [[http://www.vim.org/][Vim]] plugin which emulates many of the
+Org features.
 
 Check out the many screencasts were VimOrganizer is demonstrated.
 
