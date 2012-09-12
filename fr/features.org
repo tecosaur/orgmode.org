@@ -16,7 +16,7 @@
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:img/structure.jpg]]
+[[file:../img/structure.jpg]]
 
 Org s'appuie sur =outline.el=.
 
@@ -44,7 +44,7 @@ Plus sur la [[http://orgmode.org/manual/Document-Structure.html#Document-Structu
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:img/planning.jpg]]
+[[file:../img/planning.jpg]]
 
 Org peut être utilisé comme gestionnaire de listes TODO et de projets.
 
@@ -76,7 +76,7 @@ Gérer les [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dat
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:img/clocking.jpg]]
+[[file:../img/clocking.jpg]]
 
 Chronométrer une tâche se fait avec =C-c C-x C-i=.
 
@@ -108,7 +108,7 @@ Plus sur le [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-ti
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:img/agenda.jpg]]
+[[file:../img/agenda.jpg]]
 
 Même avec des fichiers =.org= volumineux et des milliers de tâches, vous
 pouvez facilement vous concentrer sur ce que vous devez faire dans chaque
@@ -144,7 +144,7 @@ Tutoriel sur les [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-comma
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:img/capture.jpg]]
+[[file:../img/capture.jpg]]
 
 Ajouter un item TODO à vos fichiers .org s'appelle /capturer/.
 
@@ -173,7 +173,7 @@ Plus sur la [[http://orgmode.org/manual/Capture.html#Capture][capture]] (manuel)
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:img/table2.jpg]]
+[[file:../img/table2.jpg]]
 
 Org fait des merveilles comme éditeur de tableaux en texte brut.
 
@@ -209,7 +209,7 @@ Utiliser [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:img/export.jpg]]
+[[file:../img/export.jpg]]
 
 Org est un système de publication de documents.
 
@@ -248,7 +248,7 @@ Plus sur la [[http://orgmode.org/manual/Publishing.html#Publishing][publication]
   :END:
 
 #+ATTR_HTML: style="float: right;" width="500px"
-[[file:img/babel.jpg]]
+[[file:../img/babel.jpg]]
 
 Org fait de la programmation littérale ([[http://en.wikipedia.org/wiki/Literate_programming][literate programming]]) un manière
 naturelle et pratique d'interagir avec du code source.
@@ -278,7 +278,7 @@ Liste des [[http://orgmode.org/worg/org-contrib/babel/languages.html][langages s
   :END:
 
 #+ATTR_HTML: style="float: right; box-shadow: none;" width="200px"
-[[file:img/mobile.png]]
+[[file:../img/mobile.png]]
 
 /Richard Moreland/ a développé [[http://mobileorg.ncogni.to/][MobileOrg]], un logiciel libre pour iPhone et
 iPod touch permettant de stocker, chercher, voir et éditer des fichiers Org
