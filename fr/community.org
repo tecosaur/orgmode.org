@@ -16,7 +16,7 @@ planifier des projets et de publier des documents, le tout en texte brut./
   :ID:       liste
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: style="float: right;" width="500px"
 [[file:../img/list.png]]
 
 Inscrivez-vous à la [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][liste de discussion]] (en).
@@ -50,7 +50,7 @@ Les utilisateurs discutent aussi sur le canal IRC =#org-mode= de [[http://webcha
   :ID:       worg
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: style="float: right;" width="500px"
 [[file:../img/worg.png]]
 
 =git://orgmode.org/worg.git=
@@ -80,7 +80,7 @@ publique à Bastien.
   :ID:       gsoc
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: style="float: right;" width="500px"
 [[file:../img/gsoc2012.png]]
 
 En 2012, deux étudiants ont fini avec succès un projet [[http://code.google.com/soc/][Google Summer of
@@ -138,7 +138,7 @@ l'oeuvre.
   :ID:       plus
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: style="float: right;" width="500px"
 [[file:../img/gplus.png]]
 
 /Takaaki Ishikawa/ maintient [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] sur Twitter et vous pouvez
