@@ -24,7 +24,7 @@ is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> sin
   :CUSTOM_ID: intro
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/main.jpg]]
 
 安定版 *7.9.1* （2012年9月） --- [[http://orgmode.org/org-7.9.1.tar.gz][tar.gz]] or [[http://orgmode.org/org-7.9.1.zip][zip]]

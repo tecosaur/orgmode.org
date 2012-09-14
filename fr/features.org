@@ -16,7 +16,7 @@ planifier des projets et de publier des documents, le tout en texte brut./
   :ID: édition
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/structure.jpg]]
 
 Org s'appuie sur =outline.el=.
@@ -44,7 +44,7 @@ Plus sur la [[http://orgmode.org/manual/Document-Structure.html#Document-Structu
   :ID: planification
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/planning.jpg]]
 
 Org peut être utilisé comme gestionnaire de listes TODO et de projets.
@@ -76,7 +76,7 @@ Gérer les [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dat
   :ID: chronométrage
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/clocking.jpg]]
 
 Chronométrer une tâche se fait avec =C-c C-x C-i=.
@@ -108,7 +108,7 @@ Plus sur le [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-ti
   :ID: agendas
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/agenda.jpg]]
 
 Même avec des fichiers =.org= volumineux et des milliers de tâches, vous
@@ -144,7 +144,7 @@ Tutoriel sur les [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-comma
   :ID: capturer
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/capture.jpg]]
 
 Ajouter un item TODO à vos fichiers .org s'appelle /capturer/.
@@ -173,7 +173,7 @@ Plus sur la [[http://orgmode.org/manual/Capture.html#Capture][capture]] (manuel)
   :ID: tableaux
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/table2.jpg]]
 
 Org fait des merveilles comme éditeur de tableaux en texte brut.
@@ -209,7 +209,7 @@ Utiliser [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org
   :ID: exporter
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/export.jpg]]
 
 Org est un système de publication de documents.
@@ -248,7 +248,7 @@ Plus sur la [[http://orgmode.org/manual/Publishing.html#Publishing][publication]
   :ID: babel
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/babel.jpg]]
 
 Org fait de la programmation littérale ([[http://en.wikipedia.org/wiki/Literate_programming][literate programming]]) un manière
