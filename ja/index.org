@@ -42,7 +42,7 @@ is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> sin
 - [[file:features.org][List of features]]
 - [[#docs][Manuals and tutorials]]
 - [[file:talks.org][Talks about Org mode]]
-- [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]
+- [[community.html#gsoc][Google Summer of Code 2012]]
 - [[file:community.org][Mailing list and goodies]]
 
 ** More

@@ -43,7 +43,7 @@ Dernière version du jour : [[http://orgmode.org/org-latest.tar.gz][tar.gz]] ou 
 - [[file:features.org][Liste des fonctionnalités]]
 - [[#docs][Manuels et tutoriels]]
 - [[file:talks.org][Présentations vidéo sur Org mode]]
-- [[http://orgmode.org/fr/community.html#gsoc][Google Summer of Code 2012]]
+- [[community.html#gsoc][Google Summer of Code 2012]]
 - [[file:community.org][Liste de discussion et « goodies »]]
 
 ** More
