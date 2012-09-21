@@ -16,7 +16,7 @@ planning, and authoring with a fast and effective plain-text system./
   :ID:       list
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:img/list.png]]
 
 Subscribe to the [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][mailing list]].
@@ -49,7 +49,7 @@ Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.n
   :ID:       worg
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:img/worg.png]]
 
 =git://orgmode.org/worg.git=
@@ -78,7 +78,7 @@ New contributors are welcome -- just send your public key to Bastien.
   :ID:       gsoc
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:img/gsoc2012.png]]
 
 In 2012, two students successfully achieved and Org mode [[http://code.google.com/soc/][Google Summer of
@@ -136,7 +136,7 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
   :ID:       more
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:img/gplus.png]]
 
 /Takaaki Ishikawa/ is maintaining [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] on Twitter and you can

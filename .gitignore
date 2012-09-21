@@ -1,2 +1,4 @@
 pub
 old
+*.html
+!preamble.html

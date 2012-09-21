@@ -25,7 +25,7 @@ Guerry</a> depuis 2011.</span></em></p></div>
   :CUSTOM_ID: intro
   :END:
 
-#+ATTR_HTML: style="float: right;" width="500px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/main.jpg]]
 
 Version stable *7.9.1* (sept. 2012) --- [[http://orgmode.org/org-7.9.1.tar.gz][tar.gz]] ou [[http://orgmode.org/org-7.9.1.zip][zip]]
