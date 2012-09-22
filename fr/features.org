@@ -13,7 +13,7 @@ planifier des projets et de publier des documents, le tout en texte brut./
 
 * Edition
   :PROPERTIES:
-  :ID: édition
+  :ID: edition
   :END:
 
 #+ATTR_HTML: id="main-image"
@@ -37,7 +37,7 @@ Plus sur la [[http://orgmode.org/manual/Document-Structure.html#Document-Structu
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(édition,planification)}}}
+{{{updown(edition,planification)}}}
 
 * Planification
   :PROPERTIES:
@@ -69,11 +69,11 @@ Gérer les [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dat
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(édition,chronométrage)}}}
+{{{updown(edition,chronometrage)}}}
 
 * Chronométrage
   :PROPERTIES:
-  :ID: chronométrage
+  :ID: chronometrage
   :END:
 
 #+ATTR_HTML: id="main-image"
@@ -137,7 +137,7 @@ Tutoriel sur les [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-comma
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(chronométrage,capturer)}}}
+{{{updown(chronometrage,capturer)}}}
 
 * Capturer
   :PROPERTIES:

@@ -6,7 +6,7 @@
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+MACRO: next #+BEGIN_HTML\n<div class="move">\n> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a>\n</div>\n#+END_HTML
-#+MACRO: previous #+BEGIN_HTML\n<div class="move">\n< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a>\n</div>\n#+END_HTML
+#+MACRO: previous #+BEGIN_HTML\n<div class="move">\n< <a onclick="goToByScroll('$1');return false;" href="#">installation</a>\n</div>\n#+END_HTML
 #+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
 #+BEGIN_HTML
@@ -65,7 +65,7 @@ Plus sur [[http://orgmode.org/worg/dev/org-build-system.html][l'installation d'O
   :CUSTOM_ID: docs
   :END:
 
-#+ATTR_HTML: style="float: right;" width="300px"
+#+ATTR_HTML: id="main-image"
 [[file:../img/org-mode-7-network-theory.jpg]]
 
 Acheter la [[http://www.network-theory.co.uk/org/manual/][version papier]] du manuel d'Org ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)
