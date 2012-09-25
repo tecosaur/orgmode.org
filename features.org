@@ -277,8 +277,7 @@ List of [[http://orgmode.org/worg/org-contrib/babel/languages.html][supported la
 [[file:img/mobile.png]]
 
 /Richard Moreland/ has developed [[http://mobileorg.ncogni.to/][MobileOrg]], a free software for iPhone and
-iPod Touch for storing, searching, viewing and editing your Org files
-(check the source code on [[https://github.com/richard/mobileorg][github]]).
+iPod Touch for storing, searching, viewing and editing your Org files.
 
 /Matt Jones/ has developed an equivalent [[https://play.google.com/store/apps/details?id%3Dcom.matburt.mobileorg#?t%3DW251bGwsMSwxLDIxMiwiY29tLm1hdGJ1cnQubW9iaWxlb3JnIl0.][MobileOrg]] for the Android platform
 (check the source code on [[https://github.com/matburt/mobileorg-android][github]]).
