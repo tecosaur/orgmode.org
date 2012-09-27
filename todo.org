@@ -9,8 +9,10 @@
 #+DESCRIPTION: Org Org-mode TODO list
 #+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
 
-/Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system./
+#+BEGIN_HTML
+<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system.</div>
+#+END_HTML
 
 * Introduction
 
