@@ -10,8 +10,10 @@
 #+DESCRIPTION: Org Org-mode Emacs Survey results
 #+STYLE:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
 
-/Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system./
+#+BEGIN_HTML
+<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system.</div>
+#+END_HTML
 
 * Survey introduction
 

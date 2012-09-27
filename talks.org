@@ -9,8 +9,10 @@
 #+MACRO: updown #+BEGIN_HTML\n<div class="move">\n<< <a onclick="goToByScroll('$1');return false;" href="#">$1</a><br /><br />>> <a onclick="goToByScroll('$2');return false;" href="#">$2</a>\n</div>\n#+END_HTML
 #+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
 
-/Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system./
+#+BEGIN_HTML
+<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system.</div>
+#+END_HTML
 
 * GoogleTech Talk by Carsten Dominik (2008)
   :PROPERTIES:

@@ -3,6 +3,16 @@ html {
     font: 300 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
 }
 
+#top {
+    margin-top:0pt;
+    padding-right: 2.5em;
+    font-size: 1.4em;
+}
+
+#top2 {
+    font-size:70%;
+}
+
 #searchgmane {
     margin-left: 10pt;
 }
@@ -43,7 +53,7 @@ a:hover {
 #content {
     font-size: 1.2em;
     margin-left: 130px;
-    line-height: 24pt;
+    line-height: 2em;
 }
 
 #content p {
@@ -63,7 +73,7 @@ h3 {
     color: black;
     box-shadow: 1px 1px 1px #aaa;
     padding: 5pt;
-    width: 250pt;
+    width: 27em;
     font-size: 85%;
     margin-top: 20pt;
 }
@@ -82,8 +92,8 @@ h2 {
 }
 
 .outline-2 {
-    font-size: 1.1em;
-    line-height: 16pt;
+    font-size: 1em;
+    line-height: 1.3em;
     margin-top: 40px;
     margin-left: -130px;
     min-height: 600pt;
@@ -119,7 +129,7 @@ code {
     margin: 0;
     bottom: 0;
     right: 0;
-    font-size:90%;
+    font-size:100%;
     padding: 20px;
     background-color: #eee;
     -moz-opacity:0;
@@ -134,9 +144,9 @@ code {
 }
 
 .move { 
-    float: right;
+    float: left;
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #ccc;
     letter-spacing: 1.4pt;
     background-color: white;
