@@ -41,7 +41,7 @@ a:hover {
 }
 
 #content {
-    font-size: 16pt;
+    font-size: 1.4em;
     margin-left: 130px;
     line-height: 24pt;
 }
@@ -76,13 +76,13 @@ h3 {
 h2 {
     display: block;
     padding-top: 30px;
-    font-size: 22pt;
+    font-size: 1.8em;
     margin-top: 0;
     margin-bottom: 30pt;
 }
 
 .outline-2 {
-    font-size: 13pt;
+    font-size: 1.1em;
     line-height: 16pt;
     margin-top: 40px;
     margin-left: -130px;
@@ -134,9 +134,9 @@ code {
 }
 
 .move { 
-    float: right:
+    float: right;
     font-weight: 800;
-    font-size: 18pt;
+    font-size: 1.5em;
     color: #ccc;
     letter-spacing: 1.4pt;
     background-color: white;
