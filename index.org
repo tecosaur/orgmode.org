@@ -29,11 +29,11 @@ Stable version *7.9.1* (sept. 2012) --- [[http://orgmode.org/org-7.9.1.tar.gz][t
 
 Read the [[file:Changes.org][release notes]].
 
-Development version ([[http://orgmode.org/w/org-mode.git][gitweb]]):
+Development version ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
 =git://orgmode.org/org-mode.git=
 
-=M-x list-packages RET=
+=M-x list-packages RET= (see [[http://orgmode.org/elpa/][Org ELPA]])
 
 Daily snapshots: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
 
