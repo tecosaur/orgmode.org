@@ -31,11 +31,11 @@ is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> sin
 
 リリースノートを読む => [[file:Changes.org][release notes]]（英語）
 
-開発版（[[http://orgmode.org/w/org-mode.git][gitweb]]）：
+開発版（[[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]）：
 
 =git://orgmode.org/org-mode.git=
 
-=M-x list-packages RET=
+=M-x list-packages RET= (see [[http://orgmode.org/elpa/][Org ELPA]])
 
 ナイトリー版：[[http://orgmode.org/org-latest.tar.gz][tar.gz]]／[[http://orgmode.org/org-latest.zip][zip]]
 
