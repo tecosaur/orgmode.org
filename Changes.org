@@ -15,7 +15,7 @@
 planning, and authoring with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
-* Version 7.9.1
+* Version 7.9.2
 
 ** New committers who signed the FSF copyright assigment
 
