@@ -10,7 +10,7 @@
 
 #+BEGIN_HTML
 <div id="top"><p><em>Org mode permet de prendre des notes, de maintenir des listes TODO, de
-planifier des projets et de publier des documents, le tout en texte brut.</div>
+planifier des projets et de publier des documents, le tout en texte brut.</em></p></div>
 #+END_HTML
 
 * List de discussion et canal IRC

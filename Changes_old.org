@@ -9,7 +9,7 @@
 
 #+BEGIN_HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.</div>
+planning, and authoring with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
 * Version 7.8 ([[git:c53eb54a5297844687ebd08884605b7926130256][git]])

@@ -11,7 +11,7 @@
 
 #+BEGIN_HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.</div>
+planning, and authoring with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
 * GoogleTech Talk by Carsten Dominik (2008)
