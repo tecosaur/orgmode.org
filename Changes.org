@@ -17,6 +17,9 @@ planning, and authoring with a fast and effective plain-text system.</em></p></d
 
 * Version 7.9.2
 
+/This page describes changes against the 7.8[.x] versions of Org.  It
+includes changes in previous 7.9[.x] releases./
+
 ** New committers who signed the FSF copyright assigment
 
 Welcome and thanks to these new core contributors:
