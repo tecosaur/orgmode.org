@@ -18,6 +18,9 @@ is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> sin
 #+END_HTML
 
 * Org Emacs lisp Package Archive
+  :PROPERTIES:
+  :CUSTOM_ID: introduction
+  :END:
 
 [[http://orgmode.org][orgmode.org]] hosts Org ELPA archives.
 
