@@ -64,6 +64,9 @@ file so that your Org configuration will be correctly handled:
   ;; (setq org-...)                   ;; Your custom settings
 #+END_SRC
 
+*Note*: if you use Org >7.9.2 (e.g. from git) the =(require 'org-install)= 
+instruction is not needed.
+
 The package initialization should happen *before* you require Org and set
 any Org options.
 
