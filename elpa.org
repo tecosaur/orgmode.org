@@ -64,11 +64,9 @@ file so that your Org configuration will be correctly handled:
   ;; (setq org-...)                   ;; Your custom settings
 #+END_SRC
 
-*Note*: if you use Org >7.9.2 (e.g. from git) the =(require 'org-install)= 
-instruction is not needed.
-
 The package initialization should happen *before* you require Org and set
-any Org options.
+any Org options.  If you use Org >7.9.2 (e.g. from git) the ~(require
+'org-install)~ instruction is not needed.
 
 Also, you may want to set up Package correctly before initializing it:
 
@@ -76,12 +74,9 @@ Also, you may want to set up Package correctly before initializing it:
   ;; -*- emacs-lisp -*-
   (unless package-archive-contents    ;; Refrech the packages descriptions
     (package-refresh-contents))
-  
   (setq package-load-list '(all))     ;; List of packages to load
-    
   (unless (package-installed-p 'org)  ;; Make sure the Org package is
     (package-install 'org))           ;; installed, install it if not
-
   (package-initialize)                ;; Initialize & Install Package
   (require 'org-install)              ;; Initialize Org (autoloads)
   ;; (setq org-...)                   ;; Your custom settings
