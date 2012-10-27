@@ -60,13 +60,11 @@ file so that your Org configuration will be correctly handled:
 #+BEGIN_SRC emacs-lisp :exports code
   ;; -*- emacs-lisp -*-
   (package-initialize)                ;; Initialize & Install Package
-  (require 'org-install)              ;; Initialize Org (autoloads)
   ;; (setq org-...)                   ;; Your custom settings
 #+END_SRC
 
 The package initialization should happen *before* you require Org and set
-any Org options.  If you use Org >7.9.2 (e.g. from git) the ~(require
-'org-install)~ instruction is not needed.
+any Org options.
 
 Also, you may want to set up Package correctly before initializing it:
 
@@ -78,7 +76,6 @@ Also, you may want to set up Package correctly before initializing it:
   (unless (package-installed-p 'org)  ;; Make sure the Org package is
     (package-install 'org))           ;; installed, install it if not
   (package-initialize)                ;; Initialize & Install Package
-  (require 'org-install)              ;; Initialize Org (autoloads)
   ;; (setq org-...)                   ;; Your custom settings
 #+END_SRC
 
