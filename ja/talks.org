@@ -1,0 +1,106 @@
+#+TITLE:     Org mode for Emacs -- Talks and presentations
+#+AUTHOR:    Bastien
+#+EMAIL:     bzg at gnu dot org
+#+STARTUP:   hidestars
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
+#+DESCRIPTION: Org Org-mode Emacs Talks about Org-mode
+#+MACRO: updown #+BEGIN_HTML\n<div class="move">\n<< <a onclick="goToByScroll('$1');return false;" href="#">$1</a><br /><br />>> <a onclick="goToByScroll('$2');return false;" href="#">$2</a>\n</div>\n#+END_HTML
+#+STYLE:     <link rel="stylesheet" href="../org.css" type="text/css" />
+
+#+BEGIN_HTML
+<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
+planning, and authoring with a fast and effective plain-text system.</em></p></div>
+#+END_HTML
+
+* GoogleTech Talk by Carsten Dominik (2008)
+  :PROPERTIES:
+  :ID:       google-tech-talk
+  :END:
+
+#+begin_html
+<iframe class="iframe" width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
+#+end_html
+
+Here is the video of the [[http://www.youtube.com/user/GoogleTechTalks][Google Tech Talk]] about Org mode that I gave on
+July 15th, 2008 on the Google campus in Mountain View, California.
+
+Thanks to [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] and [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] for being my hosts during my stay.
+
+You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][the timeline of the topics covered]] by this talk.
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(google-tech-talk,org-for-scientists)}}}
+
+
+* At the Max Planck Institute for Neurological Research (2010)
+  :PROPERTIES:
+  :ID:       org-for-scientists
+  :END:
+
+#+begin_html
+<iframe class="iframe" src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+end_html
+
+This is a talk presented on February 8th 2010 at the Max Planck Institute
+for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
+[[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][this page]] for details.
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(google-tech-talk,floss-weekly)}}}
+
+
+* Interview of Carsten Dominik at [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
+  :PROPERTIES:
+  :ID:       floss-weekly
+  :END:
+
+#+begin_html
+<iframe class="iframe" src="http://twit.tv/embed/8239" width="480" height="320" scrolling="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0"></iframe>
+#+end_html
+
+
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(org-for-scientists,ghm2011)}}}
+
+
+* Bastien's presentation at GHM Paris (2011)
+  :PROPERTIES:
+  :ID:       ghm2011
+  :END:
+
+#+begin_html
+<iframe class="iframe" src="http://player.vimeo.com/video/30721952?title=0&amp;byline=0&amp;portrait=0" width="480" height="354" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+end_html
+
+This presentation was given during the GNU Hackers Meeting in Paris, 2011.
+
+Thanks to Ludovic Courtès who invited me and all the GNU people who made
+this event possible.
+
+You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][the timeline of the topics covered]] by this talk.
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(floss-weekly,ghm2011)}}}
