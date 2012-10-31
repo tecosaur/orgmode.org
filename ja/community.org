@@ -1,0 +1,185 @@
+#+TITLE:     Org mode for Emacs -- コミュニティ
+#+EMAIL:     carsten at orgmode dot org
+#+LANGUAGE:  ja
+#+STARTUP:   hidestars
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
+#+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
+#+MACRO: updown #+BEGIN_HTML\n<div class="move">\n<a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a>\n</div>\n#+END_HTML
+#+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
+
+#+BEGIN_HTML
+<div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。</em></p></div>
+#+END_HTML
+
+* メーリングリストとチャット
+  :PROPERTIES:
+  :ID:       list
+  :END:
+
+#+ATTR_HTML: id="main-image"
+[[file:../img/list.png]]
+
+[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][メーリングリスト]]は誰でも購読できます。 [[http://news.gmane.org/gmane.emacs.orgmode][Gmane]]で閲覧することも可能です。
+
+#+begin_html
+<form id="searchgmane" method="get" action="http://search.gmane.org/">
+<input type="text" name="query" />
+<input type="hidden" name="group" value="gmane.emacs.orgmode" />
+<input type="submit" value="Search gmane.emacs.orgmode" />
+</form>
+#+end_html
+
+このメーリングリストには、Org-modeに関連する /すべての/ 情報が集まってきます。例えば、ユーザからの相談、バグレポート、新機能の提案などです。遠慮無くメールを投稿してください。
+
+また、IRCチャネル（=#org-mode=）を使って議論することもできます。[[http://webchat.freenode.net][freenode]]にあります。
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(list,worg)}}}
+
+* "Hello Worg !"
+  :PROPERTIES:
+  :ID:       worg
+  :END:
+
+#+ATTR_HTML: id="main-image"
+[[file:../img/worg.png]]
+
+=git://orgmode.org/worg.git=
+
+Worgは、Org-modeのユーザが作る =.org= ファイルのGITリポジトリです。各ファイルは、 =HTML= で記述されたウェブサイトとして公開されています。
+
+GITとEmacs+Orgによる /wiki/ 、と考えてください。
+
+[[http://orgmode.org/worg/][Worg here]] で閲覧できます。
+
+ [[http://orgmode.org/w/worg.git][Gitweb]]インタフェースを見れば、変更の内容を確認できます。
+
+新しいコントリビュータの参加を心待ちにしています。希望者は、Bastien氏に公開鍵を送付してください。
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(list,gsoc)}}}
+
+* Google Summer of Code
+  :PROPERTIES:
+  :ID:       gsoc
+  :END:
+
+#+ATTR_HTML: id="main-image"
+[[file:../img/gsoc2012.png]]
+
+2012年、二人の学生のプロジェクトが [[http://code.google.com/soc/][Google Summer of Code]] で採択されました。
+
+この成果物については、[[http://thread.gmane.org/gmane.emacs.orgmode/59279][概要がまとめられたメール]]で確認できます。
+
+/Aurélien Aptel/ 氏は、いくつかのオンラインバグトラッカーと、ローカルのOrgファイルとを同期し、その状態を維持するためのツールを作成しました。
+
+=git://orgmode.org/org-sync.git=
+
+/Andrew Young/ 氏は、Orgファイルをマージするツールを作成しました。
+
+このツールは、OrgファイルのGitリポジトリを持つユーザにとって便利です。プロジェクトの中に、 =README.org= のようなOrgファイルが一つだけある場合であっても有用です。
+
+=git://orgmode.org/org-merge-driver.git=
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(worg,vim)}}}
+
+* VimOrganizer
+  :PROPERTIES:
+  :ID:       vim
+  :END:
+
+#+BEGIN_HTML
+<iframe class="iframe" src="http://player.vimeo.com/video/17182850" width="500" height="404" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+#+END_HTML
+
+Herbert Sitz氏が、[[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]] を作成しました。Org-modeが提供する機能の多くを提供する [[http://www.vim.org/][Vim]] プラグインです。
+
+VimOrganizerのたくさんの[[https://vimeo.com/17182850][スクリーンショット]]をみてください。
+
+=https://github.com/hsitz/VimOrganizer=
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(gsoc,more)}}}
+
+* Twitter, G+ and the Org シャツ！
+  :PROPERTIES:
+  :ID:       more
+  :END:
+
+#+ATTR_HTML: id="main-image"
+[[file:../img/gplus.png]]
+
+/Takaaki Ishikawa/ 氏が、ツイッターボット（[[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]]）を管理しています。また、汎用的なハッシュタグもあります（[[https://twitter.com/#!/search/%2523orgmode][#orgmode]]）。
+
+#+BEGIN_HTML
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 300,
+  height: 200,
+  theme: {
+    shell: {
+      background: '#dfe0e3',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#615161',
+      links: '#7a0a2b'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('orgmode_bot').start();
+</script>
+#+END_HTML
+
+
+[[https://plus.google.com/b/102778904320752967064/102778904320752967064/posts][Org-modeのGoogle+ページ]]もあります（スクリーンショット参照）
+
+
+[[http://stackoverflow.com/questions/tagged/org-mode][stackoverflow.com]]には、Org-modeについての質問がたくさんのユーザから投稿されています。とても良いことなのですが、直接[[id:list][メーリングリスト]]に質問を投稿することを推奨します。
+
+もしも、身近な人の中から Org-mode を使う友達を見つけたいなら、あの有名なOrgシャツを着てみることをお勧めします。 [[http://orgmode.spreadshirt.com/][アメリカ]]か、[[http://orgmode.spreadshirt.de/][ユーロ圏]]のショップで購入できます。
+
+#+ATTR_HTML: style="float: center;" width="300px"
+[[file:../img/shirts.jpg]]
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(gsoc,more)}}}
+
