@@ -7,17 +7,13 @@
 #+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
 #+MACRO: next #+BEGIN_HTML\n<div class="move">\n> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a>\n</div>\n#+END_HTML
 #+MACRO: previous #+BEGIN_HTML\n<div class="move">\n< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a>\n</div>\n#+END_HTML
-#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
 
 #+BEGIN_HTML
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.<br />
+<div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。<br />
 
-<span id="top2">It was created by <a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003 and
-is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> since 2011.</span></em></p></div>
+<span id="top2">Org-modeは2003年に<a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a>氏によって作られ、2011年から<a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a>氏によって管理されています。</span></em></p></div>
 #+END_HTML
-
-*「現在，翻訳期間中です．しばらくご迷惑をおかけします m(\_ \_)m」*
 
 * ダウンロードとインストール
   :PROPERTIES:
@@ -27,29 +23,31 @@ is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> sin
 #+ATTR_HTML: id="main-image"
 [[file:../img/main.jpg]]
 
-安定版 *7.9.2* （2012年9月） --- [[http://orgmode.org/org-7.9.2.tar.gz][tar.gz]] or [[http://orgmode.org/org-7.9.2.zip][zip]]
+安定版は、バージョン*7.9.2*です。（2012年12月現在）--- [[http://orgmode.org/org-7.9.2.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-7.9.2.zip][zip]] をダウンロードしてください。
 
-リリースノートを読む => [[file:Changes.org][release notes]]（英語）
+[[file:../Changes.org][リリースノート（英語）]]を読んでください。
 
-開発版（[[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]）：
+開発版は、以下の手段で入手できます。（[[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]）
 
 =git://orgmode.org/org-mode.git=
 
-=M-x list-packages RET= (see [[http://orgmode.org/elpa.html][Org ELPA]])
+=M-x list-packages RET= ([[http://orgmode.org/elpa.html][Org ELPA（英語）]]を読んでください）
 
-ナイトリー版：[[http://orgmode.org/org-latest.tar.gz][tar.gz]]／[[http://orgmode.org/org-latest.zip][zip]]
+ナイトリー版は、 [[http://orgmode.org/org-latest.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-latest.zip][zip]] をダウンロードしてください。
 
-- [[file:features.org][List of features]]
-- [[#docs][Manuals and tutorials]]
-- [[file:talks.org][Talks about Org mode]]
-- [[community.html#gsoc][Google Summer of Code 2012]]
-- [[file:community.org][Mailing list and goodies]]
+- [[file:features.org][Org-modeの特徴]]
+- [[#docs][マニュアルとチュートリアル]]
+- [[file:talks.org][Org-modeについての講演]]
+- [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]（英語）
+- [[file:community.org][メーリングリストとグッズ]]
 
-** More
+** より詳しい情報
 
-More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode]] (Worg)
+インストールや最新版の入手に関するより詳しい情報は、Worgの記事を参考にしてください。
 
-[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]] (Worg)
+[[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode]]（英語）
+
+[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]]（英語）
 
 ** Move
    :PROPERTIES:
@@ -59,7 +57,7 @@ More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode
 
 {{{next(docs)}}}
 
-* ドキュメント
+* ドキュメントと文献
   :PROPERTIES:
   :CUSTOM_ID: docs
   :END:
@@ -67,26 +65,21 @@ More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode
 #+ATTR_HTML: style="float: right;" width="300px"
 [[file:../img/org-mode-7-network-theory.jpg]]
 
-Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org's manual ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)  
+Org-mode の[[http://www.network-theory.co.uk/org/manual/][印刷されたマニュアル]]を購入できます（[[http://www.network-theory.co.uk/][Network Theory Ltd.]]）。
 
-For each book sold, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] is making a $1 donation to the
-maintainer of Org mode.
+一冊売れるごとに、 [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] を介してOrg-modeのメンテナへ1ドルが寄付されます。
 
-Read the complete manual: [[http://orgmode.org/org.html][HTML]] or [[http://orgmode.org/org.pdf][PDF]]
+マニュアル（完全版）： [[http://orgmode.org/org.html][HTML]] もしくは [[http://orgmode.org/org.pdf][PDF]]
 
-Read the compact guide: [[http://orgmode.org/guide/][HTML]] or [[http://orgmode.org/orgguide.pdf][PDF]]
+コンパクトガイド： [[http://orgmode.org/guide/][HTML]] もしくは [[http://orgmode.org/orgguide.pdf][PDF]]
 
-Check the [[http://orgmode.org/worg/org-faq.html][FAQ]], the [[http://orgmode.org/worg/org-hacks.html][hacks]], and [[http://orgmode.org/worg/org-tutorials/][tutorials]] on [[http://orgmode.org/worg/][Worg]].
+[[http://orgmode.org/worg/][Worg]]にある、[[http://orgmode.org/worg/org-faq.html][FAQ]]、[[http://orgmode.org/worg/org-hacks.html][hacks]]、そして [[http://orgmode.org/worg/org-tutorials/][tutorials]] をみてください。
 
-Check the reference [[http://orgmode.org/worg/doc.html][docs]] about Org's internals.
+フック、コマンド、オプションについての[[http://orgmode.org/worg/doc.html][リファレンス文書]]も読んでください。
 
-Check the list of [[http://orgmode.org/worg/org-papers.html][(scientific) papers]] about Org mode.
+Org-modeについての[[http://orgmode.org/worg/org-papers.html][（科学的な）論文]]も公開されています。
 
-Before submitting a bug report, make sure you read the [[http://orgmode.org/org.html#Feedback]["Feedback"]] section
-of the manual.  
-
-You may also read [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]], by Eric S. Raymond
-and Rick Moen.
+バグレポートを提出する前に、マニュアルの[[http://orgmode.org/org.html#Feedback][「フィードバック」]]を必ず読んでください。Eric S. Raymond氏とRick Moen氏による、 [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]も読んでみてください。
 
 =M-x org-submit-bug-report RET=
 
