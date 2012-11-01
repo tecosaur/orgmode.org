@@ -2,7 +2,7 @@
 #+AUTHOR:    Bastien
 #+EMAIL:     bzg at gnu dot org
 #+STARTUP:   hidestars
-#+LANGUAGE:  en
+#+LANGUAGE:  ja
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org Org-mode Emacs Talks about Org-mode
