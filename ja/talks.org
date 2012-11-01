@@ -10,11 +10,10 @@
 #+STYLE:     <link rel="stylesheet" href="../org.css" type="text/css" />
 
 #+BEGIN_HTML
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.</em></p></div>
+<div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。</em></p></div>
 #+END_HTML
 
-* GoogleTech Talk by Carsten Dominik (2008)
+* Carsten Dominik 氏による GoogleTech Talk の講演 (2008)
   :PROPERTIES:
   :ID:       google-tech-talk
   :END:
@@ -23,12 +22,11 @@ planning, and authoring with a fast and effective plain-text system.</em></p></d
 <iframe class="iframe" width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
 #+end_html
 
-Here is the video of the [[http://www.youtube.com/user/GoogleTechTalks][Google Tech Talk]] about Org mode that I gave on
-July 15th, 2008 on the Google campus in Mountain View, California.
+[[http://research.google.com/video.html][Google Tech Talk]] で Carsten Dominik 氏が、org-mode について講演したときの映像です。2008年7月15日に、カリフォルニア州マウンテンビューにあるグーグルキャンパスで行われました。
 
-Thanks to [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] and [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] for being my hosts during my stay.
+Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] 氏と [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] 氏へ「滞在中にお世話になりました。ありがとう。」と感謝のメッセージを送りました。
 
-You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][the timeline of the topics covered]] by this talk.
+講演の[[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][進行表]]を、対応する動画とともに確認できます。
 
 ** Move
    :PROPERTIES:
@@ -39,7 +37,7 @@ You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-g
 {{{updown(google-tech-talk,org-for-scientists)}}}
 
 
-* At the Max Planck Institute for Neurological Research (2010)
+* * Carsten 氏による the Max Planck Institute for Neurological Research での講演(2010)
   :PROPERTIES:
   :ID:       org-for-scientists
   :END:
@@ -48,9 +46,7 @@ You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-g
 <iframe class="iframe" src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+end_html
 
-This is a talk presented on February 8th 2010 at the Max Planck Institute
-for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
-[[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][this page]] for details.
+この講演は、2010年2月8日に the Max Planck Institute for Neurological Research in Cologne, Germany (http://nf.mpg.de) で行われました。詳細は[[http://www.nf.mpg.de/orgmode/guest-talk-dominik.html][こちら]]のページをチェックしてください。
 
 ** Move
    :PROPERTIES:
@@ -61,7 +57,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 {{{updown(google-tech-talk,floss-weekly)}}}
 
 
-* Interview of Carsten Dominik at [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
+* [[http://twit.tv/show/floss-weekly/136][FLOSSウィークリィ]] の Carsten Dominik 氏へのインタビュー (2010)
   :PROPERTIES:
   :ID:       floss-weekly
   :END:
@@ -81,7 +77,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 {{{updown(org-for-scientists,ghm2011)}}}
 
 
-* Bastien's presentation at GHM Paris (2011)
+* Bastien氏による org-mode のプレゼンテーション (2011)
   :PROPERTIES:
   :ID:       ghm2011
   :END:
@@ -90,12 +86,11 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 <iframe class="iframe" src="http://player.vimeo.com/video/30721952?title=0&amp;byline=0&amp;portrait=0" width="480" height="354" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+end_html
 
-This presentation was given during the GNU Hackers Meeting in Paris, 2011.
+このプレゼンテーションは、2012年にパリで開催されたGNUハッカーズミーティングで行われました。
 
-Thanks to Ludovic Courtès who invited me and all the GNU people who made
-this event possible.
+Bastien氏をこのミーティングに招待したLudovic Courtès氏と、ミーティングを支えたすべてのGNUな人々に感謝します。
 
-You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][the timeline of the topics covered]] by this talk.
+講演の[[http://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][進行表]]を、対応する動画とともに確認できます。
 
 ** Move
    :PROPERTIES:
