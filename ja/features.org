@@ -1,6 +1,6 @@
-#+TITLE:     Org mode for Emacs -- Features
+#+TITLE:     Org mode for Emacs -- Org-modeでできること
 #+EMAIL:     carsten at orgmode dot org
-#+LANGUAGE:  en
+#+LANGUAGE:  ja
 #+STARTUP:   hidestars
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
@@ -9,29 +9,26 @@
 #+STYLE:     <link rel="stylesheet" href="../org.css" type="text/css" />
 
 #+BEGIN_HTML
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.</em></p></div>
+<div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。</em></p></div>
 #+END_HTML
 
-* Editing
+* 文書編集機能
   :PROPERTIES:
   :ID: editing
   :END:
 
 #+ATTR_HTML: id="main-image"
-[[file:img/structure.jpg]]
+[[file:../img/structure.jpg]]
 
-Org is built on top of =outline.el=.
+Org-modeは、 =outline.el= をベースに作られています。
 
-You can easily navigate through headlines and (un)fold (sub)sections of
-your Org documents.
+簡単にヘッドラインを検索でき、Orgファイルののセクションやその子要素を表示したり非表示にできます。
 
-Org enhances =outline.el= with faster keybindings and more editing
-facilities.
+Org-modeは、より素早い操作で扱えるようなキーバインドで =outline.el= を拡張していて、より多くの編集機能が実装しています。
 
 ** More
 
-More on [[http://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure]] (manual)
+より詳しい情報は、マニュアルの[[http://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure（英語）]]を読んでください。 
 
 ** Move
    :PROPERTIES:
@@ -41,29 +38,25 @@ More on [[http://orgmode.org/manual/Document-Structure.html#Document-Structure][
 
 {{{updown(editing,planning)}}}
 
-* Planning
+* プロジェクトの計画機能
   :PROPERTIES:
   :ID: planning
   :END:
 
 #+ATTR_HTML: id="main-image"
-[[file:img/planning.jpg]]
+[[file:../img/planning.jpg]]
 
-Org can be used as a TODO lists manager and as a planner.
+Org-modeは、TODOリストの管理ツールやプランナーとして使うことができます。
 
-Each headline can be turned into a task.
+各ヘッドラインを一つのタスクとして扱います。
 
-Switching from one TODO keyword to another is =C-c C-t= or
-=S-<left/right>=.
+TODOキーワードから別のステータスに切り替えるには、 =C-c C-t= もしくは =S-<left/right>= とするだけです。
 
-Each item can also receive planning meta-data: scheduled and/or deadline
-cookies, tags, properties, etc.
+各アイテムはプランナーのメタデータも扱えます。例えば、予定されているかのフラグ、、ヘッドラインクッキー、タグ、プロパティなどです。
 
 ** More
 
-More on [[http://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] (manual)
-
-Handling [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] (manual)
+より詳しい情報は、マニュアルの [[http://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] や [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] を読んでください。
 
 ** Move
    :PROPERTIES:
@@ -73,28 +66,25 @@ Handling [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates
 
 {{{updown(editing,clocking)}}}
 
-* Clocking
+* 時間の計測
   :PROPERTIES:
   :ID: clocking
   :END:
 
 #+ATTR_HTML: id="main-image"
-[[file:img/clocking.jpg]]
+[[file:../img/clocking.jpg]]
 
-Clocking in a task is =C-c C-x C-i=.
+=C-c C-x C-i= で時間を測り始めて、 =C-c C-x C-o= で止めます。
 
-Clocking out a task is =C-c C-x C-o=.
+アジェンダからは、 =I= と =O= で同じことができます。
 
-You can use =I= and =O= from an agenda buffer.
+計測結果のログは、ドロワーに保存されます。
 
-Clocking logs are stored in a drawer.
-
-Org makes it easy to clock in and out and to produce nice reports, which
-you can customize to suit the needs of your hairy boss.
+Org-modeは、ナイスなレポートを作成するために、簡単に時間を計測できます。また、あなたのボスの要求にピッタリ合うようにカスタマイズできます。
 
 ** More
 
-More on [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] (manual)
+より詳しい情報は、マニュアルの [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] を読んでください。
 
 ** Move
    :PROPERTIES:
@@ -104,13 +94,13 @@ More on [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][
 
 {{{updown(planning,agendas)}}}
 
-* Agendas
+* アジェンダ
   :PROPERTIES:
   :ID: agendas
   :END:
 
 #+ATTR_HTML: id="main-image"
-[[file:img/agenda.jpg]]
+[[file:../img/agenda.jpg]]
 
 Even with large =.org= files and thousands of tasks, it is easy to focus on
 what you need to do for each context.
@@ -139,25 +129,23 @@ Tutorial on [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.h
 
 {{{updown(clocking,capturing)}}}
 
-* Capturing
+* キャプチャ
   :PROPERTIES:
   :ID: capturing
   :END:
 
 #+ATTR_HTML: id="main-image"
-[[file:img/capture.jpg]]
+[[file:../img/capture.jpg]]
 
-Adding TODO items to your =.org= files is called /capturing/.
+=.org= ファイルにTODOアイテムを追加することを、キャプチャと呼びます。
 
-You can capture from everywhere, both within Emacs and from other
-applications like your web browser, pdf viewer, etc.
+キャプチャはどこからでも実行できます。Emacsの中からだけでなく、その他の、ウェブブラウザやPDFビューアなどのアプリケーションからも可能です。
 
-Capture templates allow you to tell what information you want to capture
-from various contexts (the file name, the current date, the region, etc.)
+キャプチャのテンプレートを利用すると、様々な条件からどの情報をキャプチャするのかを指定できるようになります。ファイル名や日付、領域などです。
 
 ** More
 
-More on [[http://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
+より詳しい情報は、マニュアルの [[http://orgmode.org/manual/Capture.html#Capture][capturing]] を読んでください。
 
 ** Move
    :PROPERTIES:
@@ -167,33 +155,33 @@ More on [[http://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
 
 {{{updown(agendas,tables)}}}
 
-* Tables
+* テーブル
   :PROPERTIES:
   :ID: tables
   :END:
 
 #+ATTR_HTML: id="main-image"
-[[file:img/table2.jpg]]
+[[file:../img/table2.jpg]]
 
-Org is a great plain-text table editor.
+Org-modeは、プレーンテキストを用いた素晴らしい表計算ができます。
 
-You can import tables from =.csv= and =.tsv= files, or directly from the
-current buffer; you can then export them in all the formats supported by
-Org (see below).
+=.csv= と =.tsv= のファイルからテーブルをインポートできます。もしくは、カレントバッファから直接読み込むこともできます。テーブルは、Org-mode がサポートするすべてのファイル形式において出力可能です。
 
-Org can also be used as a /spreadsheet/ system.  
+つまり、Org-mode は、表計算ソフトとして使うこともできるのです。
 
-You can add formulas using the [[http://www.gnu.org/software/emacs/manual/html_mono/calc.html][Calc Emacs package]] or Emacs lisp code.
+[[http://www.gnu.org/software/emacs/manual/html_mono/calc.html][Calc Emacs package]] もしくはEmacs Lispコードを用いて数式を追加できます。
 
 ** More
 
-The [[http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]] (manual)
+より詳しくは、以下の情報を参照してください。
 
-Org as a [[http://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system (manual)
+マニュアルの [[http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]]。
 
-Introduction to [[http://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
+マニュアルの Org as a [[http://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system。
 
-Using [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
+Worgの Introduction to [[http://orgmode.org/worg/org-tutorials/tables.html][editing tables]]。
+
+Worgの Using [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]]。
 
 ** Move
    :PROPERTIES:
@@ -203,36 +191,29 @@ Using [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as
 
 {{{updown(capturing,exporting)}}}
 
-* Exporting
+* エクスポート
   :PROPERTIES:
   :ID: exporting
   :END:
 
 #+ATTR_HTML: id="main-image"
-[[file:img/export.jpg]]
+[[file:../img/export.jpg]]
 
-Org is an authoring and publication tool.
+Org-modeは、オーサリングツールであり、文書の公開ツールでもあります。
 
-You can use intuitive markup then have it converted to =HTML=, $\LaTeX{}$,
-=ODT= -- and much more.
+直感的なマークアップを使って、 =HTML=、 $\LaTeX{}$、=ODT= などに変換できます。
 
-Developers can easily create new backends for their favorite format (see
-the [[http://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
+開発者の場合は、好みの形式の新しいバックエンドを簡単に作れます。[[http://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]を読んでください。
 
-You can also define /publishing projects/ with one or more =.org= file(s),
-and one or more publication backends.
+また、一つ以上の =.org= ファイルを用いて、 /公開プロジェクト/ を定義することもできます。一つ以上の公開バックエンドについても同様です。
 
 ** More
 
-More on [[http://orgmode.org/manual/Markup.html#Markup][markup]] (manual)
+詳しくは、次の情報を参照してください。
 
-More on [[http://orgmode.org/manual/Exporting.html#Exporting][exporting]] (manual)
+マニュアルの [[http://orgmode.org/manual/Markup.html#Markup][markup]]、[[http://orgmode.org/manual/Exporting.html#Exporting][exporting]]、[[http://orgmode.org/manual/Publishing.html#Publishing][publishing]]。
 
-More on [[http://orgmode.org/manual/Publishing.html#Publishing][publishing]] (manual)
-
-[[http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to =HTML= (Worg)
-
-[[http://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX{}$ (Worg)
+Worgの =HTML= 形式で公開するための[[http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][チュートリアル]]、 $\LaTeX{}$形式で公開するための[[http://orgmode.org/worg/org-tutorials/org-latex-export.html][チュートリアル]]。
 
 ** Move
    :PROPERTIES:
@@ -242,25 +223,21 @@ More on [[http://orgmode.org/manual/Publishing.html#Publishing][publishing]] (ma
 
 {{{updown(tables,babel)}}}
 
-* Working with source code
+* ソースコードとの連携
   :PROPERTIES:
   :ID: babel
   :END:
 
 #+ATTR_HTML: id="main-image"
-[[file:img/babel.jpg]]
+[[file:../img/babel.jpg]]
 
-Org makes [[http://en.wikipedia.org/wiki/Literate_programming][literate programming]] a handy and natural way to deal with code.
+Org-modeは、[[http://en.wikipedia.org/wiki/Literate_programming][文芸的プログラミング]]をソースコードを扱うための便利かつ自然な扱い方にします。
 
-You can insert code snippets, have them fontified in the Org buffer,
-compute the results in-file and tangle your Org file to get a code source
-file.
+コード断片を挿入し、Orgバッファでフォントを変え、同じバッファで結果を演算します。また、ソースコードのファイルを作るためにorgファイルからコードを抽出します。
 
 ** More
 
-[[http://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]] (manual)
-
-List of [[http://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
+マニュアルの[[http://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]]と、Worgの List of [[http://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]]を参照してください。
 
 ** Move
    :PROPERTIES:
@@ -270,19 +247,17 @@ List of [[http://orgmode.org/worg/org-contrib/babel/languages.html][supported la
 
 {{{updown(exporting,mobile)}}}
 
-* With your mobile phone
+* モバイル端末との連携
   :PROPERTIES:
   :ID: mobile
   :END:
 
 #+ATTR_HTML: style="float: right; box-shadow: none;" width="200px"
-[[file:img/mobile.png]]
+[[file:../img/mobile.png]]
 
-/Richard Moreland/ has developed [[http://mobileorg.ncogni.to/][MobileOrg]], a free software for iPhone and
-iPod Touch for storing, searching, viewing and editing your Org files.
+/Richard Moreland/氏が、iOS向けのフリーソフトウェア、[[http://mobileorg.ncogni.to/][MobileOrg]]を開発しています。アイテムのソート、検索、閲覧、そして Orgファイルの編集が可能です。
 
-/Matt Jones/ has developed an equivalent [[https://play.google.com/store/apps/details?id%3Dcom.matburt.mobileorg#?t%3DW251bGwsMSwxLDIxMiwiY29tLm1hdGJ1cnQubW9iaWxlb3JnIl0.][MobileOrg]] for the Android platform
-(check the source code on [[https://github.com/matburt/mobileorg-android][github]]).
+/Matt Jones/ 氏が、[[https://play.google.com/store/apps/details?id%3Dcom.matburt.mobileorg#?t%3DW251bGwsMSwxLDIxMiwiY29tLm1hdGJ1cnQubW9iaWxlb3JnIl0.][MobileOrg]]と同等のAndroid向けアプリケーションを開発しています。[[https://github.com/matburt/mobileorg-android][github]]にあるソースコードをみてください。
 
 ** COMMENT More
 
