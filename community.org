@@ -83,7 +83,7 @@ New contributors are welcome -- just send your public key to Bastien.
 #+ATTR_HTML: id="main-image"
 [[file:img/gsoc2012.png]]
 
-In 2012, two students successfully achieved and Org mode [[http://code.google.com/soc/][Google Summer of
+In 2012, two students successfully achieved an Org mode [[http://code.google.com/soc/][Google Summer of
 Code]] project.
 
 Read the [[http://thread.gmane.org/gmane.emacs.orgmode/59279][summary email]] about their achievements.
