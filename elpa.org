@@ -10,8 +10,9 @@
 #+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
 
 #+BEGIN_HTML
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.<br />
+<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
+projects, and authoring documents with a fast and effective plain-text system.<br />
+#+END_HTML
 
 <span id="top2">It was created by <a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003 and
 is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> since 2011.</span></em></p></div>
