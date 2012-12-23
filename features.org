@@ -9,8 +9,8 @@
 #+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
 
 #+BEGIN_HTML
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, doing project
-planning, and authoring with a fast and effective plain-text system.</em></p></div>
+<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
+projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
 * Editing
