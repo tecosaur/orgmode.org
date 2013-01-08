@@ -23,7 +23,7 @@
 #+ATTR_HTML: id="main-image"
 [[file:../img/main.jpg]]
 
-安定版は、バージョン*7.9.3*です。（2013年01月現在）--- [[http://orgmode.org/org-7.9.3-7-gafc7b7.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-7.9.3-7-gafc7b7.zip][zip]] をダウンロードしてください。
+安定版は、バージョン*7.9.3*です。（2013年01月現在）--- [[http://orgmode.org/org-7.9.3a.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-7.9.3a.zip][zip]] をダウンロードしてください。
 
 [[file:../Changes.org][リリースノート（英語）]]を読んでください。
 
