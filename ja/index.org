@@ -29,7 +29,7 @@
 
 開発版は、以下の手段で入手できます。（[[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]）
 
-=git://orgmode.org/org-mode.git=
+=~$ git clone git://orgmode.org/org-mode.git=
 
 =M-x list-packages RET= ([[http://orgmode.org/elpa.html][Org ELPA（英語）]]を読んでください）
 

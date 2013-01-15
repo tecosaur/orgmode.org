@@ -50,7 +50,7 @@
 #+ATTR_HTML: id="main-image"
 [[file:../img/worg.png]]
 
-=git://orgmode.org/worg.git=
+=~$ git clone git://orgmode.org/worg.git=
 
 Worgは、Org-modeのユーザが作る =.org= ファイルのGITリポジトリです。各ファイルは、 =HTML= で記述されたウェブサイトとして公開されています。
 
@@ -84,13 +84,13 @@ GITとEmacs+Orgによる /wiki/ 、と考えてください。
 
 /Aurélien Aptel/ 氏は、いくつかのオンラインバグトラッカーと、ローカルのOrgファイルとを同期し、その状態を維持するためのツールを作成しました。
 
-=git://orgmode.org/org-sync.git=
+=~$ git clone git://orgmode.org/org-sync.git=
 
 /Andrew Young/ 氏は、Orgファイルをマージするツールを作成しました。
 
 このツールは、OrgファイルのGitリポジトリを持つユーザにとって便利です。プロジェクトの中に、 =README.org= のようなOrgファイルが一つだけある場合であっても有用です。
 
-=git://orgmode.org/org-merge-driver.git=
+=~$ git clone git://orgmode.org/org-merge-driver.git=
 
 ** Move
    :PROPERTIES:

@@ -55,7 +55,7 @@ Les utilisateurs discutent aussi sur le canal IRC =#org-mode= de [[http://webcha
 #+ATTR_HTML: id="main-image"
 [[file:../img/worg.png]]
 
-=git://orgmode.org/worg.git=
+=~$ git clone git://orgmode.org/worg.git=
 
 Worg est projet collectif de documentation d'Org mode, où les fichiers
 =.org= sont stockés dans un dépôt Git publié en =HTML=.
@@ -93,14 +93,14 @@ Lire [[http://thread.gmane.org/gmane.emacs.orgmode/59279][le résumé]] (en angl
 /Aurélien Aptel/ a développé un outil pour synchroniser des fichiers Org
 locaux avec des traqueurs de bogues en ligne.
 
-=git://orgmode.org/org-sync.git=
+=~$ git clone git://orgmode.org/org-sync.git=
 
 /Andrew Young/ a écrit un /merge driver/ pour les fichiers Org.
 
 C'est utile quand vous avez un dépôt Git qui contient des fichiers Org ou
 même seulement un fichier =README.org= dans votre projet.
 
-=git://orgmode.org/org-merge-driver.git=
+=~$ git clone git://orgmode.org/org-merge-driver.git=
 
 ** Move
    :PROPERTIES:

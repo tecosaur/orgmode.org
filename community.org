@@ -54,7 +54,7 @@ Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.n
 #+ATTR_HTML: id="main-image"
 [[file:img/worg.png]]
 
-=git://orgmode.org/worg.git=
+=~$ git clone git://orgmode.org/worg.git=
 
 Worg is a community-driven Git repository of =.org= pages published as a
 =HTML= website.
@@ -91,14 +91,14 @@ Read the [[http://thread.gmane.org/gmane.emacs.orgmode/59279][summary email]] ab
 /Aurélien Aptel/ wrote a tool to synchronize keep local Org files in sync
 with several online bug trackers.
 
-=git://orgmode.org/org-sync.git=
+=~$ git clone git://orgmode.org/org-sync.git=
 
 /Andrew Young/ wrote a merge driver for Org files.
 
 This is useful if you have a Git repository of Org files or even just a
 =README.org= file in your project.
 
-=git://orgmode.org/org-merge-driver.git=
+=~$ git clone git://orgmode.org/org-merge-driver.git=
 
 ** Move
    :PROPERTIES:

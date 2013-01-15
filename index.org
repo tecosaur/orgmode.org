@@ -31,7 +31,7 @@ Read the [[file:Changes.org][release notes]].
 
 Development version ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
-=git://orgmode.org/org-mode.git=
+=~$ git clone git://orgmode.org/org-mode.git=
 
 =M-x list-packages RET= (see [[http://orgmode.org/elpa.html][Org ELPA]])
 
