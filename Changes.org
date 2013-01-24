@@ -17,6 +17,18 @@ projects, and authoring documents with a fast and effective plain-text system.</
 
 * Version 7.9.3
 
+** No need to require =org-install= anymore
+
+You don't need to require =org-install= anymore.  If you load Org from a
+directory extracted from the =.tar.gz= or =.zip= sources, or if you are
+using it from a git clone, setting the =load-paths= is enough.
+
+If you want to make sure the correct autoloads are in place, you can do:
+
+#+BEGIN_SRC emacs-lisp
+(require 'org-loaddefs.el)
+#+END_SRC
+
 ** New option [[doc::org-agenda-use-tag-inheritance][org-agenda-use-tag-inheritance]]
 
 [[doc::org-use-tag-inheritance][org-use-tag-inheritance]] controls whether tags are inherited when
