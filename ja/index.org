@@ -37,6 +37,8 @@
 
 - [[file:features.org][Org-modeの特徴]]
 - [[#docs][マニュアルとチュートリアル]]
+- [[http://orgmode.org/worg/][Worg: community-written docs]]
+- [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
 - [[file:talks.org][Org-modeについての講演]]
 - [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]（英語）
 - [[file:community.org][メーリングリストとグッズ]]
