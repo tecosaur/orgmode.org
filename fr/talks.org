@@ -101,4 +101,25 @@ présentation.
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(floss-weekly,ghm2011)}}}
+{{{updown(floss-weekly,gpn12)}}}
+* Présentation de Florian Adamsky's au [[https://entropia.de/GPN12][GPN12]] (2012)
+  :PROPERTIES:
+  :ID:       gpn12
+  :END:
+
+#+begin_html
+<iframe width="420" height="315" src="http://www.youtube.com/embed/mUSoo4UaKBo" frameborder="0" allowfullscreen></iframe>
+#+end_html
+
+Le diapomara est téléchargeable [[http://florian.adamsky.it/research/talks/gpn12/GPN12-Emacs-Org-mode.pdf][en PDF ici]].
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(ghm2011,gpn12)}}}
+
+
+

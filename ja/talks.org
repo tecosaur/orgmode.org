@@ -98,4 +98,26 @@ Bastien氏をこのミーティングに招待したLudovic Courtès氏と、ミ
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{updown(floss-weekly,ghm2011)}}}
+{{{updown(floss-weekly,gpn12)}}}
+
+* Florian Adamsky's in-depth presentation at [[https://entropia.de/GPN12][GPN12]] (2012)
+  :PROPERTIES:
+  :ID:       gpn12
+  :END:
+
+#+begin_html
+<iframe width="420" height="315" src="http://www.youtube.com/embed/mUSoo4UaKBo" frameborder="0" allowfullscreen></iframe>
+#+end_html
+
+The slides are available [[http://florian.adamsky.it/research/talks/gpn12/GPN12-Emacs-Org-mode.pdf][as PDF here]].
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{updown(ghm2011,gpn12)}}}
+
+
+
