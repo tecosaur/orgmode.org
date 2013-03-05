@@ -37,6 +37,7 @@ Daily snapshots: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://or
 
 - [[file:features.org][List of features]]
 - [[#docs][Manuals and tutorials]]
+- [[http://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
 - [[http://orgmode.org/worg/][Worg: community-written docs]]
 - [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
 - [[file:talks.org][Talks about Org mode]]
