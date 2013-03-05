@@ -223,7 +223,7 @@ p {
 }
 
 a:link { 
-    font-weight: bold; 
+    font-weight: normal; 
     text-decoration: none; 
     color: #FF0000;
     /* color: #A34D32; */
@@ -250,7 +250,8 @@ dd {
 dt {
     font-size: 110%;
     font-family: Courier New;
-    color: #537d7b;
+    color: #0066CC;
+    /* color: #537d7b; */
     padding: 3px;
     margin-bottom: 3px;
 }
