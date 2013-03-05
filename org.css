@@ -122,8 +122,9 @@ h2 {
 }
 
 code {
+    font-family: "Droid Sans Mono"
     background-color: #eeeeee;
-    padding: 1pt;
+    padding: 2pt;
     margin-right: 1pt;
     box-shadow: 1px 1px 1px #aaa;
 }
