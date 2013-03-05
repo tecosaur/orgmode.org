@@ -131,6 +131,8 @@ code {
 
 pre {
     font-family: "Droid Sans Mono";
+    font-size: 90%;
+    font-weight: normal;
     background-color: #eeeeee;
     padding: 2pt;
     margin-right: 1pt;
