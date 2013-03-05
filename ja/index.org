@@ -35,6 +35,7 @@
 
 - [[file:features.org][Org-modeの特徴]]
 - [[#docs][マニュアルとチュートリアル]]
+- [[http://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
 - [[http://orgmode.org/worg/][Worg: community-written docs]]
 - [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
 - [[file:talks.org][Org-modeについての講演]]
