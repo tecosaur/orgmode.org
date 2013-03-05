@@ -70,7 +70,7 @@ Also, you may want to set up Package correctly before initializing it:
 
 #+BEGIN_SRC emacs-lisp :exports code
   ;; -*- emacs-lisp -*-
-  (unless package-archive-contents    ;; Refrech the packages descriptions
+  (unless package-archive-contents    ;; Refresh the packages descriptions
     (package-refresh-contents))
   (setq package-load-list '(all))     ;; List of packages to load
   (unless (package-installed-p 'org)  ;; Make sure the Org package is
