@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif);
+
 html {
     margin: 0;
     font: 300 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
@@ -39,15 +41,18 @@ td {
 
 a {
     text-decoration: none;
-    color: #537d7b
+    color: #FF0000;
+    /* color: #537d7b */
 }
 a:visited {
     text-decoration: none;
-    color: #98855b
+    color: #0066CC;
+    /* color: #98855b */
 }
 a:hover {
     text-decoration: underline;
-    color: #a34d32
+    color: #FF0000;
+    /* color: #a34d32 */
 }
 
 #content {
@@ -108,6 +113,7 @@ code {
 
 pre {
     font-size: 90%;
+    font-family: "Droid Sans Mono";
     background-color: #eeeeee;
     padding: 3pt;
     box-shadow: 3px 3px 3px #aaa;
