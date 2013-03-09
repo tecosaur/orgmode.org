@@ -41,17 +41,17 @@ html {
 
 a {
     text-decoration: none;
-    color: #FF0000;
+    color: #0066CC;
     /* color: #537d7b */
 }
 a:visited {
     text-decoration: none;
-    color: #0066CC;
+    color: #FF0000;
     /* color: #98855b */
 }
 a:hover {
     text-decoration: underline;
-    color: #FF0000;
+    color: #0066CC;
     /* color: #a34d32; */
 }
 
