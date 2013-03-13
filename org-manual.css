@@ -225,20 +225,20 @@ p {
 a:link { 
     font-weight: normal; 
     text-decoration: none; 
-    color: #FF0000;
+    color: #1c3030;
     /* color: #A34D32; */
 }
 
 a:visited { 
     font-weight: normal; 
     text-decoration: none; 
-    color: #0066CC;
+    color: #5e251e;
     /* color: #6E2432; */
 }
 
 a:hover, a:active { 
     text-decoration: underline; 
-    color: #FF0000;
+    color: #3d696a;
     /* color: #537d7b; */
 }
 
@@ -250,7 +250,7 @@ dd {
 dt {
     font-size: 110%;
     font-family: Courier New;
-    color: #0066CC;
+    color: #1c3030;
     /* color: #537d7b; */
     padding: 3px;
     margin-bottom: 3px;

@@ -41,17 +41,17 @@ td {
 
 a {
     text-decoration: none;
-    color: #FF0000;
+    color: #1c3030;
     /* color: #537d7b */
 }
 a:visited {
     text-decoration: none;
-    color: #0066CC;
+    color: #5e251e;
     /* color: #98855b */
 }
 a:hover {
     text-decoration: underline;
-    color: #FF0000;
+    color: #3d696a;
     /* color: #a34d32 */
 }
 
