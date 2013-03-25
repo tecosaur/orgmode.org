@@ -12,6 +12,10 @@
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
+* Version 7.9.4
+
+This is bug-fix release.
+
 * Version 7.9.3
 
 ** No need to require =org-install= anymore
