@@ -15,11 +15,10 @@
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
-This page list changes from the *development version* of Org-mode.
-
-Changes against the latest stable version are [[file:Changes_old.org][here]].
-
 * Version 8.0
+
+  This page list changes from the *development version* of Org-mode.
+  Changes against the latest stable version are [[file:Changes_old.org][here]].
 
 /This version is only a draft.  It will be completed when Org 8.0 will be
 released./
