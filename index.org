@@ -25,7 +25,7 @@ is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> sin
 #+ATTR_HTML: id="main-image"
 [[file:img/main.jpg]]
 
-Stable version *7.9.4* (mar. 2013) --- [[http://orgmode.org/org-7.9.4.tar.gz][tar.gz]] or [[http://orgmode.org/org-7.9.3f.zip][zip]] ([[file:Changes.org][release notes]]).
+Stable version *7.9.4* (mar. 2013) --- [[http://orgmode.org/org-7.9.4.tar.gz][tar.gz]] or [[http://orgmode.org/org-7.9.4.zip][zip]] ([[file:Changes.org][release notes]]).
 
 Development version ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
