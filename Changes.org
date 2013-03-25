@@ -206,7 +206,8 @@ Emacs, or because they are not targetting a significant user-base.
     
     =ox-taskjuggler.el= is a rewrite of =org-taskjuggler.el=, which was
     originally written by Christian Egli.  This export back-end now targets
-    TJ3 by default.
+    TJ3 by default.  John Hendy wrote [[http://orgmode.org/worg/org-tutorials/org-taskjuggler3.html][a tutorial on Worg]] for the TJ3
+    export.
 
 ** New features
 
