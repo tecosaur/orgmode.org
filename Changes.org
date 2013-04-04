@@ -393,6 +393,11 @@ latexpreview
 nolatexpreview
 *** Babel
 
+**** New =:post= header argument post processes results
+     This header argument may be used to pass the results of the
+     current code block through another code block for
+     post-processing.  See the manual for example usage.
+
 **** New Babel files only need to (require 'ob)
 
 When writing a new Babel file, you now only need to use =(require 'ob)=
