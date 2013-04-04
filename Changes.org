@@ -186,11 +186,7 @@ Emacs, or because they are not targetting a significant user-base.
     =org-mew.el= implements support for links to the [[http://www.mew.org][Mew]] mail client.  The
     version included in 8.0 has been enhanced.
     
-*** org-w3m.el (was in core)
-
-    To enable support for links to w3m FIXME buffers, load =org-w3m.el= through
-    the =org-modules= option.
-
+*** org-mac-message.el (was in core)
 *** org-wl.el (was in core)
 
     To enable support for links to Wanderlust FIXME buffers, load
@@ -459,6 +455,7 @@ visiting any Org file.  This is due to a problem in Emacs package system.
 
 ** Miscellaneous
 
+*** Speedy command 's' pour org-narrow-to-subtree
 *** org-protocol: Pass optional value using query in url to capture from protocol.
 *** New option =org-image-actual-width=
 
