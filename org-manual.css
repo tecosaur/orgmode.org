@@ -225,20 +225,20 @@ p {
 a:link { 
     font-weight: normal; 
     text-decoration: none; 
-    color: #1c3030;
+    /* color: #1c3030; */
     /* color: #A34D32; */
 }
 
 a:visited { 
     font-weight: normal; 
     text-decoration: none; 
-    color: #5e251e;
+    /* color: #5e251e; */
     /* color: #6E2432; */
 }
 
 a:hover, a:active { 
     text-decoration: underline; 
-    color: #3d696a;
+    /* color: #3d696a; */
     /* color: #537d7b; */
 }
 
