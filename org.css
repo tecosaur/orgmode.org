@@ -41,19 +41,19 @@ html {
 
 a {
     text-decoration: none;
-    color: #1c3030;
+    /* color: #1c3030; */
     /* #0066CC; */
     /* color: #537d7b */
 }
 a:visited {
     text-decoration: none;
-    color: #5e251e;
+    /* color: #5e251e; */
     /* #FF0000; */
     /* color: #98855b */
 }
 a:hover {
     text-decoration: underline;
-    color: #3d696a;
+    /* color: #3d696a; */
     /* #0066CC; */
     /* color: #a34d32; */
     /* #923a2e */
