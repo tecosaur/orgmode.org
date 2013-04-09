@@ -465,17 +465,42 @@ See http://orgmode.org/org.html# FIXME for details.
 *** Links
 
 **** =C-u C-u M-x org-store-link RET= will ignore non-core link functions
-**** =C-u C-u C-u C-c l= on an active region will store links for each lines
+
+Org knows how to store links from Org buffers, from info files and from
+other Emacs buffers.  Org can be taught how to store links from any buffer
+through new link protocols (see [[http://orgmode.org/org.html#Adding-hyperlink-types]["Adding hyperlink types"]] in the manual.)
+
+Sometimes you want Org to ignore added link protocols and store the link
+as if the protocol was not known.
+
+You can now do this with =C-u C-u M-x org-store-link RET=.
+
+**** =C-u C-u C-u M-x org-store-link RET= on an active region will store links for each lines
+
+Imagine for example that you want to store a link for every message in a
+Gnus summary buffer.  In that case =C-x h C-u C-u C-u M-x org-store-link
+RET= will store a link for every line (i.e. message) if the region is
+active.
+
 **** =C-c C-M-l= will add a default description for links which don't have one
-**** No curly braces to bracket links within internal links
-**** When storing links and there is a keyword at point, use the keyword
+
+=C-c C-M-l= inserts all stored links.  If a link does not have a
+description, this command now adds a default one, so that we are not mixing
+with-description and without-description links when inserting them.
+
+**** FIXME No curly braces to bracket links within internal links
+**** FIXME When storing links and there is a keyword at point, use the keyword
 
 # org.el (org-store-link): Use keyword at point as the search string
 
-**** Better ido support when inserting a link
 *** Table
 
 **** Switching between #+TBLFM lines
+
+If you have several =#+TBLFM= lines below a table, =C-c C-c= on a line will
+apply the formulas from this line, and =C-c C-c= on another line will apply
+those other formulas.
+
 **** Use nan for empty fields in Calc formulas
 **** Handle localized time-stamps in formulas evaluation
 **** New lookup functions
