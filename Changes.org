@@ -260,6 +260,57 @@ In general, you want to set =orgstruct-heading-prefix-regexp= as a file
 local variable.
 
 **** TODO FIXME Don't activate speedy keys within code src blocks (?)
+*** Scheduled/deadline
+
+**** Implement "delay" cookies for scheduled items.
+
+If you want to delay the display of a scheduled task in the agenda, you can
+now use a delay cookie like this: =SCHEDULED: <2004-12-25 Sat -2d>=.  The
+task is still scheduled on the 25th but will appear in your agenda starting
+from two days later (i.e. from March 27th.)
+
+Imagine for example that your co-workers are not done in due time and tell
+you "we need two more days".  In that case, you may want to delay the
+display of the task in your agenda by two days, but you still want the task
+to appear as scheduled on March 25th.
+
+In case the task contains a repeater, the delay is considered to affect all
+occurrences; if you want the delay to only affect the first scheduled
+occurrence of the task, use =--2d= instead.  See =org-scheduled-delay-days=
+and =org-agenda-skip-scheduled-delay-if-deadline= for details on how to
+control this globally or per agenda.
+
+**** Use =C-u C-u C-s= will insert a delay cookie for scheduled tasks.
+**** Use =C-u C-u C-d= will insert a warning delay for deadline tasks.
+*** Calendar, diary and appts
+
+**** New variable =org-read-date-minibuffer-local-map=
+
+By default, this new local map uses "." to go to today's date, like in the
+normal =M-x calendar RET=.  If you want to deactivate this and to reassign
+the "@" key to =calendar-goto-today=, use this:
+
+#+BEGIN_SRC emacs-lisp
+  ;; Unbind "." in Org's calendar:
+  (define-key org-read-date-minibuffer-local-map (kbd ".") nil)
+  
+  ;; Bind "@" to `calendar-goto-today':
+  (define-key org-read-date-minibuffer-local-map
+              (kbd "@")
+              (lambda () (interactive) (org-eval-in-calendar '(calendar-goto-today))))
+#+END_SRC
+
+**** In Org's calendar, =!= displays diary entries of the date at point
+
+This is useful when you want to check if you don't already have an
+appointment when setting new ones with =C-c .= or =C-c s=.  =!= will
+call =diary-view-entries= and display the diary in a separate buffer.
+
+**** =org-diary=: only keep the descriptions of links
+
+=org-diary= returns diary information from Org files, but it returns it
+in a diary buffer, not in an Org mode buffer.  When links are displayed,
+only show their description, not the full links.
 *** Agenda
 
 **** New agenda type =agenda*= and entry types =:scheduled* :deadline*=
@@ -284,7 +335,7 @@ You can now filter agenda entries by regular expressions using ~=~.  =C-u
 == will filter entries out.  Regexp filters are cumulative.  You can set
 =org-agenda-regexp-filter-preset= to suit your needs in each agenda view.
 
-**** "|" in agenda view now reset all filters
+**** =|= in agenda view now reset all filters
 
 Since it's common to combine tag filters, category filters, and now regexp
 filters, there is a new command =|= to reset all filters at once.
@@ -313,14 +364,14 @@ to a negative number.  For example (setq org-agenda-max-tags 3) will not
 show the fourth tagged headline (and beyond), but it will also show
 non-tagged headlines.
 
-**** "~" in agenda view now temporarily set limits
+**** =~= in agenda view now temporarily set limits
 
 You can hit =~= in the agenda to temporarily set limits: this will
 regenerate the agenda as if the limits were set.  This is useful for
 example when you want to only see a list of =N= tasks, or a list of tasks
 that take only =N= minutes.
 
-**** Allow writing an agenda to an .org file
+**** Allow writing an agenda to an =.org= file
 
 You can now write an agenda view to an =.org= file.  It copies the
 headlines and their content (but not subheadings) into the new file.
@@ -328,9 +379,9 @@ headlines and their content (but not subheadings) into the new file.
 This is useful when you want to quickly share an agenda containing the full
 list of notes.
 
-**** Implement new sorting strategies
+**** Implement new agenda sorting strategies
 
-     =org-agenda-sorting-strategy= allows these new sorting strategies:
+=org-agenda-sorting-strategy= allows these new sorting strategies:
 
 | Strategy       | Explanations                             |
 |----------------+------------------------------------------|
@@ -350,10 +401,13 @@ list of notes.
 =org-agenda-prefix-format= now allows to use a =%b= formatter to tell Org
 to display "breadcrumbs" in the agenda view.
 
+This is useful when you want to display the task hierarchy in your agenda.
+
 **** Use =%l= for displaying the headline's level in the agenda view
 
 =org-agenda-prefix-format= allows to use a =%l= formatter to tell Org to
-display entries with additional spaces corresponding to their level.
+display entries with additional spaces corresponding to their level in the
+outline tree.
 
 **** =org-agenda-write= will ask before overwriting an existing file
 **** New option =org-agenda-search-view-max-outline-level=
@@ -361,14 +415,24 @@ display entries with additional spaces corresponding to their level.
 This option sets the maximum outline level to display in search view.
 E.g. when this is set to 1, the search view will only show headlines of
 level 1.
+
 **** New option =org-agenda-todo-ignore-time-comparison-use-seconds=
 
-This allows to compare times using seconds, not days, when honoring options
-like =org-agenda-todo-ignore-*= in the agenda display.
+This allows to compare times using seconds instead of days when honoring
+options like =org-agenda-todo-ignore-*= in the agenda display.
+
 **** New option =org-agenda-entry-text-leaders=
 
 This allows you to get rid of the ">" character that gets added in front of
 entries excerpts when hitting =E= in the agenda view.
+
+**** New formatting string for past deadlines in =org-agenda-deadline-leaders=
+**** New allowed value =repeated-after-deadline= for =org-agenda-skip-scheduled-if-deadline-is-shown=
+
+When =org-agenda-skip-scheduled-if-deadline-is-shown= is set to
+=repeated-after-deadline=, the agenda will skip scheduled items if they are
+repeated beyond the current dealine.
+
 **** New option for =org-agenda-skip-deadline-prewarning-if-scheduled=
 
 : This variable may be set to nil, t, the symbol `pre-scheduled',
@@ -380,65 +444,18 @@ Read the full docstring for details.
 
 # http://orgmode.org/cgit.cgi/org-mode.git/commit/?id=796fca3f18e6aab9f5d73f47e284b4e08fcc2596
 
-**** New formatting string for past deadlines in =org-agenda-deadline-leaders=
 **** =org-class= now supports holiday strings in the skip-weeks parameter
 
     For example, this task will now be skipped only on new year's day:
     
     : * Task
     :   <%%(org-class 2012 1 1 2013 12 12 2 "New Year's Day")>
+*** Group tags
 
-*** Scheduled/deadline
-
-**** Implement "delay" cookies for scheduled items.
-
-org.el: Allow C-u C-u to insert a warning/delay cookie for
-org-deadline/org-schedule
-
-Use "--2d" to ignore the delay for repeated occurrences
-
-org.el (org-auto-repeat-maybe): Suppress temporary delays
-
-org.el (org-deadline, org-schedule): Set the warning/delay relatively to
-the timestamp
-
-**** New allowed value `repeated-after-deadline'
-
-*** Calendar, diary and appts
-
-**** New variable =org-read-date-minibuffer-local-map=
-
-By default, this new local map uses "." to go to today's date, like in the
-normal =M-x calendar RET=.  If you want to deactivate this and to reassign
-the "@" key to =calendar-goto-today=, use this:
-
-#+BEGIN_SRC emacs-lisp
-  ;; Unbind "." in Org's calendar:
-  (define-key org-read-date-minibuffer-local-map (kbd ".") nil)
-  
-  ;; Bind "@" to `calendar-goto-today':
-  (define-key org-read-date-minibuffer-local-map
-              (kbd "@")
-              (lambda () (interactive) (org-eval-in-calendar '(calendar-goto-today))))
-#+END_SRC
-
-**** In Org's calendar, =!= displays diary entries of the date at point
-
-This is useful when you want to check if you don't already have an
-appointment when setting new ones with =C-c .= or =C-c s=.  =!= will
-call =diary-view-entries= and display the diary in a separate buffer.
-
-**** org-diary: only keep the descriptions of links
-
-=org-diary= returns diary information from Org files, but it returns it
-in a diary buffer, not in an Org mode buffer.  When links are displayed,
-only show their description, not the full links.
-
-*** Tags
-
-Using =#+TAGS: { Tag1 : Tag2 Tag3 }= will define =Tag1= as a "group tag"
+Using =#+TAGS: { Tag1 : Tag2 Tag3 }= will define =Tag1= as a /group tag/
 (note the colon after =Tag1=).  If you search for =Tag1=, it will return
-headlines containing either Tag1, Tag2 or Tag3.
+headlines containing either =Tag1=, =Tag2= or =Tag3= (or any combinaison
+of those tags.)
 
 You can use group tags for sparse tree in an Org buffer, for creating
 agenda views, and for filtering.
@@ -448,9 +465,9 @@ See http://orgmode.org/org.html# FIXME for details.
 *** Links
 
 **** =C-u C-u M-x org-store-link RET= will ignore non-core link functions
-**** =C-c l= on an active region will store links for each lines
+**** =C-u C-u C-u C-c l= on an active region will store links for each lines
 **** =C-c C-M-l= will add a default description for links which don't have one
-**** Don't add curly braces to bracket links within internal links
+**** No curly braces to bracket links within internal links
 **** When storing links and there is a keyword at point, use the keyword
 
 # org.el (org-store-link): Use keyword at point as the search string
