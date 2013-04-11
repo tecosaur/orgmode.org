@@ -88,7 +88,7 @@ released./
      respective back-ends, and the list of supported parameters depends on
      each backend.  See Org's manual for details.
 
-**** org-remember.el has been removed
+**** =org-remember.el= has been removed
 
      You cannot use =remember.el= anymore to capture notes.
 
@@ -97,6 +97,10 @@ released./
 
      Use =M-x org-capture-import-remember-templates RET= to import your
      remember templates into capture templates.
+
+**** =org-jsinfo.el= has been merged into =ox-html.el=
+
+If you were requiring ox-jsinfo.el, you don't need to do this anymore.
 
 **** Note for third-party developers
 
@@ -502,6 +506,11 @@ apply the formulas from this line, and =C-c C-c= on another line will apply
 those other formulas.
 
 **** Use nan for empty fields in Calc formulas
+
+: For a range with only empty fields it is now possible and necessary to
+: choose different behaviors of vmean by adding the format specifiers E
+: and/or N.
+
 **** Handle localized time-stamps in formulas evaluation
 **** New lookup functions
 
@@ -566,6 +575,8 @@ save already
 
 org-src.el (org-edit-src-auto-save-idle-delay): Deactivate auto-saving by
 default
+
+New possibility of using auto-save-mode
 
 **** Don't collect blocks in commented out headings
 **** Do not ask for confirmation if cached value is current
@@ -712,6 +723,8 @@ if there is a time-stamp in the task you want to clone.
 
 ** Outside Org
 
+*** poporg and outorg
+
 : Two new libraries ('poporg' by François Pinard and 'outorg' by Thorsten
 : Jolitz) now enable editing of comment-sections from source-code buffers
 : in temporary Org-mode buffers, making the full editing power of Org-mode
@@ -721,9 +734,15 @@ if there is a time-stamp in the task you want to clone.
 : navigation and structure editing. A detailed description can be found
 : here: http://orgmode.org/worg/org-tutorials/org-outside-org.html
 
-Here is a screencast demonstrating Thorsten tools:
-http://youtu.be/nqE6YxlY0rw
-http://www.youtube.com/watch?v=II-xYw5VGFM
+Here are two screencasts demonstrating Thorsten tools:
+- http://youtu.be/nqE6YxlY0rw 
+- http://www.youtube.com/watch?v=II-xYw5VGFM
+
+*** MobileOrg for iOS
+
+MobileOrg for iOS back in the App Store The 1.6.0 release was focused on
+the new Dropbox API and minor bug fixes but also includes a new ability to
+launch in Capture mode.  Track development and contribute [[https://github.com/MobileOrg/mobileorg/issues][on github]].
 
 * Older changes
 
