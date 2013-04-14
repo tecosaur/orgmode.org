@@ -505,11 +505,12 @@ If you have several =#+TBLFM= lines below a table, =C-c C-c= on a line will
 apply the formulas from this line, and =C-c C-c= on another line will apply
 those other formulas.
 
-**** Use nan for empty fields in Calc formulas
+**** You now use "nan" for empty fields in Calc formulas
 
-: For a range with only empty fields it is now possible and necessary to
-: choose different behaviors of vmean by adding the format specifiers E
-: and/or N.
+If empty fields are of interest it is recommended to reread the section
+"3.5.2 Formula syntax for Calc" of the manual because the description for
+the mode strings has been clarified and new examples have been added
+towards the end.
 
 **** Handle localized time-stamps in formulas evaluation
 **** New lookup functions
