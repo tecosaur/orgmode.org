@@ -106,11 +106,12 @@ h3 {
 
 code {
     font-family: "Droid Sans Mono";
-    font-size: 85%;
-    background-color: #eeeeee;
+    font-size: 100%;
+    background-color: #fff;
     padding: 1pt;
     margin-right: 1pt;
-    box-shadow: 1px 1px 1px #aaa;
+    border: 1px solid #eee;
+    /* box-shadow: 1px 1px 1px #aaa; */
 }
 
 pre {
