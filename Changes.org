@@ -333,7 +333,7 @@ fixed value for all images, or fall back on an attribute like
 
 *** Scheduled/deadline
 
-**** Implement "delay" cookies for scheduled items.
+**** Implement "delay" cookies for scheduled items
 
 If you want to delay the display of a scheduled task in the agenda, you can
 now use a delay cookie like this: =SCHEDULED: <2004-12-25 Sat -2d>=.  The
@@ -351,8 +351,13 @@ occurrence of the task, use =--2d= instead.  See =org-scheduled-delay-days=
 and =org-agenda-skip-scheduled-delay-if-deadline= for details on how to
 control this globally or per agenda.
 
-**** Use =C-u C-u C-s= will insert a delay cookie for scheduled tasks.
-**** Use =C-u C-u C-d= will insert a warning delay for deadline tasks.
+**** Use =C-u C-u C-s= will insert a delay cookie for scheduled tasks
+
+See the previous section for why delay cookies may be useful.
+
+**** Use =C-u C-u C-d= will insert a warning delay for deadline tasks
+
+=C-u C-u C-d= now inserts a warning delay to deadlines.
 
 *** Calendar, diary and appts
 
@@ -383,13 +388,14 @@ call =diary-view-entries= and display the diary in a separate buffer.
 =org-diary= returns diary information from Org files, but it returns it
 in a diary buffer, not in an Org mode buffer.  When links are displayed,
 only show their description, not the full links.
+
 *** Agenda
 
 **** New agenda type =agenda*= and entry types =:scheduled* :deadline*=
 
-When defining agenda custom commands, you can now use =agenda*=:
-this will list entries that have both a date and a time.  This is
-useful when you want to build a list of appointments.
+When defining agenda custom commands, you can now use =agenda*=: this will
+list entries that have both a date and a time.  This is useful when you
+want to build a list of appointments.
 
 You can also set =org-agenda-entry-types= either globally or locally in
 each agenda custom command and use =:timestamp*= and/or =:deadline*= there.
@@ -401,16 +407,22 @@ Another place where this is useful is your =.diary= file:
 This will list only entries from =~/org/rdv.org= that are scheduled with a
 time value (i.e. appointments).
 
-**** "=" in agenda view now filter by regexp
+**** New agenda sorting strategies
 
-You can now filter agenda entries by regular expressions using ~=~.  =C-u
-== will filter entries out.  Regexp filters are cumulative.  You can set
-=org-agenda-regexp-filter-preset= to suit your needs in each agenda view.
+=org-agenda-sorting-strategy= allows these new sorting strategies:
 
-**** =|= in agenda view now reset all filters
-
-Since it's common to combine tag filters, category filters, and now regexp
-filters, there is a new command =|= to reset all filters at once.
+| Strategy       | Explanations                             |
+|----------------+------------------------------------------|
+| timestamp-up   | Sort by any timestamp, early first       |
+| timestamp-down | Sort by any timestamp, late first        |
+| scheduled-up   | Sort by scheduled timestamp, early first |
+| scheduled-down | Sort by scheduled timestamp, late first  |
+| deadline-up    | Sort by deadline timestamp, early first  |
+| deadline-down  | Sort by deadline timestamp, late first   |
+| ts-up          | Sort by active timestamp, early first    |
+| ts-down        | Sort by active timestamp, late first     |
+| tsia-up        | Sort by inactive timestamp, early first  |
+| tsia-down      | Sort by inactive timestamp, late first   |
 
 **** New options to limit the number of agenda entries
 
@@ -436,12 +448,23 @@ to a negative number.  For example (setq org-agenda-max-tags 3) will not
 show the fourth tagged headline (and beyond), but it will also show
 non-tagged headlines.
 
-**** =~= in agenda view now temporarily set limits
+**** =~= in agenda view sets temporary limits
 
 You can hit =~= in the agenda to temporarily set limits: this will
 regenerate the agenda as if the limits were set.  This is useful for
 example when you want to only see a list of =N= tasks, or a list of tasks
 that take only =N= minutes.
+
+**** "=" in agenda view filters by regular expressions
+
+You can now filter agenda entries by regular expressions using ~=~.  =C-u
+== will filter entries out.  Regexp filters are cumulative.  You can set
+=org-agenda-regexp-filter-preset= to suit your needs in each agenda view.
+
+**** =|= in agenda view resets all filters
+
+Since it's common to combine tag filters, category filters, and now regexp
+filters, there is a new command =|= to reset all filters at once.
 
 **** Allow writing an agenda to an =.org= file
 
@@ -450,23 +473,6 @@ headlines and their content (but not subheadings) into the new file.
 
 This is useful when you want to quickly share an agenda containing the full
 list of notes.
-
-**** Implement new agenda sorting strategies
-
-=org-agenda-sorting-strategy= allows these new sorting strategies:
-
-| Strategy       | Explanations                             |
-|----------------+------------------------------------------|
-| timestamp-up   | Sort by any timestamp, early first       |
-| timestamp-down | Sort by any timestamp, late first        |
-| scheduled-up   | Sort by scheduled timestamp, early first |
-| scheduled-down | Sort by scheduled timestamp, late first  |
-| deadline-up    | Sort by deadline timestamp, early first  |
-| deadline-down  | Sort by deadline timestamp, late first   |
-| ts-up          | Sort by active timestamp, early first    |
-| ts-down        | Sort by active timestamp, late first     |
-| tsia-up        | Sort by inactive timestamp, early first  |
-| tsia-down      | Sort by inactive timestamp, late first   |
 
 **** Use =%s= for displaying "breadcrumbs" in the agenda view
 
@@ -482,6 +488,11 @@ display entries with additional spaces corresponding to their level in the
 outline tree.
 
 **** =org-agenda-write= will ask before overwriting an existing file
+
+=M-x org-agenda-write RET= (or =C-c C-w= from an agenda buffer) used to
+overwrite preexisting file with the same name without confirmation.  It now
+asks for a confirmation.
+
 **** New option =org-agenda-search-view-max-outline-level=
 
 This option sets the maximum outline level to display in search view.
@@ -499,6 +510,12 @@ This allows you to get rid of the ">" character that gets added in front of
 entries excerpts when hitting =E= in the agenda view.
 
 **** New formatting string for past deadlines in =org-agenda-deadline-leaders=
+
+The default formatting for past deadlines is ="%2d d. ago: "=, which makes
+it explicit that the deadline is in the past.  You can configure this via
+=org-agenda-deadline-leaders=.  Note that the width of the formatting
+string is important to keep the agenda alignment clean.
+
 **** New allowed value =repeated-after-deadline= for =org-agenda-skip-scheduled-if-deadline-is-shown=
 
 When =org-agenda-skip-scheduled-if-deadline-is-shown= is set to
@@ -507,21 +524,20 @@ repeated beyond the current dealine.
 
 **** New option for =org-agenda-skip-deadline-prewarning-if-scheduled=
 
-: This variable may be set to nil, t, the symbol `pre-scheduled',
-: or a number which will then give the number of days before the actual
-: deadline when the prewarnings should resume.  The symbol `pre-scheduled'
-: eliminates the deadline prewarning only prior to the scheduled date.
+This variable may be set to nil, t, the symbol `pre-scheduled', or a number
+which will then give the number of days before the actual deadline when the
+prewarnings should resume.  The symbol `pre-scheduled' eliminates the
+deadline prewarning only prior to the scheduled date.
 
 Read the full docstring for details.
 
-# http://orgmode.org/cgit.cgi/org-mode.git/commit/?id=796fca3f18e6aab9f5d73f47e284b4e08fcc2596
-
 **** =org-class= now supports holiday strings in the skip-weeks parameter
 
-    For example, this task will now be skipped only on new year's day:
+For example, this task will now be skipped only on new year's day:
 
     : * Task
     :   <%%(org-class 2012 1 1 2013 12 12 2 "New Year's Day")>
+
 *** Capture
 
 **** Allow =C-1= as a prefix for =org-agenda-capture= and =org-capture=
@@ -530,19 +546,19 @@ With a =C-1= prefix, the capture mechanism will use the =HH:MM= value at
 point (if any) or the current =HH:MM= time as the default time for the
 capture template.
 
-**** Capture: Expand keywords within %(sexp) placeholder in template
+**** Expand keywords within %(sexp) placeholder in capture templates
 
 If you use a =%:keyword= construct within a =%(sexp)= construct, Org will
 expand the keywords before expanding the =%(sexp)=.
 
-**** Allow to contextualize capture and agenda commands by checking the name of the buffer
+**** Allow to contextualize capture (and agenda) commands by checking the name of the buffer
 
 =org-capture-templates-contexts= and =org-agenda-custom-commands-contexts=
 allow you to define what capture templates and what agenda commands should
 be available in various contexts.  It is now possible for the context to
 check against the name of the buffer.
 
-*** Group tags
+*** Tag groups
 
 Using =#+TAGS: { Tag1 : Tag2 Tag3 }= will define =Tag1= as a /group tag/
 (note the colon after =Tag1=).  If you search for =Tag1=, it will return
@@ -552,7 +568,7 @@ of those tags.)
 You can use group tags for sparse tree in an Org buffer, for creating
 agenda views, and for filtering.
 
-See http://orgmode.org/org.html# FIXME for details.
+See http://orgmode.org/org.html#Tag-groups for details.
 
 *** Links
 
@@ -580,10 +596,15 @@ active.
 description, this command now adds a default one, so that we are not mixing
 with-description and without-description links when inserting them.
 
-**** FIXME No curly braces to bracket links within internal links
-**** FIXME When storing links and there is a keyword at point, use the keyword
+**** No curly braces to bracket links within internal links
 
-# org.el (org-store-link): Use keyword at point as the search string
+When storing a link to a headline like
+
+: * See [[http://orgmode.org][Org website]]
+
+=org-store-link= used to convert the square brackets into curly brackets.
+It does not anymore, taking the link description or the link path, when
+there is no description.
 
 *** Table
 
