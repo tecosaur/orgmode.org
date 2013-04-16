@@ -17,8 +17,8 @@ projects, and authoring documents with a fast and effective plain-text system.</
 
 * Version 8.0
 
-  This page list changes from the *development version* of Org-mode.
-  Changes against the latest stable version are [[file:Changes_old.org][here]].
+This page list changes from the *development version* of Org-mode.
+Changes against the latest stable version are [[file:Changes_old.org][here]].
 
 /This version is only a draft.  It will be completed when Org 8.0 will be
 released./
@@ -26,7 +26,7 @@ released./
 ** Installation
 
    Installation instructions have been updated and simplified.
-   
+
    If you have troubles installing or updating Org, focus on these
    instructions:
 
@@ -46,40 +46,49 @@ released./
 
    When in doubt, run =M-x org-version RET= and see if you have a mixed-up
    installation.
-   
+
    See http://orgmode.org/org.html#Installation for details.
 
 ** Incompatible changes
 
-   Org 8.0 is the most disruptive major version of Org.  Users are invited
-   to carefully review their customization and maybe to update some aspects
-   of their Org files.  When in doubt, ask on the mailing list.
+   Org 8.0 is the most disruptive major version of Org.
+
+   If you configured export options, you will have to update some of them.
+
+   If you used =#+ATTR_*= keywords, the syntax of the attributes changed
+   and you will have to update them.
 
    Below is a list of changes for which you need to take action.
-   
+
    See http://orgmode.org/worg/org-8.0.html for the most recent version of
    this list and for detailed instructions on how to migrate.
 
 **** New export engine
-     
+
      Org 8.0 comes with a new export engine written by Nicolas Goaziou.
      This export engine relies on =org-element.el= (Org's syntax parser),
      which was already in Org's core.  This new export engine triggered the
      rewriting of /all/ export back-ends.
 
-     The most visible change is the export menu, accessible through the
-     keybinding =C-c C-e=.  By default, this menu only shows built-in
-     export formats, but will offer other formats if you load them.
+     The most visible change is the export dispatcher, accessible through
+     the keybinding =C-c C-e=.  By default, this menu only shows some of
+     the built-in export formats, but you can add more formats by loading
+     them directly (e.g., =(require 'ox-texinfo)= or by configuring the
+     option =org-export-backends=.
+
+     More contributed back-ends are available from the =contrib/=
+     directory, the corresponding files start with the =ox-= prefix.
 
      If you customized an export back-end (like HTML or LaTeX), you will
      need to rename some options so that your customization is not lost.
-     See the updated manual for details, and check [[http://orgmode.org/worg/org-8.0.html][this page on Worg]] for
-     directions.
-     
+     Typically, an option starting with =org-export-html-= is now named
+     =org-html-export-=.  See the manual for details and check [[http://orgmode.org/worg/org-8.0.html][this Worg
+     page]] for directions.
+
 **** New syntax for #+ATTR_HTML/LaTeX/... options
 
      : #+ATTR_HTML width="200px"
-     
+
      should now be written
 
      : #+ATTR_HTML :width 200px
@@ -100,45 +109,47 @@ released./
 
 **** =org-jsinfo.el= has been merged into =ox-html.el=
 
-If you were requiring ox-jsinfo.el, you don't need to do this anymore.
+     If you were requiring =ox-jsinfo.el= in your =.emacs.el= file, you
+     will have to remove this requirement from your initialization file.
 
 **** Note for third-party developers
 
-     The name of the files for export back-end have changed: we now use
-     the prefix =ox-= for those files (like we use the =ob-= prefix for
-     Babel files.)  For example =org-html.el= is now =ox-html.el=.
+     The name of the files for export back-end have changed: we now use the
+     prefix =ox-= for those files (like we use the =ob-= prefix for Babel
+     files.)  For example =org-html.el= is now =ox-html.el=.
 
      If your code relies on these files, please update the names in your
      code.
 
 **** Packages moved from core to contrib
 
-Since packages in Org's core are meant to be part of GNU Emacs, we try to
-be minimalist when it comes to adding files into core.  For 8.0, we moved
-some contributions into the =contrib/= directory.
+     Since packages in Org's core are meant to be part of GNU Emacs, we try
+     to be minimalist when it comes to adding files into core.  For 8.0, we
+     moved some contributions into the =contrib/= directory.
 
-The rationale for deciding that these files should live in =contrib/= is
-either because they rely on third-part softwares that are not included in
-Emacs, or because they are not targetting a significant user-base.
+     The rationale for deciding that these files should live in =contrib/=
+     is either because they rely on third-part softwares that are not
+     included in Emacs, or because they are not targetting a significant
+     user-base.
 
-- org-colview-xemacs.el
-- org-mac-message.el
-- org-mew.el
-- org-wl.el
-- ox-freedmind.el
-- ox-taskjuggler.el
+     - org-colview-xemacs.el
+     - org-mac-message.el
+     - org-mew.el
+     - org-wl.el
+     - ox-freedmind.el
+     - ox-taskjuggler.el
 
-Note that =ox-freedmind.el= has been rewritten by Jambunathan, =org-mew.el=
-has been enhanced by Tokuya Kameshima, and =ox-taskjuggler.el= by Nicolas
-Goaziou and others.
+     Note that =ox-freedmind.el= has been rewritten by Jambunathan,
+     =org-mew.el= has been enhanced by Tokuya Kameshima and
+     =ox-taskjuggler.el= by Nicolas Goaziou and others.
 
-Also, the Taskjuggler exporter now uses TJ3 by default.  John Hendy wrote [[http://orgmode.org/worg/org-tutorials/org-taskjuggler3.html][a
-tutorial on Worg]] for the TJ3 export.
+     Also, the Taskjuggler exporter now uses TJ3 by default.  John Hendy
+     wrote [[http://orgmode.org/worg/org-tutorials/org-taskjuggler3.html][a tutorial on Worg]] for the TJ3 export.
 
 ** New packages in core
 
 *** ob-makefile.el by Eric Schulte and Thomas S. Dye
-    
+
     =ob-makefile.el= implements Org Babel support for Makefile tangling.
 
 *** ox-man.el by Luis Anaya
@@ -148,41 +159,39 @@ tutorial on Worg]] for the TJ3 export.
 *** ox-md.el by Nicolas Goaziou
 
     =ox-md.el= allows you to export Org files to Markdown files, using the
-    vanilla Markdown FIXME syntax.
-    
+    vanilla [[http://daringfireball.net/projects/markdown/][Markdown syntax]].
+
 *** ox-texinfo.el by Jonathan Leech-Pepin
-    
-    =ox-texinfo.el= allows you to export Org files to Texinfo FIXME files.
+
+    =ox-texinfo.el= allows you to export Org files to [[http://www.gnu.org/software/texinfo/][Texinfo]] files.
 
 ** New packages in contrib
-   
+
 *** ob-julia.el by G. Jay Kerns
 
-    Julia FIXME is a new programming language.
+    [[http://julialang.org/][Julia]] is a new programming language.
 
     =ob-julia.el= provides Org Babel support for evaluating Julia source
     code.
 
 *** ob-mathomatic.el by Luis Anaya
 
-    mathomatic is FIXME
+    [[http://www.mathomatic.org/][mathomatic]] a portable, command-line, educational CAS and calculator
+    software, written entirely in the C programming language.
 
     =ob-mathomatic.el= provides Org Babel support for evaluating mathomatic
     entries.
 
 *** ob-tcl.el by Luis Anaya
 
-    Tcl is FIXME
-
-    =ob-tcl.el= provides Org Babel support for evaluating =Tcl= source
-    code.
+    =ob-tcl.el= provides Org Babel support for evaluating [[http://www.tcl.tk/][Tcl]] source code.
 
 *** org-bullets.el by Evgeni Sabof
-    
+
     Display bullets instead of stars for headlines.
 
-    Also see this updated FAQ FIXME on how to display another character
-    than "*" for starting headlines.
+    Also see [[http://orgmode.org/worg/org-faq.html#sec-8-12][this updated FAQ]] on how to display another character than "*"
+    for starting headlines.
 
 *** org-favtable.el by Marc-Oliver Ihm
 
@@ -190,13 +199,13 @@ tutorial on Worg]] for the TJ3 export.
     locations in org, keeping the most frequently visited lines right at
     the top.  This table is called "favtable".  See the documentation on
     [[http://orgmode.org/worg/org-contrib/org-favtable.html][Worg]].
+
 *** ox-confluence.el by Sébastien Delafond
 
-    =ox-confluence.el= lets you convert Org files to Confluence wiki FIXME
-    files.
+    =ox-confluence.el= lets you convert Org files to [[https://confluence.atlassian.com/display/DOC/Confluence%2BWiki%2BMarkup][Confluence Wiki]] files.
 
 *** ox-deck.el and ox-s5.el by Rick Frankel
-    
+
     [[http://imakewebthings.com/deck.js/][deck.js]] is a javascript library for displaying HTML ages as
     presentations.  =ox-deck.el= exports Org files to HTML presentations
     using =deck.js=.
@@ -206,14 +215,23 @@ tutorial on Worg]] for the TJ3 export.
     using =s5=.
 
 *** ox-groff.el by Luis Anaya and Nicolas Goaziou
+
+    The [[http://www.gnu.org/software/groff/][groff]] (GNU troff) software is a typesetting package which reads
+    plain text mixed with formatting commands and produces formatted
+    output.
+
+    Luis Anaya and Nicolas Goaziou implemented =ox-groff.el= to allow
+    conversion from Org files to groff.
+
 *** ox-koma-letter.el by Nicolas Goaziou and Alan Schmitt
 
-    Export Org pages to the KOMA Scrlttr2 FIXME export back-end, derived
-    from the LaTeX export back-end.
+    This back-end allow to export Org pages to the KOMA Scrlttr2 format.
 
 *** ox-rss.el by Bastien
-    
-    Export Org pages to RSS 2.0 feeds.
+
+    This back-end lets you export Org pages to RSS 2.0 feeds.  Combined
+    with the HTML publishing feature, this allows you to build a blog
+    entirely with Org.
 
 ** New features
 
@@ -297,7 +315,7 @@ the "@" key to =calendar-goto-today=, use this:
 #+BEGIN_SRC emacs-lisp
   ;; Unbind "." in Org's calendar:
   (define-key org-read-date-minibuffer-local-map (kbd ".") nil)
-  
+
   ;; Bind "@" to `calendar-goto-today':
   (define-key org-read-date-minibuffer-local-map
               (kbd "@")
@@ -451,7 +469,7 @@ Read the full docstring for details.
 **** =org-class= now supports holiday strings in the skip-weeks parameter
 
     For example, this task will now be skipped only on new year's day:
-    
+
     : * Task
     :   <%%(org-class 2012 1 1 2013 12 12 2 "New Year's Day")>
 *** Group tags
@@ -538,7 +556,7 @@ Note that this option has precedence over the combined use of
 **** New parameter =:mstart= to state the starting day of the month
 **** Allow relative times in clocktable tstart and tend options
 **** The clocktable summary is now a caption
-**** =:tstart= and =:tend= allow relative times like "<-1w>" or "<now>"
+**** =:tstart= and =:tend= and friends allow relative times like "<-1w>" or "<now>"
 
 *** Startup
 
@@ -569,6 +587,7 @@ instead of requiring each Babel library one by one.
 
 **** C-u C-u M-x org-babel-tangle RET will tangle by the target file of the block at point
 **** Use C-c C-k for `org-edit-src-abort'
+**** FIXME New option =org-edit-src-turn-on-auto-save=
 **** New option =org-edit-src-auto-save-idle-delay=
 
 org-src.el: Prevent saving when editing fixed-width buffer, exiting will
@@ -594,7 +613,7 @@ http://orgmode.org/cgit.cgi/org-mode.git/commit/?id=e2b17ccc52826416e6b53d48c180
 =org-babel-python-command= and =org-babel-python-mode= are now customizable
 variables.
 *** Export
-    
+
 **** New export dispatcher
 ***** Make repeating a subtree-restricted export command remember the subtree
 
@@ -619,16 +638,9 @@ variables.
 **** New face `org-priority'.  Enhance fontification of priority cookies in agenda.
 **** New face `org-tag-group' for group tags
 
-** Known issues
-
-*** Installing from ELPA
-
-If you install Org from GNU ELPA or Org ELPA, you need to do this before
-visiting any Org file.  This is due to a problem in Emacs package system.
-
 ** Miscellaneous
 
-*** org-html-table-row incompatible
+*** FIXME org-html-table-row incompatible
 *** New option =org-image-actual-width=
 
 This option allows you to change the width of in-buffer displayed images.
@@ -639,7 +651,7 @@ fixed value for all images, or fall back on an attribute like
 
 *** When sorting entries/items, only the description of hidden links is considered
 
-Now Org will sort this list 
+Now Org will sort this list
 
 : - [[http://abc.org][B]]
 : - [[http://def.org][A]]
@@ -736,7 +748,7 @@ if there is a time-stamp in the task you want to clone.
 : here: http://orgmode.org/worg/org-tutorials/org-outside-org.html
 
 Here are two screencasts demonstrating Thorsten tools:
-- http://youtu.be/nqE6YxlY0rw 
+- http://youtu.be/nqE6YxlY0rw
 - http://www.youtube.com/watch?v=II-xYw5VGFM
 
 *** MobileOrg for iOS
@@ -748,4 +760,3 @@ launch in Capture mode.  Track development and contribute [[https://github.com/M
 * Older changes
 
 For older Changes, see [[file:Changes_old.org][old changes]].
-
