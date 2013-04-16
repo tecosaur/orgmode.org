@@ -15,6 +15,10 @@
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
+# syntaxe des attributs
+# completion sur les mots clefs
+# macros
+
 * Version 8.0
 
 This page list changes from the *development version* of Org-mode.
@@ -234,10 +238,6 @@ released./
     entirely with Org.
 
 ** New features
-
-# syntaxe des attributs
-# completion sur les mots clefs
-# macros
 
 *** Structure editing
 
@@ -616,40 +616,28 @@ those other formulas.
 
 **** You now use "nan" for empty fields in Calc formulas
 
-If empty fields are of interest it is recommended to reread the section
-"3.5.2 Formula syntax for Calc" of the manual because the description for
-the mode strings has been clarified and new examples have been added
-towards the end.
+If empty fields are of interest, it is recommended to reread the section
+[[http://orgmode.org/org.html#Formula-syntax-for-Calc][3.5.2 Formula syntax for Calc]] of the manual because the description for the
+mode strings has been clarified and new examples have been added towards
+the end.
 
 **** Handle localized time-stamps in formulas evaluation
+
+If your =LOCALE= is set so that Org time-stamps use another language than
+english, and if you make time computations in Org's table, it now works by
+internally converting the time-stamps with a temporary =LOCALE=C= before
+doing computation.
+
 **** New lookup functions
 
-http://orgmode.org/cgit.cgi/org-mode.git/commit/?id=e375cfd834b8cd9acc47b396578f32ca2cca6632
+There are now three lookup functions:
 
-=org-loopup-first=
-=org-loopup-last=
-=org-loopup-all=
+- =org-loopup-first=
+- =org-loopup-last=
+- =org-loopup-all=
 
-*** Clocking
-
-**** New option =org-clock-rounding-minutes=
-**** New option =org-time-clocksum-use-effort-durations=
-**** New option =org-clock-x11idle-program-name=
-**** New option =org-use-last-clock-out-time-as-effective-time=
-
-When non-nil, use the last clock out time for =org-todo=.
-Note that this option has precedence over the combined use of
-=org-use-effective-time= and =org-extend-today-until=.
-
-**** =S-<left/right>= on a clocksum column will update the sum by updating the last clock
-**** =C-u 3 C-S-<up/down>= will update clock timestamps synchronously by 3 units
-**** New parameter =:wstart= for clocktables to define the week start day
-**** New parameter =:mstart= to state the starting day of the month
-**** Allow relative times in clocktable tstart and tend options
-**** The clocktable summary is now a caption
-**** =:tstart= and =:tend= and friends allow relative times like "<-1w>" or "<now>"
-
-*** Startup
+See [[http://orgmode.org/org.html#Lookup-functions][the manual]] for details.
+*** Startup keywords
 
 These new startup keywords are now available:
 
@@ -664,45 +652,86 @@ These new startup keywords are now available:
 | =#+STARTUP: latexpreview=        | =(setq org-startup-with-latex-preview t)=   |
 | =#+STARTUP: nolatexpreview=      | =(setq org-startup-with-latex-preview nil)= |
 
+*** Clocking
+
+**** New option =org-clock-rounding-minutes=
+
+E.g. if =org-clock-rounding-minutes= is set to 5, time is 14:47 and you
+clock in: then the clock starts at 14:45.  If you clock out within the next
+5 minutes, the clock line will be removed; if you clock out 8 minutes after
+your clocked in, the clock out time will be 14:50.
+
+**** New option =org-time-clocksum-use-effort-durations=
+
+When non-nil, =C-c C-x C-d= uses effort durations.  E.g., by default, one
+day is considered to be a 8 hours effort, so a task that has been clocked
+for 16 hours will be displayed as during 2 days in the clock display or in
+the clocktable.
+
+See =org-effort-durations= on how to set effort durations and
+=org-time-clocksum-format= for more on time clock formats.
+
+**** New option =org-clock-x11idle-program-name=
+
+This allows to set the name of the program which prints X11 idle time in
+milliseconds.  The default is to use =x11idle=.
+
+**** New option =org-use-last-clock-out-time-as-effective-time=
+
+When non-nil, use the last clock out time for =org-todo=.  Note that this
+option has precedence over the combined use of =org-use-effective-time= and
+=org-extend-today-until=.
+
+**** =S-<left/right>= on a clocksum column will update the sum by updating the last clock
+**** =C-u 3 C-S-<up/down>= will update clock timestamps synchronously by 3 units
+**** New parameter =:wstart= for clocktables to define the week start day
+**** New parameter =:mstart= to state the starting day of the month
+**** Allow relative times in clocktable tstart and tend options
+**** The clocktable summary is now a caption
+**** =:tstart= and =:tend= and friends allow relative times like "<-1w>" or "<now>"
 *** Babel
 
-**** New =:post= header argument post processes results
-     This header argument may be used to pass the results of the
-     current code block through another code block for
-     post-processing.  See the manual for example usage.
+**** You can now use =C-c C-k= for =org-edit-src-abort=
 
-**** New Babel files only need to (require 'ob)
+This allows you to quickly cancel editing a source block.
+
+**** =C-u C-u M-x org-babel-tangle RET= tangles by the target file of the block at point
+
+This is handy if you want to tangle all source code blocks that have the
+same target than the block at point.
+
+**** New options for auto-saving the base buffer or the source block editing buffer
+
+When =org-edit-src-turn-on-auto-save= is set to =t=, editing a source block
+in a new window will turn on =auto-save-mode= and save the code in a new
+file under the same directory than the base Org file.
+
+When =org-edit-src-auto-save-idle-delay= is set to a number of minutes =N=,
+the base Org buffer will be saved after this number of minutes of idle
+time.
+
+**** New =:post= header argument post-processes results
+
+     This header argument may be used to pass the results of the current
+     code block through another code block for post-processing.  See the
+     manual for a usage example.
+
+**** Commented out heading are ignored when collecting blocks for tangling
+
+If you comment out a heading (with =C-c ;= anywhere on the heading or in
+the subtree), code blocks from within this heading are now ignored when
+collecting blocks for tangling.
+
+**** New option =org-babel-hash-show-time= to show a time-stamp in the result hash
+**** Do not ask for confirmation if cached value is current
+
+Do not run =org-babel-confirm-evaluate= if source block has a cache and the
+cache value is current as there is no evaluation involved in this case.
+**** =ob-sql.el= and =ob-python.el= have been improved.
+**** New Babel files only need to =(require 'ob)=
 
 When writing a new Babel file, you now only need to use =(require 'ob)=
 instead of requiring each Babel library one by one.
-
-**** C-u C-u M-x org-babel-tangle RET will tangle by the target file of the block at point
-**** Use C-c C-k for `org-edit-src-abort'
-**** FIXME New option =org-edit-src-turn-on-auto-save=
-**** New option =org-edit-src-auto-save-idle-delay=
-
-org-src.el: Prevent saving when editing fixed-width buffer, exiting will
-save already
-
-org-src.el (org-edit-src-auto-save-idle-delay): Deactivate auto-saving by
-default
-
-New possibility of using auto-save-mode
-
-**** Don't collect blocks in commented out headings
-**** Do not ask for confirmation if cached value is current
-**** New variable =org-babel-hash-show-time= to show a time-stamp in the result hash
-**** ob-sql.el
-
-Gary Oberbrunner (1):
-      Improvements to Org SQL support
-
-http://orgmode.org/cgit.cgi/org-mode.git/commit/?id=e2b17ccc52826416e6b53d48c180ffa71f8fccdf
-
-**** ob-python.el
-
-=org-babel-python-command= and =org-babel-python-mode= are now customizable
-variables.
 *** Export
 
 **** New export dispatcher
@@ -723,50 +752,32 @@ variables.
 
 *** Faces
 
-**** In the agenda, use `org-todo-keyword-faces' to highlight selected TODO keywords.
-**** Org now fontifies radio link targets by default.
-**** New face `org-priority'.  Enhance fontification of priority cookies in agenda.
-**** New face `org-tag-group' for group tags
+- Org now fontifies radio link targets by default
+- In the agenda, use =org-todo-keyword-faces= to highlight selected TODO keywords
+- New face =org-priority=, enhanced fontification of priority cookies in agenda
+- New face =org-tag-group= for group tags
 
 ** Miscellaneous
 
-*** New speedy key =s= pour =org-narrow-to-subtree=
-*** Handling of =org-html-table-row= has been updated (incompatible change)
-*** =org-export-html-table-tag= is replaced by =org-html-table-default-attributes=
-*** Support using =git-annex= with Org attachments
-
-From http://git-annex.branchable.com:
-
-: git-annex allows managing files with git, without checking the file
-: contents into git.  While that may seem paradoxical, it is useful when
-: dealing with files larger than git can currently easily handle, whether due
-: to limitations in memory, time, or disk space.
-
-You can now use =git-annex= together with Org attachements.
-
-*** org-protocol: Pass optional value using query in url to capture from protocol
-*** When the refile history is empty, use the current filename as default
-
-Org will assume your first refile action will end up in the current file,
-unless you complete with another file/headline.
-
-*** When you cannot change the TODO state of a task, Org displays the blocking task
-
-This is useful to quickly see what task is blocking the task you want to
-update.
-
-*** New option =org-mobile-allpriorities=
-*** org-bibtex.el now use =visual-line-mode= instead of the deprecated =longlines-mode=
-*** =org-format-latex-options= allows to set the foreground/background colors automatically
-*** New option =org-archive-file-header-format=
-*** New "neg" entity in =org-entities=
-*** New function =org-docview-export= to export docview links
-*** New =:eps= header argument for ditaa code blocks
-*** New option =org-gnus-no-server= to start Gnus with =gnus-no-server=
-*** Org is now distributed with =htmlize.el= version 1.43
-*** =org-drill.el= has been updated to version 2.3.7
-*** =org-mac-iCal.el= now supports MacOSX version up to 10.8
-*** Various improvements to =org-contacts.el= and =orgpan.el=
+- New speedy key =s= pour =org-narrow-to-subtree=
+- Handling of =org-html-table-row= has been updated (incompatible change)
+- =org-export-html-table-tag= is replaced by =org-html-table-default-attributes=
+- Support using =git-annex= with Org attachments
+- org-protocol: Pass optional value using query in url to capture from protocol
+- When the refile history is empty, use the current filename as default
+- When you cannot change the TODO state of a task, Org displays the blocking task
+- New option =org-mobile-allpriorities=
+- org-bibtex.el now use =visual-line-mode= instead of the deprecated =longlines-mode=
+- =org-format-latex-options= allows to set the foreground/background colors automatically
+- New option =org-archive-file-header-format=
+- New "neg" entity in =org-entities=
+- New function =org-docview-export= to export docview links
+- New =:eps= header argument for ditaa code blocks
+- New option =org-gnus-no-server= to start Gnus with =gnus-no-server=
+- Org is now distributed with =htmlize.el= version 1.43
+- =org-drill.el= has been updated to version 2.3.7
+- =org-mac-iCal.el= now supports MacOSX version up to 10.8
+- Various improvements to =org-contacts.el= and =orgpan.el=
 
 ** Outside Org
 
