@@ -82,8 +82,8 @@ released./
      If you customized an export back-end (like HTML or LaTeX), you will
      need to rename some options so that your customization is not lost.
      Typically, an option starting with =org-export-html-= is now named
-     =org-html-export-=.  See the manual for details and check [[http://orgmode.org/worg/org-8.0.html][this Worg
-     page]] for directions.
+     =org-html-=.  See the manual for details and check [[http://orgmode.org/worg/org-8.0.html][this Worg page]] for
+     directions.
 
 **** New syntax for #+ATTR_HTML/LaTeX/... options
 
@@ -241,15 +241,30 @@ released./
 
 *** Structure editing
 
-**** =C-u C-u M-RET= will insert a heading at the end of the parent subtree
-**** Cycling to the =CONTENTS= view will keep inline tasks folded
+**** =C-u C-u M-RET= inserts a heading at the end of the parent subtree
+**** Cycling to the =CONTENTS= view keeps inline tasks folded
 
 =org-cycle-hook= as a new function =org-cycle-hide-inline-tasks= which
 prevents the display of inline tasks when showing the content of a subtree.
+
+**** =C-c -= in a region makes a list item for each line
+
+This is the opposite of the previous behavior, where =C-c -= on a region
+would create one item for the whole region, and where =C-u C-c -= would
+create an item for each line.  Now =C-c -= on the selected region creates
+an item per line, and =C-u C-c -= creates a single item for the whole
+region.
+
 **** When transposing words, markup characters are now part of the words
 
 In Emacs, you can transpose words with =M-t=.  Transposing =*these*
 _words__= will preserve markup.
+
+**** New command =org-set-property-and-value= bound to =C-c C-x P=
+
+This command allows you to quickly add both the property and its value.  It
+is useful in buffers where there are many properties and where =C-c C-x p=
+can slow down the flow of editing too much.
 
 **** New commands =org-next-block= and =org-previous-block=
 
@@ -263,15 +278,21 @@ now bound to =S-M-<down>= and =S-M-<up>= respectively, since =M-<down>= and
 =M-<up>= now drag the whole element at point (a paragraph, a table, etc.)
 forward and backward.
 
-**** New option =org-agenda-restriction-lock-highlight-subtree=
+**** When a list item has a checkbox, inserting a new item uses a checkbox too
+**** When sorting entries/items, only the description of links is considered
 
-This defaults to =t= so that the whole subtree is highlighted when you
-restrict the agenda view to it with =C-c C-x <= (or the speed command =<=).
-The default setting helps ensuring that you are not adding tasks after the
-restricted region.  If you find this highlighting too intrusive, set this
-option to =nil=.
-**** =C-c -= in a region will make a list item for each line, C-u C-u for the first line
-**** When a list item has a checkbox, inserting a new item will use a checkbox too
+Now Org will sort this list
+
+: - [[http://abc.org][B]]
+: - [[http://def.org][A]]
+
+like this:
+
+: - [[http://def.org][A]]
+: - [[http://abc.org][B]]
+
+by comparing the description, not the links.
+Same when sorting headlines instead of list items.
 **** New option =orgstruct-heading-prefix-regexp=
 
 For example, setting this option to "^;;; " in Emacs lisp files and using
@@ -281,7 +302,35 @@ states as if lines starting with ";;; *..." where headlines.
 In general, you want to set =orgstruct-heading-prefix-regexp= as a file
 local variable.
 
-**** TODO FIXME Don't activate speedy keys within code src blocks (?)
+**** New behavior of =org-clone-subtree-with-time-shift=
+
+The default is to only ask for a number of clones.  When called with a
+universal prefix argument =C-u=, it will prompt you for a time-shift only
+if there is a time-stamp in the task you want to clone.
+
+**** New option =org-agenda-restriction-lock-highlight-subtree=
+
+This defaults to =t= so that the whole subtree is highlighted when you
+restrict the agenda view to it with =C-c C-x <= (or the speed command =<=).
+The default setting helps ensuring that you are not adding tasks after the
+restricted region.  If you find this highlighting too intrusive, set this
+option to =nil=.
+**** New option =org-closed-keep-when-no-todo=
+
+When switching back from a =DONE= keyword to a =TODO= keyword, Org now
+removes the =CLOSED= planning information, if any.  It also removes this
+information when going back to a non-TODO state (e.g., with =C-c C-t SPC=).
+If you want to keep the =CLOSED= planning information when removing the
+TODO keyword, set =org-closed-keep-when-no-todo= to =t=.
+
+**** New option =org-image-actual-width=
+
+This option allows you to change the width of in-buffer displayed images.
+The default is to use the actual width of the image, but you can use a
+fixed value for all images, or fall back on an attribute like
+
+: #+attr_html: :width 300px
+
 *** Scheduled/deadline
 
 **** Implement "delay" cookies for scheduled items.
@@ -304,6 +353,7 @@ control this globally or per agenda.
 
 **** Use =C-u C-u C-s= will insert a delay cookie for scheduled tasks.
 **** Use =C-u C-u C-d= will insert a warning delay for deadline tasks.
+
 *** Calendar, diary and appts
 
 **** New variable =org-read-date-minibuffer-local-map=
@@ -472,6 +522,26 @@ Read the full docstring for details.
 
     : * Task
     :   <%%(org-class 2012 1 1 2013 12 12 2 "New Year's Day")>
+*** Capture
+
+**** Allow =C-1= as a prefix for =org-agenda-capture= and =org-capture=
+
+With a =C-1= prefix, the capture mechanism will use the =HH:MM= value at
+point (if any) or the current =HH:MM= time as the default time for the
+capture template.
+
+**** Capture: Expand keywords within %(sexp) placeholder in template
+
+If you use a =%:keyword= construct within a =%(sexp)= construct, Org will
+expand the keywords before expanding the =%(sexp)=.
+
+**** Allow to contextualize capture and agenda commands by checking the name of the buffer
+
+=org-capture-templates-contexts= and =org-agenda-custom-commands-contexts=
+allow you to define what capture templates and what agenda commands should
+be available in various contexts.  It is now possible for the context to
+check against the name of the buffer.
+
 *** Group tags
 
 Using =#+TAGS: { Tag1 : Tag2 Tag3 }= will define =Tag1= as a /group tag/
@@ -616,7 +686,6 @@ variables.
 
 **** New export dispatcher
 ***** Make repeating a subtree-restricted export command remember the subtree
-
 **** New default value of =org-export-copy-to-kill-ring= is 'if-interactive
 **** LaTeX
 
@@ -640,32 +709,9 @@ variables.
 
 ** Miscellaneous
 
-*** FIXME org-html-table-row incompatible
-*** New option =org-image-actual-width=
-
-This option allows you to change the width of in-buffer displayed images.
-The default is to use the actual width of the image, but you can use a
-fixed value for all images, or fall back on an attribute like
-
-: #+attr_html: :width 300px
-
-*** When sorting entries/items, only the description of hidden links is considered
-
-Now Org will sort this list
-
-: - [[http://abc.org][B]]
-: - [[http://def.org][A]]
-
-like this:
-
-: - [[http://def.org][A]]
-: - [[http://abc.org][B]]
-
-by comparing the description, not the links.
-Same when sorting headlines instead of list items.
-
 *** New speedy key =s= pour =org-narrow-to-subtree=
-*** org-protocol: Pass optional value using query in url to capture from protocol
+*** Handling of =org-html-table-row= has been updated (incompatible change)
+*** =org-export-html-table-tag= is replaced by =org-html-table-default-attributes=
 *** Support using =git-annex= with Org attachments
 
 From http://git-annex.branchable.com:
@@ -675,64 +721,31 @@ From http://git-annex.branchable.com:
 : dealing with files larger than git can currently easily handle, whether due
 : to limitations in memory, time, or disk space.
 
-You can now use =git-annex= with Org attachements.
+You can now use =git-annex= together with Org attachements.
 
-*** When no refile history, use the current filename
+*** org-protocol: Pass optional value using query in url to capture from protocol
+*** When the refile history is empty, use the current filename as default
+
+Org will assume your first refile action will end up in the current file,
+unless you complete with another file/headline.
+
 *** When you cannot change the TODO state of a task, Org displays the blocking task
+
+This is useful to quickly see what task is blocking the task you want to
+update.
+
 *** New option =org-mobile-allpriorities=
 *** org-bibtex.el now use =visual-line-mode= instead of the deprecated =longlines-mode=
-*** Allow =C-1= as a prefix for =org-agenda-capture= and =org-capture=
-
-With a =C-1= prefix, use the =HH:MM= value at point (if any) or the current
-=HH:MM= time.
-
-*** Capture: Expand keywords within %(sexp) placeholder in template
-*** Allow to contextualize capture and agenda commands by checking the name of the buffer
-
-=org-capture-templates-contexts= and =org-agenda-custom-commands-contexts=
-allow you to define what capture templates and what agenda commands should
-be available in various contexts.  It is now possible for the context to
-check against the name of the buffer.
-
 *** =org-format-latex-options= allows to set the foreground/background colors automatically
-*** New command =org-set-property-and-value= bound to =C-c C-x P=
-
-This command allows you to quickly add both the property and its value.  It
-is useful in buffers where there are many properties and where =C-c C-x p=
-can slow down the flow of editing too much.
-
 *** New option =org-archive-file-header-format=
-*** =org-drill.el= has been updated to version 2.3.7
-*** Add the "neg" entity in =org-entities=
-*** Use =user-error= instead of =error= in many places (move and table commands)
-
-A =user-error= results from an incorrect manipulation of the user, while an
-=error= results from a problem in the program.  In the code, we replaced
-many occurrences of =error= by =user-error=, since Org is often signaling
-those.
-
+*** New "neg" entity in =org-entities=
 *** New function =org-docview-export= to export docview links
-*** New behavior of =org-clone-subtree-with-time-shift=
-
-The default is to only ask for a number of clones.  When called with a
-universal prefix argument =C-u=, it will prompt you for a time-shift only
-if there is a time-stamp in the task you want to clone.
-
-*** Babel
-**** adding :eps header argument to ditaa code blocks
-*** contrib/
-
-**** New option to start Gnus with `gnus-no-server'
-**** Various improvements to org-contacts.el (Daimrod)
-**** Org distribution comes with htmlize.el v1.43
-**** Orgpan (Jonas Bernoulli)
-
-      Orgpan: resize the correct window
-      Orgpan: quiet byte-compiler
-
-
-
-**** org-mac-iCal.el (org-mac-iCal): Support version 10.8.
+*** New =:eps= header argument for ditaa code blocks
+*** New option =org-gnus-no-server= to start Gnus with =gnus-no-server=
+*** Org is now distributed with =htmlize.el= version 1.43
+*** =org-drill.el= has been updated to version 2.3.7
+*** =org-mac-iCal.el= now supports MacOSX version up to 10.8
+*** Various improvements to =org-contacts.el= and =orgpan.el=
 
 ** Outside Org
 
