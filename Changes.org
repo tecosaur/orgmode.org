@@ -493,6 +493,14 @@ outline tree.
 overwrite preexisting file with the same name without confirmation.  It now
 asks for a confirmation.
 
+**** New commands =M-m= and =M-*= to toggle (all) mark(s) for bulk action
+
+- =org-agenda-bulk-toggle= :: this command is bound to =M-m= and toggles
+     the mark of the entry at point.
+
+- =org-agenda-bulk-toggle-all= :: this command is bound to =M-*= and
+     toggles all the marks in the current agenda.
+
 **** New option =org-agenda-search-view-max-outline-level=
 
 This option sets the maximum outline level to display in search view.
