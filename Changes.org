@@ -474,6 +474,15 @@ headlines and their content (but not subheadings) into the new file.
 This is useful when you want to quickly share an agenda containing the full
 list of notes.
 
+**** New commands to drag an agenda line forward (=M-<down>=) or backard (=M-<up>=)
+
+It sometimes handy to move agenda lines around, just to quickly reorganize
+your tasks, or maybe before saving the agenda to a file.  Now you can use
+=M-<down>= and =M-<up>= to move the line forward or backward.
+
+This does not persist after a refresh of the agenda, and this does not
+change the =.org= files who contribute to the agenda.
+
 **** Use =%s= for displaying "breadcrumbs" in the agenda view
 
 =org-agenda-prefix-format= now allows to use a =%b= formatter to tell Org
