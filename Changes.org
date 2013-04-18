@@ -17,12 +17,6 @@ projects, and authoring documents with a fast and effective plain-text system.</
 
 * Version 8.0
 
-This page list changes from the *development version* of Org-mode.
-Changes against the latest stable version are [[file:Changes_old.org][here]].
-
-/This version is only a draft.  It will be completed when Org 8.0 will be
-released./
-
 ** Installation
 
 Installation instructions have been updated and simplified.
@@ -106,16 +100,16 @@ manual for details and check [[http://orgmode.org/worg/org-8.0.html][this Worg p
      Use =M-x org-capture-import-remember-templates RET= to import your
      remember templates into capture templates.
 
-**** ~org-jsinfo.el~ has been merged into =ox-html.el=
+**** ~org-jsinfo.el~ has been merged into ~ox-html.el~
 
-     If you were requiring =ox-jsinfo.el= in your =.emacs.el= file, you
+     If you were requiring ~ox-jsinfo.el~ in your ~.emacs.el~ file, you
      will have to remove this requirement from your initialization file.
 
 **** Note for third-party developers
 
      The name of the files for export back-end have changed: we now use the
      prefix =ox-= for those files (like we use the =ob-= prefix for Babel
-     files.)  For example ~org-html.el~ is now =ox-html.el=.
+     files.)  For example ~org-html.el~ is now ~ox-html.el~.
 
      If your code relies on these files, please update the names in your
      code.
@@ -138,95 +132,95 @@ manual for details and check [[http://orgmode.org/worg/org-8.0.html][this Worg p
      - ox-freedmind.el
      - ox-taskjuggler.el
 
-     Note that =ox-freedmind.el= has been rewritten by Jambunathan,
+     Note that ~ox-freedmind.el~ has been rewritten by Jambunathan,
      ~org-mew.el~ has been enhanced by Tokuya Kameshima and
-     =ox-taskjuggler.el= by Nicolas Goaziou and others.
+     ~ox-taskjuggler.el~ by Nicolas Goaziou and others.
 
      Also, the Taskjuggler exporter now uses TJ3 by default.  John Hendy
      wrote [[http://orgmode.org/worg/org-tutorials/org-taskjuggler3.html][a tutorial on Worg]] for the TJ3 export.
 
 ** New packages in core
 
-*** ob-makefile.el by Eric Schulte and Thomas S. Dye
+*** ~ob-makefile.el~ by Eric Schulte and Thomas S. Dye
 
     =ob-makefile.el= implements Org Babel support for Makefile tangling.
 
-*** ox-man.el by Luis Anaya
+*** ~ox-man.el~ by Luis Anaya
 
     =ox-man.el= allows you to export Org files to =man= pages.
 
-*** ox-md.el by Nicolas Goaziou
+*** ~ox-md.el~ by Nicolas Goaziou
 
     =ox-md.el= allows you to export Org files to Markdown files, using the
     vanilla [[http://daringfireball.net/projects/markdown/][Markdown syntax]].
 
-*** ox-texinfo.el by Jonathan Leech-Pepin
+*** ~ox-texinfo.el~ by Jonathan Leech-Pepin
 
     =ox-texinfo.el= allows you to export Org files to [[http://www.gnu.org/software/texinfo/][Texinfo]] files.
 
 ** New packages in contrib
 
-*** ob-julia.el by G. Jay Kerns
+*** ~ob-julia.el~ by G. Jay Kerns
 
     [[http://julialang.org/][Julia]] is a new programming language.
 
     =ob-julia.el= provides Org Babel support for evaluating Julia source
     code.
 
-*** ob-mathomatic.el by Luis Anaya
+*** ~ob-mathomatic.el~ by Luis Anaya
 
     [[http://www.mathomatic.org/][mathomatic]] a portable, command-line, educational CAS and calculator
     software, written entirely in the C programming language.
 
-    =ob-mathomatic.el= provides Org Babel support for evaluating mathomatic
+    ~ob-mathomatic.el~ provides Org Babel support for evaluating mathomatic
     entries.
 
-*** ob-tcl.el by Luis Anaya
+*** ~ob-tcl.el~ by Luis Anaya
 
-    =ob-tcl.el= provides Org Babel support for evaluating [[http://www.tcl.tk/][Tcl]] source code.
+    ~ob-tcl.el~ provides Org Babel support for evaluating [[http://www.tcl.tk/][Tcl]] source code.
 
-*** org-bullets.el by Evgeni Sabof
+*** ~org-bullets.el~ by Evgeni Sabof
 
     Display bullets instead of stars for headlines.
 
     Also see [[http://orgmode.org/worg/org-faq.html#sec-8-12][this updated FAQ]] on how to display another character than "*"
     for starting headlines.
 
-*** org-favtable.el by Marc-Oliver Ihm
+*** ~org-favtable.el~ by Marc-Oliver Ihm
 
     ~org-favtable.el~ helps you to create and update a table of favorite
     locations in org, keeping the most frequently visited lines right at
     the top.  This table is called "favtable".  See the documentation on
     [[http://orgmode.org/worg/org-contrib/org-favtable.html][Worg]].
 
-*** ox-confluence.el by Sébastien Delafond
+*** ~ox-confluence.el~ by Sébastien Delafond
 
-    =ox-confluence.el= lets you convert Org files to [[https://confluence.atlassian.com/display/DOC/Confluence%2BWiki%2BMarkup][Confluence Wiki]] files.
+    ~ox-confluence.el~ lets you convert Org files to [[https://confluence.atlassian.com/display/DOC/Confluence%2BWiki%2BMarkup][Confluence Wiki]] files.
 
-*** ox-deck.el and ox-s5.el by Rick Frankel
+*** ~ox-deck.el~ and ~ox-s5.el~ by Rick Frankel
 
     [[http://imakewebthings.com/deck.js/][deck.js]] is a javascript library for displaying HTML ages as
-    presentations.  =ox-deck.el= exports Org files to HTML presentations
+    presentations.  ~ox-deck.el~ exports Org files to HTML presentations
     using =deck.js=.
 
     [[http://meyerweb.com/eric/tools/s5/][s5]] is a set of scripts which also allows to display HTML pages as
-    presentations.  =ox-s5.el= exports Org files to HTML presentations
+    presentations.  ~ox-s5.el~ exports Org files to HTML presentations
     using =s5=.
 
-*** ox-groff.el by Luis Anaya and Nicolas Goaziou
+*** ~ox-groff.el~ by Luis Anaya and Nicolas Goaziou
 
     The [[http://www.gnu.org/software/groff/][groff]] (GNU troff) software is a typesetting package which reads
     plain text mixed with formatting commands and produces formatted
     output.
 
-    Luis Anaya and Nicolas Goaziou implemented =ox-groff.el= to allow
+    Luis Anaya and Nicolas Goaziou implemented ~ox-groff.el~ to allow
     conversion from Org files to groff.
 
-*** ox-koma-letter.el by Nicolas Goaziou and Alan Schmitt
+*** ~ox-koma-letter.el~ by Nicolas Goaziou and Alan Schmitt
 
-    This back-end allow to export Org pages to the KOMA Scrlttr2 format.
+    This back-end allow to export Org pages to the =KOMA Scrlttr2= format.
 
-*** ox-rss.el by Bastien
+*** ~ox-rss.el~ by Bastien
 
     This back-end lets you export Org pages to RSS 2.0 feeds.  Combined
     with the HTML publishing feature, this allows you to build a blog
@@ -324,7 +318,7 @@ like this:
 : - [[http://def.org][A]]
 : - [[http://abc.org][B]]
 
-by comparing the description, not the links.
+by comparing the descriptions, not the links.
 Same when sorting headlines instead of list items.
 **** New option =orgstruct-heading-prefix-regexp=
 
@@ -465,7 +459,7 @@ These new options are available:
 - [[doc:org-agenda-max-entries][org-agenda-max-entries]] :: limit by number of entries.
 - [[doc:org-agenda-max-todos][org-agenda-max-todos]] :: limit by number of TODOs.
 - [[doc:org-agenda-max-tags][org-agenda-max-tags]] :: limit by number of tagged entries.
-- [[doc:org-agenda-max-effort][org-agenda-max-effort]] :: limit by effort (minutes)
+- [[doc:org-agenda-max-effort][org-agenda-max-effort]] :: limit by effort (minutes).
 
 For example, if you locally set [[doc:org-agenda-max-todos][org-agenda-max-todos]] to 3 in an agenda
 view, the agenda will be limited to the first three todos.  Other entries
@@ -807,20 +801,27 @@ instead of requiring each Babel library one by one.
 
 ** Outside Org
 
-*** poporg and outorg
+*** Spanish translation of the Org guide by David Arroyo Menéndez
 
-: Two new libraries ('poporg' by François Pinard and 'outorg' by Thorsten
-: Jolitz) now enable editing of comment-sections from source-code buffers
-: in temporary Org-mode buffers, making the full editing power of Org-mode
-: available. 'outorg' comes together with 'outshine' and 'navi-mode', two
-: more libraries by Thorsten Jolitz with the goal to give source-code
-: buffers the 'look & feel' of Org-mode buffers while greatly improving
-: navigation and structure editing. A detailed description can be found
-: here: http://orgmode.org/worg/org-tutorials/org-outside-org.html
+David (and others) translated the Org compact guide in spanish:
 
-Here are two screencasts demonstrating Thorsten tools:
-- http://youtu.be/nqE6YxlY0rw
-- http://www.youtube.com/watch?v=II-xYw5VGFM
+You can read the [[http://orgmode.org/worg/orgguide/orgguide.es.pdf][PDF guide]].
+
+*** ~poporg.el~ and ~outorg.el~
+
+Two new libraries (~poporg.el~ by François Pinard and ~outorg.el~ by
+Thorsten Jolitz) now enable editing of comment-sections from source-code
+buffers in temporary Org-mode buffers, making the full editing power of
+Org-mode available.  ~outorg.el~ comes together with ~outshine.el~ and
+~navi-mode.el~, two more libraries by Thorsten Jolitz with the goal to give
+source-code buffers the /look & feel/ of Org-mode buffers while greatly
+improving navigation and structure editing.  A detailed description can be
+found here: http://orgmode.org/worg/org-tutorials/org-outside-org.html
+
+Here are two screencasts demonstrating Thorsten's tools:
+
+- [[http://youtu.be/nqE6YxlY0rw]["Modern conventions for Emacs Lisp files"]]
+- [[http://www.youtube.com/watch?v%3DII-xYw5VGFM][Exploring Bernt Hansen's Org-mode tutorial with 'navi-mode']]
 
 *** MobileOrg for iOS
 
