@@ -15,10 +15,6 @@
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
-# syntaxe des attributs
-# completion sur les mots clefs
-# macros
-
 * Version 8.0
 
 This page list changes from the *development version* of Org-mode.
@@ -239,6 +235,44 @@ released./
 
 ** New features
 
+*** Export
+
+**** New export generic options
+
+If you use Org exporter, we advise you to re-read [[http://orgmode.org/org.html#Exporting][the manual section about
+it]].  It has been updated and includes new options.
+
+Among the new/updated export options, three are of particular importance:
+
+- =org-export-allow-bind-keywords= :: This option replaces the old option
+     =org-export-allow-BIND= and the default value is =nil=, not =confirm=.
+     You will need to explicitely set this to =t= in your initialization
+     file if you want to allow =#+BIND= keywords.
+
+- =org-export-with-planning= :: This new option controls the export of
+     =SCHEDULED:, DEADLINE:, CLOSED:= lines, and planning information is
+     now skipped by default during export.  This use to be the job of
+     =org-export-with-timestamps=, but this latter option has been given a
+     new role: it controls the export of /standalone time-stamps/.  When
+     set to =nil=, Org will not export active and inactive time-stamps
+     standing on a line by themselves or within a paragraph that only
+     contains time-stamps.
+
+To check if an option has been introduced or its default value changed in
+Org 8.0, do =C-h v [option] RET= and check if the documentation says that
+the variable has been introduced (or changed) in version 24.4 of Emacs.
+
+**** Enhanced default stylesheet for the HTML exporter
+
+See the new default value of =org-html-style-default=.
+
+**** New tags, classes and ids for the HTML exporter
+
+See the new default value of =org-html-divs=.
+
+**** Support for tikz pictures in LaTeX export
+**** =org-man.el=: New export function for "man" links
+**** =org-docview.el=: New export function for docview links
 *** Structure editing
 
 **** =C-u C-u M-RET= inserts a heading at the end of the parent subtree
@@ -330,7 +364,6 @@ The default is to use the actual width of the image, but you can use a
 fixed value for all images, or fall back on an attribute like
 
 : #+attr_html: :width 300px
-
 *** Scheduled/deadline
 
 **** Implement "delay" cookies for scheduled items
@@ -358,7 +391,6 @@ See the previous section for why delay cookies may be useful.
 **** Use =C-u C-u C-d= will insert a warning delay for deadline tasks
 
 =C-u C-u C-d= now inserts a warning delay to deadlines.
-
 *** Calendar, diary and appts
 
 **** New variable =org-read-date-minibuffer-local-map=
@@ -388,7 +420,6 @@ call =diary-view-entries= and display the diary in a separate buffer.
 =org-diary= returns diary information from Org files, but it returns it
 in a diary buffer, not in an Org mode buffer.  When links are displayed,
 only show their description, not the full links.
-
 *** Agenda
 
 **** New agenda type =agenda*= and entry types =:scheduled* :deadline*=
@@ -554,7 +585,6 @@ For example, this task will now be skipped only on new year's day:
 
     : * Task
     :   <%%(org-class 2012 1 1 2013 12 12 2 "New Year's Day")>
-
 *** Capture
 
 **** Allow =C-1= as a prefix for =org-agenda-capture= and =org-capture=
@@ -574,7 +604,6 @@ expand the keywords before expanding the =%(sexp)=.
 allow you to define what capture templates and what agenda commands should
 be available in various contexts.  It is now possible for the context to
 check against the name of the buffer.
-
 *** Tag groups
 
 Using =#+TAGS: { Tag1 : Tag2 Tag3 }= will define =Tag1= as a /group tag/
@@ -622,7 +651,6 @@ When storing a link to a headline like
 =org-store-link= used to convert the square brackets into curly brackets.
 It does not anymore, taking the link description or the link path, when
 there is no description.
-
 *** Table
 
 **** Switching between #+TBLFM lines
@@ -749,24 +777,6 @@ cache value is current as there is no evaluation involved in this case.
 
 When writing a new Babel file, you now only need to use =(require 'ob)=
 instead of requiring each Babel library one by one.
-*** Export
-
-**** New export dispatcher
-***** Make repeating a subtree-restricted export command remember the subtree
-**** New default value of =org-export-copy-to-kill-ring= is 'if-interactive
-**** LaTeX
-
-***** ox-latex: Support tikz images, :width, and :height
-
-**** HTML
-***** =org-html-coding-system= is now =utf-8=
-***** New default for org-html-divs
-***** CSS changes
-****** Add CSS classes to list tags
-****** New CSS .underline and #org-div-home-and-up.
-
-**** org-man.el (org-man-export): New function to export links of type "man"
-
 *** Faces
 
 - Org now fontifies radio link targets by default
