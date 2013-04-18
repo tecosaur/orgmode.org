@@ -25,65 +25,64 @@ released./
 
 ** Installation
 
-   Installation instructions have been updated and simplified.
+Installation instructions have been updated and simplified.
 
-   If you have troubles installing or updating Org, focus on these
-   instructions:
+If you have troubles installing or updating Org, focus on these
+instructions:
 
-   - when updating via a =.zip/.tar.gz= file, you only need to set the
-     =load-path= in your =.emacs=.  Set it before any other Org
-     customization that would call autoloaded Org functions.
+- when updating via a =.zip/.tar.gz= file, you only need to set the
+  =load-path= in your =.emacs=.  Set it before any other Org
+  customization that would call autoloaded Org functions.
 
-   - when updating by pulling Org's Git repository, make sure to create the
-     correct autoloads.  You can do this by running =~$ make autoloads= (to
-     only create the autoloads) or by running =~$ make= (to also compile
-     the Emacs lisp files.)  =~$ make help= and =~$ make helpall= gives you
-     detailed explanations.
+- when updating by pulling Org's Git repository, make sure to create the
+  correct autoloads.  You can do this by running =~$ make autoloads= (to
+  only create the autoloads) or by running =~$ make= (to also compile
+  the Emacs lisp files.)  =~$ make help= and =~$ make helpall= gives you
+  detailed explanations.
 
-   - when updating through ELPA (either from GNU ELPA or from Org ELPA),
-     you have to install Org's ELPA package in a session where no Org
-     function has been called already.
+- when updating through ELPA (either from GNU ELPA or from Org ELPA),
+  you have to install Org's ELPA package in a session where no Org
+  function has been called already.
+  
+When in doubt, run =M-x org-version RET= and see if you have a mixed-up
+installation.
 
-   When in doubt, run =M-x org-version RET= and see if you have a mixed-up
-   installation.
-
-   See http://orgmode.org/org.html#Installation for details.
+See http://orgmode.org/org.html#Installation for details.
 
 ** Incompatible changes
 
-   Org 8.0 is the most disruptive major version of Org.
+Org 8.0 is the most disruptive major version of Org.
 
-   If you configured export options, you will have to update some of them.
+If you configured export options, you will have to update some of them.
 
-   If you used =#+ATTR_*= keywords, the syntax of the attributes changed
-   and you will have to update them.
+If you used =#+ATTR_*= keywords, the syntax of the attributes changed and
+you will have to update them.
 
-   Below is a list of changes for which you need to take action.
+Below is a list of changes for which you need to take action.
 
-   See http://orgmode.org/worg/org-8.0.html for the most recent version of
-   this list and for detailed instructions on how to migrate.
+See http://orgmode.org/worg/org-8.0.html for the most recent version of
+this list and for detailed instructions on how to migrate.
 
 **** New export engine
 
-     Org 8.0 comes with a new export engine written by Nicolas Goaziou.
-     This export engine relies on =org-element.el= (Org's syntax parser),
-     which was already in Org's core.  This new export engine triggered the
-     rewriting of /all/ export back-ends.
+Org 8.0 comes with a new export engine written by Nicolas Goaziou.  This
+export engine relies on ~org-element.el~ (Org's syntax parser), which was
+already in Org's core.  This new export engine triggered the rewriting of
+/all/ export back-ends.
 
-     The most visible change is the export dispatcher, accessible through
-     the keybinding =C-c C-e=.  By default, this menu only shows some of
-     the built-in export formats, but you can add more formats by loading
-     them directly (e.g., =(require 'ox-texinfo)= or by configuring the
-     option =org-export-backends=.
+The most visible change is the export dispatcher, accessible through the
+keybinding =C-c C-e=.  By default, this menu only shows some of the
+built-in export formats, but you can add more formats by loading them
+directly (e.g., =(require 'ox-texinfo)= or by configuring the option
+[[doc:org-export-backends][org-export-backends]].
 
-     More contributed back-ends are available from the =contrib/=
-     directory, the corresponding files start with the =ox-= prefix.
+More contributed back-ends are available from the =contrib/= directory, the
+corresponding files start with the =ox-= prefix.
 
-     If you customized an export back-end (like HTML or LaTeX), you will
-     need to rename some options so that your customization is not lost.
-     Typically, an option starting with =org-export-html-= is now named
-     =org-html-=.  See the manual for details and check [[http://orgmode.org/worg/org-8.0.html][this Worg page]] for
-     directions.
+If you customized an export back-end (like HTML or LaTeX), you will need to
+rename some options so that your customization is not lost.  Typically, an
+option starting with =org-export-html-= is now named =org-html-=.  See the
+manual for details and check [[http://orgmode.org/worg/org-8.0.html][this Worg page]] for directions.
 
 **** New syntax for #+ATTR_HTML/LaTeX/... options
 
@@ -97,7 +96,7 @@ released./
      respective back-ends, and the list of supported parameters depends on
      each backend.  See Org's manual for details.
 
-**** =org-remember.el= has been removed
+**** ~org-remember.el~ has been removed
 
      You cannot use =remember.el= anymore to capture notes.
 
@@ -107,7 +106,7 @@ released./
      Use =M-x org-capture-import-remember-templates RET= to import your
      remember templates into capture templates.
 
-**** =org-jsinfo.el= has been merged into =ox-html.el=
+**** ~org-jsinfo.el~ has been merged into =ox-html.el=
 
      If you were requiring =ox-jsinfo.el= in your =.emacs.el= file, you
      will have to remove this requirement from your initialization file.
@@ -116,7 +115,7 @@ released./
 
      The name of the files for export back-end have changed: we now use the
      prefix =ox-= for those files (like we use the =ob-= prefix for Babel
-     files.)  For example =org-html.el= is now =ox-html.el=.
+     files.)  For example ~org-html.el~ is now =ox-html.el=.
 
      If your code relies on these files, please update the names in your
      code.
@@ -140,7 +139,7 @@ released./
      - ox-taskjuggler.el
 
      Note that =ox-freedmind.el= has been rewritten by Jambunathan,
-     =org-mew.el= has been enhanced by Tokuya Kameshima and
+     ~org-mew.el~ has been enhanced by Tokuya Kameshima and
      =ox-taskjuggler.el= by Nicolas Goaziou and others.
 
      Also, the Taskjuggler exporter now uses TJ3 by default.  John Hendy
@@ -195,7 +194,7 @@ released./
 
 *** org-favtable.el by Marc-Oliver Ihm
 
-    =org-favtable.el= helps you to create and update a table of favorite
+    ~org-favtable.el~ helps you to create and update a table of favorite
     locations in org, keeping the most frequently visited lines right at
     the top.  This table is called "favtable".  See the documentation on
     [[http://orgmode.org/worg/org-contrib/org-favtable.html][Worg]].
@@ -244,15 +243,15 @@ it]].  It has been updated and includes new options.
 
 Among the new/updated export options, three are of particular importance:
 
-- =org-export-allow-bind-keywords= :: This option replaces the old option
+- [[doc:org-export-allow-bind-keywords][org-export-allow-bind-keywords]] :: This option replaces the old option
      =org-export-allow-BIND= and the default value is =nil=, not =confirm=.
      You will need to explicitely set this to =t= in your initialization
      file if you want to allow =#+BIND= keywords.
 
-- =org-export-with-planning= :: This new option controls the export of
+- [[doc:org-export-with-planning][org-export-with-planning]] :: This new option controls the export of
      =SCHEDULED:, DEADLINE:, CLOSED:= lines, and planning information is
      now skipped by default during export.  This use to be the job of
-     =org-export-with-timestamps=, but this latter option has been given a
+     [[doc:org-export-with-timestamps][org-export-with-timestamps]], but this latter option has been given a
      new role: it controls the export of /standalone time-stamps/.  When
      set to =nil=, Org will not export active and inactive time-stamps
      standing on a line by themselves or within a paragraph that only
@@ -264,21 +263,21 @@ the variable has been introduced (or changed) in version 24.4 of Emacs.
 
 **** Enhanced default stylesheet for the HTML exporter
 
-See the new default value of =org-html-style-default=.
+See the new default value of [[doc:org-html-style-default][org-html-style-default]].
 
 **** New tags, classes and ids for the HTML exporter
 
-See the new default value of =org-html-divs=.
+See the new default value of [[doc:org-html-divs][org-html-divs]].
 
 **** Support for tikz pictures in LaTeX export
-**** =org-man.el=: New export function for "man" links
-**** =org-docview.el=: New export function for docview links
+**** ~org-man.el~: New export function for "man" links
+**** ~org-docview.el~: New export function for docview links
 *** Structure editing
 
 **** =C-u C-u M-RET= inserts a heading at the end of the parent subtree
 **** Cycling to the =CONTENTS= view keeps inline tasks folded
 
-=org-cycle-hook= as a new function =org-cycle-hide-inline-tasks= which
+[[doc:org-cycle-hook][org-cycle-hook]] as a new function [[doc:org-cycle-hide-inline-tasks][org-cycle-hide-inline-tasks]] which
 prevents the display of inline tasks when showing the content of a subtree.
 
 **** =C-c -= in a region makes a list item for each line
@@ -294,18 +293,18 @@ region.
 In Emacs, you can transpose words with =M-t=.  Transposing =*these*
 _words__= will preserve markup.
 
-**** New command =org-set-property-and-value= bound to =C-c C-x P=
+**** New command [[doc:org-set-property-and-value][org-set-property-and-value]] bound to =C-c C-x P=
 
 This command allows you to quickly add both the property and its value.  It
 is useful in buffers where there are many properties and where =C-c C-x p=
 can slow down the flow of editing too much.
 
-**** New commands =org-next-block= and =org-previous-block=
+**** New commands [[doc:org-next-block][org-next-block]] and [[doc:org-previous-block][org-previous-block]]
 
 These commands allow you to go to the previous block (=C-c M-b= or the
 speedy key =B=) or to the next block (=C-c M-f= or the speedy key =F=.)
 
-**** New commands =org-drag-line-forward= and =org-drag-line-backward=
+**** New commands [[doc:org-drag-line-forward][org-drag-line-forward]] and [[doc:org-drag-line-backward][org-drag-line-backward]]
 
 These commands emulate the old behavior of =M-<down>= and =M-<up>= but are
 now bound to =S-M-<down>= and =S-M-<up>= respectively, since =M-<down>= and
@@ -336,28 +335,28 @@ states as if lines starting with ";;; *..." where headlines.
 In general, you want to set =orgstruct-heading-prefix-regexp= as a file
 local variable.
 
-**** New behavior of =org-clone-subtree-with-time-shift=
+**** New behavior of [[doc:org-clone-subtree-with-time-shift][org-clone-subtree-with-time-shift]]
 
 The default is to only ask for a number of clones.  When called with a
 universal prefix argument =C-u=, it will prompt you for a time-shift only
 if there is a time-stamp in the task you want to clone.
 
-**** New option =org-agenda-restriction-lock-highlight-subtree=
+**** New option [[doc:org-agenda-restriction-lock-highlight-subtree][org-agenda-restriction-lock-highlight-subtree]]
 
 This defaults to =t= so that the whole subtree is highlighted when you
 restrict the agenda view to it with =C-c C-x <= (or the speed command =<=).
 The default setting helps ensuring that you are not adding tasks after the
 restricted region.  If you find this highlighting too intrusive, set this
 option to =nil=.
-**** New option =org-closed-keep-when-no-todo=
+**** New option [[doc:org-closed-keep-when-no-todo][org-closed-keep-when-no-todo]]
 
 When switching back from a =DONE= keyword to a =TODO= keyword, Org now
 removes the =CLOSED= planning information, if any.  It also removes this
 information when going back to a non-TODO state (e.g., with =C-c C-t SPC=).
 If you want to keep the =CLOSED= planning information when removing the
-TODO keyword, set =org-closed-keep-when-no-todo= to =t=.
+TODO keyword, set [[doc:org-closed-keep-when-no-todo][org-closed-keep-when-no-todo]] to =t=.
 
-**** New option =org-image-actual-width=
+**** New option [[doc:org-image-actual-width][org-image-actual-width]]
 
 This option allows you to change the width of in-buffer displayed images.
 The default is to use the actual width of the image, but you can use a
@@ -380,8 +379,8 @@ to appear as scheduled on March 25th.
 
 In case the task contains a repeater, the delay is considered to affect all
 occurrences; if you want the delay to only affect the first scheduled
-occurrence of the task, use =--2d= instead.  See =org-scheduled-delay-days=
-and =org-agenda-skip-scheduled-delay-if-deadline= for details on how to
+occurrence of the task, use =--2d= instead.  See [[doc:org-scheduled-delay-days][org-scheduled-delay-days]]
+and [[doc:org-agenda-skip-scheduled-delay-if-deadline][org-agenda-skip-scheduled-delay-if-deadline]] for details on how to
 control this globally or per agenda.
 
 **** Use =C-u C-u C-s= will insert a delay cookie for scheduled tasks
@@ -393,7 +392,7 @@ See the previous section for why delay cookies may be useful.
 =C-u C-u C-d= now inserts a warning delay to deadlines.
 *** Calendar, diary and appts
 
-**** New variable =org-read-date-minibuffer-local-map=
+**** New variable [[doc:org-read-date-minibuffer-local-map][org-read-date-minibuffer-local-map]]
 
 By default, this new local map uses "." to go to today's date, like in the
 normal =M-x calendar RET=.  If you want to deactivate this and to reassign
@@ -415,9 +414,9 @@ This is useful when you want to check if you don't already have an
 appointment when setting new ones with =C-c .= or =C-c s=.  =!= will
 call =diary-view-entries= and display the diary in a separate buffer.
 
-**** =org-diary=: only keep the descriptions of links
+**** [[doc:org-diary][org-diary]]: only keep the descriptions of links
 
-=org-diary= returns diary information from Org files, but it returns it
+[[doc:org-diary][org-diary]] returns diary information from Org files, but it returns it
 in a diary buffer, not in an Org mode buffer.  When links are displayed,
 only show their description, not the full links.
 *** Agenda
@@ -428,7 +427,7 @@ When defining agenda custom commands, you can now use =agenda*=: this will
 list entries that have both a date and a time.  This is useful when you
 want to build a list of appointments.
 
-You can also set =org-agenda-entry-types= either globally or locally in
+You can also set [[doc:org-agenda-entry-types][org-agenda-entry-types]] either globally or locally in
 each agenda custom command and use =:timestamp*= and/or =:deadline*= there.
 
 Another place where this is useful is your =.diary= file:
@@ -440,7 +439,7 @@ time value (i.e. appointments).
 
 **** New agenda sorting strategies
 
-=org-agenda-sorting-strategy= allows these new sorting strategies:
+[[doc:org-agenda-sorting-strategy][org-agenda-sorting-strategy]] allows these new sorting strategies:
 
 | Strategy       | Explanations                             |
 |----------------+------------------------------------------|
@@ -463,12 +462,12 @@ while limits are set while generating the list of agenda entries.
 
 These new options are available:
 
-- =org-agenda-max-entries= :: limit by number of entries.
-- =org-agenda-max-todos= :: limit by number of TODOs.
-- =org-agenda-max-tags= :: limit by number of tagged entries.
-- =org-agenda-max-effort= :: limit by effort (minutes)
+- [[doc:org-agenda-max-entries][org-agenda-max-entries]] :: limit by number of entries.
+- [[doc:org-agenda-max-todos][org-agenda-max-todos]] :: limit by number of TODOs.
+- [[doc:org-agenda-max-tags][org-agenda-max-tags]] :: limit by number of tagged entries.
+- [[doc:org-agenda-max-effort][org-agenda-max-effort]] :: limit by effort (minutes)
 
-For example, if you locally set =org-agenda-max-todos= to 3 in an agenda
+For example, if you locally set [[doc:org-agenda-max-todos][org-agenda-max-todos]] to 3 in an agenda
 view, the agenda will be limited to the first three todos.  Other entries
 without a TODO keyword or beyond the third TODO headline will be ignored.
 
@@ -490,7 +489,7 @@ that take only =N= minutes.
 
 You can now filter agenda entries by regular expressions using ~=~.  =C-u
 == will filter entries out.  Regexp filters are cumulative.  You can set
-=org-agenda-regexp-filter-preset= to suit your needs in each agenda view.
+[[doc:org-agenda-regexp-filter-preset][org-agenda-regexp-filter-preset]] to suit your needs in each agenda view.
 
 **** =|= in agenda view resets all filters
 
@@ -516,18 +515,18 @@ change the =.org= files who contribute to the agenda.
 
 **** Use =%s= for displaying "breadcrumbs" in the agenda view
 
-=org-agenda-prefix-format= now allows to use a =%b= formatter to tell Org
+[[doc:org-agenda-prefix-format][org-agenda-prefix-format]] now allows to use a =%b= formatter to tell Org
 to display "breadcrumbs" in the agenda view.
 
 This is useful when you want to display the task hierarchy in your agenda.
 
 **** Use =%l= for displaying the headline's level in the agenda view
 
-=org-agenda-prefix-format= allows to use a =%l= formatter to tell Org to
+[[doc:org-agenda-prefix-format][org-agenda-prefix-format]] allows to use a =%l= formatter to tell Org to
 display entries with additional spaces corresponding to their level in the
 outline tree.
 
-**** =org-agenda-write= will ask before overwriting an existing file
+**** [[doc:org-agenda-write][org-agenda-write]] will ask before overwriting an existing file
 
 =M-x org-agenda-write RET= (or =C-c C-w= from an agenda buffer) used to
 overwrite preexisting file with the same name without confirmation.  It now
@@ -535,42 +534,42 @@ asks for a confirmation.
 
 **** New commands =M-m= and =M-*= to toggle (all) mark(s) for bulk action
 
-- =org-agenda-bulk-toggle= :: this command is bound to =M-m= and toggles
+- [[doc:org-agenda-bulk-toggle][org-agenda-bulk-toggle]] :: this command is bound to =M-m= and toggles
      the mark of the entry at point.
 
-- =org-agenda-bulk-toggle-all= :: this command is bound to =M-*= and
+- [[doc:org-agenda-bulk-toggle-all][org-agenda-bulk-toggle-all]] :: this command is bound to =M-*= and
      toggles all the marks in the current agenda.
 
-**** New option =org-agenda-search-view-max-outline-level=
+**** New option [[doc:org-agenda-search-view-max-outline-level][org-agenda-search-view-max-outline-level]]
 
 This option sets the maximum outline level to display in search view.
 E.g. when this is set to 1, the search view will only show headlines of
 level 1.
 
-**** New option =org-agenda-todo-ignore-time-comparison-use-seconds=
+**** New option [[doc:org-agenda-todo-ignore-time-comparison-use-seconds][org-agenda-todo-ignore-time-comparison-use-seconds]]
 
 This allows to compare times using seconds instead of days when honoring
 options like =org-agenda-todo-ignore-*= in the agenda display.
 
-**** New option =org-agenda-entry-text-leaders=
+**** New option [[doc:org-agenda-entry-text-leaders][org-agenda-entry-text-leaders]]
 
 This allows you to get rid of the ">" character that gets added in front of
 entries excerpts when hitting =E= in the agenda view.
 
-**** New formatting string for past deadlines in =org-agenda-deadline-leaders=
+**** New formatting string for past deadlines in [[doc:org-agenda-deadline-leaders][org-agenda-deadline-leaders]]
 
 The default formatting for past deadlines is ="%2d d. ago: "=, which makes
 it explicit that the deadline is in the past.  You can configure this via
-=org-agenda-deadline-leaders=.  Note that the width of the formatting
+[[doc:org-agenda-deadline-leaders][org-agenda-deadline-leaders]].  Note that the width of the formatting
 string is important to keep the agenda alignment clean.
 
-**** New allowed value =repeated-after-deadline= for =org-agenda-skip-scheduled-if-deadline-is-shown=
+**** New allowed value =repeated-after-deadline= for [[doc:org-agenda-skip-scheduled-if-deadline-is-shown][org-agenda-skip-scheduled-if-deadline-is-shown]]
 
-When =org-agenda-skip-scheduled-if-deadline-is-shown= is set to
+When [[doc:org-agenda-skip-scheduled-if-deadline-is-shown][org-agenda-skip-scheduled-if-deadline-is-shown]] is set to
 =repeated-after-deadline=, the agenda will skip scheduled items if they are
 repeated beyond the current dealine.
 
-**** New option for =org-agenda-skip-deadline-prewarning-if-scheduled=
+**** New option for [[doc:org-agenda-skip-deadline-prewarning-if-scheduled][org-agenda-skip-deadline-prewarning-if-scheduled]]
 
 This variable may be set to nil, t, the symbol `pre-scheduled', or a number
 which will then give the number of days before the actual deadline when the
@@ -579,7 +578,7 @@ deadline prewarning only prior to the scheduled date.
 
 Read the full docstring for details.
 
-**** =org-class= now supports holiday strings in the skip-weeks parameter
+**** [[doc:org-class][org-class]] now supports holiday strings in the skip-weeks parameter
 
 For example, this task will now be skipped only on new year's day:
 
@@ -587,7 +586,7 @@ For example, this task will now be skipped only on new year's day:
     :   <%%(org-class 2012 1 1 2013 12 12 2 "New Year's Day")>
 *** Capture
 
-**** Allow =C-1= as a prefix for =org-agenda-capture= and =org-capture=
+**** Allow =C-1= as a prefix for [[doc:org-agenda-capture][org-agenda-capture]] and [[doc:org-capture][org-capture]]
 
 With a =C-1= prefix, the capture mechanism will use the =HH:MM= value at
 point (if any) or the current =HH:MM= time as the default time for the
@@ -600,7 +599,7 @@ expand the keywords before expanding the =%(sexp)=.
 
 **** Allow to contextualize capture (and agenda) commands by checking the name of the buffer
 
-=org-capture-templates-contexts= and =org-agenda-custom-commands-contexts=
+[[doc:org-capture-templates-contexts][org-capture-templates-contexts]] and [[doc:org-agenda-custom-commands-contexts][org-agenda-custom-commands-contexts]]
 allow you to define what capture templates and what agenda commands should
 be available in various contexts.  It is now possible for the context to
 check against the name of the buffer.
@@ -648,7 +647,7 @@ When storing a link to a headline like
 
 : * See [[http://orgmode.org][Org website]]
 
-=org-store-link= used to convert the square brackets into curly brackets.
+[[doc:org-store-link][org-store-link]] used to convert the square brackets into curly brackets.
 It does not anymore, taking the link description or the link path, when
 there is no description.
 *** Table
@@ -677,9 +676,9 @@ doing computation.
 
 There are now three lookup functions:
 
-- =org-loopup-first=
-- =org-loopup-last=
-- =org-loopup-all=
+- [[doc:org-loopup-first][org-loopup-first]]
+- [[doc:org-loopup-last][org-loopup-last]]
+- [[doc:org-loopup-all][org-loopup-all]]
 
 See [[http://orgmode.org/org.html#Lookup-functions][the manual]] for details.
 *** Startup keywords
@@ -699,33 +698,33 @@ These new startup keywords are now available:
 
 *** Clocking
 
-**** New option =org-clock-rounding-minutes=
+**** New option [[doc:org-clock-rounding-minutes][org-clock-rounding-minutes]]
 
-E.g. if =org-clock-rounding-minutes= is set to 5, time is 14:47 and you
+E.g. if [[doc:org-clock-rounding-minutes][org-clock-rounding-minutes]] is set to 5, time is 14:47 and you
 clock in: then the clock starts at 14:45.  If you clock out within the next
 5 minutes, the clock line will be removed; if you clock out 8 minutes after
 your clocked in, the clock out time will be 14:50.
 
-**** New option =org-time-clocksum-use-effort-durations=
+**** New option [[doc:org-time-clocksum-use-effort-durations][org-time-clocksum-use-effort-durations]]
 
 When non-nil, =C-c C-x C-d= uses effort durations.  E.g., by default, one
 day is considered to be a 8 hours effort, so a task that has been clocked
 for 16 hours will be displayed as during 2 days in the clock display or in
 the clocktable.
 
-See =org-effort-durations= on how to set effort durations and
-=org-time-clocksum-format= for more on time clock formats.
+See [[doc:org-effort-durations][org-effort-durations]] on how to set effort durations and
+[[doc:org-time-clocksum-format][org-time-clocksum-format]] for more on time clock formats.
 
-**** New option =org-clock-x11idle-program-name=
+**** New option [[doc:org-clock-x11idle-program-name][org-clock-x11idle-program-name]]
 
 This allows to set the name of the program which prints X11 idle time in
 milliseconds.  The default is to use =x11idle=.
 
-**** New option =org-use-last-clock-out-time-as-effective-time=
+**** New option [[doc:org-use-last-clock-out-time-as-effective-time][org-use-last-clock-out-time-as-effective-time]]
 
-When non-nil, use the last clock out time for =org-todo=.  Note that this
-option has precedence over the combined use of =org-use-effective-time= and
-=org-extend-today-until=.
+When non-nil, use the last clock out time for [[doc:org-todo][org-todo]].  Note that this
+option has precedence over the combined use of [[doc:org-use-effective-time][org-use-effective-time]] and
+[[doc:org-extend-today-until][org-extend-today-until]].
 
 **** =S-<left/right>= on a clocksum column will update the sum by updating the last clock
 **** =C-u 3 C-S-<up/down>= will update clock timestamps synchronously by 3 units
@@ -736,7 +735,7 @@ option has precedence over the combined use of =org-use-effective-time= and
 **** =:tstart= and =:tend= and friends allow relative times like "<-1w>" or "<now>"
 *** Babel
 
-**** You can now use =C-c C-k= for =org-edit-src-abort=
+**** You can now use =C-c C-k= for [[doc:org-edit-src-abort][org-edit-src-abort]]
 
 This allows you to quickly cancel editing a source block.
 
@@ -747,11 +746,11 @@ same target than the block at point.
 
 **** New options for auto-saving the base buffer or the source block editing buffer
 
-When =org-edit-src-turn-on-auto-save= is set to =t=, editing a source block
+When [[doc:org-edit-src-turn-on-auto-save][org-edit-src-turn-on-auto-save]] is set to =t=, editing a source block
 in a new window will turn on =auto-save-mode= and save the code in a new
 file under the same directory than the base Org file.
 
-When =org-edit-src-auto-save-idle-delay= is set to a number of minutes =N=,
+When [[doc:org-edit-src-auto-save-idle-delay][org-edit-src-auto-save-idle-delay]] is set to a number of minutes =N=,
 the base Org buffer will be saved after this number of minutes of idle
 time.
 
@@ -767,10 +766,10 @@ If you comment out a heading (with =C-c ;= anywhere on the heading or in
 the subtree), code blocks from within this heading are now ignored when
 collecting blocks for tangling.
 
-**** New option =org-babel-hash-show-time= to show a time-stamp in the result hash
+**** New option [[doc:org-babel-hash-show-time][org-babel-hash-show-time]] to show a time-stamp in the result hash
 **** Do not ask for confirmation if cached value is current
 
-Do not run =org-babel-confirm-evaluate= if source block has a cache and the
+Do not run [[doc:org-babel-confirm-evaluate][org-babel-confirm-evaluate]] if source block has a cache and the
 cache value is current as there is no evaluation involved in this case.
 **** =ob-sql.el= and =ob-python.el= have been improved.
 **** New Babel files only need to =(require 'ob)=
@@ -780,31 +779,31 @@ instead of requiring each Babel library one by one.
 *** Faces
 
 - Org now fontifies radio link targets by default
-- In the agenda, use =org-todo-keyword-faces= to highlight selected TODO keywords
-- New face =org-priority=, enhanced fontification of priority cookies in agenda
-- New face =org-tag-group= for group tags
+- In the agenda, use [[doc:org-todo-keyword-faces][org-todo-keyword-faces]] to highlight selected TODO keywords
+- New face [[doc:org-priority][org-priority]], enhanced fontification of priority cookies in agenda
+- New face [[doc:org-tag-group][org-tag-group]] for group tags
 
 ** Miscellaneous
 
-- New speedy key =s= pour =org-narrow-to-subtree=
-- Handling of =org-html-table-row= has been updated (incompatible change)
-- =org-export-html-table-tag= is replaced by =org-html-table-default-attributes=
+- New speedy key =s= pour [[doc:org-narrow-to-subtree][org-narrow-to-subtree]]
+- Handling of [[doc:org-html-table-row][org-html-table-row]] has been updated (incompatible change)
+- [[doc:org-export-html-table-tag][org-export-html-table-tag]] is replaced by [[doc:org-html-table-default-attributes][org-html-table-default-attributes]]
 - Support using =git-annex= with Org attachments
 - org-protocol: Pass optional value using query in url to capture from protocol
 - When the refile history is empty, use the current filename as default
 - When you cannot change the TODO state of a task, Org displays the blocking task
-- New option =org-mobile-allpriorities=
+- New option [[doc:org-mobile-allpriorities][org-mobile-allpriorities]]
 - org-bibtex.el now use =visual-line-mode= instead of the deprecated =longlines-mode=
-- =org-format-latex-options= allows to set the foreground/background colors automatically
-- New option =org-archive-file-header-format=
-- New "neg" entity in =org-entities=
-- New function =org-docview-export= to export docview links
+- [[doc:org-format-latex-options][org-format-latex-options]] allows to set the foreground/background colors automatically
+- New option [[doc:org-archive-file-header-format][org-archive-file-header-format]]
+- New "neg" entity in [[doc:org-entities][org-entities]]
+- New function [[doc:org-docview-export][org-docview-export]] to export docview links
 - New =:eps= header argument for ditaa code blocks
-- New option =org-gnus-no-server= to start Gnus with =gnus-no-server=
+- New option [[doc:org-gnus-no-server][org-gnus-no-server]] to start Gnus with =gnus-no-server=
 - Org is now distributed with =htmlize.el= version 1.43
-- =org-drill.el= has been updated to version 2.3.7
-- =org-mac-iCal.el= now supports MacOSX version up to 10.8
-- Various improvements to =org-contacts.el= and =orgpan.el=
+- ~org-drill.el~ has been updated to version 2.3.7
+- ~org-mac-iCal.el~ now supports MacOSX version up to 10.8
+- Various improvements to ~org-contacts.el~ and =orgpan.el=
 
 ** Outside Org
 
