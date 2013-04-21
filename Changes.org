@@ -15,7 +15,7 @@
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
-* Version 8.0
+* Version 8.0.1
 
 ** Installation
 
@@ -331,9 +331,9 @@ local variable.
 
 **** New behavior of [[doc:org-clone-subtree-with-time-shift][org-clone-subtree-with-time-shift]]
 
-The default is to only ask for a number of clones.  When called with a
-universal prefix argument =C-u=, it will prompt you for a time-shift only
-if there is a time-stamp in the task you want to clone.
+The default is now to ask for a time-shift only when there is a time-stamp.
+When called with a universal prefix argument =C-u=, it will not ask for a
+time-shift even if there is a time-stamp.
 
 **** New option [[doc:org-agenda-restriction-lock-highlight-subtree][org-agenda-restriction-lock-highlight-subtree]]
 
@@ -468,7 +468,7 @@ without a TODO keyword or beyond the third TODO headline will be ignored.
 When setting a limit (e.g. about an effort's sum), the default behavior is
 to exclude entries that cannot be checked against (e.g. entries that have
 no effort property.)  To include other entries too, you can set the limit
-to a negative number.  For example (setq org-agenda-max-tags 3) will not
+to a negative number.  For example =(setq org-agenda-max-tags -3)= will not
 show the fourth tagged headline (and beyond), but it will also show
 non-tagged headlines.
 
@@ -507,7 +507,7 @@ your tasks, or maybe before saving the agenda to a file.  Now you can use
 This does not persist after a refresh of the agenda, and this does not
 change the =.org= files who contribute to the agenda.
 
-**** Use =%s= for displaying "breadcrumbs" in the agenda view
+**** Use =%b= for displaying "breadcrumbs" in the agenda view
 
 [[doc:org-agenda-prefix-format][org-agenda-prefix-format]] now allows to use a =%b= formatter to tell Org
 to display "breadcrumbs" in the agenda view.
