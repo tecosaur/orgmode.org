@@ -7,7 +7,7 @@
 #+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org Org-mode Emacs Talks about Org-mode
 #+MACRO: updown #+BEGIN_HTML\n<div class="move">\n<< <a onclick="goToByScroll('$1');return false;" href="#">$1</a><br /><br />>> <a onclick="goToByScroll('$2');return false;" href="#">$2</a>\n</div>\n#+END_HTML
-#+STYLE:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+HTML_HEAD:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
 #+BEGIN_HTML
 <div id="top"><p><em>Org mode permet de prendre des notes, de maintenir des listes TODO, de

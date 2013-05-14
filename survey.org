@@ -8,7 +8,7 @@
 #+LINK_HOME: http://orgmode.org
 #+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org Org-mode Emacs Survey results
-#+STYLE:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
+#+HTML_HEAD:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
 
 #+BEGIN_HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
