@@ -25,7 +25,7 @@ Guerry</a> depuis 2011.</span></em></p></div>
   :CUSTOM_ID: intro
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
 Version stable *8.0.2* (avr. 2013) --- [[http://orgmode.org/org-8.0.2.tar.gz][tar.gz]] ou [[http://orgmode.org/org-8.0.2.zip][zip]] ([[file:../Changes.org][derniers changements]]).
@@ -66,7 +66,7 @@ Plus sur [[http://orgmode.org/worg/dev/org-build-system.html][l'installation d'O
   :CUSTOM_ID: docs
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:../img/org-mode-7-network-theory.jpg]]
 
 Acheter la [[http://www.network-theory.co.uk/org/manual/][version papier]] du manuel d'Org ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)

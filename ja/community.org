@@ -17,7 +17,7 @@
   :ID:       list
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:../img/list.png]]
 
 [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][メーリングリスト]]は誰でも購読できます。 [[http://news.gmane.org/gmane.emacs.orgmode][Gmane]]で閲覧することも可能です。
@@ -47,7 +47,7 @@
   :ID:       worg
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:../img/worg.png]]
 
 =~$ git clone git://orgmode.org/worg.git=
@@ -75,7 +75,7 @@ GITとEmacs+Orgによる /wiki/ 、と考えてください。
   :ID:       gsoc
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:../img/gsoc2012.png]]
 
 2012年、二人の学生のプロジェクトが [[http://code.google.com/soc/][Google Summer of Code]] で採択されました。
@@ -128,7 +128,7 @@ VimOrganizerのたくさんの[[https://vimeo.com/17182850][スクリーンシ�
   :ID:       more
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:../img/gplus.png]]
 
 /Takaaki Ishikawa/ 氏が、ツイッターボット（[[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]]）を管理しています。また、汎用的なハッシュタグもあります（[[https://twitter.com/#!/search/%2523orgmode][#orgmode]]）。
@@ -172,7 +172,7 @@ new TWTR.Widget({
 
 もしも、身近な人の中から Org-mode を使う友達を見つけたいなら、あの有名なOrgシャツを着てみることをお勧めします。 [[http://orgmode.spreadshirt.com/][アメリカ]]か、[[http://orgmode.spreadshirt.de/][ユーロ圏]]のショップで購入できます。
 
-#+ATTR_HTML: style="float: center;" width="300px"
+#+ATTR_HTML: :style float:center; :width 300px
 [[file:../img/shirts.jpg]]
 
 ** Move

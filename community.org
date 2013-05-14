@@ -18,7 +18,7 @@ projects, and authoring documents with a fast and effective plain-text system.</
   :ID:       list
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/list.png]]
 
 Subscribe to the [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][mailing list]].
@@ -51,7 +51,7 @@ Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.n
   :ID:       worg
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/worg.png]]
 
 =~$ git clone git://orgmode.org/worg.git=
@@ -80,7 +80,7 @@ New contributors are welcome -- just send your public key to Bastien.
   :ID:       gsoc
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/gsoc2012.png]]
 
 In 2012, two students successfully achieved an Org mode [[http://code.google.com/soc/][Google Summer of
@@ -138,7 +138,7 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
   :ID:       more
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/gplus.png]]
 
 /Takaaki Ishikawa/ is maintaining [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] on Twitter and you can
@@ -184,7 +184,7 @@ list]].
 If you want to find other Org friends around, one way is to wear the famous
 Org shirt.  You can buy it [[http://orgmode.spreadshirt.com/][from the US]] or [[http://orgmode.spreadshirt.de/][from Europe]].
 
-#+ATTR_HTML: style="float: center;" width="300px"
+#+ATTR_HTML: :style float:center; :width 300px
 [[file:img/shirts.jpg]]
 
 ** Move

@@ -18,7 +18,7 @@ projects, and authoring documents with a fast and effective plain-text system.</
   :ID: editing
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/structure.jpg]]
 
 Org is built on top of =outline.el=.
@@ -46,7 +46,7 @@ More on [[http://orgmode.org/manual/Document-Structure.html#Document-Structure][
   :ID: planning
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/planning.jpg]]
 
 Org can be used as a TODO lists manager and as a planner.
@@ -78,7 +78,7 @@ Handling [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates
   :ID: clocking
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/clocking.jpg]]
 
 Clocking in a task is =C-c C-x C-i=.
@@ -109,7 +109,7 @@ More on [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][
   :ID: agendas
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/agenda.jpg]]
 
 Even with large =.org= files and thousands of tasks, it is easy to focus on
@@ -144,7 +144,7 @@ Tutorial on [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.h
   :ID: capturing
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/capture.jpg]]
 
 Adding TODO items to your =.org= files is called /capturing/.
@@ -172,7 +172,7 @@ More on [[http://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
   :ID: tables
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/table2.jpg]]
 
 Org is a great plain-text table editor.
@@ -208,7 +208,7 @@ Using [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as
   :ID: exporting
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/export.jpg]]
 
 Org is an authoring and publication tool.
@@ -247,7 +247,7 @@ More on [[http://orgmode.org/manual/Publishing.html#Publishing][publishing]] (ma
   :ID: babel
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/babel.jpg]]
 
 Org makes [[http://en.wikipedia.org/wiki/Literate_programming][literate programming]] a handy and natural way to deal with code.
@@ -275,7 +275,7 @@ List of [[http://orgmode.org/worg/org-contrib/babel/languages.html][supported la
   :ID: mobile
   :END:
 
-#+ATTR_HTML: style="float: right; box-shadow: none;" width="200px"
+#+ATTR_HTML: :style float:right;box-shadow:none; :width 200px
 [[file:img/mobile.png]]
 
 /Richard Moreland/ has developed [[http://mobileorg.ncogni.to/][MobileOrg]], a free software for iPhone and

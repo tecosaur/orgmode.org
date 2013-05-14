@@ -20,7 +20,7 @@
   :CUSTOM_ID: intro
   :END:
 
-#+ATTR_HTML: id="main-image"
+#+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
 安定版は、バージョン*8.0.2*です。（2013年04月現在）--- [[http://orgmode.org/org-8.0.2.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-8.0.2.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
@@ -62,7 +62,7 @@
   :CUSTOM_ID: docs
   :END:
 
-#+ATTR_HTML: style="float: right;" width="300px"
+#+ATTR_HTML: :style float:right; :width 300px
 [[file:../img/org-mode-7-network-theory.jpg]]
 
 Org-mode の[[http://www.network-theory.co.uk/org/manual/][印刷されたマニュアル]]を購入できます（[[http://www.network-theory.co.uk/][Network Theory Ltd.]]）。
