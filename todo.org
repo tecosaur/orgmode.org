@@ -7,7 +7,7 @@
 #+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t
 #+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+DESCRIPTION: Org Org-mode TODO list
-#+STYLE:     <link rel="stylesheet" href="org.css" type="text/css" />
+#+HTML_HEAD:     <link rel="stylesheet" href="org.css" type="text/css" />
 
 #+BEGIN_HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
