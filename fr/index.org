@@ -28,7 +28,7 @@ Guerry</a> depuis 2011.</span></em></p></div>
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-Version stable *8.0.2* (avr. 2013) --- [[http://orgmode.org/org-8.0.2.tar.gz][tar.gz]] ou [[http://orgmode.org/org-8.0.2.zip][zip]] ([[file:../Changes.org][derniers changements]]).
+Version stable *8.0.3* (avr. 2013) --- [[http://orgmode.org/org-8.0.3.tar.gz][tar.gz]] ou [[http://orgmode.org/org-8.0.3.zip][zip]] ([[file:../Changes.org][derniers changements]]).
 
 Version de développement ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
