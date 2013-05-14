@@ -22,7 +22,7 @@ is maintained by <a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a> sin
   :CUSTOM_ID: intro
   :END:
 
-#+ATTR_HTML: :id "main-image"
+#+ATTR_HTML: :id main-image
 [[file:img/main.jpg]]
 
 Stable version *8.0.2* (apr. 2013) --- [[http://orgmode.org/org-8.0.2.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.0.2.zip][zip]] ([[file:Changes.org][release notes]]).
@@ -63,7 +63,7 @@ More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode
   :CUSTOM_ID: docs
   :END:
 
-#+ATTR_HTML: :style "float: right;" :width "300px"
+#+ATTR_HTML: :width 300px :style float:right;
 [[file:img/org-mode-7-network-theory.jpg]]
 
 Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org's manual ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)  
