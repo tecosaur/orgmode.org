@@ -16,8 +16,7 @@ documents, le tout en texte brut.<br />
 
 <span id="top2">Ce logiciel est développé par <a
 href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> depuis
-2003 et maintenu par <a href="http://lumiere.ens.fr/~guerry/">Bastien
-Guerry</a> depuis 2011.</span></em></p></div>
+2003.</span></em></p></div>
 #+END_HTML
 
 * Télécharger et installer
