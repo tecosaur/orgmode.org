@@ -122,7 +122,7 @@ manual for details and check [[http://orgmode.org/worg/org-8.0.html][this Worg p
 
      The rationale for deciding that these files should live in =contrib/=
      is either because they rely on third-part softwares that are not
-     included in Emacs, or because they are not targetting a significant
+     included in Emacs, or because they are not targeting a significant
      user-base.
 
      - org-colview-xemacs.el
@@ -239,7 +239,7 @@ Among the new/updated export options, three are of particular importance:
 
 - [[doc:org-export-allow-bind-keywords][org-export-allow-bind-keywords]] :: This option replaces the old option
      =org-export-allow-BIND= and the default value is =nil=, not =confirm=.
-     You will need to explicitely set this to =t= in your initialization
+     You will need to explicitly set this to =t= in your initialization
      file if you want to allow =#+BIND= keywords.
 
 - [[doc:org-export-with-planning][org-export-with-planning]] :: This new option controls the export of
@@ -498,7 +498,7 @@ headlines and their content (but not subheadings) into the new file.
 This is useful when you want to quickly share an agenda containing the full
 list of notes.
 
-**** New commands to drag an agenda line forward (=M-<down>=) or backard (=M-<up>=)
+**** New commands to drag an agenda line forward (=M-<down>=) or backward (=M-<up>=)
 
 It sometimes handy to move agenda lines around, just to quickly reorganize
 your tasks, or maybe before saving the agenda to a file.  Now you can use
@@ -601,7 +601,7 @@ check against the name of the buffer.
 
 Using =#+TAGS: { Tag1 : Tag2 Tag3 }= will define =Tag1= as a /group tag/
 (note the colon after =Tag1=).  If you search for =Tag1=, it will return
-headlines containing either =Tag1=, =Tag2= or =Tag3= (or any combinaison
+headlines containing either =Tag1=, =Tag2= or =Tag3= (or any combination
 of those tags.)
 
 You can use group tags for sparse tree in an Org buffer, for creating
@@ -803,7 +803,7 @@ instead of requiring each Babel library one by one.
 
 *** Spanish translation of the Org guide by David Arroyo Menéndez
 
-David (and others) translated the Org compact guide in spanish:
+David (and others) translated the Org compact guide in Spanish:
 
 You can read the [[http://orgmode.org/worg/orgguide/orgguide.es.pdf][PDF guide]].
 
