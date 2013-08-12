@@ -71,6 +71,8 @@ Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org'
 For each book sold, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] is making a $1 donation to the
 maintainer of Org mode.
 
+Browse the [[http://orgmode.org/manual/index.html][manual]] (one page per section).
+
 Read the complete manual: [[http://orgmode.org/org.html][HTML]] or [[http://orgmode.org/org.pdf][PDF]]
 
 Read the compact guide: [[http://orgmode.org/guide/][HTML]] or [[http://orgmode.org/orgguide.pdf][PDF]]
