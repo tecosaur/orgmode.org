@@ -15,6 +15,69 @@
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
 #+END_HTML
 
+* Version 8.2
+
+** Incompatible changes
+
+*** =xdg-open= has been removed again from =org-file-apps-defaults-gnu=
+
+    This did not work properly in some environments as xdg-open is
+    desktop specific.
+
+** Important bug fixes
+
+*** Match string for sparse trees can now contain a slash in a property value
+
+    You can now have searches like SOMEPROP="aaa/bbb".  Until now,
+    this would break because the slash would be interpreted as the
+    separator starting a TOTO match string.
+
+** New features
+
+*** Changes in the default packages loaded for LaTeX
+
+    - =rotating= is now a default package, to support sideways tables.
+    - =amsmath= is a default package
+    - =eucal= package removed, no longer needed since amsmath is
+      present
+
+    Furthermore, the manual now specifically notes if an additional
+    package is needed for one of the documented attributes.
+
+*** Microsoft Outlook support has been added to /org-mac-link.el/
+
+    Thanks to Marc McLean for this patch.
+
+*** Lazy autoloading of /org-id.el/ to follow links
+
+    When following a link that has an =id:= prefix, /org-id.el/ will
+    now automatically be loaded.
+
+    Thanks to Oleh for this patch
+
+*** New functions for paragraph motion
+    
+    The commands =C-down= and =C-up= now invoke special commands
+    that use knowledge from the org-elements parser to move the cursor
+    in a paragraph-like way.
+
+    Thanks to Nicolas Goaziou for the implementation.
+
+*** New agenda fortnight view
+
+    The agenda has not, in addition to day, week, month, and year
+    views, also a fortnight view covering 14 days.
+
+    Thanks to Michael Gauland for the implementation.
+
+** New options
+
+*** New option: [[doc:org-special-ctrl-o][org-special-ctrl-o]]
+
+    This variable can be used to turn off the special behavior of
+    =C-o= in tables.
+    
+
 * Version 8.1
 
 ** Incompatible changes
