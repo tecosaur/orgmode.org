@@ -65,7 +65,7 @@ projects, and authoring documents with a fast and effective plain-text system.</
 
 *** New agenda fortnight view
 
-    The agenda has not, in addition to day, week, month, and year
+    The agenda has now, in addition to day, week, month, and year
     views, also a fortnight view covering 14 days.
 
     Thanks to Michael Gauland for the implementation.
