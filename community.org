@@ -193,4 +193,3 @@ Org shirt.  You can buy it [[http://orgmode.spreadshirt.com/][from the US]] or [
    :END:
 
 {{{updown(gsoc,more)}}}
-
