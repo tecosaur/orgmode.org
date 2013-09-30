@@ -132,7 +132,6 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
 
 {{{updown(gsoc,more)}}}
 
-
 * Twitter, G+ and the Org shirt!
   :PROPERTIES:
   :ID:       more
