@@ -99,11 +99,3 @@ and Rick Moen.
 
 {{{previous(intro)}}}
 
-* Thanks
-
-#+ATTR_HTML: :alt Rackspace logo :width 200 :float wrap
- [[./img/rackspace.jpg]]
-\nbsp{}Thanks to [[http://rackspace.com][Rackspace]] for free hosting of orgmode.org.
-
-
-

@@ -117,7 +117,7 @@ This is useful if you have a Git repository of Org files or even just a
 <iframe class="iframe" src="http://player.vimeo.com/video/17182850" width="500" height="404" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+END_HTML
 
-Herbert Sitz wrote [[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]], a [[http://www.vim.org/][Vim]] plugin which emulates many of the
+Herbert Sitz wrote [[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]], a [[http://www.vim.org/][Vim]] plugin emulating many of the
 Org features.
 
 Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer is demonstrated.
@@ -131,7 +131,6 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
    :END:
 
 {{{updown(gsoc,more)}}}
-
 
 * Twitter, G+ and the Org shirt!
   :PROPERTIES:
@@ -194,4 +193,3 @@ Org shirt.  You can buy it [[http://orgmode.spreadshirt.com/][from the US]] or [
    :END:
 
 {{{updown(gsoc,more)}}}
-
