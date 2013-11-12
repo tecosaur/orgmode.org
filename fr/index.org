@@ -27,7 +27,7 @@ href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> depuis
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-Version stable *8.2.3a* (Nov. 2013) --- [[http://orgmode.org/org-8.2.3a.tar.gz][tar.gz]] ou [[http://orgmode.org/org-8.2.3a.zip][zip]] ([[file:../Changes.org][derniers changements]]).
+Version stable *8.2.3b* (Nov. 2013) --- [[http://orgmode.org/org-8.2.3b.tar.gz][tar.gz]] ou [[http://orgmode.org/org-8.2.3b.zip][zip]] ([[file:../Changes.org][derniers changements]]).
 
 Version de développement ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
