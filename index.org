@@ -24,7 +24,7 @@ projects, and authoring documents with a fast and effective plain-text system.<b
 #+ATTR_HTML: :id main-image
 [[file:img/main.jpg]]
 
-Stable version *8.2.3c* (Nov. 2013) --- [[http://orgmode.org/org-8.2.3c.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.2.3c.zip][zip]] ([[file:Changes.org][release notes]]).
+Stable version *8.2.4* (Dec. 2013) --- [[http://orgmode.org/org-8.2.4.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.2.4.zip][zip]] ([[file:Changes.org][release notes]]).
 
 Development version ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
