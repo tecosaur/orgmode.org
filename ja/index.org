@@ -23,7 +23,7 @@
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-安定版は、バージョン*8.2.5b*です。（2014年01月現在）--- [[http://orgmode.org/org-8.2.5b.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-8.2.5b.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
+安定版は、バージョン*8.2.5c*です。（2014年01月現在）--- [[http://orgmode.org/org-8.2.5c.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-8.2.5c.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
 
 開発版は、以下の手段で入手できます。（[[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]）
 
