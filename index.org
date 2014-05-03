@@ -13,7 +13,7 @@
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.<br />
 
-<span id="top2">It was created by <a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, who still maintains it with the help from <a href="http://orgmode.org/org.html#History-and-Acknowledgments">thousands</a> of users.</span></em></p></div>
+<span id="top2">Created by <a target="new" href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a> and developed by <a href="http://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</span></em></p></div>
 #+END_HTML
 
 * Download and install

@@ -14,9 +14,7 @@
 de maintenir des listes TODO, de planifier des projets et de publier des
 documents, le tout en texte brut.<br />
 
-<span id="top2">Ce logiciel est développé par <a
-href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> depuis
-2003.</span></em></p></div>
+<span id="top2">Créé en 2003 par <a target="new" href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a>, maintenu par <a target="new" href="http://bzg.fr">Bastien Guerry</a>.</span></em></p></div>
 #+END_HTML
 
 * Télécharger et installer

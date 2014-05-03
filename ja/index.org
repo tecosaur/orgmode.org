@@ -12,7 +12,7 @@
 #+BEGIN_HTML
 <div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。<br />
 
-<span id="top2">Org-modeは2003年に<a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a>氏によって作られ、2011年から<a href="http://lumiere.ens.fr/~guerry/">Bastien Guerry</a>氏によって管理されています。</span></em></p></div>
+<span id="top2">Org-modeは2003年に<a target="new" href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a>氏によって作られ、2011年から<a target="new" href="http://bzg.fr">Bastien Guerry</a>氏によって管理されています。</span></em></p></div>
 #+END_HTML
 
 * ダウンロードとインストール
