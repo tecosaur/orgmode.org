@@ -25,7 +25,7 @@ documents, le tout en texte brut.<br />
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-Version stable *8.2.7* (Jun. 2014) --- [[http://orgmode.org/org-8.2.7.tar.gz][tar.gz]] ou [[http://orgmode.org/org-8.2.7.zip][zip]] ([[file:../Changes.org][derniers changements]]).
+Version stable *8.2.7a* (Jun. 2014) --- [[http://orgmode.org/org-8.2.7a.tar.gz][tar.gz]] ou [[http://orgmode.org/org-8.2.7a.zip][zip]] ([[file:../Changes.org][derniers changements]]).
 
 Version de développement ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
