@@ -23,7 +23,7 @@
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-安定版は、バージョン*8.2.7c*です。（2014年06月現在）--- [[http://orgmode.org/org-8.2.7c.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-8.2.7c.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
+安定版は、バージョン*8.2.7c*です。（2014年07月現在）--- [[http://orgmode.org/org-8.2.7c.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-8.2.7c.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
 
 開発版は、以下の手段で入手できます。（[[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]）
 
@@ -66,9 +66,9 @@
 #+ATTR_HTML: :style float:right; :width 300px
 [[file:../img/org-mode-7-network-theory.jpg]]
 
-Org-mode の[[http://www.network-theory.co.uk/org/manual/][印刷されたマニュアル]]を購入できます（[[http://www.network-theory.co.uk/][Network Theory Ltd.]]）。
+英語かつ以前のバージョンですが、Org-mode の[[http://www.network-theory.co.uk/org/manual/][印刷されたマニュアル]]を購入できます（[[http://www.network-theory.co.uk/][Network Theory Ltd.]]）。
 
-一冊売れるごとに、 [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] を介してOrg-modeのメンテナへ1ドルが寄付されます。
+一冊売れるごとに、 [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] を介してOrg-modeのメンテナに1ドルが寄付されます。
 
 マニュアル（完全版）： [[http://orgmode.org/org.html][HTML]] もしくは [[http://orgmode.org/org.pdf][PDF]]
 
@@ -80,7 +80,7 @@ Org-mode の[[http://www.network-theory.co.uk/org/manual/][印刷されたマニ
 
 Org-modeについての[[http://orgmode.org/worg/org-papers.html][（科学的な）論文]]も公開されています。
 
-バグレポートを提出する前に、マニュアルの[[http://orgmode.org/org.html#Feedback][「フィードバック」]]を必ず読んでください。Eric S. Raymond氏とRick Moen氏による、 [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]も読んでみてください。
+バグレポートを提出する前に、マニュアルにある[[http://orgmode.org/org.html#Feedback][「フィードバック」]]を必ず読んでください。また、Eric S. Raymond氏とRick Moen氏による、 [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]も読んでみてください。
 
 =M-x org-submit-bug-report RET=
 
