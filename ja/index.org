@@ -37,7 +37,7 @@
 - [[#docs][マニュアルとチュートリアル]]
 - [[http://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
 - [[http://orgmode.org/worg/][Worg: community-written docs]]
-- [[How%20to%20contribute%20to%20Org?][How to contribute to Org?]]
+- [[http://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
 - [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
 - [[file:talks.org][Org-modeについての講演]]
 - [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]（英語）
