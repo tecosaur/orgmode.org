@@ -630,7 +630,6 @@ now.
 
 This helps spotting wrong links. 
 
-
 * Older changes
 
 For older Changes, see [[file:Changes_old.org][old changes]].
