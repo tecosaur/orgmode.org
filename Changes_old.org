@@ -1482,7 +1482,7 @@ clocked out task and restart from when that task was clocked out.
 
 You can temporarily activate continuous clocking with =C-u C-u
 C-u M-x= [[doc::org-clock-in][org-clock-in]] =RET= (three universal prefix arguments) and
-=C-u C-u M-x= [[org-clock-in-last][org-clock-in-last]] =RET= (two universal prefix
+=C-u C-u M-x= [[doc::org-clock-in-last][org-clock-in-last]] =RET= (two universal prefix
 arguments).
 
 **** New option [[doc::org-clock-frame-title-format][org-clock-frame-title-format]]
