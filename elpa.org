@@ -94,7 +94,7 @@ See the [[http://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html
   :CUSTOM_ID: questions
   :END:
 
-If you think the package are not updated, please check [[http://orgmode.org/build-org-pkg.txt][this file]].
+If you think the package are not updated, please check [[http://orgmode.org/elpa/build-org-pkg.txt][this file]].
 
 Report any problem and ask any question on the Org mode [[http://orgmode.org/community.html][mailing list]].
 
