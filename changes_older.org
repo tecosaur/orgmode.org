@@ -2358,20 +2358,20 @@ optional inline definition.  Using plain numbers as markers is supported
 for backward compatibility, but not encouraged because of possible
 conflicts with LaTeX syntax.  Here are the valid references:
 
-- [1] ::  A plain numeric footnote marker.
+- =[1]= ::  A plain numeric footnote marker.
 
-- [fn:name] :: A named footnote reference, where `name' is a
+- =[fn:name]= :: A named footnote reference, where `name' is a
      unique label word or, for simplicity of automatic creation,
      a number.
 
-- [fn:: This is the inline definition of this footnote] :: A
+- =[fn:: This is the inline definition of this footnote]= :: A
      LaTeX-like anonymous footnote where the definition is given
      directly at the reference point.
 
-- [fn:name: a definition] :: An inline definition of a footnote,
+- =[fn:name: a definition]= :: An inline definition of a footnote,
      which also specifies a name for the note.  Since Org allows
      multiple references to the same note, you can then use use
-     `[fn:name]' to create additional references.
+     =[fn:name]= to create additional references.
 
 Footnote labels can be created automatically, or you create names
 yourself.  This is handled by the variable =org-footnote-auto-label= and
@@ -3354,7 +3354,7 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
   :CUSTOM_ID: v6.09
   :END:
 ** Incompatible
-*** =org-file-apps= now uses regular expressions, see [[*%20org%20file%20apps%20now%20uses%20regular%20repressions%20instead%20of%20extensions][below]]
+*** =org-file-apps= now uses regular expressions, see [[=org-file-apps= now uses regular repressions instead of extensions][below]]
 
 ** Details
 
@@ -3397,7 +3397,7 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
 
    - Changes in the structure of IDs, see [[*The%20default%20structure%20of%20IDs%20has%20changed][here]] for details.
 
-   - C-c C-a has been redefined, see [[*%20C%20c%20C%20a%20no%20longer%20calls%20show%20all][here]] for details.
+   - C-c C-a has been redefined, see [[=C-c C-a= no longer calls `show-all'][here]] for details.
 
 ** Details
 
@@ -8055,7 +8055,7 @@ list of small improvements and some new significant features.
      See variables `org-log-done' and `org-log-note-headings'.
    - Inserting headlines and bullets can leave an extra blank line.
      See variable `org-blank-before-new-entry'. (Ed Hirgelt patch)
-   - [[bracket links]] in the agenda are active just as in org-mode buffers.
+   - =[[bracket links]]= in the agenda are active just as in org-mode buffers.
    - C-c C-o on a date range displays the agenda for exactly this range.
    - The default for `org-cycle-include-plain-lists' is back to nil.
    - Calls to `org-occur' can be stacked by using a prefix argument.
@@ -8223,7 +8223,7 @@ list of small improvements and some new significant features.
      See `org-agenda-mouse-1-follows-link' and `org-mouse-1-follows-link'.
 
 * Version 4.20
-   - Links use now the [[link][description]] format by default.
+   - Links use now the =[[link][description]]= format by default.
      When inserting links, the user is prompted for a description.
    - If a link has a description, only the description is displayed
      the link part is hidden.  Use C-c C-l to edit the link part.
