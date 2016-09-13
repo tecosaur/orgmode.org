@@ -29,7 +29,7 @@ Version stable *8.3.6* (Sept. 2016) --- [[http://orgmode.org/org-8.3.6.tar.gz][t
 
 Version de développement ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
-=~$ git clone git://orgmode.org/org-mode.git=
+=~$ git clone git://orgmode.org/org-mode.git= (ou http://orgmode.org/org-mode.git)
 
 =M-x list-packages RET=  (voir [[http://orgmode.org/elpa.html][Org ELPA]])
 
