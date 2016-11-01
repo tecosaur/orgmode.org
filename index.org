@@ -16,7 +16,7 @@ projects, and authoring documents with a fast and effective plain-text system.<b
 <span id="top2">Created by <a target="new" href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a> and developed by <a href="http://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</span></em></p></div>
 #+END_HTML
 
-* Download and install
+* Installation
   :PROPERTIES:
   :CUSTOM_ID: intro
   :END:
@@ -28,17 +28,13 @@ The stable version of Org is *8.3.6*, as of Sept. 2016.  See the [[file:Changes.
 
 Get it with =M-x package-install RET org RET= (see [[http://orgmode.org/elpa.html][Org ELPA]]).
 
-Or download it as a [[http://orgmode.org/org-8.3.6.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.3.6.zip][zip]] archive.
+Or download it as a [[http://orgmode.org/org-8.3.6.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.3.6.zip][zip]] archives.
 
-You can also browse the development version from [[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]:
+You can browse the development version from [[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]] or clone the repo:
 
-=~$ git clone git://orgmode.org/org-mode.git=
+=~$ git clone git://orgmode.org/org-mode.git= (http:// works too)
 
-or
-
-=~$ git clone http://orgmode.org/org-mode.git=
-
-You can also download the [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]] daily snapshots.
+Daily snapshots of the development version: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
 
 - [[file:features.org][List of features]]
 - [[#docs][Manuals and tutorials]]
