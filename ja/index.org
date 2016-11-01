@@ -25,11 +25,11 @@
 
 安定版は、バージョン*8.3.6*です。（2016年9月現在）--- [[http://orgmode.org/org-8.3.6.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-8.3.6.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
 
+=M-x list-packages RET= ([[http://orgmode.org/elpa.html][Org ELPA（英語）]]を読んでください）
+
 開発版は、以下の手段で入手できます。（[[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]）
 
 =~$ git clone git://orgmode.org/org-mode.git= (http://orgmode.org/org-mode.git も有効です)
-
-=M-x list-packages RET= ([[http://orgmode.org/elpa.html][Org ELPA（英語）]]を読んでください）
 
 ナイトリー版は、 [[http://orgmode.org/org-latest.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-latest.zip][zip]] をダウンロードしてください。
 

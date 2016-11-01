@@ -26,11 +26,11 @@ projects, and authoring documents with a fast and effective plain-text system.<b
 
 Stable version *8.3.6* (Sept. 2016) --- [[http://orgmode.org/org-8.3.6.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.3.6.zip][zip]] ([[file:Changes.org][release notes]]).
 
+=M-x list-packages RET= (see [[http://orgmode.org/elpa.html][Org ELPA]])
+
 Development version ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
 
 =~$ git clone git://orgmode.org/org-mode.git= (http://orgmode.org/org-mode.git is also available)
-
-=M-x list-packages RET= (see [[http://orgmode.org/elpa.html][Org ELPA]])
 
 Daily snapshots: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
 
