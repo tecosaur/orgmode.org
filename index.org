@@ -60,14 +60,6 @@ bleeding edge]].
    :HTML_CONTAINER_CLASS: move
    :END:
 
-{{{next(links)}}}
-
-** Move
-   :PROPERTIES:
-   :ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
 {{{next(docs)}}}
 
 * Documentation and literature
