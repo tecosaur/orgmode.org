@@ -32,7 +32,7 @@ Or download it as a [[http://orgmode.org/org-8.3.6.tar.gz][tar.gz]] or [[http://
 
 You can browse the development version from [[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]] or clone the repo:
 
-=~$ git clone git://orgmode.org/org-mode.git= (http:// works too)
+=~$ git clone git://orgmode.org/org-mode.git= (=http= works too)
 
 Daily snapshots of the development version: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
 
