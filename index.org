@@ -24,31 +24,52 @@ projects, and authoring documents with a fast and effective plain-text system.<b
 #+ATTR_HTML: :id main-image
 [[file:img/main.jpg]]
 
-Stable version *8.3.6* (Sept. 2016) --- [[http://orgmode.org/org-8.3.6.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.3.6.zip][zip]] ([[file:Changes.org][release notes]]).
+** Stable
 
-=M-x list-packages RET= (see [[http://orgmode.org/elpa.html][Org ELPA]])
+The stable version of Org is *8.3.6*, as of Sept. 2016.  See the [[file:Changes.org][release notes]].
 
-Development version ([[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]):
+You can download it as a [[http://orgmode.org/org-8.3.6.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.3.6.zip][zip]] archive.
 
-=~$ git clone git://orgmode.org/org-mode.git= (http://orgmode.org/org-mode.git is also available)
+Or =M-x package-install RET org RET= (see [[http://orgmode.org/elpa.html][Org ELPA]]).
 
-Daily snapshots: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
+** Development
 
-- [[file:features.org][List of features]]
-- [[#docs][Manuals and tutorials]]
-- [[http://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
-- [[http://orgmode.org/worg/][Worg: community-written docs]]
-- [[http://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
-- [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
-- [[file:talks.org][Talks about Org mode]]
-- [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]
-- [[file:community.org][Mailing list and goodies]]
+You can browse the development version from [[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]]:
+
+=~$ git clone git://orgmode.org/org-mode.git= (or)
+=~$ git clone http://orgmode.org/org-mode.git=
+
+You can download the [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]] archives of daily snapshots.
 
 ** More
 
-More on [[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode]] (Worg)
+Check out the [[http://orgmode.org/manual/Installation.html][installation instructions]].
 
-[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]] (Worg)
+Worg will tell you more on the [[http://orgmode.org/worg/dev/org-build-system.html][build options]] and on how to [[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on the
+bleeding edge]].
+
+** Move
+   :PROPERTIES:
+   :ID:       move
+   :HTML_CONTAINER_CLASS: move
+   :END:
+
+{{{next(links)}}}
+
+* Useful links
+  :PROPERTIES:
+  :CUSTOM_ID: links
+  :END:
+
+- [[file:features.org][List of features]]
+- [[#docs][Manuals and tutorials]]
+- [[http://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
+- [[file:community.org][Mailing list and goodies]]
+- [[http://orgmode.org/worg/][Worg: community-written docs]]
+- [[file:talks.org][Talks about Org mode]]
+- [[http://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
+- [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]
+- [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
 
 ** Move
    :PROPERTIES:
