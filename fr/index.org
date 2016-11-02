@@ -25,7 +25,7 @@ documents, le tout en texte brut.<br />
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-La version stable est la *8.3.6*, sept. 2016.  Voir les ([[file:~/install/git/orgweb/Changes.org][changements]]).
+La version stable est la *9.0*, nov. 2016.  Voir les ([[file:~/install/git/orgweb/Changes.org][changements]]).
 
 Installez avec =M-x package-install RET org RET= (voir [[http://orgmode.org/elpa.html][Org ELPA]]).
 
