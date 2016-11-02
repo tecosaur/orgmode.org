@@ -9,10 +9,10 @@
 #+OPTIONS: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:{} *:t TeX:t LaTeX:nil skip:nil
 #+HTML_HEAD:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
-#+END_HTML
+#+END_EXPORT
 
 * Version 8.3
 

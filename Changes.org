@@ -10,10 +10,10 @@
 #+DESCRIPTION: Org Org-mode Emacs Changes ChangeLog release notes
 #+HTML_HEAD:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
-#+END_HTML
+#+END_EXPORT
 
 * Version 9.0
 
