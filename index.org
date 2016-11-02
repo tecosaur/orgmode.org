@@ -9,12 +9,12 @@
 #+MACRO: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>
 #+HTML_HEAD:     <link rel="stylesheet" href="org.css" type="text/css" />
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.<br />
 
 <span id="top2">Created by <a target="new" href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a> and developed by <a href="http://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</span></em></p></div>
-#+END_HTML
+#+END_EXPORT
 
 * Installation
   :PROPERTIES:
