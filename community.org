@@ -25,13 +25,13 @@ Subscribe to the [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][mailing
 
 Browse it [[http://news.gmane.org/gmane.emacs.orgmode][through Gmane]].
 
-#+begin_html
+#+begin_export html
 <form id="searchgmane" method="get" action="http://search.gmane.org/">
 <input type="text" name="query" />
 <input type="hidden" name="group" value="gmane.emacs.orgmode" />
 <input type="submit" value="Search gmane.emacs.orgmode" />
 </form>
-#+end_html
+#+end_export
 
 The mailing list is /the/ central place for anything related to Org: help
 users, report bugs, suggest new features, etc.  Don't hesitate!

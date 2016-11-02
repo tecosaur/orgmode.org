@@ -8,10 +8,10 @@
 #+MACRO: updown #+HTML: <div class="move"><a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a></div>
 #+HTML_HEAD:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
 
-#+BEGIN_HTML
+#+begin_export html
 <div id="top"><p><em>Org mode permet de prendre des notes, de maintenir des listes TODO, de
 planifier des projets et de publier des documents, le tout en texte brut.</em></p></div>
-#+END_HTML
+#+end_html
 
 * List de discussion et canal IRC
   :PROPERTIES:
@@ -25,7 +25,7 @@ Inscrivez-vous à la [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][lis
 
 Lisez-la à partir de [[http://news.gmane.org/gmane.emacs.orgmode][Gmane]].
 
-#+begin_html
+#+begin_export
 <form id="searchgmane" method="get" action="http://search.gmane.org/">
 <input type="text" name="query" />
 <input type="hidden" name="group" value="gmane.emacs.orgmode" />
@@ -115,7 +115,7 @@ même seulement un fichier =README.org= dans votre projet.
   :ID:       vim
   :END:
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT
 <iframe class="iframe" src="http://player.vimeo.com/video/17182850" width="500" height="404" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 #+END_HTML
 
@@ -146,7 +146,7 @@ l'oeuvre.
 /Takaaki Ishikawa/ maintient [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] sur Twitter et vous pouvez
 généralement consulter [[https://twitter.com/#!/search/%2523orgmode][#orgmode]].
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
