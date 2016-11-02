@@ -22,13 +22,13 @@
 
 [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][メーリングリスト]]は誰でも購読できます。 [[http://news.gmane.org/gmane.emacs.orgmode][Gmane]]で閲覧することも可能です。
 
-#+begin_html
+#+begin_export html
 <form id="searchgmane" method="get" action="http://search.gmane.org/">
 <input type="text" name="query" />
 <input type="hidden" name="group" value="gmane.emacs.orgmode" />
 <input type="submit" value="Search gmane.emacs.orgmode" />
 </form>
-#+end_html
+#+end_export
 
 このメーリングリストには、Org-modeに関連する /すべての/ 情報が集まってきます。例えば、ユーザからの相談、バグレポート、新機能の提案などです。遠慮無くメールを投稿してください。
 

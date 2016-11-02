@@ -9,19 +9,19 @@
 #+MACRO: updown #+HTML: <div class="move"><< <a onclick="goToByScroll('$1');return false;" href="#">$1</a><br /><br />>> <a onclick="goToByScroll('$2');return false;" href="#">$2</a></div>
 #+HTML_HEAD:     <link rel="stylesheet" href="org.css" type="text/css" />
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
-#+END_HTML
+#+END_EXPORT
 
 * GoogleTech Talk by Carsten Dominik (2008)
   :PROPERTIES:
   :ID:       google-tech-talk
   :END:
 
-#+begin_html
+#+begin_export html
 <iframe class="iframe" width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
-#+end_html
+#+end_export
 
 Here is the video of the [[http://www.youtube.com/user/GoogleTechTalks][Google Tech Talk]] about Org mode that I gave on
 July 15th, 2008 on the Google campus in Mountain View, California.
@@ -44,9 +44,9 @@ You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-g
   :ID:       org-for-scientists
   :END:
 
-#+begin_html
+#+begin_export html
 <iframe class="iframe" src="http://player.vimeo.com/video/33725204?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="402" height="302" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-#+end_html
+#+end_export
 
 This is a talk presented on February 8th 2010 at the Max Planck Institute
 for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
@@ -66,9 +66,9 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
   :ID:       floss-weekly
   :END:
 
-#+begin_html
+#+begin_export html
 <iframe class="iframe" src="http://twit.tv/embed/8239" width="480" height="320" scrolling="no" marginwidth="0" marginheight="0" hspace="0" align="middle" frameborder="0"></iframe>
-#+end_html
+#+end_export
 
 
 
@@ -86,9 +86,9 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
   :ID:       ghm2011
   :END:
 
-#+begin_html
+#+begin_export html
 <iframe class="iframe" src="http://player.vimeo.com/video/30721952?title=0&amp;byline=0&amp;portrait=0" width="480" height="354" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-#+end_html
+#+end_export
 
 This presentation was given during the GNU Hackers Meeting in Paris, 2011.
 
@@ -111,9 +111,9 @@ You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-de
   :ID:       gpn12
   :END:
 
-#+begin_html
+#+begin_export html
 <iframe width="420" height="315" src="http://www.youtube.com/embed/mUSoo4UaKBo" frameborder="0" allowfullscreen></iframe>
-#+end_html
+#+end_export
 
 The slides are available [[http://florian.adamsky.it/research/talks/gpn12/GPN12-Emacs-Org-mode.pdf][as PDF here]].
 
