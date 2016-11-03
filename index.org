@@ -28,7 +28,7 @@ The stable version of Org is *9.0*, as of Nov. 2016.  See the [[file:Changes.org
 
 Get it with =M-x package-install RET org RET= (see [[http://orgmode.org/elpa.html][Org ELPA]]).
 
-Or download it as a [[http://orgmode.org/org-8.3.6.tar.gz][tar.gz]] or [[http://orgmode.org/org-8.3.6.zip][zip]] archives.
+Or download it as a [[http://orgmode.org/org-9.0.tar.gz][tar.gz]] or [[http://orgmode.org/org-9.0.zip][zip]] archives.
 
 You can browse the development version from [[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]] or clone the repo:
 
