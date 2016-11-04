@@ -23,7 +23,7 @@ documents, le tout en texte brut.<br />
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:img/main.jpg]]
+[[file:../img/main.jpg]]
 
 La version stable est la *9.0*, nov. 2016.  Voir les ([[file:~/install/git/orgweb/Changes.org][changements]]).
 

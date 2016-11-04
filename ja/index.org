@@ -21,7 +21,7 @@
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:img/main.jpg]]
+[[file:../img/main.jpg]]
 
 安定版は、バージョン*9.0*です。（2016年11月現在）--- [[http://orgmode.org/org-9.0.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-9.0.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
 
