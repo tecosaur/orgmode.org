@@ -25,11 +25,11 @@ documents, le tout en texte brut.<br />
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-La version stable est la *9.0*, nov. 2016.  Voir les ([[file:~/install/git/orgweb/Changes.org][changements]]).
+La version stable est la *9.0.1*, nov. 2016.  Voir les ([[file:~/install/git/orgweb/Changes.org][changements]]).
 
 Installez avec =M-x package-install RET org RET= (voir [[http://orgmode.org/elpa.html][Org ELPA]]).
 
-Ou téléchargez les archives [[http://orgmode.org/org-9.0.tar.gz][tar.gz]] ou [[http://orgmode.org/org-9.0.zip][zip]].
+Ou téléchargez les archives [[http://orgmode.org/org-9.0.1.tar.gz][tar.gz]] ou [[http://orgmode.org/org-9.0.1.zip][zip]].
 
 Vous pouvez parcourir la version en développement sur [[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]] ou cloner
 les dépôts :
