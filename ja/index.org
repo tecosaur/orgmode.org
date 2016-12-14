@@ -9,6 +9,7 @@
 #+MACRO: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>#+END_HTML
 #+HTML_HEAD:     <link rel="stylesheet" href="../org.css" type="text/css" />
 
+
 #+BEGIN_EXPORT HTML
 <div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。<br />
 
