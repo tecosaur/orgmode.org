@@ -24,11 +24,11 @@ projects, and authoring documents with a fast and effective plain-text system.<b
 #+ATTR_HTML: :id main-image
 [[file:img/main.jpg]]
 
-The stable version of Org is *9.0.3*, as of Dec. 2016.  See the [[file:Changes.org][release notes]].
+The stable version of Org is *9.0.4*, as of Jan. 2017.  See the [[file:Changes.org][release notes]].
 
 Get it with =M-x package-install RET org RET= (see [[http://orgmode.org/elpa.html][Org ELPA]]).
 
-Or download it as a [[http://orgmode.org/org-9.0.3.tar.gz][tar.gz]] or [[http://orgmode.org/org-9.0.3.zip][zip]] archives.
+Or download it as a [[http://orgmode.org/org-9.0.4.tar.gz][tar.gz]] or [[http://orgmode.org/org-9.0.4.zip][zip]] archives.
 
 You can browse the development version from [[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]] or clone the repo:
 
@@ -69,7 +69,7 @@ bleeding edge]].
 #+ATTR_HTML: :width 300px :style float:right;
 [[file:img/org-mode-7-network-theory.jpg]]
 
-Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org's manual ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)  
+Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org's manual ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)
 
 For each book sold, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] is making a $1 donation to the
 maintainer of Org mode.
@@ -87,7 +87,7 @@ Check the reference [[http://orgmode.org/worg/doc.html][docs]] about hooks, comm
 Check the list of [[http://orgmode.org/worg/org-papers.html][(scientific) papers]] about Org mode.
 
 Before submitting a bug report, make sure you read the [[http://orgmode.org/org.html#Feedback]["Feedback"]] section
-of the manual.  
+of the manual.
 
 You may also read [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]], by Eric S. Raymond
 and Rick Moen.
@@ -101,4 +101,3 @@ and Rick Moen.
    :END:
 
 {{{previous(intro)}}}
-
