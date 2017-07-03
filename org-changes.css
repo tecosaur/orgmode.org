@@ -8,8 +8,16 @@ html {
 
 #logo {
     position: absolute;
-    top: 12px;
-    left: 20px;
+    bottom: 12px;
+    right: 20px;
+    z-index: -1000px;
+}
+
+#buttons {
+    position:absolute;
+    top:10pt;
+    left:10pt;
+    text-align: left;
 }
 
 li {
@@ -17,12 +25,6 @@ li {
     margin-bottom: 5px;
 }
 
-#buttons {
-    position:fixed;
-    bottom:10pt;
-    right:10pt;
-    text-align: right;
-}
 
 body {
     padding: 20px;
@@ -35,25 +37,16 @@ td {
     padding: 2pt;
 }
 
-/* tr { */
-/*     margin: 0px; */
-/*     padding: 0px; */
-/* } */
-
 a {
     text-decoration: none;
-    /* color: #1c3030; */
-    /* color: #537d7b */
 }
+
 a:visited {
     text-decoration: none;
-    /* color: #5e251e; */
-    /* color: #98855b */
 }
+
 a:hover {
     text-decoration: underline;
-    /* color: #3d696a; */
-    /* color: #a34d32 */
 }
 
 #content {
@@ -80,7 +73,6 @@ h3 {
 
 *.outline-2 img {
     box-shadow: 5px 5px 5px #aaa;
-    /* margin-top: -35px; */
     margin-left: 50px;
 }
 
@@ -111,7 +103,6 @@ code {
     padding: 1pt;
     margin-right: 1pt;
     border: 1px solid #eee;
-    /* box-shadow: 1px 1px 1px #aaa; */
 }
 
 pre {
@@ -154,7 +145,6 @@ pre {
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-radius-bottomleft: 5px;
     text-align: right;
-    /* ensure doesn't flow off the screen when expanded */
     max-height: 80%;
     overflow: auto;
     z-index: 200;
@@ -200,10 +190,10 @@ pre {
 
 @media screen
 {
-  #table-of-contents {
-    float: right;
-    border: 1px solid #CCC;
-    max-width: 50%;
-    overflow: auto;
-  }
+    #table-of-contents {
+	float: right;
+	border: 1px solid #CCC;
+	max-width: 50%;
+	overflow: auto;
+    }
 } /* END OF @media screen */
