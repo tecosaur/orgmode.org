@@ -7,7 +7,7 @@ html {
 }
 
 #logo {
-    position: absolute;
+    position: fixed;
     bottom: 12px;
     right: 20px;
     z-index: -1000px;
