@@ -1,6 +1,5 @@
 #+TITLE:     Org mode for Emacs -- Release notes
 #+AUTHOR:    Carsten Dominik
-#+EMAIL:     carsten at orgmode dot org
 #+LANGUAGE:  en
 #+STARTUP:   hidestars
 #+LINK:      git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
