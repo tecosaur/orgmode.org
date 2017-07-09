@@ -6,7 +6,7 @@
 #+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
 #+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
 #+MACRO: next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
-#+MACRO: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>#+END_HTML
+#+MACRO: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>
 #+HTML_HEAD:     <link rel="stylesheet" href="../org.css" type="text/css" />
 
 
