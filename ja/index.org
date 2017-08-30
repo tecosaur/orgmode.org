@@ -44,6 +44,8 @@
 - [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]（英語）
 - [[file:community.org][メーリングリストとグッズ]]
 
+The //de facto// mimetype for org attachments is =text/x-org=.
+
 ** より詳しい情報
 
 インストールや最新版の入手に関するより詳しい情報は、Worgの記事を参考にしてください。
