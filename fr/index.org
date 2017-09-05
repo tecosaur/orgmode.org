@@ -47,7 +47,7 @@ Versions de développement quotidiennes : [[http://orgmode.org/org-latest.tar.gz
 - [[http://orgmode.org/fr/community.html#gsoc][Google Summer of Code 2012]]
 - [[file:community.org][Liste de discussion et « goodies »]]
 
-Le mimetype //de facto// pour les pièces jointes en =.org= est =text/x-org=.
+Le mimetype //de facto// pour les pièces jointes en =.org= est =text/org=.
 
 ** More
 
