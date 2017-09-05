@@ -46,7 +46,7 @@ Daily snapshots of the development version: [[http://orgmode.org/org-latest.tar.
 - [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]
 - [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
 
-The //de facto// mimetype for org attachments is =text/x-org=.
+The //de facto// mimetype for org attachments is =text/org=.
 
 ** More
 
