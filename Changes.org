@@ -56,9 +56,11 @@ You can now find them here :
 - https://github.com/org-mime/org-mime
 
 *** Change ~org-texinfo-classes~ value
+
 The value cannot support functions to create sectionning commands
 anymore.  Also, the sectionning commands should include commands for
 appendices.  See the docstring for more information.
+
 *** Removal of ~:sitemap-sans-extension~
 
 The publishing property is no longer recognized, as a consequence of
@@ -88,13 +90,16 @@ to the following
 list as their first argument.
 
 *** Change signature for ~org-get-repeater~
+
 The optional argument is now a string to extract the repeater from.
 See docstring for details.
 
 *** Change signature for ~org-time-string-to-time~
+
 See docstring for changes.
 
 *** Change order of items in ~org-agenda-time-grid~
+
 ~org-agenda-time-grid~ gained an extra item to allow users to customize
 the string displayed after times in the agenda. See docstring for
 details.
