@@ -7,7 +7,8 @@
 #+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+MACRO: next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
 #+MACRO: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>
-#+HTML_HEAD:     <link rel="stylesheet" href="org.css" type="text/css" />
+#+HTML_HEAD: <link rel="stylesheet" href="org.css" type="text/css" />
+#+html_head: <meta name="flattr:id" content="8wyy6v">
 
 #+BEGIN_EXPORT HTML
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
