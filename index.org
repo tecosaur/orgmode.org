@@ -25,7 +25,7 @@ projects, and authoring documents with a fast and effective plain-text system.<b
 #+ATTR_HTML: :id main-image
 [[file:img/main.jpg]]
 
-The stable version of Org is *9.1.5*, as of december 2017.  See the [[file:Changes.org][release notes]].
+The stable version of Org is *9.1.5*, as of 24 december 2017.  See the [[file:Changes.org][release notes]].
 
 Get it with =M-x package-install RET org RET= (see [[http://orgmode.org/elpa.html][Org ELPA]]).
 
