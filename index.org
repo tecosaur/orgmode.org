@@ -1,6 +1,6 @@
-#+TITLE:     Org mode for Emacs -- Your Life in Plain Text
-#+EMAIL:     carsten at orgmode dot org
-#+LANGUAGE:  en
+#+title:     Org mode for Emacs -- Your Life in Plain Text
+#+email:     carsten at orgmode dot org
+#+language:  en
 #+STARTUP:   hidestars
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
