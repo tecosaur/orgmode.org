@@ -1,18 +1,18 @@
-#+TITLE:     Org mode for Emacs -- Talks and presentations
-#+AUTHOR:    Bastien
-#+EMAIL:     bzg at gnu dot org
-#+STARTUP:   hidestars
-#+LANGUAGE:  en
-#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org Org-mode Emacs Talks about Org-mode
-#+MACRO: updown #+HTML: <div class="move"><< <a onclick="goToByScroll('$1');return false;" href="#">$1</a><br /><br />>> <a onclick="goToByScroll('$2');return false;" href="#">$2</a></div>
-#+HTML_HEAD:     <link rel="stylesheet" href="org.css" type="text/css" />
+#+title:     Org mode for Emacs -- Talks and presentations
+#+author:    Bastien
+#+email:     bzg at gnu dot org
+#+startup:   hidestars
+#+language:  en
+#+options:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+keywords:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
+#+description: Org Org-mode Emacs Talks about Org-mode
+#+macro: updown #+HTML: <div class="move"><< <a onclick="goToByScroll('$1');return false;" href="#">$1</a><br /><br />>> <a onclick="goToByScroll('$2');return false;" href="#">$2</a></div>
+#+html_head:     <link rel="stylesheet" href="org.css" type="text/css" />
 
-#+BEGIN_EXPORT HTML
+#+begin_export html
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
-#+END_EXPORT
+#+end_export
 
 * GoogleTech Talk by Carsten Dominik (2008)
   :PROPERTIES:
