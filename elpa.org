@@ -1,20 +1,20 @@
-#+TITLE: Org Emacs lisp Package Archive
-#+AUTHOR: Bastien Guerry
-#+DATE: 2012-09-26
-#+LANGUAGE:  en
-#+STARTUP:   hidestars
-#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+MACRO: updown #+HTML: <div class="move"><a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a></div>
-#+HTML_HEAD:     <link rel="stylesheet" href="org.css" type="text/css" />
+#+title: Org Emacs lisp Package Archive
+#+author: Bastien Guerry
+#+date: 2012-09-26
+#+language:  en
+#+startup:   hidestars
+#+options:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+keywords:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+macro: updown #+HTML: <div class="move"><a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a></div>
+#+html_head:     <link rel="stylesheet" href="org.css" type="text/css" />
 
-#+BEGIN_HTML
+#+begin_export html
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.<br />
 
 <span id="top2">It was created by <a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, who still maintains it with the help from <a href="http://orgmode.org/org.html#History-and-Acknowledgments">thousands</a> of users.</span></em></p></div>
-#+END_HTML
+#+end_export
 
 * Org Emacs lisp Package Archive
   :PROPERTIES:
@@ -87,7 +87,6 @@ See the [[http://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html
    :END:
 
 {{{updown(introduction,questions)}}}
-
 
 * Questions?
   :PROPERTIES:

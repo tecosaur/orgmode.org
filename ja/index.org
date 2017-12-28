@@ -1,20 +1,19 @@
-#+TITLE:     Org mode for Emacs: あなたの生活をプレーンテキストで
-#+EMAIL:     carsten at orgmode dot org
-#+LANGUAGE:  ja
-#+STARTUP:   hidestars
-#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+KEYWORDS:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
-#+DESCRIPTION: Org: ノート、計画、編集のための Emacs モード
-#+MACRO: next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
-#+MACRO: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>
-#+HTML_HEAD:     <link rel="stylesheet" href="../org.css" type="text/css" />
+#+title:     Org mode for Emacs: あなたの生活をプレーンテキストで
+#+email:     carsten at orgmode dot org
+#+language:  ja
+#+startup:   hidestars
+#+options:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+keywords:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
+#+description: Org: ノート、計画、編集のための Emacs モード
+#+macro: next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
+#+macro: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>
+#+html_head:     <link rel="stylesheet" href="../org.css" type="text/css" />
 
-
-#+BEGIN_EXPORT HTML
+#+begin_export html
 <div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。<br />
 
 <span id="top2">Org-modeは2003年に<a target="new" href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a>氏によって作られ、2011年から<a target="new" href="http://bzg.fr">Bastien Guerry</a>氏によって管理されています。</span></em></p></div>
-#+END_EXPORT
+#+end_export
 
 * ダウンロードとインストール
   :PROPERTIES:

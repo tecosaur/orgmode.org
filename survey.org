@@ -1,19 +1,19 @@
-#+TITLE:     Org mode for Emacs -- Survey Results
-#+AUTHOR:    Charles Cave
-#+EMAIL:     charles dot cave at gmail dot com
-#+STARTUP:   hidestars
-#+LANGUAGE:  en
-#+OPTIONS:   H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:nil tags:not-in-toc
-#+LINK_UP:   index.html
-#+LINK_HOME: http://orgmode.org
-#+KEYWORDS:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
-#+DESCRIPTION: Org Org-mode Emacs Survey results
-#+HTML_HEAD:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
+#+title:       Org mode for Emacs -- Survey Results
+#+author:      Charles Cave
+#+email:       charles dot cave at gmail dot com
+#+startup:     hidestars
+#+language:    en
+#+options:     H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:nil tags:not-in-toc
+#+link_up:     index.html
+#+link_home:   http://orgmode.org
+#+keywords:    Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
+#+description: Org Org-mode Emacs Survey results
+#+html_head:   <link rel="stylesheet" href="org-changes.css" type="text/css" />
 
-#+BEGIN_HTML
+#+begin_export html
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
-#+END_HTML
+#+end_export
 
 * Survey introduction
 
