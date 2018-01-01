@@ -7,7 +7,7 @@
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+macro: next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
 #+macro: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">installation</a></div>
-#+html_head:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+html_head:     <link rel="stylesheet" href="../org.css" type="text/css" />
 
 #+begin_export html
 <div id="top"><p><em>Org mode permet de prendre des notes,
