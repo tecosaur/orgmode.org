@@ -31,9 +31,9 @@ Get it with =M-x package-install RET org RET= (see [[http://orgmode.org/elpa.htm
 
 Or download it as a [[http://orgmode.org/org-9.1.5.tar.gz][tar.gz]] or [[http://orgmode.org/org-9.1.5.zip][zip]] archives.
 
-You can browse the development version from [[http://orgmode.org/cgit.cgi/org-mode.git/][cgit]] or clone the repo:
+You can browse the development version from [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] or clone the repo:
 
-=~$ git clone git://orgmode.org/org-mode.git= (=http= works too)
+=~$ git clone https://code.orgmode.org/bzg/org-mode.git=
 
 Daily snapshots of the development version: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
 
