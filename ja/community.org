@@ -56,9 +56,9 @@ Worgは、Org-modeのユーザが作る =.org= ファイルのGITリポジトリ
 
 GITとEmacs+Orgによる /wiki/ 、と考えてください。
 
-[[http://orgmode.org/worg/][Worg here]] で閲覧できます。
+[[https://orgmode.org/worg/][Worg here]] で閲覧できます。
 
- [[http://orgmode.org/w/worg.git][Gitweb]]インタフェースを見れば、変更の内容を確認できます。
+ [[https://orgmode.org/w/worg.git][Gitweb]]インタフェースを見れば、変更の内容を確認できます。
 
 新しいコントリビュータの参加を心待ちにしています。希望者は、Bastien氏に公開鍵を送付してください。
 
