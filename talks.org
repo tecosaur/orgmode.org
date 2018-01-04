@@ -28,7 +28,7 @@ July 15th, 2008 on the Google campus in Mountain View, California.
 
 Thanks to [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] and [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] for being my hosts during my stay.
 
-You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][the timeline of the topics covered]] by this talk.
+You can check [[https://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][the timeline of the topics covered]] by this talk.
 
 ** Move
    :PROPERTIES:
@@ -95,7 +95,7 @@ This presentation was given during the GNU Hackers Meeting in Paris, 2011.
 Thanks to Ludovic Courtès who invited me and all the GNU people who made
 this event possible.
 
-You can check [[http://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][the timeline of the topics covered]] by this talk.
+You can check [[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][the timeline of the topics covered]] by this talk.
 
 ** Move
    :PROPERTIES:

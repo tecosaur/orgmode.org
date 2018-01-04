@@ -26,7 +26,7 @@
 
 Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] 氏と [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] 氏へ「滞在中にお世話になりました。ありがとう。」と感謝のメッセージを送りました。
 
-講演の[[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][進行表]]を、対応する動画とともに確認できます。
+講演の[[https://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][進行表]]を、対応する動画とともに確認できます。
 
 ** Move
    :PROPERTIES:
@@ -90,7 +90,7 @@ Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]]
 
 Bastien氏をこのミーティングに招待したLudovic Courtès氏と、ミーティングを支えたすべてのGNUな人々に感謝します。
 
-講演の[[http://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][進行表]]を、対応する動画とともに確認できます。
+講演の[[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][進行表]]を、対応する動画とともに確認できます。
 
 ** Move
    :PROPERTIES:

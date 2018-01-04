@@ -26,34 +26,34 @@ de maintenir des listes TODO, de planifier des projets et de publier des documen
 
 La version stable est la *9.1.6*, janvier 2018.  Voir les ([[file:~/install/git/orgweb/Changes.org][changements]]).
 
-Installez avec =M-x package-install RET org RET= (voir [[http://orgmode.org/elpa.html][Org ELPA]]).
+Installez avec =M-x package-install RET org RET= (voir [[https://orgmode.org/elpa.html][Org ELPA]]).
 
-Ou téléchargez les archives [[http://orgmode.org/org-9.1.6.tar.gz][tar.gz]] ou [[http://orgmode.org/org-9.1.6.zip][zip]].
+Ou téléchargez les archives [[https://orgmode.org/org-9.1.6.tar.gz][tar.gz]] ou [[https://orgmode.org/org-9.1.6.zip][zip]].
 
 Vous pouvez parcourir la version en développement sur [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] ou cloner
 les dépôts :
 
 =~$ git clone https://code.orgmode.org/bzg/org-mode.git=
 
-Versions de développement quotidiennes : [[http://orgmode.org/org-latest.tar.gz][tar.gz]] ou [[http://orgmode.org/org-latest.zip][zip]]
+Versions de développement quotidiennes : [[https://orgmode.org/org-latest.tar.gz][tar.gz]] ou [[https://orgmode.org/org-latest.zip][zip]]
 
 - [[file:features.org][Liste des fonctionnalités]]
 - [[#docs][Manuels et tutoriels]]
-- [[http://orgmode.org/worg/org-tools/index.html][Outils pour Org (en dehors d'Emacs)]]
-- [[http://orgmode.org/worg/][Worg: doc communautaire]]
-- [[http://orgmode.org/worg/org-contribute.html][Comment contribuer à Org ?]]
-- [[http://orgmode.org/org.html#History-and-Acknowledgments][Histoire et remerciements]]
+- [[https://orgmode.org/worg/org-tools/index.html][Outils pour Org (en dehors d'Emacs)]]
+- [[https://orgmode.org/worg/][Worg: doc communautaire]]
+- [[https://orgmode.org/worg/org-contribute.html][Comment contribuer à Org ?]]
+- [[https://orgmode.org/org.html#History-and-Acknowledgments][Histoire et remerciements]]
 - [[file:talks.org][Présentations vidéo sur Org mode]]
-- [[http://orgmode.org/fr/community.html#gsoc][Google Summer of Code 2012]]
+- [[https://orgmode.org/fr/community.html#gsoc][Google Summer of Code 2012]]
 - [[file:community.org][Liste de discussion et « goodies »]]
 
 Le mimetype //de facto// pour les pièces jointes en =.org= est =text/org=.
 
 ** More
 
-Plus sur [[http://orgmode.org/worg/dev/org-build-system.html][l'installation d'Org mode]] (Worg)
+Plus sur [[https://orgmode.org/worg/dev/org-build-system.html][l'installation d'Org mode]] (Worg)
 
-[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Comment utiliser la dernière version]] (Worg)
+[[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Comment utiliser la dernière version]] (Worg)
 
 ** Move
    :PROPERTIES:
@@ -76,17 +76,17 @@ Acheter la [[http://www.network-theory.co.uk/org/manual/][version papier]] du ma
 Pour chaque livre vendu, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] fait un don de $1 au
 mainteneur d'Org mode.
 
-Lire le manuel complet: [[http://orgmode.org/org.html][HTML]] ou [[http://orgmode.org/org.pdf][PDF]]
+Lire le manuel complet: [[https://orgmode.org/org.html][HTML]] ou [[https://orgmode.org/org.pdf][PDF]]
 
-Lire le guide compact: [[http://orgmode.org/guide/][HTML]] ou [[http://orgmode.org/orgguide.pdf][PDF]]
+Lire le guide compact: [[https://orgmode.org/guide/][HTML]] ou [[https://orgmode.org/orgguide.pdf][PDF]]
 
-Voir la [[http://orgmode.org/worg/org-faq.html][FAQ]], les [[http://orgmode.org/worg/org-hacks.html][hacks]], et les [[http://orgmode.org/worg/org-tutorials/][tutoriels]] sur [[http://orgmode.org/worg/][Worg]].
+Voir la [[https://orgmode.org/worg/org-faq.html][FAQ]], les [[https://orgmode.org/worg/org-hacks.html][hacks]], et les [[https://orgmode.org/worg/org-tutorials/][tutoriels]] sur [[https://orgmode.org/worg/][Worg]].
 
-Voir les [[http://orgmode.org/worg/doc.html][docs]] de référence sur les /hooks/, les commandes et les options.
+Voir les [[https://orgmode.org/worg/doc.html][docs]] de référence sur les /hooks/, les commandes et les options.
 
-Voir la liste des [[http://orgmode.org/worg/org-papers.html][papiers (scientifiques)]] au sujet d'Org mode.
+Voir la liste des [[https://orgmode.org/worg/org-papers.html][papiers (scientifiques)]] au sujet d'Org mode.
 
-Avant de soumettre un rapport de bogue, assurez-vous d'avoir lu la section [[http://orgmode.org/org.html#Feedback]["Feedback"]] du manuel.
+Avant de soumettre un rapport de bogue, assurez-vous d'avoir lu la section [[https://orgmode.org/org.html#Feedback]["Feedback"]] du manuel.
 
 Vous pouvez aussi lire [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]], d'Eric
 S. Raymond et Rick Moen.

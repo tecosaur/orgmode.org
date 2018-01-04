@@ -6,7 +6,7 @@
 #+keywords:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+macro: updown #+HTML: <div class="move"><a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a></div>
-#+html_head:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+html_head:     <link rel="stylesheet" href="https://orgmode.org/org.css" type="text/css" />
 
 #+begin_export html
 <div id="top"><p><em>Org mode permet de prendre des notes, de maintenir des listes TODO, de
@@ -62,9 +62,9 @@ Worg est projet collectif de documentation d'Org mode, où les fichiers
 
 Comme un /wiki/, mais propulsé par Git et Emacs+Org.
 
-Vous pouvez lire [[http://orgmode.org/worg/][Worg ici]].
+Vous pouvez lire [[https://orgmode.org/worg/][Worg ici]].
 
-Vous pouvez consulter la liste des modifications depuis [[http://orgmode.org/w/worg.git][l'interface gitweb]].
+Vous pouvez consulter la liste des modifications depuis [[https://orgmode.org/w/worg.git][l'interface gitweb]].
 
 Les nouveaux contributeurs sont bienvenus -- envoyez simplement votre clef
 publique à Bastien.

@@ -61,9 +61,9 @@ Worg is a community-driven Git repository of =.org= pages published as a
 
 Think of a /wiki/, powered by Git and Emacs+Org.
 
-You can browse [[http://orgmode.org/worg/][Worg here]].
+You can browse [[https://orgmode.org/worg/][Worg here]].
 
-You can read the list of changes from the [[http://orgmode.org/w/worg.git][gitweb interface.]]
+You can read the list of changes from the [[https://orgmode.org/w/worg.git][gitweb interface.]]
 
 New contributors are welcome -- just send your public key to Bastien.
 

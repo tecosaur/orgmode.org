@@ -2,8 +2,8 @@
 #+author:    Carsten Dominik
 #+language:  en
 #+startup:   hidestars
-#+link:      git http://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
-#+link:      doc http://orgmode.org/worg/doc.html#%s
+#+link:      git https://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
+#+link:      doc https://orgmode.org/worg/doc.html#%s
 #+options:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+keywords:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+description: Org Org-mode Emacs Changes ChangeLog release notes
@@ -220,8 +220,8 @@ this ~:prologue "fpprintprec: 2; linel: 50;"~ for presenting Maxima
 results in a beamer presentation.
 **** PlantUML: add support for header arguments
 
-[[http://plantuml.com/][Plantuml]] source blocks now support the [[http://orgmode.org/manual/prologue.html#prologue][~:prologue~]], [[http://orgmode.org/manual/epilogue.html#epilogue][~:epilogue~]] and
-[[http://orgmode.org/manual/var.html#var][~:var~]] header arguments.
+[[http://plantuml.com/][Plantuml]] source blocks now support the [[https://orgmode.org/manual/prologue.html#prologue][~:prologue~]], [[https://orgmode.org/manual/epilogue.html#epilogue][~:epilogue~]] and
+[[https://orgmode.org/manual/var.html#var][~:var~]] header arguments.
 
 **** SQL: new engine added ~sqsh~
 
@@ -275,7 +275,7 @@ using ~:namespaces~:
 - ~:flags~ passes arguments to the compiler
 - ~:cmdline~ passes commandline arguments to the generated executable
 
-Support for [[http://orgmode.org/manual/var.html#var][~:var~]] does not exist yet, also there is no [[http://orgmode.org/manual/session.html#session][~:session~]]
+Support for [[https://orgmode.org/manual/var.html#var][~:var~]] does not exist yet, also there is no [[https://orgmode.org/manual/session.html#session][~:session~]]
 support because Vala is a compiled language.
 
 The Vala compiler binary can be changed via the ~defcustom~
@@ -445,9 +445,9 @@ Call ~org-agenda-set-restriction-lock~ from the agenda.
 
 The library-of-babel.org used to be accessible from the =doc/=
 directory, distributed with Org’s core.  It is now accessible
-from the Worg community-driven documentation [[http://orgmode.org/worg/library-of-babel.html][here]].
+from the Worg community-driven documentation [[https://orgmode.org/worg/library-of-babel.html][here]].
 
-If you want to contribute to it, please see [[http://orgmode.org/worg/org-contribute.html][how to contribute]].
+If you want to contribute to it, please see [[https://orgmode.org/worg/org-contribute.html][how to contribute]].
 
 *** Allow multiple columns view
 

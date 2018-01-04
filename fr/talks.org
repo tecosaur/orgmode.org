@@ -7,7 +7,7 @@
 #+keywords:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+description: Org Org-mode Emacs Talks about Org-mode
 #+macro: updown #+HTML: <div class="move"><< <a onclick="goToByScroll('$1');return false;" href="#">$1</a><br /><br />>> <a onclick="goToByScroll('$2');return false;" href="#">$2</a></div>
-#+html_head:     <link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+#+html_head:     <link rel="stylesheet" href="https://orgmode.org/org.css" type="text/css" />
 
 #+begin_export html
 <div id="top"><p><em>Org mode permet de prendre des notes, de maintenir des listes TODO, de
@@ -28,7 +28,7 @@ campus de Google à Mountain View, California.
 
 Merci à [[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] et [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] de m'avoir hébergé pendant mon séjour.
 
-Vous pouvez lire la [[http://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][frise chronologique des sujets abordés]] pendant cette
+Vous pouvez lire la [[https://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html#sec-2][frise chronologique des sujets abordés]] pendant cette
 présentation.
 
 ** Move
@@ -92,7 +92,7 @@ en 2011.
 Merci à Ludovic Courtès de m'avoir invité et à tous les contributeurs du
 projet GNU qui ont permis que cet événements ait lieu.
 
-Vous pouvez lire la [[http://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][frise chronologique des sujets abordés]] pendant cette
+Vous pouvez lire la [[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html#sec-2][frise chronologique des sujets abordés]] pendant cette
 présentation.
 
 ** Move
