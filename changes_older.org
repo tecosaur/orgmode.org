@@ -28,7 +28,7 @@ will need Org mode version 6.32 to interact with it.
 configure the variable org-modules to activate it.  When active,
 habits (a special TODO entry) will be displayed in the agenda
 together with a "consistency graph".  Habit tracking is described
-in a new [[http://orgmode.org/manual/Tracking-your-habits.html][manual section]].
+in a new [[https://orgmode.org/manual/Tracking-your-habits.html][manual section]].
 
 Thanks to John Wiegley for this contribution.
 
@@ -49,7 +49,7 @@ starting the clock.  You can also configure this feature to check
 for idle time and prompt you to subtract that time from the
 running timer.
 
-See the new [[http://orgmode.org/manual/Resolving-idle-time.html][manual section]] for more details.
+See the new [[https://orgmode.org/manual/Resolving-idle-time.html][manual section]] for more details.
 
 Thanks to John Wiegley for a patch to this effect.
 
@@ -280,7 +280,7 @@ and then copy it into your mail program.
 
 The command will not generate and include a =*Backtrace*= buffer,
 please do this yourself if you have hit an error.  For more
-information, see the [[http://orgmode.org/manual/Feedback.html#Feedback][feedback section]] of the manual.
+information, see the [[https://orgmode.org/manual/Feedback.html#Feedback][feedback section]] of the manual.
 
 **** New contributed package org-track.el
 
@@ -360,7 +360,7 @@ The LaTeX =listings= package can now be used for formatting
 fontified source code in many programming languages.  For more
 information, see
 http://thread.gmane.org/gmane.emacs.orgmode/16269 and
-http://orgmode.org/worg/org-faq.php#fontified_source_code_w_latex
+https://orgmode.org/worg/org-faq.php#fontified_source_code_w_latex
 
 Thanks to Eric Schulte for this patch.
 
@@ -871,7 +871,7 @@ Thanks to Wes Hardaker for this contribution with a lot of potential.
 
 *** New contributed modules org-mac-iCal.el by Christopher Suckling
 
-See the [[http://orgmode.org/worg/org-contrib/org-mac-iCal.php][documentation on Worg]].
+See the [[https://orgmode.org/worg/org-contrib/org-mac-iCal.php][documentation on Worg]].
 
 *** org-jira.el: New file, by Jonathan Arkell
 
@@ -1296,7 +1296,7 @@ Passing data to emacs is now as easy as calling
 
 : emacsclient org-protocol://sub-protocol://data
 
-For more information see the [[http://orgmode.org/worg/org-contrib/org-protocol.php][online documentation]].
+For more information see the [[https://orgmode.org/worg/org-contrib/org-protocol.php][online documentation]].
 
 Thanks to Sebastian Rose for this really beautiful module.
 
@@ -1323,7 +1323,7 @@ tasks are treated in this way.
 Org can now collect tasks from an RSS feed, a great method to get stuff
 from online call and note-taking services into your trusted system.  You
 need to configure the feeds in the variable =org-feed-alist=.  The manual
-contains a short description, more detailed information is [[http://orgmode.org/worg/org-contrib/org-feed.php][available on
+contains a short description, more detailed information is [[https://orgmode.org/worg/org-contrib/org-feed.php][available on
 Worg]].
 
 Full credit goes to Brad Bozarth who really [[http://thread.gmane.org/gmane.emacs.orgmode/12251][paved the way]] for this exciting
@@ -1518,7 +1518,7 @@ to an Org files was successful.
 Christopher Suckling has added functionality to
 /org-mac-message.el/.  In particular, you can now select a number of
 messages and easily get links to all of them with a single command.  For
-details, see the [[http://orgmode.org/worg/org-contrib/org-mac-message.php][online documentation]].
+details, see the [[https://orgmode.org/worg/org-contrib/org-mac-message.php][online documentation]].
 
 *** Read-date: New hook
 
@@ -1865,7 +1865,7 @@ operations, such as tabulating discrete values in a column of an org
 table, are available "off the shelf" by specifying options on lines
 starting with =#+R:=.  However, you can also provide raw R code to be
 evaluated.  The documentation is currently the worg tutorial at
-http://orgmode.org/worg/org-tutorials/org-R/org-R.php
+https://orgmode.org/worg/org-tutorials/org-R/org-R.php
 
 Thanks to Dan for this great contribution.
 
@@ -2002,7 +2002,7 @@ Org-choose helps documenting a decision-making process by using TODO
 keywords for different degrees of /chosenness/, and by automatically
 keeping a set of alternatives in a consistent state.
 
-Documentation for /org-choose.el/ is available [[http://orgmode.org/worg/org-contrib/org-choose.php][here]].
+Documentation for /org-choose.el/ is available [[https://orgmode.org/worg/org-contrib/org-choose.php][here]].
 
 This package inserts itself into Org using hooks, so if other people
 would like to do interesting stuff with TODO keywords for special
@@ -2350,7 +2350,7 @@ example:
 #+begin_src org
 The Org homepage[fn:1] now looks a lot better than it used to.
 ...
-[fn:1] The link is: http://orgmode.org
+[fn:1] The link is: https://orgmode.org
 #+end_src
 
 Org mode extends the number-based syntax to /named/ footnotes and
@@ -3464,7 +3464,7 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
     It can be used to locally set the variable
     `org-export-html-style-extra'.  Several such lines are
     allowed-, they will all be concatenated.  For an example on
-    how to use it, see the [[http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.php][publishing tutorial]].
+    how to use it, see the [[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.php][publishing tutorial]].
 
 * Version 6.07
   :PROPERTIES:
@@ -4277,7 +4277,7 @@ property will be overwritten.  For example:
 
     In the export, this will then look like this (if you are now looking
     at the ASCII export and do not see anything interesting, go and
-    check out the HTML version at http://orgmode.org/Changes.html).
+    check out the HTML version at https://orgmode.org/Changes.html).
 
     #+BEGIN_SRC emacs-lisp
       (defun org-xor (a b)
@@ -4455,7 +4455,7 @@ property will be overwritten.  For example:
          at.  Also, it will allow you to more easily move
          text and files back and forth between Org and
          Muse.  For a list of supported structure elements,
-         see the commentary in the file [[http://orgmode.org/w/org-mode.git?a%3Dblob_plain%3Bf%3Dcontrib/lisp/org-mtags.el%3Bhb%3DHEAD][commentary in the
+         see the commentary in the file [[https://orgmode.org/w/org-mode.git?a%3Dblob_plain%3Bf%3Dcontrib/lisp/org-mtags.el%3Bhb%3DHEAD][commentary in the
         file org-mtags.el]].
 
 	 If you load this module and use the "<i" etc completion
@@ -4660,7 +4660,7 @@ list of small improvements and some new significant features.
     interface, and =overview=, =content=, and =showall= for the
     folding interface.  See the manual for more details.  The
     JavaScript program is served from
-    http://orgmode.org/org-info.js, and your exported HTML files
+    https://orgmode.org/org-info.js, and your exported HTML files
     will automatically get it from there.  However, you may want
     to be independent of the existence and stability of
     orgmode.org and install a copy locally.  Then you need to

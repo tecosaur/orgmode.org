@@ -14,7 +14,7 @@
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.<br />
 
-<span id="top2">Created by <a target="new" href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a> and developed by <a href="http://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</span></em></p></div>
+<span id="top2">Created by <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a> and developed by <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</span></em></p></div>
 #+end_export
 
 * Installation
@@ -27,33 +27,33 @@ projects, and authoring documents with a fast and effective plain-text system.<b
 
 The stable version of Org is *9.1.6*, as of Jan 2018.  See the [[file:Changes.org][release notes]].
 
-Get it with =M-x package-install RET org RET= (see [[http://orgmode.org/elpa.html][Org ELPA]]).
+Get it with =M-x package-install RET org RET= (see [[https://orgmode.org/elpa.html][Org ELPA]]).
 
-Or download it as a [[http://orgmode.org/org-9.1.6.tar.gz][tar.gz]] or [[http://orgmode.org/org-9.1.6.zip][zip]] archives.
+Or download it as a [[https://orgmode.org/org-9.1.6.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.1.6.zip][zip]] archives.
 
 You can browse the development version from [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] or clone the repo:
 
 =~$ git clone https://code.orgmode.org/bzg/org-mode.git=
 
-Daily snapshots of the development version: [[http://orgmode.org/org-latest.tar.gz][tar.gz]] or [[http://orgmode.org/org-latest.zip][zip]]
+Daily snapshots of the development version: [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]]
 
 - [[file:features.org][List of features]]
 - [[#docs][Manuals and tutorials]]
-- [[http://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
+- [[https://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
 - [[file:community.org][Mailing list and goodies]]
-- [[http://orgmode.org/worg/][Worg: community-written docs]]
+- [[https://orgmode.org/worg/][Worg: community-written docs]]
 - [[file:talks.org][Talks about Org mode]]
-- [[http://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
-- [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]
-- [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
+- [[https://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
+- [[https://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]
+- [[https://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
 
 The //de facto// mimetype for org attachments is =text/org=.
 
 ** More
 
-Check out the [[http://orgmode.org/manual/Installation.html][installation instructions]].
+Check out the [[https://orgmode.org/manual/Installation.html][installation instructions]].
 
-Worg will tell you more on the [[http://orgmode.org/worg/dev/org-build-system.html][build options]] and on how to [[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on the
+Worg will tell you more on the [[https://orgmode.org/worg/dev/org-build-system.html][build options]] and on how to [[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on the
 bleeding edge]].
 
 ** Move
@@ -77,19 +77,19 @@ Buy the [[http://www.network-theory.co.uk/org/manual/][printed version]] of Org'
 For each book sold, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] is making a $1 donation to the
 maintainer of Org mode.
 
-Browse the [[http://orgmode.org/manual/index.html][manual]] (one page per section).
+Browse the [[https://orgmode.org/manual/index.html][manual]] (one page per section).
 
-Read the complete manual: [[http://orgmode.org/org.html][HTML]] or [[http://orgmode.org/org.pdf][PDF]]
+Read the complete manual: [[https://orgmode.org/org.html][HTML]] or [[https://orgmode.org/org.pdf][PDF]]
 
-Read the compact guide: [[http://orgmode.org/guide/][HTML]] or [[http://orgmode.org/orgguide.pdf][PDF]]
+Read the compact guide: [[https://orgmode.org/guide/][HTML]] or [[https://orgmode.org/orgguide.pdf][PDF]]
 
-Check the [[http://orgmode.org/worg/org-faq.html][FAQ]], the [[http://orgmode.org/worg/org-hacks.html][hacks]], and [[http://orgmode.org/worg/org-tutorials/][tutorials]] on [[http://orgmode.org/worg/][Worg]].
+Check the [[https://orgmode.org/worg/org-faq.html][FAQ]], the [[https://orgmode.org/worg/org-hacks.html][hacks]], and [[https://orgmode.org/worg/org-tutorials/][tutorials]] on [[https://orgmode.org/worg/][Worg]].
 
-Check the reference [[http://orgmode.org/worg/doc.html][docs]] about hooks, commands and options.
+Check the reference [[https://orgmode.org/worg/doc.html][docs]] about hooks, commands and options.
 
-Check the list of [[http://orgmode.org/worg/org-papers.html][(scientific) papers]] about Org mode.
+Check the list of [[https://orgmode.org/worg/org-papers.html][(scientific) papers]] about Org mode.
 
-Before submitting a bug report, make sure you read the [[http://orgmode.org/org.html#Feedback]["Feedback"]] section
+Before submitting a bug report, make sure you read the [[https://orgmode.org/org.html#Feedback]["Feedback"]] section
 of the manual.
 
 You may also read [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]], by Eric S. Raymond
