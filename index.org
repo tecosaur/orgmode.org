@@ -8,7 +8,7 @@
 #+macro: next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
 #+macro: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>
 #+html_head: <link rel="stylesheet" href="org.css" type="text/css" />
-#+html_head: <meta name="flattr:id" content="8wyy6v">
+#+html_head: <meta name="flattr:id" content="8d9x0o">
 
 #+begin_export html
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
