@@ -1,14 +1,14 @@
-#+title:     Org mode for Emacs -- Your Life in Plain Text
-#+email:     carsten at orgmode dot org
-#+language:  en
-#+startup:   hidestars
-#+options:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+keywords:  Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+title:       Org mode for Emacs -- Your Life in Plain Text
+#+email:       carsten at orgmode dot org
+#+language:    en
+#+startup:     hidestars
+#+options:     H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+keywords:    Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+macro: next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
-#+macro: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>
-#+html_head: <link rel="stylesheet" href="org.css" type="text/css" />
-#+html_head: <meta name="flattr:id" content="8d9x0o">
+#+macro:       next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
+#+macro:       previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">download and install</a></div>
+#+html_head:   <link rel="stylesheet" href="org.css" type="text/css" />
+#+html_head:   <meta name="flattr:id" content="8d9x0o">
 
 #+begin_export html
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
