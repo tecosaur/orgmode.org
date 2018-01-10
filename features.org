@@ -31,7 +31,7 @@ facilities.
 
 ** More
 
-More on [[http://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure]] (manual)
+More on [[https://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure]] (manual)
 
 ** Move
    :PROPERTIES:
@@ -61,9 +61,9 @@ cookies, tags, properties, etc.
 
 ** More
 
-More on [[http://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] (manual)
+More on [[https://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] (manual)
 
-Handling [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] (manual)
+Handling [[https://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] (manual)
 
 ** Move
    :PROPERTIES:
@@ -94,7 +94,7 @@ you can customize to suit the needs of your hairy boss.
 
 ** More
 
-More on [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] (manual)
+More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] (manual)
 
 ** Move
    :PROPERTIES:
@@ -127,9 +127,9 @@ while stabilizing it.
 
 ** More
 
-More on [[http://orgmode.org/manual/Agenda-Views.html#Agenda-Views][agendas views]] (manual)
+More on [[https://orgmode.org/manual/Agenda-Views.html#Agenda-Views][agendas views]] (manual)
 
-Tutorial on [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
+Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
 
 ** Move
    :PROPERTIES:
@@ -157,7 +157,7 @@ from various contexts (the file name, the current date, the region, etc.)
 
 ** More
 
-More on [[http://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
+More on [[https://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
 
 ** Move
    :PROPERTIES:
@@ -187,13 +187,13 @@ You can add formulas using the [[http://www.gnu.org/software/emacs/manual/html_m
 
 ** More
 
-The [[http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]] (manual)
+The [[https://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]] (manual)
 
-Org as a [[http://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system (manual)
+Org as a [[https://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system (manual)
 
-Introduction to [[http://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
+Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
 
-Using [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
+Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
 
 ** Move
    :PROPERTIES:
@@ -217,22 +217,22 @@ You can use intuitive markup then have it converted to =HTML=, $\LaTeX{}$,
 =ODT= -- and much more.
 
 Developers can easily create new backends for their favorite format (see
-the [[http://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
+the [[https://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
 
 You can also define /publishing projects/ with one or more =.org= file(s),
 and one or more publication backends.
 
 ** More
 
-More on [[http://orgmode.org/manual/Markup.html#Markup][markup]] (manual)
+More on [[https://orgmode.org/manual/Markup.html#Markup][markup]] (manual)
 
-More on [[http://orgmode.org/manual/Exporting.html#Exporting][exporting]] (manual)
+More on [[https://orgmode.org/manual/Exporting.html#Exporting][exporting]] (manual)
 
-More on [[http://orgmode.org/manual/Publishing.html#Publishing][publishing]] (manual)
+More on [[https://orgmode.org/manual/Publishing.html#Publishing][publishing]] (manual)
 
-[[http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to =HTML= (Worg)
+[[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to =HTML= (Worg)
 
-[[http://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX{}$ (Worg)
+[[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX{}$ (Worg)
 
 ** Move
    :PROPERTIES:
@@ -258,9 +258,9 @@ file.
 
 ** More
 
-[[http://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]] (manual)
+[[https://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]] (manual)
 
-List of [[http://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
+List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
 
 ** Move
    :PROPERTIES:

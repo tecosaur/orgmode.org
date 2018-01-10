@@ -5,7 +5,7 @@
 #+language:    en
 #+options:     H:3 num:nil toc:1 \n:nil @:t ::t |:t ^:t -:t f:t *:t TeX:t LaTeX:nil skip:nil d:nil tags:not-in-toc
 #+link_up:     index.html
-#+link_home:   http://orgmode.org
+#+link_home:   https://orgmode.org
 #+keywords:    Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+description: Org Org-mode Emacs Survey results
 #+html_head:   <link rel="stylesheet" href="org-changes.css" type="text/css" />
@@ -19,7 +19,7 @@ projects, and authoring documents with a fast and effective plain-text system.</
 
 A survey was conducted of org-mode users during November 2007.  An
 invitation was sent to the org-mode users list as well as announced on the
-http://orgmode.org web site.  About 80 people responded.  This file
+https://orgmode.org web site.  About 80 people responded.  This file
 contains a complete list of the answers, as the base of further discussion.
 
 Survey created and summarised by [[mailto:charlesweb@optusnet.com.au][Charles Cave]].

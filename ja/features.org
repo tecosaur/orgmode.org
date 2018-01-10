@@ -28,7 +28,7 @@ Org-modeは、より素早い操作で扱えるようなキーバインドで =o
 
 ** More
 
-より詳しい情報は、マニュアルの[[http://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure（英語）]]を読んでください。 
+より詳しい情報は、マニュアルの[[https://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure（英語）]]を読んでください。 
 
 ** Move
    :PROPERTIES:
@@ -56,7 +56,7 @@ TODOキーワードから別のステータスに切り替えるには、 =C-c C
 
 ** More
 
-より詳しい情報は、マニュアルの [[http://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] や [[http://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] を読んでください。
+より詳しい情報は、マニュアルの [[https://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] や [[https://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] を読んでください。
 
 ** Move
    :PROPERTIES:
@@ -84,7 +84,7 @@ Org-modeは、ナイスなレポートを作成するために、簡単に時間
 
 ** More
 
-より詳しい情報は、マニュアルの [[http://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] を読んでください。
+より詳しい情報は、マニュアルの [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] を読んでください。
 
 ** Move
    :PROPERTIES:
@@ -117,9 +117,9 @@ while stabilizing it.
 
 ** More
 
-More on [[http://orgmode.org/manual/Agenda-Views.html#Agenda-Views][agendas views]] (manual)
+More on [[https://orgmode.org/manual/Agenda-Views.html#Agenda-Views][agendas views]] (manual)
 
-Tutorial on [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
+Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
 
 ** Move
    :PROPERTIES:
@@ -145,7 +145,7 @@ Tutorial on [[http://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.h
 
 ** More
 
-より詳しい情報は、マニュアルの [[http://orgmode.org/manual/Capture.html#Capture][capturing]] を読んでください。
+より詳しい情報は、マニュアルの [[https://orgmode.org/manual/Capture.html#Capture][capturing]] を読んでください。
 
 ** Move
    :PROPERTIES:
@@ -175,13 +175,13 @@ Org-modeは、プレーンテキストを用いた素晴らしい表計算がで
 
 より詳しくは、以下の情報を参照してください。
 
-マニュアルの [[http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]]。
+マニュアルの [[https://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]]。
 
-マニュアルの Org as a [[http://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system。
+マニュアルの Org as a [[https://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system。
 
-Worgの Introduction to [[http://orgmode.org/worg/org-tutorials/tables.html][editing tables]]。
+Worgの Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]]。
 
-Worgの Using [[http://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]]。
+Worgの Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]]。
 
 ** Move
    :PROPERTIES:
@@ -203,7 +203,7 @@ Org-modeは、オーサリングツールであり、文書の公開ツールで
 
 直感的なマークアップを使って、 =HTML=、 $\LaTeX{}$、=ODT= などに変換できます。
 
-開発者の場合は、好みの形式の新しいバックエンドを簡単に作れます。[[http://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]を読んでください。
+開発者の場合は、好みの形式の新しいバックエンドを簡単に作れます。[[https://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]を読んでください。
 
 また、一つ以上の =.org= ファイルを用いて、 /公開プロジェクト/ を定義することもできます。一つ以上の公開バックエンドについても同様です。
 
@@ -211,9 +211,9 @@ Org-modeは、オーサリングツールであり、文書の公開ツールで
 
 詳しくは、次の情報を参照してください。
 
-マニュアルの [[http://orgmode.org/manual/Markup.html#Markup][markup]]、[[http://orgmode.org/manual/Exporting.html#Exporting][exporting]]、[[http://orgmode.org/manual/Publishing.html#Publishing][publishing]]。
+マニュアルの [[https://orgmode.org/manual/Markup.html#Markup][markup]]、[[https://orgmode.org/manual/Exporting.html#Exporting][exporting]]、[[https://orgmode.org/manual/Publishing.html#Publishing][publishing]]。
 
-Worgの =HTML= 形式で公開するための[[http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][チュートリアル]]、 $\LaTeX{}$形式で公開するための[[http://orgmode.org/worg/org-tutorials/org-latex-export.html][チュートリアル]]。
+Worgの =HTML= 形式で公開するための[[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][チュートリアル]]、 $\LaTeX{}$形式で公開するための[[https://orgmode.org/worg/org-tutorials/org-latex-export.html][チュートリアル]]。
 
 ** Move
    :PROPERTIES:
@@ -237,7 +237,7 @@ Org-modeは、[[http://en.wikipedia.org/wiki/Literate_programming][文芸的プ�
 
 ** More
 
-マニュアルの[[http://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]]と、Worgの List of [[http://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]]を参照してください。
+マニュアルの[[https://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]]と、Worgの List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]]を参照してください。
 
 ** Move
    :PROPERTIES:

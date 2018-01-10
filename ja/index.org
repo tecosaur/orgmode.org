@@ -24,24 +24,24 @@
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-安定版は、バージョン*9.1.6*です。（2018年01月現在）--- [[http://orgmode.org/org-9.1.6.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-9.1.6.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
+安定版は、バージョン*9.1.6*です。（2018年01月現在）--- [[https://orgmode.org/org-9.1.6.tar.gz][tar.gz]] もしくは [[https://orgmode.org/org-9.1.6.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
 
-=M-x list-packages RET= ([[http://orgmode.org/elpa.html][Org ELPA（英語）]]を読んでください）
+=M-x list-packages RET= ([[https://orgmode.org/elpa.html][Org ELPA（英語）]]を読んでください）
 
 開発版は、以下の手段で入手できます。（[[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]]）
 
 =~$ git clone https://code.orgmode.org/bzg/org-mode.git=
 
-ナイトリー版は、 [[http://orgmode.org/org-latest.tar.gz][tar.gz]] もしくは [[http://orgmode.org/org-latest.zip][zip]] をダウンロードしてください。
+ナイトリー版は、 [[https://orgmode.org/org-latest.tar.gz][tar.gz]] もしくは [[https://orgmode.org/org-latest.zip][zip]] をダウンロードしてください。
 
 - [[file:features.org][Org-modeの特徴]]
 - [[#docs][マニュアルとチュートリアル]]
-- [[http://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
-- [[http://orgmode.org/worg/][Worg: community-written docs]]
-- [[http://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
-- [[http://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
+- [[https://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
+- [[https://orgmode.org/worg/][Worg: community-written docs]]
+- [[https://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
+- [[https://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
 - [[file:talks.org][Org-modeについての講演]]
-- [[http://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]（英語）
+- [[https://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]（英語）
 - [[file:community.org][メーリングリストとグッズ]]
 
 The //de facto// mimetype for org attachments is =text/org=.
@@ -50,9 +50,9 @@ The //de facto// mimetype for org attachments is =text/org=.
 
 インストールや最新版の入手に関するより詳しい情報は、Worgの記事を参考にしてください。
 
-[[http://orgmode.org/worg/dev/org-build-system.html][installing Org mode]]（英語）
+[[https://orgmode.org/worg/dev/org-build-system.html][installing Org mode]]（英語）
 
-[[http://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]]（英語）
+[[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][Staying on the bleeding edge]]（英語）
 
 ** Move
    :PROPERTIES:
@@ -73,17 +73,17 @@ The //de facto// mimetype for org attachments is =text/org=.
 
 一冊売れるごとに、 [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] を介してOrg-modeのメンテナに1ドルが寄付されます。
 
-マニュアル（完全版）： [[http://orgmode.org/org.html][HTML]] もしくは [[http://orgmode.org/org.pdf][PDF]]
+マニュアル（完全版）： [[https://orgmode.org/org.html][HTML]] もしくは [[https://orgmode.org/org.pdf][PDF]]
 
-コンパクトガイド： [[http://orgmode.org/guide/][HTML]] もしくは [[http://orgmode.org/orgguide.pdf][PDF]]
+コンパクトガイド： [[https://orgmode.org/guide/][HTML]] もしくは [[https://orgmode.org/orgguide.pdf][PDF]]
 
-[[http://orgmode.org/worg/][Worg]]にある、[[http://orgmode.org/worg/org-faq.html][FAQ]]、[[http://orgmode.org/worg/org-hacks.html][hacks]]、そして [[http://orgmode.org/worg/org-tutorials/][tutorials]] をみてください。
+[[https://orgmode.org/worg/][Worg]]にある、[[https://orgmode.org/worg/org-faq.html][FAQ]]、[[https://orgmode.org/worg/org-hacks.html][hacks]]、そして [[https://orgmode.org/worg/org-tutorials/][tutorials]] をみてください。
 
-フック、コマンド、オプションについての[[http://orgmode.org/worg/doc.html][リファレンス文書]]も読んでください。
+フック、コマンド、オプションについての[[https://orgmode.org/worg/doc.html][リファレンス文書]]も読んでください。
 
-Org-modeについての[[http://orgmode.org/worg/org-papers.html][（科学的な）論文]]も公開されています。
+Org-modeについての[[https://orgmode.org/worg/org-papers.html][（科学的な）論文]]も公開されています。
 
-バグレポートを提出する前に、マニュアルにある[[http://orgmode.org/org.html#Feedback][「フィードバック」]]を必ず読んでください。また、Eric S. Raymond氏とRick Moen氏による、 [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]も読んでみてください。
+バグレポートを提出する前に、マニュアルにある[[https://orgmode.org/org.html#Feedback][「フィードバック」]]を必ず読んでください。また、Eric S. Raymond氏とRick Moen氏による、 [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]]も読んでみてください。
 
 =M-x org-submit-bug-report RET=
 

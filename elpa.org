@@ -13,7 +13,7 @@
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
 projects, and authoring documents with a fast and effective plain-text system.<br />
 
-<span id="top2">It was created by <a href="http://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, who still maintains it with the help from <a href="http://orgmode.org/org.html#History-and-Acknowledgments">thousands</a> of users.</span></em></p></div>
+<span id="top2">It was created by <a href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, who still maintains it with the help from <a href="https://orgmode.org/org.html#History-and-Acknowledgments">thousands</a> of users.</span></em></p></div>
 #+end_export
 
 * Org Emacs lisp Package Archive
@@ -21,13 +21,13 @@ projects, and authoring documents with a fast and effective plain-text system.<b
   :CUSTOM_ID: introduction
   :END:
 
-[[http://orgmode.org][orgmode.org]] hosts Org ELPA archives.
+[[https://orgmode.org][orgmode.org]] hosts Org ELPA archives.
 
 Add this to your Emacs init file to be able to list the Org mode archives:
 
 #+BEGIN_SRC emacs-lisp
 (require 'package)
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 #+END_SRC
 
 Then =M-x list-packages RET= will list both the latest =org= and
@@ -36,7 +36,7 @@ Then =M-x list-packages RET= will list both the latest =org= and
 - =org= :: contains the same set of files that are included in GNU Emacs.
 
 - =org-plus-contrib= :: contains these files plus all contribs files, the
-     ones you find in =contrib/= from the [[http://orgmode.org/cgit.cgi/org-mode.git/log/][git repo]].
+     ones you find in =contrib/= from the [[https://orgmode.org/cgit.cgi/org-mode.git/log/][git repo]].
 
 ** Move
    :PROPERTIES:
@@ -78,7 +78,7 @@ Also, you may want to set up Package correctly before initializing it:
   ;; (setq org-...)                   ;; Your custom settings
 #+END_SRC
 
-See the [[http://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html][GNU Emacs Package manual]] for details.
+See the [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html][GNU Emacs Package manual]] for details.
 
 ** Move
    :PROPERTIES:
@@ -93,9 +93,9 @@ See the [[http://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html
   :CUSTOM_ID: questions
   :END:
 
-If you think the package are not updated, please check [[http://orgmode.org/elpa/build-org-pkg.txt][this file]].
+If you think the package are not updated, please check [[https://orgmode.org/elpa/build-org-pkg.txt][this file]].
 
-Report any problem and ask any question on the Org mode [[http://orgmode.org/community.html][mailing list]].
+Report any problem and ask any question on the Org mode [[https://orgmode.org/community.html][mailing list]].
 
 
 ** Move
