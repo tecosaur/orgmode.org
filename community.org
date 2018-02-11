@@ -23,7 +23,7 @@ projects, and authoring documents with a fast and effective plain-text system.</
 
 Subscribe to the [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][mailing list]].
 
-Browse it [[http://news.gmane.org/gmane.emacs.orgmode][through Gmane]].
+Browse the [[http://lists.gnu.org/archive/html/emacs-orgmode/][archives]].
 
 #+begin_export html
 <form id="searchgmane" method="get" action="http://search.gmane.org/">
