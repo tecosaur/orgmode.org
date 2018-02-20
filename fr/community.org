@@ -25,19 +25,12 @@ Inscrivez-vous à la [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][lis
 
 Lisez-la à partir de [[http://news.gmane.org/gmane.emacs.orgmode][Gmane]].
 
-#+begin_export
-<form id="searchgmane" method="get" action="http://search.gmane.org/">
-<input type="text" name="query" />
-<input type="hidden" name="group" value="gmane.emacs.orgmode" />
-<input type="submit" value="Chercher dans gmane.emacs.orgmode" />
-</form>
-#+end_html
-
 La liste de discussion est /le/ lieu central pour tout ce qui est lié à
-Org : l'aide aux utilisateurs, les rapports de bogues, les suggestions de
-nouvelles fonctionnalités, etc.  N'hésitez pas !
+Org : l'aide aux utilisateurs, les rapports de bogues, les suggestions
+de nouvelles fonctionnalités, etc.  N'hésitez pas !
 
-Les utilisateurs discutent aussi sur le canal IRC =#org-mode= de [[http://webchat.freenode.net][freenode]].
+Les utilisateurs discutent aussi sur le canal IRC =#org-mode= de
+[[http://webchat.freenode.net][freenode]].
 
 ** Move
    :PROPERTIES:
@@ -115,9 +108,9 @@ même seulement un fichier =README.org= dans votre projet.
   :ID:       vim
   :END:
 
-#+BEGIN_EXPORT
+#+begin_export html
 <iframe class="iframe" src="http://player.vimeo.com/video/17182850" width="500" height="404" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-#+END_HTML
+#+end_export
 
 Herbert Sitz a écrit [[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]], un /plugin/ pour [[http://www.vim.org/][Vim]] qui émule de
 nombreuses fonctionnalités d'Org.
@@ -146,7 +139,7 @@ l'oeuvre.
 /Takaaki Ishikawa/ maintient [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] sur Twitter et vous pouvez
 généralement consulter [[https://twitter.com/#!/search/%2523orgmode][#orgmode]].
 
-#+BEGIN_EXPORT
+#+begin_export html
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
@@ -175,7 +168,7 @@ new TWTR.Widget({
   }
 }).render().setUser('orgmode_bot').start();
 </script>
-#+END_HTML
+#+end_export
 
 Il y a aussi une [[https://plus.google.com/b/102778904320752967064/102778904320752967064/posts][page Google+ pour Org mode]] (voir la capture d'écran).
 
