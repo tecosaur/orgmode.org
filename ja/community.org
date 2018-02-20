@@ -22,14 +22,6 @@
 
 [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][メーリングリスト]]は誰でも購読できます。 [[http://news.gmane.org/gmane.emacs.orgmode][Gmane]]で閲覧することも可能です。
 
-#+begin_export html
-<form id="searchgmane" method="get" action="http://search.gmane.org/">
-<input type="text" name="query" />
-<input type="hidden" name="group" value="gmane.emacs.orgmode" />
-<input type="submit" value="Search gmane.emacs.orgmode" />
-</form>
-#+end_export
-
 このメーリングリストには、Org-modeに関連する /すべての/ 情報が集まってきます。例えば、ユーザからの相談、バグレポート、新機能の提案などです。遠慮無くメールを投稿してください。
 
 また、IRCチャネル（=#org-mode=）を使って議論することもできます。[[http://webchat.freenode.net][freenode]]にあります。
@@ -105,9 +97,9 @@ GITとEmacs+Orgによる /wiki/ 、と考えてください。
   :ID:       vim
   :END:
 
-#+BEGIN_HTML
+#+begin_export html
 <iframe class="iframe" src="http://player.vimeo.com/video/17182850" width="500" height="404" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-#+END_HTML
+#+end_export
 
 Herbert Sitz氏が、[[http://www.vim.org/scripts/script.php?script_id%3D3342][VimOrganizer]] を作成しました。Org-modeが提供する機能の多くを提供する [[http://www.vim.org/][Vim]] プラグインです。
 
@@ -133,7 +125,7 @@ VimOrganizerのたくさんの[[https://vimeo.com/17182850][スクリーンシ�
 
 /Takaaki Ishikawa/ 氏が、ツイッターボット（[[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]]）を管理しています。また、汎用的なハッシュタグもあります（[[https://twitter.com/#!/search/%2523orgmode][#orgmode]]）。
 
-#+BEGIN_HTML
+#+begin_export
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
 new TWTR.Widget({
@@ -162,11 +154,9 @@ new TWTR.Widget({
   }
 }).render().setUser('orgmode_bot').start();
 </script>
-#+END_HTML
-
+#+end_export
 
 [[https://plus.google.com/b/102778904320752967064/102778904320752967064/posts][Org-modeのGoogle+ページ]]もあります（スクリーンショット参照）
-
 
 [[http://stackoverflow.com/questions/tagged/org-mode][stackoverflow.com]]には、Org-modeについての質問がたくさんのユーザから投稿されています。とても良いことなのですが、直接[[id:list][メーリングリスト]]に質問を投稿することを推奨します。
 
