@@ -18,11 +18,11 @@
   :ID:       google-tech-talk
   :END:
 
-#+begin_export
-<iframe class="iframe" width="420" height="315" src="http://www.youtube.com/embed/oJTwQvgfgMM" frameborder="0" allowfullscreen></iframe>
-#+end_export
-
 [[http://research.google.com/video.html][Google Tech Talk]] で Carsten Dominik 氏が、org-mode について講演したときの映像です。2008年7月15日に、カリフォルニア州マウンテンビューにあるグーグルキャンパスで行われました。
+
+#+begin_export html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oJTwQvgfgMM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+end_export
 
 Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]] 氏と [[http://technical-dresese.blogspot.com/][Andrew Hyatt]] 氏へ「滞在中にお世話になりました。ありがとう。」と感謝のメッセージを送りました。
 
@@ -37,7 +37,7 @@ Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]]
 {{{updown(google-tech-talk,org-for-scientists)}}}
 
 
-* * Carsten 氏による the Max Planck Institute for Neurological Research での講演(2010)
+* Carsten 氏による the Max Planck Institute for Neurological Research での講演(2010)
   :PROPERTIES:
   :ID:       org-for-scientists
   :END:
