@@ -42,7 +42,7 @@
 #+ATTR_HTML: :id main-image
 [[file:../img/worg.png]]
 
-=~$ git clone git://orgmode.org/worg.git=
+=~$ git clone https://code.orgmode.org/bzg/worg.git=
 
 Worgは、Org-modeのユーザが作る =.org= ファイルのGITリポジトリです。各ファイルは、 =HTML= で記述されたウェブサイトとして公開されています。
 
@@ -50,7 +50,7 @@ GITとEmacs+Orgによる /wiki/ 、と考えてください。
 
 [[https://orgmode.org/worg/][Worg here]] で閲覧できます。
 
- [[https://orgmode.org/w/worg.git][Gitweb]]インタフェースを見れば、変更の内容を確認できます。
+[[https://code.orgmode.org/bzg/worg][Gogs]]インタフェースを見れば、変更の内容を確認できます。
 
 新しいコントリビュータの参加を心待ちにしています。希望者は、Bastien氏に公開鍵を送付してください。
 

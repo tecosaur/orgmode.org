@@ -23,8 +23,6 @@ planifier des projets et de publier des documents, le tout en texte brut.</em></
 
 Inscrivez-vous à la [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][liste de discussion]] (en).
 
-Lisez-la à partir de [[http://news.gmane.org/gmane.emacs.orgmode][Gmane]].
-
 La liste de discussion est /le/ lieu central pour tout ce qui est lié à
 Org : l'aide aux utilisateurs, les rapports de bogues, les suggestions
 de nouvelles fonctionnalités, etc.  N'hésitez pas !
@@ -48,7 +46,7 @@ Les utilisateurs discutent aussi sur le canal IRC =#org-mode= de
 #+ATTR_HTML: :id main-image
 [[file:../img/worg.png]]
 
-=~$ git clone git://orgmode.org/worg.git=
+=~$ git clone https://code.orgmode.org/bzg/worg.git=
 
 Worg est projet collectif de documentation d'Org mode, où les fichiers
 =.org= sont stockés dans un dépôt Git publié en =HTML=.
@@ -57,10 +55,10 @@ Comme un /wiki/, mais propulsé par Git et Emacs+Org.
 
 Vous pouvez lire [[https://orgmode.org/worg/][Worg ici]].
 
-Vous pouvez consulter la liste des modifications depuis [[https://orgmode.org/w/worg.git][l'interface gitweb]].
+Vous pouvez consulter la liste des modifications depuis [[https://code.orgmode.org/bzg/worg][le dépôt]].
 
-Les nouveaux contributeurs sont bienvenus -- envoyez simplement votre clef
-publique à Bastien.
+Les nouveaux contributeurs sont les bienvenus : enregistrez-vous sur
+https://code.orgmode.org et demandez à être ajouté comme contributeur.
 
 ** Move
    :PROPERTIES:
