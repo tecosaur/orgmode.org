@@ -31,7 +31,7 @@ fonctions d'édition.
 
 ** More
 
-Plus sur la [[https://orgmode.org/manual/Document-Structure.html#Document-Structure][structure des documents]] (manuel)
+Plus sur la [[https://orgmode.org/manual/Document-structure.html#Document-structure][structure des documents]] (manuel)
 
 ** Move
    :PROPERTIES:
@@ -61,9 +61,9 @@ dates et des échéances, des tags, des propriétés, etc.
 
 ** More
 
-Plus sur les [[https://orgmode.org/manual/TODO-Items.html#TODO-Items][items TODO]] (manuel)
+Plus sur les [[https://orgmode.org/manual/TODO-items.html#TODO-items][items TODO]] (manuel)
 
-Gérer les [[https://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates et l'horodatage]] (manuel)
+Gérer les [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][dates et l'horodatage]] (manuel)
 
 ** Move
    :PROPERTIES:
@@ -129,7 +129,7 @@ de travail à mesure que celles-ci se stabilisent.
 
 ** More
 
-Plus sur les [[https://orgmode.org/manual/Agenda-Views.html#Agenda-Views][vues agenda]] (manuel)
+Plus sur les [[https://orgmode.org/manual/Agenda-views.html#Agenda-views][vues agenda]] (manuel)
 
 Tutoriel sur les [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][commandes agenda]] (Worg)
 
@@ -263,7 +263,7 @@ fichier source.
 
 ** More
 
-[[https://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Interagir avec du code source]] (manuel)
+[[https://orgmode.org/manual/Working-with-source-code.html#Working-with-source-code][Interagir avec du code source]] (manuel)
 
 Liste des [[https://orgmode.org/worg/org-contrib/babel/languages.html][langages supportés]] (Worg)
 

@@ -31,7 +31,7 @@ facilities.
 
 ** More
 
-More on [[https://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure]] (manual)
+More on [[https://orgmode.org/manual/Document-structure.html#Document-structure][document structure]] (manual)
 
 ** Move
    :PROPERTIES:
@@ -61,9 +61,9 @@ cookies, tags, properties, etc.
 
 ** More
 
-More on [[https://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] (manual)
+More on [[https://orgmode.org/manual/TODO-items.html#TODO-items][TODO items]] (manual)
 
-Handling [[https://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] (manual)
+Handling [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][dates and times]] (manual)
 
 ** Move
    :PROPERTIES:
@@ -127,7 +127,7 @@ while stabilizing it.
 
 ** More
 
-More on [[https://orgmode.org/manual/Agenda-Views.html#Agenda-Views][agendas views]] (manual)
+More on [[https://orgmode.org/manual/Agenda-views.html#Agenda-views][agendas views]] (manual)
 
 Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
 
@@ -258,7 +258,7 @@ file.
 
 ** More
 
-[[https://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]] (manual)
+[[https://orgmode.org/manual/Working-with-source-code.html#Working-with-source-code][Working with source code]] (manual)
 
 List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
 

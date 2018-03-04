@@ -28,7 +28,7 @@ Org-modeは、より素早い操作で扱えるようなキーバインドで =o
 
 ** More
 
-より詳しい情報は、マニュアルの[[https://orgmode.org/manual/Document-Structure.html#Document-Structure][document structure（英語）]]を読んでください。 
+より詳しい情報は、マニュアルの[[https://orgmode.org/manual/Document-structure.html#Document-structure][document structure（英語）]]を読んでください。 
 
 ** Move
    :PROPERTIES:
@@ -56,7 +56,7 @@ TODOキーワードから別のステータスに切り替えるには、 =C-c C
 
 ** More
 
-より詳しい情報は、マニュアルの [[https://orgmode.org/manual/TODO-Items.html#TODO-Items][TODO items]] や [[https://orgmode.org/manual/Dates-and-Times.html#Dates-and-Times][dates and times]] を読んでください。
+より詳しい情報は、マニュアルの [[https://orgmode.org/manual/TODO-items.html#TODO-items][TODO items]] や [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][dates and times]] を読んでください。
 
 ** Move
    :PROPERTIES:
@@ -117,7 +117,7 @@ while stabilizing it.
 
 ** More
 
-More on [[https://orgmode.org/manual/Agenda-Views.html#Agenda-Views][agendas views]] (manual)
+More on [[https://orgmode.org/manual/Agenda-views.html#Agenda-views][agendas views]] (manual)
 
 Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
 
@@ -237,7 +237,7 @@ Org-modeは、[[http://en.wikipedia.org/wiki/Literate_programming][文芸的プ�
 
 ** More
 
-マニュアルの[[https://orgmode.org/manual/Working-With-Source-Code.html#Working-With-Source-Code][Working with source code]]と、Worgの List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]]を参照してください。
+マニュアルの[[https://orgmode.org/manual/Working-with-source-code.html#Working-with-source-code][Working with source code]]と、Worgの List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]]を参照してください。
 
 ** Move
    :PROPERTIES:
