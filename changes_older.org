@@ -4451,12 +4451,11 @@ property will be overwritten.  For example:
 	 : ...
 	 : </example>
 
-	 In fact, I myself find these easier to type and to look
-         at.  Also, it will allow you to more easily move
-         text and files back and forth between Org and
-         Muse.  For a list of supported structure elements,
-         see the commentary in the file [[https://orgmode.org/w/org-mode.git?a%3Dblob_plain%3Bf%3Dcontrib/lisp/org-mtags.el%3Bhb%3DHEAD][commentary in the
-        file org-mtags.el]].
+	 In fact, I myself find these easier to type and to look at.
+         Also, it will allow you to more easily move text and files
+         back and forth between Org and Muse.  For a list of supported
+         structure elements, see the commentary in the org-mtags.el
+         file.
 
 	 If you load this module and use the "<i" etc completion
          described above, the Muse form will automatically be

@@ -2,7 +2,7 @@
 #+author:    Carsten Dominik
 #+language:  en
 #+startup:   hidestars
-#+link:      git https://orgmode.org/w/?p=org-mode.git;a=commit;h=%s
+#+link:      git https://code.orgmode.org/bzg/org-mode?p=org-mode.git;a=commit;h=%s
 #+link:      doc https://orgmode.org/worg/doc.html#%s
 #+options:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+keywords:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
