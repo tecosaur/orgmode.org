@@ -33,10 +33,11 @@ Add this to your Emacs init file to be able to list the Org mode archives:
 Then =M-x list-packages RET= will list both the latest =org= and
 =org-plus-contrib= packages.
 
-- =org= :: contains the same set of files that are included in GNU Emacs.
+- =org= :: contains the same set of files that are included in GNU
+     Emacs.
 
-- =org-plus-contrib= :: contains these files plus all contribs files, the
-     ones you find in =contrib/= from the [[https://orgmode.org/cgit.cgi/org-mode.git/log/][git repo]].
+- =org-plus-contrib= :: contains these files plus all contribs files,
+     the ones you find in =contrib/= from the [[https://code.orgmode.org/bzg/org-mode/src/master/contrib][git repo]].
 
 ** Move
    :PROPERTIES:
