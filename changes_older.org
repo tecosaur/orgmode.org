@@ -7,10 +7,15 @@
 #+options: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:{} *:t TeX:t LaTeX:nil skip:nil
 #+html_head:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
 
-#+BEGIN_HTML
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
-projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
-#+END_HTML
+#+begin_export html
+<div id="top">
+  <p>
+    <em>Org mode is for keeping notes, maintaining TODO lists, planning
+projects, and authoring documents with a fast and effective plain-text
+      system.</em>
+  </p>
+</div>
+#+end_export
 
 * Version 6.32
  :PROPERTIES:
@@ -1518,7 +1523,7 @@ to an Org files was successful.
 Christopher Suckling has added functionality to
 /org-mac-message.el/.  In particular, you can now select a number of
 messages and easily get links to all of them with a single command.  For
-details, see the [[https://orgmode.org/worg/org-contrib/org-mac-message.php][online documentation]].
+details, see the [[https://orgmode.org/worg/org-contrib/org-mac-link.html][online documentation]].
 
 *** Read-date: New hook
 
@@ -2564,16 +2569,12 @@ There used to be a syntax for setting link attributes for HTML export by
 enclosing the attributes into double braces and adding them to the link
 itself, like
 
-#+begin_example
-[[./img/a.jpg{{alt="an image"}}] ]
-#+end_example
+: [[./img/a.jpg{{alt="an image"}}]]
 
 This syntax is not longer supported, use instead
 
-#+begin_src org
-  ,#+ATTR_HTML: alt="an image"
-  ,[[./img/a.jpg]]
-#+end_src
+: #+ATTR_HTML: alt="an image"
+: [[./img/a.jpg]]
 
 ** Details
 
@@ -6739,9 +6740,9 @@ list of small improvements and some new significant features.
        and to change the attributes of a column like the summary
        type.
 
-     These additions lead to the exciting fact that the example
-     from [[http://www.omnigroup.com/images/applications/omnioutliner/features/multicolumn.jpg][omni outliner]] posted by Scott Jaderholm can now be
-     accurately [[file:omni-org.jpg][reproduced by Org mode]].
+     These additions lead to the exciting fact that the example from
+     [[http://www.omnigroup.com/images/applications/omnioutliner/features/multicolumn.jpg][omni outliner]] posted by Scott Jaderholm can now be accurately
+     reproduced by Org mode.
 
    - The space after the stars is now required in a headline, in
      order to remove the conflict with bold words at the
