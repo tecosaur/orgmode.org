@@ -9,10 +9,15 @@
 #+options: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:{} *:t TeX:t LaTeX:nil skip:nil
 #+html_head:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
 
-#+BEGIN_EXPORT HTML
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
-projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
-#+END_EXPORT
+#+begin_export html
+<div id="top">
+  <p>
+    <em>Org mode is for keeping notes, maintaining TODO lists, planning
+projects, and authoring documents with a fast and effective plain-text
+      system.</em>
+  </p>
+</div>
+#+end_export
 
 * Version 9.0
 
@@ -1617,7 +1622,7 @@ manual for details and check [[https://orgmode.org/worg/org-8.0.html][this Worg 
      ~ox-taskjuggler.el~ by Nicolas Goaziou and others.
 
      Also, the Taskjuggler exporter now uses TJ3 by default.  John Hendy
-     wrote [[https://orgmode.org/worg/org-tutorials/org-taskjuggler3.html][a tutorial on Worg]] for the TJ3 export.
+     wrote [[https://orgmode.org/worg/org-tutorials/org-taskjuggler.html][a tutorial on Worg]] for the TJ3 export.
 
 ** New packages in core
 
@@ -1665,13 +1670,6 @@ manual for details and check [[https://orgmode.org/worg/org-8.0.html][this Worg 
 
     Also see [[https://orgmode.org/worg/org-faq.html#sec-8-12][this updated FAQ]] on how to display another character than "*"
     for starting headlines.
-
-*** ~org-favtable.el~ by Marc-Oliver Ihm
-
-    ~org-favtable.el~ helps you to create and update a table of favorite
-    locations in org, keeping the most frequently visited lines right at
-    the top.  This table is called "favtable".  See the documentation on
-    [[https://orgmode.org/worg/org-contrib/org-favtable.html][Worg]].
 
 *** ~ox-confluence.el~ by Sébastien Delafond
 
@@ -3299,7 +3297,7 @@ explanations on why these changes were necessary.
 **** org-taskjuggler.el (Christian Egli)
 
      Christian Egli's /org-taskjuggler.el/ module is now part of Org.
-     He also wrote a [[https://orgmode.org/worg/org-tutorials/org-taskjuggler.php][tutorial]] for it.
+     He also wrote a [[https://orgmode.org/worg/org-tutorials/org-taskjuggler.html][tutorial]] for it.
 
 **** org-ctags.el (Paul Sexton)
 
@@ -3519,7 +3517,7 @@ explanations on why these changes were necessary.
      Org-mode documents or subtrees can now be converted directly in
      to BEAMER presentation.  Turning a tree into a simple
      presentations is straight forward, and there is also quite some
-     support to make richer presentations as well.  See the [[https://orgmode.org/manual/Beamer-class-export.html#Beamer-class-export][BEAMER
+     support to make richer presentations as well.  See the [[https://orgmode.org/manual/Beamer-export.html#Beamer-export][BEAMER
      section]] in the manual for more details.
 
      Thanks to everyone who has contributed to the discussion about
@@ -6169,7 +6167,7 @@ entity list.
 *** New module to create Gantt charts
 
 Christian Egli's /org-taskjuggler.el/ module is now part of Org.
-He also wrote a [[https://orgmode.org/worg/org-tutorials/org-taskjuggler.php][tutorial]] for it.
+He also wrote a [[https://orgmode.org/worg/org-tutorials/org-taskjuggler.html][tutorial]] for it.
 
 *** Refile targets can now be cached
 
@@ -6930,28 +6928,26 @@ originally.
 
 *** Support for creating BEAMER presentations from Org mode documents
 
-Org mode documents or subtrees can now be converted directly in
-to BEAMER presentation.  Turning a tree into a simple
-presentations is straight forward, and there is also quite some
-support to make richer presentations as well.  See the [[https://orgmode.org/manual/Beamer-class-export.html#Beamer-class-export][BEAMER
-section]] in the manual for more details.
+Org mode documents or subtrees can now be converted directly in to
+BEAMER presentation.  Turning a tree into a simple presentations is
+straight forward, and there is also quite some support to make richer
+presentations as well.  See the [[https://orgmode.org/manual/Beamer-export.html#Beamer-export][BEAMER section]] in the manual for more
+details.
 
-Thanks to everyone who has contributed to the discussion about
-BEAMER support and how it should work.  This was a great example
-for how this community can achieve a much better result than any
-individual could.
+Thanks to everyone who has contributed to the discussion about BEAMER
+support and how it should work.  This was a great example for how this
+community can achieve a much better result than any individual could.
 
 *** Hyperlinks
 
 **** Add Paul Sexton's org-ctags.el
 
 Targets like =<<my target>>= can now be found by Emacs' etag
-functionality, and Org mode links can be used to to link to
-etags, also in non-Org mode files.  For details, see the file
-/org-ctags.el/.
+functionality, and Org mode links can be used to to link to etags,
+also in non-Org mode files.  For details, see the file /org-ctags.el/.
 
-This feature uses a new hook =org-open-link-functions= which will
-call function to do something special with text links.
+This feature uses a new hook =org-open-link-functions= which will call
+function to do something special with text links.
 
 Thanks to Paul Sexton for this contribution.
 
