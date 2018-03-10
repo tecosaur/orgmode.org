@@ -6643,11 +6643,10 @@ acceptable.
 
 Custom Agenda commands can now limit the sets of entry types
 considered for this command by binding =org-agenda-entry-types=
-temporarily in the options section of the command.  This can lead
-to significant speedups, because instead of laboriously finding
-entries and then rejecting them, a whole search cycle is skipped.
-For more information see the new section in
-[[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.php#sec-5][Matt Lundin's agenda custom command tutorial]].
+temporarily in the options section of the command.  This can lead to
+significant speedups, because instead of laboriously finding entries
+and then rejecting them, a whole search cycle is skipped.  For more
+information see this [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html#orgf395e43][worg page]].
 
 Thanks to Matt Lundin for this feature.
 
@@ -7116,8 +7115,7 @@ type a new value.
   https://orgmode.org/worg/org-contrib/babel/
 - Source-code block names are now exported to HTML and LaTeX
 - Org-babel functions are now bound to keys behind a common key
-  prefix (see
-  https://orgmode.org/worg/org-contrib/babel/reference.php#sec-5)
+  prefix (see https://orgmode.org/manual/Working-with-source-code.html)
 - Results are now foldable with TAB
 - Header argument values can now be lisp forms
 - Readable aliases for #+srcname: and #+resname:
