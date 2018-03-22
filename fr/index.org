@@ -29,7 +29,7 @@ La version stable est la *9.1.8*, mars 2018.  Voir les ([[file:../Changes.org][c
 
 Installez avec =M-x package-install RET org RET= (voir [[https://orgmode.org/elpa.html][Org ELPA]]).
 
-Ou téléchargez les archives [[https://orgmode.org/org-9.1.7.tar.gz][tar.gz]] ou [[https://orgmode.org/org-9.1.7.zip][zip]].
+Ou téléchargez les archives [[https://orgmode.org/org-9.1.8.tar.gz][tar.gz]] ou [[https://orgmode.org/org-9.1.8.zip][zip]].
 
 Vous pouvez parcourir la version en développement sur [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] ou cloner
 les dépôts :
