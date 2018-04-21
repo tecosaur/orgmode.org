@@ -25,11 +25,11 @@ projects, and authoring documents with a fast and effective plain-text system.<b
 #+ATTR_HTML: :id main-image
 [[file:img/main.jpg]]
 
-The stable version of Org is *9.1.9*, as of March 2018.  See the [[file:Changes.org][release notes]].
+The stable version of Org is *9.1.10*, as of April 2018.  See the [[file:Changes.org][release notes]].
 
 Get it with =M-x package-install RET org RET= (see [[https://orgmode.org/elpa.html][Org ELPA]]).
 
-Or download it as a [[https://orgmode.org/org-9.1.9.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.1.9.zip][zip]] archives.
+Or download it as a [[https://orgmode.org/org-9.1.10.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.1.10.zip][zip]] archives.
 
 You can browse the development version from [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] or clone the repo:
 
