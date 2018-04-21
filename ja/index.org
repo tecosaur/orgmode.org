@@ -24,7 +24,7 @@
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-安定版は、バージョン*9.1.10*です。（2018年03月現在）--- [[https://orgmode.org/org-9.1.10.tar.gz][tar.gz]] もしくは [[https://orgmode.org/org-9.1.10.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
+安定版は、バージョン*9.1.10*です。（2018年04月現在）--- [[https://orgmode.org/org-9.1.10.tar.gz][tar.gz]] もしくは [[https://orgmode.org/org-9.1.10.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
 
 =M-x list-packages RET= ([[https://orgmode.org/elpa.html][Org ELPA（英語）]]を読んでください）
 

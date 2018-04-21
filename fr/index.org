@@ -25,7 +25,7 @@ de maintenir des listes TODO, de planifier des projets et de publier des documen
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-La version stable est la *9.1.10*, mars 2018.  Voir les ([[file:../Changes.org][changements]]).
+La version stable est la *9.1.10*, avril 2018.  Voir les ([[file:../Changes.org][changements]]).
 
 Installez avec =M-x package-install RET org RET= (voir [[https://orgmode.org/elpa.html][Org ELPA]]).
 
