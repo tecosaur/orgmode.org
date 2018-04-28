@@ -31,8 +31,8 @@ Installez avec =M-x package-install RET org RET= (voir [[https://orgmode.org/elp
 
 Ou téléchargez les archives [[https://orgmode.org/org-9.1.12.tar.gz][tar.gz]] ou [[https://orgmode.org/org-9.1.12.zip][zip]].
 
-Vous pouvez parcourir la version en développement sur [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] ou cloner
-les dépôts :
+Vous pouvez parcourir la version en développement sur [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]]
+ou cloner les dépôts :
 
 =~$ git clone https://code.orgmode.org/bzg/org-mode.git=
 
@@ -72,7 +72,8 @@ Plus sur [[https://orgmode.org/worg/dev/org-build-system.html][l'installation d'
 #+ATTR_HTML: :id main-image
 [[file:../img/org-mode-7-network-theory.jpg]]
 
-Acheter la [[http://www.network-theory.co.uk/org/manual/][version papier]] du manuel d'Org ([[http://www.network-theory.co.uk/][Network Theory Ltd]].)
+Acheter la [[http://www.network-theory.co.uk/org/manual/][version papier]] du manuel d'Org en anglais ([[http://www.network-theory.co.uk/][Network Theory
+Ltd]].)
 
 Pour chaque livre vendu, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] fait un don de $1 au
 mainteneur d'Org mode.
@@ -80,6 +81,8 @@ mainteneur d'Org mode.
 Lire le manuel complet: [[https://orgmode.org/org.html][HTML]] ou [[https://orgmode.org/org.pdf][PDF]]
 
 Lire le guide compact: [[https://orgmode.org/guide/][HTML]] ou [[https://orgmode.org/orgguide.pdf][PDF]]
+
+Contributer à la traduction du guide compact via [[https://code.orgmode.org/bzg/orgguide_fr][son dépôt Git]].
 
 Voir la [[https://orgmode.org/worg/org-faq.html][FAQ]], les [[https://orgmode.org/worg/org-hacks.html][hacks]], et les [[https://orgmode.org/worg/org-tutorials/][tutoriels]] sur [[https://orgmode.org/worg/][Worg]].
 
