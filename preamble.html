@@ -17,7 +17,6 @@
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-7691209-1']);
   _gaq.push(['_trackPageview']);
-
   (function() {
   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -25,11 +24,24 @@
   })();
 </script>
 
-<div id="buttons">
+<script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//stats.orgmode.org/tracker.js', 'fathom');
+fathom('set', 'siteId', 'NWSQJ');
+fathom('trackPageview');
+</script>
 
+<div id="buttons">
   <form id="paypal" name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_xclick" />
-    <input type="hidden" name="business" value="bastien.guerry@free.fr" />
+    <input type="hidden" name="business" value="bzg@bzg.fr" />
     <input type="hidden" name="item_name" value="Org mode (Emacs)" />
     <input type="hidden" name="item_number" value="1" />
     <input type="hidden" name="lc" value="GB" />
@@ -38,5 +50,4 @@
     <input type="hidden" name="return" value="https://orgmode.org" />
     <button name="submit" alt="Support Org-mode" />Support Org</button>
   </form>
-
 </div>
