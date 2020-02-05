@@ -25,11 +25,11 @@ de maintenir des listes TODO, de planifier des projets et de publier des documen
 #+ATTR_HTML: :id main-image
 [[file:../img/main.jpg]]
 
-La version stable est la *9.3.2*, janvier 2019.  Voir les ([[file:../Changes.org][changements]]).
+La version stable est la *9.3.3*, février 2019.  Voir les ([[file:../Changes.org][changements]]).
 
 Installez avec =M-x package-install RET org RET= (voir [[https://orgmode.org/elpa.html][Org ELPA]]).
 
-Ou téléchargez les archives [[https://orgmode.org/org-9.3.2.tar.gz][tar.gz]] ou [[https://orgmode.org/org-9.3.2.zip][zip]].
+Ou téléchargez les archives [[https://orgmode.org/org-9.3.3.tar.gz][tar.gz]] ou [[https://orgmode.org/org-9.3.3.zip][zip]].
 
 Vous pouvez parcourir la version en développement sur [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]]
 ou cloner les dépôts :
