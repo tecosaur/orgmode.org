@@ -6,8 +6,8 @@ html {
 }
 
 #top {
-    margin-top:0pt;
-    padding-right: 2.5em;
+    margin-top: 0pt;
+    padding-right: 10em;
     font-size: 1.4em;
 }
 
@@ -33,10 +33,14 @@ html {
 
 #buttons {
     display:block;
+    font-size: 1.2em;
     position:absolute;
     top:20pt;
     right:10pt;
     text-align: right;
+    padding: .2em 1em;
+    background: #EEE;
+    border-radius: 10px;
 }
 
 a {
