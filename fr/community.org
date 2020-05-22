@@ -15,7 +15,7 @@ planifier des projets et de publier des documents, le tout en texte brut.</em></
 
 * List de discussion et canal IRC
   :PROPERTIES:
-  :ID:       liste
+  :CUSTOM_ID:       liste
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -32,7 +32,7 @@ Les utilisateurs discutent aussi sur le canal IRC =#org-mode= de
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -40,7 +40,7 @@ Les utilisateurs discutent aussi sur le canal IRC =#org-mode= de
 
 * "Hello Worg !"
   :PROPERTIES:
-  :ID:       worg
+  :CUSTOM_ID:       worg
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -62,7 +62,7 @@ https://code.orgmode.org et demandez à être ajouté comme contributeur.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -70,7 +70,7 @@ https://code.orgmode.org et demandez à être ajouté comme contributeur.
 
 * Google Summer of Code
   :PROPERTIES:
-  :ID:       gsoc
+  :CUSTOM_ID:       gsoc
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -95,7 +95,7 @@ même seulement un fichier =README.org= dans votre projet.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -103,7 +103,7 @@ même seulement un fichier =README.org= dans votre projet.
 
 * VimOrganizer
   :PROPERTIES:
-  :ID:       vim
+  :CUSTOM_ID:       vim
   :END:
 
 #+begin_export html
@@ -120,7 +120,7 @@ l'oeuvre.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -128,7 +128,7 @@ l'oeuvre.
 
 * Twitter, G+ et le T-shirt Org !
   :PROPERTIES:
-  :ID:       plus
+  :CUSTOM_ID:       plus
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -184,7 +184,7 @@ célèbre t-shirt Org.  Vous pouvez l'acheter depuis [[http://orgmode.spreadshir
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 

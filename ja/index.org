@@ -56,7 +56,7 @@ The //de facto// mimetype for org attachments is =text/org=.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -89,7 +89,7 @@ Org-modeについての[[https://orgmode.org/worg/org-papers.html][（科学的�
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 

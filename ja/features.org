@@ -14,7 +14,7 @@
 
 * 文書編集機能
   :PROPERTIES:
-  :ID: editing
+  :CUSTOM_ID: editing
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -32,7 +32,7 @@ Org-modeは、より素早い操作で扱えるようなキーバインドで =o
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -40,7 +40,7 @@ Org-modeは、より素早い操作で扱えるようなキーバインドで =o
 
 * プロジェクトの計画機能
   :PROPERTIES:
-  :ID: planning
+  :CUSTOM_ID: planning
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -60,7 +60,7 @@ TODOキーワードから別のステータスに切り替えるには、 =C-c C
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -68,7 +68,7 @@ TODOキーワードから別のステータスに切り替えるには、 =C-c C
 
 * 時間の計測
   :PROPERTIES:
-  :ID: clocking
+  :CUSTOM_ID: clocking
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -88,7 +88,7 @@ Org-modeは、ナイスなレポートを作成するために、簡単に時間
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -96,7 +96,7 @@ Org-modeは、ナイスなレポートを作成するために、簡単に時間
 
 * アジェンダ
   :PROPERTIES:
-  :ID: agendas
+  :CUSTOM_ID: agendas
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -123,7 +123,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -131,7 +131,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 
 * キャプチャ
   :PROPERTIES:
-  :ID: capturing
+  :CUSTOM_ID: capturing
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -149,7 +149,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -157,7 +157,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 
 * テーブル
   :PROPERTIES:
-  :ID: tables
+  :CUSTOM_ID: tables
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -185,7 +185,7 @@ Worgの Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.htm
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -193,7 +193,7 @@ Worgの Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.htm
 
 * エクスポート
   :PROPERTIES:
-  :ID: exporting
+  :CUSTOM_ID: exporting
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -217,7 +217,7 @@ Worgの =HTML= 形式で公開するための[[https://orgmode.org/worg/org-tuto
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -225,7 +225,7 @@ Worgの =HTML= 形式で公開するための[[https://orgmode.org/worg/org-tuto
 
 * ソースコードとの連携
   :PROPERTIES:
-  :ID: babel
+  :CUSTOM_ID: babel
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -241,7 +241,7 @@ Org-modeは、[[http://en.wikipedia.org/wiki/Literate_programming][文芸的プ�
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -249,7 +249,7 @@ Org-modeは、[[http://en.wikipedia.org/wiki/Literate_programming][文芸的プ�
 
 * モバイル端末との連携
   :PROPERTIES:
-  :ID: mobile
+  :CUSTOM_ID: mobile
   :END:
 
 #+ATTR_HTML: :style float:right;box-shadow:none; :width 200px
@@ -263,7 +263,7 @@ Org-modeは、[[http://en.wikipedia.org/wiki/Literate_programming][文芸的プ�
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 

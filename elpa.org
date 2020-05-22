@@ -41,7 +41,7 @@ Then =M-x list-packages RET= will list both the latest =org= and
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -83,7 +83,7 @@ See the [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.htm
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -101,7 +101,7 @@ Report any problem and ask any question on the Org mode [[https://orgmode.org/co
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
