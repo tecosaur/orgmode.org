@@ -15,7 +15,7 @@ projects, and authoring documents with a fast and effective plain-text system.</
 
 * Mailing list and IRC channel
   :PROPERTIES:
-  :ID:       list
+  :CUSTOM_ID:       list
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -32,7 +32,7 @@ Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.n
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -40,7 +40,7 @@ Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.n
 
 * "Hello Worg !"
   :PROPERTIES:
-  :ID:       worg
+  :CUSTOM_ID:       worg
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -62,7 +62,7 @@ https://code.orgmode.org and ask to be added as a collaborator.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -70,7 +70,7 @@ https://code.orgmode.org and ask to be added as a collaborator.
 
 * Google Summer of Code
   :PROPERTIES:
-  :ID:       gsoc
+  :CUSTOM_ID:       gsoc
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -95,7 +95,7 @@ This is useful if you have a Git repository of Org files or even just a
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -103,7 +103,7 @@ This is useful if you have a Git repository of Org files or even just a
 
 * VimOrganizer
   :PROPERTIES:
-  :ID:       vim
+  :CUSTOM_ID:       vim
   :END:
 
 #+begin_export html
@@ -119,7 +119,7 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -127,7 +127,7 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
 
 * Twitter, G+ and the Org shirt!
   :PROPERTIES:
-  :ID:       more
+  :CUSTOM_ID:       more
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -181,7 +181,7 @@ Org shirt.  You can buy it [[http://orgmode.spreadshirt.com/][from the US]] or [
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 

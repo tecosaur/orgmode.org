@@ -58,7 +58,7 @@ Plus sur [[https://orgmode.org/worg/dev/org-build-system.html][l'installation d'
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -99,7 +99,7 @@ S. Raymond et Rick Moen.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 

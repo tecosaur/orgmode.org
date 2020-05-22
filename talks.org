@@ -16,7 +16,7 @@ projects, and authoring documents with a fast and effective plain-text system.</
 
 * GoogleTech Talk by Carsten Dominik (2008)
   :PROPERTIES:
-  :ID:       google-tech-talk
+  :CUSTOM_ID:       google-tech-talk
   :END:
 
 Here is the video of the [[http://www.youtube.com/user/GoogleTechTalks][Google Tech Talk]] about Org mode that I gave on
@@ -32,7 +32,7 @@ You can check [[https://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -41,7 +41,7 @@ You can check [[https://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-
 
 * At the Max Planck Institute for Neurological Research (2010)
   :PROPERTIES:
-  :ID:       org-for-scientists
+  :CUSTOM_ID:       org-for-scientists
   :END:
 
 #+begin_export html
@@ -54,7 +54,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -63,7 +63,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 
 * Interview of Carsten Dominik at [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
   :PROPERTIES:
-  :ID:       floss-weekly
+  :CUSTOM_ID:       floss-weekly
   :END:
 
 #+begin_export html
@@ -74,7 +74,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -83,7 +83,7 @@ for Neurological Research in Cologne, Germany (http://nf.mpg.de).  Check
 
 * Bastien's presentation at GHM Paris (2011)
   :PROPERTIES:
-  :ID:       ghm2011
+  :CUSTOM_ID:       ghm2011
   :END:
 
 #+begin_export html
@@ -99,7 +99,7 @@ You can check [[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-d
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -108,7 +108,7 @@ You can check [[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-d
 
 * Florian Adamsky's in-depth presentation at [[https://entropia.de/GPN12][GPN12]] (2012)
   :PROPERTIES:
-  :ID:       gpn12
+  :CUSTOM_ID:       gpn12
   :END:
 
 #+begin_export html
@@ -119,7 +119,7 @@ The slides are available [[http://florian.adamsky.it/research/talks/gpn12/GPN12-
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 

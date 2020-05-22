@@ -15,7 +15,7 @@ planifier des projets et de publier des documents, le tout en texte brut.</em></
 
 * Edition
   :PROPERTIES:
-  :ID: edition
+  :CUSTOM_ID: edition
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -35,7 +35,7 @@ Plus sur la [[https://orgmode.org/manual/Document-structure.html#Document-struct
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -43,7 +43,7 @@ Plus sur la [[https://orgmode.org/manual/Document-structure.html#Document-struct
 
 * Planification
   :PROPERTIES:
-  :ID: planification
+  :CUSTOM_ID: planification
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -67,7 +67,7 @@ Gérer les [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][da
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -75,7 +75,7 @@ Gérer les [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][da
 
 * Chronométrage
   :PROPERTIES:
-  :ID: chronometrage
+  :CUSTOM_ID: chronometrage
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -99,7 +99,7 @@ Plus sur le [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-t
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -107,7 +107,7 @@ Plus sur le [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-t
 
 * Agendas
   :PROPERTIES:
-  :ID: agendas
+  :CUSTOM_ID: agendas
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -135,7 +135,7 @@ Tutoriel sur les [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-comm
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -143,7 +143,7 @@ Tutoriel sur les [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-comm
 
 * Capturer
   :PROPERTIES:
-  :ID: capturer
+  :CUSTOM_ID: capturer
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -164,7 +164,7 @@ Plus sur la [[https://orgmode.org/manual/Capture.html#Capture][capture]] (manuel
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -172,7 +172,7 @@ Plus sur la [[https://orgmode.org/manual/Capture.html#Capture][capture]] (manuel
 
 * Tableaux
   :PROPERTIES:
-  :ID: tableaux
+  :CUSTOM_ID: tableaux
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -200,7 +200,7 @@ Utiliser [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Or
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -208,7 +208,7 @@ Utiliser [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Or
 
 * Exporter
   :PROPERTIES:
-  :ID: exporter
+  :CUSTOM_ID: exporter
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -239,7 +239,7 @@ Plus sur la [[https://orgmode.org/manual/Publishing.html#Publishing][publication
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -247,7 +247,7 @@ Plus sur la [[https://orgmode.org/manual/Publishing.html#Publishing][publication
 
 * Interagir avec du code source
   :PROPERTIES:
-  :ID: babel
+  :CUSTOM_ID: babel
   :END:
 
 #+ATTR_HTML: :id main-image
@@ -269,7 +269,7 @@ Liste des [[https://orgmode.org/worg/org-contrib/babel/languages.html][langages 
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -277,7 +277,7 @@ Liste des [[https://orgmode.org/worg/org-contrib/babel/languages.html][langages 
 
 * Avec votre téléphone mobile
   :PROPERTIES:
-  :ID: mobile
+  :CUSTOM_ID: mobile
   :END:
 
 #+ATTR_HTML: :style float:right;box-shadow:none; :width 200px
@@ -294,7 +294,7 @@ mode.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 

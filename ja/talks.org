@@ -15,7 +15,7 @@
 
 * Carsten Dominik 氏による GoogleTech Talk の講演 (2008)
   :PROPERTIES:
-  :ID:       google-tech-talk
+  :CUSTOM_ID:       google-tech-talk
   :END:
 
 [[http://research.google.com/video.html][Google Tech Talk]] で Carsten Dominik 氏が、org-mode について講演したときの映像です。2008年7月15日に、カリフォルニア州マウンテンビューにあるグーグルキャンパスで行われました。
@@ -30,7 +30,7 @@ Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]]
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -39,7 +39,7 @@ Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]]
 
 * Carsten 氏による the Max Planck Institute for Neurological Research での講演(2010)
   :PROPERTIES:
-  :ID:       org-for-scientists
+  :CUSTOM_ID:       org-for-scientists
   :END:
 
 #+begin_export
@@ -50,7 +50,7 @@ Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]]
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -59,7 +59,7 @@ Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]]
 
 * [[http://twit.tv/show/floss-weekly/136][FLOSSウィークリィ]] の Carsten Dominik 氏へのインタビュー (2010)
   :PROPERTIES:
-  :ID:       floss-weekly
+  :CUSTOM_ID:       floss-weekly
   :END:
 
 #+begin_export
@@ -70,7 +70,7 @@ Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]]
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -79,7 +79,7 @@ Carsten Dominik 氏は、[[http://emacspeak.sourceforge.net/raman/][T.V. Raman]]
 
 * Bastien氏による org-mode のプレゼンテーション (2011)
   :PROPERTIES:
-  :ID:       ghm2011
+  :CUSTOM_ID:       ghm2011
   :END:
 
 #+begin_export
@@ -94,7 +94,7 @@ Bastien氏をこのミーティングに招待したLudovic Courtès氏と、ミ
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -102,7 +102,7 @@ Bastien氏をこのミーティングに招待したLudovic Courtès氏と、ミ
 
 * Florian Adamsky's in-depth presentation at [[https://entropia.de/GPN12][GPN12]] (2012)
   :PROPERTIES:
-  :ID:       gpn12
+  :CUSTOM_ID:       gpn12
   :END:
 
 #+begin_export
@@ -113,7 +113,7 @@ The slides are available [[http://florian.adamsky.it/research/talks/gpn12/GPN12-
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 

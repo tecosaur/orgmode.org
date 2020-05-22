@@ -16,7 +16,7 @@ planifier des projets et de publier des documents, le tout en texte brut.</em></
 
 * GoogleTech Talk par Carsten Dominik (2008)
   :PROPERTIES:
-  :ID:       google-tech-talk
+  :CUSTOM_ID:       google-tech-talk
   :END:
 
 Voici la vidéo du [[http://www.youtube.com/user/GoogleTechTalks][Google Tech Talk]] que j'ai donné le 15 juillet 2008 sur le
@@ -33,7 +33,7 @@ présentation.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -41,7 +41,7 @@ présentation.
 
 * Au Max Planck Institute pour la Recherche Neurologique (2010)
   :PROPERTIES:
-  :ID:       org-pour-scientifiques
+  :CUSTOM_ID:       org-pour-scientifiques
   :END:
 
 #+begin_export html
@@ -54,7 +54,7 @@ la Recherche Neurologique à Cologne, en Allemagne (http://nf.mpg.de).  Voir
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -62,7 +62,7 @@ la Recherche Neurologique à Cologne, en Allemagne (http://nf.mpg.de).  Voir
 
 * Interview de Carsten Dominik par [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010)
   :PROPERTIES:
-  :ID:       floss-weekly
+  :CUSTOM_ID:       floss-weekly
   :END:
 
 #+begin_export html
@@ -71,7 +71,7 @@ la Recherche Neurologique à Cologne, en Allemagne (http://nf.mpg.de).  Voir
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
@@ -79,7 +79,7 @@ la Recherche Neurologique à Cologne, en Allemagne (http://nf.mpg.de).  Voir
 
 * Présentation de Bastien au GHM Paris (2011)
   :PROPERTIES:
-  :ID:       ghm2011
+  :CUSTOM_ID:       ghm2011
   :END:
 
 #+begin_export html
@@ -97,14 +97,14 @@ présentation.
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
 {{{updown(floss-weekly,gpn12)}}}
 * Présentation de Florian Adamsky's au [[https://entropia.de/GPN12][GPN12]] (2012)
   :PROPERTIES:
-  :ID:       gpn12
+  :CUSTOM_ID:       gpn12
   :END:
 
 #+begin_export html
@@ -115,7 +115,7 @@ Le diapomara est téléchargeable [[http://florian.adamsky.it/research/talks/gpn
 
 ** Move
    :PROPERTIES:
-   :ID:       move
+   :CUSTOM_ID:       move
    :HTML_CONTAINER_CLASS: move
    :END:
 
