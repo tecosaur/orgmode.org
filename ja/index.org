@@ -69,10 +69,6 @@ The //de facto// mimetype for org attachments is =text/org=.
 #+ATTR_HTML: :style float:right; :width 300px
 [[file:../img/org-mode-7-network-theory.jpg]]
 
-英語かつ以前のバージョンですが、Org-mode の[[http://www.network-theory.co.uk/org/manual/][印刷されたマニュアル]]を購入できます（[[http://www.network-theory.co.uk/][Network Theory Ltd.]]）。
-
-一冊売れるごとに、 [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] を介してOrg-modeのメンテナに1ドルが寄付されます。
-
 マニュアル（完全版）： [[https://orgmode.org/org.html][HTML]], [[https://takaxp.github.io/org-ja.html][HTML(v7.5,jp)]] もしくは [[https://orgmode.org/org.pdf][PDF]]
 
 コンパクトガイド： [[https://orgmode.org/guide/][HTML]] もしくは [[https://orgmode.org/orgguide.pdf][PDF]]

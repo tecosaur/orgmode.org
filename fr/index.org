@@ -72,12 +72,6 @@ Plus sur [[https://orgmode.org/worg/dev/org-build-system.html][l'installation d'
 #+ATTR_HTML: :id main-image
 [[file:../img/org-mode-7-network-theory.jpg]]
 
-Acheter la [[http://www.network-theory.co.uk/org/manual/][version papier]] du manuel d'Org en anglais ([[http://www.network-theory.co.uk/][Network Theory
-Ltd]].)
-
-Pour chaque livre vendu, [[http://www.network-theory.co.uk/][Network-Theory Ltd.]] fait un don de $1 au
-mainteneur d'Org mode.
-
 Lire le manuel complet: [[https://orgmode.org/org.html][HTML]] ou [[https://orgmode.org/org.pdf][PDF]]
 
 Lire le guide compact: [[https://orgmode.org/guide/][HTML]] ou [[https://orgmode.org/orgguide.pdf][PDF]]
@@ -96,6 +90,9 @@ Vous pouvez aussi lire [[http://www.catb.org/esr/faqs/smart-questions.html][How 
 S. Raymond et Rick Moen.
 
 =M-x org-submit-bug-report RET=
+
+Network-Theory Ltd. a publié une version imprimée du manuel qui n'est
+plus disponible.
 
 ** Move
    :PROPERTIES:
