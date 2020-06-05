@@ -440,7 +440,7 @@ org-mode or do you think the product has reached maturity?"
   also give out a warning if to many hours are planed for one day) -
   agenda export to latex - simple project management
 - a gtd framework would be a killer feature!! more visual effects with
-  overlays However, it's "dÅÈjÅ‡" a very good work. Thanks.
+  overlays However, it's "d√©j√†" a very good work. Thanks.
 - very mature
 - Nearing maturity, but then again, maybe I'm just out of ideas.
 - I would like org-mode (or other parts of it like orgtbl) to become a

@@ -79,7 +79,7 @@ https://code.orgmode.org and ask to be added as a collaborator.
 In 2012, two students successfully achieved an Org mode [[http://code.google.com/soc/][Google Summer of
 Code]] project.
 
-Read the [[http://thread.gmane.org/gmane.emacs.orgmode/59279][summary email]] about their achievements.
+Read the [[https://orgmode.org/list/876288b78d.fsf@altern.org][summary email]] about their achievements.
 
 /Aurélien Aptel/ wrote a tool to synchronize keep local Org files in sync
 with several online bug trackers.
