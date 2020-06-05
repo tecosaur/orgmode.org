@@ -79,7 +79,7 @@ https://code.orgmode.org et demandez à être ajouté comme contributeur.
 En 2012, deux étudiants ont fini avec succès un projet [[http://code.google.com/soc/][Google Summer of
 Code]] lié à Org mode.
 
-Lire [[http://thread.gmane.org/gmane.emacs.orgmode/59279][le résumé]] (en anglais) de ce qu'ils ont fait.
+Lire [[https://orgmode.org/list/876288b78d.fsf@altern.org][le résumé]] (en anglais) de ce qu'ils ont fait.
 
 /Aurélien Aptel/ a développé un outil pour synchroniser des fichiers Org
 locaux avec des traqueurs de bogues en ligne.

@@ -72,7 +72,7 @@ GITとEmacs+Orgによる /wiki/ 、と考えてください。
 
 2012年、二人の学生のプロジェクトが [[http://code.google.com/soc/][Google Summer of Code]] で採択されました。
 
-この成果物については、[[http://thread.gmane.org/gmane.emacs.orgmode/59279][概要がまとめられたメール]]で確認できます。
+この成果物については、[[https://orgmode.org/list/876288b78d.fsf@altern.org][概要がまとめられたメール]]で確認できます。
 
 /Aurélien Aptel/ 氏は、いくつかのオンラインバグトラッカーと、ローカルのOrgファイルとを同期し、その状態を維持するためのツールを作成しました。
 
