@@ -21,14 +21,16 @@ projects, and authoring documents with a fast and effective plain-text system.</
 #+ATTR_HTML: :id main-image
 [[file:img/list.png]]
 
+The mailing list is /the/ central place for anything related to Org:
+help users, report bugs, suggest new features, etc.  Don't hesitate!
+
 Subscribe to the [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][mailing list]].
 
-Browse the [[http://lists.gnu.org/archive/html/emacs-orgmode/][archives]].
-
-The mailing list is /the/ central place for anything related to Org: help
-users, report bugs, suggest new features, etc.  Don't hesitate!
+Browse the archives on [[http://lists.gnu.org/archive/html/emacs-orgmode/][lists.gnu.org]] or [[https://orgmode.org/list/][orgmode.org/list]].
 
 Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.net][freenode]].
+
+You can also keep track of [[https://updates.orgmode.org][important updates]].
 
 ** Move
    :PROPERTIES:
