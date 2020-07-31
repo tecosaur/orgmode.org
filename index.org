@@ -17,7 +17,7 @@
     <img src="/img/org-mode-unicorn.svg"/>
     Org-Mode
   </h2>
-  <p>An innovative and intuitive plain text markup syntax.</p>
+  <p style="margin-bottom: 0.3em">An innovative and intuitive plain text markup syntax.</p>
   <p>Designed to be easily understood and manipulated by both humans and machines &mdash; it offers unparalleled versatility.</p>
   <br/>
   <p style="font-size: 0.7em;"><em>Org mode is for keeping notes, maintaining TODO lists, planning

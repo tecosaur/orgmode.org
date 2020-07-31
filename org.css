@@ -258,7 +258,7 @@ nav#main {
     nav#main .view-source:hover {
       color: #111; }
 
-nav + div.banner {
+nav + div.banner.large {
   margin-top: calc(0.9rem + 8px - var(--body-padding)); }
 
 div.banner {
@@ -283,7 +283,7 @@ div.banner {
     font-size: 2rem; }
   div.banner.slim {
     padding: 5px 0 5px 0;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-family: var(--sans); }
   div.banner.green {
     background-color: #77aa99cc; }
