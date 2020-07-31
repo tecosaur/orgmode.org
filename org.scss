@@ -25,12 +25,6 @@ html {
     left: 20px;
 }
 
-#translate {
-    position: absolute;
-    left: 30px;
-    top: 150px;
-}
-
 #buttons {
     display:block;
     font-size: 1.2em;
@@ -250,5 +244,55 @@ pre {
 @media(min-width:900px){
     code{
         font-size: 85%;
+nav#main {
+    background-color: #77aa99;
+    border-bottom: 1px solid #587e71;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: var(--sans);
+    /* fix the position for now - easy solution */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    a {
+        padding: 10px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        
+    }
+    img {
+        height: 2em;
+        margin-bottom: -0.5em;
+        + p {
+            display: inline-block;
+            font-weight: 700;
+            margin: 0;
+            color: #333;
+        }
+    }
+    #translate {
+        position: relative;
+        float: left;
+        color: #5a8073;
+        a {
+            padding: 0px;
+        }
+    }
+    .view-source {
+        position: relative;
+        float: right;
+        color: #444;
+        font-weight: bold;
+        padding: 0;
+        margin-right: 1em;
+        border: none;
+        background: none;
+        &:hover {
+            color: #111;
+        }
     }
 }
