@@ -3,14 +3,6 @@ html {
   margin: 0;
   font: 300 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif; }
 
-#top {
-  margin-top: 0pt;
-  padding-right: 10em;
-  font-size: 1.4em; }
-
-#top2 {
-  font-size: 70%; }
-
 #searchgmane {
   margin-left: 10pt; }
 
@@ -220,3 +212,80 @@ body {
   margin-left: var(--body-left);
   margin-right: var(--body-right);
   padding: var(--body-padding); }
+
+nav#main {
+  background-color: #77aa99;
+  border-bottom: 1px solid #587e71;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  font-family: var(--sans);
+  /* fix the position for now - easy solution */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  nav#main a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff; }
+  nav#main img {
+    height: 2em;
+    margin-bottom: -0.5em; }
+    nav#main img + p {
+      display: inline-block;
+      font-weight: 700;
+      margin: 0;
+      color: #333; }
+  nav#main #translate {
+    position: relative;
+    float: left;
+    color: #5a8073; }
+    nav#main #translate a {
+      padding: 0px; }
+  nav#main .view-source {
+    position: relative;
+    float: right;
+    color: #444;
+    font-weight: bold;
+    padding: 0;
+    margin-right: 1em;
+    border: none;
+    background: none; }
+    nav#main .view-source:hover {
+      color: #111; }
+
+nav + div.banner {
+  margin-top: calc(0.9rem + 8px - var(--body-padding)); }
+
+div.banner {
+  margin-left: calc(-130px - var(--body-left) - var(--body-padding));
+  width: calc(100vw - 10px);
+  padding: 20px 0 10px 0;
+  text-align: center;
+  font-size: 1.2rem; }
+  div.banner h2 {
+    margin-bottom: 1em;
+    color: #5a8073; }
+    div.banner h2 img {
+      height: 2.5em;
+      margin-bottom: -0.5em; }
+  div.banner p {
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.4; }
+  div.banner.large {
+    padding: 50px 0 80px 0;
+    background-color: #fff;
+    font-size: 2rem; }
+  div.banner.slim {
+    padding: 5px 0 5px 0;
+    font-size: 1.1rem;
+    background-color: #77aa99cc;
+    font-family: var(--sans); }
+
+img.inline {
+  height: 1em;
+  margin-bottom: -0.2em; }
