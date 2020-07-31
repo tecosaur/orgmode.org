@@ -26,7 +26,7 @@ a {
   text-decoration: none;
   /* color: #1c3030; */
   /* #0066CC; */
-  /* color: #537d7b */ }
+  color: #537d7b; }
 
 a:visited {
   text-decoration: none;
@@ -36,7 +36,7 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
-  /* color: #3d696a; */
+  color: #3d696a;
   /* #0066CC; */
   /* color: #a34d32; */
   /* #923a2e */
@@ -283,8 +283,13 @@ div.banner {
   div.banner.slim {
     padding: 5px 0 5px 0;
     font-size: 1.1rem;
-    background-color: #77aa99cc;
     font-family: var(--sans); }
+  div.banner.green {
+    background-color: #77aa99cc; }
+    div.banner.green a {
+      color: #222; }
+      div.banner.green a.hover {
+        opacity: 0.9; }
 
 img.inline {
   height: 1em;

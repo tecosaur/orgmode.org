@@ -31,7 +31,7 @@ a {
     text-decoration: none;
     /* color: #1c3030; */
     /* #0066CC; */
-    /* color: #537d7b */
+    color: #537d7b;
 }
 a:visited {
     text-decoration: none;
@@ -41,7 +41,7 @@ a:visited {
 }
 a:hover {
     text-decoration: underline;
-    /* color: #3d696a; */
+    color: #3d696a;
     /* #0066CC; */
     /* color: #a34d32; */
     /* #923a2e */
@@ -334,8 +334,16 @@ div.banner {
     &.slim {
         padding: 5px 0 5px 0;
         font-size: 1.1rem;
-        background-color: #77aa99cc;
         font-family: var(--sans);
+    }
+    &.green {
+        background-color: #77aa99cc;
+        a {
+            color: #222;
+            &.hover {
+                opacity: 0.9;
+            }
+        }
     }
 }
 
