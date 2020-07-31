@@ -11,10 +11,40 @@
 #+html_head:   <meta name="flattr:id" content="8d9x0o">
 
 #+begin_export html
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
-projects, and authoring documents with a fast and effective plain-text system.<br />
+<div class="banner large">
+  <h2>
+    <img src="/img/org-mode-unicorn.svg"/>
+    Org-Mode
+  </h2>
+  <p>An innovative and intuitive plain text markup syntax.</p>
+  <p>Designed to be easily understood and manipulated by both humans and machines &mdash; it offers unparalleled versatility.</p>
+  <br/>
+  <p style="font-size: 0.7em;"><em>Org mode is for keeping notes, maintaining TODO lists, planning
+projects, and authoring documents with a fast and effective plain-text
+    system.</em></p>
 
-<span id="top2">Created by <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a> and developed by <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</span></em></p></div>
+</div>
+<div class="banner slim">
+  Support
+  via <a href="https://liberapay.com/bzg" title="Donations always help">
+    <img class="inline" src="/img/external/librepay.svg"/>
+    LibrePay</a>,
+  <a href="https://github.com/sponsors/bzg" title="Donations always help">
+    <img class="inline" src="/img/external/github.svg"/>
+    GitHub</a>,
+  or
+  <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help">
+    <img class="inline" src="/img/external/paypal.svg"/>
+    PayPal</a>.
+</div>
+<div class="banner slim" style="background: none">
+  <p style="font-size: 1em;">Created by <a target="new"
+  href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003,
+  maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a> and
+  developed
+  by <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many
+  others</a>.</p>
+</div>
 #+end_export
 
 * Installation
