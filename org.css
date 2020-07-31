@@ -289,3 +289,8 @@ div.banner {
 img.inline {
   height: 1em;
   margin-bottom: -0.2em; }
+
+#a-quote {
+  font-size: 0.7em;
+  font-style: italic;
+  opacity: 0.7; }
