@@ -75,6 +75,7 @@ h3 {
     box-shadow: 1px 1px 1px #aaa;
     padding: 5pt;
     width: 27em;
+    max-width: 80%;
     font-size: 85%;
     margin-top: 20pt;
 }
@@ -225,11 +226,10 @@ code{
     // body margins and padding
     --body-left: 0px;
     --body-right: 0px;
-    --body-padding: 5px;
+    --body-padding: 10px;
     @media(min-width:850px) and (max-width:1000px){
         --body-left: 25px;
         --body-right: 15px;
-        --body-padding: 10px;
     }
     @media(min-width:1000px){
         --body-left: 50px;
@@ -245,6 +245,10 @@ code{
 
 body {
     margin-top: 2em;
+    // account for double-height header on mobile
+    @media(max-width:850px) {
+        margin-top: 4em;
+    }
     margin-left: var(--body-left);
     margin-right: var(--body-right);
     padding: var(--body-padding);
@@ -311,7 +315,7 @@ nav + div.banner.large {
 div.banner {
     margin-left: calc(-130px - var(--body-left) - var(--body-padding));
     width: calc(100vw - 10px);
-    padding: 20px 0 10px 0;
+    padding: 20px 5px 10px 5px;
     text-align: center;
     font-size: 1.2rem;
     h2 {
@@ -320,6 +324,13 @@ div.banner {
         img {
             height: 2.5em;
             margin-bottom: -0.5em;
+            // need to reflow image below a certain size
+            @media(max-width:500px) {
+                display: block;
+                position: relative;
+                left: calc(50vw - 1.25em);
+                top: -0.65em;
+            }
         }
     }
     p {
@@ -328,13 +339,15 @@ div.banner {
         line-height: 1.4;
     }
     &.large {
-        padding: 50px 0 80px 0;
+        padding: 50px 5px 80px 5px;
         background-color: #fff;
-        font-size: 2rem;
+        @media(min-width:800px) {
+            font-size: 2rem;
+        }
     }
     &.slim {
-        padding: 5px 0 5px 0;
-        font-size: 1.5rem;
+        padding: 5px;
+        font-size: 1.2rem;
         font-family: var(--sans);
     }
     &.green {
@@ -346,6 +359,9 @@ div.banner {
             }
         }
     }
+    p.small {
+        font-size: 0.7em;
+    }
 }
 
 img.inline {
@@ -353,8 +369,13 @@ img.inline {
     margin-bottom: -0.2em;
 }
 
+
 #a-quote {
-    font-size: 0.7em;
     font-style: italic;
     opacity: 0.7;
+}
+
+// to account for the navbar in scroll-to position
+h2[id]:target {
+    padding-top: calc(40px + 2rem); 
 }
