@@ -12,6 +12,7 @@
 
 #+begin_export html
 <div class="banner large">
+  <p id="a-quote"></p>
   <h2>
     <img src="/img/org-mode-unicorn.svg"/>
     Org-Mode
