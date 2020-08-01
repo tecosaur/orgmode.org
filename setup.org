@@ -7,4 +7,14 @@
 #+macro: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">installation</a></div>
 #+macro: updown #+HTML: <div class="move"><a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a></div>
 #+html_head:   <link rel="stylesheet" href="org.css" type="text/css" />
-#+html_head:   <meta name="flattr:id" content="8d9x0o">
+#+html_head:   <meta name="flattr:id" content="8d9x0o"> 
+#+html_head:   <meta name="theme-color" content="#77aa99">
+#+html_head:   <meta property="og:title" content="Org Mode">
+#+html_head:   <meta property="og:type" content="website">
+#+html_head:   <meta property="og:url" content="https://orgmode.org">
+#+html_head:   <meta property="og:description" content="Org: an Emacs Mode for Notes, Planning, and Authoring">
+#+html_head:   <meta property="og:image" content="https://orgmode.org/img/org-mode-unicorn.png">
+#+html_head:   <meta property="og:image:alt" content="Org-mode Logo">
+#+html_head:   <meta property="og:image:type" content="image/svg">
+#+html_head:   <meta property="og:image:width" content="368">
+#+html_head:   <meta property="og:image:height" content="400">
