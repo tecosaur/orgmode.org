@@ -5724,9 +5724,9 @@ list of small improvements and some new significant features.
     - You can now export special strings in HTML.  Here is the
       list of newly performed conversions:
 
-      | Org   | Description                        | HTML     |
-      |-------+------------------------------------+----------|
-      | ~\\-~ | double backslash followed by minus | &shy;    |
+      | Org | Description                        | HTML     |
+      |-----+------------------------------------+----------|
+      | ~\\~  | double backslash followed by minus | &shy;    |
       | ~--~  | two dashes (minuses)               | &ndash;  |
       | ~---~ | three dashes (minuses)             | &mdash;  |
       | ~...~ | three dots                         | &hellip; |
