@@ -23,30 +23,30 @@ Survey created and summarised by [[mailto:charlesweb@optusnet.com.au][Charles Ca
 
 * 1. Which operating system, version and Linux distribution?
 
-| OS       |  N | bar                                                     |
-|----------+----+---------------------------------------------------------|
+| OS       |  N | bar                                                   |
+|----------+----+-------------------------------------------------------|
 | Windows  | 31 | *******************************                         |
 | Linux    | 55 | ******************************************************* |
 | Mac OS X | 12 | ************                                            |
 
 The different Linux distributions:
 
-| Distribution |  N | bar            |
-|--------------+----+----------------|
-| Arch Linux   |  1 | *              |
-| Centos       |  1 | *              |
+| Distribution |  N | bar          |
+|--------------+----+--------------|
+| Arch Linux   |  1 | *            |
+| Centos       |  1 | *            |
 | Debian       | 14 | ************** |
 | Fedora       |  7 | *******        |
-| FreeBSD      |  1 | *              |
+| FreeBSD      |  1 | *            |
 | Gentoo       |  7 | *******        |
-| Kununtu      |  1 | *              |
-| MagicLinux   |  1 | *              |
-| OpenBSD      |  1 | *              |
-| RedHat       |  2 | **             |
-| Solaris      |  2 | **             |
+| Kununtu      |  1 | *            |
+| MagicLinux   |  1 | *            |
+| OpenBSD      |  1 | *            |
+| RedHat       |  2 | **           |
+| Solaris      |  2 | **           |
 | Suse         |  7 | *******        |
 | Ubuntu       |  9 | *********      |
-| Unspecified  |  2 | **             |
+| Unspecified  |  2 | **           |
 
 * 2. Which Emacs are you using (GNU/Xemacs, etc) and which version? Paste the result of M-x version.
 
@@ -823,9 +823,9 @@ documentation or as a tutorial or screencast?
 
 * 8. Your age
 
-| Age range |  N | bar                   |
-|-----------+----+-----------------------|
-| 16 - 20   |  0 |                       |
+| Age range |  N | bar                 |
+|-----------+----+---------------------|
+| 16 - 20   |  0 |                     |
 | 21 - 25   |  5 | *****                 |
 | 26 - 30   | 15 | ***************       |
 | 31 - 35   | 21 | ********************* |
@@ -833,33 +833,33 @@ documentation or as a tutorial or screencast?
 | 41 - 45   | 13 | *************         |
 | 46 - 50   |  3 | ***                   |
 | 51 - 55   |  3 | ***                   |
-| 56 - 60   |  0 |                       |
+| 56 - 60   |  0 |                     |
 
 * 9. Which country do you live in?
 
-| Country     |  N | bar                     |
-|-------------+----+-------------------------|
+| Country     |  N | bar                   |
+|-------------+----+-----------------------|
 | Australia   |  3 | ***                     |
-| Canada      |  2 | **                      |
-| China       |  2 | **                      |
-| Croatia     |  2 | *                       |
+| Canada      |  2 | **                    |
+| China       |  2 | **                    |
+| Croatia     |  2 | *                     |
 | France      |  5 | *****                   |
 | Germany     | 17 | *****************       |
-| Hungary     |  1 | *                       |
-| Iceland     |  1 | *                       |
+| Hungary     |  1 | *                     |
+| Iceland     |  1 | *                     |
 | India       |  4 | ****                    |
-| Italy       |  2 | **                      |
+| Italy       |  2 | **                    |
 | Netherlands |  3 | ***                     |
-| New Zealand |  1 | *                       |
-| Norway      |  1 | *                       |
-| Pakistan    |  1 | *                       |
-| Romania     |  1 | *                       |
-| Russia      |  1 | *                       |
-| Scotland    |  1 | *                       |
-| Slovenia    |  1 | *                       |
-| Spain       |  1 | *                       |
-| Sweden      |  1 | *                       |
-| Switzerland |  1 | *                       |
+| New Zealand |  1 | *                     |
+| Norway      |  1 | *                     |
+| Pakistan    |  1 | *                     |
+| Romania     |  1 | *                     |
+| Russia      |  1 | *                     |
+| Scotland    |  1 | *                     |
+| Slovenia    |  1 | *                     |
+| Spain       |  1 | *                     |
+| Sweden      |  1 | *                     |
+| Switzerland |  1 | *                     |
 | UK          |  7 | *******                 |
 | USA         | 23 | *********************** |
 

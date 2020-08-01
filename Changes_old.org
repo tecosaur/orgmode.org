@@ -3064,14 +3064,14 @@ See [[https://orgmode.org/org.html#Lookup-functions][the manual]] for details.
 
 These new startup keywords are now available:
 
-| Startup keyword                  | Option                                      |
-|----------------------------------+---------------------------------------------|
+| Startup keyword                | Option                                    |
+|--------------------------------+-------------------------------------------|
 | =#+STARTUP: logdrawer=           | =(setq org-log-into-drawer t)=              |
 | =#+STARTUP: nologdrawer=         | =(setq org-log-into-drawer nil)=            |
-|----------------------------------+---------------------------------------------|
+|--------------------------------+-------------------------------------------|
 | =#+STARTUP: logstatesreversed=   | =(setq org-log-states-order-reversed t)=    |
 | =#+STARTUP: nologstatesreversed= | =(setq org-log-states-order-reversed nil)=  |
-|----------------------------------+---------------------------------------------|
+|--------------------------------+-------------------------------------------|
 | =#+STARTUP: latexpreview=        | =(setq org-startup-with-latex-preview t)=   |
 | =#+STARTUP: nolatexpreview=      | =(setq org-startup-with-latex-preview nil)= |
 
@@ -3328,8 +3328,8 @@ See https://orgmode.org/elpa/
 
 ** Overview of the new keybindings
 
-| Keybinding      | Speedy | Command                     |
-|-----------------+--------+-----------------------------|
+| Keybinding    | Speedy | Command                     |
+|---------------+--------+-----------------------------|
 | =C-c C-x C-z=   |        | [[doc::org-clock-resolve][org-clock-resolve]]           |
 | =C-c C-x C-q=   |        | [[doc::org-clock-cancel][org-clock-cancel]]            |
 | =C-c C-x C-x=   |        | [[doc::org-clock-in-last][org-clock-in-last]]           |
@@ -3337,12 +3337,12 @@ See https://orgmode.org/elpa/
 | =*=             |        | [[doc::org-agenda-bulk-mark-all][org-agenda-bulk-mark-all]]    |
 | =C-c C-M-l=     |        | [[doc::org-insert-all-links][org-insert-all-links]]        |
 | =C-c C-x C-M-v= |        | [[doc::org-redisplay-inline-images][org-redisplay-inline-images]] |
-| =C-c C-x E=     | =E=    | [[doc::org-inc-effort][org-inc-effort]]              |
-|                 | =#=    | [[doc::org-toggle-comment][org-toggle-comment]]          |
-|                 | =:=    | [[doc::org-columns][org-columns]]                 |
-|                 | =W=    | Set =APPT_WARNTIME=         |
+| =C-c C-x E=     | =E=      | [[doc::org-inc-effort][org-inc-effort]]              |
+|               | =#=      | [[doc::org-toggle-comment][org-toggle-comment]]          |
+|               | =:=      | [[doc::org-columns][org-columns]]                 |
+|               | =W=      | Set =APPT_WARNTIME=           |
 | =k=             |        | [[doc::org-agenda-capture][org-agenda-capture]]          |
-| C-c ,           | ,      | [[doc::org-priority][org-priority]]                |
+| C-c ,         | ,      | [[doc::org-priority][org-priority]]                |
 
 ** New build system and new packages
 
