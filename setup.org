@@ -1,0 +1,9 @@
+#+language:    en
+#+startup:     hidestars
+#+options:     H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
+#+keywords:    Org Emacs outline planning note authoring project plain-text LaTeX HTML
+#+macro: next #+HTML: <div class="move">> <a onclick="goToByScroll('$1');return false;" href="#">documentation</a></div>
+#+macro: previous #+HTML: <div class="move">< <a onclick="goToByScroll('$1');return false;" href="#">installation</a></div>
+#+macro: updown #+HTML: <div class="move"><a onclick="goToByScroll('$1');return false;" href="#">< $1</a> · <a onclick="goToByScroll('$2');return false;" href="#">$2 ></a></div>
+#+html_head:   <link rel="stylesheet" href="org.css" type="text/css" />
+#+html_head:   <meta name="flattr:id" content="8d9x0o">
