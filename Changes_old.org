@@ -1,13 +1,13 @@
 #+title:  Org mode for Emacs -- Old Release notes
-#+author: Carsten Dominik
-#+email: carsten at orgmode dot org
-#+startup: hidestars
+#+author:    Carsten Dominik
+#+email:     carsten at orgmode dot org
+#+setupfile: setup.org
+#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+include: "./preamble.html" export html
 #+link:      git https://code.orgmode.org/bzg/org-mode/commit/%s
 #+link:      doc https://orgmode.org/worg/doc.html#%s
-#+keywords:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
-#+description: Org Org-mode Emacs Changes ChangeLog release notes archives
-#+options: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:{} *:t TeX:t LaTeX:nil skip:nil
 #+html_head:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
+#+include: "./preamble.html" export html
 
 #+begin_export html
 <div id="top">

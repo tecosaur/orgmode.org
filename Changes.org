@@ -1,18 +1,17 @@
 #+title:     Org mode for Emacs -- Release notes
 #+author:    Carsten Dominik
-#+language:  en
-#+startup:   hidestars
+#+email:     carsten at orgmode dot org
+#+setupfile: setup.org
 #+link:      git https://code.orgmode.org/bzg/org-mode?p=org-mode.git;a=commit;h=%s
 #+link:      doc https://orgmode.org/worg/doc.html#%s
-#+options:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
-#+keywords:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+description: Org Org-mode Emacs Changes ChangeLog release notes
 #+html_head:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
 
-#+BEGIN_EXPORT HTML
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
-projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
-#+END_EXPORT
+#+include: "./preamble.html" export html
+
+#+begin_export html
+<div class="banner slim"> <p id="a-quote"></p> </div>
+#+end_export
 
 * Version 9.3
 

@@ -1,13 +1,12 @@
 #+title:     Org mode for Emacs -- TODO list (obsolete)
+#+author:    Carsten Dominik
 #+email:     carsten at orgmode dot org
 #+startup:   align hidestars
+#+setupfile: setup.org
 #+tags:      NEW(n)
 #+typ_todo:  TODO IDEA WISH QUESTION INCONSISTENCY BUG | DONE DECLINED 
-#+language:  en
-#+options:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t
-#+keywords:  Org Org-mode Emacs outline planning note authoring project plain-text LaTeX HTML
 #+description: Org Org-mode TODO list
-#+html_head:     <link rel="stylesheet" href="org.css" type="text/css" />
+#+include: "./preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
