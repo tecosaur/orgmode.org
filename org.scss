@@ -227,6 +227,8 @@ code{
     --body-left: 0px;
     --body-right: 0px;
     --body-padding: 10px;
+    --green: #77aa99;
+    --dark-green: #587e72;
     @media(min-width:850px) and (max-width:1000px){
         --body-left: 25px;
         --body-right: 15px;
@@ -243,6 +245,9 @@ code{
     }
 }
 
+* {
+    box-sizing: border-box;
+}
 body {
     margin-top: 2em;
     // account for double-height header on mobile
@@ -255,8 +260,7 @@ body {
 }
 
 nav#main {
-    background-color: #77aa99;
-    border-bottom: 1px solid #587e71;
+    background-color: var(--green);
     padding: 8px;
     margin-bottom: 20px;
     text-align: center;
@@ -273,7 +277,9 @@ nav#main {
         text-decoration: none;
         font-weight: 500;
         color: #fff;
-        
+        &:hover {
+            color: #eee;
+        }
     }
     img {
         height: 2em;
@@ -289,21 +295,31 @@ nav#main {
         position: relative;
         float: left;
         color: #5a8073;
+        font-weight: bold;
         a {
+            color: #5a8073;
+            font-weight: bold;
             padding: 0px;
+            margin: 0 -2px 0 -2px;
+            &:hover {
+                color: #ddd;
+            }
         }
     }
     .view-source {
         position: relative;
         float: right;
-        color: #444;
+        color: #466259;
         font-weight: bold;
-        padding: 0;
+        line-height: 1.8;
+        padding: 0 4px 2px 4px;
         margin-right: 1em;
         border: none;
-        background: none;
+        background: #fff;
+        border-radius: 2px;
         &:hover {
-            color: #111;
+            background: #eee;
+            color: #304840;
         }
     }
 }
@@ -318,18 +334,26 @@ div.banner {
     padding: 20px 5px 10px 5px;
     text-align: center;
     font-size: 1.2rem;
-    h2 {
-        margin-bottom: 1em;
-        color: #5a8073;
+    .title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         img {
-            height: 2.5em;
+            height: 20rem;
             margin-bottom: -0.5em;
-            // need to reflow image below a certain size
-            @media(max-width:500px) {
-                display: block;
-                position: relative;
-                left: calc(50vw - 1.25em);
-                top: -0.65em;
+        }
+        h2 {
+            color: #eee;
+            font-family: var(--sans);
+            font-size: 4em;
+            text-align: left;
+            line-height: 1.2;
+            margin-left: 0.2em;
+            p.subtitle {
+                color: #222;
+                font-size: 3rem;
+                max-width: 15em;
+                text-align: left;
             }
         }
     }
@@ -340,7 +364,7 @@ div.banner {
     }
     &.large {
         padding: 50px 5px 80px 5px;
-        background-color: #fff;
+        background-color: var(--green);
         @media(min-width:800px) {
             font-size: 2rem;
         }
@@ -350,13 +374,21 @@ div.banner {
         font-size: 1.2rem;
         font-family: var(--sans);
     }
+    &.inline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        p {
+            display: inline-block;
+            margin: 0.2em;
+        }
+    }
     &.green {
-        background-color: #77aa99cc;
+        background-color: var(--dark-green);
+        color: #eee;
         a {
-            color: #222;
-            &.hover {
-                opacity: 0.9;
-            }
+            color: #fff;
+            font-weight: bold;
         }
     }
     p.small {

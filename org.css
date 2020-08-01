@@ -191,7 +191,9 @@ pre {
   --sans: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
   --body-left: 0px;
   --body-right: 0px;
-  --body-padding: 10px; }
+  --body-padding: 10px;
+  --green: #77aa99;
+  --dark-green: #587e72; }
   @media (min-width: 850px) and (max-width: 1000px) {
     :root {
       --body-left: 25px;
@@ -207,6 +209,9 @@ pre {
       --body-right: 50px;
       --body-padding: 30px; } }
 
+* {
+  box-sizing: border-box; }
+
 body {
   margin-top: 2em;
   margin-left: var(--body-left);
@@ -217,8 +222,7 @@ body {
       margin-top: 4em; } }
 
 nav#main {
-  background-color: #77aa99;
-  border-bottom: 1px solid #587e71;
+  background-color: var(--green);
   padding: 8px;
   margin-bottom: 20px;
   text-align: center;
@@ -235,6 +239,8 @@ nav#main {
     text-decoration: none;
     font-weight: 500;
     color: #fff; }
+    nav#main a:hover {
+      color: #eee; }
   nav#main img {
     height: 2em;
     margin-bottom: -0.5em; }
@@ -246,20 +252,29 @@ nav#main {
   nav#main #translate {
     position: relative;
     float: left;
-    color: #5a8073; }
+    color: #5a8073;
+    font-weight: bold; }
     nav#main #translate a {
-      padding: 0px; }
+      color: #5a8073;
+      font-weight: bold;
+      padding: 0px;
+      margin: 0 -2px 0 -2px; }
+      nav#main #translate a:hover {
+        color: #ddd; }
   nav#main .view-source {
     position: relative;
     float: right;
-    color: #444;
+    color: #466259;
     font-weight: bold;
-    padding: 0;
+    line-height: 1.8;
+    padding: 0 4px 2px 4px;
     margin-right: 1em;
     border: none;
-    background: none; }
+    background: #fff;
+    border-radius: 2px; }
     nav#main .view-source:hover {
-      color: #111; }
+      background: #eee;
+      color: #304840; }
 
 nav + div.banner.large {
   margin-top: calc(0.9rem + 8px - var(--body-padding)); }
@@ -270,25 +285,32 @@ div.banner {
   padding: 20px 5px 10px 5px;
   text-align: center;
   font-size: 1.2rem; }
-  div.banner h2 {
-    margin-bottom: 1em;
-    color: #5a8073; }
-    div.banner h2 img {
-      height: 2.5em;
+  div.banner .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    div.banner .title img {
+      height: 20rem;
       margin-bottom: -0.5em; }
-      @media (max-width: 500px) {
-        div.banner h2 img {
-          display: block;
-          position: relative;
-          left: calc(50vw - 1.25em);
-          top: -0.65em; } }
+    div.banner .title h2 {
+      color: #eee;
+      font-family: var(--sans);
+      font-size: 4em;
+      text-align: left;
+      line-height: 1.2;
+      margin-left: 0.2em; }
+      div.banner .title h2 p.subtitle {
+        color: #222;
+        font-size: 3rem;
+        max-width: 15em;
+        text-align: left; }
   div.banner p {
     max-width: 1000px;
     margin: auto;
     line-height: 1.4; }
   div.banner.large {
     padding: 50px 5px 80px 5px;
-    background-color: #fff; }
+    background-color: var(--green); }
     @media (min-width: 800px) {
       div.banner.large {
         font-size: 2rem; } }
@@ -296,12 +318,19 @@ div.banner {
     padding: 5px;
     font-size: 1.2rem;
     font-family: var(--sans); }
+  div.banner.inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    div.banner.inline p {
+      display: inline-block;
+      margin: 0.2em; }
   div.banner.green {
-    background-color: #77aa99cc; }
+    background-color: var(--dark-green);
+    color: #eee; }
     div.banner.green a {
-      color: #222; }
-      div.banner.green a.hover {
-        opacity: 0.9; }
+      color: #fff;
+      font-weight: bold; }
   div.banner p.small {
     font-size: 0.7em; }
 
