@@ -7,10 +7,7 @@
 #+include: "./preamble.html" export html
 
 #+begin_export html
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
-projects, and authoring documents with a fast and effective plain-text system.<br />
-
-<span id="top2">It was created by <a href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003, who still maintains it with the help from <a href="https://orgmode.org/org.html#History-and-Acknowledgments">thousands</a> of users.</span></em></p></div>
+<div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
 * Org Emacs lisp Package Archive

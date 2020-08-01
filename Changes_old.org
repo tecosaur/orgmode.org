@@ -10,13 +10,7 @@
 #+include: "./preamble.html" export html
 
 #+begin_export html
-<div id="top">
-  <p>
-    <em>Org mode is for keeping notes, maintaining TODO lists, planning
-projects, and authoring documents with a fast and effective plain-text
-      system.</em>
-  </p>
-</div>
+<div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
 * Version 9.2
@@ -285,8 +279,8 @@ you should expect to see something like:
 | ITEM          | CONFIRMED | Bananas | Confirmed Bananas |
 |---------------+-----------+---------+-------------------|
 | All shipments |           |      11 |                 4 |
-| Shipment 1    | [X]       |       4 |                 4 |
-| Shipment 2    | [ ]       |       7 |                 7 |
+| Shipment 1    | [X]         |       4 |                 4 |
+| Shipment 2    | [ ]         |       7 |                 7 |
 
 #+BEGIN_EXAMPLE
   ,#+STARTUP: shrink

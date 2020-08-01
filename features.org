@@ -6,8 +6,7 @@
 #+include: "./preamble.html" export html
 
 #+begin_export html
-<div id="top"><p><em>Org mode is for keeping notes, maintaining TODO lists, planning
-projects, and authoring documents with a fast and effective plain-text system.</em></p></div>
+<div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
 * Editing
