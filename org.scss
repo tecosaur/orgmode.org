@@ -248,6 +248,14 @@ code{
 * {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+    @media screen and (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
 body {
     margin-top: 2em;
     // account for double-height header on mobile
