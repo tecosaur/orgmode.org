@@ -6,16 +6,29 @@
 #+include: "./preamble.html" export html
 
 #+begin_export html
+<style>
+  .side-fig img {
+    filter: invert(1.4%);
+    box-shadow: none;
+  }
+  #content,.outline-2,div.banner {
+    margin-left: 0;
+  }
+</style>
+
 <div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
 * Editing
   :PROPERTIES:
   :CUSTOM_ID: editing
+  :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :id main-image
-[[file:img/structure.jpg]]
+#+ATTR_HTML: :class main-image
+[[file:img/features/folding.gif]]
+
+** Description
 
 Org is built on top of =outline.el=.
 
@@ -25,25 +38,134 @@ your Org documents.
 Org enhances =outline.el= with faster keybindings and more editing
 facilities.
 
-** More
+*** More
 
 More on [[https://orgmode.org/manual/Document-structure.html#Document-structure][document structure]] (manual)
 
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
+* Working with source code
+  :PROPERTIES:
+  :CUSTOM_ID: babel
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+ATTR_HTML: :class main-image
+[[file:img/features/babel.gif]]
+
+** Description
+
+Org makes [[http://en.wikipedia.org/wiki/Literate_programming][literate programming]] a handy and natural way to deal with code.
+
+You can insert code snippets, have them fontified in the Org buffer,
+compute the results in-file and tangle your Org file to get a code source
+file.
+
+*** More
+
+[[https://orgmode.org/manual/Working-with-source-code.html#Working-with-source-code][Working with source code]] (manual)
+
+List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
+
+* Tables
+  :PROPERTIES:
+  :CUSTOM_ID: tables
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+ATTR_HTML: :class main-image
+[[file:img/features/tables.gif]]
+
+** Description
+
+Org is a great plain-text table editor.
+
+You can import tables from =.csv= and =.tsv= files, or directly from the
+current buffer; you can then export them in all the formats supported by
+Org (see below).
+
+Org can also be used as a /spreadsheet/ system.
+
+You can add formulas using the [[http://www.gnu.org/software/emacs/manual/html_mono/calc.html][Calc Emacs package]] or Emacs lisp code.
+
+*** More
+
+The [[https://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]] (manual)
+
+Org as a [[https://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system (manual)
+
+Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
+
+Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
+
+* Exporting
+  :PROPERTIES:
+  :CUSTOM_ID: exporting
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+ATTR_HTML: :class main-image
+[[file:img/features/exports.gif]]
+
+** Description
+
+Org is an authoring and publication tool.
+
+You can use intuitive markup then have it converted to =HTML=, $\LaTeX{}$,
+=ODT= -- and much more.
+
+Developers can easily create new backends for their favorite format (see
+the [[https://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
+
+You can also define /publishing projects/ with one or more =.org= file(s),
+and one or more publication backends.
+
+*** More
+
+More on [[https://orgmode.org/manual/Markup.html#Markup][markup]] (manual)
+
+More on [[https://orgmode.org/manual/Exporting.html#Exporting][exporting]] (manual)
+
+More on [[https://orgmode.org/manual/Publishing.html#Publishing][publishing]] (manual)
+
+[[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to =HTML= (Worg)
+
+[[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX{}$ (Worg)
+
+
+#+ATTR_HTML: :class main-image
+[[file:img/features/links.png]]
+
+
+
    :END:
 
-{{{updown(editing,planning)}}}
 
+* With your mobile phone
+  :PROPERTIES:
+  :CUSTOM_ID: mobile
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+ATTR_HTML: :style float:right;box-shadow:none; :width 400px
+[[file:img/external/beorg.png]]
+
+** Description
+
+On iOS you have the wonderful [[https://beorgapp.com/][beorg]], which supports many of Org's features, and
+can sync over a variety of services.
+
+On Android there is [[http://www.orgzly.com/][orgzly]], which is developed over on [[https://github.com/orgzly/orgzly-android][GitHub]].
+
+*** COMMENT More
 * Planning
   :PROPERTIES:
   :CUSTOM_ID: planning
+  :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :id main-image
-[[file:img/planning.jpg]]
+#+ATTR_HTML: :class main-image
+[[file:img/features/planning.gif]]
+
+** Description
 
 Org can be used as a TODO lists manager and as a planner.
 
@@ -55,27 +177,22 @@ Switching from one TODO keyword to another is =C-c C-t= or
 Each item can also receive planning meta-data: scheduled and/or deadline
 cookies, tags, properties, etc.
 
-** More
+*** More
 
 More on [[https://orgmode.org/manual/TODO-items.html#TODO-items][TODO items]] (manual)
 
 Handling [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][dates and times]] (manual)
 
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(editing,clocking)}}}
-
 * Clocking
   :PROPERTIES:
   :CUSTOM_ID: clocking
+  :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :id main-image
-[[file:img/clocking.jpg]]
+#+ATTR_HTML: :class main-image
+[[file:img/features/clocking.png]]
+
+** Description
 
 Clocking in a task is =C-c C-x C-i=.
 
@@ -88,25 +205,20 @@ Clocking logs are stored in a drawer.
 Org makes it easy to clock in and out and to produce nice reports, which
 you can customize to suit the needs of your hairy boss.
 
-** More
+*** More
 
 More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] (manual)
-
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(planning,agendas)}}}
 
 * Agendas
   :PROPERTIES:
   :CUSTOM_ID: agendas
+  :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :id main-image
-[[file:img/agenda.jpg]]
+#+ATTR_HTML: :class main-image
+[[file:img/features/agenda.png]]
+
+** Description
 
 Even with large =.org= files and thousands of tasks, it is easy to focus on
 what you need to do for each context.
@@ -121,27 +233,22 @@ specific tag, etc.
 This is one of the key aspect of Org: you can adapt Org to your workflow
 while stabilizing it.
 
-** More
+*** More
 
 More on [[https://orgmode.org/manual/Agenda-views.html#Agenda-views][agendas views]] (manual)
 
 Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
 
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(clocking,capturing)}}}
-
 * Capturing
   :PROPERTIES:
   :CUSTOM_ID: capturing
+  :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :id main-image
-[[file:img/capture.jpg]]
+#+ATTR_HTML: :class main-image :style "filter: invert(96%) hue-rotate(270deg);"
+[[file:img/features/capturing.gif]]
+
+** Description
 
 Adding TODO items to your =.org= files is called /capturing/.
 
@@ -151,141 +258,7 @@ applications like your web browser, pdf viewer, etc.
 Capture templates allow you to tell what information you want to capture
 from various contexts (the file name, the current date, the region, etc.)
 
-** More
+*** More
 
 More on [[https://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
 
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(agendas,tables)}}}
-
-* Tables
-  :PROPERTIES:
-  :CUSTOM_ID: tables
-  :END:
-
-#+ATTR_HTML: :id main-image
-[[file:img/table2.jpg]]
-
-Org is a great plain-text table editor.
-
-You can import tables from =.csv= and =.tsv= files, or directly from the
-current buffer; you can then export them in all the formats supported by
-Org (see below).
-
-Org can also be used as a /spreadsheet/ system.  
-
-You can add formulas using the [[http://www.gnu.org/software/emacs/manual/html_mono/calc.html][Calc Emacs package]] or Emacs lisp code.
-
-** More
-
-The [[https://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]] (manual)
-
-Org as a [[https://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system (manual)
-
-Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
-
-Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
-
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(capturing,exporting)}}}
-
-* Exporting
-  :PROPERTIES:
-  :CUSTOM_ID: exporting
-  :END:
-
-#+ATTR_HTML: :id main-image
-[[file:img/export.jpg]]
-
-Org is an authoring and publication tool.
-
-You can use intuitive markup then have it converted to =HTML=, $\LaTeX{}$,
-=ODT= -- and much more.
-
-Developers can easily create new backends for their favorite format (see
-the [[https://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
-
-You can also define /publishing projects/ with one or more =.org= file(s),
-and one or more publication backends.
-
-** More
-
-More on [[https://orgmode.org/manual/Markup.html#Markup][markup]] (manual)
-
-More on [[https://orgmode.org/manual/Exporting.html#Exporting][exporting]] (manual)
-
-More on [[https://orgmode.org/manual/Publishing.html#Publishing][publishing]] (manual)
-
-[[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to =HTML= (Worg)
-
-[[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX{}$ (Worg)
-
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(tables,babel)}}}
-
-* Working with source code
-  :PROPERTIES:
-  :CUSTOM_ID: babel
-  :END:
-
-#+ATTR_HTML: :id main-image
-[[file:img/babel.jpg]]
-
-Org makes [[http://en.wikipedia.org/wiki/Literate_programming][literate programming]] a handy and natural way to deal with code.
-
-You can insert code snippets, have them fontified in the Org buffer,
-compute the results in-file and tangle your Org file to get a code source
-file.
-
-** More
-
-[[https://orgmode.org/manual/Working-with-source-code.html#Working-with-source-code][Working with source code]] (manual)
-
-List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
-
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(exporting,mobile)}}}
-
-* With your mobile phone
-  :PROPERTIES:
-  :CUSTOM_ID: mobile
-  :END:
-
-#+ATTR_HTML: :style float:right;box-shadow:none; :width 200px
-[[file:img/mobile.png]]
-
-/Richard Moreland/ has developed [[http://mobileorg.github.io/][MobileOrg]], a free software for iPhone and
-iPod Touch for storing, searching, viewing and editing your Org files.
-
-/Matt Jones/ has developed an equivalent [[https://play.google.com/store/apps/details?id%3Dcom.matburt.mobileorg#?t%3DW251bGwsMSwxLDIxMiwiY29tLm1hdGJ1cnQubW9iaWxlb3JnIl0.][MobileOrg]] for the Android platform
-(check the source code on [[https://github.com/matburt/mobileorg-android][github]]).
-
-** COMMENT More
-
-** Move
-   :PROPERTIES:
-   :CUSTOM_ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{updown(babel,mobile)}}}

@@ -70,9 +70,8 @@ h3 {
 }
 
 .outline-3 {
-    background-color: #eee;
-    color: black;
-    box-shadow: 1px 1px 1px #aaa;
+    background-color: #eaeaea;
+    border-left: 4px solid var(--dark-green);
     padding: 5pt;
     width: 27em;
     max-width: 80%;
@@ -91,6 +90,7 @@ h2 {
     font-size: 1.8em;
     margin-top: 0;
     margin-bottom: 30pt;
+    line-height: 1.1;
 }
 
 .outline-2 {
@@ -98,7 +98,6 @@ h2 {
     line-height: 1.3em;
     margin-top: 40px;
     margin-left: -130px;
-    min-height: 600pt;
 }
 
 *.outline-2 img {
@@ -158,52 +157,79 @@ pre {
 }
 
 .move { 
-    float: left;
     font-weight: 800;
-    font-size: 1.3em;
-    color: #ccc;
-    letter-spacing: 1.4pt;
-    background-color: white;
-    box-shadow: 0px 0px 0px white;
-}
-
-.move a {
-    color: #ccc;
-}
-
-.move a:hover {
-    color: grey;
-    text-decoration: none;
-}
-
-@media(min-width:1000px){
-    #screenshot {
-        float: right;
-        width: 500px;
-    }
-    #main-image {
-        float: right;
-        width: 500px;
+    color: var(--dark-green);
+    position: relative;
+    a {
+        color: inherit;
+        text-transform: capitalize;
+        &:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
     }
 }
-
-@media(min-width:800px) and (max-width:1000px){
-    #screenshot {
-        float: right;
-        width: 450px;
-    }
-    #main-image {
-        float: right;
-        width: 450px;
-    }
+.outline-text-2 > .move {
+    top: -30px;
 }
 
-@media(max-width:800px){
-    #screenshot {
-        display: none;
+
+div.side-fig {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    position: relative;
+    padding-top: 4rem;
+    @media(max-width:1510px) {
+        justify-content: center;
     }
-    #main-image {
-        display: none;
+    h2 {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        &:target {
+            top: calc(-10px - 2rem); // to account for added padding
+        }
+    }
+    > div.outline-text-2 { // figure & move
+        > figure {
+            max-width: 700px;
+            @media(min-width:850px) {
+                max-width: #{"min(700px, 50vw)"};
+            }
+            img {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+        .move {
+            position: absolute;
+            top: 5rem;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            @media(max-width:1800px) {
+                display: none;
+            }
+        }
+    }
+    > div.outline-3 { // description
+        border: none;
+        background-color: transparent;
+        width: 600px;
+        max-width: 100%;
+        > div.outline-4 { // more
+            background-color: #eaeaea;
+            border-left: 4px solid var(--dark-green);
+            padding: 5px;
+            h4 {
+                display: none;
+            }
+        }
     }
 }
 
@@ -338,7 +364,8 @@ nav + div.banner.large {
 
 div.banner {
     margin-left: calc(-130px - var(--body-left) - var(--body-padding));
-    width: calc(100vw - 10px);
+    // width: calc(100vw - 10px);
+    width: 100vw;
     padding: 20px 5px 10px 5px;
     text-align: center;
     font-size: 1.2rem;
@@ -418,4 +445,9 @@ img.inline {
 // to account for the navbar in scroll-to position
 h2[id]:target {
     padding-top: calc(40px + 2rem); 
+}
+
+.date {
+    font-family: var(--sans);
+    color: var(--dark-green);
 }
