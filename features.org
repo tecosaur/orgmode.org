@@ -19,6 +19,24 @@
 <div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
+* Simple Syntax
+:PROPERTIES:
+:CUSTOM_ID: simple-syntax
+:HTML_CONTAINER_CLASS: side-fig
+:END:
+
+#+ATTR_HTML: :class main-image
+[[file:img/features/simple-syntax.png]]
+
+** Description
+
+Org mode can perform complex tasks, but it is built of a simple syntax. All you
+need to get started is demonstrated in the image.
+
+*** More
+
+More on [[https://orgmode.org/manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual)
+
 * Editing
   :PROPERTIES:
   :CUSTOM_ID: editing
@@ -130,14 +148,32 @@ More on [[https://orgmode.org/manual/Publishing.html#Publishing][publishing]] (m
 
 [[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX{}$ (Worg)
 
+* Extensibility
+  :PROPERTIES:
+  :CUSTOM_ID: extensibiliy
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
 
 #+ATTR_HTML: :class main-image
 [[file:img/features/links.png]]
 
+** Description
+Org-mode isn't just capable out of the box, it's
+spectacularly extensible.
 
+Take links as an example. Updating docs for a
+project and find yourself linking to GitHub issues
+a lot? You can add a new link type for the
+document (or globally) where in
+~[[issue:74][version mismatch]]~ the link expands to
+=https://github.com/author/repo/issues/74=.
 
-   :END:
+This is just the beginning, you can define
+arbitrary functions to resole links, link to files
+on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.
 
+In Org-mode, extensibility isn't an afterthought --- it's baked right into the
+foundations.
 
 * With your mobile phone
   :PROPERTIES:
