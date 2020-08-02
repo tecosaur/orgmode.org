@@ -37,7 +37,7 @@ need to get started is demonstrated in the image.
 
 More on [[https://orgmode.org/manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual)
 
-* Outline/Folded Editing
+* Collapsable Editing
   :PROPERTIES:
   :CUSTOM_ID: editing
   :HTML_CONTAINER_CLASS: side-fig
@@ -48,11 +48,8 @@ More on [[https://orgmode.org/manual/Markup-for-Rich-Contents.html][the markup s
 
 ** Description
 
-Org is a folding outline editor.
-
-Easily show and hide sections using the =tab= key.
-
-Navigate and edit sections effortlessly with Org keyboard shortcuts.
+Org allows you to fold sections into an outline for graceful navigation, then
+seamlessly expand individual sections to read and edit using the =tab= key.
 
 You can easily navigate through headlines and (un)fold (sub)sections of
 your Org documents.
@@ -72,20 +69,20 @@ More on [[https://orgmode.org/manual/Document-structure.html#Document-structure]
 
 ** Description
 
-*Org can syntax highlight and /execute/ live code right inside your Org text.*
+Notebooks such as [[https://jupyter.org/][Jupyter]] and [[https://rmarkdown.rstudio.com/][R Markdown]] possess a subset of Org's functionality
+in their ability to write syntax-highlighted code and execute it within the
+document.
 
-Write code right in your Org file, execute it and see its result right in that
-/same/ Org file. [[https://orgmode.org/worg/org-contrib/babel/languages.html][Many languages supported]], among them Python, Javascript, Graphviz
-Dot, PlantUML, Shell commands, and Elisp.
+Org likewise has code blocks that can be executed within the document, and
+supports around [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]]. Furthermore, in the same document you can use
+multiple languages, even pass simple data structures between them, and write
+code to generate code.
 
-Students of Computer Science might ask, "hey does Org support [[http://en.wikipedia.org/wiki/Literate_programming][literate
-programming]]?" Oh yes, Org does support it.
+Org's capabilities make it ideally suited for [[https://en.wikipedia.org/wiki/Literate_programming][literate programming]], making the
+technique a handy and natural way to deal with code.
 
-Org makes [[http://en.wikipedia.org/wiki/Literate_programming][literate programming]] a handy and natural way to deal with code.
-
-You can insert code snippets, have them fontified in the Org buffer,
-compute the results in-file and tangle your Org file to get a code source
-file.
+Source code can be trivially extracted from an org file, and rich documentation
+produced from the very same file.
 
 *** More
 
@@ -106,9 +103,8 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
 
 Org is a great plain-text table editor.
 
-Navigate between cells using the =tab= key. Press the =enter= key to enter a value.
-Move rows and columns with easy keyboard shortcuts. /Never/ have to reformat a
-table layout because of different cell value widths.
+Use =tab= to move between cells, and =enter= for rows. The layout automatically is
+reformatted as cell contents change.
 
 You can import tables from =.csv= and =.tsv= files, or directly from the
 current buffer; you can then export them in all the formats supported by
@@ -139,18 +135,17 @@ Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org a
 
 ** Description
 
-*Org is an authoring and publication tool.*
+Org provides great capability as an authoring and publishing tool.
 
-Org doesn't have to be used for TODO list management and dayplanning.
-
-Use the intutive Org markup syntax to create source documents that can exported into many different formats including:
+Use the intuitive Org markup syntax to create source documents that can exported
+into many different formats including:
 - =HTML=
 - $\LaTeX{}$
 - =ODT=
 - and much more!
 
-Developers can easily create new backends for their favorite format (see
-the [[https://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
+Developers can easily create new backends for their favourite format
+(see the [[https://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
 
 You can also define /publishing projects/ with one or more =.org= file(s),
 and one or more publication backends.
@@ -211,7 +206,7 @@ can sync over a variety of services.
 On Android there is [[http://www.orgzly.com/][orgzly]], which is developed over on [[https://github.com/orgzly/orgzly-android][GitHub]].
 
 *** COMMENT More
-* Todo List Management
+* Task Management
   :PROPERTIES:
   :CUSTOM_ID: planning
   :HTML_CONTAINER_CLASS: side-fig
@@ -222,9 +217,11 @@ On Android there is [[http://www.orgzly.com/][orgzly]], which is developed over 
 
 ** Description
 
-*Org is a TODO list manager.*
+Org is an extremely capable task manager. "Org" is short for "organisation"
+after all.
 
-Turn sections into /tasks/ by adding keywords representing the state of that task. Switch states easily with the keyboard shortcut =S-<left/right>=.
+Turn sections into /tasks/ by adding keywords such as =TODO= representing the state of that task.
+Switch states easily with the keyboard shortcut =S-<left/right>=.
 
 See your tasks in a planner (called an /Agenda/ in Org) by adding timestamps to them.
 
@@ -262,15 +259,13 @@ Org provides easy keyboard shortcuts to /clock in/ and /clock out/ of tasks.
 At end of the day, easily generate reports of how you spent your time.
 
 Clocking in a task is =C-c C-x C-i=.
-
 Clocking out a task is =C-c C-x C-o=.
-
 You can use =I= and =O= from an agenda buffer.
 
 Clocking logs are stored in a drawer.
 
 Org makes it easy to clock in and out and to produce nice reports, which
-you can customize to suit the needs of your hairy boss.
+you can customize as needed.
 
 *** More
 
@@ -287,23 +282,16 @@ More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time]
 
 ** Description
 
-Plan your tasks with /agenda views/ in Org.
+Plan your day, your way, with ease.
 
-/Agenda views/ are reports generated from your set of tasks.
-
-Agenda views/ let you see your tasks on a daily, weekly, and monthly basis with /highly/ configurable editing.
-
-Plan your day your way with Org.
+With /agenda views/ ---reports generated from a set of tasks--- you can see your
+tasks on a daily, weekly, and monthly basis in a /highly/ configurable manner.
 
 Even with large =.org= files and thousands of tasks, it is easy to focus on
 what you need to do for each context.
 
 The built-in agenda views display the scheduled and deadline task for the
 week, TODO lists and stuck projects.
-
-The notion of /agenda view/ can be customized to display what you need: a
-view for the day/month, restricted to a set of TODO keywords, using
-specific tag, etc.
 
 This is one of the key aspect of Org: you can adapt Org to your workflow
 while stabilizing it.
@@ -328,10 +316,10 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 Adding TODO items to your =.org= files is called /capturing/.
 
 You can capture from everywhere, both within Emacs and from other
-applications like your web browser, pdf viewer, etc.
+applications like your web browser, PDF viewer, etc.
 
-Capture templates allow you to tell what information you want to capture
-from various contexts (the file name, the current date, the region, etc.)
+Capture templates provide a quick and effective way to save information to look
+at later.
 
 *** More
 
