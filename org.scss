@@ -104,6 +104,7 @@ h2 {
     box-shadow: 5px 5px 5px #aaa;
     /* margin-top: -35px; */
     margin-left: 50px;
+    max-width: 80%;
 }
 
 .iframe {
@@ -179,16 +180,14 @@ div.side-fig {
     margin: auto;
     display: flex;
     flex-wrap: wrap-reverse;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-evenly;
     position: relative;
     padding-top: 4rem;
-    @media(max-width:1510px) {
-        justify-content: center;
-    }
     h2 {
-        width: 100%;
         position: absolute;
         top: 0;
+        width: 100%;
         left: 0;
         text-align: center;
         &:target {
@@ -197,13 +196,16 @@ div.side-fig {
     }
     > div.outline-text-2 { // figure & move
         > figure {
-            max-width: 700px;
+            width: #{"min(700px, 100vw)"};
+            margin: 10px 0;
             @media(min-width:850px) {
-                max-width: #{"min(700px, 50vw)"};
+                width: #{"min(700px, 50vw)"};
             }
             img {
-                margin-left: 0;
                 width: 100%;
+                max-height: 500px;
+                object-fit: contain;
+                object-position: right center;
             }
         }
         .move {
@@ -284,10 +286,6 @@ html {
 
 body {
     margin-top: 2em;
-    // account for double-height header on mobile
-    @media(max-width:850px) {
-        margin-top: 4em;
-    }
     margin-left: var(--body-left);
     margin-right: var(--body-right);
     padding: var(--body-padding);
@@ -297,7 +295,8 @@ nav#main {
     background-color: var(--green);
     padding: 8px;
     margin-bottom: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 0.9em;
     font-family: var(--sans);
     /* fix the position for now - easy solution */
@@ -307,7 +306,7 @@ nav#main {
     left: 0;
     z-index: 1;
     a {
-        padding: 10px;
+        padding: 0 10px;
         text-decoration: none;
         font-weight: 500;
         color: #fff;
@@ -315,19 +314,19 @@ nav#main {
             color: #eee;
         }
     }
-    img {
-        height: 2em;
-        margin-bottom: -0.5em;
-        + p {
-            display: inline-block;
-            font-weight: 700;
-            margin: 0;
-            color: #333;
+    p {
+        img {
+            height: 2em;
+            margin-bottom: -0.5em;
         }
+        display: inline-block;
+        font-weight: 700;
+        margin: 0;
+        color: #333;
     }
     #translate {
-        position: relative;
-        float: left;
+        position: absolute;
+        left: 1em;
         color: #5a8073;
         font-weight: bold;
         a {
@@ -341,13 +340,13 @@ nav#main {
         }
     }
     .view-source {
-        position: relative;
-        float: right;
+        position: absolute;
+        right: 1em;
+        align-self: center;
         color: #466259;
         font-weight: bold;
         line-height: 1.8;
         padding: 0 4px 2px 4px;
-        margin-right: 1em;
         border: none;
         background: #fff;
         border-radius: 2px;
@@ -356,10 +355,64 @@ nav#main {
             color: #304840;
         }
     }
+    label, input {
+        display: none;
+    }
+    @media(max-width:850px) {
+        flex-direction: column;
+        label {
+            display: block;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+            font-size: 1.6em;
+            margin-bottom: -1.15em;
+        }
+        p {
+            align-self: center;
+            margin-bottom: -0.4em;
+        }
+        a,#translate {
+            display: none;
+            align-self: center;
+        }
+        #translate {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2.2em;
+            line-height: 2.1;
+            text-align: right;
+            padding-right: 1em;
+            background-color: #fff4;
+        }
+        a.view-source {
+            position: initial;
+            right: unset;
+            align-self: baseline;
+            background-color: transparent;
+            position: relative;
+            top: 0.35em;
+            font-style: 0.7em;
+            margin-left: 10pt;
+            &::after {
+                content: ' view source';
+                font-weight: 400;
+            }
+        }
+        input:checked {
+            ~ a, ~ #translate {
+                display: block;
+            }
+            ~ #translate a {
+                display: inline-block;
+            }
+        }
+    }
 }
 
 nav + div.banner.large {
-    margin-top: calc(0.9rem + 8px - var(--body-padding));
+    margin-top: calc(-1rem - var(--body-padding));
 }
 
 div.banner {
