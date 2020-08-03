@@ -4,7 +4,7 @@
 #+date: 2012-09-26
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>

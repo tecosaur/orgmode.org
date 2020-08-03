@@ -3,7 +3,7 @@
 #+email:     bzg at gnu dot org
 #+setupfile: setup.org
 #+description: Org Org-mode Emacs Talks about Org-mode
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>

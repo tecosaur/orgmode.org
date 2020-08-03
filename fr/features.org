@@ -4,7 +4,7 @@
 #+setupfile: ../setup.org
 #+language:  fr
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "../preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org mode permet de prendre des notes, de maintenir des listes TODO, de
@@ -17,7 +17,7 @@ planifier des projets et de publier des documents, le tout en texte brut.</em></
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/structure.jpg]]
+[[file:../resources/img/structure.jpg]]
 
 Org s'appuie sur =outline.el=.
 
@@ -45,7 +45,7 @@ Plus sur la [[https://orgmode.org/manual/Document-structure.html#Document-struct
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/planning.jpg]]
+[[file:../resources/img/planning.jpg]]
 
 Org peut être utilisé comme gestionnaire de listes TODO et de projets.
 
@@ -77,7 +77,7 @@ Gérer les [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][da
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/clocking.jpg]]
+[[file:../resources/img/clocking.jpg]]
 
 Chronométrer une tâche se fait avec =C-c C-x C-i=.
 
@@ -109,7 +109,7 @@ Plus sur le [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-t
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/agenda.jpg]]
+[[file:../resources/img/agenda.jpg]]
 
 Même avec des fichiers =.org= volumineux et des milliers de tâches, vous
 pouvez facilement vous concentrer sur ce que vous devez faire dans chaque
@@ -145,7 +145,7 @@ Tutoriel sur les [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-comm
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/capture.jpg]]
+[[file:../resources/img/capture.jpg]]
 
 Ajouter un item TODO à vos fichiers .org s'appelle /capturer/.
 
@@ -174,7 +174,7 @@ Plus sur la [[https://orgmode.org/manual/Capture.html#Capture][capture]] (manuel
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/table2.jpg]]
+[[file:../resources/img/table2.jpg]]
 
 Org fait des merveilles comme éditeur de tableaux en texte brut.
 
@@ -210,7 +210,7 @@ Utiliser [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Or
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/export.jpg]]
+[[file:../resources/img/export.jpg]]
 
 Org est un système de publication de documents.
 
@@ -249,7 +249,7 @@ Plus sur la [[https://orgmode.org/manual/Publishing.html#Publishing][publication
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/babel.jpg]]
+[[file:../resources/img/babel.jpg]]
 
 Org fait de la programmation littérale ([[http://en.wikipedia.org/wiki/Literate_programming][literate programming]]) un manière
 naturelle et pratique d'interagir avec du code source.
@@ -279,7 +279,7 @@ Liste des [[https://orgmode.org/worg/org-contrib/babel/languages.html][langages 
   :END:
 
 #+ATTR_HTML: :style float:right;box-shadow:none; :width 200px
-[[file:../img/mobile.png]]
+[[file:../resources/img/mobile.png]]
 
 /Richard Moreland/ a développé [[http://mobileorg.ncogni.to/][MobileOrg]], un logiciel libre pour iPhone et
 iPod touch permettant de stocker, chercher, voir et éditer des fichiers Org

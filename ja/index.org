@@ -5,7 +5,7 @@
 #+setupfile: ../setup.org
 #+keywords:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
 #+description: Org: ノート、計画、編集のための Emacs モード
-#+include: "../preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画、文書編集のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。<br />
@@ -19,7 +19,7 @@
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/main.jpg]]
+[[file:../resources/img/main.jpg]]
 
 安定版は、バージョン*9.3.7*です。（2020年06月現在）--- [[https://orgmode.org/org-9.3.7.tar.gz][tar.gz]] もしくは [[https://orgmode.org/org-9.3.7.zip][zip]] をダウンロードしてください。 ([[file:../Changes.org][リリースノート（英語）]]を読んでください。)
 
@@ -64,7 +64,7 @@ The //de facto// mimetype for org attachments is =text/org=.
   :END:
 
 #+ATTR_HTML: :style float:right; :width 300px
-[[file:../img/org-mode-7-network-theory.jpg]]
+[[file:../resources/img/org-mode-7-network-theory.jpg]]
 
 マニュアル（完全版）： [[https://orgmode.org/org.html][HTML]], [[https://takaxp.github.io/org-ja.html][HTML(v7.5,jp)]] もしくは [[https://orgmode.org/org.pdf][PDF]]
 

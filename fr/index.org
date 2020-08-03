@@ -4,7 +4,7 @@
 #+setupfile: ../setup.org
 #+language:  fr
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "../preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org mode permet de prendre des notes,
@@ -19,7 +19,7 @@ de maintenir des listes TODO, de planifier des projets et de publier des documen
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/main.jpg]]
+[[file:../resources/img/main.jpg]]
 
 La version stable est la *9.3.7*, juin 2019. Voir les ([[file:../Changes.org][changements]]).
 
@@ -66,7 +66,7 @@ Plus sur [[https://orgmode.org/worg/dev/org-build-system.html][l'installation d'
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/org-mode-7-network-theory.jpg]]
+[[file:../resources/img/org-mode-7-network-theory.jpg]]
 
 Lire le manuel complet: [[https://orgmode.org/org.html][HTML]] ou [[https://orgmode.org/org.pdf][PDF]]
 

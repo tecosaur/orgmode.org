@@ -4,7 +4,7 @@
 #+setupfile: ../setup.org
 #+language:  ja
 #+description: Org Org-mode Emacs Talks about Org-mode
-#+include: "../preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。</em></p></div>

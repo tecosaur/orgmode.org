@@ -1,11 +1,11 @@
 #+title:       Org mode for Emacs -- Survey Results
 #+author:      Charles Cave
 #+email:       charles dot cave at gmail dot com
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 #+link_up:     index.html
 #+link_home:   https://orgmode.org
 #+description: Org Org-mode Emacs Survey results
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>

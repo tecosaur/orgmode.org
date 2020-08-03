@@ -3,7 +3,7 @@
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>
@@ -15,7 +15,7 @@
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:img/list.png]]
+[[file:resources/img/list.png]]
 
 The mailing list is /the/ central place for anything related to Org:
 help users, report bugs, suggest new features, etc.  Don't hesitate!
@@ -42,7 +42,7 @@ You can also keep track of [[https://updates.orgmode.org][important updates]].
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:img/worg.png]]
+[[file:resources/img/worg.png]]
 
 : ~$ git clone https://code.orgmode.org/bzg/worg.git
 
@@ -72,7 +72,7 @@ https://code.orgmode.org and ask to be added as a collaborator.
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:img/gsoc2012.png]]
+[[file:resources/img/gsoc2012.png]]
 
 In 2012, two students successfully achieved an Org mode [[http://code.google.com/soc/][Google Summer of
 Code]] project.
@@ -129,7 +129,7 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:img/gplus.png]]
+[[file:resources/img/gplus.png]]
 
 /Takaaki Ishikawa/ is maintaining [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] on Twitter and you can
 generally check [[https://twitter.com/#!/search/%2523orgmode][#orgmode]].
@@ -175,7 +175,7 @@ If you want to find other Org friends around, one way is to wear the famous
 Org shirt.  You can buy it [[http://orgmode.spreadshirt.com/][from the US]] or [[http://orgmode.spreadshirt.de/][from Europe]].
 
 #+ATTR_HTML: :style float:center; :width 300px
-[[file:img/shirts.jpg]]
+[[file:resources/img/shirts.jpg]]
 
 ** Move
    :PROPERTIES:
