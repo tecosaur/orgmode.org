@@ -33,7 +33,7 @@
 :END:
 
 #+ATTR_HTML: :class main-image
-[[file:resources/img/features/simple-syntax.png]]
+[[file:resources/img/features/simple-syntax.svg]]
                                           
 ** Description
 
@@ -176,7 +176,7 @@ More on [[https://orgmode.org/manual/Publishing.html#Publishing][publishing]] (m
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:resources/img/features/links.png]]
+[[file:resources/img/features/links.svg]]
 
 ** Description
 Org-mode isn't just capable out of the box, it's
@@ -255,7 +255,7 @@ Handling [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][date
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:resources/img/features/clocking.png]]
+[[file:resources/img/features/clocking.svg]]
 
 ** Description
 
@@ -285,7 +285,7 @@ More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time]
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:resources/img/features/agenda.png]]
+[[file:resources/img/features/agenda.svg]]
 
 ** Description
 
