@@ -1,4 +1,4 @@
-#+title:     Org mode for Emacs -- Features
+#+title: Features | Org mode
 #+author:    Carsten Dominik
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org

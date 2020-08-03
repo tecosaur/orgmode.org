@@ -1,4 +1,4 @@
-#+title:       Org mode for Emacs -- Your Life in Plain Text
+#+title:       Org mode for Emacs
 #+author:    Carsten Dominik
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
