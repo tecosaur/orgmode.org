@@ -44,27 +44,6 @@ need to get started is demonstrated in the image.
 
 More on [[https://orgmode.org/manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual)
 
-* Collapsable Editing
-  :PROPERTIES:
-  :CUSTOM_ID: editing
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-
-#+ATTR_HTML: :class main-image
-[[file:img/features/folding.gif]]
-
-** Description
-
-Org allows you to fold sections into an outline for graceful navigation, then
-seamlessly expand individual sections to read and edit using the =tab= key.
-
-You can easily navigate through headlines and (un)fold (sub)sections of
-your Org documents.
-
-*** More
-
-More on [[https://orgmode.org/manual/Document-structure.html#Document-structure][editing and document structure]] (manual)
-
 * Working with source code
   :PROPERTIES:
   :CUSTOM_ID: babel
@@ -75,6 +54,9 @@ More on [[https://orgmode.org/manual/Document-structure.html#Document-structure]
 [[file:resources/img/features/babel.gif]]
 
 ** Description
+
+Org gives you the capability to combine code (from any language(s)), rich markup
+like LaTeX, and meta-programming into a single cohesive work.
 
 Notebooks such as [[https://jupyter.org/][Jupyter]] and [[https://rmarkdown.rstudio.com/][R Markdown]] possess a subset of Org's functionality
 in their ability to write syntax-highlighted code and execute it within the
@@ -130,6 +112,27 @@ Org as a [[https://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spre
 Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
 
 Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
+
+* Collapsable Editing
+  :PROPERTIES:
+  :CUSTOM_ID: editing
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+ATTR_HTML: :class main-image
+[[file:resources/img/features/folding.gif]]
+
+** Description
+
+Org allows you to fold sections into an outline for graceful navigation, then
+seamlessly expand individual sections to read and edit using the =tab= key.
+
+You can easily navigate through headlines and (un)fold (sub)sections of
+your Org documents.
+
+*** More
+
+More on [[https://orgmode.org/manual/Document-structure.html#Document-structure][editing and document structure]] (manual)
 
 * Publishing
   :PROPERTIES:
@@ -196,23 +199,6 @@ on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], an
 In Org-mode, extensibility isn't an afterthought --- it's baked right into the
 foundations.
 
-* With your mobile phone
-  :PROPERTIES:
-  :CUSTOM_ID: mobile
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-
-#+ATTR_HTML: :style float:right;box-shadow:none; :width 400px
-[[file:img/external/beorg.png]]
-
-** Description
-
-On iOS you have the wonderful [[https://beorgapp.com/][beorg]], which supports many of Org's features, and
-can sync over a variety of services.
-
-On Android there is [[http://www.orgzly.com/][orgzly]], which is developed over on [[https://github.com/orgzly/orgzly-android][GitHub]].
-
-*** COMMENT More
 * Task Management
   :PROPERTIES:
   :CUSTOM_ID: planning
@@ -332,3 +318,20 @@ at later.
 
 More on [[https://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
 
+* With your mobile phone
+  :PROPERTIES:
+  :CUSTOM_ID: mobile
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+ATTR_HTML: :style float:right;box-shadow:none; :width 400px
+[[file:resources/img/external/beorg.png]]
+
+** Description
+
+On iOS you have the wonderful [[https://beorgapp.com/][beorg]], which supports many of Org's features, and
+can sync over a variety of services.
+
+On Android there is [[http://www.orgzly.com/][orgzly]], which is developed over on [[https://github.com/orgzly/orgzly-android][GitHub]].
+
+*** COMMENT More
