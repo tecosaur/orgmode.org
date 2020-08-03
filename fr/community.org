@@ -4,7 +4,7 @@
 #+setupfile: ../setup.org
 #+language:  fr
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "../preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org mode permet de prendre des notes, de maintenir des listes TODO, de
@@ -17,7 +17,7 @@ planifier des projets et de publier des documents, le tout en texte brut.</em></
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/list.png]]
+[[file:../resources/img/list.png]]
 
 La liste de discussion est /le/ lieu central pour tout ce qui est lié à
 Org : l'aide aux utilisateurs, les rapports de bogues, les suggestions
@@ -46,7 +46,7 @@ Vous pouvez aussi suivre les [[https://updates.orgmode.org][mises à jour import
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/worg.png]]
+[[file:../resources/img/worg.png]]
 
 =~$ git clone https://code.orgmode.org/bzg/worg.git=
 
@@ -76,7 +76,7 @@ https://code.orgmode.org et demandez à être ajouté comme contributeur.
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/gsoc2012.png]]
+[[file:../resources/img/gsoc2012.png]]
 
 En 2012, deux étudiants ont fini avec succès un projet [[http://code.google.com/soc/][Google Summer of
 Code]] lié à Org mode.
@@ -134,7 +134,7 @@ l'oeuvre.
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/gplus.png]]
+[[file:../resources/img/gplus.png]]
 
 /Takaaki Ishikawa/ maintient [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] sur Twitter et vous pouvez
 généralement consulter [[https://twitter.com/#!/search/%2523orgmode][#orgmode]].
@@ -182,7 +182,7 @@ célèbre t-shirt Org.  Vous pouvez l'acheter depuis [[http://orgmode.spreadshir
 [[http://orgmode.spreadshirt.com/][États-Unis]].
 
 #+ATTR_HTML: :style float:center; :width 300px
-[[file:../img/shirts.jpg]]
+[[file:../resources/img/shirts.jpg]]
 
 ** Move
    :PROPERTIES:

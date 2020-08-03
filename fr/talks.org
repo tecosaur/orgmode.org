@@ -4,7 +4,7 @@
 #+setupfile: ../setup.org
 #+language:  fr
 #+description: Org Org-mode Emacs Talks about Org-mode
-#+include: "../preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org mode permet de prendre des notes, de maintenir des listes TODO, de

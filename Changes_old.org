@@ -3,11 +3,11 @@
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 #+link:      git https://code.orgmode.org/bzg/org-mode/commit/%s
 #+link:      doc https://orgmode.org/worg/doc.html#%s
-#+html_head:     <link rel="stylesheet" href="org-changes.css" type="text/css" />
-#+include: "./preamble.html" export html
+#+html_head:     <link rel="stylesheet" href="/resources/style/org-changes.css" type="text/css" />
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>
@@ -279,8 +279,8 @@ you should expect to see something like:
 | ITEM          | CONFIRMED | Bananas | Confirmed Bananas |
 |---------------+-----------+---------+-------------------|
 | All shipments |           |      11 |                 4 |
-| Shipment 1    | [X]         |       4 |                 4 |
-| Shipment 2    | [ ]         |       7 |                 7 |
+| Shipment 1    | [X]       |       4 |                 4 |
+| Shipment 2    | [ ]       |       7 |                 7 |
 
 #+BEGIN_EXAMPLE
   ,#+STARTUP: shrink

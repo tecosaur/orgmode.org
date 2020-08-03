@@ -4,7 +4,7 @@
 #+setupfile: ../setup.org
 #+language:  ja
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "../preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。</em></p></div>
@@ -16,7 +16,7 @@
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/structure.jpg]]
+[[file:../resources/img/structure.jpg]]
 
 Org-modeは、 =outline.el= をベースに作られています。
 
@@ -42,7 +42,7 @@ Org-modeは、より素早い操作で扱えるようなキーバインドで =o
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/planning.jpg]]
+[[file:../resources/img/planning.jpg]]
 
 Org-modeは、TODOリストの管理ツールやプランナーとして使うことができます。
 
@@ -70,7 +70,7 @@ TODOキーワードから別のステータスに切り替えるには、 =C-c C
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/clocking.jpg]]
+[[file:../resources/img/clocking.jpg]]
 
 =C-c C-x C-i= で時間を測り始めて、 =C-c C-x C-o= で止めます。
 
@@ -98,7 +98,7 @@ Org-modeは、ナイスなレポートを作成するために、簡単に時間
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/agenda.jpg]]
+[[file:../resources/img/agenda.jpg]]
 
 Even with large =.org= files and thousands of tasks, it is easy to focus on
 what you need to do for each context.
@@ -133,7 +133,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/capture.jpg]]
+[[file:../resources/img/capture.jpg]]
 
 =.org= ファイルにTODOアイテムを追加することを、キャプチャと呼びます。
 
@@ -159,7 +159,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/table2.jpg]]
+[[file:../resources/img/table2.jpg]]
 
 Org-modeは、プレーンテキストを用いた素晴らしい表計算ができます。
 
@@ -195,7 +195,7 @@ Worgの Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.htm
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/export.jpg]]
+[[file:../resources/img/export.jpg]]
 
 Org-modeは、オーサリングツールであり、文書の公開ツールでもあります。
 
@@ -227,7 +227,7 @@ Worgの =HTML= 形式で公開するための[[https://orgmode.org/worg/org-tuto
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/babel.jpg]]
+[[file:../resources/img/babel.jpg]]
 
 Org-modeは、[[http://en.wikipedia.org/wiki/Literate_programming][文芸的プログラミング]]をソースコードを扱うための便利かつ自然な扱い方にします。
 
@@ -251,7 +251,7 @@ Org-modeは、[[http://en.wikipedia.org/wiki/Literate_programming][文芸的プ�
   :END:
 
 #+ATTR_HTML: :style float:right;box-shadow:none; :width 200px
-[[file:../img/mobile.png]]
+[[file:../resources/img/mobile.png]]
 
 /Richard Moreland/氏が、iOS向けのフリーソフトウェア、[[http://mobileorg.ncogni.to/][MobileOrg]]を開発しています。アイテムのソート、検索、閲覧、そして Orgファイルの編集が可能です。
 

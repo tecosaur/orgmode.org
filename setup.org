@@ -6,7 +6,6 @@
 #+macro:       next #+HTML: <div class="move">> <a href="#$1">documentation</a></div>
 #+macro:       previous #+HTML: <div class="move">< <a href="#$1">download and install</a></div>
 #+macro:       updown #+HTML: <div class="move"><a href="#$1">< $1</a> · <a href="#$2">$2 ></a></div>
-#+html_head:   <link rel="stylesheet" href="org.css" type="text/css" />
 #+html_head:   <meta name="flattr:id" content="8d9x0o"> 
 #+html_head:   <meta name="theme-color" content="#77aa99">
 #+html_head:   <meta property="og:title" content="Org Mode">
@@ -18,3 +17,4 @@
 #+html_head:   <meta property="og:image:type" content="image/svg">
 #+html_head:   <meta property="og:image:width" content="368">
 #+html_head:   <meta property="og:image:height" content="400">
+#+html_head:   <link rel="stylesheet" href="/resources/style/org.css" type="text/css" />

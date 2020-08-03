@@ -3,7 +3,7 @@
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org Org-mode Emacs Changes ChangeLog release notes archives
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>
@@ -2561,12 +2561,12 @@ There used to be a syntax for setting link attributes for HTML export by
 enclosing the attributes into double braces and adding them to the link
 itself, like
 
-: [[./img/a.jpg{{alt="an image"}}]]
+: [[./resources/img/a.jpg{{alt="an image"}}]]
 
 This syntax is not longer supported, use instead
 
 : #+ATTR_HTML: alt="an image"
-: [[./img/a.jpg]]
+: [[./resources/img/a.jpg]]
 
 ** Details
 
@@ -3754,7 +3754,7 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
     publishing to HTML.  For example, if you want to use the ALT and
     TITLE attributes of an inlined image, here is who to do this:
 
-    : [[./img/a.jpg{{alt="This is image A" title="Image with no action"}}]]
+    : [[./resources/img/a.jpg{{alt="This is image A" title="Image with no action"}}]]
 
     Thanks to Charles Chen for this idea.
 

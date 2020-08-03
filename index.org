@@ -3,13 +3,13 @@
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <div class="banner large">
   <p id="a-quote" class="small"></p>
   <div class="title">
-    <img src="/img/org-mode-unicorn.svg"/>
+    <img src="/resources/img/org-mode-unicorn.svg"/>
     <h2>
       Org-Mode
       <p class="subtitle">An innovative and intuitive plain text markup syntax</p>
@@ -35,16 +35,16 @@ projects, and authoring documents with a fast and effective plain-text
   Support via&ensp;
   <a href="https://liberapay.com/bzg" title="Donations always help"
          style="color: #d9b217">
-    <img class="inline" src="/img/external/librepay.svg"/>
+    <img class="inline" src="/resources/img/external/librepay.svg"/>
     LibrePay</a>,
   <a href="https://github.com/sponsors/bzg" title="Donations always help"
      style="color: #222">
-    <img class="inline" src="/img/external/github.svg"/>
+    <img class="inline" src="/resources/img/external/github.svg"/>
     GitHub</a>,
   or
   <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help"
      style="color: #253b80">
-    <img class="inline" src="/img/external/paypal.svg"/>
+    <img class="inline" src="/resources/img/external/paypal.svg"/>
     PayPal</a></p>
 </div>
 #+end_export

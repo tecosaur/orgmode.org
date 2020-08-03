@@ -4,7 +4,7 @@
 #+language:  ja
 #+keywords:  Org Emacs アウトライン 計画 ノート 編集 プロジェクト プレーンテキスト LaTeX HTML
 #+description: Org: ノート、計画、編集のための Emacs モード
-#+include: "../preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
 #+begin_export html
 <div id="top"><p><em>Org-mode は、ノートの保存、TODOリストの管理、プロジェクト計画のためのモードです。高速で効率的なプレーンテキストのシステムを使ってファイルを編集します。</em></p></div>
@@ -16,7 +16,7 @@
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/list.png]]
+[[file:../resources/img/list.png]]
 
 [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][メーリングリスト]]は誰でも購読できます。
 
@@ -38,7 +38,7 @@
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/worg.png]]
+[[file:../resources/img/worg.png]]
 
 =~$ git clone https://code.orgmode.org/bzg/worg.git=
 
@@ -66,7 +66,7 @@ GITとEmacs+Orgによる /wiki/ 、と考えてください。
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/gsoc2012.png]]
+[[file:../resources/img/gsoc2012.png]]
 
 2012年、二人の学生のプロジェクトが [[http://code.google.com/soc/][Google Summer of Code]] で採択されました。
 
@@ -119,7 +119,7 @@ VimOrganizerのたくさんの[[https://vimeo.com/17182850][スクリーンシ�
   :END:
 
 #+ATTR_HTML: :id main-image
-[[file:../img/gplus.png]]
+[[file:../resources/img/gplus.png]]
 
 /Takaaki Ishikawa/ 氏が、ツイッターボット（[[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]]）を管理しています。また、汎用的なハッシュタグもあります（[[https://twitter.com/#!/search/%2523orgmode][#orgmode]]）。
 
@@ -161,7 +161,7 @@ new TWTR.Widget({
 もしも、身近な人の中から Org-mode を使う友達を見つけたいなら、あの有名なOrgシャツを着てみることをお勧めします。 [[http://orgmode.spreadshirt.com/][アメリカ]]か、[[http://orgmode.spreadshirt.de/][ユーロ圏]]のショップで購入できます。
 
 #+ATTR_HTML: :style float:center; :width 300px
-[[file:../img/shirts.jpg]]
+[[file:../resources/img/shirts.jpg]]
 
 ** Move
    :PROPERTIES:

@@ -6,7 +6,7 @@
 #+tags:      NEW(n)
 #+typ_todo:  TODO IDEA WISH QUESTION INCONSISTENCY BUG | DONE DECLINED 
 #+description: Org Org-mode TODO list
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>

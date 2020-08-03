@@ -3,7 +3,7 @@
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
-#+include: "./preamble.html" export html
+#+include: "./resources/preamble.html" export html
 
 #+begin_export html
 <style>
@@ -33,8 +33,8 @@
 :END:
 
 #+ATTR_HTML: :class main-image
-[[file:img/features/simple-syntax.png]]
-
+[[file:resources/img/features/simple-syntax.png]]
+                                          
 ** Description
 
 Org mode can perform complex tasks, but it is built of a simple syntax. All you
@@ -72,7 +72,7 @@ More on [[https://orgmode.org/manual/Document-structure.html#Document-structure]
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:img/features/babel.gif]]
+[[file:resources/img/features/babel.gif]]
 
 ** Description
 
@@ -104,7 +104,7 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:img/features/tables.gif]]
+[[file:resources/img/features/tables.gif]]
 
 ** Description
 
@@ -138,7 +138,7 @@ Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org a
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:img/features/exports.gif]]
+[[file:resources/img/features/exports.gif]]
 
 ** Description
 
@@ -176,7 +176,7 @@ More on [[https://orgmode.org/manual/Publishing.html#Publishing][publishing]] (m
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:img/features/links.png]]
+[[file:resources/img/features/links.png]]
 
 ** Description
 Org-mode isn't just capable out of the box, it's
@@ -220,7 +220,7 @@ On Android there is [[http://www.orgzly.com/][orgzly]], which is developed over 
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:img/features/planning.gif]]
+[[file:resources/img/features/planning.gif]]
 
 ** Description
 
@@ -255,7 +255,7 @@ Handling [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][date
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:img/features/clocking.png]]
+[[file:resources/img/features/clocking.png]]
 
 ** Description
 
@@ -285,7 +285,7 @@ More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time]
   :END:
 
 #+ATTR_HTML: :class main-image
-[[file:img/features/agenda.png]]
+[[file:resources/img/features/agenda.png]]
 
 ** Description
 
@@ -316,7 +316,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
   :END:
 
 #+ATTR_HTML: :class main-image :style "filter: invert(96%) hue-rotate(270deg);"
-[[file:img/features/capturing.gif]]
+[[file:resources/img/features/capturing.gif]]
 
 ** Description
 
