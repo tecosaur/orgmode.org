@@ -385,7 +385,14 @@ div.banner {
   width: 100vw;
   padding: 20px 5px 10px 5px;
   text-align: center;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  div.banner #a-quote {
+    flex-basis: 100%;
+    max-width: none; }
   div.banner .title {
     display: flex;
     flex-wrap: wrap;
