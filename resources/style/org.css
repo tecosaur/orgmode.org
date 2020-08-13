@@ -113,7 +113,8 @@ h2 {
   font-size: 1em;
   line-height: 1.3em;
   margin-top: 40px;
-  margin-left: -130px; }
+  margin-left: -130px;
+  max-width: 55em; }
 
 *.outline-2 img {
   box-shadow: 5px 5px 5px #aaa;
@@ -138,14 +139,21 @@ code {
   box-shadow: 1px 1px 1px #aaa; }
 
 pre {
-  font-family: "Droid Sans Mono";
+  font-family: "Droid Sans Mono", monospace;
   font-size: .8em;
   font-weight: normal;
   line-height: 1.4em;
   background-color: #eeeeee;
-  padding: 2pt;
+  border-left: 4px solid #aaa;
   margin-right: 1pt;
-  box-shadow: 1px 1px 1px #aaa; }
+  padding: 0.4em 0.6em; }
+
+pre.src {
+  padding: 0.4em 0.6em; }
+  pre.src::before {
+    background-color: #e1e1e1;
+    border: none;
+    color: #444; }
 
 #orgquote {
   z-index: 1000;
@@ -187,7 +195,7 @@ div.side-fig {
   flex-direction: row;
   justify-content: space-evenly;
   position: relative;
-  padding-top: 4rem; }
+  padding-top: 5rem; }
   div.side-fig h2 {
     position: absolute;
     top: 0;
@@ -195,18 +203,19 @@ div.side-fig {
     left: 0;
     text-align: center; }
     div.side-fig h2:target {
-      top: calc(-10px - 2rem); }
+      top: calc(-10px - 3rem); }
   div.side-fig > div.outline-text-2 > figure {
     width: min(700px, 100vw);
     margin: 10px 0; }
     @media (min-width: 850px) {
       div.side-fig > div.outline-text-2 > figure {
         width: min(700px, 50vw); } }
-    div.side-fig > div.outline-text-2 > figure img {
+    div.side-fig > div.outline-text-2 > figure img, div.side-fig > div.outline-text-2 > figure object {
       width: 100%;
+      margin-left: 0;
       max-height: 500px;
       object-fit: contain;
-      object-position: right center; }
+      object-position: left center; }
   div.side-fig > div.outline-text-2 .move {
     position: absolute;
     top: 5rem;
@@ -273,10 +282,11 @@ html {
       scroll-behavior: auto; } }
 
 body {
-  margin-top: 2em;
+  margin-top: calc(2.3rem + 16px);
   margin-left: var(--body-left);
   margin-right: var(--body-right);
-  padding: var(--body-padding); }
+  padding: var(--body-padding);
+  padding-top: 0; }
 
 nav#main {
   background-color: var(--green);
@@ -284,7 +294,7 @@ nav#main {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  font-size: 0.9em;
+  font-size: 1rem;
   font-family: var(--sans);
   /* fix the position for now - easy solution */
   position: fixed;
@@ -454,5 +464,6 @@ h2[id]:target {
   padding-top: calc(40px + 2rem); }
 
 .date {
+  margin-top: 5rem;
   font-family: var(--sans);
   color: var(--dark-green); }

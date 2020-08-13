@@ -127,6 +127,7 @@ h2 {
     line-height: 1.3em;
     margin-top: 40px;
     margin-left: -130px;
+    max-width: 55em;
 }
 
 *.outline-2 img {
@@ -156,14 +157,22 @@ code {
 }
 
 pre {
-    font-family: "Droid Sans Mono";
+    font-family: "Droid Sans Mono", monospace;
     font-size: .8em;
     font-weight: normal;
     line-height: 1.4em;
     background-color: #eeeeee;
-    padding: 2pt;
+    border-left: 4px solid #aaa;
     margin-right: 1pt;
-    box-shadow: 1px 1px 1px #aaa;
+    padding: 0.4em 0.6em;
+}
+pre.src {
+    padding: 0.4em 0.6em; // override from `org-html-style-default'
+    &::before {
+        background-color: #e1e1e1;
+        border: none;
+        color: #444;
+    }
 }
 
 #orgquote {
@@ -212,7 +221,7 @@ div.side-fig {
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    padding-top: 4rem;
+    padding-top: 5rem;
     h2 {
         position: absolute;
         top: 0;
@@ -220,7 +229,7 @@ div.side-fig {
         left: 0;
         text-align: center;
         &:target {
-            top: calc(-10px - 2rem); // to account for added padding
+            top: calc(-10px - 3rem); // to account for added padding
         }
     }
     > div.outline-text-2 { // figure & move
@@ -230,11 +239,12 @@ div.side-fig {
             @media(min-width:850px) {
                 width: #{"min(700px, 50vw)"};
             }
-            img {
+            img,object {
                 width: 100%;
+                margin-left: 0;
                 max-height: 500px;
                 object-fit: contain;
-                object-position: right center;
+                object-position: left center;
             }
         }
         .move {
@@ -314,10 +324,11 @@ html {
 }
 
 body {
-    margin-top: 2em;
+    margin-top: calc(2.3rem + 16px); // nav
     margin-left: var(--body-left);
     margin-right: var(--body-right);
     padding: var(--body-padding);
+    padding-top: 0;
 }
 
 nav#main {
@@ -326,7 +337,7 @@ nav#main {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    font-size: 0.9em;
+    font-size: 1rem;
     font-family: var(--sans);
     /* fix the position for now - easy solution */
     position: fixed;
@@ -538,6 +549,7 @@ h2[id]:target {
 }
 
 .date {
+    margin-top: 5rem;
     font-family: var(--sans);
     color: var(--dark-green);
 }
