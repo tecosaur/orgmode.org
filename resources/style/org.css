@@ -309,14 +309,14 @@ nav#main {
     color: #fff; }
     nav#main a:hover {
       color: #eee; }
-  nav#main p {
-    display: inline-block;
-    font-weight: 700;
-    margin: 0;
-    color: #333; }
-    nav#main p img {
-      height: 2em;
-      margin-bottom: -0.5em; }
+    nav#main a p.logo {
+      display: inline-block;
+      font-weight: 700;
+      margin: 0;
+      color: #333; }
+      nav#main a p.logo img {
+        height: 2em;
+        margin-bottom: -0.5em; }
   nav#main #translate {
     position: absolute;
     left: 1em;
