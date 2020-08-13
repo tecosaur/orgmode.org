@@ -7,19 +7,21 @@
 
 #+begin_export html
 <div class="banner large">
-  <p id="a-quote" class="small"></p>
   <div class="title">
     <img src="/resources/img/org-mode-unicorn.svg"/>
     <h2>
       Org-Mode
-      <p class="subtitle">An innovative and intuitive plain text markup syntax</p>
+      <p class="subtitle">Convenient plain text markup and more</p>
     </h2>
   </div>
-  <p>Designed to be easily understood and manipulated by both humans and machines &mdash; it offers unparalleled versatility.</p>
-  <br/>
-  <p>Org mode is for keeping notes, maintaining To-Do Lists, planning
-projects, and authoring documents with a fast and effective plain-text
-    system.</p>
+  <div class="comment">
+    <p>An extensible major mode for <a href="https://www.gnu.org/software/emacs/"
+    style="color: #7150a1">Emacs</a>.</p>
+    <br/>
+    <p>Org mode is for keeping notes, maintaining To-Do Lists, planning
+      projects, and authoring documents with a fast and effective plain-text
+      system.</p>
+  </div>
 
 </div>
 <div class="banner slim green inline">
