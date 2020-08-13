@@ -353,16 +353,16 @@ nav#main {
         &:hover {
             color: #eee;
         }
-    }
-    p {
-        img {
-            height: 2em;
-            margin-bottom: -0.5em;
+        p.logo {
+            img {
+                height: 2em;
+                margin-bottom: -0.5em;
+            }
+            display: inline-block;
+            font-weight: 700;
+            margin: 0;
+            color: #333;
         }
-        display: inline-block;
-        font-weight: 700;
-        margin: 0;
-        color: #333;
     }
     #translate {
         position: absolute;
