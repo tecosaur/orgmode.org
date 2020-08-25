@@ -16,7 +16,7 @@
   </div>
   <div class="comment">
     <p>An extensible major mode for <a href="https://www.gnu.org/software/emacs/"
-    style="color: #7150a1">Emacs</a>.</p>
+    style="color: #7150a1; font-weight: bold">Emacs</a>.</p>
     <br/>
     <p>Org mode is for keeping notes, maintaining To-Do Lists, planning
       projects, and authoring documents with a fast and effective plain-text
