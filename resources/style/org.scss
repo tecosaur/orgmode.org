@@ -406,7 +406,9 @@ nav#main {
             color: #fff;
             line-height: 1;
             font-size: 1.6em;
-            margin-bottom: -1.15em;
+        }
+        > a:first-of-type {
+            margin-top: -1.8em;
         }
         p {
             align-self: center;
@@ -476,18 +478,24 @@ div.banner {
         justify-content: center;
         img {
             height: 20rem;
+            @media(max-width:850px) {
+                max-height: 10rem;
+            }
             margin-bottom: -0.5em;
         }
         h2 {
             color: #eee;
             font-family: var(--sans);
-            font-size: 4em;
+            font-size: 3em;
+            @media(max-width:850px) {
+                font-size: 2em;
+            }
             text-align: left;
             line-height: 1.2;
             margin-left: 0.2em;
             p.subtitle {
                 color: #222;
-                font-size: 3rem;
+                font-size: 0.5em;
                 max-width: 15em;
                 text-align: left;
             }
@@ -501,8 +509,11 @@ div.banner {
     &.large {
         padding: 50px 5px 80px 5px;
         background-color: var(--green);
-        @media(min-width:800px) {
+        @media(min-width:850px) {
             font-size: 2rem;
+        }
+        @media(max-width:850px) {
+            padding-top: 10px;
         }
     }
     &.slim {
