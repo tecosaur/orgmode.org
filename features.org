@@ -10,6 +10,7 @@
   .side-fig img {
     filter: invert(1.4%);
     box-shadow: none;
+    max-width: 100%;
   }
   #content,.outline-2,div.banner {
     margin-left: 0;
