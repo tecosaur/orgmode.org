@@ -206,7 +206,7 @@ div.side-fig {
       top: calc(-10px - 3rem); }
   div.side-fig > div.outline-text-2 > figure {
     width: min(700px, 100vw);
-    margin: 10px 0; }
+    margin: 26px 0 10px 0; }
     @media (min-width: 850px) {
       div.side-fig > div.outline-text-2 > figure {
         width: min(700px, 50vw); } }
