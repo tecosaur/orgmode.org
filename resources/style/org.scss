@@ -175,6 +175,51 @@ pre.src {
     }
 }
 
+example,
+.src {
+  color: #2c3e50; }
+  .example .org-keyword,
+  .src .org-keyword {
+    color: #3a81c3; }
+  .example .org-variable-name,
+  .src .org-variable-name {
+    color: #715ab1; }
+  .example .org-rainbow-delimiters-depth-1,
+  .example .org-rainbow-delimiters-depth-2,
+  .example .org-rainbow-delimiters-depth-3,
+  .example .org-rainbow-delimiters-depth-4,
+  .example .org-rainbow-delimiters-depth-5,
+  .example .org-rainbow-delimiters-depth-6,
+  .example .org-rainbow-delimiters-depth-7,
+  .example .org-rainbow-delimiters-depth-8,
+  .example .org-rainbow-delimiters-depth-9,
+  .src .org-rainbow-delimiters-depth-1,
+  .src .org-rainbow-delimiters-depth-2,
+  .src .org-rainbow-delimiters-depth-3,
+  .src .org-rainbow-delimiters-depth-4,
+  .src .org-rainbow-delimiters-depth-5,
+  .src .org-rainbow-delimiters-depth-6,
+  .src .org-rainbow-delimiters-depth-7,
+  .src .org-rainbow-delimiters-depth-8,
+  .src .org-rainbow-delimiters-depth-9 {
+    color: #555555; }
+  .example .org-string,
+  .src .org-string {
+    color: #2d9574; }
+  .example .org-comment,
+  .example .org-comment-delimiter,
+  .src .org-comment,
+  .src .org-comment-delimiter {
+    color: #555555; }
+  .example .org-function-name,
+  .src .org-function-name {
+    color: #6c3163; }
+  .example .org-constant,
+  .example .org-highlight-numbers-number,
+  .src .org-constant,
+  .src .org-highlight-numbers-number {
+    color: #4e3163; }
+
 #orgquote {
     z-index: 1000;
     position: fixed;
