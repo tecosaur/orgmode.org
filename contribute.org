@@ -1,0 +1,33 @@
+#+TITLE: Contribute | Org mode
+#+AUTHOR: TEC
+#+setupfile: setup.org
+#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+include: "./resources/preamble.html" export html
+
+* Contribute
+Org mode is built on the efforts of enthusiastic volunteers. If you too love
+Org, know that the two best things you can do to ensure the good heath of this
+project are donating to the maintainer, and helping out yourself.
+
+#+BEGIN_EXPORT html
+&emsp;Support via:&ensp;
+<a href="https://liberapay.com/bzg" title="Donations always help" style="color: #c7a416">
+  <img class="inline" src="/resources/img/external/librepay.svg"/> LibrePay</a>,
+<a href="https://github.com/sponsors/bzg" title="Donations always help" style="color: #222">
+<img class="inline" src="/resources/img/external/github.svg"/> GitHub</a>, or
+<a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help" style="color: #253b80">
+<img class="inline" src="/resources/img/external/paypal.svg"/> PayPal</a></p>
+#+END_EXPORT
+
+
+No matter your level of experience with Org/Emacs/elisp there are ways you can
+get in contact with [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to help push this project forward!
+- very little experience :: give feedback on your experience with org
+- a dash of experience :: help improve the documentation
+- some experience :: help test patches, track down bugs
+- moderate experience :: submit bug-fixes, improve features
+
+Just do whatever you feel comfortable with, I guarantee it will be appreciated.
+* The mailing list
+This is where everything happens. You can [[https://lists.gnu.org/archive/html/emacs-orgmode/][browse]] previous email, or even better
+[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the mailing list]] to stay in tune with the latest discussions.
