@@ -1,0 +1,109 @@
+#+TITLE: Quickstart | Org mode
+#+AUTHOR: TEC
+#+setupfile: setup.org
+#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+include: "./resources/preamble.html" export html
+
+* Getting started with Org-mode
+Overwhelmed by the manual? You're not alone. There's a lot that Org-mode /can/ do
+for you, but you don't need much to get started.
+
+At the start of a file, it is common to set some of the [[https://orgmode.org/manual/Export-Settings.html][export options]]
+#+BEGIN_SRC org
+,#+TITLE: My file
+,#+AUTHOR: myself
+#+END_SRC
+* Headings
+Lines starting with ~*~ are headings. A single ~*~ denotes 1st-level heading, ~**~
+denotes a 2nd-level heading, etc.
+#+BEGIN_SRC org
+,* Welcome to Org-mode
+Overwhelmed by the manual? You're not alone. There's a lot that Org-mode /can/ do
+for you, but you don't need much to get started.
+,** Sub-heading
+   Every extra ~*~ brings you to a lower heading level.
+#+END_SRC
+
+To make a header into a task, just start the heading with a task keyword like
+~TODO~ or ~HOLD~.
+* Text styles
+With org, *bold* /italic/ and _underline_ are all nice and simple. ~code~ and =verbatim=
+are also nice and easy. If you must, +strikethrough+ is also available.
+_/*Combine*/_ these as you'd like.
+
+#+BEGIN_EXAMPLE
+With org, *bold* /italic/ and _underline_ are all nice and simple. ~code~ and =verbatim=
+are also nice and easy. If you must, +strikethrough+ is also available.
+_/*Combine*/_ these as you'd like.
+#+END_EXAMPLE
+* Lists
+Start a list with any of: ~+~, ~-~, or ~*~ for un-ordered lists, and ~1.~, ~1)~, ~A.~, or ~A)~
+for ordered lists. Nest and mix these as you'd like :)
+
+#+BEGIN_SRC org
+To buy:
+1. Milk
+2. Eggs
+   - Organic
+3. Cheese
+   + Parmesan
+   + Mozzarella
+#+END_SRC
+
+Lists can also contain checkboxes: ~[ ]~, ~[-]~, ~[X]~
+#+BEGIN_SRC org
+- [ ] do
+- [-] the
+- [X] thing
+#+END_SRC
+* Images
+Just link to an image, and don't give a description. Seriously, that's it. \\
+~[[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]~
+
+#+attr_html: :height 120px
+[[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]
+* Links
+Just put a target in between two square brackets, like so: ~[[target]]~. Want to
+add a description? Just add a ~[description]~ after the target, i.e.
+~[[target][desc]]~.
+
+Org can handle a variety of different types of targets, which you use by giving
+~[target]~ as ~[type:target]~. When no ~type:~ is provided, org just searches for a
+heading which matches ~target~.
+
+A few examples:
+#+BEGIN_EXAMPLE
+[[https://orgmode.org][a nice website]]
+[[file:~/Pictures/dank-meme.png]]
+[[earlier heading][an earlier heading in the document]]
+#+END_EXAMPLE
+
+** More info
+For more information, see the manual sections on [[https://orgmode.org/manual/Internal-Links.html][Internal Links]] and [[https://orgmode.org/manual/External-Links.html#External-Links][External Links]].
+* Code blocks
+To just have a monospace block,
+
+#+BEGIN_SRC org
+,#+BEGIN_EXAMPLE
+monospace
+,#+END_EXAMPLE
+#+END_SRC
+
+If you want syntax highlighting and execution try
+#+BEGIN_SRC org
+,#+BEGIN_SRC python
+print("Hello world")
+,#+END_SRC
+#+END_SRC
+* Tables
+It's just like this comparison of existing Literate programming / reproducible
+research tools (taken from [[doi:10.18637/jss.v046.i03][this paper]]).
+#+BEGIN_SRC org
+| Tool         | Literate programming? | Reproducible Research? | Languages |
+|--------------+-----------------------+------------------------+-----------|
+| Javadoc      | partial               | no                     | Java      |
+| Haskell .lhs | partial               | no                     | Haskell   |
+| noweb        | yes                   | no                     | any       |
+| Sweave       | partial               | yes                    | R         |
+| Org-mode     | yes                   | yes                    | any       |
+#+END_SRC
