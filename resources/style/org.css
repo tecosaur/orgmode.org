@@ -131,12 +131,31 @@ h2 {
   padding-right: 5px;
   padding-left: 5px; }
 
-code {
+code, kbd {
   font-family: "Droid Sans Mono";
-  background-color: #eeeeee;
-  padding: 2pt;
-  margin-right: 1pt;
-  box-shadow: 1px 1px 1px #aaa; }
+  hyphens: none;
+  word-break: break-word;
+  white-space: normal;
+  word-wrap: break-word; }
+
+code {
+  color: #333;
+  background-color: #e8e8e8;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 85%; }
+
+kbd {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  color: #333;
+  line-height: 1.4;
+  margin: 0 .1em;
+  padding: .1em .6em;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 75%; }
 
 pre {
   font-family: "Droid Sans Mono", monospace;
@@ -149,11 +168,13 @@ pre {
   padding: 0.4em 0.6em; }
 
 pre.src {
-  padding: 0.4em 0.6em; }
+  padding: 0.4em 0.6em;
+  overflow-x: auto; }
   pre.src::before {
-    background-color: #e1e1e1;
+    background-color: #eeec;
     border: none;
-    color: #444; }
+    color: #555;
+    top: 0; }
 
 example,
 .src {
@@ -288,18 +309,6 @@ div.side-fig {
       padding: 5px; }
       div.side-fig > div.outline-3 > div.outline-4 h4 {
         display: none; }
-
-@media (max-width: 800px) {
-  code {
-    font-size: 85%; } }
-
-@media (min-width: 800px) and (max-width: 900px) {
-  code {
-    font-size: 75%; } }
-
-@media (min-width: 900px) {
-  code {
-    font-size: 85%; } }
 
 /* new content */
 :root {
