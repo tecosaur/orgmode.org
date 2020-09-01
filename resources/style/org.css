@@ -534,7 +534,8 @@ div.banner {
 
 img.inline {
   height: 1em;
-  margin-bottom: -0.2em; }
+  margin-bottom: -0.2em;
+  box-shadow: none; }
 
 #a-quote {
   font-style: italic;
