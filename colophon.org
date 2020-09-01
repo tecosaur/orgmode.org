@@ -30,7 +30,8 @@ recompilation, HTML exporting, and ~rsync~ all happen automatically.
           (message "Sassc error: %s" sassc-output)))
 
       (when (s-contains-p ".org" file-name)
-        (org-html-export-to-html)
+        (unless (string= (file-name-base file-name) "setup")
+          (org-html-export-to-html))
         (htmlize-file file-name (concat file-name ".html")))
 
       (unless bulk-save
