@@ -38,12 +38,12 @@
                                           
 ** Description
 
-Org mode can perform complex tasks, but it is built of a simple syntax. All you
+Org mode can perform complex tasks, but it is built off a simple syntax. All you
 need to get started is demonstrated in the image.
 
 *** More
 
-More on [[https://orgmode.org/manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual)
+More on [[file:manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual)
 
 * Working with source code
   :PROPERTIES:
@@ -76,7 +76,7 @@ produced from the very same file.
 
 *** More
 
-[[https://orgmode.org/manual/Working-with-source-code.html#Working-with-source-code][Working with source code]] (manual)
+[[file:manual/Working-with-Source-Code.html][Working with source code]] (manual)
 
 List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
 
@@ -93,7 +93,7 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
 
 Org is a great plain-text table editor.
 
-Use =tab= to move between cells, and =enter= for rows. The layout automatically is
+Use =TAB= to move between cells, and =ENTER= for rows. The layout is automatically
 reformatted as cell contents change.
 
 You can import tables from =.csv= and =.tsv= files, or directly from the
@@ -106,9 +106,9 @@ You can add formulas using the [[http://www.gnu.org/software/emacs/manual/html_m
 
 *** More
 
-The [[https://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][built-in table editor]] (manual)
+The [[file:manual/Built_002din-Table-Editor.html][built-in table editor]] (manual)
 
-Org as a [[https://orgmode.org/manual/The-spreadsheet.html#The-spreadsheet][spreadsheet]] system (manual)
+Org as a [[file:manual/The-Spreadsheet.html][spreadsheet]] system (manual)
 
 Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
 
@@ -133,7 +133,7 @@ your Org documents.
 
 *** More
 
-More on [[https://orgmode.org/manual/Document-structure.html#Document-structure][editing and document structure]] (manual)
+More on [[file:manual/Document-Structure.html][editing and document structure]] (manual)
 
 * Publishing
   :PROPERTIES:
@@ -150,9 +150,9 @@ Org provides great capability as an authoring and publishing tool.
 
 Use the intuitive Org markup syntax to create source documents that can exported
 into many different formats including:
-- =HTML=
-- $\LaTeX{}$
-- =ODT=
+- HTML
+- $\LaTeX$
+- ODT
 - and much more!
 
 Developers can easily create new backends for their favourite format
@@ -163,15 +163,15 @@ and one or more publication backends.
 
 *** More
 
-More on [[https://orgmode.org/manual/Markup.html#Markup][markup]] (manual)
+More on [[file:manual/Markup-for-Rich-Contents.html][markup]] (manual)
 
-More on [[https://orgmode.org/manual/Exporting.html#Exporting][exporting]] (manual)
+More on [[file:manual/Exporting.html][exporting]] (manual)
 
-More on [[https://orgmode.org/manual/Publishing.html#Publishing][publishing]] (manual)
+More on [[file:manual/Publishing.html][publishing]] (manual)
 
-[[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to =HTML= (Worg)
+[[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to HTML (Worg)
 
-[[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX{}$ (Worg)
+[[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX$ (Worg)
 
 * Extensibility
   :PROPERTIES:
@@ -231,9 +231,9 @@ cookies, tags, properties, etc.
 
 *** More
 
-More on [[https://orgmode.org/manual/TODO-items.html#TODO-items][TODO items]] (manual)
+More on [[file:manual/TODO-Items.html][TODO items]] (manual)
 
-Handling [[https://orgmode.org/manual/Dates-and-times.html#Dates-and-times][dates and times]] (manual)
+Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
 
 * Time Tracking (Clocking)
   :PROPERTIES:
@@ -263,7 +263,7 @@ you can customize as needed.
 
 *** More
 
-More on [[https://orgmode.org/manual/Clocking-work-time.html#Clocking-work-time][clocking tasks]] (manual)
+More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
 
 * Agendas
   :PROPERTIES:
@@ -292,7 +292,7 @@ while stabilizing it.
 
 *** More
 
-More on [[https://orgmode.org/manual/Agenda-views.html#Agenda-views][agendas views]] (manual)
+More on [[file:manual/Agenda-Views.html][agendas views]] (manual)
 
 Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
 
@@ -317,7 +317,7 @@ at later.
 
 *** More
 
-More on [[https://orgmode.org/manual/Capture.html#Capture][capturing]] (manual)
+More on [[file:manual/Capture.html][capturing]] (manual)
 
 * With your mobile phone
   :PROPERTIES:
