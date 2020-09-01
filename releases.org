@@ -1,4 +1,4 @@
-#+title:     Org mode for Emacs -- Release notes
+#+title:     Release notes | Org mode
 #+author:    Carsten Dominik
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
@@ -12,6 +12,21 @@
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
+
+#+begin_export html
+<style>
+  .outline-3 {
+    background-color: initial;
+    border-left: none;
+    width: initial;
+    padding: 0;
+  }
+  h3 {
+    display: initial;
+  }
+</style>
+#+end_export
+
 
 * Version 9.3
 
@@ -479,4 +494,4 @@ I.e. treat the whole file as if it was a subtree.
 
 * Older changes
 
-For older Changes, see [[file:Changes_old.org][old changes]].
+For older Changes, see [[file:changes-old.org][old changes]].
