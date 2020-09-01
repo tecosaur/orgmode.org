@@ -56,6 +56,21 @@ html {
     border-radius: 10px;
 }
 
+
+button.btn, a.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin: 5px 0px;
+    color: #fff;
+    background-color: var(--green);
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: var(--dark-green);
+    }
+}
+
 a {
     text-decoration: none;
     /* color: #1c3030; */

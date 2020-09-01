@@ -51,6 +51,18 @@ html {
   background: #EEE;
   border-radius: 10px; }
 
+button.btn, a.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 3px;
+  margin: 5px 0px;
+  color: #fff;
+  background-color: var(--green); }
+  button.btn:hover, a.btn:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--dark-green); }
+
 a {
   text-decoration: none;
   /* color: #1c3030; */
@@ -332,7 +344,6 @@ div.side-fig {
       --body-left: 80px;
       --body-right: 50px;
       --body-padding: 30px; } }
-
 * {
   box-sizing: border-box; }
 
@@ -341,7 +352,6 @@ html {
   @media screen and (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto; } }
-
 body {
   margin-top: calc(2.3rem + 16px);
   margin-left: var(--body-left);
