@@ -1,4 +1,4 @@
-#+title:  Org mode for Emacs -- Old Release notes
+#+title:  Old Release notes | Org mode
 #+author:    Carsten Dominik
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
@@ -11,6 +11,20 @@
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>
+#+end_export
+
+#+begin_export html
+<style>
+  .outline-3 {
+    background-color: initial;
+    border-left: none;
+    width: initial;
+    padding: 0;
+  }
+  h3 {
+    display: initial;
+  }
+</style>
 #+end_export
 
 * Version 9.2
@@ -8280,5 +8294,4 @@ Org now contains a new freemind exporter, /org-freemind.el/.
 
 * Older changes
 
-For even older Changes, see [[file:changes_older.org][older changes]].
-
+For even older Changes, see [[file:changes-older.org][older changes]].
