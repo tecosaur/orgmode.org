@@ -10,8 +10,8 @@ for you, but you don't need much to get started.
 
 At the start of a file, it is common to set some of the [[https://orgmode.org/manual/Export-Settings.html][export options]]
 #+BEGIN_SRC org
-,#+TITLE: My file
-,#+AUTHOR: myself
+,#+title: My file
+,#+author: myself
 #+END_SRC
 * Headings
 Lines starting with ~*~ are headings. A single ~*~ denotes 1st-level heading, ~**~
