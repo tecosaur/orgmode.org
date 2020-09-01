@@ -30,6 +30,69 @@ get in contact with [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to h
 - moderate experience :: submit bug-fixes, improve features
 
 Just do whatever you feel comfortable with, I guarantee it will be appreciated.
+
 * The mailing list
-This is where everything happens. You can [[https://lists.gnu.org/archive/html/emacs-orgmode/][browse]] previous email, or even better
+This is where everything happens. You can [[https://orgmode.org/list/][browse]] previous email, or even better
 [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the mailing list]] to stay in tune with the latest discussions.
+
+* Copyright issues
+Org is constituted by many files, most of which are distributed as part of GNU
+Emacs. These are called the /Org core/, and are copyrighted by the [[http://www.fsf.org/][Free Software
+Foundation]] (FSF).
+
+If you'd like to contribute to these files, you'll [[http://www.gnu.org/licenses/why-assign.html][need]] to grant the FSF the
+right to include your files in GNU Emacs. To do this one simply needs to fill
+out [[https://orgmode.org/request-assign-future.txt][this form]], and email it to [[mailto:assign@gnu.org][assign@gnu.org]].
+
+* Patch conventions
+** Suggested workflow
+#+BEGIN_SRC shell
+~$ git pull
+~$ git branch my-changes
+~$ git checkout my-changed
+# make some changes
+~$ git commit -a -m "Definately following the commit conventions"
+# repeat a few times, as appropriate
+~$ git format-patch master
+# optional, see: https://git-send-email.io/
+~$ git send-email --to="emacs-orgmode@gnu.org" HEAD^
+#+END_SRC
+** Coding conventions
+ Org is part of Emacs, so any contribution should follow the [[http://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html][GNU Emacs Lisp coding conventions]] described in Emacs manual.
+** Commit messages
+We'd like commit messages to be structured like so,
+#+BEGIN_EXAMPLE
+main file/feature: overall change summary
+
+,* file-changed.el (function-changed, another-function): Description of
+the change implemented, reference any relevant `other-functions' or
+`variables' here.
+(another-changed-function): Change something.  Note the active voice,
+avoid passive forms.  Also write in full sentences.
+#+END_EXAMPLE
+
+Written out more formally,
+1. The first line should be the file/feature affected followed by a colon, and
+   an short description of the overall change
+2. The second line should be left blank
+3. From the third line, there should be ChangeLog entry each file changed, as
+   seen in the above example
+   - Quote variables and function names like ~`this'~
+   - Seperate sentences with *two* spaces
+   - Use the active form over the passive form
+4. Another empty line should follow
+5. (optional) any supplementary information explaining the patch
+6. If the change is made by a contributer /without/ FSF assignment, it can be
+   accepted as long as it is 15 lines or less. In this case add the =TINYCHANGE=
+   cookie (anywhere in the message)
+** Sending patches
+Use ~git diff~ or ~git format-patch~ to generate the patch files, then include them
+in an email to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] telling us about what you've done.
+If you have git's [[https://git-send-email.io/][send-email]] set up, you can use that.
+
+If you check [[https://orgmode.org/list/][the list]] and can't see your email after waiting at least 15
+minutes, you may have a looked a little dodgy to the robot email overlords.
+To get that email through [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] to the lists, and it should work.
+
+* Our beloved contributers
+Over on /Worg/ we keep a [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to Org's core.
