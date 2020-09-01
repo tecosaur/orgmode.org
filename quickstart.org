@@ -95,6 +95,9 @@ If you want syntax highlighting and execution try
 print("Hello world")
 ,#+END_SRC
 #+END_SRC
+
+** More info
+You can do a /lot/ with source code in org, see the [[https://orgmode.org/manual/Working-with-Source-Code.html][Manual]] for more information.
 * Tables
 It's just like this comparison of existing Literate programming / reproducible
 research tools (taken from [[doi:10.18637/jss.v046.i03][this paper]]).
