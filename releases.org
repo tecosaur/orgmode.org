@@ -6,27 +6,13 @@
 #+link:      doc https://orgmode.org/worg/doc.html#%s
 #+description: Org Org-mode Emacs Changes ChangeLog release notes
 #+html_head:     <link rel="stylesheet" href="/resouces/style/org-changes.css" type="text/css" />
-
 #+include: "./resources/preamble.html" export html
+
+#+include: "./resources/normal-outline-3.html" export html
 
 #+begin_export html
 <div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
-
-#+begin_export html
-<style>
-  .outline-3 {
-    background-color: initial;
-    border-left: none;
-    width: initial;
-    padding: 0;
-  }
-  h3 {
-    display: initial;
-  }
-</style>
-#+end_export
-
 
 * Version 9.3
 

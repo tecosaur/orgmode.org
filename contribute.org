@@ -4,6 +4,8 @@
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+include: "./resources/preamble.html" export html
 
+#+include: "./resources/normal-outline-3.html" export html
+
 * Contribute
 Org mode is built on the efforts of enthusiastic volunteers. If you too love
 Org, know that the two best things you can do to ensure the good heath of this

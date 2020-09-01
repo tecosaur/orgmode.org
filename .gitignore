@@ -1,4 +1,4 @@
 pub
 old
 *.html
-!preamble.html
+!resources/*.html
