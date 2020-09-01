@@ -32,3 +32,4 @@
 #+html_head:   <meta name="msapplication-TileColor" content="#77aa99">
 #+html_head:   <meta name="msapplication-config" content="/resources/img/favicons/browserconfig.xml">
 #+html_head:   <link rel="stylesheet" href="/resources/style/org.css" type="text/css" />
+#+html_head:   <link rel="preload" href="/resources/fonts/droid-serif.woff2" as="font" type="font/woff2" crossorigin="anonymous">
