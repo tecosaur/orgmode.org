@@ -9,22 +9,10 @@
 #+html_head:     <link rel="stylesheet" href="/resources/style/org-changes.css" type="text/css" />
 #+include: "./resources/preamble.html" export html
 
-#+begin_export html
-<div class="banner slim"> <p id="a-quote"></p> </div>
-#+end_export
+#+include: "./resources/normal-outline-3.html" export html
 
 #+begin_export html
-<style>
-  .outline-3 {
-    background-color: initial;
-    border-left: none;
-    width: initial;
-    padding: 0;
-  }
-  h3 {
-    display: initial;
-  }
-</style>
+<div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
 * Version 9.2
