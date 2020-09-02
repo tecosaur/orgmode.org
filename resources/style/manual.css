@@ -231,7 +231,8 @@ pre {
   border: 1px solid var(--nc-bg-3);
   border-radius: 4px;
   padding: 3px 6px;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  white-space: pre; }
 
 kbd {
   /* Makes the kbd element look like a keyboard key */
