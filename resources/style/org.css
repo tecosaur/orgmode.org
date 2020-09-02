@@ -30,7 +30,8 @@
 
 html {
   margin: 0;
-  font: 400 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif; }
+  font: 400 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
+  overflow-x: hidden; }
 
 #searchgmane {
   margin-left: 10pt; }

@@ -32,6 +32,11 @@
 html {
     margin: 0;
     font: 400 .9em/1.6em "Droid Serif", "Open Sans", Cambria, Georgia, "DejaVu Serif", serif;
+    // because otherwise 100vw triggers a horizontal scrollbar >:(
+    // this is alright because we should never have anything more than 100vw wide
+    // centered elements will now become off-centre by scrollbarwidth/2, but that
+    // seems acceptable
+    overflow-x: hidden;
 }
 
 #searchgmane {
@@ -529,7 +534,6 @@ nav + div.banner.large {
 
 div.banner {
     margin-left: calc(-130px - var(--body-left) - var(--body-padding));
-    // width: calc(100vw - 10px);
     width: 100vw;
     padding: 20px 5px 10px 5px;
     text-align: center;
