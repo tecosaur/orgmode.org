@@ -552,3 +552,15 @@ h2[id]:target {
   margin-top: 5rem;
   font-family: var(--sans);
   color: var(--dark-green); }
+
+#src {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding-top: calc(2.3rem + 16px); }
+  @media (max-width: 850px) {
+    #src {
+      padding-top: calc(1.4rem + 16px); } }
