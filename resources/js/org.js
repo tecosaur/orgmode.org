@@ -14,7 +14,7 @@ async function show_org_source() {
     const elem = document.getElementById("src")
     if (elem) {
         elem.parentNode.removeChild(elem);
-        document.body.style.overflowY = 'initial';
+        document.body.parentElement.style.overflowY = 'initial';
     } else {
         if (src_page === undefined) {
             await fetch_src();
@@ -23,7 +23,7 @@ async function show_org_source() {
         src.setAttribute("id", "src");
         src.src = "about:blank";
         document.body.appendChild(src);
-        document.body.style.overflowY = 'hidden';
+        document.body.parentElement.style.overflowY = 'hidden';
         sDoc = src.contentWindow.document;
         sDoc.open('text/html', 'replace');
         sDoc.write(src_page);
