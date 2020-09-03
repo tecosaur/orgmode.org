@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Droid Serif';
   font-style: normal;
@@ -556,21 +557,20 @@ h2[id]:target {
   justify-content: center;
   max-width: none;
   width: 100%;
-  margin-top: -1rem;
+  margin-top: 0;
   position: relative; }
-  .columns.no-heading {
-    margin-top: -4rem; }
-    .columns.no-heading h2 {
-      display: none; }
+  .columns.no-heading h2 {
+    display: none; }
   .columns h2 {
     position: absolute;
-    left: 0; }
+    left: 0;
+    top: -1.5em; }
   .columns .outline-3 {
     background: none;
     border: none;
     text-align: center;
-    width: 20rem;
-    min-height: 15rem; }
+    width: 18rem;
+    min-height: 10rem; }
     .columns .outline-3 a {
       display: block;
       text-decoration: none;
@@ -587,7 +587,8 @@ h2[id]:target {
     .columns .outline-3 h3 {
       display: block;
       position: relative;
-      top: 10rem;
+      top: 6.5rem;
+      margin-bottom: -2.5rem;
       pointer-events: none; }
 
 #src {
