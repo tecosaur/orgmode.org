@@ -8,6 +8,9 @@
 Overwhelmed by the manual? You're not alone. There's a lot that Org-mode /can/ do
 for you, but you don't need much to get started.
 
+You can start writing Org syntax in any plaintext editor, however to see what
+makes it /great,/ one really needs to *[[file:install.org][install]]* an editor with rich support.
+
 At the start of a file, it is common to set some of the [[https://orgmode.org/manual/Export-Settings.html][export options]]
 #+BEGIN_SRC org
 ,#+title: My file
@@ -110,3 +113,9 @@ research tools (taken from [[doi:10.18637/jss.v046.i03][this paper]]).
 | Sweave       | partial               | yes                    | R         |
 | Org-mode     | yes                   | yes                    | any       |
 #+END_SRC
+
+* Next steps
+Want to look up something in particular? You may want to give the [[file:manual/][manual]] ([[file:org.pdf][PDF]]) a
+glance. \\
+Looking for something in-between the manual and this quickstart? Give the [[file:guide/][guide]]
+([[file:orgguide.pdf][PDF]]) a shot.
