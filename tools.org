@@ -1,0 +1,195 @@
+#+title: Tools | Org mode
+#+author: TEC
+#+date:  2020-09-02
+#+setupfile: setup.org
+#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+include: "./resources/preamble.html" export html
+
+#+macro: link @@html:<a href="https://$1">@@
+#+macro: gh {{{link(github.com/$1)}}}
+#+macro: end-link @@html:</a>@@
+
+#+BEGIN_EXPORT html
+<style>
+  #content {
+    max-width: 80rem;
+  }
+  .columns .outline-3 .org-svg, .columns .outline-3 img {
+    height: 6.5rem;
+  }
+  .columns .outline-3 h3 {
+    top: 4.5rem;
+  }
+</style>
+#+END_EXPORT
+
+* Import & Export
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns
+:END:
+** Pandoc
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: starred
+:END:
+{{{link(pandoc.org)}}}
+[[https://lh3.googleusercontent.com/-S8Fwe-PISrU/WExNwRXJHKI/AAAAAAAAAFo/tRbv1NAYBWoEBitmvDRFY_bc5xv07lnMACLcB/s1600/pandoc.png]]
+
+The Swiss-army knife of markup format converters.
+It can convert documents between many source formats, including Org.
+{{{end-link}}}
+* Publishing
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns
+:END:
+** Hugo
+{{{link(gohugo.io)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/a/af/Logo_of_Hugo_the_static_website_generator.svg]]
+
+A static site generator written in Go, supports Org natively.
+{{{end-link}}}
+** Org-Jekyll
+{{{link(orgmode.org/worg/org-tutorials/org-jekyll.html)}}}
+[[https://cdn.worldvectorlogo.com/logos/jekyll.svg]]
+
+A way to combine Org with a simple, blog aware, static site generator.
+{{{end-link}}}
+** org2blog
+{{{link(renard.github.com/o-blog)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/3/31/Blogger.svg]]
+
+Stand-alone blogging system that does not require any external software
+{{{end-link}}}
+* Utilities
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns
+:END:
+** Memacs
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: starred
+:END:
+{{{gh(novoid/Memacs)}}}
+[[https://static.thenounproject.com/png/870-200.png]]
+
+A method to extract and analyse metadata from Org.
+{{{end-link}}}
+** org-manage
+{{{gh(dmgerman/org-manage)}}}
+[[https://static.thenounproject.com/png/3266143-200.png]]
+
+A module to help managing a large collection of org files.
+{{{end-link}}}
+** orgFixLinks
+{{{gh(cashTangoTangoCash/orgFixLinks)}}}
+[[https://static.thenounproject.com/png/2805259-200.png]]
+
+A script to try to repair file links.
+{{{end-link}}}
+* Parsers
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns
+:END:
+** Pico Lisp
+{{{link(bitbucket.org/joebo/pico-org/src)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/4/40/PicoLisp_Logo.svg]]
+
+/pico-org/ --- a tiny org-mode parser.
+{{{end-link}}}
+** Common Lisp
+{{{link(common-lisp.net/project/cl-org-mode/)}}}
+[[https://lispcookbook.github.io/cl-cookbook/assets/cl-logo-blue.png]]
+
+/cl-org-mode/ creates a tree of org-mode nodes.
+Includes (primitive) system for literate programming.
+{{{end-link}}}
+** NodeJS
+{{{link(/gioorgi.com/org-mode-parser/)}}}
+[[https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png]]
+
+org-mode-parser
+{{{end-link}}}
+** Python
+{{{gh(karlicoss/orgparse)}}}
+[[https://cdn.iconscout.com/icon/free/png-256/python-14-569257.png]]
+
+/orgparse/ creates a tree from an org file.
+{{{end-link}}}
+** Perl
+{{{link(metacpan.org/release/Org-Parser)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/f/f0/Cebolla_Chulita.png]]
+
+Org​::parser
+{{{end-link}}}
+** Ruby
+{{{gh(bdewey/org-ruby)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg]]
+
+/org-ruby/ is a gem (used by GitHub) for parsing Org files, and converting to HTML
+or textile.
+{{{end-link}}}
+** Rust
+{{{gh(Lythenas/rust-orgmode)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg]]
+
+/Orgize/ parses org files, and can render them to HTML.
+{{{end-link}}}
+** JavaScript
+{{{gh(orgapp/orgajs)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg]]
+
+/Orga/ parses Org files into a AST.
+{{{end-link}}}
+* Exporters
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns
+:END:
+** Drupal converter
+{{{link(drupal.org/project/orgmode)}}}
+[[https://www.drupal.org/files/EL_blue_RGB%281%29.png]]
+
+A drupal module able to import single files, such as articles, and transform them
+into nodes.
+{{{end-link}}}
+** Pandoc
+{{{gh(kawabata/ox-pandoc)}}}
+[[https://static.thenounproject.com/png/2710766-200.png]]
+
+/ox-pandoc/ hooks pandoc into Org's export functionality.
+{{{end-link}}}
+** ox-hugo
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: starred
+:END:
+{{{link(ox-hugo.scripter.co)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg]]
+
+An exporter to Hugo-compatable Markdown (Blackfriday), which allows for a bit
+more versatility.
+{{{end-link}}}
+** ox-*
+[[https://static.thenounproject.com/png/608341-200.png]]
+
+There are many more Emacs Org exporters. Just look around.
+* Importers
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns
+:END:
+** Pandoc
+{{{gh(tecosaur/org-pandoc-import)}}}
+[[https://static.thenounproject.com/png/2404511-200.png]]
+
+/org-pandoc-import/ is an interface to pandoc which makes it trivial to convert
+other makups to org.
+{{{end-link}}}
+
+** VimWiki
+{{{gh(fasheng/vimwiki2org)}}}
+[[https://cdn.freebiesupply.com/logos/large/2x/vim-logo-png-transparent.png]]
+
+A simple tool to convert vimwiki file to Org
+{{{end-link}}}
+** Exchange calenders
+{{{gh(kautsig/ews-orgmode)}}}
+[[https://upload.wikimedia.org/wikipedia/commons/e/ea/Microsoft_Exchange_%282019-present%29.svg]]
+
+A script to fetch your calendar from an exchange server and view it as an agenda.
+{{{end-link}}}
