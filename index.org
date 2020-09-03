@@ -55,15 +55,6 @@
 </div>
 #+end_export
 
-Org is, at heart, a structured plain text file. It has headers, sub-headers, and
-keywords that allow it to be easily parsed into agendas and to-do lists.
-
-It is constructed to be simple enough for the novice, yet powerful enough for the expert.
-
-The syntax is composed of a small collection of simple, yet generic structures. \\
-In an editor with rich support for the format, this allows Org to be elegantly
-used for a wide variety of purposes.
-
 * Highlights
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: columns no-heading
@@ -87,6 +78,19 @@ Start using Org. You'll never stop.
 Yes. Do this.
 @@html:</a>@@
 
+* Elaboration + demo image :ignore:
+Org is, at heart, a structured plain text file. It has headers, sub-headers, and
+keywords that allow it to be easily parsed into agendas and to-do lists.
+
+It is constructed to be simple enough for the novice, yet powerful enough for
+the expert.
+
+#+attr_html: :style max-width:45rem
+[[file:resources/img/main.svg]]
+
+The syntax is composed of a small collection of simple, yet generic structures. \\
+In an editor with rich support for the format, this allows Org to be elegantly
+used for a wide variety of purposes.
 
 * Further reading
 
