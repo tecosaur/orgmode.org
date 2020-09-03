@@ -89,8 +89,9 @@ a:hover {
 
 #content {
   font-size: 1.2em;
-  margin-left: 130px;
-  line-height: 2em; }
+  line-height: 2em;
+  max-width: 60rem;
+  margin: auto; }
 
 #content p {
   padding-right: 7pt; }
@@ -126,8 +127,7 @@ h2 {
   font-size: 1em;
   line-height: 1.3em;
   margin-top: 40px;
-  margin-left: -130px;
-  max-width: 55em; }
+  width: 100%; }
 
 *.outline-2 img {
   margin-left: 50px;
@@ -355,8 +355,7 @@ body {
   margin-top: calc(2.3rem + 16px);
   margin-left: var(--body-left);
   margin-right: var(--body-right);
-  padding: var(--body-padding);
-  padding-top: 0; }
+  padding: var(--body-padding); }
 
 nav#main {
   background-color: var(--green);
@@ -461,7 +460,7 @@ nav + div.banner.large {
   margin-top: calc(-1rem - var(--body-padding)); }
 
 div.banner {
-  margin-left: calc(-130px - var(--body-left) - var(--body-padding));
+  margin-left: min(calc(0px - var(--body-left) - var(--body-padding)), calc(30rem - 50vw - 0.5*var(--body-left) + 0.5*var(--body-right)));
   width: 100vw;
   padding: 20px 5px 10px 5px;
   text-align: center;

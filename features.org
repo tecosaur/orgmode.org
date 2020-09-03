@@ -12,8 +12,8 @@
     box-shadow: none;
     max-width: 100%;
   }
-  #content,.outline-2,div.banner {
-    margin-left: 0;
+  #content {
+    max-width: none;
   }
   body {
     padding: 1em 0;
