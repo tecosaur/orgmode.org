@@ -17,37 +17,39 @@
   </div>
   <div class="comment">
     <p>An extensible major mode for <a href="https://www.gnu.org/software/emacs/"
-    style="color: #7150a1; font-weight: bold">Emacs</a>.</p>
+                                       style="color: #7150a1; font-weight: bold">Emacs</a>.</p>
     <br/>
-    <p>Org mode is for keeping notes, maintaining To-Do Lists, planning
-      projects, and authoring documents with a fast and effective plain-text
+    <p>Org mode is for keeping notes, maintaining to-do Lists, planning
+      projects, authoring documents, computational notebooks, literate
+      programming, and more &mdash; in a fast and effective plain-text
       system.</p>
   </div>
 
 </div>
 <div class="banner slim green inline">
   <p>
-  Created by <a target="new"
-  href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a> in 2003,
-  maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a> and
-  developed by
-  <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</p>
+    Created by
+    <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>
+    in <a target="new" href="/manual/History-and-Acknowledgments.html">2003</a>,
+    maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a>
+    and developed by
+    <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</p>
   &ensp;
   <p>
-  Support via&ensp;
-  <a href="https://liberapay.com/bzg" title="Donations always help"
-         style="color: #d9b217">
-    <img class="inline" src="/resources/img/external/librepay.svg" alt="LibrePay logo"/>
-    LibrePay</a>,
-  <a href="https://github.com/sponsors/bzg" title="Donations always help"
-     style="color: #222">
-    <img class="inline" src="/resources/img/external/github.svg" alt="GitHub logo"/>
-    GitHub</a>,
-  or
-  <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help"
-     style="color: #253b80">
-    <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypal logo"/>
-    PayPal</a></p>
+    Support via&ensp;
+    <a href="https://liberapay.com/bzg" title="Donations always help"
+       style="color: #d9b217">
+      <img class="inline" src="/resources/img/external/librepay.svg" alt="LibrePay logo"/>
+      LibrePay</a>,
+    <a href="https://github.com/sponsors/bzg" title="Donations always help"
+       style="color: #222">
+      <img class="inline" src="/resources/img/external/github.svg" alt="GitHub logo"/>
+      GitHub</a>,
+    or
+    <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help"
+       style="color: #253b80">
+      <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypal logo"/>
+      PayPal</a></p>
 </div>
 #+end_export
 
