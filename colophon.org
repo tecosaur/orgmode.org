@@ -25,7 +25,10 @@ recompilation, HTML exporting, and ~rsync~ all happen automatically.
                (not (s-contains-p ".git" file-name))
                (not batch-export))
       (when (s-contains-p ".scss" file-name)
-        (setq sassc-output (shell-command-to-string "sassc org.scss org.css"))
+        (setq sassc-output (shell-command-to-string
+                            (format "sassc %s %s"
+                                    file-name
+                                    (concat (file-name-sans-extension file-name) ".css"))))
         (unless (string-empty-p sassc-output)
           (message "Sassc error: %s" sassc-output)))
 
@@ -38,8 +41,19 @@ recompilation, HTML exporting, and ~rsync~ all happen automatically.
         (message "= Performing bulk save (triggerd by %s." file-name)
         (let ((bulk-save t))
           (save-some-buffers t)
-          (async-shell-command (format "rsync -avz --delete %s imh:/home/thedia18/public_html/tecosaur.com/orgmode/" org-website-folder)
-                               (get-buffer-create "*orgweb rsync*")))))))
+
+          (temp-buffer-window-show
+           (get-buffer-create "*orgweb rsync*"))
+          (set-process-sentinel
+           (start-process
+            "rsync"
+            (get-buffer "*orgweb rsync*")
+            "rsync"
+            "-avz" "--delete" org-website-folder "imh:/home/thedia18/public_html/tecosaur.com/orgmode/")
+           (lambda (p e)
+             (when (= 0 (process-exit-status p))
+               (delete-window (get-buffer-window "*orgweb rsync*"))))))))))
+
 
 (add-hook #'after-save-hook 'org-website-sync)
 #+END_SRC
