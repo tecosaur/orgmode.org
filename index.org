@@ -5,6 +5,8 @@
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+include: "./resources/preamble.html" export html
 
+#+include: "./resources/normal-outline-3.html" export html
+
 #+begin_export html
 <div class="banner large">
   <div class="title">
@@ -53,88 +55,104 @@
 </div>
 #+end_export
 
-* Installation
-  :PROPERTIES:
-  :CUSTOM_ID: intro
-  :END:
+Org is, at heart, a structured plain text file. It has headers, sub-headers, and
+keywords that allow it to be easily parsed into agendas and to-do lists.
 
-#+ATTR_HTML: :id main-image
-[[file:img/main.jpg]]
+It is constructed to be simple enough for the novice, yet powerful enough for the expert.
 
-The stable version of Org is *9.3.7*, as of June 2020.  See the [[file:Changes.org][release notes]].
+The syntax is composed of a small collection of simple, yet generic structures. \\
+In an editor with rich support for the format, this allows Org to be elegantly
+used for a wide variety of purposes.
 
-Get it with =M-x package-install RET org RET= (see [[https://orgmode.org/elpa.html][Org ELPA]]).
+* Highlights
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns no-heading
+:END:
+** Features
+@@html:<a href="features.html">@@
+[[file:resources/img/stars.svg]]
 
-Or download it as a [[https://orgmode.org/org-9.3.7.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.3.7.zip][zip]] archives.
+There are /dozens/ of them.
+@@html:</a>@@
+** Quickstart
+@@html:<a href="quickstart.html">@@
+[[file:resources/img/quickstart.svg]]
 
-You can browse the development version from [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] or clone the repo:
+Start using Org. You'll never stop.
+@@html:</a>@@
+** Contribute
+@@html:<a href="contribute.html">@@
+[[file:resources/img/contribute.svg]]
 
-=~$ git clone https://code.orgmode.org/bzg/org-mode.git=
+Yes. Do this.
+@@html:</a>@@
 
-Daily snapshots of the development version: [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]]
 
-- [[file:features.org][List of features]]
-- [[#docs][Manuals and tutorials]]
-- [[https://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
-- [[file:community.org][Mailing list and goodies]]
-- [[https://orgmode.org/worg/][Worg: community-written docs]]
-- [[file:talks.org][Talks about Org mode]]
-- [[https://orgmode.org/worg/org-tools/index.html][Org tools (outside Emacs)]]
-- [[https://orgmode.org/community.html#gsoc][Google Summer of Code 2012]]
-- [[https://orgmode.org/org.html#History-and-Acknowledgments][History and acknowledgements]]
+* Further reading
 
-The //de facto// mimetype for org attachments is =text/org=.
+The latest stable release of Org is *9.3.7*, as of June 2020.
+#+begin_center
+#+attr_html: :class btn inline
+[[file:releases.org][Release notes]]
+#+attr_html: :class btn inline
+[[https://updates.orgmode.org/][Updates]]
+#+end_center
 
-** More
+To read a bit more about Org, other than the [[file:quickstart.org][quickstart]] and [[file:manual/index.html][manual]], there's also
+a [[file:guide/index.html][guide]], and [[https://orgmode.org/worg/][Worg]] is a wealth of community-written docs.
 
-Check out the [[https://orgmode.org/manual/Installation.html][installation instructions]].
+Once you've used Org for a bit, you'll know it's great --- but did you know it's
+so great that there have been [[https://orgmode.org/worg/org-papers.html][(scientific) papers]] written about the value of Org
+for [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][reproducible research]].
 
-Worg will tell you more on the [[https://orgmode.org/worg/dev/org-build-system.html][build options]] and on how to [[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on the
-bleeding edge]].
+* More Org
 
-** Move
-   :PROPERTIES:
-   :ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
+Org's /de facto/ mimetype is =text/org=. Most systems don't recognise ~.org~ by
+default, but they usually can be made to without too much effort.
 
-{{{next(docs)}}}
+While much of Org's features are self-contained, there are a number of [[file:tools.org][tools]]
+which work with Org.
+#+begin_center
+#+attr_html: :class btn
+[[file:tools.org][Tools which work with Org]]
+#+end_center
 
-* Documentation and literature
-  :PROPERTIES:
-  :CUSTOM_ID: docs
-  :END:
+* [[https://orgmode.org/worg/][Worg]], a /World/ of Org
+There's so much one may want to say about Org-mode, that it's impossible to
+cleanly keep track of it here. That's why [[https://orgmode.org/worg/][Worg]] was created.
 
-#+ATTR_HTML: :width 300px :style float:right;
-[[file:img/org-mode-7-network-theory.jpg]]
+It's a Git repository of =.org= pages published as an HTML website. Think of it as
+a wiki. New contributors are welcome, just create a user on [[https://code.orgmode.org][code.orgmode.org]] and
+ask to be added as a collaborator.
 
-Browse the [[https://orgmode.org/manual/index.html][manual]] (one page per section).
+: ~$ git clone https://code.orgmode.org/bzg/worg.git
 
-Read the complete manual: [[https://orgmode.org/org.html][HTML]] or [[https://orgmode.org/org.pdf][PDF]]
+This is a community effort to provide useful information pertaining to Org-mode.
+You'll find it linked to in quite a few places. For instance, it contains:
++ [[https://orgmode.org/worg/org-faq.html][The FAQ]]
++ [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
++ [[https://orgmode.org/worg/org-tutorials/index.html][A list of tutorials]]
++ [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands, and options]]
++ and much more
 
-Read the compact guide: [[https://orgmode.org/guide/][HTML]] or [[https://orgmode.org/orgguide.pdf][PDF]]
+* Org in the wild
+** Chatting about Org
+You can connect with other org-thusiasts via IRC at ~#orgmode~ on [[https://freenode.net/][freenode]].
 
-Check the [[https://orgmode.org/worg/org-faq.html][FAQ]], the [[https://orgmode.org/worg/org-hacks.html][hacks]], and [[https://orgmode.org/worg/org-tutorials/][tutorials]] on [[https://orgmode.org/worg/][Worg]].
-
-Check the reference [[https://orgmode.org/worg/doc.html][docs]] about hooks, commands and options.
-
-Check the list of [[https://orgmode.org/worg/org-papers.html][(scientific) papers]] about Org mode.
-
-Before submitting a bug report, make sure you read the [[https://orgmode.org/org.html#Feedback]["Feedback"]] section
-of the manual.
-
-You may also read [[http://www.catb.org/esr/faqs/smart-questions.html][How To Ask Questions The Smart Way]], by Eric S. Raymond
-and Rick Moen.
-
-=M-x org-submit-bug-report RET=
-
-Network-Theory Ltd. has published a printed version of the Org manual
-but it is not available anymore.
-
-** Move
-   :PROPERTIES:
-   :ID:       move
-   :HTML_CONTAINER_CLASS: move
-   :END:
-
-{{{previous(intro)}}}
+There's also a mailing list which you can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] to, and browse the archives
+of ([[https://orgmode.org/list/][main]], [[https://lists.gnu.org/archive/html/emacs-orgmode/][alternative]]).
+** Writing about Org
++ [[https://www.viktorbengtsson.com/blog/org-mode-for-writers/][Org-mode for writers]]
++ [[https://blog.jethro.dev/posts/how_to_take_smart_notes_org/][How To Take Smart Notes With Org-mode · Jethro Kuan]]
++ [[https://opensource.com/article/20/4/emacs-org-mode][Use Emacs Org mode to easily create LaTeX documents | Opensource.com]]
++ [[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Org as a Word Processor]]
++ [[http://www.howardism.org/Technical/Emacs/literate-devops.html][Literate DevOps]]
+** Talking about Org
++ [[https://www.youtube.com/watch?v=oJTwQvgfgMM][Google Tech Talk]] (2008) :: Delivered by Carsten Dominick.
++ Max Planck Institute for Neurological Research (2010) :: Recording lost to the
+  sands of time.
++ [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010) :: Interview of Carsten Dominic.
++ [[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html][GHM Paris]] (2011) :: Org Demo by Bastien Guerry.
++ [[https://www.youtube.com/watch?v=wiMSzI6VHhM][GPN12]] (2012) :: Florain Adamsky's in-depth presentation ([[http://florian.adamsky.it/research/talks/gpn12/GPN12-Emacs-Org-mode.pdf][slides]]).
++ [[https://www.youtube.com/watch?v=SzA2YODtgK4][Thoughtbot]] (2016) :: Getting started with Org Mode by Harry Schwartz
++ [[https://www.youtube.com/watch?v=0g9BcZvQbXU][Consistent Technical Documents Using Emacs and Org Mode]] :: Mike Hamrick
