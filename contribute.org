@@ -7,7 +7,7 @@
 #+include: "./resources/normal-outline-3.html" export html
 
 * Contribute
-Org mode is built on the efforts of enthusiastic volunteers. If you too love
+Org mode is [[file:manual/History-and-Acknowledgments.html][built on the efforts of enthusiastic volunteers]]. If you too love
 Org, know that the two best things you can do to ensure the good heath of this
 project are donating to the maintainer, and helping out yourself.
 
@@ -24,7 +24,7 @@ project are donating to the maintainer, and helping out yourself.
 
 No matter your level of experience with Org/Emacs/elisp there are ways you can
 get in contact with [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to help push this project forward!
-- very little experience :: give feedback on your experience with org
+- very little experience :: give [[file:manual/Feedback.html][feedback]] on your experience with org
 - a dash of experience :: help improve the documentation
 - some experience :: help test patches, track down bugs
 - moderate experience :: submit bug-fixes, improve features
