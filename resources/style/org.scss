@@ -691,6 +691,25 @@ h2[id]:target {
     }
 }
 
+.starred {
+    position: relative;
+    &::before {
+        content: '🟊';
+        text-align: right;
+        padding: 0 1.5px 4px 2.5px;
+        line-height: 1.1;
+        width: 20px;
+        height: 20px;
+        background: #77aaff;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
+
+    }
+}
+
 // when viewieng src
 #src {
     position: fixed;
