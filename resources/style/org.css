@@ -363,7 +363,7 @@ nav#main {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: var(--sans);
   /* fix the position for now - easy solution */
   position: fixed;
@@ -385,7 +385,7 @@ nav#main {
       color: #333; }
       nav#main a p.logo img {
         height: 2em;
-        margin-bottom: -0.5em; }
+        margin-bottom: -0.6em; }
   nav#main #translate {
     position: absolute;
     left: 1em;
@@ -404,8 +404,8 @@ nav#main {
     align-self: center;
     color: #466259;
     font-weight: bold;
-    line-height: 1.8;
-    padding: 0 4px 2px 4px;
+    line-height: 1.5;
+    padding: 0 4px 3px 4px;
     border: none;
     background: #fff;
     border-radius: 2px; }
