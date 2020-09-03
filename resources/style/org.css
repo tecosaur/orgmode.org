@@ -101,7 +101,8 @@ h1.title {
   display: none; }
 
 h3 {
-  display: none; }
+  display: none;
+  font-size: 1.4em; }
 
 .outline-3 {
   background-color: #eaeaea;
@@ -356,7 +357,8 @@ body {
   margin-top: calc(2.3rem + 16px);
   margin-left: var(--body-left);
   margin-right: var(--body-right);
-  padding: var(--body-padding); }
+  padding: var(--body-padding);
+  padding-top: 0; }
 
 nav#main {
   background-color: var(--green);
@@ -551,6 +553,9 @@ h2[id]:target {
   font-family: var(--sans);
   color: var(--dark-green); }
 
+.inline {
+  display: inline-block; }
+
 .columns {
   display: flex;
   flex-wrap: wrap;
@@ -564,7 +569,7 @@ h2[id]:target {
   .columns h2 {
     position: absolute;
     left: 0;
-    top: -1.5em; }
+    top: -1.2em; }
   .columns .outline-3 {
     background: none;
     border: none;
