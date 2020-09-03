@@ -591,6 +591,22 @@ h2[id]:target {
       margin-bottom: -2.5rem;
       pointer-events: none; }
 
+.starred {
+  position: relative; }
+  .starred::before {
+    content: '🟊';
+    text-align: right;
+    padding: 0 1.5px 4px 2.5px;
+    line-height: 1.1;
+    width: 20px;
+    height: 20px;
+    background: #77aaff;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 100%, 100% 0); }
+
 #src {
   position: fixed;
   left: 0;
