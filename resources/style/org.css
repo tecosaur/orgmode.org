@@ -550,6 +550,46 @@ h2[id]:target {
   font-family: var(--sans);
   color: var(--dark-green); }
 
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: none;
+  width: 100%;
+  margin-top: -1rem;
+  position: relative; }
+  .columns.no-heading {
+    margin-top: -4rem; }
+    .columns.no-heading h2 {
+      display: none; }
+  .columns h2 {
+    position: absolute;
+    left: 0; }
+  .columns .outline-3 {
+    background: none;
+    border: none;
+    text-align: center;
+    width: 20rem;
+    min-height: 15rem; }
+    .columns .outline-3 a {
+      display: block;
+      text-decoration: none;
+      color: inherit; }
+      .columns .outline-3 a a {
+        display: initial; }
+    .columns .outline-3 .org-svg, .columns .outline-3 img {
+      width: auto;
+      margin-left: 0;
+      height: 8.5rem;
+      max-width: 80%;
+      padding-bottom: 2rem;
+      pointer-events: none; }
+    .columns .outline-3 h3 {
+      display: block;
+      position: relative;
+      top: 10rem;
+      pointer-events: none; }
+
 #src {
   position: fixed;
   left: 0;

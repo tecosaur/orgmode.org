@@ -641,6 +641,55 @@ h2[id]:target {
     color: var(--dark-green);
 }
 
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: none;
+    width: 100%;
+    margin-top: -1rem;
+    position: relative;
+    &.no-heading {
+    margin-top: -4rem;
+        h2 {
+            display: none;
+        }
+    }
+    h2 {
+        position: absolute;
+        left: 0;
+    }
+    .outline-3 {
+        background: none;
+        border: none;
+        text-align: center;
+        width: 20rem;
+        min-height: 15rem;
+        a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            a {
+                display: initial;
+            }
+        }
+        .org-svg, img {
+            width: auto;
+            margin-left: 0;
+            height: 8.5rem;
+            max-width: 80%;
+            padding-bottom: 2rem;
+            pointer-events: none;
+        }
+        h3 {
+            display: block;
+            position: relative;
+            top: 10rem;
+            pointer-events: none;
+        }
+    }
+}
+
 // when viewieng src
 #src {
     position: fixed;
