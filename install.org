@@ -6,12 +6,10 @@
 * Installation
 Org's core is part of [[https://www.gnu.org/software/emacs/][Emacs]], if you have Emacs, you have =org-mode= available to use.
 
-#+BEGIN_EXPORT html
-<div style="width: 100%; text-align: center">
-  <a class="btn" href="https://www.gnu.org/software/emacs/">Get Emacs</a>
-</div>
-#+END_EXPORT
-
+#+begin_center
+#+attr_html: :class btn
+[[https://www.gnu.org/software/emacs/][Get Emacs]]
+#+end_center
 
 You can also add org as a package, in order to run the latest version, using
 ~M-x package-install RET org RET~ (see [[file:elpa.html][Org ELPA]]).
@@ -23,6 +21,8 @@ cloning the repo:
 ~$ git clone https://code.orgmode.org/bzg/org-mode.git
 #+END_SRC
 Daily snapshots of the development version: [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]].
+
+Worg will tell you more on the [[https://orgmode.org/worg/dev/org-build-system.html][build options]] and on how to [[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on the bleeding edge]].
 
 One will also find a large number of packages to augment Org on [[https://melpa.org/#/?q=org-mode&sort=downloads&asc=false][MELPA]].
 
