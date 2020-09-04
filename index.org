@@ -21,9 +21,9 @@
     <p>An extensible major mode for <a href="https://www.gnu.org/software/emacs/"
                                        style="color: #7150a1; font-weight: bold">Emacs</a>.</p>
     <br/>
-    <p>Org mode is for keeping notes, maintaining to-do Lists, planning
+    <p>Org mode is for keeping notes, maintaining to-do lists, planning
       projects, authoring documents, computational notebooks, literate
-      programming, and more &mdash; in a fast and effective plain-text
+      programming, and more &mdash; in a fast and effective plain text
       system.</p>
   </div>
 
@@ -79,18 +79,12 @@ Yes. Do this.
 @@html:</a>@@
 
 * Elaboration + demo image :ignore:
-Org is, at heart, a structured plain text file. It has headers, sub-headers, and
-keywords that allow it to be easily parsed into agendas and to-do lists.
-
-It is constructed to be simple enough for the novice, yet powerful enough for
-the expert.
+Org is a highly flexible structured plain text file format, composed of a few
+simple, yet versatile, structures --- constructed to be both [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the
+novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
 
 #+attr_html: :style max-width:45rem
 [[file:resources/img/main.svg]]
-
-The syntax is composed of a small collection of simple, yet generic structures. \\
-In an editor with rich support for the format, this allows Org to be elegantly
-used for a wide variety of purposes.
 
 * Further reading
 
@@ -102,10 +96,10 @@ The latest stable release of Org is *9.3.7*, as of June 2020.
 [[https://updates.orgmode.org/][Updates]]
 #+end_center
 
-To read a bit more about Org, other than the [[file:quickstart.org][quickstart]] and [[file:manual/index.html][manual]], there's also
-a [[file:guide/index.html][guide]], and [[https://orgmode.org/worg/][Worg]] is a wealth of community-written docs.
+As well at the [[file:quickstart.org][quickstart]] and [[file:manual/index.html][manual]], there's also
+a [[file:guide/index.html][guide]], and a wealth of community-written docs on [[https://orgmode.org/worg/][Worg]] .
 
-Once you've used Org for a bit, you'll know it's great --- but did you know it's
+Once you've used Org for a bit, you'll know it's great --- it's actually
 so great that there have been [[https://orgmode.org/worg/org-papers.html][(scientific) papers]] written about the value of Org
 for [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][reproducible research]].
 
@@ -158,5 +152,5 @@ of ([[https://orgmode.org/list/][main]], [[https://lists.gnu.org/archive/html/em
 + [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010) :: Interview of Carsten Dominic.
 + [[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html][GHM Paris]] (2011) :: Org Demo by Bastien Guerry.
 + [[https://www.youtube.com/watch?v=wiMSzI6VHhM][GPN12]] (2012) :: Florain Adamsky's in-depth presentation ([[http://florian.adamsky.it/research/talks/gpn12/GPN12-Emacs-Org-mode.pdf][slides]]).
-+ [[https://www.youtube.com/watch?v=SzA2YODtgK4][Thoughtbot]] (2016) :: Getting started with Org Mode by Harry Schwartz
-+ [[https://www.youtube.com/watch?v=0g9BcZvQbXU][Consistent Technical Documents Using Emacs and Org Mode]] :: Mike Hamrick
++ [[https://www.youtube.com/watch?v=SzA2YODtgK4][Thoughtbot]] (2016) :: Getting started with Org Mode by Harry Schwartz.
++ [[https://www.youtube.com/watch?v=0g9BcZvQbXU][YouTube]] (2019) :: Consistent Technical Documents Using Emacs and Org Mode, by Mike Hamrick.

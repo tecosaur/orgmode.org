@@ -91,7 +91,7 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
 
 ** Description
 
-Org is a great plain-text table editor.
+Org is a great plain text table editor.
 
 Use =TAB= to move between cells, and =ENTER= for rows. The layout is automatically
 reformatted as cell contents change.
