@@ -208,58 +208,125 @@ pre {
 pre.src {
     padding: 0.4em 0.6em; // override from `org-html-style-default'
     overflow-x: auto;
+    position: relative;
     &::before {
+        display: none;
+        position: absolute;
+        right: 10px;
+        padding: 3px;
         background-color: #eeec;
-        border: none;
         color: #555;
         top: 0;
     }
+    &:hover::before {
+        display: inline;
+    }
 }
 
-example,
-.src {
-  color: #2c3e50; }
-  .example .org-keyword,
-  .src .org-keyword {
-    color: #3a81c3; }
-  .example .org-variable-name,
-  .src .org-variable-name {
-    color: #715ab1; }
-  .example .org-rainbow-delimiters-depth-1,
-  .example .org-rainbow-delimiters-depth-2,
-  .example .org-rainbow-delimiters-depth-3,
-  .example .org-rainbow-delimiters-depth-4,
-  .example .org-rainbow-delimiters-depth-5,
-  .example .org-rainbow-delimiters-depth-6,
-  .example .org-rainbow-delimiters-depth-7,
-  .example .org-rainbow-delimiters-depth-8,
-  .example .org-rainbow-delimiters-depth-9,
-  .src .org-rainbow-delimiters-depth-1,
-  .src .org-rainbow-delimiters-depth-2,
-  .src .org-rainbow-delimiters-depth-3,
-  .src .org-rainbow-delimiters-depth-4,
-  .src .org-rainbow-delimiters-depth-5,
-  .src .org-rainbow-delimiters-depth-6,
-  .src .org-rainbow-delimiters-depth-7,
-  .src .org-rainbow-delimiters-depth-8,
-  .src .org-rainbow-delimiters-depth-9 {
-    color: #555555; }
-  .example .org-string,
-  .src .org-string {
-    color: #2d9574; }
-  .example .org-comment,
-  .example .org-comment-delimiter,
-  .src .org-comment,
-  .src .org-comment-delimiter {
-    color: #555555; }
-  .example .org-function-name,
-  .src .org-function-name {
-    color: #6c3163; }
-  .example .org-constant,
-  .example .org-highlight-numbers-number,
-  .src .org-constant,
-  .src .org-highlight-numbers-number {
-    color: #4e3163; }
+pre.src-org:before { content: 'Org mode'; }
+pre.src-shell:before { content: 'Shell'; }
+
+example, .src {
+    color: #2c3e50;
+}
+.example .org-keyword, .src .org-keyword {
+    color: #3a81c3;
+}
+.example .org-variable-name, .src .org-variable-name {
+    color: #715ab1;
+}
+.example .org-rainbow-delimiters-depth-1,
+.example .org-rainbow-delimiters-depth-2,
+.example .org-rainbow-delimiters-depth-3,
+.example .org-rainbow-delimiters-depth-4,
+.example .org-rainbow-delimiters-depth-5,
+.example .org-rainbow-delimiters-depth-6,
+.example .org-rainbow-delimiters-depth-7,
+.example .org-rainbow-delimiters-depth-8,
+.example .org-rainbow-delimiters-depth-9,
+.src .org-rainbow-delimiters-depth-1,
+.src .org-rainbow-delimiters-depth-2,
+.src .org-rainbow-delimiters-depth-3,
+.src .org-rainbow-delimiters-depth-4,
+.src .org-rainbow-delimiters-depth-5,
+.src .org-rainbow-delimiters-depth-6,
+.src .org-rainbow-delimiters-depth-7,
+.src .org-rainbow-delimiters-depth-8,
+.src .org-rainbow-delimiters-depth-9 {
+    color: #555555;
+}
+.example .org-string, .src .org-string {
+    color: #2d9574;
+}
+.example .org-comment,
+.example .org-comment-delimiter,
+.src .org-comment,
+.src .org-comment-delimiter {
+    color: #555555;
+}
+.example .org-function-name,
+.src .org-function-name {
+    color: #6c3163;
+}
+.example .org-constant,
+.example .org-highlight-numbers-number,
+.src .org-constant,
+.src .org-highlight-numbers-number {
+    color: #4e3163;
+}
+
+.org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+.org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+.org-center { margin-left: auto; margin-right: auto; text-align: center; }
+
+table {
+    border-collapse:collapse;
+}
+caption.t-above {
+    caption-side: top; }
+caption.t-bottom {
+    caption-side: bottom; }
+td, th {
+    vertical-align:top; }
+th.org-right  {
+    text-align: center; }
+th.org-left   {
+    text-align: center; }
+th.org-center {
+    text-align: center; }
+td.org-right  {
+    text-align: right; }
+td.org-left   {
+    text-align: left; }
+td.org-center {
+    text-align: center; }
+
+dt {
+    font-weight: bold; }
+
+.footpara {
+    display: inline; }
+.footdef  {
+    margin-bottom: 1em; }
+
+.figure {
+    padding: 1em; }
+.figure p {
+    text-align: center; }
+
+.equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+.equation {
+    vertical-align: middle;
+}
+.equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
 
 #orgquote {
     z-index: 1000;
@@ -281,7 +348,8 @@ example,
     filter:alpha(opacity=100);
 }
 
-.move { 
+.move {
+    
     font-weight: 800;
     color: var(--dark-green);
     position: relative;
@@ -312,6 +380,9 @@ div.side-fig {
         position: absolute;
         top: 0;
         width: 100%;
+        @media(min-width:850px) {
+            width: 95%; // no idea why this is needed
+        }
         left: 0;
         text-align: center;
         &:target {
@@ -398,7 +469,7 @@ html {
 }
 
 body {
-    margin-top: calc(2.3rem + 16px); // nav
+    margin-top: calc(2.0rem + 15px); // nav
     margin-left: var(--body-left);
     margin-right: var(--body-right);
     padding: var(--body-padding);
@@ -430,7 +501,9 @@ nav#main {
         p.logo {
             img {
                 height: 2em;
-                margin-bottom: -0.6em;
+                margin-bottom: -0.8em;
+                position: relative;
+                top: -0.2em;
             }
             display: inline-block;
             font-weight: 700;
@@ -460,7 +533,7 @@ nav#main {
         color: #466259;
         font-weight: bold;
         line-height: 1.5;
-        padding: 0 4px 3px 4px;
+        padding: 0 4px 0px 4px;
         border: none;
         background: #fff;
         border-radius: 2px;

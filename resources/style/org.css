@@ -182,23 +182,32 @@ pre {
 
 pre.src {
   padding: 0.4em 0.6em;
-  overflow-x: auto; }
+  overflow-x: auto;
+  position: relative; }
   pre.src::before {
+    display: none;
+    position: absolute;
+    right: 10px;
+    padding: 3px;
     background-color: #eeec;
-    border: none;
     color: #555;
     top: 0; }
+  pre.src:hover::before {
+    display: inline; }
 
-example,
-.src {
+pre.src-org:before {
+  content: 'Org mode'; }
+
+pre.src-shell:before {
+  content: 'Shell'; }
+
+example, .src {
   color: #2c3e50; }
 
-.example .org-keyword,
-.src .org-keyword {
+.example .org-keyword, .src .org-keyword {
   color: #3a81c3; }
 
-.example .org-variable-name,
-.src .org-variable-name {
+.example .org-variable-name, .src .org-variable-name {
   color: #715ab1; }
 
 .example .org-rainbow-delimiters-depth-1,
@@ -221,8 +230,7 @@ example,
 .src .org-rainbow-delimiters-depth-9 {
   color: #555555; }
 
-.example .org-string,
-.src .org-string {
+.example .org-string, .src .org-string {
   color: #2d9574; }
 
 .example .org-comment,
@@ -240,6 +248,79 @@ example,
 .src .org-constant,
 .src .org-highlight-numbers-number {
   color: #4e3163; }
+
+.org-right {
+  margin-left: auto;
+  margin-right: 0px;
+  text-align: right; }
+
+.org-left {
+  margin-left: 0px;
+  margin-right: auto;
+  text-align: left; }
+
+.org-center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+table {
+  border-collapse: collapse; }
+
+caption.t-above {
+  caption-side: top; }
+
+caption.t-bottom {
+  caption-side: bottom; }
+
+td, th {
+  vertical-align: top; }
+
+th.org-right {
+  text-align: center; }
+
+th.org-left {
+  text-align: center; }
+
+th.org-center {
+  text-align: center; }
+
+td.org-right {
+  text-align: right; }
+
+td.org-left {
+  text-align: left; }
+
+td.org-center {
+  text-align: center; }
+
+dt {
+  font-weight: bold; }
+
+.footpara {
+  display: inline; }
+
+.footdef {
+  margin-bottom: 1em; }
+
+.figure {
+  padding: 1em; }
+
+.figure p {
+  text-align: center; }
+
+.equation-container {
+  display: table;
+  text-align: center;
+  width: 100%; }
+
+.equation {
+  vertical-align: middle; }
+
+.equation-label {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle; }
 
 #orgquote {
   z-index: 1000;
@@ -288,6 +369,9 @@ div.side-fig {
     width: 100%;
     left: 0;
     text-align: center; }
+    @media (min-width: 850px) {
+      div.side-fig h2 {
+        width: 95%; } }
     div.side-fig h2:target {
       top: calc(-10px - 3rem); }
   div.side-fig > div.outline-text-2 > figure {
@@ -354,7 +438,7 @@ html {
     html {
       scroll-behavior: auto; } }
 body {
-  margin-top: calc(2.3rem + 16px);
+  margin-top: calc(2.0rem + 15px);
   margin-left: var(--body-left);
   margin-right: var(--body-right);
   padding: var(--body-padding);
@@ -388,7 +472,9 @@ nav#main {
       color: #333; }
       nav#main a p.logo img {
         height: 2em;
-        margin-bottom: -0.6em; }
+        margin-bottom: -0.8em;
+        position: relative;
+        top: -0.2em; }
   nav#main #translate {
     position: absolute;
     left: 1em;
@@ -408,7 +494,7 @@ nav#main {
     color: #466259;
     font-weight: bold;
     line-height: 1.5;
-    padding: 0 4px 3px 4px;
+    padding: 0 4px 0px 4px;
     border: none;
     background: #fff;
     border-radius: 2px; }
