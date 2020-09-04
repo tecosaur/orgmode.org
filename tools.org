@@ -20,6 +20,9 @@
   .columns .outline-3 h3 {
     top: 4.5rem;
   }
+  body {
+    padding-top: 2.5rem;
+  }
 </style>
 #+END_EXPORT
 

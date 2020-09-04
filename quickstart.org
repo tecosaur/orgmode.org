@@ -5,13 +5,13 @@
 #+include: "./resources/preamble.html" export html
 
 * Getting started with Org-mode
-Overwhelmed by the manual? You're not alone. There's a lot that Org-mode /can/ do
-for you, but you don't need much to get started.
+There's a lot that Org-mode /can/ do for you, but you don't need much to get started.
 
-You can start writing Org syntax in any plaintext editor, however to see what
+You can start writing Org syntax in any plain text editor, however to see what
 makes it /great,/ one really needs to *[[file:install.org][install]]* an editor with rich support.
 
-At the start of a file, it is common to set some of the [[https://orgmode.org/manual/Export-Settings.html][export options]]
+At the start of a file, it is common to set a title and author
+(these are two of the [[https://orgmode.org/manual/Export-Settings.html][export options]] --- think file properties).
 #+BEGIN_SRC org
 ,#+title: My file
 ,#+author: myself
@@ -21,8 +21,6 @@ Lines starting with ~*~ are headings. A single ~*~ denotes 1st-level heading, ~*
 denotes a 2nd-level heading, etc.
 #+BEGIN_SRC org
 ,* Welcome to Org-mode
-Overwhelmed by the manual? You're not alone. There's a lot that Org-mode /can/ do
-for you, but you don't need much to get started.
 ,** Sub-heading
    Every extra ~*~ brings you to a lower heading level.
 #+END_SRC
