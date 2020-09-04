@@ -11,13 +11,13 @@
 #+html_head:   <meta property="twitter:card" content="summary_large_image">
 #+html_head:   <meta property="twitter:title" content="Org Mode">
 #+html_head:   <meta property="twitter:description" content="Org: an Emacs Mode for Notes, Planning, Authoring, and more!">
-#+html_head:   <meta property="twitter:image" content="http://orgmode.org/resources/img/social-card.png">
+#+html_head:   <meta property="twitter:image" content="https://orgmode.org/resources/img/social-card.png">
 #+html_head:   <meta property="twitter:image:alt" content="Org-mode. Complex so you don't have to be. A versatile organisationay system with immense capabilities.">
 #+html_head:   <meta property="og:title" content="Org Mode">
 #+html_head:   <meta property="og:type" content="website">
 #+html_head:   <meta property="og:url" content="https://orgmode.org">
 #+html_head:   <meta property="og:description" content="Org: an Emacs Mode for Notes, Planning, Authoring, and more!">
-#+html_head:   <meta property="og:image" content="http://orgmode.org/resources/img/social-card.png">
+#+html_head:   <meta property="og:image" content="https://orgmode.org/resources/img/social-card.png">
 #+html_head:   <meta property="og:image:alt" content="Org-mode. Complex so you don't have to be. A versatile organisationay system with immense capabilities.">
 #+html_head:   <meta property="og:image:type" content="image/svg">
 #+html_head:   <meta property="og:image:width" content="1280">
