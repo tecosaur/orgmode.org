@@ -571,6 +571,11 @@ div.banner {
       @media (max-width: 850px) {
         div.banner .title img {
           max-height: 10rem; } }
+      div.banner .title img[src="/resources/img/org-mode-unicorn.svg"] {
+        width: 18.125rem; }
+        @media (max-width: 850px) {
+          div.banner .title img[src="/resources/img/org-mode-unicorn.svg"] {
+            max-width: 9.0625rem; } }
     div.banner .title h2 {
       color: #eee;
       font-family: var(--sans);
