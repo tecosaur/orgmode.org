@@ -34,7 +34,9 @@ recompilation, HTML exporting, and ~rsync~ all happen automatically.
 
       (when (s-contains-p ".org" file-name)
         (unless (string= (file-name-base file-name) "setup")
-          (org-html-export-to-html))
+          (let ((org-html-style-default "")
+                (org-html-scripts ""))
+            (org-html-export-to-html)))
         (htmlize-file file-name (concat file-name ".html")))
 
       (unless bulk-save
@@ -55,7 +57,7 @@ recompilation, HTML exporting, and ~rsync~ all happen automatically.
                (delete-window (get-buffer-window "*orgweb rsync*"))))))))))
 
 
-(add-hook #'after-save-hook 'org-website-sync)
+(add-hook 'after-save-hook #'org-website-sync)
 #+END_SRC
 
 #+BEGIN_SRC emacs-lisp :exports code :results none
