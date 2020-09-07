@@ -2,7 +2,6 @@
 #+startup:     hidestars
 #+options:     H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+property:    header-args :eval no-export
-#+keywords:    Org Emacs outline planning note authoring project plain-text LaTeX HTML
 #+macro:       next #+HTML: <div class="move">> <a href="#$1">documentation</a></div>
 #+macro:       previous #+HTML: <div class="move">< <a href="#$1">download and install</a></div>
 #+macro:       updown #+HTML: <div class="move"><a href="#$1">< $1</a> · <a href="#$2">$2 ></a></div>
