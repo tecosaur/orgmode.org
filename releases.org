@@ -5,7 +5,6 @@
 #+link:      git https://code.orgmode.org/bzg/org-mode?p=org-mode.git;a=commit;h=%s
 #+link:      doc https://orgmode.org/worg/doc.html#%s
 #+description: Org Org-mode Emacs Changes ChangeLog release notes
-#+html_head:     <link rel="stylesheet" href="/resouces/style/org-changes.css" type="text/css" />
 #+include: "./resources/preamble.html" export html
 
 #+include: "./resources/normal-outline-3.html" export html
