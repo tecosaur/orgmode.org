@@ -29,13 +29,13 @@ The stable version of Org is *9.3.8*, as of September 2020.  See the [[file:Chan
 
 Get it with =M-x package-install RET org RET= (see [[https://orgmode.org/elpa.html][Org ELPA]]).
 
-Or download it as a [[https://orgmode.org/org-9.3.8.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.3.8.zip][zip]] archives.
+Or download [[https://orgmode.org/org-9.3.8.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.3.8.zip][zip]] archives.
 
 You can browse the development version from [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] or clone the repo:
 
 =~$ git clone https://code.orgmode.org/bzg/org-mode.git=
 
-Daily snapshots of the development version: [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]]
+Daily snapshots of the development version: [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]].
 
 - [[https://orgmode.org/worg/org-contribute.html][How to contribute?]]
 - [[file:features.org][List of features]]
