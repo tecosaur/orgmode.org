@@ -37,9 +37,9 @@ You can browse the development version from [[https://code.orgmode.org/bzg/org-m
 
 Daily snapshots of the development version: [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]]
 
+- [[https://orgmode.org/worg/org-contribute.html][How to contribute?]]
 - [[file:features.org][List of features]]
 - [[#docs][Manuals and tutorials]]
-- [[https://orgmode.org/worg/org-contribute.html][How to contribute to Org?]]
 - [[file:community.org][Mailing list and goodies]]
 - [[https://orgmode.org/worg/][Worg: community-written docs]]
 - [[file:talks.org][Talks about Org mode]]

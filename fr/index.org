@@ -38,11 +38,11 @@ ou cloner les dépôts :
 
 Versions de développement quotidiennes : [[https://orgmode.org/org-latest.tar.gz][tar.gz]] ou [[https://orgmode.org/org-latest.zip][zip]]
 
+- [[https://orgmode.org/worg/org-contribute.html][Comment contribuer ?]]
 - [[file:features.org][Liste des fonctionnalités]]
 - [[#docs][Manuels et tutoriels]]
 - [[https://orgmode.org/worg/org-tools/index.html][Outils pour Org (en dehors d'Emacs)]]
 - [[https://orgmode.org/worg/][Worg: doc communautaire]]
-- [[https://orgmode.org/worg/org-contribute.html][Comment contribuer à Org ?]]
 - [[https://orgmode.org/org.html#History-and-Acknowledgments][Histoire et remerciements]]
 - [[file:talks.org][Présentations vidéo sur Org mode]]
 - [[https://orgmode.org/fr/community.html#gsoc][Google Summer of Code 2012]]
