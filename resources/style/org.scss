@@ -469,7 +469,7 @@ html {
 }
 
 body {
-    margin-top: calc(2.0rem + 15px); // nav
+    margin-top: calc(2.0rem + 14px); // nav
     margin-left: var(--body-left);
     margin-right: var(--body-right);
     padding: var(--body-padding);
@@ -486,7 +486,7 @@ nav#main {
     font-family: var(--sans);
     /* fix the position for now - easy solution */
     position: fixed;
-    width: 100%;
+    width: 100vw; // use over % to avoid scrollbar effect
     top: 0;
     left: 0;
     z-index: 1;
@@ -528,7 +528,12 @@ nav#main {
     }
     .view-source {
         position: absolute;
-        right: 1em;
+        @media(min-width:850px) {
+            right: 1em;
+            transform: scale(0.7,1);
+            font-weight: bold;
+            font-family: "Droid Sans Mono", monospace;
+        }
         align-self: center;
         color: #466259;
         font-weight: bold;
@@ -569,21 +574,22 @@ nav#main {
             left: 0;
             right: 0;
             bottom: 0;
-            height: 2.2em;
-            line-height: 2.1;
+            margin-top: 0.35em;
+            height: 1.9em;
+            line-height: 1.7;
             text-align: right;
             padding-right: 1em;
             background-color: #fff4;
         }
         a.view-source {
-            position: initial;
-            right: unset;
+            position: relative;
             align-self: baseline;
             background-color: transparent;
-            position: relative;
-            top: 0.35em;
-            font-style: 0.7em;
+            font-size: 0.9em;
+            line-height: 1;
             margin-left: 10pt;
+            padding-bottom: 3pt;
+            top: 2px;
             &::after {
                 content: ' view source';
                 font-weight: 400;
@@ -799,6 +805,7 @@ h2[id]:target {
     position: fixed;
     left: 0;
     top: 0;
+    border: none;
     width: 100%;
     height: 100%;
     overflow-y: auto;
