@@ -438,7 +438,7 @@ html {
     html {
       scroll-behavior: auto; } }
 body {
-  margin-top: calc(2.0rem + 15px);
+  margin-top: calc(2.0rem + 14px);
   margin-left: var(--body-left);
   margin-right: var(--body-right);
   padding: var(--body-padding);
@@ -454,7 +454,7 @@ nav#main {
   font-family: var(--sans);
   /* fix the position for now - easy solution */
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   z-index: 1; }
@@ -489,7 +489,6 @@ nav#main {
         color: #ddd; }
   nav#main .view-source {
     position: absolute;
-    right: 1em;
     align-self: center;
     color: #466259;
     font-weight: bold;
@@ -498,6 +497,12 @@ nav#main {
     border: none;
     background: #fff;
     border-radius: 2px; }
+    @media (min-width: 850px) {
+      nav#main .view-source {
+        right: 1em;
+        transform: scale(0.7, 1);
+        font-weight: bold;
+        font-family: "Droid Sans Mono", monospace; } }
     nav#main .view-source:hover {
       background: #eee;
       color: #304840; }
@@ -524,20 +529,21 @@ nav#main {
         left: 0;
         right: 0;
         bottom: 0;
-        height: 2.2em;
-        line-height: 2.1;
+        margin-top: 0.35em;
+        height: 1.9em;
+        line-height: 1.7;
         text-align: right;
         padding-right: 1em;
         background-color: #fff4; }
       nav#main a.view-source {
-        position: initial;
-        right: unset;
+        position: relative;
         align-self: baseline;
         background-color: transparent;
-        position: relative;
-        top: 0.35em;
-        font-style: 0.7em;
-        margin-left: 10pt; }
+        font-size: 0.9em;
+        line-height: 1;
+        margin-left: 10pt;
+        padding-bottom: 3pt;
+        top: 2px; }
         nav#main a.view-source::after {
           content: ' view source';
           font-weight: 400; }
@@ -707,6 +713,7 @@ h2[id]:target {
   position: fixed;
   left: 0;
   top: 0;
+  border: none;
   width: 100%;
   height: 100%;
   overflow-y: auto;
