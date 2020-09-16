@@ -80,6 +80,62 @@ produced from the very same file.
 
 List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
 
+* Collapsable Editing
+  :PROPERTIES:
+  :CUSTOM_ID: editing
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+ATTR_HTML: :class main-image
+[[file:resources/img/features/folding.gif]]
+
+** Description
+
+Org allows you to fold sections into an outline for graceful navigation, then
+seamlessly expand individual sections to read and edit using the =tab= key.
+
+You can easily navigate through headlines and (un)fold (sub)sections of
+your Org documents.
+
+*** More
+
+More on [[file:manual/Document-Structure.html][editing and document structure]] (manual)
+
+* Task Management
+  :PROPERTIES:
+  :CUSTOM_ID: planning
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+ATTR_HTML: :class main-image
+[[file:resources/img/features/planning.gif]]
+
+** Description
+
+Org is an extremely capable task manager. "Org" is short for "organisation"
+after all.
+
+Turn sections into /tasks/ by adding keywords such as =TODO= representing the state of that task.
+Switch states easily with the keyboard shortcut =S-<left/right>=.
+
+See your tasks in a planner (called an /Agenda/ in Org) by adding timestamps to them.
+
+All done with just plain text markup.
+
+Switching from one TODO keyword to another is =C-c C-t= or
+=S-<left/right>=.
+Want a different set of keywords to track your task?
+No problem --- Org lets you customize them to support your workflow.
+
+Each item can also receive planning meta-data: scheduled and/or deadline
+cookies, tags, properties, etc.
+
+*** More
+
+More on [[file:manual/TODO-Items.html][TODO items]] (manual)
+
+Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
+
 * Tables
   :PROPERTIES:
   :CUSTOM_ID: tables
@@ -113,27 +169,6 @@ Org as a [[file:manual/The-Spreadsheet.html][spreadsheet]] system (manual)
 Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
 
 Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
-
-* Collapsable Editing
-  :PROPERTIES:
-  :CUSTOM_ID: editing
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-
-#+ATTR_HTML: :class main-image
-[[file:resources/img/features/folding.gif]]
-
-** Description
-
-Org allows you to fold sections into an outline for graceful navigation, then
-seamlessly expand individual sections to read and edit using the =tab= key.
-
-You can easily navigate through headlines and (un)fold (sub)sections of
-your Org documents.
-
-*** More
-
-More on [[file:manual/Document-Structure.html][editing and document structure]] (manual)
 
 * Publishing
   :PROPERTIES:
@@ -199,41 +234,6 @@ on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], an
 
 In Org-mode, extensibility isn't an afterthought --- it's baked right into the
 foundations.
-
-* Task Management
-  :PROPERTIES:
-  :CUSTOM_ID: planning
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-
-#+ATTR_HTML: :class main-image
-[[file:resources/img/features/planning.gif]]
-
-** Description
-
-Org is an extremely capable task manager. "Org" is short for "organisation"
-after all.
-
-Turn sections into /tasks/ by adding keywords such as =TODO= representing the state of that task.
-Switch states easily with the keyboard shortcut =S-<left/right>=.
-
-See your tasks in a planner (called an /Agenda/ in Org) by adding timestamps to them.
-
-All done with just plain text markup.
-
-Switching from one TODO keyword to another is =C-c C-t= or
-=S-<left/right>=.
-Want a different set of keywords to track your task?
-No problem --- Org lets you customize them to support your workflow.
-
-Each item can also receive planning meta-data: scheduled and/or deadline
-cookies, tags, properties, etc.
-
-*** More
-
-More on [[file:manual/TODO-Items.html][TODO items]] (manual)
-
-Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
 
 * Time Tracking (Clocking)
   :PROPERTIES:
