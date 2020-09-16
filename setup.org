@@ -5,23 +5,24 @@
 #+macro:       next #+HTML: <div class="move">> <a href="#$1">documentation</a></div>
 #+macro:       previous #+HTML: <div class="move">< <a href="#$1">download and install</a></div>
 #+macro:       updown #+HTML: <div class="move"><a href="#$1">< $1</a> · <a href="#$2">$2 ></a></div>
-#+html_head:   <meta name="flattr:id" content="8d9x0o">
 #+html_head:   <meta name="theme-color" content="#77aa99">
-#+html_head:   <meta property="twitter:card" content="summary_large_image">
-#+html_head:   <meta property="twitter:title" content="Org Mode">
-#+html_head:   <meta property="twitter:description" content="Org: an Emacs Mode for Notes, Planning, Authoring, and more!">
-#+html_head:   <meta property="twitter:image" content="https://orgmode.org/resources/img/social-card.png">
-#+html_head:   <meta property="twitter:image:alt" content="Org-mode. Complex so you don't have to be. A versatile organisationay system with immense capabilities.">
 #+html_head:   <meta property="og:title" content="Org Mode">
 #+html_head:   <meta property="og:type" content="website">
 #+html_head:   <meta property="og:url" content="https://orgmode.org">
-#+html_head:   <meta property="og:description" content="Org: an Emacs Mode for Notes, Planning, Authoring, and more!">
 #+html_head:   <meta property="og:image" content="https://orgmode.org/resources/img/social-card.png">
 #+html_head:   <meta property="og:image:alt" content="Org-mode. Complex so you don't have to be. A versatile organisationay system with immense capabilities.">
 #+html_head:   <meta property="og:image:type" content="image/svg">
 #+html_head:   <meta property="og:image:width" content="1280">
 #+html_head:   <meta property="og:image:height" content="640">
+#+html_head:   <meta property="og:description" content="Org-mode. Complex so you don't have to be. A versatile organisational system with immense capabilities.">
+#+html_head:   <meta property="twitter:card" content="summary_large_image">
+#+html_head:   <meta property="twitter:url" content="https://orgmode.org">
+#+html_head:   <meta property="twitter:title" content="Org Mode">
+#+html_head:   <meta property="twitter:description" content="Org: an Emacs Mode for Notes, Planning, Authoring, and more!">
+#+html_head:   <meta property="twitter:image" content="https://orgmode.org/resources/img/social-card.png">
+#+html_head:   <meta property="twitter:image:alt" content="Org-mode. Complex so you don't have to be. A versatile organisationay system with immense capabilities.">
 #+html_head:   <link type="application/json+oembed" href="resouces/oembed-info.json" />
+#+html_head:   <meta name="flattr:id" content="8d9x0o">
 #+html_head:   <link rel="apple-touch-icon" sizes="180x180" href="/resources/img/favicons/apple-touch-icon.png">
 #+html_head:   <link rel="icon" type="image/png" sizes="32x32" href="/resources/img/favicons/favicon-32x32.png">
 #+html_head:   <link rel="icon" type="image/png" sizes="16x16" href="/resources/img/favicons/favicon-16x16.png">
