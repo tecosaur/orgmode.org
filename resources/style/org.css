@@ -487,25 +487,6 @@ nav#main {
       margin: 0 -2px 0 -2px; }
       nav#main #translate a:hover {
         color: #ddd; }
-  nav#main .view-source {
-    position: absolute;
-    align-self: center;
-    color: #466259;
-    font-weight: bold;
-    line-height: 1.5;
-    padding: 0 4px 0px 4px;
-    border: none;
-    background: #fff;
-    border-radius: 2px; }
-    @media (min-width: 850px) {
-      nav#main .view-source {
-        right: 1em;
-        transform: scale(0.7, 1);
-        font-weight: bold;
-        font-family: "Droid Sans Mono", monospace; } }
-    nav#main .view-source:hover {
-      background: #eee;
-      color: #304840; }
   nav#main label, nav#main input {
     display: none; }
   @media (max-width: 850px) {
