@@ -1,7 +1,3 @@
-function goToByScroll(id){
-    $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
-}
-
 let src_page = undefined;
 async function fetch_src() {
     const response = await fetch(window.location.href.replace(/\/$/, "/index.html").replace(/\.html$/, ".org.html"));
