@@ -8,7 +8,12 @@
 There's a lot that Org-mode /can/ do for you, but you don't need much to get started.
 
 You can start writing Org syntax in any plain text editor, however to see what
-makes it /great,/ one really needs to *[[file:install.org][install]]* an editor with rich support.
+makes it /great,/ one really needs have an editor with rich support.
+
+#+begin_center
+#+attr_html: :class btn
+*[[file:install.org][Install Org]]*
+#+end_center
 
 At the start of a file, it is common to set a title and author
 (these are two of the [[https://orgmode.org/manual/Export-Settings.html][export options]] --- think file properties).
