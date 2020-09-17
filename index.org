@@ -65,6 +65,12 @@
 
 There are /dozens/ of them.
 @@html:</a>@@
+** Install
+@@html:<a href="install.html">@@
+[[file:resources/img/install.svg]]
+
+What are you waiting for?
+@@html:</a>@@
 ** Quickstart
 @@html:<a href="quickstart.html">@@
 [[file:resources/img/quickstart.svg]]
