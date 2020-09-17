@@ -526,27 +526,27 @@ nav#main {
             }
         }
     }
-    .view-source {
-        position: absolute;
-        @media(min-width:850px) {
-            right: 1em;
-            transform: scale(0.7,1);
-            font-weight: bold;
-            font-family: "Droid Sans Mono", monospace;
-        }
-        align-self: center;
-        color: #466259;
-        font-weight: bold;
-        line-height: 1.5;
-        padding: 0 4px 0px 4px;
-        border: none;
-        background: #fff;
-        border-radius: 2px;
-        &:hover {
-            background: #eee;
-            color: #304840;
-        }
-    }
+    // .view-source {
+    //     position: absolute;
+    //     @media(min-width:850px) {
+    //         right: 1em;
+    //         transform: scale(0.7,1);
+    //         font-weight: bold;
+    //         font-family: "Droid Sans Mono", monospace;
+    //     }
+    //     align-self: center;
+    //     color: #466259;
+    //     font-weight: bold;
+    //     line-height: 1.5;
+    //     padding: 0 4px 0px 4px;
+    //     border: none;
+    //     background: #fff;
+    //     border-radius: 2px;
+    //     &:hover {
+    //         background: #eee;
+    //         color: #304840;
+    //     }
+    // }
     label, input {
         display: none;
     }
