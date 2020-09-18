@@ -586,6 +586,14 @@ div.banner {
       div.banner p {
         width: 35vw;
         font-size: 0.8em; } }
+  div.banner p.bubble {
+    font-family: var(--sans);
+    background: #fffa;
+    margin-top: 1em;
+    border-radius: 2em;
+    padding: 0.1em 0 0.25em 0;
+    font-size: 80%;
+    width: 90%; }
   div.banner.large {
     padding: 50px 5px 80px 5px;
     background-color: var(--green); }
