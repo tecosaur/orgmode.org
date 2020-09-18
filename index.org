@@ -100,14 +100,6 @@ novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerf
 
 * Further reading
 
-The latest stable release of Org is *9.3.7*, as of June 2020.
-#+begin_center
-#+attr_html: :class btn inline
-[[file:releases.org][Release notes]]
-#+attr_html: :class btn inline
-[[https://updates.orgmode.org/][Updates]]
-#+end_center
-
 As well at the [[file:quickstart.org][quickstart]] and [[file:manual/index.html][manual]], there's also
 a [[file:guide/index.html][guide]], and a wealth of community-written docs on [[https://orgmode.org/worg/][Worg]] .
 
