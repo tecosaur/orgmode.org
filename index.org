@@ -37,16 +37,16 @@
     <p class="bubble">
       Support via&ensp;
       <a href="https://liberapay.com/bzg" title="Donations always help"
-         style="color: #7d6f37">
+         style="font-weight: bold; color: #7d6f37">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="LibrePay logo"/>
-        LibrePay</a>,
+        LibrePay</a>&ensp;
       <a href="https://github.com/sponsors/bzg" title="Donations always help"
-         style="color: #222">
+         style="font-weight: bold; color: #222">
         <img class="inline" src="/resources/img/external/github.svg" alt="GitHub logo"/>
-        GitHub</a>,
-      or
+        GitHub</a>&emsp14;
+      or&emsp14;
       <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help"
-         style="color: #253b80">
+         style="font-weight: bold; color: #253b80">
         <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypal logo"/>
         PayPal</a></p>
   </div>

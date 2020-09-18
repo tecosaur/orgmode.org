@@ -673,9 +673,12 @@ div.banner {
         background: #fffa;
         margin-top: 1em;
         border-radius: 2em;
-        padding: 0.1em 0 0.25em 0;
-        font-size: 80%;
+        padding: 0.3em 1em;
+        font-size: 1.2rem;
         width: 90%;
+        @media(min-width:1600px) and (max-width:2000px){
+            font-size: 0.96rem;
+        }
     }
     &.large {
         padding: 50px 5px 80px 5px;
@@ -716,7 +719,7 @@ div.banner {
 
 img.inline {
     height: 1em;
-    margin-bottom: -0.2em;
+    margin-bottom: -0.15em;
 }
 
 
