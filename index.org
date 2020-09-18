@@ -9,12 +9,13 @@
 
 #+begin_export html
 <div class="banner large">
+<div class="banner large" itemscope itemtype="http://schema.org/SoftwareApplication">
   <div class="title">
     <img src="/resources/img/org-mode-unicorn.svg"
-         alt="Org unicorn logo"/>
+         alt="Org unicorn logo" itemprop="image"/>
     <h2>
-      Org-Mode
-      <p class="subtitle">Convenient plain text markup and more</p>
+      <span itemprop="name">Org-Mode</span>
+      <p class="subtitle">Convenient <span itemprop="applicationCategory">plain text markup</span> and more</p>
     </h2>
   </div>
   <div class="comment">
@@ -27,6 +28,11 @@
       system.</p>
   </div>
 
+  <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
+  <meta itemprop="softwareVersion" content="9.3.8">
+  <meta itemprop="datePublished" content="2020-08-07">
+  <meta itemprop="url" content="https://orgmode.org">
+  <meta itemprop="screenshot" content="https://orgmode.tecosaur.com/resources/img/main.svg">
 </div>
 <div class="banner slim green inline">
   <p>
