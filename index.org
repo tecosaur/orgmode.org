@@ -25,9 +25,10 @@
       <p class="subtitle">Convenient <span itemprop="applicationCategory">plain text markup</span> and more</p>
     </h2>
   </div>
-  <div class="comment">
-    <p>An extensible major mode for <a href="https://www.gnu.org/software/emacs/"
-                                       style="color: #7150a1; font-weight: bold">Emacs</a>.</p>
+  <div class="comment" style="align-self: flex-end">
+    <p style="font-style: italic">
+      An extensible major mode for
+      <a href="https://www.gnu.org/software/emacs/" style="color: #333; font-weight: bold">Emacs</a>.</p>
     <br/>
     <p>Org mode is for keeping notes, maintaining to-do lists, planning
       projects, authoring documents, computational notebooks, literate
@@ -132,7 +133,9 @@ It's a Git repository of =.org= pages published as an HTML website. Think of it 
 a wiki. New contributors are welcome, just create a user on [[https://code.orgmode.org][code.orgmode.org]] and
 ask to be added as a collaborator.
 
-: ~$ git clone https://code.orgmode.org/bzg/worg.git
+#+BEGIN_SRC shell
+~$ git clone https://code.orgmode.org/bzg/worg.git
+#+END_SRC
 
 This is a community effort to provide useful information pertaining to Org-mode.
 You'll find it linked to in quite a few places. For instance, it contains:
@@ -140,14 +143,14 @@ You'll find it linked to in quite a few places. For instance, it contains:
 + [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
 + [[https://orgmode.org/worg/org-tutorials/index.html][A list of tutorials]]
 + [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands, and options]]
-+ and much more
++ ...and much more
 
 * Org in the wild
 ** Chatting about Org
 You can connect with other org-thusiasts via IRC at ~#orgmode~ on [[https://freenode.net/][freenode]].
 
-There's also a mailing list which you can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] to, and browse the archives
-of ([[https://orgmode.org/list/][main]], [[https://lists.gnu.org/archive/html/emacs-orgmode/][alternative]]).
+There's also a mailing list which you can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] to, and browse the [[https://orgmode.org/list][archives]]
+([[https://lists.gnu.org/archive/html/emacs-orgmode/][alternative]]) of.
 ** Writing about Org
 + [[https://www.viktorbengtsson.com/blog/org-mode-for-writers/][Org-mode for writers]]
 + [[https://blog.jethro.dev/posts/how_to_take_smart_notes_org/][How To Take Smart Notes With Org-mode · Jethro Kuan]]
