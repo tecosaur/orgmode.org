@@ -582,7 +582,7 @@ div.banner {
     max-width: 1000px;
     margin: auto;
     line-height: 1.4; }
-    @media (min-width: 1600px) and (max-width: 2000px) {
+    @media (min-width: 1400px) and (max-width: 2000px) {
       div.banner p {
         width: 35vw;
         font-size: 0.8em; } }
@@ -594,7 +594,7 @@ div.banner {
     padding: 0.3em 1em;
     font-size: 1.2rem;
     width: 90%; }
-    @media (min-width: 1600px) and (max-width: 2000px) {
+    @media (min-width: 1400px) and (max-width: 2000px) {
       div.banner p.bubble {
         font-size: 0.96rem; } }
   div.banner.large {
