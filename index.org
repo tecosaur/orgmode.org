@@ -54,7 +54,7 @@
   <meta itemprop="softwareVersion" content="9.3.8">
   <meta itemprop="datePublished" content="2020-08-07">
   <meta itemprop="url" content="https://orgmode.org">
-  <meta itemprop="screenshot" content="https://orgmode.tecosaur.com/resources/img/main.svg">
+  <meta itemprop="screenshot" content="https://orgmode.org/resources/img/main.svg">
 </div>
 <div class="banner slim green inline">
   <p style="width: 90vw">

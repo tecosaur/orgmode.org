@@ -28,7 +28,7 @@ One will also find a large number of packages to augment Org on [[https://melpa.
 
 ** Get started
 
-When you're ready to start trying out Org, take a look at the [[http://orgmode.tecosaur.com/quickstart.html][Quickstart]] page
+When you're ready to start trying out Org, take a look at the [[file:quickstart.org][Quickstart]] page
 for an overview of the syntax.
 
 * Doom, Spacemacs, and popular configs
