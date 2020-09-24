@@ -366,6 +366,9 @@ dt {
     top: -30px;
 }
 
+p.date {
+    display: none;
+}
 
 div.side-fig {
     max-width: 1600px;
@@ -431,7 +434,6 @@ div.side-fig {
     }
 }
 
-/* new content */
 
 :root {
     --sans: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
@@ -731,12 +733,6 @@ img.inline {
 // to account for the navbar in scroll-to position
 h2[id]:target {
     padding-top: calc(40px + 2rem); 
-}
-
-.date {
-    margin-top: 5rem;
-    font-family: var(--sans);
-    color: var(--dark-green);
 }
 
 .inline {

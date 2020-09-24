@@ -3,6 +3,7 @@
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg">
 #+include: "./resources/preamble.html" export html
 
 #+include: "./resources/normal-outline-3.html" export html
@@ -38,8 +39,8 @@
       Support via&ensp;
       <a href="https://liberapay.com/bzg" title="Donations always help"
          style="font-weight: bold; color: #7d6f37">
-        <img class="inline" src="/resources/img/external/librepay.svg" alt="LibrePay logo"/>
-        LibrePay</a>&ensp;
+        <img class="inline" src="/resources/img/external/librepay.svg" alt="Liberapay logo"/>
+        Liberapay</a>&ensp;
       <a href="https://github.com/sponsors/bzg" title="Donations always help"
          style="font-weight: bold; color: #222">
         <img class="inline" src="/resources/img/external/github.svg" alt="GitHub logo"/>
@@ -75,7 +76,7 @@
 @@html:<a href="features.html">@@
 [[file:resources/img/stars.svg]]
 
-There are /dozens/ of them.
+Delve into the possibilities.
 @@html:</a>@@
 ** Install
 @@html:<a href="install.html">@@
@@ -101,7 +102,7 @@ Org is a highly flexible structured plain text file format, composed of a few
 simple, yet versatile, structures --- constructed to be both [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the
 novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
 
-#+attr_html: :style max-width:min(45rem, 80vw)
+#+attr_html: :style max-width:min(45rem, 80vw) :alt An example org file, showing a few basic elements
 [[file:resources/img/main.svg]]
 
 * Further reading

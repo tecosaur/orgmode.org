@@ -1,6 +1,5 @@
 #+title: Tools | Org mode
 #+author: TEC
-#+date:  2020-09-02
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+include: "./resources/preamble.html" export html
@@ -165,10 +164,10 @@ into nodes.
 {{{link(ox-hugo.scripter.co)}}}
 [[https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg]]
 
-An exporter to Hugo-compatable Markdown (Blackfriday), which allows for a bit
+An exporter to Hugo-compatible Markdown (Blackfriday), which allows for a bit
 more versatility.
 {{{end-link}}}
-** ox-*
+** ox-⁎
 [[https://static.thenounproject.com/png/608341-200.png]]
 
 There are many more Emacs Org exporters. Just look around.

@@ -14,7 +14,7 @@ project are donating to the maintainer, and helping out yourself.
 #+BEGIN_EXPORT html
 &emsp;Support via:&ensp;
 <a href="https://liberapay.com/bzg" title="Donations always help" style="color: #c7a416">
-  <img class="inline" src="/resources/img/external/librepay.svg"/> LibrePay</a>,
+  <img class="inline" src="/resources/img/external/librepay.svg"/> Liberapay</a>,
 <a href="https://github.com/sponsors/bzg" title="Donations always help" style="color: #222">
 <img class="inline" src="/resources/img/external/github.svg"/> GitHub</a>, or
 <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help" style="color: #253b80">
