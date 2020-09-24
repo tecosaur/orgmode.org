@@ -33,7 +33,7 @@
 :HTML_CONTAINER_CLASS: side-fig
 :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt Example basic Org document showing the key textual elements
 [[file:resources/img/features/simple-syntax.svg]]
                                           
 ** Description
@@ -51,7 +51,7 @@ More on [[file:manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt Demonstration of Org Babel executing code blocks
 [[file:resources/img/features/babel.gif]]
 
 ** Description
@@ -86,7 +86,7 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt Demonstration of folding and unfolding sections in Org
 [[file:resources/img/features/folding.gif]]
 
 ** Description
@@ -107,7 +107,7 @@ More on [[file:manual/Document-Structure.html][editing and document structure]] 
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt Demonstration of planing with org, managing a scheduled todo list
 [[file:resources/img/features/planning.gif]]
 
 ** Description
@@ -142,7 +142,7 @@ Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt Manipulating tables with Org, moving cells/rows and executing formulas
 [[file:resources/img/features/tables.gif]]
 
 ** Description
@@ -176,7 +176,7 @@ Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org a
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt Showing an Org file being exported to HTML, markdown, PDF, and plaintext
 [[file:resources/img/features/exports.gif]]
 
 ** Description
@@ -214,7 +214,7 @@ More on [[file:manual/Publishing.html][publishing]] (manual)
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt Display of some default and custom Org link types
 [[file:resources/img/features/links.svg]]
 
 ** Description
@@ -241,7 +241,7 @@ foundations.
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt Using Org to keep track of how long various subtasks took
 [[file:resources/img/features/clocking.svg]]
 
 ** Description
@@ -271,7 +271,7 @@ More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image
+#+ATTR_HTML: :class main-image :alt An example Org agenda, displaying various todo keywords, priorities, categorisation, and scheduling
 [[file:resources/img/features/agenda.svg]]
 
 ** Description
@@ -302,7 +302,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :style "filter: invert(96%) hue-rotate(270deg);"
+#+attr_html: :class main-image :alt Using Org Capture to record an idea while editing a file
 [[file:resources/img/features/capturing.gif]]
 
 ** Description
@@ -325,7 +325,7 @@ More on [[file:manual/Capture.html][capturing]] (manual)
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :style float:right;box-shadow:none; :width 400px
+#+attr_html: :alt Screenshot of BeOrg :style float:right;box-shadow:none; :width 400px
 [[file:resources/img/external/beorg.png]]
 
 ** Description
