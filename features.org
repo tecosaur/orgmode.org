@@ -33,7 +33,7 @@
 :HTML_CONTAINER_CLASS: side-fig
 :END:
 
-#+ATTR_HTML: :class main-image :alt Example basic Org document showing the key textual elements
+#+attr_html: :class main-image :alt Example basic Org document showing the key textual elements
 [[file:resources/img/features/simple-syntax.svg]]
                                           
 ** Description
@@ -51,7 +51,7 @@ More on [[file:manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :alt Demonstration of Org Babel executing code blocks
+#+attr_html: :class main-image :alt Demonstration of Org Babel executing code blocks
 [[file:resources/img/features/babel.gif]]
 
 ** Description
@@ -80,13 +80,13 @@ produced from the very same file.
 
 List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
 
-* Collapsable Editing
+* Collapsible Editing
   :PROPERTIES:
   :CUSTOM_ID: editing
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :alt Demonstration of folding and unfolding sections in Org
+#+attr_html: :class main-image :alt Demonstration of folding and unfolding sections in Org
 [[file:resources/img/features/folding.gif]]
 
 ** Description
@@ -107,7 +107,7 @@ More on [[file:manual/Document-Structure.html][editing and document structure]] 
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :alt Demonstration of planing with org, managing a scheduled todo list
+#+attr_html: :class main-image :alt Demonstration of planning with org, managing a scheduled todo list
 [[file:resources/img/features/planning.gif]]
 
 ** Description
@@ -142,7 +142,7 @@ Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :alt Manipulating tables with Org, moving cells/rows and executing formulas
+#+attr_html: :class main-image :alt Manipulating tables with Org, moving cells/rows and executing formulas
 [[file:resources/img/features/tables.gif]]
 
 ** Description
@@ -176,7 +176,7 @@ Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org a
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :alt Showing an Org file being exported to HTML, markdown, PDF, and plaintext
+#+attr_html: :class main-image :alt Showing an Org file being exported to HTML, markdown, PDF, and plaintext
 [[file:resources/img/features/exports.gif]]
 
 ** Description
@@ -214,7 +214,7 @@ More on [[file:manual/Publishing.html][publishing]] (manual)
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :alt Display of some default and custom Org link types
+#+attr_html: :class main-image :alt Display of some default and custom Org link types
 [[file:resources/img/features/links.svg]]
 
 ** Description
@@ -241,7 +241,7 @@ foundations.
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :alt Using Org to keep track of how long various subtasks took
+#+attr_html: :class main-image :alt Using Org to keep track of how long various subtasks took
 [[file:resources/img/features/clocking.svg]]
 
 ** Description
@@ -271,7 +271,7 @@ More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+ATTR_HTML: :class main-image :alt An example Org agenda, displaying various todo keywords, priorities, categorisation, and scheduling
+#+attr_html: :class main-image :alt An example Org agenda, displaying various todo keywords, priorities, categorisation, and scheduling
 [[file:resources/img/features/agenda.svg]]
 
 ** Description
