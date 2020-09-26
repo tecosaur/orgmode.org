@@ -16,6 +16,6 @@ var r_text = [
     "Little by little org-mode will take over my life.   -- Mehul Sanghvi",
     "The best thing that happened to Emacs since Emacs itself: Org Mode.  -- Tomas S. Grigera on twitter",
     "Every time I go to use Org-mode, I find something new and helpful.  -- Katherine Cox on Google+"]
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {if (document.getElementById("a-quote")) {
     document.getElementById("a-quote").innerHTML = r_text[Math.floor((1 + r_text.length)*Math.random())].replace("--", "—");
-})
+}})
