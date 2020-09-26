@@ -3,6 +3,7 @@
 #+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+html_head: <link rel="stylesheet" href="/resources/style/index.css" type="text/css" />
 #+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg">
 #+include: "./resources/preamble.html" export html
 
@@ -17,20 +18,17 @@
 #+end_export
 
 #+begin_export html
-<div class="banner large" itemscope itemtype="http://schema.org/SoftwareApplication">
-  <div class="title">
-    <img src="/resources/img/org-mode-unicorn.svg"
-         alt="Org unicorn logo" itemprop="image"/>
+<div class="banner hero" itemscope itemtype="http://schema.org/SoftwareApplication">
+  <img src="/resources/img/org-mode-unicorn.svg"
+       alt="Org unicorn logo" itemprop="image"/>
+  <div>
     <h2>
       <span itemprop="name">Org Mode</span>
       <p class="subtitle">Convenient <span itemprop="applicationCategory">plain text markup</span> and more</p>
     </h2>
-  </div>
-  <div class="comment" style="align-self: flex-end">
-    <p style="font-style: italic">
-      An extensible major mode for
-      <a href="https://www.gnu.org/software/emacs/" style="color: #333; font-weight: bold">Emacs</a>.</p>
-    <br/>
+    <p>
+      An open-source extensible major mode for
+      <a href="https://www.gnu.org/software/emacs/" style="color: #fff; font-weight: bold; font-style: italic;">Emacs</a>.</p>
     <p>Org mode is for keeping notes, maintaining to-do lists, planning
       projects, authoring documents, computational notebooks, literate
       programming, and more &mdash; in a fast and effective plain text
@@ -38,34 +36,34 @@
     <p class="bubble">
       Support via&ensp;
       <a href="https://liberapay.com/bzg" title="Donations always help"
-         style="font-weight: bold; color: #7d6f37">
+         style="font-weight: bold;">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="Liberapay logo"/>
         Liberapay</a>&ensp;
       <a href="https://github.com/sponsors/bzg" title="Donations always help"
-         style="font-weight: bold; color: #222">
+         style="font-weight: bold;">
         <img class="inline" src="/resources/img/external/github.svg" alt="GitHub logo"/>
         GitHub</a>&emsp14;
       or&emsp14;
       <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help"
-         style="font-weight: bold; color: #253b80">
+         style="font-weight: bold;">
         <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypal logo"/>
         PayPal</a></p>
+    <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
+    <meta itemprop="softwareVersion" content="9.3.8">
+    <meta itemprop="datePublished" content="2020-08-07">
+    <meta itemprop="url" content="https://orgmode.org">
+    <meta itemprop="screenshot" content="https://orgmode.org/resources/img/main.svg">
   </div>
-  <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
-  <meta itemprop="softwareVersion" content="9.3.8">
-  <meta itemprop="datePublished" content="2020-08-07">
-  <meta itemprop="url" content="https://orgmode.org">
-  <meta itemprop="screenshot" content="https://orgmode.org/resources/img/main.svg">
-</div>
-<div class="banner slim green inline">
-  <p style="width: 90vw">
-    Created by
-    <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>
-    in <a target="new" href="/manual/History-and-Acknowledgments.html">2003</a>,
-    maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a>
-    and developed by
-    <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</p>
-</div>
+  </div>
+  <div class="banner slim green inline">
+    <p style="width: 90vw">
+      Created by
+      <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>
+      in <a target="new" href="/manual/History-and-Acknowledgments.html">2003</a>,
+      maintained by <a target="new" href="http://bzg.fr">Bastien Guerry</a>
+      and developed by
+      <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</p>
+  </div>
 #+end_export
 
 * Highlights
