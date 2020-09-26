@@ -4,7 +4,7 @@
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+html_head: <link rel="stylesheet" href="/resources/style/index.css" type="text/css" />
-#+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg">
+#+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg+xml">
 #+include: "./resources/preamble.html" export html
 
 #+include: "./resources/normal-outline-3.html" export html
