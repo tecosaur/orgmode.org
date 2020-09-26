@@ -1,6 +1,4 @@
 #+title:     Release notes | Org mode
-#+author:    Carsten Dominik
-#+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+link:      git https://code.orgmode.org/bzg/org-mode?p=org-mode.git;a=commit;h=%s
 #+link:      doc https://orgmode.org/worg/doc.html#%s

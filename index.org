@@ -1,6 +1,4 @@
 #+title:       Org mode for Emacs
-#+author:    Carsten Dominik
-#+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+html_head: <link rel="stylesheet" href="/resources/style/index.css" type="text/css" />
