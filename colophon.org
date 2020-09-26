@@ -1,6 +1,4 @@
 #+TITLE: Colophon | Org-mode
-#+AUTHOR: TEC
-#+DATE:  2020-08-31
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+include: "./resources/preamble.html" export html

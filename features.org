@@ -1,6 +1,4 @@
 #+title: Features | Org mode
-#+author:    Carsten Dominik
-#+email:     carsten at orgmode dot org
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+include: "./resources/preamble.html" export html

@@ -1,5 +1,4 @@
 #+TITLE: Quickstart | Org mode
-#+AUTHOR: TEC
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+include: "./resources/preamble.html" export html
