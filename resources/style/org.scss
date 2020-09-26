@@ -641,10 +641,12 @@ div.banner {
         }
     }
     &.green {
-        background-color: var(--green);
-        color: #eee;
+        // background-color: var(--green);
+        // color: #eee;
+        background-color: #eaeaea;
         a {
-            color: #fff;
+            // color: #fff;
+            color: #000;
             font-weight: bold;
         }
     }
@@ -708,15 +710,15 @@ h2[id]:target {
         .org-svg, img {
             width: auto;
             margin-left: 0;
-            height: 8.5rem;
+            height: 9rem;
             max-width: 80%;
-            padding-bottom: 2rem;
+            padding-bottom: 2.5rem;
             pointer-events: none;
         }
         h3 {
             display: block;
             position: relative;
-            top: 6.5rem;
+            top: 7rem;
             margin-bottom: -2.5rem;
             pointer-events: none;
         }

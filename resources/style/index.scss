@@ -1,7 +1,8 @@
 div.banner {
     &.hero {
-        background-color: var(--dark-green);
-        color: #eee;
+        // background-color: var(--dark-green);
+        // color: #eee;
+        background-color: #fff;
         text-align: left;
         justify-content: center;
         padding: 5rem 1rem 3rem 1rem;
@@ -41,14 +42,14 @@ div.banner {
     }
     p.bubble {
         font-family: var(--sans);
-        border: 1px solid #fff;
         color: inherit;
+        border: 1px solid currentColor;
         a {
             color: inherit;
         }
-        img.inline {
-            filter: brightness(100);
-        }
+        // img.inline {
+        //     filter: brightness(100);
+        // }
         margin-top: 2em;
         border-radius: 2em;
         padding: 0.3em 1em;
