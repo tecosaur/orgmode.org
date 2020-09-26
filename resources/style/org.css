@@ -434,11 +434,6 @@ div.side-fig {
 * {
   box-sizing: border-box; }
 
-html {
-  scroll-behavior: smooth; }
-  @media screen and (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto; } }
 body {
   margin-top: calc(2.0rem + 14px);
   margin-left: var(--body-left);
