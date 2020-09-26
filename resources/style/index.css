@@ -1,0 +1,48 @@
+div.banner.hero {
+  background-color: var(--dark-green);
+  color: #eee;
+  text-align: left;
+  justify-content: center;
+  padding: 5rem 1rem 3rem 1rem; }
+  div.banner.hero > img {
+    height: 18rem;
+    margin: 0 3rem 0 2rem; }
+    @media (max-width: 850px) {
+      div.banner.hero > img {
+        max-height: 50vw; } }
+    @media (min-width: 915px) {
+      div.banner.hero > img {
+        margin-top: -5rem; } }
+    div.banner.hero > img[src="/resources/img/org-mode-unicorn.svg"] {
+      width: 16.3125rem; }
+      @media (max-width: 850px) {
+        div.banner.hero > img[src="/resources/img/org-mode-unicorn.svg"] {
+          width: 45.3125vw; } }
+  div.banner.hero h2 {
+    font-family: var(--sans);
+    font-size: 3em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0; }
+    div.banner.hero h2 .subtitle {
+      font-size: 0.4em;
+      margin: 0; }
+  div.banner.hero h2, div.banner.hero p {
+    max-width: 40rem; }
+  div.banner.hero p {
+    line-height: 1.6; }
+
+div.banner p.bubble {
+  font-family: var(--sans);
+  border: 1px solid #fff;
+  color: inherit;
+  margin-top: 2em;
+  border-radius: 2em;
+  padding: 0.3em 1em;
+  font-size: 1.2rem;
+  width: 95%;
+  text-align: center; }
+  div.banner p.bubble a {
+    color: inherit; }
+  div.banner p.bubble img.inline {
+    filter: brightness(100); }

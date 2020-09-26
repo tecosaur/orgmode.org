@@ -550,66 +550,8 @@ div.banner {
   div.banner #a-quote {
     flex-basis: 100%;
     max-width: none; }
-  div.banner .title {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    div.banner .title img {
-      height: 20rem;
-      margin-bottom: -0.5em; }
-      @media (max-width: 850px) {
-        div.banner .title img {
-          max-height: 10rem; } }
-      div.banner .title img[src="/resources/img/org-mode-unicorn.svg"] {
-        width: 18.125rem; }
-        @media (max-width: 850px) {
-          div.banner .title img[src="/resources/img/org-mode-unicorn.svg"] {
-            max-width: 9.0625rem; } }
-    div.banner .title h2 {
-      color: #eee;
-      font-family: var(--sans);
-      font-size: 3em;
-      text-align: left;
-      line-height: 1.2;
-      margin-left: 0.2em; }
-      @media (max-width: 850px) {
-        div.banner .title h2 {
-          font-size: 2em; } }
-      div.banner .title h2 p.subtitle {
-        color: #222;
-        font-size: 0.5em;
-        max-width: 15em;
-        text-align: left; }
-  div.banner p {
-    max-width: 1000px;
-    margin: auto;
-    line-height: 1.4; }
-    @media (min-width: 1400px) and (max-width: 2000px) {
-      div.banner p {
-        width: 35vw;
-        font-size: 0.8em; } }
-  div.banner p.bubble {
-    font-family: var(--sans);
-    background: #fffa;
-    margin-top: 1em;
-    border-radius: 2em;
-    padding: 0.3em 1em;
-    font-size: 1.2rem;
-    width: 90%; }
-    @media (min-width: 1400px) and (max-width: 2000px) {
-      div.banner p.bubble {
-        font-size: 0.96rem; } }
-  div.banner.large {
-    padding: 50px 5px 80px 5px;
-    background-color: var(--green); }
-    @media (min-width: 850px) {
-      div.banner.large {
-        font-size: 2rem; } }
-    @media (max-width: 850px) {
-      div.banner.large {
-        padding-top: 10px; } }
   div.banner.slim {
-    padding: 5px;
+    padding: 0.8rem 1rem;
     font-size: 1.2rem;
     font-family: var(--sans); }
   div.banner.inline {
@@ -620,7 +562,7 @@ div.banner {
       display: inline-block;
       margin: 0.2em; }
   div.banner.green {
-    background-color: var(--dark-green);
+    background-color: var(--green);
     color: #eee; }
     div.banner.green a {
       color: #fff;
