@@ -36,8 +36,12 @@
                                           
 ** Description
 
-Org mode can perform complex tasks, but it is built off a simple syntax. All you
-need to get started is demonstrated in the image.
+Org mode is routinely used to build and manage complex workflows.  It
+does this using an elegantly simple syntax that scales from basic
+markup to full LaTeX typesetting and from plain text notes to literate
+programs.
+
+Everything you need to get started is demonstrated in the image.
 
 *** More
 
@@ -54,24 +58,44 @@ More on [[file:manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual
 
 ** Description
 
-Org gives you the capability to combine code (from any language(s)), rich markup
-like LaTeX, and meta-programming into a single cohesive work.
+# Org gives you the ability to combine code (from multiple languages), markup,
+# typesetting, and meta-programming all within a single cohesive document.
 
-Notebooks such as [[https://jupyter.org/][Jupyter]] and [[https://rmarkdown.rstudio.com/][R Markdown]] possess a subset of Org's functionality
-in their ability to write syntax-highlighted code and execute it within the
-document.
+Org provides functionality far beyond that of other computational
+notebooks such as [[https://jupyter.org/][Jupyter]] or
+[[https://rmarkdown.rstudio.com/][R Markdown]].
 
-Org likewise has code blocks that can be executed within the document, and
-supports around [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]]. Furthermore, in the same document you can use
-multiple languages, even pass simple data structures between them, and write
-code to generate code.
+# Program your way.
+[[https://orgmode.org/worg/org-contrib/babel/][Org babel]]
+transforms the lowly executable source block into a complete
+[[https://en.wikipedia.org/wiki/Literate_programming][literate programming]]
+environment, allowing you to weave the inputs and outputs of multiple
+languages, and runtime environments, across multiple machines into a
+single unified system, empowering you to achieve new levels of DRYness
+regardless of whether the languages you are working in want you to or not.
 
-Org's capabilities make it ideally suited for [[https://en.wikipedia.org/wiki/Literate_programming][literate programming]], making the
-technique a handy and natural way to deal with code.
+Org has support for over [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]].
 
-Source code can be trivially extracted from an org file, and rich documentation
-produced from the very same file.
+Or source blocks can return results, generate code, populate tables,
+and much more.
 
+# When a source block is executed, its output can be the input for blocks
+# in other languages, used as the input to formulas for tables, or even
+# be a whole new source block.
+# or returned as a macro that can be embedded in free text and automatically updated.
+
+# Free your code
+
+Org makes it trivial to extract source code from an Org file and
+generate documentation from the same file. This means that it is
+possible to have a single source of truth for implementation and
+documentation.
+
+# Org mode makes it possible to write executable documentation.
+# It also makes it possible to sync source code into back into an Org file. 
+# The whole Ferret compiler is implemented in this way as a single Org file.
+
+# Source code is not trapped in documentation 
 *** More
 
 [[file:manual/Working-with-Source-Code.html][Working with source code]] (manual)
