@@ -186,6 +186,57 @@ programming / reproducible research tools (from
 Worried about aligning free text tables?
 Org mode does it in a single keystroke -- =tab=.
 
+* Comments
+Org mode has a variety of ways to add comments.
+
+Line comments start with ~#~. \\
+Inline comments wrap ~@@comment:like so@@~. \\
+Block comments are wrapped with ~#+BEGIN_COMMENT~ and ~#+END_COMMENT~. \\
+Section comments can be created by adding the ~COMMENT~
+keyword to a headline ~* COMMENT like so~[fn::There are a number of
+more granular ways to control the exact behavior of headlines,
+including use of the special tags ~:ARCHIVE:~ and ~:noexport:~.].
+
+#+BEGIN_SRC org
+# A line comment
+
+Example of an @@comment:inline@@ comment.
+
+Inline comments are used for end of line comments. @@comment:~#~ won't work@@
+Since # only only works if preceeded by a newline follow by whitespace.
+
+,#+BEGIN_COMMENT
+This is a block comment.
+It can span multiple line.
+As well as other markup.
+,#+BEGIN_SRC elisp
+(+ 1 2)
+,#+END_SRC
+,#+END_COMMENT
+
+,* A top level headline
+,** COMMENT This section and subsections are commented out
+,*** This headline inherits the =COMMENT= keyword
+This text is commented out
+,** This headline is not commented
+This text will be exported and code blocks will run.
+#+END_SRC
+
+* Macros
+Org has many more advanced features built into its syntax.
+To give only a single example, let's take a look at
+[[https://orgmode.org/manual/Macro-Replacement.html][macros]].
+
+#+BEGIN_SRC org
+,#+MACRO: attn _*/$1/*_
+{{{attn(ATTENTION! This text gets all the markup!)}}}
+
+,#+HTML_HEAD: <style>.red{color:red;}</style>
+,#+LATEX_HEADER: \usepackage{xcolor}
+,#+MACRO: red @@html:<span class="red">$1</span>@@@@latex:\textcolor{red}{$1}@@
+Regular text. {{{red(This text will be red.)}}} More regular text.
+#+END_SRC
+
 * Next steps
 Looking for something in particular?
 The [[file:manual/][manual]] ([[file:org.pdf][PDF]]) is a good place to start. \\
