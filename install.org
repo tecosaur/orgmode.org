@@ -4,46 +4,53 @@
 #+include: "./resources/preamble.html" export html
 
 * Installation
-Org's core is part of [[https://www.gnu.org/software/emacs/][Emacs]], if you have Emacs, you have =org-mode= available to use.
+The reference implementation of Org is part of [[https://www.gnu.org/software/emacs/][Emacs]].
+If you already have Emacs installed, you can start using =org-mode= right away!
 
 #+begin_center
 #+attr_html: :class btn
 [[https://www.gnu.org/software/emacs/][Get Emacs]]
 #+end_center
 
-You can also add org as a package, in order to run the latest version, using
-~M-x package-install RET org RET~ (see [[file:elpa.html][Org ELPA]]).
-Alternatively you can download the package as a [[https://orgmode.org/org-9.3.7.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.3.7.zip][zip]] archive.
+You can install the latest version of Org as a package by invoking
+~M-x package-install RET org RET~ once you have configured Emacs
+to include [[file:elpa.html][Org ELPA]] as a package repository.
 
-The bleeding-edge development version can be viewed at [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]] or by
-cloning the repo:
+Alternatively you can download the package as a [[https://orgmode.org/org-9.4.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.4.zip][zip]] archive.
+
+The bleeding-edge development version or Org is available at [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]].
+You can clone the repo via:
 #+BEGIN_SRC shell
 ~$ git clone https://code.orgmode.org/bzg/org-mode.git
 #+END_SRC
-Daily snapshots of the development version: [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]].
 
-Worg will tell you more on the [[https://orgmode.org/worg/dev/org-build-system.html][build options]] and on how to [[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on the bleeding edge]].
+Daily snapshots of the development version are released as [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]] files.
 
-One will also find a large number of packages to augment Org on [[https://melpa.org/#/?q=org-mode&sort=downloads&asc=false][MELPA]].
+Worg has documentation about [[https://orgmode.org/worg/dev/org-build-system.html][build options]] and about how to [[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on the bleeding edge]].
+
+There are also many packages that augment Org available on [[https://melpa.org/#/?q=org-mode&sort=downloads&asc=false][MELPA]].
 
 ** Get started
 
-When you're ready to start trying out Org, take a look at the [[file:quickstart.org][Quickstart]] page
-for an overview of the syntax.
+Once you're ready to Org, check out the [[file:quickstart.org][Quickstart]]
+page for an overview of the syntax.
 
 * Doom, Spacemacs, and popular configs
-The Emacs kits /Doom/ and /Spacemacs/ both come with default setups for Org --- i.e.
-Org and a selection of packages. Here's what you get with [[https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/org/packages.el][Doom]], and likewise
-[[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bemacs/org/packages.el][Spacemacs]]. It's worth noting that /Doom/ installs a version of Org close to the
-development ~HEAD~.
+The Emacs starter kits /Doom/ and /Spacemacs/ come with a curated set of packages and configurations that may be
+more familiar to users coming from other editors (e.g. Vim). They include Org along with integrations between
+=org-mode= and other modes (such as =evil-mode=). Here are links to the current packages included with
+[[https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/org/packages.el][Doom]], and
+[[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bemacs/org/packages.el][Spacemacs]].
+/Doom/ installs a version of Org that is close to the development ~HEAD~.
 
-Popular configs like [[https://github.com/purcell/emacs.d/blob/master/lisp/init-org.el][Purcell's emacs.d]] will also often include org-mode
-customisations, and Org-related packages.
+Popular configs like [[https://github.com/purcell/emacs.d/blob/master/lisp/init-org.el][Purcell's emacs.d]]
+often include org-mode customization, and Org-related packages.
 
 * In Other Editors
-While the full set of Org [[file:features.html][features]] is currently exclusive to Emacs, a
-number of extensions exist for other editors which provide basic functionality.
-Here are some extensions available for:
+While the full set of Org [[file:features.html][features]] is
+currently exclusive to Emacs, basic functionality for Org files has
+been implemented for a variety of editors.  Here are extensions for
+other editors that enable support for Org files.
 + [[https://github.com/jceb/vim-orgmode][Vim]]
 + [[https://atom.io/packages/org-mode][Atom]]
 + [[https://github.com/vscode-org-mode/vscode-org-mode][VSCode]]
