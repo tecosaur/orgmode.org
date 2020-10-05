@@ -113,11 +113,11 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
 
 ** Description
 
-Org allows you to fold sections into an outline for graceful navigation, then
-seamlessly expand individual sections to read and edit using the =tab= key.
-
-You can easily navigate through headlines and (un)fold (sub)sections of
-your Org documents.
+Collapsible sections form the outline of an Org document.  You can
+fold and unfold whole trees with single keystroke -- =tab=. Org's
+collapsible trees make for quick, graceful navigation and powerful
+information hiding that lets you focus on the task at hand without
+compromising the ability to get the information you need complete it.
 
 *** More
 
@@ -134,23 +134,21 @@ More on [[file:manual/Document-Structure.html][editing and document structure]] 
 
 ** Description
 
-Org is an extremely capable task manager. "Org" is short for "organisation"
-after all.
+Org is an extremely capable task manager, time tracker, and TODO list.
 
-Turn sections into /tasks/ by adding keywords such as =TODO= representing the state of that task.
-Switch states easily with the keyboard shortcut =S-<left/right>=.
+Any section can become a /TODO item/ by adding a keyword such as
+=TODO= or =HOLD= to track the state of the task.  You can cycle
+through all task states with the keyboard shortcut =S-<left/right>=.
 
-See your tasks in a planner (called an /Agenda/ in Org) by adding timestamps to them.
+Need add your own set of states? No problem.  Org lets you customize
+them to support your workflow.
 
-All done with just plain text markup.
-
-Switching from one TODO keyword to another is =C-c C-t= or
-=S-<left/right>=.
-Want a different set of keywords to track your task?
-No problem --- Org lets you customize them to support your workflow.
-
-Each item can also receive planning meta-data: scheduled and/or deadline
-cookies, tags, properties, etc.
+Org /Agenda/ makes it easy to view tasks from multiple files in one
+place.  All you have to do is add one of the TODO keywords.  Org has
+built-in support for task priority, deadlines, scheduled tasks, tags,
+clocking, and more. /Agenda/ can make use of all of it to organize and
+prioritize tasks, seamlessly scaling from a simple TODO list into a
+complete project management suite, all with plain text markup.
 
 *** More
 
@@ -169,18 +167,18 @@ Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
 
 ** Description
 
-Org is a great plain text table editor.
+Org includes a powerful table editor.
 
-Use =TAB= to move between cells, and =ENTER= for rows. The layout is automatically
-reformatted as cell contents change.
+Use =tab= to move between columns, and =return= for rows.
+The layout automatically updates as cell contents change.
 
-You can import tables from =.csv= and =.tsv= files, or directly from the
-current buffer; you can then export them in all the formats supported by
-Org (see below).
+You can import tables from =.csv= and =.tsv= files, or directly from
+the current buffer. You can then export them into any format supported
+by Org.
 
-Org can also be used as a /spreadsheet/ system.
-
-You can add formulas using the [[http://www.gnu.org/software/emacs/manual/html_mono/calc.html][Calc Emacs package]] or Emacs lisp code.
+Org tables aren't just static views of data.  They can be used as a
+complete /spreadsheet/ system, with formulas, references, and more --
+all in plain text.
 
 *** More
 
