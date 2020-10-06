@@ -1,6 +1,4 @@
 #+title:     Org mode for Emacs -- Votre vie en texte brut
-#+author:    Julien Palard
-#+email:     julien at python dot org
 #+setupfile: ../setup.org
 #+language:  fr
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
