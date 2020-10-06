@@ -9,7 +9,7 @@
 <div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
-* Mailing list and IRC channel
+* Mailing list and IRC
   :PROPERTIES:
   :CUSTOM_ID:       list
   :END:
@@ -17,16 +17,15 @@
 #+ATTR_HTML: :id main-image
 [[file:resources/img/list.png]]
 
-The mailing list is /the/ central place for anything related to Org:
-help users, report bugs, suggest new features, etc.  Don't hesitate!
+The Org mailing list is the central place for everything related to Org.
+Dive in to report bugs, suggest new features, assist other users, as more.
+[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][Subscribe]] \\
+[[https://orgmode.org/list/][orgmode.org archive]] \\
+[[http://lists.gnu.org/archive/html/emacs-orgmode/][lists.gnu.org archive]].
 
-Subscribe to the [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][mailing list]].
+Come join us in =#org-mode= on [[http://webchat.freenode.net][freenode]].
 
-Browse the archives on [[http://lists.gnu.org/archive/html/emacs-orgmode/][lists.gnu.org]] or [[https://orgmode.org/list/][orgmode.org/list]].
-
-Users also discuss on the =#org-mode= IRC channel on [[http://webchat.freenode.net][freenode]].
-
-You can also keep track of [[https://updates.orgmode.org][important updates]].
+You can also keep track of [[https://updates.orgmode.org][updates]] via RSS.
 
 ** Move
    :PROPERTIES:
@@ -74,13 +73,13 @@ https://code.orgmode.org and ask to be added as a collaborator.
 #+ATTR_HTML: :id main-image
 [[file:resources/img/gsoc2012.png]]
 
-In 2012, two students successfully achieved an Org mode [[http://code.google.com/soc/][Google Summer of
-Code]] project.
+In 2012, two students successfully completed two Org mode projects for
+[[http://code.google.com/soc/][Google Summer of Code]].
 
 Read the [[https://orgmode.org/list/876288b78d.fsf@altern.org][summary email]] about their achievements.
 
-/Aurélien Aptel/ wrote a tool to synchronize keep local Org files in sync
-with several online bug trackers.
+/Aurélien Aptel/ wrote org-sync, a tool to keep local Org files in
+sync with several online bug trackers.
 
 # =~$ git clone git://orgmode.org/org-sync.git=
 
@@ -123,16 +122,16 @@ Check out the [[https://vimeo.com/17182850][many screencasts]] were VimOrganizer
 
 {{{updown(gsoc,more)}}}
 
-* Twitter, G+ and the Org shirt!
+* Social media and other sites
   :PROPERTIES:
   :CUSTOM_ID:       more
   :END:
 
-#+ATTR_HTML: :id main-image
-[[file:resources/img/gplus.png]]
-
-/Takaaki Ishikawa/ is maintaining [[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] on Twitter and you can
-generally check [[https://twitter.com/#!/search/%2523orgmode][#orgmode]].
+/Takaaki Ishikawa/ maintains
+[[https://twitter.com/#!/orgmode_bot][@orgmode\_bot]] on Twitter and
+you can check out
+[[https://twitter.com/#!/search/%2523orgmode][#orgmode]] for general
+Org related content.
 
 #+begin_export
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -165,17 +164,9 @@ new TWTR.Widget({
 </script>
 #+end_export
 
-There is also a [[https://plus.google.com/b/102778904320752967064/102778904320752967064/posts][Google+ page for Org mode]] (see screenshot).
-
-Many people ask questions about Org mode on [[http://stackoverflow.com/questions/tagged/org-mode][stackoverflow.com]], which is
-nice, but we do encourage people to ask questions directly on the [[id:list][mailing
-list]].
-
-If you want to find other Org friends around, one way is to wear the famous
-Org shirt.  You can buy it [[http://orgmode.spreadshirt.com/][from the US]] or [[http://orgmode.spreadshirt.de/][from Europe]].
-
-#+ATTR_HTML: :style float:center; :width 300px
-[[file:resources/img/shirts.jpg]]
+While many people ask questions about Org mode on
+[[http://stackoverflow.com/questions/tagged/org-mode][stackoverflow.com]]
+we encourage people to ask questions directly on the [[id:list][mailing list]].
 
 ** Move
    :PROPERTIES:
