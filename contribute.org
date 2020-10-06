@@ -6,9 +6,9 @@
 #+include: "./resources/normal-outline-3.html" export html
 
 * Contribute
-Org mode is [[file:manual/History-and-Acknowledgments.html][built on the efforts of enthusiastic volunteers]]. If you too love
-Org, know that the two best things you can do to ensure the good heath of this
-project are donating to the maintainer, and helping out yourself.
+Org mode is [[file:manual/History-and-Acknowledgments.html][built on the efforts of enthusiastic volunteers]].
+The two best ways to contribute to Org are with time or money.
+Donations support Org's primary maintainer Bastien Guerry.
 
 #+BEGIN_EXPORT html
 &emsp;Support via:&ensp;
@@ -20,35 +20,43 @@ project are donating to the maintainer, and helping out yourself.
 <img class="inline" src="/resources/img/external/paypal.svg"/> PayPal</a></p>
 #+END_EXPORT
 
-
-No matter your level of experience with Org/Emacs/elisp there are ways you can
-get in contact with [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to help push this project forward!
-- very little experience :: give [[file:manual/Feedback.html][feedback]] on your experience with org
+You can also support Org with your time, no matter your level of experience.
+The fastest way to get involved is by
+[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to the mailing list]].
+You can also always get in touch via [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]]
+to help move the project forward.
+# FIXME this section needs links, e.g. to instructions for running tests
+- very little experience :: give [[file:manual/Feedback.html][feedback]] about your experience with org
 - a dash of experience :: help improve the documentation
 - some experience :: help test patches, track down bugs
 - moderate experience :: submit bug-fixes, improve features
 
-Just do whatever you feel comfortable with, I guarantee it will be appreciated.
+Whatever your contribution, it is appreciated.
 
-* The mailing list
-This is where everything happens. You can [[https://orgmode.org/list/][browse]] previous email, or even better
-[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the mailing list]] to stay in tune with the latest discussions.
+* Mailing list
+Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]]
+via the GNU listserv, and can browse the [[https://orgmode.org/list][primary archive]]
+here at =orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
 
-* Copyright issues
-Org is constituted by many files, most of which are distributed as part of GNU
-Emacs. These are called the /Org core/, and are copyrighted by the [[http://www.fsf.org/][Free Software
-Foundation]] (FSF).
+* Copyright assignment
+Org mode has a substantial code base composed of many files, most of
+which are distributed as part of GNU Emacs.
 
-If you'd like to contribute to these files, you'll [[http://www.gnu.org/licenses/why-assign.html][need]] to grant the FSF the
-right to include your files in GNU Emacs. To do this one simply needs to fill
-out [[https://orgmode.org/request-assign-future.txt][this form]], and email it to [[mailto:assign@gnu.org][assign@gnu.org]].
+These files make up the /Org core/, and are copyrighted by the
+[[http://www.fsf.org/][Free Software Foundation]] (FSF).
 
-* Patch conventions
+If you want to contribute more than 15 lines of code to Org mode you
+will [[http://www.gnu.org/licenses/why-assign.html][need]] to assign
+the copyright for your contributions to the FSF so that they can be
+included in GNU Emacs. To start the copyright assignment process fill
+out [[https://orgmode.org/request-assign-future.txt][this form]] and
+email it to [[mailto:assign@gnu.org][assign@gnu.org]].
+
+* Submitting patches
 ** Suggested workflow
 #+BEGIN_SRC shell
 ~$ git pull
-~$ git branch my-changes
-~$ git checkout my-changed
+~$ git checkout -b my-changes
 # make some changes
 ~$ git commit -a -m "Definately following the commit conventions"
 # repeat a few times, as appropriate
@@ -57,41 +65,50 @@ out [[https://orgmode.org/request-assign-future.txt][this form]], and email it t
 ~$ git send-email --to="emacs-orgmode@gnu.org" HEAD^
 #+END_SRC
 ** Coding conventions
- Org is part of Emacs, so any contribution should follow the [[http://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html][GNU Emacs Lisp coding conventions]] described in Emacs manual.
+Org is part of Emacs, so any contribution should follow the
+[[http://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html][GNU Emacs Lisp coding conventions]]
+described in Emacs manual.
 ** Commit messages
-We'd like commit messages to be structured like so,
+Commit messages also need to be structured according to Emacs contentions.
 #+BEGIN_EXAMPLE
 main file/feature: overall change summary
 
 ,* file-changed.el (function-changed, another-function): Description of
 the change implemented, reference any relevant `other-functions' or
 `variables' here.
-(another-changed-function): Change something.  Note the active voice,
-avoid passive forms.  Also write in full sentences.
+(another-changed-function): Change something.  Use active voice,
+and avoid passive forms.  Please write in full sentences.
 #+END_EXAMPLE
 
-Written out more formally,
-1. The first line should be the file/feature affected followed by a colon, and
-   an short description of the overall change
+More formally,
+1. The first line should include the file/feature affected followed by
+   a colon and an short description of the overall change
 2. The second line should be left blank
-3. From the third line, there should be ChangeLog entry each file changed, as
-   seen in the above example
+3. Start on the third line there should be a ChangeLog entry for each
+   file changed, as seen in the example above
    - Quote variables and function names like ~`this'~
-   - Seperate sentences with *two* spaces
-   - Use the active form over the passive form
-4. Another empty line should follow
-5. (optional) any supplementary information explaining the patch
-6. If the change is made by a contributer /without/ FSF assignment, it can be
-   accepted as long as it is 15 lines or less. In this case add the =TINYCHANGE=
-   cookie (anywhere in the message)
+   - Separate sentences with *two* spaces
+   - Use active voice instead of passive voice
+4. The line after the final ChangeLog entry should be left blank
+5. Optionally this may be followed by any supplementary information
+   explaining the patch
+6. If the patch is from a contributor /without/ FSF assignment, it can
+   be accepted as long as it contains no more than 15 lines.  In this
+   case add the =TINYCHANGE= cookie (anywhere in the message)
 ** Sending patches
-Use ~git diff~ or ~git format-patch~ to generate the patch files, then include them
-in an email to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] telling us about what you've done.
-If you have git's [[https://git-send-email.io/][send-email]] set up, you can use that.
+Use ~git diff~ or ~git format-patch~ to generate the patch files, and
+then include them in an email to
+[[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] describing
+what you've done.  If you have configured git to use
+[[https://git-send-email.io/][send-email]], then you can use that.
 
-If you check [[https://orgmode.org/list/][the list]] and can't see your email after waiting at least 15
-minutes, you may have a looked a little dodgy to the robot email overlords.
-To get that email through [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] to the lists, and it should work.
+If your mail has not appeared on [[https://orgmode.org/list/][the list]]
+after waiting at least 15 minutes, it may have been flagged as
+spam by the robot email overlords.  If this happens, you should
+be able to get the email to go through by
+[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing]]
+to the mailing list.
 
-* Our beloved contributers
-Over on /Worg/ we keep a [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to Org's core.
+* Our beloved contributors
+The full [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to 
+Org mode is maintained in /Worg/.
