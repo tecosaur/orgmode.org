@@ -25,7 +25,7 @@
 <div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 
-* Simple Syntax
+* Elegant Markup
 :PROPERTIES:
 :CUSTOM_ID: simple-syntax
 :HTML_CONTAINER_CLASS: side-fig
@@ -47,7 +47,7 @@ Everything you need to get started is demonstrated in the image.
 
 More on [[file:manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual)
 
-* Working with source code
+* Superior Source Code
   :PROPERTIES:
   :CUSTOM_ID: babel
   :HTML_CONTAINER_CLASS: side-fig
@@ -58,8 +58,8 @@ More on [[file:manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual
 
 ** Description
 
-Org provides functionality far beyond that of other computational
-notebooks such as [[https://jupyter.org/][Jupyter]] or
+Org provides functionality far beyond that of computational notebooks
+such as [[https://jupyter.org/][Jupyter]] or
 [[https://rmarkdown.rstudio.com/][R Markdown]].
 
 # Program your way.
@@ -76,13 +76,13 @@ Org makes it trivial to extract source code and generate documentation
 from the same file. While many languages have support for generating
 developer documentation from code comments, with Org your developer
 guide and user manual can also be the source code for implementation
-and tests -- a single source of truth that won't drift out of sync.
+and testing -- a single source of truth that won't drift out of sync.
 
 # Emacs. We will add your technological distinctiveness to our own.
 Org currently has support for over [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]],
 and projects like [[https://github.com/nnicandro/emacs-jupyter#org-mode-source-blocks][emacs-jupyter]]
-make it possible to leverage the Jupyter kernel ecosystem to support
-even more languages.
+make it possible to leverage the Jupyter kernel ecosystem for even
+more languages.
 
 *** More
 
@@ -90,28 +90,47 @@ even more languages.
 
 List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
 
-* Collapsible Editing
+* Structured Editing@@comment: and Navigation@@
   :PROPERTIES:
   :CUSTOM_ID: editing
   :HTML_CONTAINER_CLASS: side-fig
   :END:
+# Collapsible editing
+# Toggleable trees
+# Information hiding
+# Obscurable Outline
+# Traversable trees
+# Efficient information hiding
+# Hideable Hierarchies
+# Collapsible hierarchies
+# Collapsible trees
+# Selectable sections.
+# Foldable hierarchies
+# Structured editing
 
 #+attr_html: :class main-image :alt Demonstration of folding and unfolding sections in Org
 [[file:resources/img/features/folding.gif]]
 
 ** Description
 
-Collapsible sections form the outline of an Org document.  You can
-fold and unfold whole trees with single keystroke -- =tab=. Org's
+The fundamental structure of an Org document is a tree, with
+collapsible sections forming the backbone of an Org document.  You can
+fold and unfold whole trees with single keystroke -- =tab=.  Org's
 collapsible trees make for quick, graceful navigation and powerful
 information hiding that lets you focus on the task at hand without
 compromising the ability to get the information you need complete it.
+
+Controlling section visibility only a tiny part of Org's complete set
+of tools and commands for structured editing of plain text.  By
+leveraging Org's regular syntax to transform otherwise tedious tasks
+into single key commands, Org mode frees you to focus on content
+rather than form.
 
 *** More
 
 More on [[file:manual/Document-Structure.html][editing and document structure]] (manual)
 
-* Task Management
+* Take Control of Tasks
   :PROPERTIES:
   :CUSTOM_ID: planning
   :HTML_CONTAINER_CLASS: side-fig
@@ -122,13 +141,13 @@ More on [[file:manual/Document-Structure.html][editing and document structure]] 
 
 ** Description
 
-Org is an extremely capable task manager, time tracker, and TODO list.
+Org is an extremely capable task planner, time tracker, and TODO list.
 
 Any section can become a /TODO item/ by adding a keyword such as
 =TODO= or =HOLD= to track the state of the task.  You can cycle
-through all task states with the keyboard shortcut =S-<left/right>=.
+through task states with the shortcuts =S-<left>= and =S-<right>=.
 
-Need add your own set of states? No problem.  Org lets you customize
+Need add your own set of states?  No problem.  Org lets you customize
 them to support your workflow.
 
 Org /Agenda/ makes it easy to view tasks from multiple files in one
@@ -144,7 +163,7 @@ More on [[file:manual/TODO-Items.html][TODO items]] (manual)
 
 Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
 
-* Tables
+* Transparent Tables
   :PROPERTIES:
   :CUSTOM_ID: tables
   :HTML_CONTAINER_CLASS: side-fig
@@ -168,6 +187,12 @@ Org tables aren't just static views of data.  They can be used as a
 complete /spreadsheet/ system, with formulas, references, and more --
 all in plain text.
 
+
+Everything in Org mode is visible. Nothing is hidden.
+This is true for tables as well. If you care about
+data provenance, look no further.
+
+
 *** More
 
 The [[file:manual/Built_002din-Table-Editor.html][built-in table editor]] (manual)
@@ -178,31 +203,35 @@ Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing ta
 
 Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
 
-* Publishing
+* Export and Publish
   :PROPERTIES:
   :CUSTOM_ID: publishing
   :HTML_CONTAINER_CLASS: side-fig
   :END:
+# Powerful publishing
 
 #+attr_html: :class main-image :alt Showing an Org file being exported to HTML, markdown, PDF, and plaintext
 [[file:resources/img/features/exports.gif]]
 
 ** Description
 
-Org provides great capability as an authoring and publishing tool.
+Org is an authoring and publishing tool.  Org can be everything from a
+static site generator, to a suite of tools for self-publishing.
 
-Use the intuitive Org markup syntax to create source documents that can exported
-into many different formats including:
-- HTML
+Draft documents using Org's intuitive markup, then export to your
+format of choice.  Org supports many formats including:
+- =HTML=
 - $\LaTeX$
-- ODT
-- and much more!
+- =ODT=
+- and more!
 
-Developers can easily create new backends for their favourite format
-(see the [[https://orgmode.org/worg/dev/org-export-reference.html][reference documentation]]).
+Developers can easily create new backends for their favorite format
+(see the [[https://orgmode.org/worg/dev/org-export-reference.html][ox reference documentation]]),
+and Org is also supported by [[https://pandoc.org][Pandoc]].
 
-You can also define /publishing projects/ with one or more =.org= file(s),
-and one or more publication backends.
+In addition to exporting single files, you can define /publishing
+projects/ for one or more =.org= files and accompanying resources,
+targeting one or more publication backends.
 
 *** More
 
@@ -216,25 +245,25 @@ More on [[file:manual/Publishing.html][publishing]] (manual)
 
 [[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX$ (Worg)
 
-* Extensibility
+* Emacs Extensible
   :PROPERTIES:
   :CUSTOM_ID: extensibiliy
   :HTML_CONTAINER_CLASS: side-fig
   :END:
+# Extremely extensible
 
 #+attr_html: :class main-image :alt Display of some default and custom Org link types
 [[file:resources/img/features/links.svg]]
 
 ** Description
-Org-mode isn't just capable out of the box, it's
-spectacularly extensible.
+Org mode isn't just capable out of the box, and it isn't just
+extensible, it is /Emacs extensible/.
 
-Take links as an example. Updating docs for a
-project and find yourself linking to GitHub issues
-a lot? You can add a new link type for the
-document (or globally) where in
-~[[issue:74][version mismatch]]~ the link expands to
-=https://github.com/author/repo/issues/74=.
+To give only a single example, consider hyperlinks.  While updating
+docs for a project you find yourself repeatedly linking to GitHub
+issues. In Org you can add a new ~issue:~ link type to the document
+(or globally if you prefer) so that ~[[issue:74][version mismatch]]~
+expands to =https://github.com/author/repo/issues/74=.
 
 This is just the beginning, you can define
 arbitrary functions to resole links, link to files
@@ -243,37 +272,7 @@ on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], an
 In Org-mode, extensibility isn't an afterthought --- it's baked right into the
 foundations.
 
-* Time Tracking (Clocking)
-  :PROPERTIES:
-  :CUSTOM_ID: clocking
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-
-#+attr_html: :class main-image :alt Using Org to keep track of how long various subtasks took
-[[file:resources/img/features/clocking.svg]]
-
-** Description
-
-Keep track of the time you spend on your tasks with Org /Clocking/.
-
-Org provides easy keyboard shortcuts to /clock in/ and /clock out/ of tasks.
-
-At end of the day, easily generate reports of how you spent your time.
-
-Clocking in a task is =C-c C-x C-i=.
-Clocking out a task is =C-c C-x C-o=.
-You can use =I= and =O= from an agenda buffer.
-
-Clocking logs are stored in a drawer.
-
-Org makes it easy to clock in and out and to produce nice reports, which
-you can customize as needed.
-
-*** More
-
-More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
-
-* Agendas
+* Actionable agendas
   :PROPERTIES:
   :CUSTOM_ID: agendas
   :HTML_CONTAINER_CLASS: side-fig
@@ -286,17 +285,24 @@ More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
 
 Plan your day, your way, with ease.
 
-With /agenda views/ ---reports generated from a set of tasks--- you can see your
-tasks on a daily, weekly, and monthly basis in a /highly/ configurable manner.
+With /agenda views/ --- reports generated from a set of tasks --- you
+can see your tasks on a daily, weekly, and monthly basis.
 
-Even with large =.org= files and thousands of tasks, it is easy to focus on
-what you need to do for each context.
+Even with hundreds of =.org= files and thousands of tasks, agenda lets
+you focus on what you need to do, and quickly take action, jumping
+from the high level overview directly into the task at hand.
 
-The built-in agenda views display the scheduled and deadline task for the
-week, TODO lists and stuck projects.
+The default agenda shows scheduled and deadlined tasks for the
+week, stalled projects, and all your outstanding TODO items.
 
-This is one of the key aspect of Org: you can adapt Org to your workflow
-while stabilizing it.
+Not satisfied with the defaults? Org agenda is /highly/ configurable.
+You can customize the contents of default views or create your own
+[[https://orgmode.org/manual/Custom-Agenda-Views.html][custom views]].
+
+In a sense Org is an expressive language that captures the key points
+of interaction in workflows, simplifying and refining the process of
+developing new workflows as they emerge during the course of work,
+play, or life in general.
 
 *** More
 
@@ -304,7 +310,34 @@ More on [[file:manual/Agenda-Views.html][agendas views]] (manual)
 
 Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
 
-* Capturing
+* Clocking
+  :PROPERTIES:
+  :CUSTOM_ID: clocking
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+attr_html: :class main-image :alt Using Org to keep track of how long various subtasks took
+[[file:resources/img/features/clocking.svg]]
+
+** Description
+
+Keep track of the time you spend on your tasks with Org /Clocking/.
+
+Org provides shortcuts to /clock in/ and /clock out/ of tasks.  When
+working in an =.org= file =C-c C-x C-i= clocks in, and =C-c C-x C-o=
+clocks out. Time is stored in the property drawer of the headline for
+the task at had.
+
+You can also use =I= and =O= when in an agenda view.
+
+At end of the day, you can easily generate customized reports about
+how you spent your time.
+
+*** More
+
+More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
+
+* Capture data from anywhere
   :PROPERTIES:
   :CUSTOM_ID: capturing
   :HTML_CONTAINER_CLASS: side-fig
@@ -315,19 +348,20 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 
 ** Description
 
-Adding TODO items to your =.org= files is called /capturing/.
+You can add content to an =.org= file by /capturing/ data.
 
-You can capture from everywhere, both within Emacs and from other
-applications like your web browser, PDF viewer, etc.
+You can capture from anywhere -- from an Emacs buffer or from other
+applications like your web browser, PDF viewer, and more.
 
-Capture templates provide a quick and effective way to save information to look
-at later.
+Capture templates provide a quick and effective way to ingest
+structured data for a variety of workflows, from adding TODO items to
+quoting the relevant section of a manual or saving a receipt.
 
 *** More
 
 More on [[file:manual/Capture.html][capturing]] (manual)
 
-* With your mobile phone
+* With you wherever you go
   :PROPERTIES:
   :CUSTOM_ID: mobile
   :HTML_CONTAINER_CLASS: side-fig
@@ -338,9 +372,20 @@ More on [[file:manual/Capture.html][capturing]] (manual)
 
 ** Description
 
-On iOS you have the wonderful [[https://beorgapp.com/][beorg]], which supports many of Org's features, and
-can sync over a variety of services.
+On iOS you have the wonderful [[https://beorgapp.com/][beorg]], which
+supports many of Org's features and can sync over a variety of
+services.
 
-On Android there is [[http://www.orgzly.com/][orgzly]], which is developed over on [[https://github.com/orgzly/orgzly-android][GitHub]].
+On Android you have the excellent and open source [[http://www.orgzly.com/][orgzly]],
+which likewise supports many of Org's features and can sync over a variety of services.
+([[https://github.com/orgzly/orgzly-android][Git repo]]).
+
+In addition to native apps [[https://github.com/200ok-ch/organice][organice]]
+implements Org mode as a web app that supports mobile and desktop browsers.
+You can host the app yourself or access a version hosted by the developer at
+https://organice.200ok.ch/.
+
+There is also [[https://github.com/DanielDe/org-web][org-web]] which takes a
+similar approach, and that can be self-hosted or accessed via https://org-web.org/.
 
 *** COMMENT More
