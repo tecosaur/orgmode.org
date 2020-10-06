@@ -58,9 +58,6 @@ More on [[file:manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual
 
 ** Description
 
-# Org gives you the ability to combine code (from multiple languages), markup,
-# typesetting, and meta-programming all within a single cohesive document.
-
 Org provides functionality far beyond that of other computational
 notebooks such as [[https://jupyter.org/][Jupyter]] or
 [[https://rmarkdown.rstudio.com/][R Markdown]].
@@ -70,32 +67,23 @@ notebooks such as [[https://jupyter.org/][Jupyter]] or
 transforms the lowly executable source block into a complete
 [[https://en.wikipedia.org/wiki/Literate_programming][literate programming]]
 environment, allowing you to weave the inputs and outputs of multiple
-languages, and runtime environments, across multiple machines into a
+languages and runtime environments across multiple machines into a
 single unified system, empowering you to achieve new levels of DRYness
 regardless of whether the languages you are working in want you to or not.
 
-Org has support for over [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]].
-
-Or source blocks can return results, generate code, populate tables,
-and much more.
-
-# When a source block is executed, its output can be the input for blocks
-# in other languages, used as the input to formulas for tables, or even
-# be a whole new source block.
-# or returned as a macro that can be embedded in free text and automatically updated.
-
 # Free your code
+Org makes it trivial to extract source code and generate documentation
+from the same file. While many languages have support for generating
+developer documentation from code comments, with Org your developer
+guide and user manual can also be the source code for implementation
+and tests -- a single source of truth that won't drift out of sync.
 
-Org makes it trivial to extract source code from an Org file and
-generate documentation from the same file. This means that it is
-possible to have a single source of truth for implementation and
-documentation.
+# Emacs. We will add your technological distinctiveness to our own.
+Org currently has support for over [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]],
+and projects like [[https://github.com/nnicandro/emacs-jupyter#org-mode-source-blocks][emacs-jupyter]]
+make it possible to leverage the Jupyter kernel ecosystem to support
+even more languages.
 
-# Org mode makes it possible to write executable documentation.
-# It also makes it possible to sync source code into back into an Org file. 
-# The whole Ferret compiler is implemented in this way as a single Org file.
-
-# Source code is not trapped in documentation 
 *** More
 
 [[file:manual/Working-with-Source-Code.html][Working with source code]] (manual)

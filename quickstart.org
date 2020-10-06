@@ -51,14 +51,14 @@ keyword such as ~TODO~ or ~HOLD~.
 * Markup
 To mark up text in Org, simply surround it with one or more marker characters.
 *bold* /italic/ and _underline_ are fairly intuitive, and the ability to use
-+strikethrough+ is a plus.  You can +_/*combine*/_+ the basic markup in any
++strikethrough+ is a plus.  You can _/*combine*/_ the basic markup in any
 order, however ~code~ and =verbatim= need to be the *_~inner-most~_* markers
 if they are present since their contents are interpreted =_literally_=.
 
 #+BEGIN_EXAMPLE
 To markup text in Org, simply surround it with one or more marker characters.
 *bold* /italic/ and _underline_ are fairly intuitive, and the ability to use
-+strikethrough+ is a plus.  You can +_/*combine*/_+ the basic markup in any
++strikethrough+ is a plus.  You can _/*combine*/_ the basic markup in any
 order, however ~code~ and =verbatim= need to be the *_~inner-most~_* markers
 if they are present since their contents are interpreted =_literally_=.
 #+END_EXAMPLE
@@ -84,9 +84,9 @@ To buy:
 
 Lists can contain checkboxes ~[ ]~, ~[-]~, ~[X]~.
 #+BEGIN_SRC org
-- [ ] do
-- [-] the
-- [X] thing
+- [ ] not started
+- [-] in progress
+- [X] complete
 #+END_SRC
 
 Lists can contain tags (and checkboxes at the same time).
@@ -97,7 +97,7 @@ Lists can contain tags (and checkboxes at the same time).
 
 * Links
 To create a link put the target between two square brackets, like so: ~[[target]]~.
-To add a description add it in square brackets after the target ~[[target][desc]]~.
+You can include a description in square brackets after the target ~[[target][desc]]~.
 
 The order is easy to remember because it is the same as an html =<a>=
 tag ~<a href="target">desc</a>~ and you can't mix up brackets and
@@ -105,7 +105,7 @@ parentheses because there are only square brackets!
 
 Org supports a wide variety of types of link targets, and you can also
 [[https://orgmode.org/manual/Adding-Hyperlink-Types.html][add your own]].
-Link types are indicated with a ~type:~ prefix, e.g. ~[type:target]~.
+Link types are indicated with a ~type:~ prefix, i.e., ~[type:target]~.
 If no ~type:~ is provided, org searches the current file for a headline
 that matches ~target~.
 
@@ -139,7 +139,7 @@ monospace
 ,#+END_EXAMPLE
 #+END_SRC
 
-However, example blocks do not give you the awesome power of [[https://orgmode.org/worg/org-contrib/babel/][Org babel]].
+However, example blocks do not give you the power of [[https://orgmode.org/worg/org-contrib/babel/][Org babel]].
 For that you need a source block.
 Source blocks provide syntax highlighting, code execution, literate programming, and more.
 #+BEGIN_SRC org
@@ -151,14 +151,6 @@ Source blocks provide syntax highlighting, code execution, literate programming,
 ** More info
 A hello world example cannot even begin to scratch the surface
 Org mode's support for [[https://orgmode.org/manual/Working-with-Source-Code.html][working with source code]].
-
-[[https://orgmode.org/worg/org-contrib/babel/][Org babel]] transforms
-source blocks into a complete literate programming environment,
-allowing you to weave the inputs and outputs of multiple languages,
-and runtime environments, across multiple machines into a single
-unified system, empowering you to achieve new levels of DRYness
-regardless of whether the languages you are working in want you to or
-not. Program your way.
 
 * Tables
 Org mode comes with a table editor complete with support cell references
