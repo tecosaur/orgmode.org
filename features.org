@@ -41,12 +41,72 @@ does this using an elegantly simple syntax that scales from basic
 markup to full LaTeX typesetting and from plain text notes to literate
 programs.
 
-Everything you need to get started is demonstrated in the image.
+Everything you need to get started is demonstrated in the example.
 
 *** More
 
-More on [[file:manual/Markup-for-Rich-Contents.html][the markup syntax]] (manual)
+More on [[file:manual/Markup-for-Rich-Contents.html][markup]] (manual)
+* Structured Editing@@comment: and Navigation@@
+  :PROPERTIES:
+  :CUSTOM_ID: editing
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
 
+#+attr_html: :class main-image :alt Demonstration of folding and unfolding sections in Org
+[[file:resources/img/features/folding.gif]]
+
+** Description
+
+The fundamental structure of an Org document is a tree, with nested,
+collapsible sections forming its backbone.  You can fold and unfold
+whole trees with single keystroke -- =tab=.  Org's foldable trees make
+for quick, graceful navigation and powerful information hiding that
+lets you focus on the task at hand without compromising the ability to
+get the information you need complete it.
+
+Controlling section visibility is only a tiny part of Org's set of
+tools and commands for structured editing of plain text.  Org mode
+leverages Org's regular syntax to transform otherwise tedious tasks
+into single key commands, freeing you to focus on content rather than
+form.
+
+*** More
+
+More on [[file:manual/Document-Structure.html][document structure]] (manual)
+* Transparent Tables
+  :PROPERTIES:
+  :CUSTOM_ID: tables
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+
+#+attr_html: :class main-image :alt Manipulating tables with Org, moving cells/rows and executing formulas
+[[file:resources/img/features/tables.gif]]
+
+** Description
+
+Org includes a powerful table editor.
+
+=tab= moves between columns. =return= moves between rows.
+Layout updates automatically as cell contents change.
+
+Import tables from =.csv= and =.tsv= files, or directly from the
+contents of the current buffer, then export them to any format
+supported by Org.
+
+Org tables aren't just static views of data.  They can be used as a
+full [[https://orgmode.org/manual/The-Spreadsheet.html][spreadsheet]]
+system, with formulas, references, and more -- all with the simplicity
+and transparency of plain text.
+
+*** More
+
+The [[file:manual/Built_002din-Table-Editor.html][built-in table editor]] (manual)
+
+Org as a [[file:manual/The-Spreadsheet.html][spreadsheet]] system (manual)
+
+Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
+
+Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
 * Superior Source Code
   :PROPERTIES:
   :CUSTOM_ID: babel
@@ -89,47 +149,49 @@ more languages.
 [[file:manual/Working-with-Source-Code.html][Working with source code]] (manual)
 
 List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
-
-* Structured Editing@@comment: and Navigation@@
+* Export and Publish
   :PROPERTIES:
-  :CUSTOM_ID: editing
+  :CUSTOM_ID: publishing
   :HTML_CONTAINER_CLASS: side-fig
   :END:
-# Collapsible editing
-# Toggleable trees
-# Information hiding
-# Obscurable Outline
-# Traversable trees
-# Efficient information hiding
-# Hideable Hierarchies
-# Collapsible hierarchies
-# Collapsible trees
-# Selectable sections.
-# Foldable hierarchies
-# Structured editing
+# Powerful publishing
 
-#+attr_html: :class main-image :alt Demonstration of folding and unfolding sections in Org
-[[file:resources/img/features/folding.gif]]
+#+attr_html: :class main-image :alt Showing an Org file being exported to HTML, markdown, PDF, and plaintext
+[[file:resources/img/features/exports.gif]]
 
 ** Description
 
-The fundamental structure of an Org document is a tree, with
-collapsible sections forming the backbone of an Org document.  You can
-fold and unfold whole trees with single keystroke -- =tab=.  Org's
-collapsible trees make for quick, graceful navigation and powerful
-information hiding that lets you focus on the task at hand without
-compromising the ability to get the information you need complete it.
+Org is an authoring and publishing tool -- it functions as everything
+from a static site generator, to a suite of tools for self-publishing.
 
-Controlling section visibility only a tiny part of Org's complete set
-of tools and commands for structured editing of plain text.  By
-leveraging Org's regular syntax to transform otherwise tedious tasks
-into single key commands, Org mode frees you to focus on content
-rather than form.
+Draft documents using Org's intuitive markup, then export to your
+format of choice.  Org supports many formats including:
+- =HTML=
+- $\LaTeX$
+- =ODT=
+- and more!
+
+Developers can easily create new backends for their favorite format
+(see the [[https://orgmode.org/worg/dev/org-export-reference.html][ox reference documentation]]),
+and Org is also supported by [[https://pandoc.org][Pandoc]].
+
+In addition to exporting single files, you can define /publishing
+projects/ for one or more =.org= files and accompanying resources,
+targeting one or more publication backends.
 
 *** More
 
-More on [[file:manual/Document-Structure.html][editing and document structure]] (manual)
+One poorly kept secret is that the Org website is written in Org!
 
+More on [[file:manual/Markup-for-Rich-Contents.html][markup]] (manual)
+
+More on [[file:manual/Exporting.html][exporting]] (manual)
+
+More on [[file:manual/Publishing.html][publishing]] (manual)
+
+[[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to HTML (Worg)
+
+[[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX$ (Worg)
 * Take Control of Tasks
   :PROPERTIES:
   :CUSTOM_ID: planning
@@ -162,117 +224,7 @@ complete project management suite, all with plain text markup.
 More on [[file:manual/TODO-Items.html][TODO items]] (manual)
 
 Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
-
-* Transparent Tables
-  :PROPERTIES:
-  :CUSTOM_ID: tables
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-
-#+attr_html: :class main-image :alt Manipulating tables with Org, moving cells/rows and executing formulas
-[[file:resources/img/features/tables.gif]]
-
-** Description
-
-Org includes a powerful table editor.
-
-Use =tab= to move between columns, and =return= for rows.
-The layout automatically updates as cell contents change.
-
-You can import tables from =.csv= and =.tsv= files, or directly from
-the current buffer. You can then export them into any format supported
-by Org.
-
-Org tables aren't just static views of data.  They can be used as a
-complete /spreadsheet/ system, with formulas, references, and more --
-all in plain text.
-
-
-Everything in Org mode is visible. Nothing is hidden.
-This is true for tables as well. If you care about
-data provenance, look no further.
-
-
-*** More
-
-The [[file:manual/Built_002din-Table-Editor.html][built-in table editor]] (manual)
-
-Org as a [[file:manual/The-Spreadsheet.html][spreadsheet]] system (manual)
-
-Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
-
-Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
-
-* Export and Publish
-  :PROPERTIES:
-  :CUSTOM_ID: publishing
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-# Powerful publishing
-
-#+attr_html: :class main-image :alt Showing an Org file being exported to HTML, markdown, PDF, and plaintext
-[[file:resources/img/features/exports.gif]]
-
-** Description
-
-Org is an authoring and publishing tool.  Org can be everything from a
-static site generator, to a suite of tools for self-publishing.
-
-Draft documents using Org's intuitive markup, then export to your
-format of choice.  Org supports many formats including:
-- =HTML=
-- $\LaTeX$
-- =ODT=
-- and more!
-
-Developers can easily create new backends for their favorite format
-(see the [[https://orgmode.org/worg/dev/org-export-reference.html][ox reference documentation]]),
-and Org is also supported by [[https://pandoc.org][Pandoc]].
-
-In addition to exporting single files, you can define /publishing
-projects/ for one or more =.org= files and accompanying resources,
-targeting one or more publication backends.
-
-*** More
-
-More on [[file:manual/Markup-for-Rich-Contents.html][markup]] (manual)
-
-More on [[file:manual/Exporting.html][exporting]] (manual)
-
-More on [[file:manual/Publishing.html][publishing]] (manual)
-
-[[https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html][Tutorial on publishing]] to HTML (Worg)
-
-[[https://orgmode.org/worg/org-tutorials/org-latex-export.html][Tutorial on publishing]] to $\LaTeX$ (Worg)
-
-* Emacs Extensible
-  :PROPERTIES:
-  :CUSTOM_ID: extensibiliy
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-# Extremely extensible
-
-#+attr_html: :class main-image :alt Display of some default and custom Org link types
-[[file:resources/img/features/links.svg]]
-
-** Description
-Org mode isn't just capable out of the box, and it isn't just
-extensible, it is /Emacs extensible/.
-
-To give only a single example, consider hyperlinks.  While updating
-docs for a project you find yourself repeatedly linking to GitHub
-issues. In Org you can add a new ~issue:~ link type to the document
-(or globally if you prefer) so that ~[[issue:74][version mismatch]]~
-expands to =https://github.com/author/repo/issues/74=.
-
-This is just the beginning, you can define
-arbitrary functions to resole links, link to files
-on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.
-
-In Org-mode, extensibility isn't an afterthought --- it's baked right into the
-foundations.
-
-* Actionable agendas
+* Actionable Agendas
   :PROPERTIES:
   :CUSTOM_ID: agendas
   :HTML_CONTAINER_CLASS: side-fig
@@ -285,8 +237,8 @@ foundations.
 
 Plan your day, your way, with ease.
 
-With /agenda views/ --- reports generated from a set of tasks --- you
-can see your tasks on a daily, weekly, and monthly basis.
+With /agenda views/ --- reports generated from your /TODO items/ ---
+you can see your tasks on a daily, weekly, and monthly basis.
 
 Even with hundreds of =.org= files and thousands of tasks, agenda lets
 you focus on what you need to do, and quickly take action, jumping
@@ -295,7 +247,7 @@ from the high level overview directly into the task at hand.
 The default agenda shows scheduled and deadlined tasks for the
 week, stalled projects, and all your outstanding TODO items.
 
-Not satisfied with the defaults? Org agenda is /highly/ configurable.
+Not satisfied with the defaults? Org agenda is highly configurable.
 You can customize the contents of default views or create your own
 [[https://orgmode.org/manual/Custom-Agenda-Views.html][custom views]].
 
@@ -309,7 +261,6 @@ play, or life in general.
 More on [[file:manual/Agenda-Views.html][agendas views]] (manual)
 
 Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
-
 * Clocking
   :PROPERTIES:
   :CUSTOM_ID: clocking
@@ -321,7 +272,9 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 
 ** Description
 
-Keep track of the time you spend on your tasks with Org /Clocking/.
+Keep track of the time you spend on your tasks with Org /Clocking/,
+and at end of the day, you can generate customized reports about how
+you spent your time.
 
 Org provides shortcuts to /clock in/ and /clock out/ of tasks.  When
 working in an =.org= file =C-c C-x C-i= clocks in, and =C-c C-x C-o=
@@ -330,14 +283,11 @@ the task at had.
 
 You can also use =I= and =O= when in an agenda view.
 
-At end of the day, you can easily generate customized reports about
-how you spent your time.
 
 *** More
 
 More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
-
-* Capture data from anywhere
+* Capture Data From Anywhere
   :PROPERTIES:
   :CUSTOM_ID: capturing
   :HTML_CONTAINER_CLASS: side-fig
@@ -360,8 +310,34 @@ quoting the relevant section of a manual or saving a receipt.
 *** More
 
 More on [[file:manual/Capture.html][capturing]] (manual)
+* Emacs Extensible
+  :PROPERTIES:
+  :CUSTOM_ID: extensibiliy
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
+# Extremely extensible
 
-* With you wherever you go
+#+attr_html: :class main-image :alt Display of some default and custom Org link types
+[[file:resources/img/features/links.svg]]
+
+** Description
+Org mode isn't just capable out of the box, and it isn't just
+extensible, it is /Emacs extensible/.
+
+To give only a single example beyond those already mentioned, consider
+hyperlinks.  While updating docs for a project you find yourself
+repeatedly linking to GitHub issues. In Org you can add a new ~issue:~
+link type to the document (or globally if you prefer) so that
+~[[issue:74][version mismatch]]~ expands to
+=https://github.com/author/repo/issues/74=.
+
+This is just the beginning, you can define
+arbitrary functions to resole links, link to files
+on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.
+
+In Org-mode, extensibility isn't an afterthought --- it's baked right into the
+foundations.
+* With You Wherever You Go
   :PROPERTIES:
   :CUSTOM_ID: mobile
   :HTML_CONTAINER_CLASS: side-fig
