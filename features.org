@@ -59,10 +59,11 @@ More on [[file:manual/Markup-for-Rich-Contents.html][markup]] (manual)
 
 The fundamental structure of an Org document is a tree, with nested,
 collapsible sections forming its backbone.  You can fold and unfold
-whole trees with single keystroke -- =tab=.  Org's foldable trees make
-for quick, graceful navigation and powerful information hiding that
-lets you focus on the task at hand without compromising the ability to
-get the information you need complete it.
+whole trees with single keystroke -- =tab=.
+
+Org's trees make for quick, graceful navigation and powerful
+information hiding that lets you focus on the task at hand without
+compromising the ability to get the information you need complete it.
 
 Controlling section visibility is only a tiny part of Org's set of
 tools and commands for structured editing of plain text.  Org mode
@@ -161,8 +162,9 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
 
 ** Description
 
-Org is an authoring and publishing tool -- it functions as everything
-from a static site generator, to a suite of tools for self-publishing.
+Org is an authoring and publishing tool -- it can function as
+everything from a static site generator, to a suite of tools for
+self-publishing.
 
 Draft documents using Org's intuitive markup, then export to your
 format of choice.  Org supports many formats including:
@@ -258,7 +260,7 @@ play, or life in general.
 
 *** More
 
-More on [[file:manual/Agenda-Views.html][agendas views]] (manual)
+More on [[file:manual/Agenda-Views.html][agenda views]] (manual)
 
 Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
 * Clocking
@@ -273,7 +275,7 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 ** Description
 
 Keep track of the time you spend on your tasks with Org /Clocking/,
-and at end of the day, you can generate customized reports about how
+and at end of the day you can generate customized reports about how
 you spent your time.
 
 Org provides shortcuts to /clock in/ and /clock out/ of tasks.  When
@@ -282,7 +284,6 @@ clocks out. Time is stored in the property drawer of the headline for
 the task at had.
 
 You can also use =I= and =O= when in an agenda view.
-
 
 *** More
 
@@ -315,28 +316,26 @@ More on [[file:manual/Capture.html][capturing]] (manual)
   :CUSTOM_ID: extensibiliy
   :HTML_CONTAINER_CLASS: side-fig
   :END:
-# Extremely extensible
 
 #+attr_html: :class main-image :alt Display of some default and custom Org link types
 [[file:resources/img/features/links.svg]]
 
 ** Description
-Org mode isn't just capable out of the box, and it isn't just
-extensible, it is /Emacs extensible/.
+Org mode isn't just extensible, it is /Emacs extensible/.
+
+Org started out as an extension. As a result, extensibility is present
+in nearly every aspect of Org.
 
 To give only a single example beyond those already mentioned, consider
 hyperlinks.  While updating docs for a project you find yourself
 repeatedly linking to GitHub issues. In Org you can add a new ~issue:~
-link type to the document (or globally if you prefer) so that
-~[[issue:74][version mismatch]]~ expands to
-=https://github.com/author/repo/issues/74=.
+link type to the document so that ~[[issue:74][version mismatch]]~
+expands to =https://github.com/author/repo/issues/74=.
 
-This is just the beginning, you can define
-arbitrary functions to resole links, link to files
-on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.
+Beyond expanding links, you can define custom resolving functions,
+link to files on remote machines with
+[[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.
 
-In Org-mode, extensibility isn't an afterthought --- it's baked right into the
-foundations.
 * With You Wherever You Go
   :PROPERTIES:
   :CUSTOM_ID: mobile
@@ -348,18 +347,19 @@ foundations.
 
 ** Description
 
-On iOS you have the wonderful [[https://beorgapp.com/][beorg]], which
+Org is available on mobile devices, so you never have to miss a note.
+
+For iOS there is the wonderful [[https://beorgapp.com/][beorg]], which
 supports many of Org's features and can sync over a variety of
 services.
 
-On Android you have the excellent and open source [[http://www.orgzly.com/][orgzly]],
+For Android there is the excellent and open source [[http://www.orgzly.com/][orgzly]],
 which likewise supports many of Org's features and can sync over a variety of services.
 ([[https://github.com/orgzly/orgzly-android][Git repo]]).
 
-In addition to native apps [[https://github.com/200ok-ch/organice][organice]]
+In addition to native apps, [[https://github.com/200ok-ch/organice][organice]]
 implements Org mode as a web app that supports mobile and desktop browsers.
-You can host the app yourself or access a version hosted by the developer at
-https://organice.200ok.ch/.
+You can host the app yourself or access a version hosted at https://organice.200ok.ch/.
 
 There is also [[https://github.com/DanielDe/org-web][org-web]] which takes a
 similar approach, and that can be self-hosted or accessed via https://org-web.org/.
