@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
+
+(require 'ox)
+(require 'ox-html)
+(load "~/.emacs.d/.local/straight/repos/emacs-htmlize/htmlize.el" t t) ; system-dependant
+(require 'htmlize)
+
+(setq
+ org-html-style-default ""
+ org-html-scripts ""
+ org-html-htmlize-output-type 'css
+ org-html-doctype "html5"
+ org-html-html5-fancy t
+ debug-on-error t)
+
+(let ((org-files (directory-files-recursively default-directory "\\.org$")))
+  (dolist (org-file org-files)
+    (message "• %s" (file-relative-name org-file default-directory))
+    (with-current-buffer (find-file-literally org-file)
+      (condition-case err
+          (org-html-export-to-html)
+        (error (message "  %s"  (error-message-string err)))))))
+(message "")
+(kill-emacs 0)

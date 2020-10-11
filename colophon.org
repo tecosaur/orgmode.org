@@ -72,3 +72,34 @@ recompilation, HTML exporting, and ~rsync~ all happen automatically.
           (error (setq errors (append errors file))))))
     (message "finished exporting. Experienced errors with:%s" (if errors (concat "\n - " (s-join "\n - " errors)) ""))))
 #+END_SRC
+
+* Deployment
+We use a little shell hack to immediately call Emacs on the file
+#+begin_src shell :tangle build-html :shebang "#!/usr/bin/env sh" :comments none
+":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
+#+end_src
+Then we can execute some elisp.
+#+begin_src emacs-lisp :tangle build-html :comments none
+(require 'ox)
+(require 'ox-html)
+(load "~/.emacs.d/.local/straight/repos/emacs-htmlize/htmlize.el" t t) ; system-dependant
+(require 'htmlize)
+
+(setq
+ org-html-style-default ""
+ org-html-scripts ""
+ org-html-htmlize-output-type 'css
+ org-html-doctype "html5"
+ org-html-html5-fancy t
+ debug-on-error t)
+
+(let ((org-files (directory-files-recursively default-directory "\\.org$")))
+  (dolist (org-file org-files)
+    (message "• %s" (file-relative-name org-file default-directory))
+    (with-current-buffer (find-file-literally org-file)
+      (condition-case err
+          (org-html-export-to-html)
+        (error (message "  %s"  (error-message-string err)))))))
+(message "")
+(kill-emacs 0)
+#+end_src
