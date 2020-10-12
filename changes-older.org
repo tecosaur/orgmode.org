@@ -3390,7 +3390,7 @@ tables like the ones using /org-collector.el/ by Eric Schulte.
 
 ** Incompatible changes
 
-   - Changes in the structure of IDs, see [[*The%20default%20structure%20of%20IDs%20has%20changed][here]] for details.
+   - Changes in the structure of IDs, see [[*The default structure of IDs has changed][here]] for details
 
    - C-c C-a has been redefined, see [[=C-c C-a= no longer calls `show-all'][here]] for details.
 
