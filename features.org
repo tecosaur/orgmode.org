@@ -34,7 +34,7 @@
 :HTML_CONTAINER_CLASS: side-fig
 :END:
 
-#+attr_html: :class main-image :alt Example basic Org document showing the key textual elements
+#+attr_html: :class main-image :style max-height:12em; :alt Example basic Org document showing the key textual elements
 [[file:resources/img/features/simple-syntax.svg]]
                                           
 ** Description
