@@ -15,12 +15,22 @@
  make-backup-files nil
  debug-on-error t)
 
-(let ((org-files (directory-files-recursively default-directory "\\.org$")))
+(let ((scss-files (directory-files-recursively default-directory "\\.scss$"))
+      (org-files (directory-files-recursively default-directory "\\.org$")))
+  (if (executable-find "sassc")
+    (dolist (scss-file scss-files)
+      (let ((sassc-out
+             (shell-command-to-string
+              (format "sassc %s %s"
+                      scss-file (concat (file-name-sans-extension scss-file) ".css")))))
+        (message "\033[0;35m• %s%s\033[0m" (file-relative-name scss-file default-directory)
+                 (if (string= "" sassc-out) "" (concat ":\033[31m\n" sassc-out)))))
+    (message "No sassc executable found"))
   (dolist (org-file org-files)
-    (message "[0;34m• %s[90m" (file-relative-name org-file default-directory))
+    (message "\033[0;34m• %s\033[90m" (file-relative-name org-file default-directory))
     (with-current-buffer (find-file-literally org-file)
       (condition-case err
           (org-html-export-to-html)
-        (error (message "  [0;31m%s[90m"  (error-message-string err)))))))
-(message "[0m")
+        (error (message "  \033[0;31m%s\033[90m"  (error-message-string err)))))))
+(message "\033[0m")
 (kill-emacs 0)
