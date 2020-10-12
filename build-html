@@ -16,6 +16,7 @@
  org-html-htmlize-output-type 'css
  org-html-doctype "html5"
  org-html-html5-fancy t
+ org-html-validation-link nil
  make-backup-files nil
  debug-on-error t)
 
