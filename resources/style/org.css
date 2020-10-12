@@ -616,7 +616,10 @@ h2[id]:target {
       position: relative;
       top: 7rem;
       margin-bottom: -2.5rem;
-      pointer-events: none; }
+      pointer-events: none;
+      height: 1em;
+      width: 110%;
+      margin-left: -5%; }
 
 .starred {
   position: relative; }
