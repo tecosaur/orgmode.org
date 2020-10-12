@@ -12,14 +12,15 @@
  org-html-htmlize-output-type 'css
  org-html-doctype "html5"
  org-html-html5-fancy t
+ make-backup-files nil
  debug-on-error t)
 
 (let ((org-files (directory-files-recursively default-directory "\\.org$")))
   (dolist (org-file org-files)
-    (message "• %s" (file-relative-name org-file default-directory))
+    (message "[0;34m• %s[90m" (file-relative-name org-file default-directory))
     (with-current-buffer (find-file-literally org-file)
       (condition-case err
           (org-html-export-to-html)
-        (error (message "  %s"  (error-message-string err)))))))
-(message "")
+        (error (message "  [0;31m%s[90m"  (error-message-string err)))))))
+(message "[0m")
 (kill-emacs 0)
