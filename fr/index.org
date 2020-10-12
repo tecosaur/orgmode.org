@@ -4,9 +4,9 @@
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+html_head: <link rel="stylesheet" href="/resources/style/index.css" type="text/css" />
 #+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg+xml">
-#+include: "./resources/preamble.html" export html
+#+include: "../resources/preamble.html" export html
 
-#+include: "./resources/normal-outline-3.html" export html
+#+include: "../resources/normal-outline-3.html" export html
 
 #+begin_export html
 <style>
@@ -71,25 +71,25 @@
 :END:
 ** Fonctionalités
 @@html:<a href="features.html">@@
-[[file:resources/img/stars.svg]]
+[[file:../resources/img/stars.svg]]
 
 Explorez les possibilités.
 @@html:</a>@@
 ** Installation
 @@html:<a href="install.html">@@
-[[file:resources/img/install.svg]]
+[[file:../resources/img/install.svg]]
 
 Qu'est-ce que vous attendez ?
 @@html:</a>@@
 ** Démarrage rapide
 @@html:<a href="quickstart.html">@@
-[[file:resources/img/quickstart.svg]]
+[[file:../resources/img/quickstart.svg]]
 
 Commencez à utiliser Org. Vous ne pourrez plus vous arrêter.
 @@html:</a>@@
 ** Contribuer
 @@html:<a href="contribute.html">@@
-[[file:resources/img/contribute.svg]]
+[[file:../resources/img/contribute.svg]]
 
 Oui oui, faites le.
 @@html:</a>@@
@@ -101,11 +101,11 @@ structures simples mais polyvalentes : simples pour le débutant,
 puissantes pour l'expoert.
 
 #+attr_html: :style max-width:min(45rem, 80vw) :alt An example org file, showing a few basic elements
-[[file:resources/img/main.svg]]
+[[file:../resources/img/main.svg]]
 
 * En savoir plus
 
-À part le [[file:quickstart.org][quickstart]] et le [[file:manual/index.html][manuel]], il existe un [[file:guide/index.html][guide]], et pléthore de
+À part le [[file:../quickstart.org][quickstart]] et le [[https://orgmode.org/manual/][manuel]], il existe un [[https://orgmode.org/guide/][guide]], et pléthore de
 documentations rédigées par la communauté sur [[https://orgmode.org/worg/][Worg]].
 
 Presque tous les utilisateurs d'Org ont une histoire, montrant à quel point Org les a aidé.
@@ -121,11 +121,11 @@ reconnaissent pas les fichiers ~.org~ par défaut, ils peuvent souvent
 
 Bien que l'implémentation de référence d'Org, en Lisp Emacs, est de
 loin celle qui a le plus de fonctionalités, il existe quelques
-[[file:tools.org][outils]] tiers.
+[[file:../tools.org][outils]] tiers.
 
 #+begin_center
 #+attr_html: :class btn
-[[file:tools.org][Outils fonctionnant avec Org]
+[[file:../tools.org][Outils fonctionnant avec Org]]
 #+end_center
 
 * [[https://orgmode.org/worg/][Worg]], l'écosystème Org
