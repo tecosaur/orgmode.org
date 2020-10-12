@@ -6,6 +6,10 @@
 (load "~/.emacs.d/.local/straight/repos/emacs-htmlize/htmlize.el" t t) ; system-dependant
 (require 'htmlize)
 
+(load "~/.emacs.d/.local/straight/repos/org-mode/contrib/lisp/ox-extra.el" t t)
+(require 'ox-extra)
+(ox-extras-activate '(ignore-headlines))
+
 (setq
  org-html-style-default ""
  org-html-scripts ""
