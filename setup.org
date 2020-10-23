@@ -21,7 +21,7 @@
 #+html_head:   <meta property="twitter:description" content="Org: an Emacs Mode for Notes, Planning, Authoring, and more!">
 #+html_head:   <meta property="twitter:image" content="https://orgmode.org/resources/img/social-card.png">
 #+html_head:   <meta property="twitter:image:alt" content="Org-mode. Complex so you don't have to be. A versatile organisationay system with immense capabilities.">
-#+html_head:   <link type="application/json+oembed" href="resources/oembed-info.json" />
+#+html_head:   <link rel="alternate" type="application/json+oembed" href="resources/oembed-info.json" title="Org oEmbed Profile" />
 #+html_head:   <meta name="flattr:id" content="8d9x0o">
 #+html_head:   <link rel="apple-touch-icon" sizes="180x180" href="/resources/img/favicons/apple-touch-icon.png">
 #+html_head:   <link rel="icon" type="image/png" sizes="32x32" href="/resources/img/favicons/favicon-32x32.png">
