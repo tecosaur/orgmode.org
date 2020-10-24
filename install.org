@@ -57,11 +57,10 @@ vanilla Emacs there are popular configs such as
 that include org-mode customization, and Org-related packages.
 
 * In Other Editors
-While the full set of Org [[file:features.html][features]] is
-currently exclusive to Emacs, basic functionality for Org files has
-been implemented for a variety of editors.  Here are extensions for
-other editors that enable support for Org files.
-+ [[https://github.com/jceb/vim-orgmode][Vim]]
-+ [[https://atom.io/packages/org-mode][Atom]]
-+ [[https://github.com/vscode-org-mode/vscode-org-mode][VSCode]]
-+ [[https://packagecontrol.io/packages/orgmode][Sublime]]
+While the full set of Org [[file:features.html][features]] is currently exclusive to Emacs, basic
+functionality for Org files has been implemented for a variety of editors.
+Here are some extensions for other editors that enable support for Org files.
++ Vim :: [[https://github.com/jceb/vim-orgmode][vim-orgmode]] and [[https://github.com/axvr/org.vim][org.vim]]
++ Atom :: [[https://atom.io/packages/org-mode][org-mode]]
++ VSCode :: [[https://github.com/vscode-org-mode/vscode-org-mode][vscode-org-mode]]
++ Sublime :: [[https://packagecontrol.io/packages/orgmode][Orgmode for ST 2 & 3]]
