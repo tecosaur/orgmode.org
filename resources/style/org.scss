@@ -87,6 +87,11 @@ a:hover {
     text-decoration: underline;
     filter: brightness(80%);
 }
+a[href^="https://orgmode.org"], a:not([href^="https://"]) {
+    &:hover {
+        text-decoration: underline dashed;
+    }
+}
 
 #content {
     font-size: 1.2em;
