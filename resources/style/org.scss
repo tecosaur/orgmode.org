@@ -78,26 +78,14 @@ button.btn, a.btn {
 
 a {
     text-decoration: none;
-    /* color: #1c3030; */
-    /* #0066CC; */
-    color: #537d7b;
+    color: var(--dark-green);
 }
 a:visited {
     text-decoration: none;
-    /* color: #5e251e; */
-    /* #FF0000; */
-    /* color: #98855b */
 }
 a:hover {
     text-decoration: underline;
-    color: #3d696a;
-    /* #0066CC; */
-    /* color: #a34d32; */
-    /* #923a2e */
-    /* #5e251e */
-    /* #461c16 */
-    /* #3d696a */
-    /* #1c3030 */
+    filter: brightness(80%);
 }
 
 #content {
