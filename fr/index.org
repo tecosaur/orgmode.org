@@ -143,6 +143,7 @@ Worg contient entre autre:
 + [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
 + [[https://orgmode.org/worg/org-tutorials/index.html][Une liste de tutoriels]]
 + [[https://orgmode.org/worg/doc.html][La documentations de tous les hooks, commandes, et options]]
++ [[https://orgmode.org/worg/org-in-the-wild.html][Org en action]]
 + ...et bien plus
 
 C'est un dépôt Git, de fichiers Org publiés en HTML sur un site
@@ -154,26 +155,10 @@ collaborateur.
 ~$ git clone https://code.orgmode.org/bzg/worg.git
 #+END_SRC
 
-* Org dans la nature
-** Discutter d'Org
+* Discutter d'Org
 Vous pouvez vous connecter à d'autres org-tousiastes via IRC sur les
 salons ~#org-mode~ et ~#org-mode-fr~ on [[https://freenode.net/][freenode]].
 
 Il existe aussi une mailing list à laquelle vous pouvez vous [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][abonner]],
 ou visiter ses [[https://orgmode.org/list][archives]] ici sur =orgmode.org= ou via les
 [[https://lists.gnu.org/archive/html/emacs-orgmode/][archives GNU listserv]].
-** Quelques resources (en anglais) à propos d'Org
-+ [[https://www.viktorbengtsson.com/blog/org-mode-for-writers/][Org-mode for writers]]
-+ [[https://blog.jethro.dev/posts/how_to_take_smart_notes_org/][How To Take Smart Notes With Org-mode · Jethro Kuan]]
-+ [[https://opensource.com/article/20/4/emacs-org-mode][Use Emacs Org mode to easily create LaTeX documents | Opensource.com]]
-+ [[http://www.howardism.org/Technical/Emacs/orgmode-wordprocessor.html][Org as a Word Processor]]
-+ [[http://www.howardism.org/Technical/Emacs/literate-devops.html][Literate DevOps]]
-** Quelques conférences (en anglais) à propos d'Org
-+ [[https://www.youtube.com/watch?v=oJTwQvgfgMM][Google Tech Talk]] (2008) :: Delivered by Carsten Dominick.
-+ Max Planck Institute for Neurological Research (2010) :: Recording lost to the
-  sands of time.
-+ [[http://twit.tv/show/floss-weekly/136][FLOSS Weekly]] (2010) :: Interview of Carsten Dominic.
-+ [[https://orgmode.org/worg/org-tutorials/org-screencasts/ghm2011-demo.html][GHM Paris]] (2011) :: Org Demo by Bastien Guerry.
-+ [[https://www.youtube.com/watch?v=wiMSzI6VHhM][GPN12]] (2012) :: Florain Adamsky's in-depth presentation ([[http://florian.adamsky.it/research/talks/gpn12/GPN12-Emacs-Org-mode.pdf][slides]]).
-+ [[https://www.youtube.com/watch?v=SzA2YODtgK4][Thoughtbot]] (2016) :: Getting started with Org Mode by Harry Schwartz.
-+ [[https://www.youtube.com/watch?v=0g9BcZvQbXU][YouTube]] (2019) :: Consistent Technical Documents Using Emacs and Org Mode, by Mike Hamrick.
