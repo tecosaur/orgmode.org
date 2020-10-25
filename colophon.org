@@ -73,13 +73,14 @@ recompilation, HTML exporting, and ~rsync~ all happen automatically.
     (message "finished exporting. Experienced errors with:%s" (if errors (concat "\n - " (s-join "\n - " errors)) ""))))
 #+END_SRC
 
-* Deployment
+* Local deployment
 We use a little shell hack to immediately call Emacs on the file
-#+begin_src shell :tangle build-html :shebang "#!/usr/bin/env sh" :comments none
+#+begin_src shell
+#!/usr/bin/env sh
 ":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 #+end_src
 Then we can execute some elisp.
-#+begin_src emacs-lisp :tangle build-html :comments none
+#+begin_src emacs-lisp
 (require 'ox)
 (require 'ox-html)
 (load "~/.emacs.d/.local/straight/repos/emacs-htmlize/htmlize.el" t t) ; system-dependant
