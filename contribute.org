@@ -6,6 +6,9 @@
 #+include: "./resources/normal-outline-3.html" export html
 
 * Contribute
+:PROPERTIES:
+:CUSTOM_ID: contribute
+:END:
 Org mode is [[file:manual/History-and-Acknowledgments.html][built on the efforts of enthusiastic volunteers]].
 The two best ways to contribute to Org are with time or money.
 Donations support Org's primary maintainer Bastien Guerry.
@@ -34,11 +37,17 @@ to help move the project forward.
 Whatever your contribution, it is appreciated.
 
 * Mailing list
+:PROPERTIES:
+:CUSTOM_ID: mailing-list
+:END:
 Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]]
 via the GNU listserv, and can browse the [[https://orgmode.org/list][primary archive]]
 here at =orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
 
 * Copyright assignment
+:PROPERTIES:
+:CUSTOM_ID: copyright
+:END:
 Org mode has a substantial code base composed of many files, most of
 which are distributed as part of GNU Emacs.
 
@@ -53,6 +62,9 @@ out [[https://orgmode.org/request-assign-future.txt][this form]] and
 email it to [[mailto:assign@gnu.org][assign@gnu.org]].
 
 * Submitting patches
+:PROPERTIES:
+:CUSTOM_ID: patches
+:END:
 ** Suggested workflow
 #+BEGIN_SRC shell
 ~$ git pull
@@ -110,5 +122,8 @@ be able to get the email to go through by
 to the mailing list.
 
 * Our beloved contributors
+:PROPERTIES:
+:CUSTOM_ID: contributors
+:END:
 The full [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to 
 Org mode is maintained in /Worg/.

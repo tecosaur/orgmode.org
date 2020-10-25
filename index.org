@@ -1,4 +1,4 @@
-#+title:       Org mode for Emacs
+#+title: Org mode for Emacs
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+html_head: <link rel="stylesheet" href="/resources/style/index.css" type="text/css" />
@@ -102,6 +102,9 @@ novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerf
 [[file:resources/img/main.svg]]
 
 * Further reading
+:PROPERTIES:
+:CUSTOM_ID: reading
+:END:
 
 Beyond the [[file:quickstart.org][quickstart]] and the [[file:manual/index.html][manual]],
 Org has a [[file:guide/index.html][guide]], and a wealth of community-written documentation on [[https://orgmode.org/worg/][Worg]] .
@@ -111,6 +114,9 @@ some have found it so useful that they have written [[https://orgmode.org/worg/o
 the value of Org for conducting [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][reproducible research]].
 
 * More Org
+:PROPERTIES:
+:CUSTOM_ID: more
+:END:
 
 The /de facto/ mimetype for Org files is =text/org=. Org files use the
 ~.org~ extension. Most operating systems don't know to open ~.org~
@@ -126,6 +132,9 @@ that work with Org.
 #+end_center
 
 * [[https://orgmode.org/worg/][Worg]], a /World/ of Org
+:PROPERTIES:
+:CUSTOM_ID: worg
+:END:
 Org and Org-mode have so many use cases that it is simply not possible
 to easily document them, let alone show them all off on a single page.
 As a result, [[https://orgmode.org/worg/][Worg]] serves as a community
@@ -150,6 +159,9 @@ and ask to be added as a collaborator.
 
 * Org in the wild
 ** Chatting about Org
+:PROPERTIES:
+:CUSTOM_ID: chatting
+:END:
 You can connect with other org-thusiasts via IRC at ~#orgmode~ on [[https://freenode.net/][freenode]].
 
 Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]]
