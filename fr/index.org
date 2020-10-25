@@ -110,7 +110,8 @@ documentations rédigées par la communauté sur [[https://orgmode.org/worg/][Wo
 
 Presque tous les utilisateurs d'Org ont une histoire, montrant à quel point Org les a aidé.
 À tel point que certains ont rédigé des [[https://orgmode.org/worg/org-papers.html][papiers (de recherche)]] à propos de l'utilisation d'Org
-dans le cadre de [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][recherche reproductible]].
+dans le cadre de [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][recherche reproductible]]. Certains ont même produit des outils
+externes pour profiter d'Org en dehors d'Emacs, dont des applications mobiles.
 
 * Plus d'Org
 

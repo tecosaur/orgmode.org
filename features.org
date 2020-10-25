@@ -372,37 +372,3 @@ that ~[[issue:74][big bug]]~ expands to
 Beyond expanding links, you can define custom resolving functions,
 link to files on remote machines with
 [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.
-
-* With You Wherever You Go
-  :PROPERTIES:
-  :CUSTOM_ID: mobile
-  :HTML_CONTAINER_CLASS: side-fig
-  :END:
-
-#+attr_html: :alt Screenshot of BeOrg :style float:right;box-shadow:none; :width 400px
-[[file:resources/img/external/beorg.png]]
-
-** Description
-
-Org is available on mobile devices, so you never have to miss a note.
-
-#+attr_html: :class justify
-For iOS there is the wonderful [[https://beorgapp.com/][beorg]], which
-supports many of Org's features and can sync over a variety of
-services.
-
-#+attr_html: :class justify
-For Android there is the excellent and open source [[http://www.orgzly.com/][orgzly]],
-which likewise supports many of Org's features and can sync over a variety of services.
-([[https://github.com/orgzly/orgzly-android][Git repo]]).
-
-#+attr_html: :class justify
-In addition to native apps, [[https://github.com/200ok-ch/organice][organice]]
-implements Org mode as a web app that supports mobile and desktop browsers.
-You can host the app yourself or access a version hosted at https://organice.200ok.ch/.
-
-#+attr_html: :class justify
-There is also [[https://github.com/DanielDe/org-web][org-web]] which takes a
-similar approach, and that can be self-hosted or accessed via https://org-web.org/.
-
-*** COMMENT More
