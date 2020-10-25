@@ -4,6 +4,9 @@
 #+include: "./resources/preamble.html" export html
 
 * Getting started with Org-mode
+:PROPERTIES:
+:CUSTOM_ID: getting-started
+:END:
 In its simplest form, Org is like any other markup language.
 You can write [[https://orgmode.org/worg/dev/org-syntax.html][Org syntax]] in any text editor.
 
@@ -16,6 +19,9 @@ that transforms Org syntax into a living, interactive document.
 #+end_center
 
 * Preamble
+:PROPERTIES:
+:CUSTOM_ID: preamble
+:END:
 At the start of a file (before the first headline), it is common to
 set the title, author, and other
 [[https://orgmode.org/manual/Export-Settings.html][export options]].
@@ -25,6 +31,9 @@ set the title, author, and other
 #+END_SRC
 
 * Headlines
+:PROPERTIES:
+:CUSTOM_ID: headlines
+:END:
 Lines that start with and asterisk ~*~ are [[https://orgmode.org/worg/dev/org-syntax.html#Headlines_and_Sections][headlines]].
 
 A single ~*~ denotes a 1st-level headline, ~**~ denotes a 2nd-level headline, etc.
@@ -49,6 +58,9 @@ keyword such as ~TODO~ or ~HOLD~.
 #+END_SRC
 
 * Markup
+:PROPERTIES:
+:CUSTOM_ID: markup
+:END:
 To mark up text in Org, simply surround it with one or more marker characters.
 *bold* /italic/ and _underline_ are fairly intuitive, and the ability to use
 +strikethrough+ is a plus.  You can _/*combine*/_ the basic markup in any
@@ -66,6 +78,9 @@ if they are present since their contents are interpreted =_literally_=.
 See [[https://orgmode.org/worg/dev/org-syntax.html#Emphasis_Markers][Emphasis Markers]] for more details.
 
 * Lists
+:PROPERTIES:
+:CUSTOM_ID: lists
+:END:
 Unordered lists start with ~+~, ~-~, or ~*~[fn::~*~ cannot
 be used to start a plain list if it is immediately preceded by
 a newline because it will be interpreted as a headline.].
@@ -96,6 +111,9 @@ Lists can contain tags (and checkboxes at the same time).
 #+END_SRC
 
 * Links
+:PROPERTIES:
+:CUSTOM_ID: links
+:END:
 To create a link put the target between two square brackets, like so: ~[[target]]~.
 You can include a description in square brackets after the target ~[[target][desc]]~.
 
@@ -120,7 +138,11 @@ Some examples:
 For more on links, see the manual sections for
 [[https://orgmode.org/manual/Internal-Links.html][Internal Links]] and
 [[https://orgmode.org/manual/External-Links.html][External Links]].
+
 * Images
+:PROPERTIES:
+:CUSTOM_ID: images
+:END:
 Org mode automatically recognizes and renders image links.
 Just link to an image (don't include a description). That's it. \\
 ~[[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]~
@@ -129,6 +151,9 @@ Just link to an image (don't include a description). That's it. \\
 [[https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png]]
 
 * Blocks
+:PROPERTIES:
+:CUSTOM_ID: blocks
+:END:
 Org mode uses =#+BEGIN= ... =#+END= blocks for many purposes.
 Some of the basic blocks types quote, example, and src.
 
@@ -153,6 +178,9 @@ A hello world example cannot even begin to scratch the surface
 Org mode's support for [[https://orgmode.org/manual/Working-with-Source-Code.html][working with source code]].
 
 * Tables
+:PROPERTIES:
+:CUSTOM_ID: tables
+:END:
 Org mode comes with a table editor complete with support cell references
 and formulas.
 
@@ -179,6 +207,9 @@ Worried about aligning free text tables?
 Org mode does it in a single keystroke -- =tab=.
 
 * Comments
+:PROPERTIES:
+:CUSTOM_ID: comments
+:END:
 Org mode has a variety of ways to add comments.
 
 Line comments start with ~#~. \\
@@ -215,6 +246,9 @@ This text will be exported and code blocks will run.
 #+END_SRC
 
 * Macros
+:PROPERTIES:
+:CUSTOM_ID: macros
+:END:
 Org has many more advanced features built into its syntax.
 To give only a single example, let's take a look at
 [[https://orgmode.org/manual/Macro-Replacement.html][macros]].
@@ -230,6 +264,9 @@ Regular text. {{{red(This text will be red.)}}} More regular text.
 #+END_SRC
 
 * Next steps
+:PROPERTIES:
+:CUSTOM_ID: next-steps
+:END:
 Looking for something in particular?
 The [[file:manual/][manual]] ([[file:org.pdf][PDF]]) is a good place to start. \\
 Looking for something between this quickstart and the manual?

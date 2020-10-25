@@ -30,7 +30,7 @@
 
 * Elegant Markup
 :PROPERTIES:
-:CUSTOM_ID: simple-syntax
+:CUSTOM_ID: markup
 :HTML_CONTAINER_CLASS: side-fig
 :END:
 
