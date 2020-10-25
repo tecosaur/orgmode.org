@@ -83,11 +83,11 @@ a {
 a:visited {
     text-decoration: none;
 }
-a:hover {
+a:not(.btn):hover {
     text-decoration: underline;
-    filter: brightness(80%);
+    filter: brightness(85%);
 }
-a[href^="https://orgmode.org"], a:not([href^="https://"]) {
+a:not(.btn)[href^="https://orgmode.org"], a:not(.btn):not([href^="https://"]) {
     &:hover {
         text-decoration: underline dashed;
     }
