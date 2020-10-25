@@ -27,7 +27,7 @@
     </h2>
     <p>
       Un mode principal, extensible, et open-source pour
-      <a href="https://www.gnu.org/software/emacs/" style="color: #fff; font-weight: bold; font-style: italic;">Emacs</a>.</p>
+      <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a>.</p>
     <p>Org mode sert à prendre des notes, gérer des to-do lists, planifier
       des projets, rédiger des documents, des calepins de calculs, faire
       de la programmation littéraire, … le tout dans un système rapide et efficace,
