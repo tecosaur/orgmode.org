@@ -22,9 +22,10 @@ that transforms Org syntax into a living, interactive document.
 :PROPERTIES:
 :CUSTOM_ID: preamble
 :END:
+
 At the start of a file (before the first headline), it is common to
-set the title, author, and other
-[[https://orgmode.org/manual/Export-Settings.html][export options]].
+set the title, author and other [[https://orgmode.org/manual/Export-Settings.html][export options]].
+
 #+BEGIN_SRC org
 ,#+title: The glories of Org
 ,#+author: A. Org Writer
