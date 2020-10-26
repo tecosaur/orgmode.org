@@ -145,7 +145,7 @@ Worg contient entre autre:
 + [[https://orgmode.org/worg/org-tutorials/index.html][Une liste de tutoriels]]
 + [[https://orgmode.org/worg/doc.html][La documentations de tous les hooks, commandes, et options]]
 + [[https://orgmode.org/worg/org-in-the-wild.html][Org en action]]
-+ ...et bien plus
++ /...et bien plus/
 
 C'est un dépôt Git, de fichiers Org publiés en HTML sur un site
 web. Les nouvelles contributions sont bienvenues, pour celà créez-vous
