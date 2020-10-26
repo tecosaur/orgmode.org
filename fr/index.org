@@ -17,7 +17,7 @@
 #+end_export
 
 #+begin_export html
-<div class="banner hero" itemscope itemtype="http://schema.org/SoftwareApplication">
+<div class="banner hero" itemscope itemtype="https://schema.org/SoftwareApplication">
   <img src="/resources/img/org-mode-unicorn.svg"
        alt="Org unicorn logo" itemprop="image"/>
   <div>
@@ -59,7 +59,7 @@
       Crée par
       <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>
       en <a target="new" href="/manual/History-and-Acknowledgments.html">2003</a>,
-      maintenu par <a target="new" href="http://bzg.fr">Bastien Guerry</a>
+      maintenu par <a target="new" href="https://bzg.fr">Bastien Guerry</a>
       et développé par
       <a href="https://orgmode.org/org.html#History-and-Acknowledgments">beaucoup d'autres</a>.</p>
   </div>

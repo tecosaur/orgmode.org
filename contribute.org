@@ -52,10 +52,10 @@ Org mode has a substantial code base composed of many files, most of
 which are distributed as part of GNU Emacs.
 
 These files make up the /Org core/, and are copyrighted by the
-[[http://www.fsf.org/][Free Software Foundation]] (FSF).
+[[https://www.fsf.org/][Free Software Foundation]] (FSF).
 
 If you want to contribute more than 15 lines of code to Org mode you
-will [[http://www.gnu.org/licenses/why-assign.html][need]] to assign
+will [[https://www.gnu.org/licenses/why-assign.html][need]] to assign
 the copyright for your contributions to the FSF so that they can be
 included in GNU Emacs. To start the copyright assignment process fill
 out [[https://orgmode.org/request-assign-future.txt][this form]] and
@@ -78,7 +78,7 @@ email it to [[mailto:assign@gnu.org][assign@gnu.org]].
 #+END_SRC
 ** Coding conventions
 Org is part of Emacs, so any contribution should follow the
-[[http://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html][GNU Emacs Lisp coding conventions]]
+[[https://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html][GNU Emacs Lisp coding conventions]]
 described in Emacs manual.
 ** Commit messages
 Commit messages also need to be structured according to Emacs contentions.
