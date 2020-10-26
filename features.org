@@ -5,9 +5,6 @@
 
 #+begin_export html
 <style>
-  .justify {
-    text-align: justify;
-  }
   .side-fig img {
     filter: invert(1.4%);
     box-shadow: none;
@@ -39,7 +36,6 @@
                                           
 ** Description
 
-#+attr_html: :class justify
 Org mode is routinely used to build and manage complex workflows.  It
 does this using an elegantly simple syntax that scales from basic
 markup to full LaTeX typesetting and from plain text notes to literate
@@ -62,17 +58,14 @@ More on [[file:manual/Markup-for-Rich-Contents.html][markup]] (manual)
 
 ** Description
 
-#+attr_html: :class justify
 The fundamental structure of an Org document is a tree, with nested,
 collapsible sections forming its backbone.  You can fold and unfold
 whole trees with single keystroke --- =tab=.
 
-#+attr_html: :class justify
 Org's trees make for quick, graceful navigation and powerful
 information hiding that lets you focus on the task at hand without
 compromising the ability to get the information you need complete it.
 
-#+attr_html: :class justify
 Controlling section visibility is only a tiny part of Org's set of
 tools and commands for structured editing of plain text.  Org mode
 leverages Org's regular syntax to transform otherwise tedious tasks
@@ -102,12 +95,10 @@ Org includes a powerful table editor.
 
 Layout updates automatically as cell contents change.
 
-#+attr_html: :class justify
 Import tables from =.csv= and =.tsv= files, or directly from the
 contents of the current buffer, then export them to any format
 supported by Org.
 
-#+attr_html: :class justify
 Org tables aren't just static views of data.  They can be used as a
 full [[https://orgmode.org/manual/The-Spreadsheet.html][spreadsheet]]
 system, with formulas, references, and more --- all with the simplicity
@@ -134,12 +125,10 @@ Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org a
 
 ** Description
 
-#+attr_html: :class justify
 Org provides functionality far beyond that of computational notebooks
 such as [[https://jupyter.org/][Jupyter]] or [[https://rmarkdown.rstudio.com/][R Markdown]].
 
 # Program your way.
-#+attr_html: :class justify
 [[https://orgmode.org/worg/org-contrib/babel/][Org babel]] transforms the lowly executable source block into a complete
 [[https://en.wikipedia.org/wiki/Literate_programming][literate programming]] environment, allowing you to weave the inputs and
 outputs of multiple languages and runtime environments across multiple
@@ -148,7 +137,6 @@ levels of [[https://en.wikipedia.org/wiki/Don%27t_repeat_yourself][DRYness]] reg
 in want you to or not.
 
 # Free your code
-#+attr_html: :class justify
 Org makes it trivial to extract source code and generate documentation
 from the same file. While many languages have support for generating
 developer documentation from code comments, with Org your developer
@@ -156,7 +144,6 @@ guide and user manual can also be the source code for implementation
 and testing --- a single source of truth that won't drift out of sync.
 
 # Emacs. We will add your technological distinctiveness to our own.
-#+attr_html: :class justify
 Org currently has support for over [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]], and projects like
 [[https://github.com/nnicandro/emacs-jupyter#org-mode-source-blocks][emacs-jupyter]] make it possible to leverage the Jupyter kernel
 ecosystem for even more languages.
@@ -178,12 +165,10 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
 
 ** Description
 
-#+attr_html: :class justify
 Org is an authoring and publishing tool --- it can function as
 everything from a static site generator, to a suite of tools for
 self-publishing.
 
-#+attr_html: :class justify
 Draft documents using Org's intuitive markup, then export to your
 format of choice.  Org supports many formats including:
 
@@ -192,12 +177,10 @@ format of choice.  Org supports many formats including:
 - =ODT=
 - and more!
 
-#+attr_html: :class justify
 Developers can easily create new backends for their favorite format
 (see the [[https://orgmode.org/worg/dev/org-export-reference.html][ox reference documentation]]),
 and Org is also supported by [[https://pandoc.org][Pandoc]].
 
-#+attr_html: :class justify
 In addition to exporting single files, you can define /publishing
 projects/ for one or more =.org= files and accompanying resources,
 targeting one or more publication backends.
@@ -226,19 +209,15 @@ More on [[file:manual/Publishing.html][publishing]] (manual)
 
 ** Description
 
-#+attr_html: :class justify
 Org is an extremely capable task planner, time tracker, and TODO list.
 
-#+attr_html: :class justify
 Any section can become a /TODO item/ by adding a keyword such as =TODO= or
 =HOLD= to track the state of the task.  You can cycle through task
 states with the shortcuts =S-<left>= and =S-<right>=.
 
-#+attr_html: :class justify
 Need add your own set of states?  No problem.  Org lets you customize
 them to support your workflow.
 
-#+attr_html: :class justify
 Org /Agenda/ makes it easy to view tasks from multiple files in one
 place.  All you have to do is add one of the TODO keywords.  Org has
 built-in support for task priority, deadlines, scheduled tasks, tags,
@@ -265,25 +244,20 @@ Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
 
 Plan your day, your way, with ease.
 
-#+attr_html: :class justify
 With /agenda views/ --- reports generated from your /TODO items/ --- you
 can see your tasks on a daily, weekly, and monthly basis.
 
-#+attr_html: :class justify
 Even with hundreds of =.org= files and thousands of tasks, agenda lets
 you focus on what you need to do, and quickly take action, jumping
 from the high level overview directly into the task at hand.
 
-#+attr_html: :class justify
 The default agenda shows scheduled and deadlined tasks for the week,
 stalled projects, and all your outstanding TODO items.
 
-#+attr_html: :class justify
 Not satisfied with the defaults? Org agenda is highly configurable.
 You can customize the contents of default views or create your own
 [[https://orgmode.org/manual/Custom-Agenda-Views.html][custom views]].
 
-#+attr_html: :class justify
 In a sense Org is an expressive language that captures the key points
 of interaction in workflows, simplifying and refining the process of
 developing new workflows as they emerge during the course of work,
@@ -306,12 +280,10 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 
 ** Description
 
-#+attr_html: :class justify
 Keep track of the time you spend on your tasks with Org /Clocking/, and
 at end of the day you can generate customized reports about how you
 spent your time.
 
-#+attr_html: :class justify
 Org provides shortcuts to /clock in/ and /clock out/ of tasks.  When
 working in an =.org= file =C-c C-x C-i= clocks in, and =C-c C-x C-o= clocks
 out. Time is stored in the property drawer of the headline for the
@@ -336,11 +308,9 @@ More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
 
 You can add content to an =.org= file by /capturing/ data.
 
-#+attr_html: :class justify
 You can capture from anywhere --- from an Emacs buffer or from other
 applications like your web browser, PDF viewer, and more.
 
-#+attr_html: :class justify
 Capture templates provide a quick and effective way to ingest
 structured data for a variety of workflows, from adding TODO items to
 quoting the relevant section of a manual or saving a receipt.
@@ -361,17 +331,14 @@ More on [[file:manual/Capture.html][capturing]] (manual)
 ** Description
 Org mode isn't just extensible, it is /Emacs extensible/.
 
-#+attr_html: :class justify
 Org started out as an extension. As a result, extensibility is present
 in nearly every aspect of Org.
 
-#+attr_html: :class justify
 To give only a single example, consider hyperlinks.  While updating
 documentation you find yourself repeatedly linking to GitHub
 issues. In Org you can add a new ~issue:~ link type to the document so
 that ~[[issue:74][big bug]]~ expands to
 =https://github.com/author/repo/issues/74=.
 
-#+attr_html: :class justify
 Beyond expanding links, you can define custom resolving functions,
 link to files on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.
