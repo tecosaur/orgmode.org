@@ -154,7 +154,7 @@ For example, Worg contains:
 - [[https://orgmode.org/worg/org-tutorials/index.html][A list of tutorials]]
 - [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands, and options]]
 - [[https://orgmode.org/worg/org-in-the-wild.html][Org in the wild]]
-- ...and much more
+- /...and much more/
 
 Worg is maintained as a Git repository of Org files that are published
 as an HTML website.  New contributors are welcome. If you would like

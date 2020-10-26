@@ -89,9 +89,8 @@ More on [[file:manual/Document-Structure.html][document structure]] (manual)
 
 Org includes a powerful table editor.
 
-=tab= moves between columns.
-
-=return= moves between rows.
+=tab= moves between /columns/.
+=return= moves between /rows/.
 
 Layout updates automatically as cell contents change.
 
