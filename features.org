@@ -16,6 +16,9 @@
   body {
     padding: 1em 0 0 0;
   }
+  .outline-text-3 p {
+    padding-bottom: 0.5em;
+  }
   :root {
     --body-left: 0 !important;
     --body-right: 0 !important;
