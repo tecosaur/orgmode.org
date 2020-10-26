@@ -169,15 +169,3 @@ added as a collaborator.
 #+BEGIN_SRC shell
 ~$ git clone https://code.orgmode.org/bzg/worg.git
 #+END_SRC
-
-* Chatting about Org
-:PROPERTIES:
-:CUSTOM_ID: chatting
-:END:
-
-You can connect with other org-thusiasts via IRC at ~#org-mode~ on
-[[https://freenode.net/][freenode]].
-
-Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] via the GNU
-listserv, and can browse the [[https://orgmode.org/list][primary archive]] here at =orgmode.org= or
-via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
