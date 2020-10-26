@@ -5,9 +5,9 @@
 #+include: "./resources/normal-outline-3.html" export html
 
 * Contribute
-:PROPERTIES:
-:CUSTOM_ID: contribute
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: contribute
+  :END:
 
 Org mode is [[file:manual/History-and-Acknowledgments.html][built on the efforts of enthusiastic volunteers]].  The two
 best ways to contribute to Org are with time or money.  Donations
@@ -24,9 +24,10 @@ support Org's primary maintainer Bastien Guerry.
 #+END_EXPORT
 
 You can also support Org with your time, no matter your level of
-experience.  The fastest way to get involved is by [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to the
-mailing list]].  You can also always get in touch via
-[[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to help move the project forward.
+experience.  The fastest way to get involved is by joining the
+[[file:community.org][community]] and [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to the mailing list]].  You can also always
+get in touch via [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to help move the project
+forward.
 
 # FIXME this section needs links, e.g. to instructions for running tests
 
@@ -37,35 +38,26 @@ mailing list]].  You can also always get in touch via
 
 Whatever your contribution, it is appreciated 😀.
 
-* Mailing list
-:PROPERTIES:
-:CUSTOM_ID: mailing-list
-:END:
-
-Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] via the GNU
-listserv, and can browse the [[https://orgmode.org/list][primary archive]] here at =orgmode.org= or
-via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
-
 * Copyright assignment
-:PROPERTIES:
-:CUSTOM_ID: copyright
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: copyright
+  :END:
 
 Org mode has a substantial code base composed of many files, most of
 which are distributed as part of GNU Emacs.
 
-These files make up the /Org core/, and are copyrighted by the [[https://www.fsf.org/][Free
+These files make up the /Org core/ and are copyrighted by the [[https://www.fsf.org/][Free
 Software Foundation]] (FSF).
 
 If you want to contribute more than 15 lines of code to Org mode you
 will [[https://www.gnu.org/licenses/why-assign.html][need]] to assign the copyright for your contributions to the FSF so
-that they can be included in GNU Emacs. To start the copyright
+that they can be included in GNU Emacs.  To start the copyright
 assignment process fill out [[https://orgmode.org/request-assign-future.txt][this form]] and email it to [[mailto:assign@gnu.org][assign@gnu.org]].
 
 * Submitting patches
-:PROPERTIES:
-:CUSTOM_ID: patches
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: patches
+  :END:
 
 ** Suggested workflow
 #+BEGIN_SRC shell
@@ -127,9 +119,3 @@ minutes, it may have been flagged as spam by the robot email
 overlords.  If this happens, you should be able to get the email to go
 through by [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing]] to the mailing list.
 
-* Our beloved contributors
-:PROPERTIES:
-:CUSTOM_ID: contributors
-:END:
-
-The full [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to Org mode is maintained in /Worg/.

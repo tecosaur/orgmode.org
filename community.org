@@ -1,0 +1,29 @@
+#+TITLE: Community | Org mode
+#+setupfile: setup.org
+#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+include: "./resources/preamble.html" export html
+#+include: "./resources/normal-outline-3.html" export html
+
+* Mailing list
+  :PROPERTIES:
+  :CUSTOM_ID: mailing-list
+  :END:
+
+Org has an active mailing list.  You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] and [[https://orgmode.org/list][browse the
+archive]] here at =orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU mailman archive]].
+
+* Chatting about Org
+  :PROPERTIES:
+  :CUSTOM_ID: chatting
+  :END:
+
+You can connect with other org-thusiasts via IRC at ~#orgmode~ on
+[[https://freenode.net/][freenode]].
+
+* Current contributors
+  :PROPERTIES:
+  :CUSTOM_ID: contributors
+  :END:
+
+The full [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to Org mode is maintained in /Worg/.
+
