@@ -18,7 +18,7 @@
 #+html_head:   <meta property="twitter:card" content="summary_large_image">
 #+html_head:   <meta property="twitter:url" content="https://orgmode.org">
 #+html_head:   <meta property="twitter:title" content="Org Mode">
-#+html_head:   <meta property="twitter:description" content="Org: an Emacs Mode for Notes, Planning, Authoring, and more!">
+#+html_head:   <meta property="twitter:description" content="Org: an Emacs Mode for Notes, Planning, Authoring and more!">
 #+html_head:   <meta property="twitter:image" content="https://orgmode.org/resources/img/social-card.png">
 #+html_head:   <meta property="twitter:image:alt" content="Org-mode. Complex so you don't have to be. A versatile organisationay system with immense capabilities.">
 #+html_head:   <link rel="alternate" type="application/json+oembed" href="resources/oembed-info.json" title="Org oEmbed Profile" />

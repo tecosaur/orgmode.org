@@ -1,6 +1,6 @@
 #+title: Features | Org mode
 #+setupfile: setup.org
-#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+description: Org: an Emacs Mode for Notes, Planning and Authoring
 #+include: "./resources/preamble.html" export html
 
 #+begin_export html
@@ -102,9 +102,8 @@ contents of the current buffer, then export them to any format
 supported by Org.
 
 Org tables aren't just static views of data.  They can be used as a
-full [[https://orgmode.org/manual/The-Spreadsheet.html][spreadsheet]]
-system, with formulas, references, and more --- all with the simplicity
-and transparency of plain text.
+full [[https://orgmode.org/manual/The-Spreadsheet.html][spreadsheet]] system, with formulas, references and more --- all
+with the simplicity and transparency of plain text.
 
 *** More
 
@@ -162,7 +161,7 @@ List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported l
   :END:
 # Powerful publishing
 
-#+attr_html: :class main-image :alt Showing an Org file being exported to HTML, markdown, PDF, and plaintext
+#+attr_html: :class main-image :alt Showing an Org file being exported to HTML, markdown, PDF and plaintext
 [[file:resources/img/features/exports.gif]]
 
 ** Description
@@ -180,8 +179,8 @@ format of choice.  Org supports many formats including:
 - and more!
 
 Developers can easily create new backends for their favorite format
-(see the [[https://orgmode.org/worg/dev/org-export-reference.html][ox reference documentation]]),
-and Org is also supported by [[https://pandoc.org][Pandoc]].
+(see the [[https://orgmode.org/worg/dev/org-export-reference.html][ox reference documentation]]) and Org is also supported by
+[[https://pandoc.org][Pandoc]].
 
 In addition to exporting single files, you can define /publishing
 projects/ for one or more =.org= files and accompanying resources,
@@ -211,7 +210,7 @@ More on [[file:manual/Publishing.html][publishing]] (manual)
 
 ** Description
 
-Org is an extremely capable task planner, time tracker, and TODO list.
+Org is an extremely capable task planner, time tracker and TODO list.
 
 Any section can become a /TODO item/ by adding a keyword such as =TODO= or
 =HOLD= to track the state of the task.  You can cycle through task
@@ -223,7 +222,7 @@ them to support your workflow.
 Org /Agenda/ makes it easy to view tasks from multiple files in one
 place.  All you have to do is add one of the TODO keywords.  Org has
 built-in support for task priority, deadlines, scheduled tasks, tags,
-clocking, and more. /Agenda/ can use of all of it to organize and
+clocking and more. /Agenda/ can use of all of it to organize and
 prioritize tasks --- seamlessly scaling from a simple TODO list into a
 complete project management suite, all with plain text markup.
 
@@ -239,7 +238,7 @@ Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
   :HTML_CONTAINER_CLASS: side-fig
   :END:
 
-#+attr_html: :class main-image :alt An example Org agenda, displaying various todo keywords, priorities, categorisation, and scheduling
+#+attr_html: :class main-image :alt An example Org agenda, displaying various todo keywords, priorities, categorisation and scheduling
 [[file:resources/img/features/agenda.svg]]
 
 ** Description
@@ -247,14 +246,14 @@ Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
 Plan your day, your way, with ease.
 
 With /agenda views/ --- reports generated from your /TODO items/ --- you
-can see your tasks on a daily, weekly, and monthly basis.
+can see your tasks on a daily, weekly and monthly basis.
 
 Even with hundreds of =.org= files and thousands of tasks, agenda lets
-you focus on what you need to do, and quickly take action, jumping
+you focus on what you need to do and quickly take action, jumping
 from the high level overview directly into the task at hand.
 
 The default agenda shows scheduled and deadlined tasks for the week,
-stalled projects, and all your outstanding TODO items.
+stalled projects and all your outstanding TODO items.
 
 Not satisfied with the defaults? Org agenda is highly configurable.
 You can customize the contents of default views or create your own
@@ -287,7 +286,7 @@ at end of the day you can generate customized reports about how you
 spent your time.
 
 Org provides shortcuts to /clock in/ and /clock out/ of tasks.  When
-working in an =.org= file =C-c C-x C-i= clocks in, and =C-c C-x C-o= clocks
+working in an =.org= file =C-c C-x C-i= clocks in and =C-c C-x C-o= clocks
 out. Time is stored in the property drawer of the headline for the
 task at had.
 
@@ -311,7 +310,7 @@ More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
 You can add content to an =.org= file by /capturing/ data.
 
 You can capture from anywhere --- from an Emacs buffer or from other
-applications like your web browser, PDF viewer, and more.
+applications like your web browser, PDF viewer and more.
 
 Capture templates provide a quick and effective way to ingest
 structured data for a variety of workflows, from adding TODO items to

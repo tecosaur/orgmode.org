@@ -1,6 +1,6 @@
 #+TITLE: Install | Org Mode
 #+setupfile: setup.org
-#+description: Get started with Org: an Emacs Mode for Notes, Planning, and Authoring
+#+description: Get started with Org: an Emacs Mode for Notes, Planning and Authoring
 #+include: "./resources/preamble.html" export html
 
 * Installation
@@ -38,29 +38,24 @@ There are also many packages that augment Org available on [[https://melpa.org/#
 Once you're ready to Org, check out the [[file:quickstart.org][Quickstart]]
 page for an overview of the syntax.
 
-* Doom, Spacemacs, Scimax, and popular configs
-:PROPERTIES:
-:CUSTOM_ID: configs
-:END:
-The Emacs starter kits [[https://github.com/hlissner/doom-emacs][Doom]],
-[[https://www.spacemacs.org/][Spacemacs]], and
-[[https://github.com/jkitchin/scimax][Scimax]] come with a
-curated set of packages and configurations that aim to enhance Org
-mode (and Emacs more generally) for particular use cases. They include
-Org along with integrations between =org-mode= and other modes (such
-as =evil-mode=). Here are links to the current packages included with
-[[https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/org/packages.el][Doom]], and
-[[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bemacs/org/packages.el][Spacemacs]].
-/Scimax/ is deeply integrated with Org so a good place to start is the
-[[https://github.com/jkitchin/scimax/blob/master/scimax.org#org-mode][manual]].
-/Doom/ installs a version of Org that is close to the development
-~HEAD~, while /Spacemacs/ and /Scimax/ track org elpa.
+* Doom, Spacemacs, Scimax and popular configs
+  :PROPERTIES:
+  :CUSTOM_ID: configs
+  :END:
+
+The Emacs starter kits [[https://github.com/hlissner/doom-emacs][Doom]], [[https://www.spacemacs.org/][Spacemacs]] and [[https://github.com/jkitchin/scimax][Scimax]] come with a curated
+set of packages and configurations that aim to enhance Org mode (and
+Emacs more generally) for particular use cases. They include Org along
+with integrations between =org-mode= and other modes (such as
+=evil-mode=). Here are links to the current packages included with [[https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/org/packages.el][Doom]],
+and [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bemacs/org/packages.el][Spacemacs]].  /Scimax/ is deeply integrated with Org so a good place
+to start is the [[https://github.com/jkitchin/scimax/blob/master/scimax.org#org-mode][manual]].  /Doom/ installs a version of Org that is close
+to the development ~HEAD~, while /Spacemacs/ and /Scimax/ track org elpa.
 
 Starter kits often make significant changes to the default user
 experience for Emacs. If you are looking for something closer to
-vanilla Emacs there are popular configs such as
-[[https://github.com/purcell/emacs.d/blob/master/lisp/init-org.el][Purcell's emacs.d]]
-that include org-mode customization, and Org-related packages.
+vanilla Emacs there are popular configs such as [[https://github.com/purcell/emacs.d/blob/master/lisp/init-org.el][Purcell's emacs.d]] that
+include org-mode customization and Org-related packages.
 
 * In Other Editors
 :PROPERTIES:
