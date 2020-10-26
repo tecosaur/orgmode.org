@@ -358,12 +358,6 @@ dd {
   #postamble p {
     display: inline;
     margin-left: 1rem; }
-  #postamble p.author a {
-    font-weight: bold;
-    font-size: 0.9em;
-    letter-spacing: 1px; }
-  #postamble p.license {
-    opacity: 0.4; }
 
 div.side-fig {
   max-width: 1600px;
