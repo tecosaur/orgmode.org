@@ -129,7 +129,7 @@ most featureful, there are many additional [[file:tools.org][tools]]
 that work with Org.
 #+begin_center
 #+attr_html: :class btn
-[[file:tools.org][Tools which work with Org]]
+[[file:tools.org][Tools that work with Org]]
 #+end_center
 
 * [[https://orgmode.org/worg/][Worg]], a /World/ of Org
