@@ -288,6 +288,9 @@ td.org-center {
 dt {
   font-weight: bold; }
 
+dd {
+  margin-bottom: 0.5em; }
+
 .footpara {
   display: inline; }
 

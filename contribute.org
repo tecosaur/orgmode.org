@@ -34,7 +34,7 @@ to help move the project forward.
 - some experience :: help test patches, track down bugs
 - moderate experience :: submit bug-fixes, improve features
 
-Whatever your contribution, it is appreciated.
+Whatever your contribution, it is appreciated 😀.
 
 * Mailing list
 :PROPERTIES:
