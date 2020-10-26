@@ -358,6 +358,8 @@ dd {
   #postamble p {
     display: inline;
     margin-left: 1rem; }
+    #postamble p a:hover {
+      text-decoration: none; }
 
 div.side-fig {
   max-width: 1600px;
