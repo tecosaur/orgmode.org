@@ -11,7 +11,8 @@
 
 [[https://orgmode.org][orgmode.org]] hosts Org ELPA archives.
 
-Add this to your Emacs init file to be able to list the Org mode archives:
+Add this to your Emacs init file to be able to list the Org mode
+archives:
 
 #+BEGIN_SRC emacs-lisp
 (require 'package)
@@ -21,11 +22,11 @@ Add this to your Emacs init file to be able to list the Org mode archives:
 Then =M-x list-packages RET= will list both the latest =org= and
 =org-plus-contrib= packages.
 
-- =org= :: contains the same set of files that are included in GNU
-     Emacs.
+- =org= :: Contains the same set of files that are included in GNU
+  Emacs.
 
-- =org-plus-contrib= :: contains these files plus all contribs files,
-     the ones you find in =contrib/= from the [[https://code.orgmode.org/bzg/org-mode/src/master/contrib][git repo]].
+- =org-plus-contrib= :: Contains these files plus all contribs files,
+  the ones you find in =contrib/= from the [[https://code.orgmode.org/bzg/org-mode/src/master/contrib][git repo]].
 
 * Installation
   :PROPERTIES:
@@ -34,17 +35,17 @@ Then =M-x list-packages RET= will list both the latest =org= and
 
 By default, Emacs loads packages *after* it loads your Emacs init file.
 
-We recommend intializing packages as /early/ as possible in your Emacs init
-file so that your Org configuration will be correctly handled:
+We recommend intializing packages as /early/ as possible in your Emacs
+init file so that your Org configuration will be correctly handled:
 
 #+BEGIN_SRC emacs-lisp :exports code
-  ;; -*- emacs-lisp -*-
-  (package-initialize)                ;; Initialize & Install Package
-  ;; (setq org-...)                   ;; Your custom settings
+;; -*- emacs-lisp -*-
+(package-initialize)                ;; Initialize & Install Package
+;; (setq org-...)                   ;; Your custom settings
 #+END_SRC
 
-The package initialization should happen *before* you require Org and set
-any Org options.
+The package initialization should happen *before* you require Org and
+set any Org options.
 
 Also, you may want to set up Package correctly before initializing it:
 

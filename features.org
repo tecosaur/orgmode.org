@@ -50,6 +50,7 @@ Everything you need to get started is demonstrated in the example.
 *** More
 
 More on [[file:manual/Markup-for-Rich-Contents.html][markup]] (manual)
+
 * Structured Editing@@comment: and Navigation@@
   :PROPERTIES:
   :CUSTOM_ID: editing
@@ -81,6 +82,7 @@ form.
 *** More
 
 More on [[file:manual/Document-Structure.html][document structure]] (manual)
+
 * Transparent Tables
   :PROPERTIES:
   :CUSTOM_ID: tables
@@ -120,6 +122,7 @@ Org as a [[file:manual/The-Spreadsheet.html][spreadsheet]] system (manual)
 Introduction to [[https://orgmode.org/worg/org-tutorials/tables.html][editing tables]] (Worg)
 
 Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org as a spreadsheet]] (Worg)
+
 * Superior Source Code
   :PROPERTIES:
   :CUSTOM_ID: babel
@@ -133,19 +136,16 @@ Using [[https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html][Org a
 
 #+attr_html: :class justify
 Org provides functionality far beyond that of computational notebooks
-such as [[https://jupyter.org/][Jupyter]] or
-[[https://rmarkdown.rstudio.com/][R Markdown]].
+such as [[https://jupyter.org/][Jupyter]] or [[https://rmarkdown.rstudio.com/][R Markdown]].
 
 # Program your way.
 #+attr_html: :class justify
-[[https://orgmode.org/worg/org-contrib/babel/][Org babel]]
-transforms the lowly executable source block into a complete
-[[https://en.wikipedia.org/wiki/Literate_programming][literate programming]]
-environment, allowing you to weave the inputs and outputs of multiple
-languages and runtime environments across multiple machines into a
-single unified system, empowering you to achieve new levels of
-[[https://en.wikipedia.org/wiki/Don%27t_repeat_yourself][DRYness]]
-regardless of whether the languages you are working in want you to or not.
+[[https://orgmode.org/worg/org-contrib/babel/][Org babel]] transforms the lowly executable source block into a complete
+[[https://en.wikipedia.org/wiki/Literate_programming][literate programming]] environment, allowing you to weave the inputs and
+outputs of multiple languages and runtime environments across multiple
+machines into a single unified system, empowering you to achieve new
+levels of [[https://en.wikipedia.org/wiki/Don%27t_repeat_yourself][DRYness]] regardless of whether the languages you are working
+in want you to or not.
 
 # Free your code
 #+attr_html: :class justify
@@ -157,10 +157,9 @@ and testing --- a single source of truth that won't drift out of sync.
 
 # Emacs. We will add your technological distinctiveness to our own.
 #+attr_html: :class justify
-Org currently has support for over [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]],
-and projects like [[https://github.com/nnicandro/emacs-jupyter#org-mode-source-blocks][emacs-jupyter]]
-make it possible to leverage the Jupyter kernel ecosystem for even
-more languages.
+Org currently has support for over [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]], and projects like
+[[https://github.com/nnicandro/emacs-jupyter#org-mode-source-blocks][emacs-jupyter]] make it possible to leverage the Jupyter kernel
+ecosystem for even more languages.
 
 *** More
 
@@ -187,6 +186,7 @@ self-publishing.
 #+attr_html: :class justify
 Draft documents using Org's intuitive markup, then export to your
 format of choice.  Org supports many formats including:
+
 - =HTML=
 - $\LaTeX$
 - =ODT=
@@ -230,9 +230,9 @@ More on [[file:manual/Publishing.html][publishing]] (manual)
 Org is an extremely capable task planner, time tracker, and TODO list.
 
 #+attr_html: :class justify
-Any section can become a /TODO item/ by adding a keyword such as
-=TODO= or =HOLD= to track the state of the task.  You can cycle
-through task states with the shortcuts =S-<left>= and =S-<right>=.
+Any section can become a /TODO item/ by adding a keyword such as =TODO= or
+=HOLD= to track the state of the task.  You can cycle through task
+states with the shortcuts =S-<left>= and =S-<right>=.
 
 #+attr_html: :class justify
 Need add your own set of states?  No problem.  Org lets you customize
@@ -251,6 +251,7 @@ complete project management suite, all with plain text markup.
 More on [[file:manual/TODO-Items.html][TODO items]] (manual)
 
 Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
+
 * Actionable Agendas
   :PROPERTIES:
   :CUSTOM_ID: agendas
@@ -265,8 +266,8 @@ Handling [[file:manual/Dates-and-Times.html][dates and times]] (manual)
 Plan your day, your way, with ease.
 
 #+attr_html: :class justify
-With /agenda views/ --- reports generated from your /TODO items/ ---
-you can see your tasks on a daily, weekly, and monthly basis.
+With /agenda views/ --- reports generated from your /TODO items/ --- you
+can see your tasks on a daily, weekly, and monthly basis.
 
 #+attr_html: :class justify
 Even with hundreds of =.org= files and thousands of tasks, agenda lets
@@ -274,8 +275,8 @@ you focus on what you need to do, and quickly take action, jumping
 from the high level overview directly into the task at hand.
 
 #+attr_html: :class justify
-The default agenda shows scheduled and deadlined tasks for the
-week, stalled projects, and all your outstanding TODO items.
+The default agenda shows scheduled and deadlined tasks for the week,
+stalled projects, and all your outstanding TODO items.
 
 #+attr_html: :class justify
 Not satisfied with the defaults? Org agenda is highly configurable.
@@ -293,6 +294,7 @@ play, or life in general.
 More on [[file:manual/Agenda-Views.html][agenda views]] (manual)
 
 Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.html][agenda commands]] (Worg)
+
 * Clocking
   :PROPERTIES:
   :CUSTOM_ID: clocking
@@ -305,21 +307,22 @@ Tutorial on [[https://orgmode.org/worg/org-tutorials/org-custom-agenda-commands.
 ** Description
 
 #+attr_html: :class justify
-Keep track of the time you spend on your tasks with Org /Clocking/,
-and at end of the day you can generate customized reports about how
-you spent your time.
+Keep track of the time you spend on your tasks with Org /Clocking/, and
+at end of the day you can generate customized reports about how you
+spent your time.
 
 #+attr_html: :class justify
 Org provides shortcuts to /clock in/ and /clock out/ of tasks.  When
-working in an =.org= file =C-c C-x C-i= clocks in, and =C-c C-x C-o=
-clocks out. Time is stored in the property drawer of the headline for
-the task at had.
+working in an =.org= file =C-c C-x C-i= clocks in, and =C-c C-x C-o= clocks
+out. Time is stored in the property drawer of the headline for the
+task at had.
 
 You can also use =I= and =O= when in an agenda view.
 
 *** More
 
 More on [[file:manual/Clocking-Work-Time.html][clocking tasks]] (manual)
+
 * Capture Data From Anywhere
   :PROPERTIES:
   :CUSTOM_ID: capturing
@@ -345,6 +348,7 @@ quoting the relevant section of a manual or saving a receipt.
 *** More
 
 More on [[file:manual/Capture.html][capturing]] (manual)
+
 * Extremely Extensible
   :PROPERTIES:
   :CUSTOM_ID: extensibiliy
@@ -370,5 +374,4 @@ that ~[[issue:74][big bug]]~ expands to
 
 #+attr_html: :class justify
 Beyond expanding links, you can define custom resolving functions,
-link to files on remote machines with
-[[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.
+link to files on remote machines with [[https://www.emacswiki.org/emacs/TrampMode][Tramp]], and more.

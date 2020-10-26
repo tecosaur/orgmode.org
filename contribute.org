@@ -2,16 +2,16 @@
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning, and Authoring
 #+include: "./resources/preamble.html" export html
-
 #+include: "./resources/normal-outline-3.html" export html
 
 * Contribute
 :PROPERTIES:
 :CUSTOM_ID: contribute
 :END:
-Org mode is [[file:manual/History-and-Acknowledgments.html][built on the efforts of enthusiastic volunteers]].
-The two best ways to contribute to Org are with time or money.
-Donations support Org's primary maintainer Bastien Guerry.
+
+Org mode is [[file:manual/History-and-Acknowledgments.html][built on the efforts of enthusiastic volunteers]].  The two
+best ways to contribute to Org are with time or money.  Donations
+support Org's primary maintainer Bastien Guerry.
 
 #+BEGIN_EXPORT html
 &emsp;Support via:&ensp;
@@ -23,16 +23,17 @@ Donations support Org's primary maintainer Bastien Guerry.
 <img class="inline" src="/resources/img/external/paypal.svg"/> PayPal</a></p>
 #+END_EXPORT
 
-You can also support Org with your time, no matter your level of experience.
-The fastest way to get involved is by
-[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to the mailing list]].
-You can also always get in touch via [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]]
-to help move the project forward.
+You can also support Org with your time, no matter your level of
+experience.  The fastest way to get involved is by [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to the
+mailing list]].  You can also always get in touch via
+[[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to help move the project forward.
+
 # FIXME this section needs links, e.g. to instructions for running tests
-- very little experience :: give [[file:manual/Feedback.html][feedback]] about your experience with org
-- a dash of experience :: help improve the documentation
-- some experience :: help test patches, track down bugs
-- moderate experience :: submit bug-fixes, improve features
+
+- Very little experience :: Give [[file:manual/Feedback.html][feedback]] about your experience with org.
+- A dash of experience :: Help improve the documentation.
+- Some experience :: Help test patches, track down bugs.
+- Moderate experience :: Submit bug-fixes, improve features.
 
 Whatever your contribution, it is appreciated 😀.
 
@@ -40,31 +41,32 @@ Whatever your contribution, it is appreciated 😀.
 :PROPERTIES:
 :CUSTOM_ID: mailing-list
 :END:
-Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]]
-via the GNU listserv, and can browse the [[https://orgmode.org/list][primary archive]]
-here at =orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
+
+Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] via the GNU
+listserv, and can browse the [[https://orgmode.org/list][primary archive]] here at =orgmode.org= or
+via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
 
 * Copyright assignment
 :PROPERTIES:
 :CUSTOM_ID: copyright
 :END:
+
 Org mode has a substantial code base composed of many files, most of
 which are distributed as part of GNU Emacs.
 
-These files make up the /Org core/, and are copyrighted by the
-[[https://www.fsf.org/][Free Software Foundation]] (FSF).
+These files make up the /Org core/, and are copyrighted by the [[https://www.fsf.org/][Free
+Software Foundation]] (FSF).
 
 If you want to contribute more than 15 lines of code to Org mode you
-will [[https://www.gnu.org/licenses/why-assign.html][need]] to assign
-the copyright for your contributions to the FSF so that they can be
-included in GNU Emacs. To start the copyright assignment process fill
-out [[https://orgmode.org/request-assign-future.txt][this form]] and
-email it to [[mailto:assign@gnu.org][assign@gnu.org]].
+will [[https://www.gnu.org/licenses/why-assign.html][need]] to assign the copyright for your contributions to the FSF so
+that they can be included in GNU Emacs. To start the copyright
+assignment process fill out [[https://orgmode.org/request-assign-future.txt][this form]] and email it to [[mailto:assign@gnu.org][assign@gnu.org]].
 
 * Submitting patches
 :PROPERTIES:
 :CUSTOM_ID: patches
 :END:
+
 ** Suggested workflow
 #+BEGIN_SRC shell
 ~$ git pull
@@ -76,12 +78,16 @@ email it to [[mailto:assign@gnu.org][assign@gnu.org]].
 # optional, see: https://git-send-email.io/
 ~$ git send-email --to="emacs-orgmode@gnu.org" HEAD^
 #+END_SRC
+
 ** Coding conventions
 Org is part of Emacs, so any contribution should follow the
 [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html][GNU Emacs Lisp coding conventions]]
 described in Emacs manual.
 ** Commit messages
-Commit messages also need to be structured according to Emacs contentions.
+
+Commit messages also need to be structured according to Emacs
+contentions.
+
 #+BEGIN_EXAMPLE
 main file/feature: overall change summary
 
@@ -93,6 +99,7 @@ and avoid passive forms.  Please write in full sentences.
 #+END_EXAMPLE
 
 More formally,
+
 1. The first line should include the file/feature affected followed by
    a colon and an short description of the overall change
 2. The second line should be left blank
@@ -107,23 +114,22 @@ More formally,
 6. If the patch is from a contributor /without/ FSF assignment, it can
    be accepted as long as it contains no more than 15 lines.  In this
    case add the =TINYCHANGE= cookie (anywhere in the message)
-** Sending patches
-Use ~git diff~ or ~git format-patch~ to generate the patch files, and
-then include them in an email to
-[[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] describing
-what you've done.  If you have configured git to use
-[[https://git-send-email.io/][send-email]], then you can use that.
 
-If your mail has not appeared on [[https://orgmode.org/list/][the list]]
-after waiting at least 15 minutes, it may have been flagged as
-spam by the robot email overlords.  If this happens, you should
-be able to get the email to go through by
-[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing]]
-to the mailing list.
+** Sending patches
+
+Use ~git diff~ or ~git format-patch~ to generate the patch files, and then
+include them in an email to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] describing what
+you've done.  If you have configured git to use [[https://git-send-email.io/][send-email]], then you
+can use that.
+
+If your mail has not appeared on [[https://orgmode.org/list/][the list]] after waiting at least 15
+minutes, it may have been flagged as spam by the robot email
+overlords.  If this happens, you should be able to get the email to go
+through by [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing]] to the mailing list.
 
 * Our beloved contributors
 :PROPERTIES:
 :CUSTOM_ID: contributors
 :END:
-The full [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to 
-Org mode is maintained in /Worg/.
+
+The full [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to Org mode is maintained in /Worg/.
