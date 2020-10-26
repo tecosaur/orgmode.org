@@ -7,7 +7,9 @@
 :PROPERTIES:
 :CUSTOM_ID: getting-started
 :END:
-In its simplest form, Org is like any other markup language.
+
+In its simplest form, Org is like any other markup language.  
+
 You can write [[https://orgmode.org/worg/dev/org-syntax.html][Org syntax]] in any text editor.
 
 However, to experience the full potential of Org you need an editor
@@ -35,9 +37,12 @@ set the title, author and other [[https://orgmode.org/manual/Export-Settings.htm
 :PROPERTIES:
 :CUSTOM_ID: headlines
 :END:
+
 Lines that start with and asterisk ~*~ are [[https://orgmode.org/worg/dev/org-syntax.html#Headlines_and_Sections][headlines]].
 
-A single ~*~ denotes a 1st-level headline, ~**~ denotes a 2nd-level headline, etc.
+A single ~*~ denotes a 1st-level headline, ~**~ denotes a 2nd-level
+headline, etc.
+
 #+BEGIN_SRC org
 ,* Welcome to Org-mode
 ,** Sub-heading
@@ -62,15 +67,17 @@ keyword such as ~TODO~ or ~HOLD~.
 :PROPERTIES:
 :CUSTOM_ID: markup
 :END:
-To mark up text in Org, simply surround it with one or more marker characters.
-*bold* /italic/ and _underline_ are fairly intuitive, and the ability to use
-+strikethrough+ is a plus.  You can _/*combine*/_ the basic markup in any
-order, however ~code~ and =verbatim= need to be the *_~inner-most~_* markers
-if they are present since their contents are interpreted =_literally_=.
+
+To mark up text in Org, simply surround it with one or more marker
+characters.  *Bold*, /italic/ and _underline_ are fairly intuitive, and the
+ability to use +strikethrough+ is a plus.  You can _/*combine*/_ the basic
+markup in any order, however ~code~ and =verbatim= need to be the
+*_~inner-most~_* markers if they are present since their contents are
+interpreted =_literally_=.
 
 #+BEGIN_EXAMPLE
 To markup text in Org, simply surround it with one or more marker characters.
-*bold* /italic/ and _underline_ are fairly intuitive, and the ability to use
+*Bold*, /italic/ and _underline_ are fairly intuitive, and the ability to use
 +strikethrough+ is a plus.  You can _/*combine*/_ the basic markup in any
 order, however ~code~ and =verbatim= need to be the *_~inner-most~_* markers
 if they are present since their contents are interpreted =_literally_=.
@@ -192,8 +199,8 @@ In its simplest form a table is text separated using pipes ~|~.
 #+END_SRC
 
 A more useful example is this comparison of existing Literate
-programming / reproducible research tools (from
-[[doi:10.18637/jss.v046.i03][Schulte /et al./ 2012]]).
+programming / reproducible research tools (from [[doi:10.18637/jss.v046.i03][Schulte /et al./ 2012]]).
+
 #+BEGIN_SRC org
 | Tool         | Literate programming? | Reproducible Research? | Languages |
 |--------------+-----------------------+------------------------+-----------|
@@ -211,23 +218,25 @@ Org mode does it in a single keystroke -- =tab=.
 :PROPERTIES:
 :CUSTOM_ID: comments
 :END:
+
 Org mode has a variety of ways to add comments.
 
 Line comments start with ~#~. \\
 Inline comments wrap ~@@comment:like so@@~. \\
 Block comments are wrapped with ~#+BEGIN_COMMENT~ and ~#+END_COMMENT~. \\
-Section comments can be created by adding the ~COMMENT~
-keyword to a headline ~* COMMENT like so~[fn::There are a number of
-more granular ways to control the exact behavior of headlines,
-including use of the special tags ~:ARCHIVE:~ and ~:noexport:~.].
+Section comments can be created by adding the ~COMMENT~ keyword to a
+headline ~* COMMENT like so~[fn::There are a number of more granular
+ways to control the exact behavior of headlines, including use of the
+special tags ~:ARCHIVE:~ and ~:noexport:~.].
 
 #+BEGIN_SRC org
 # A line comment
 
 Example of an @@comment:inline@@ comment.
 
-Inline comments are used for end of line comments. @@comment:~#~ won't work@@
-Since # only only works if preceeded by a newline follow by whitespace.
+Inline comments are used for end of line comments. @@comment:~#~ won't
+work@@ Since # only only works if preceeded by a newline follow by
+whitespace.
 
 ,#+BEGIN_COMMENT
 This is a block comment.
@@ -250,9 +259,9 @@ This text will be exported and code blocks will run.
 :PROPERTIES:
 :CUSTOM_ID: macros
 :END:
-Org has many more advanced features built into its syntax.
-To give only a single example, let's take a look at
-[[https://orgmode.org/manual/Macro-Replacement.html][macros]].
+
+Org has many more advanced features built into its syntax.  To give
+only a single example, let's take a look at [[https://orgmode.org/manual/Macro-Replacement.html][macros]].
 
 #+BEGIN_SRC org
 ,#+MACRO: attn _*/$1/*_
@@ -268,7 +277,9 @@ Regular text. {{{red(This text will be red.)}}} More regular text.
 :PROPERTIES:
 :CUSTOM_ID: next-steps
 :END:
-Looking for something in particular?
-The [[file:manual/][manual]] ([[file:org.pdf][PDF]]) is a good place to start. \\
-Looking for something between this quickstart and the manual?
-The [[file:guide/][guide]] ([[file:orgguide.pdf][PDF]]) is worth a shot.
+
+Looking for something in particular?  The [[file:manual/][manual]] ([[file:org.pdf][PDF]]) is a good place
+to start.
+
+Looking for something between this quickstart and the manual?  The
+[[file:guide/][guide]] ([[file:orgguide.pdf][PDF]]) is worth a shot.
