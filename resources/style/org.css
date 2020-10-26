@@ -345,8 +345,22 @@ dt {
 .outline-text-2 > .move {
   top: -30px; }
 
-p.date {
-  display: none; }
+#postamble {
+  text-align: center;
+  background: #eaeaea;
+  font-family: var(--sans);
+  font-family: var(--sans);
+  padding: 0.4rem 0;
+  margin: 2rem calc(0px - var(--body-right) - var(--body-padding)) 0 calc(0px - var(--body-left) - var(--body-padding)); }
+  #postamble p {
+    display: inline;
+    margin-left: 1rem; }
+  #postamble p.author a {
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 1px; }
+  #postamble p.license {
+    opacity: 0.4; }
 
 div.side-fig {
   max-width: 1600px;
@@ -426,11 +440,8 @@ div.side-fig {
   box-sizing: border-box; }
 
 body {
-  margin-top: calc(2.0rem + 14px);
-  margin-left: var(--body-left);
-  margin-right: var(--body-right);
-  padding: var(--body-padding);
-  padding-top: 0; }
+  margin: calc(2.0rem + 14px) var(--body-right) 0 var(--body-left);
+  padding: 0 var(--body-padding); }
 
 nav#main {
   background-color: var(--green);
