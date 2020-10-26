@@ -1,6 +1,6 @@
 #+title: Org mode for Emacs
 #+setupfile: setup.org
-#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+description: Org: an Emacs Mode for Notes, Planning and Authoring
 #+html_head: <link rel="stylesheet" href="/resources/style/index.css" type="text/css" />
 #+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg+xml">
 #+include: "./resources/preamble.html" export html
@@ -29,7 +29,7 @@
       <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a>.</p>
     <p>Org mode is for keeping notes, maintaining to-do lists, planning
       projects, authoring documents, computational notebooks, literate
-      programming, and more &mdash; in a fast and effective plain text
+      programming and more &mdash; in a fast and effective plain text
       system.</p>
     <p class="bubble">
       Support via&ensp;
@@ -116,7 +116,7 @@ of a few simple, yet versatile, structures --- constructed to be both
   :CUSTOM_ID: reading
   :END:
 
-Beyond the [[file:quickstart.org][quickstart]] and the [[file:manual/index.html][manual]], Org has a [[file:guide/index.html][guide]], and a wealth of
+Beyond the [[file:quickstart.org][quickstart]] and the [[file:manual/index.html][manual]], Org has a [[file:guide/index.html][guide]] and a wealth of
 community-written documentation on [[https://orgmode.org/worg/][Worg]] .
 
 Nearly every Org user has a story to tell about how Org enables and
@@ -158,7 +158,7 @@ For example, Worg contains:
 - [[https://orgmode.org/worg/org-faq.html][The FAQ]]
 - [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
 - [[https://orgmode.org/worg/org-tutorials/index.html][A list of tutorials]]
-- [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands, and options]]
+- [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands and options]]
 - [[https://orgmode.org/worg/org-in-the-wild.html][Org in the wild]]
 - /...and much more/
 

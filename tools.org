@@ -1,6 +1,6 @@
 #+title: Tools | Org mode
 #+setupfile: setup.org
-#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+description: Org: an Emacs Mode for Notes, Planning and Authoring
 #+include: "./resources/preamble.html" export html
 
 #+macro: link @@html:<a href="https://$1">@@
@@ -124,14 +124,14 @@ Org​::parser
 {{{gh(bdewey/org-ruby)}}}
 [[https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg]]
 
-/org-ruby/ is a gem (used by GitHub) for parsing Org files, and converting to HTML
+/org-ruby/ is a gem (used by GitHub) for parsing Org files and converting to HTML
 or textile.
 {{{end-link}}}
 ** Rust
 {{{gh(Lythenas/rust-orgmode)}}}
 [[https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg]]
 
-/Orgize/ parses org files, and can render them to HTML.
+/Orgize/ parses org files and can render them to HTML.
 {{{end-link}}}
 ** JavaScript
 {{{gh(orgapp/orgajs)}}}
@@ -147,7 +147,7 @@ or textile.
 {{{link(www.drupal.org/project/orgmode)}}}
 [[https://www.drupal.org/files/EL_blue_RGB%281%29.png]]
 
-A drupal module able to import single files, such as articles, and transform them
+A drupal module able to import single files, such as articles and transform them
 into nodes.
 {{{end-link}}}
 ** Pandoc

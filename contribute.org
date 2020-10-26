@@ -1,6 +1,6 @@
 #+TITLE: Contribute | Org mode
 #+setupfile: setup.org
-#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+description: Org: an Emacs Mode for Notes, Planning and Authoring
 #+include: "./resources/preamble.html" export html
 #+include: "./resources/normal-outline-3.html" export html
 
@@ -109,7 +109,7 @@ More formally,
 
 ** Sending patches
 
-Use ~git diff~ or ~git format-patch~ to generate the patch files, and then
+Use ~git diff~ or ~git format-patch~ to generate the patch files and then
 include them in an email to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] describing what
 you've done.  If you have configured git to use [[https://git-send-email.io/][send-email]], then you
 can use that.

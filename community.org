@@ -1,6 +1,6 @@
 #+TITLE: Community | Org mode
 #+setupfile: setup.org
-#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+description: Org: an Emacs Mode for Notes, Planning and Authoring
 #+include: "./resources/preamble.html" export html
 #+include: "./resources/normal-outline-3.html" export html
 
