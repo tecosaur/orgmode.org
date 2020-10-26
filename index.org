@@ -22,7 +22,7 @@
   <div>
     <h2>
       <span itemprop="name">Org Mode</span>
-      <p class="subtitle">Convenient <span itemprop="applicationCategory">plain text markup</span> and more</p>
+      <p class="subtitle">Convenient <span itemprop="applicationCategory">plain text markup</span> and more.</p>
     </h2>
     <p>
       An open-source extensible major mode for
