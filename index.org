@@ -65,9 +65,10 @@
 #+end_export
 
 * Highlights
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: columns no-heading
-:END:
+  :PROPERTIES:
+  :HTML_CONTAINER_CLASS: columns no-heading
+  :END:
+
 ** Features
 @@html:<a href="features.html">@@
 #+attr_html: :alt Three stars
@@ -100,7 +101,7 @@ Start using Org. You'll never stop.
 Yes. Do this.
 @@html:</a>@@
 
-* Elaboration + demo image :ignore:
+* Elaboration + demo image                                        :ignore:
 
 Org is a highly flexible structured plain text file format, composed
 of a few simple, yet versatile, structures --- constructed to be both
@@ -111,9 +112,9 @@ of a few simple, yet versatile, structures --- constructed to be both
 [[file:resources/img/main.svg]]
 
 * Further reading
-:PROPERTIES:
-:CUSTOM_ID: reading
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: reading
+  :END:
 
 Beyond the [[file:quickstart.org][quickstart]] and the [[file:manual/index.html][manual]], Org has a [[file:guide/index.html][guide]], and a wealth of
 community-written documentation on [[https://orgmode.org/worg/][Worg]] .
@@ -125,9 +126,9 @@ research]]. Some have produced third-part tools to enjoy Org outside of
 Emacs, such as mobile applications.
 
 * More Org
-:PROPERTIES:
-:CUSTOM_ID: more
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: more
+  :END:
 
 The /de facto/ mimetype for Org files is =text/org=. Org files use the
 ~.org~ extension. Most operating systems don't know to open ~.org~ files
@@ -142,9 +143,9 @@ most featureful, there are many additional [[file:tools.org][tools]] that work w
 #+end_center
 
 * [[https://orgmode.org/worg/][Worg]], a /World/ of Org
-:PROPERTIES:
-:CUSTOM_ID: worg
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: worg
+  :END:
 
 Org and Org-mode have so many use cases that it is simply not possible
 to easily document them, let alone show them all off on a single page.
@@ -162,9 +163,7 @@ For example, Worg contains:
 - /...and much more/
 
 Worg is maintained as a Git repository of Org files that are published
-as an HTML website.  New contributors are welcome. If you would like
-to contribute please create a user on [[https://code.orgmode.org][code.orgmode.org]] and ask to be
-added as a collaborator.
+as an HTML website.  New [[https://orgmode.org/worg/worg-git.html#contribute-to-worg][contributors are welcome]].
 
 #+BEGIN_SRC shell
 ~$ git clone https://code.orgmode.org/bzg/worg.git
