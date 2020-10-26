@@ -74,18 +74,21 @@
 
 Delve into the possibilities.
 @@html:</a>@@
+
 ** Install
 @@html:<a href="install.html">@@
 [[file:resources/img/install.svg]]
 
 What are you waiting for?
 @@html:</a>@@
+
 ** Quickstart
 @@html:<a href="quickstart.html">@@
 [[file:resources/img/quickstart.svg]]
 
 Start using Org. You'll never stop.
 @@html:</a>@@
+
 ** Contribute
 @@html:<a href="contribute.html">@@
 [[file:resources/img/contribute.svg]]
@@ -94,9 +97,10 @@ Yes. Do this.
 @@html:</a>@@
 
 * Elaboration + demo image :ignore:
-Org is a highly flexible structured plain text file format, composed of a few
-simple, yet versatile, structures --- constructed to be both [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the
-novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
+
+Org is a highly flexible structured plain text file format, composed
+of a few simple, yet versatile, structures --- constructed to be both
+[[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
 
 #+attr_html: :style max-width:min(45rem, 80vw) :alt An example org file, showing a few basic elements
 [[file:resources/img/main.svg]]
@@ -106,13 +110,14 @@ novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerf
 :CUSTOM_ID: reading
 :END:
 
-Beyond the [[file:quickstart.org][quickstart]] and the [[file:manual/index.html][manual]],
-Org has a [[file:guide/index.html][guide]], and a wealth of community-written documentation on [[https://orgmode.org/worg/][Worg]] .
+Beyond the [[file:quickstart.org][quickstart]] and the [[file:manual/index.html][manual]], Org has a [[file:guide/index.html][guide]], and a wealth of
+community-written documentation on [[https://orgmode.org/worg/][Worg]] .
 
-Nearly every Org user has a story to tell about how Org enables and empowers them ---
-some have found it so useful that they have written [[https://orgmode.org/worg/org-papers.html][(scientific) papers]] about
-the value of Org for conducting [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][reproducible research]]. Some have produced
-third-part tools to enjoy Org outside of Emacs, such as mobile applications.
+Nearly every Org user has a story to tell about how Org enables and
+empowers them --- some have found it so useful that they have written
+[[https://orgmode.org/worg/org-papers.html][(scientific) papers]] about the value of Org for conducting [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][reproducible
+research]]. Some have produced third-part tools to enjoy Org outside of
+Emacs, such as mobile applications.
 
 * More Org
 :PROPERTIES:
@@ -120,13 +125,12 @@ third-part tools to enjoy Org outside of Emacs, such as mobile applications.
 :END:
 
 The /de facto/ mimetype for Org files is =text/org=. Org files use the
-~.org~ extension. Most operating systems don't know to open ~.org~
-files in Emacs, but they can be configured to do so without much
-effort.
+~.org~ extension. Most operating systems don't know to open ~.org~ files
+in Emacs, but they can be configured to do so without much effort.
 
 While the reference implementation of Org in Emacs lisp is by far the
-most featureful, there are many additional [[file:tools.org][tools]]
-that work with Org.
+most featureful, there are many additional [[file:tools.org][tools]] that work with Org.
+
 #+begin_center
 #+attr_html: :class btn
 [[file:tools.org][Tools that work with Org]]
@@ -136,24 +140,26 @@ that work with Org.
 :PROPERTIES:
 :CUSTOM_ID: worg
 :END:
+
 Org and Org-mode have so many use cases that it is simply not possible
 to easily document them, let alone show them all off on a single page.
-As a result, [[https://orgmode.org/worg/][Worg]] serves as a community
-wiki and provides a place to document and share information about all
-aspects of using and working with Org.
+As a result, [[https://orgmode.org/worg/][Worg]] serves as a community wiki and provides a place to
+document and share information about all aspects of using and working
+with Org.
 
 For example, Worg contains:
-+ [[https://orgmode.org/worg/org-faq.html][The FAQ]]
-+ [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
-+ [[https://orgmode.org/worg/org-tutorials/index.html][A list of tutorials]]
-+ [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands, and options]]
-+ [[https://orgmode.org/worg/org-in-the-wild.html][Org in the wild]]
-+ ...and much more
+
+- [[https://orgmode.org/worg/org-faq.html][The FAQ]]
+- [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
+- [[https://orgmode.org/worg/org-tutorials/index.html][A list of tutorials]]
+- [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands, and options]]
+- [[https://orgmode.org/worg/org-in-the-wild.html][Org in the wild]]
+- ...and much more
 
 Worg is maintained as a Git repository of Org files that are published
-as an HTML website.  New contributors are welcome. If you would like to
-contribute please create a user on [[https://code.orgmode.org][code.orgmode.org]]
-and ask to be added as a collaborator.
+as an HTML website.  New contributors are welcome. If you would like
+to contribute please create a user on [[https://code.orgmode.org][code.orgmode.org]] and ask to be
+added as a collaborator.
 
 #+BEGIN_SRC shell
 ~$ git clone https://code.orgmode.org/bzg/worg.git
@@ -163,8 +169,10 @@ and ask to be added as a collaborator.
 :PROPERTIES:
 :CUSTOM_ID: chatting
 :END:
-You can connect with other org-thusiasts via IRC at ~#orgmode~ on [[https://freenode.net/][freenode]].
 
-Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]]
-via the GNU listserv, and can browse the [[https://orgmode.org/list][primary archive]]
-here at =orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
+You can connect with other org-thusiasts via IRC at ~#orgmode~ on
+[[https://freenode.net/][freenode]].
+
+Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] via the GNU
+listserv, and can browse the [[https://orgmode.org/list][primary archive]] here at =orgmode.org= or
+via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU listserv archive]].
