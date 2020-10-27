@@ -170,7 +170,7 @@ added as a collaborator.
 :CUSTOM_ID: chatting
 :END:
 
-You can connect with other org-thusiasts via IRC at ~#orgmode~ on
+You can connect with other org-thusiasts via IRC at ~#org-mode~ on
 [[https://freenode.net/][freenode]].
 
 Org has an active mailing list. You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe]] via the GNU
