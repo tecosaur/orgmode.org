@@ -106,7 +106,8 @@ Org is a highly flexible structured plain text file format, composed
 of a few simple, yet versatile, structures --- constructed to be both
 [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
 
-#+attr_html: :style max-width:min(45rem, 80vw) :alt An example org file, showing a few basic elements
+#+attr_html: :alt An example org file, showing a few basic elements
+#+attr_html: :style max-width:min(45rem, 80vw); background-color:#7a92; padding: 1rem 0;
 [[file:resources/img/main.svg]]
 
 * Further reading

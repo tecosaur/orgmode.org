@@ -100,7 +100,8 @@ Org utilise du texte brut structuré et flexible, composé de quelques
 structures simples mais polyvalentes : simples pour le débutant,
 puissantes pour l'expoert.
 
-#+attr_html: :style max-width:min(45rem, 80vw) :alt An example org file, showing a few basic elements
+#+attr_html: alt An example org file, showing a few basic elements
+#+attr_html: :style max-width:min(45rem, 80vw); background-color:#8a92; padding: 1rem 0;
 [[file:../resources/img/main.svg]]
 
 * En savoir plus
