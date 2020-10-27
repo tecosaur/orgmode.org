@@ -60,6 +60,12 @@ A way to combine Org with a simple, blog aware, static site generator.
 
 Stand-alone blogging system that does not require any external software
 {{{end-link}}}
+** Org2Blog
+{{{gh(org2blog/org2blog)}}}
+https://github.com/org2blog/org2blog/blob/master/svg/Org2Blog_shorthand.svg
+
+Blog from Org mode to WordPress.
+{{{end-link}}}
 * Utilities
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: columns
