@@ -605,6 +605,8 @@ h2[id]:target {
       color: inherit; }
       .columns .outline-3 a a {
         display: initial; }
+    .columns .outline-3 figure {
+      margin: 0; }
     .columns .outline-3 .org-svg, .columns .outline-3 img {
       width: auto;
       margin-left: 0;

@@ -70,6 +70,7 @@
 :END:
 ** Features
 @@html:<a href="features.html">@@
+#+attr_html: :alt Three stars
 [[file:resources/img/stars.svg]]
 
 Delve into the possibilities.
@@ -77,6 +78,7 @@ Delve into the possibilities.
 
 ** Install
 @@html:<a href="install.html">@@
+#+attr_html: :alt Downwards facing arrow
 [[file:resources/img/install.svg]]
 
 What are you waiting for?
@@ -84,6 +86,7 @@ What are you waiting for?
 
 ** Quickstart
 @@html:<a href="quickstart.html">@@
+#+attr_html: :alt Running stickfigure
 [[file:resources/img/quickstart.svg]]
 
 Start using Org. You'll never stop.
@@ -91,6 +94,7 @@ Start using Org. You'll never stop.
 
 ** Contribute
 @@html:<a href="contribute.html">@@
+#+attr_html: :alt Git branch symbol
 [[file:resources/img/contribute.svg]]
 
 Yes. Do this.

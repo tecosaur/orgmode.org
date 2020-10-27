@@ -704,6 +704,9 @@ h2[id]:target {
                 display: initial;
             }
         }
+        figure {
+            margin: 0
+        }
         .org-svg, img {
             width: auto;
             margin-left: 0;
