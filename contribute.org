@@ -78,7 +78,7 @@ described in Emacs manual.
 ** Commit messages
 
 Commit messages also need to be structured according to Emacs
-contentions.
+conventions.
 
 #+BEGIN_EXAMPLE
 main file/feature: overall change summary
