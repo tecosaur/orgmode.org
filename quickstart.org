@@ -38,7 +38,7 @@ set the title, author and other [[https://orgmode.org/manual/Export-Settings.htm
 :CUSTOM_ID: headlines
 :END:
 
-Lines that start with and asterisk ~*~ are [[https://orgmode.org/worg/dev/org-syntax.html#Headlines_and_Sections][headlines]].
+Lines that start with an asterisk ~*~ are [[https://orgmode.org/worg/dev/org-syntax.html#Headlines_and_Sections][headlines]].
 
 A single ~*~ denotes a 1st-level headline, ~**~ denotes a 2nd-level
 headline, etc.
