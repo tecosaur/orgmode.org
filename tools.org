@@ -54,7 +54,7 @@ A static site generator written in Go, supports Org natively.
 
 A way to combine Org with a simple, blog aware, static site generator.
 {{{end-link}}}
-** org2blog
+** o-blog
 {{{link(renard.github.com/o-blog)}}}
 [[https://upload.wikimedia.org/wikipedia/commons/3/31/Blogger.svg]]
 
