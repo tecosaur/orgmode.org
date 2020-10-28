@@ -40,8 +40,7 @@
       <a href="https://github.com/sponsors/bzg" title="Donations always help"
          style="font-weight: bold;">
         <img class="inline" src="/resources/img/external/github.svg" alt="GitHub logo"/>
-        GitHub</a>&emsp14;
-      or&emsp14;
+        GitHub</a>&ensp;
       <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help"
          style="font-weight: bold;">
         <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypal logo"/>
