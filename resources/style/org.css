@@ -81,7 +81,7 @@ a[href^="https://orgmode.org"]:not(.btn):hover, a:not(.btn):not([href^="https://
 
 #content {
   font-size: 1.2em;
-  line-height: 2em;
+  line-height: 1.4;
   max-width: 60rem;
   margin: auto; }
 
@@ -118,7 +118,6 @@ h2 {
 
 .outline-2 {
   font-size: 1em;
-  line-height: 1.3em;
   margin-top: 40px;
   width: 100%; }
 
@@ -455,7 +454,8 @@ nav#main {
   width: 100vw;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  line-height: 2em; }
   nav#main a {
     padding: 0 10px;
     text-decoration: none;
@@ -547,8 +547,8 @@ div.banner {
     flex-basis: 100%;
     max-width: none; }
   div.banner.slim {
-    padding: 0.8rem 1rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
     font-family: var(--sans); }
   div.banner.inline {
     display: flex;

@@ -95,7 +95,7 @@ a:not(.btn)[href^="https://orgmode.org"], a:not(.btn):not([href^="https://"]):no
 
 #content {
     font-size: 1.2em;
-    line-height: 2em;
+    line-height: 1.4;
     max-width: 60rem;
     margin: auto;
 }
@@ -139,7 +139,6 @@ h2 {
 
 .outline-2 {
     font-size: 1em;
-    line-height: 1.3em;
     margin-top: 40px;
     width: 100%;
 }
@@ -367,7 +366,7 @@ dd {
     font-family: var(--sans);
     font-family: var(--sans);
     padding: 0.4rem 0;
-    margin: 2rem calc(0px - var(--body-right) - var(--body-padding)) 0 calc(0px - var(--body-left) - var(--body-padding));
+    margin: 3rem calc(0px - var(--body-right) - var(--body-padding)) 0 calc(0px - var(--body-left) - var(--body-padding));
     p {
         display: inline;
         margin-left: 1rem;
@@ -489,6 +488,7 @@ nav#main {
     top: 0;
     left: 0;
     z-index: 1;
+    line-height: 2em;
     a {
         padding: 0 10px;
         text-decoration: none;
