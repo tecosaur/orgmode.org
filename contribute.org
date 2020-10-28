@@ -13,15 +13,16 @@ Org mode is [[file:manual/History-and-Acknowledgments.html][built on the efforts
 best ways to contribute to Org are with time or money.  Donations
 support Org's primary maintainer Bastien Guerry.
 
-#+BEGIN_EXPORT html
-&emsp;Support via:&ensp;
+#+begin_export html
+<div class="banner"><p style="margin:0 0.5em">
 <a href="https://liberapay.com/bzg" title="Donations always help" style="color: #c7a416">
-  <img class="inline" src="/resources/img/external/librepay.svg"/> Liberapay</a>,
+<img class="inline" src="/resources/img/external/librepay.svg"/> Liberapay</a>
 <a href="https://github.com/sponsors/bzg" title="Donations always help" style="color: #222">
-<img class="inline" src="/resources/img/external/github.svg"/> GitHub</a> or
+<img class="inline" src="/resources/img/external/github.svg"/> GitHub</a>
 <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help" style="color: #253b80">
-<img class="inline" src="/resources/img/external/paypal.svg"/> PayPal</a></p>
-#+END_EXPORT
+<img class="inline" src="/resources/img/external/paypal.svg"/> PayPal</a>
+</p></div>
+#+end_export
 
 You can also support Org with your time, no matter your level of
 experience.  The fastest way to get involved is by joining the
