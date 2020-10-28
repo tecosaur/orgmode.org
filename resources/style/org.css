@@ -76,7 +76,7 @@ a:not(.btn):hover {
   text-decoration: underline;
   filter: brightness(85%); }
 
-a[href^="https://orgmode.org"]:not(.btn):hover, a:not(.btn):not([href^="https://"]):hover {
+a[href^="https://orgmode.org"]:not(.btn):hover, a:not(.btn):not([href^="https://"]):not([href^="http://"]):hover {
   text-decoration: underline dashed; }
 
 #content {
