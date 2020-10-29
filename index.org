@@ -8,14 +8,6 @@
 #+include: "./resources/normal-outline-3.html" export html
 
 #+begin_export html
-<style>
-  .columns .outline-3 {
-    width: 15rem;
-  }
-</style>
-#+end_export
-
-#+begin_export html
 <div class="banner hero" itemscope itemtype="https://schema.org/SoftwareApplication">
   <img src="/resources/img/org-mode-unicorn.svg"
        alt="Org unicorn logo" itemprop="image"/>

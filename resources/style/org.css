@@ -434,7 +434,7 @@ div.side-fig {
 body {
   margin: calc(2.0rem + 14px) var(--body-right) 0 var(--body-left);
   padding: 0 var(--body-padding);
-  background-color: #f6f5f4; }
+  background-color: #fafafa; }
 
 nav#main {
   background-color: var(--green);
@@ -456,8 +456,6 @@ nav#main {
     text-decoration: none;
     font-weight: 500;
     color: #fff; }
-    nav#main a:hover {
-      color: #eee; }
     nav#main a p.logo {
       display: inline-block;
       font-weight: 700;
@@ -478,8 +476,6 @@ nav#main {
       font-weight: bold;
       padding: 0px;
       margin: 0 -2px 0 -2px; }
-      nav#main #translate a:hover {
-        color: #ddd; }
   nav#main label, nav#main input {
     display: none; }
   @media (max-width: 850px) {
@@ -493,6 +489,8 @@ nav#main {
         font-size: 1.6em; }
       nav#main > a:first-of-type {
         margin-top: -1.8em; }
+      nav#main > a:last-child {
+        margin-bottom: -8px; }
       nav#main p {
         align-self: center;
         margin-bottom: -0.4em; }
@@ -525,13 +523,10 @@ nav#main {
         display: block; }
       nav#main input:checked ~ #translate a {
         display: inline-block; } }
-nav + div.banner.large {
-  margin-top: calc(-1rem - var(--body-padding)); }
-
 div.banner {
   margin-left: min(calc(0px - var(--body-left) - var(--body-padding)), calc(30rem - 50vw - 0.5*var(--body-left) + 0.5*var(--body-right)));
   width: 100vw;
-  padding: 20px 5px 10px 5px;
+  padding: 10px 5px 10px 5px;
   text-align: center;
   font-size: 1.2rem;
   display: flex;
@@ -553,9 +548,9 @@ div.banner {
       display: inline-block;
       margin: 0.2em; }
   div.banner.green {
-    background-color: #eaeaea; }
+    background-color: #f2f2f2; }
     div.banner.green a {
-      color: #000;
+      color: #111;
       font-weight: bold; }
   div.banner p.small {
     font-size: 0.7em; }
@@ -593,7 +588,8 @@ h2[id]:target {
     border: none;
     text-align: center;
     width: 18rem;
-    min-height: 10rem; }
+    min-height: 10rem;
+    margin-top: 1rem; }
     .columns .outline-3 a {
       display: block;
       text-decoration: none;

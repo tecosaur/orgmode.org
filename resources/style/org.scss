@@ -473,7 +473,7 @@ div.side-fig {
 body {
     margin: calc(2.0rem + 14px) var(--body-right) 0 var(--body-left);
     padding: 0 var(--body-padding);
-    background-color: #f6f5f4;
+    background-color: #fafafa;
 }
 
 nav#main {
@@ -496,9 +496,6 @@ nav#main {
         text-decoration: none;
         font-weight: 500;
         color: #fff;
-        &:hover {
-            color: #eee;
-        }
         p.logo {
             img {
                 height: 2em;
@@ -522,9 +519,6 @@ nav#main {
             font-weight: bold;
             padding: 0px;
             margin: 0 -2px 0 -2px;
-            &:hover {
-                color: #ddd;
-            }
         }
     }
     // .view-source {
@@ -562,6 +556,9 @@ nav#main {
         }
         > a:first-of-type {
             margin-top: -1.8em;
+        }
+        > a:last-child {
+            margin-bottom: -8px;
         }
         p {
             align-self: center;
@@ -607,14 +604,10 @@ nav#main {
     }
 }
 
-nav + div.banner.large {
-    margin-top: calc(-1rem - var(--body-padding));
-}
-
 div.banner {
     margin-left: #{"min(calc(0px - var(--body-left) - var(--body-padding)), calc(30rem - 50vw - 0.5*var(--body-left) + 0.5*var(--body-right)))"};
     width: 100vw;
-    padding: 20px 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
     text-align: center;
     font-size: 1.2rem;
     display: flex;
@@ -640,12 +633,9 @@ div.banner {
         }
     }
     &.green {
-        // background-color: var(--green);
-        // color: #eee;
-        background-color: #eaeaea;
+        background-color: #f2f2f2;
         a {
-            // color: #fff;
-            color: #000;
+            color: #111;
             font-weight: bold;
         }
     }
@@ -698,6 +688,7 @@ h2[id]:target {
         text-align: center;
         width: 18rem;
         min-height: 10rem;
+        margin-top: 1rem;
         a {
             display: block;
             text-decoration: none;

@@ -1,8 +1,28 @@
+body {
+  margin-top: 0; }
+
+nav#main {
+  background-color: transparent;
+  background-image: none;
+  position: absolute; }
+  nav#main a {
+    color: #444; }
+  nav#main label {
+    color: #000; }
+  @media (max-width: 850px) {
+    nav#main {
+      background-color: #f9f9f9ee !important; } }
+.columns .outline-3 {
+  width: 15rem; }
+  @media (max-width: 950px) {
+    .columns .outline-3 {
+      width: 12rem; } }
 div.banner.hero {
   background-color: #fff;
+  background-image: url(/resources/img/bgtile.webp);
   text-align: left;
   justify-content: center;
-  padding: 5rem 1rem 3rem 1rem; }
+  padding: 6rem 1rem 3rem 1rem; }
   div.banner.hero > img {
     height: 18rem;
     margin: 0 3rem 0 2rem; }
