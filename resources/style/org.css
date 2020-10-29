@@ -344,10 +344,11 @@ dd {
 #postamble {
   text-align: center;
   background: #eaeaea;
+  color: #515151;
   font-family: var(--sans);
   font-family: var(--sans);
   padding: 0.4rem 0;
-  margin: 3rem calc(0px - var(--body-right) - var(--body-padding)) 0 calc(0px - var(--body-left) - var(--body-padding)); }
+  margin: 5rem calc(0px - var(--body-right) - var(--body-padding)) 0 calc(0px - var(--body-left) - var(--body-padding)); }
   #postamble p {
     display: inline;
     margin-left: 1rem; }
