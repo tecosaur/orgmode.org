@@ -45,13 +45,14 @@
   </div>
   </div>
   <div class="banner slim green inline">
-    <p style="width: 90vw">
+    <p style="width:90vw; color:#515151">
       Created by
-      <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>
-      in <a target="new" href="/manual/History-and-Acknowledgments.html">2003</a>,
-      maintained by <a target="new" href="https://bzg.fr">Bastien Guerry</a>
+      <a target="new" href="https://staff.science.uva.nl/~dominik/"
+      style="font-weight:500; color:inherit">Carsten Dominik</a>
+      in <a target="new" href="/manual/History-and-Acknowledgments.html" style="color:#6e6e6e">2003</a>,
+      maintained by <a target="new" href="https://bzg.fr" style="font-weight:500; color:inherit">Bastien Guerry</a>
       and developed by
-      <a href="https://orgmode.org/org.html#History-and-Acknowledgments">many others</a>.</p>
+      <a href="https://orgmode.org/org.html#History-and-Acknowledgments" style="color:#6e6e6e">many others</a>.</p>
   </div>
 #+end_export
 
