@@ -1,0 +1,102 @@
+<div id="org-demo">
+<asside class="label-left">Metadata </asside>
+<pre class="label-left">
+#+title:  <span class="org-document-title">Example Org File</span>
+#+author: <span class="org-document-info">TEC</span>
+#+date:   <span class="org-document-info">2020-10-27</span>
+</pre>
+<details open><summary>
+<asside class="right">
+    <h4>Outlining</h4>
+    Headlines and folding make structured editing a breeze.
+    Plain text makes it easy to sync and version control Org files.
+</asside>
+<pre>
+<span class="org-level-1">* Revamp orgmode.org website</span>
+</pre> </summary>
+<asside class="left">
+    <h4>Agenda</h4>
+    List todos across all your files.
+    Filter content, and update it in place.
+</asside>
+<pre>
+  The <i>/beauty/</i> of org <b>*must*</b> be shared.
+</pre>
+<details class="replace"> <summary>
+<pre>
+   <span class="org-link">[[https://upload.wikimedia.org/wikipedia/commons/b/bd/Share_Icon.svg]]</span>
+</pre> </summary>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Share_Icon.svg" alt="share icon" style="height: 3em; margin-left: 1.5em"/>
+</details>
+<details open class="br"><summary><pre>
+<span class="org-level-2">** <span class="org-done">DONE Make screenshots</span></span>
+</pre></summary><pre>
+   <span class="org-special-keyword">CLOSED:</span> <span class="org-date">[2020-09-03 Thu 18:24]</span>
+</pre></details>
+<details open><summary><pre>
+<span class="org-level-2">** <span class="org-todo-active">HOLD</span> Restyle Site CSS</span>
+</pre></summary><pre>
+   Go through <span class="org-link"><a href="/resources/style/org.css">[[file:style.scss][stylesheet]]</a></span>
+</pre></details>
+<details><summary><pre>
+<span class="org-level-2">** <span class="org-todo">TODO</span> Check CSS on main pages <span class="org-checkbox-statistics-todo">[28%]</span></span>
+</pre></summary><pre>
+   <span class="org-list-dt">-</span> <span class="org-done">[X] Index page</span>
+   <span class="org-list-dt">-</span> <span class="org-checkbox">[-]</span> Quickstart
+   <span class="org-list-dt">-</span> <span class="org-done">[X] Features</span>
+   <span class="org-list-dt">-</span> <span class="org-checkbox">[ ]</span> Releases
+   <span class="org-list-dt">-</span> <span class="org-checkbox">[-]</span> Install
+   <span class="org-list-dt">-</span> <span class="org-checkbox">[ ]</span> Manual
+   <span class="org-list-dt">-</span> <span class="org-checkbox">[ ]</span> Contribute
+</pre></details>
+</details>
+<details open class="label-left"><summary>
+<asside class="label-left">Prose</asside>
+<pre><span class="org-level-1">* Update Manual</span></pre>
+</summary><pre>
+  We should provide a simpler experience for new users.
+  Org has a lot to offer, but it's easy to become overwhelmed.
+  Providing a clearer introduction to the basics would be a good improvement.
+  Hopefully the new "Quickstart" page will help with that.
+
+</pre>
+<details open><summary><pre>
+<span class="org-level-2">** Feedback</span>
+</pre></summary><pre>
+   <span class="org-special-keyword">#+include: "other/feedback.org*manual" :only-contents t</span>
+</pre></details></details>
+<details open><summary><pre>
+<span class="org-level-1">* Investigate some prime moduli</span>
+</pre></summary>
+<asside class="right">
+    <h4>Babel</h4>
+    Perform literate programing in org,
+    with notebook-like live code execution in the buffer.
+</asside>
+<asside class="label-left">Code</asside>
+<details open><summary>
+<pre class="label-left" style="background-color: #ccc4">
+  <span class="org-block-begin-line">#+begin_src python</span>
+</pre></summary>
+<pre class="src label-left" style="background-color: #fff4">
+  <span class="org-variable-name">primes</span> = [2, 5, 7, 11]
+  <span class="org-variable-name">remainders</span> = []
+  <span class="org-keyword">for</span> i <span class="org-keyword">in</span> <span class="org-builtin">range</span>(2, 6):
+      remainders.append([p % i <span class="org-keyword">for</span> p <span class="org-keyword">in</span> primes])
+  <span class="org-keyword">return</span> remainders
+</pre><pre class="label-left" style="background-color: #ccc4">
+  <span class="org-block-end-line">#+end_src</span>
+</pre></details>
+<details open><summary>
+<asside class="label-left">Evaluated results</asside>
+<pre class="label-left br">  <span class="org-block-begin-line">#+RESULTS:</span>
+</pre></summary>
+<pre class="label-left">
+  <span class="org-table">| 0 | 1 | 1 | 1 |
+  | 2 | 2 | 1 | 2 |
+  | 2 | 1 | 3 | 3 |
+  | 2 | 0 | 2 | 1 |
+</span>
+</pre></details>
+</details>
+</div>
