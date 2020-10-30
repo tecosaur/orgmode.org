@@ -2,9 +2,6 @@
 #+startup:     hidestars
 #+options:     H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t *:t TeX:t author:nil <:t LaTeX:t
 #+property:    header-args :eval no-export
-#+macro:       next #+HTML: <div class="move">> <a href="#$1">documentation</a></div>
-#+macro:       previous #+HTML: <div class="move">< <a href="#$1">download and install</a></div>
-#+macro:       updown #+HTML: <div class="move"><a href="#$1">< $1</a> · <a href="#$2">$2 ></a></div>
 #+html_head:   <meta name="theme-color" content="#77aa99">
 #+html_head:   <meta property="og:title" content="Org Mode">
 #+html_head:   <meta property="og:type" content="website">
