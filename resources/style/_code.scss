@@ -1,0 +1,107 @@
+code,kbd {
+    font-family: "Droid Sans Mono";
+    hyphens: none;
+    word-break: break-word;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+code {
+    color: mix($text, $background, 80%);;
+    background-color: mix($background, $text, 92%);
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 85%;
+}
+kbd { // verbatim
+    background-color: mix($background, $text, 98%);
+    border: 1px solid mix($text, $background, 80%);;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+    color: mix($text, $background, 80%);;
+    line-height: 1.4;
+    margin: 0 .1em;
+    padding: .1em .6em;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 75%;
+}
+
+pre {
+    font-family: "Droid Sans Mono", monospace;
+    font-size: .8em;
+    font-weight: normal;
+    line-height: 1.4em;
+    background-color: mix($background, $text, 95%);
+    border-left: 4px solid mix($background, $text, 68%);
+    margin-right: 1pt;
+    padding: 0.4em 0.6em;
+}
+pre.src {
+    padding: 0.4em 0.6em; // override from `org-html-style-default'
+    overflow-x: auto;
+    position: relative;
+    &::before {
+        display: none;
+        position: absolute;
+        right: 10px;
+        padding: 3px;
+        background-color: adjust-color(mix($background, $text, 95%), $alpha: -0.2);
+        color: mix($text, $background, 66%);
+        top: 0;
+    }
+    &:hover::before {
+        display: inline;
+    }
+}
+
+pre.src-org:before { content: 'Org mode'; }
+pre.src-shell:before { content: 'Shell'; }
+
+example, .src {
+    color: #2c3e50;
+}
+.example .org-keyword, .src .org-keyword {
+    color: $blue;
+}
+.example .org-variable-name, .src .org-variable-name {
+    color: $purple;
+}
+.example .org-rainbow-delimiters-depth-1,
+.example .org-rainbow-delimiters-depth-2,
+.example .org-rainbow-delimiters-depth-3,
+.example .org-rainbow-delimiters-depth-4,
+.example .org-rainbow-delimiters-depth-5,
+.example .org-rainbow-delimiters-depth-6,
+.example .org-rainbow-delimiters-depth-7,
+.example .org-rainbow-delimiters-depth-8,
+.example .org-rainbow-delimiters-depth-9,
+.src .org-rainbow-delimiters-depth-1,
+.src .org-rainbow-delimiters-depth-2,
+.src .org-rainbow-delimiters-depth-3,
+.src .org-rainbow-delimiters-depth-4,
+.src .org-rainbow-delimiters-depth-5,
+.src .org-rainbow-delimiters-depth-6,
+.src .org-rainbow-delimiters-depth-7,
+.src .org-rainbow-delimiters-depth-8,
+.src .org-rainbow-delimiters-depth-9 {
+    color: mix($text, $background, 66%);
+}
+.example .org-string, .src .org-string {
+    color: $green;
+}
+.example .org-comment,
+.example .org-comment-delimiter,
+.src .org-comment,
+.src .org-comment-delimiter {
+    color: mix($text, $background, 66%);
+}
+.example .org-function-name,
+.src .org-function-name {
+    color: #6c3163;
+}
+.example .org-constant,
+.example .org-highlight-numbers-number,
+.src .org-constant,
+.src .org-highlight-numbers-number {
+    color: #4e3163;
+}

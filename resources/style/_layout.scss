@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    // body margins and padding
+    --body-left: 0px;
+    --body-right: 0px;
+    --body-padding: 10px;
+    @media(min-width:850px) and (max-width:1000px){
+        --body-left: 25px;
+        --body-right: 15px;
+    }
+    @media(min-width:1000px){
+        --body-left: 50px;
+        --body-right: 30px;
+        --body-padding: 20px;
+    }
+    @media(min-width:1600px){
+        --body-left: 80px;
+        --body-right: 50px;
+        --body-padding: 30px;
+    }
+}
+
+html {
+    margin: 0;
+    // because otherwise 100vw triggers a horizontal scrollbar >:(
+    // this is alright because we should never have anything more than 100vw wide
+    // centered elements will now become off-centre by scrollbarwidth/2, but that
+    // seems acceptable
+    overflow-x: hidden;
+}
+
+body {
+    margin: calc(2.0rem + 14px) var(--body-right) 0 var(--body-left);
+    padding: 0 var(--body-padding);
+    background-color: $background;
+}
+
+#content {
+    font-size: 1.2em;
+    line-height: 1.4;
+    max-width: 60rem;
+    margin: auto;
+}
+
+#content p {
+    padding-right: 7pt;
+}

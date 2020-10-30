@@ -1,22 +1,33 @@
+@import 'variables';
+@import 'color-contrast';
+
+$demo_bg: mix($background, $text, 95%);
+
+$demo_primary: wcag-color($primary, $demo_bg, $bold: true);
+$demo_secondary: wcag-color($secondary, $demo_bg, $bold: true);
+$demo_blue: wcag-color(mix($blue, $background, 80%), $demo_bg);
+$demo_purple: wcag-color($purple, $demo_bg);
+$demo_green: wcag-color($green, $demo_bg);
+
 #org-demo {
-    background: #eee;
+    background: $demo_bg;
     padding: 0.5rem 1rem;
     // box-shadow:
     //     0 -1px 1px rgba(0,0,0,0.15),
-    //     0 -10px 0 -5px #eee,
+    //     0 -10px 0 -5px $demo_bg,
     //     0 -10px 1px -4px rgba(0,0,0,0.15),
-    //     0 -20px 0 -10px #eee,
+    //     0 -20px 0 -10px $demo_bg,
     //     0 -20px 1px -9px rgba(0,0,0,0.15);
 
     asside.left, asside.right {
-        background-color: #7a94;
+        background-color: mix($primary,$background,20%);
         line-height: 1.4;
         border-radius: 3px;
         padding: 0 1rem 0.3em 1rem;
         h4 {
             margin: 0 -1rem 0.1em -1rem;
             padding: 0.2em 1rem;
-            background-color: #7a95;
+            background-color: mix($primary,$background,40%);
         }
         @media (max-width:1000px) {
             display: block;
@@ -41,11 +52,11 @@
             margin-left: -40%;
         }
     }
-    
+
     asside.label-left {
         float: left;
         transform: translateX(-100%);
-        color: #aa8b77;
+        color: wcag-color($contrast, $background);
         margin-right: -100%;
         font-family: var(--sans);
         padding-right: 2rem;
@@ -71,13 +82,13 @@
     }
 
     pre.label-left, details.label-left pre {
-        box-shadow: -4px 0px 0px 0px #fafafa,
-                    -8px 0px 0px 0px #aa8b77;
+        box-shadow: -4px 0px 0px 0px $background,
+                    -8px 0px 0px 0px $contrast;
         transform: translateX(-1rem);
         padding-left: 1rem;
         margin-right: -2rem;
     }
-    
+
     pre {
         font-size: 1.2rem;
         border: none;
@@ -91,32 +102,32 @@
     }
 
     .org-document-title, .org-document-info {
-        color: var(--dark-green); }
+        color: $demo_secondary; }
     .org-level-1 {
-        color: var(--green); }
+        color: $demo_primary; }
     .org-level-2 {
-        color: #ab8867; }
+        color: wcag-color($contrast, $demo_bg, $bold: true); }
     .org-level-1, .org-level-2 {
         cursor: pointer; }
     .org-done, .org-special-keyword, .org-block-begin-line, .org-block-end-line {
-        color: #62686e; }
+        color: wcag-color(#62686e, $demo_bg); }
     .org-date {
-        color: #ab8867;
+        color: wcag-color($contrast, $demo_bg);
         &:hover {
-            color: #eee;
-            background-color: #ab8867;
+            color: $demo_bg;
+            background-color: $contrast;
         }
     }
     .org-todo-active, .org-table {
-        color: #9289ab; }
+        color: $demo_purple; }
     .org-todo, .org-checkbox, .org-checkbox-statistics-todo {
-        color: #6fab75;}
+        color: $demo_green;}
     .org-link {
-        color: #80a2ab;
+        color: $demo_blue;
         text-decoration: underline;
         &:hover {
-            color: #eee;
-            background-color: #80a2ab;
+            color: $demo_bg;
+            background-color: $demo_blue;
             cursor: pointer;
         }
         a {
@@ -124,13 +135,10 @@
         }
     }
     .org-list-dt {
-        color: #80a2ab;
+        color: $demo_blue;
     }
     .org-document-title, .org-level-1, .org-level-2 {
         font-weight: bold; }
-    .org-code {
-        color: #ab8867; 
-    }
 
     > details, details.br {
         margin-top: 1em;

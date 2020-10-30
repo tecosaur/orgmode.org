@@ -1,0 +1,135 @@
+nav#main {
+    background-color: mix($primary, $secondary, 50%);
+    background-image: url(/resources/img/greenteselatedband.png);
+    background-size: auto calc(2.5rem + 16px);
+    background-repeat: repeat-x;
+    padding: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: var(--sans);
+    /* fix the position for now - easy solution */
+    position: fixed;
+    width: 100vw; // use over % to avoid scrollbar effect
+    top: 0;
+    left: 0;
+    z-index: 1;
+    line-height: 2em;
+    a {
+        padding: 0 10px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        p.logo {
+            img {
+                height: 2em;
+                margin-bottom: -0.8em;
+                position: relative;
+                top: -0.2em;
+            }
+            display: inline-block;
+            font-weight: 700;
+            margin: 0;
+            color: mix($text, $background, 80%);
+        }
+    }
+    #translate {
+        position: absolute;
+        left: 1em;
+        color: mix($background, $text, 95%);
+        font-weight: bold;
+        a {
+            color: mix($background, $text, 85%);
+            font-weight: bold;
+            padding: 0px;
+            margin: 0 -2px 0 -2px;
+        }
+    }
+    // .view-source {
+    //     position: absolute;
+    //     @media(min-width:850px) {
+    //         right: 1em;
+    //         transform: scale(0.7,1);
+    //         font-weight: bold;
+    //         font-family: "Droid Sans Mono", monospace;
+    //     }
+    //     align-self: center;
+    //     color: #466259;
+    //     font-weight: bold;
+    //     line-height: 1.5;
+    //     padding: 0 4px 0px 4px;
+    //     border: none;
+    //     background: #fff;
+    //     border-radius: 2px;
+    //     &:hover {
+    //         background: #eee;
+    //         color: #304840;
+    //     }
+    // }
+    label, input {
+        display: none;
+    }
+    @media(max-width:850px) {
+        flex-direction: column;
+        label {
+            display: block;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+            font-size: 1.6em;
+        }
+        > a:first-of-type {
+            margin-top: -1.8em;
+        }
+        > a:last-child {
+            margin-bottom: -8px;
+        }
+        p {
+            align-self: center;
+            margin-bottom: -0.4em;
+        }
+        a,#translate {
+            display: none;
+            align-self: center;
+        }
+        #translate {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: 0.35em;
+            height: 1.9em;
+            line-height: 1.7;
+            text-align: right;
+            padding-right: 1em;
+            background-color: #fff4;
+        }
+        a.view-source {
+            position: relative;
+            align-self: baseline;
+            background-color: transparent;
+            font-size: 0.9em;
+            line-height: 1;
+            margin-left: 10pt;
+            padding-bottom: 3pt;
+            top: 2px;
+            &::after {
+                content: ' view source';
+                font-weight: 400;
+            }
+        }
+        input:checked {
+            ~ a, ~ #translate {
+                display: block;
+            }
+            ~ #translate a {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// to account for the navbar in scroll-to position
+h2[id]:target {
+    padding-top: calc(40px + 2rem); 
+}

@@ -1,86 +1,16 @@
+@import 'variables';
+
 body {
     margin-top: 0;
 }
-nav#main {
-    background-color: transparent;
-    background-image: none;
-    position: absolute;
-    a {
-        color: #444;
-    }
-    label {
-        color: #000;
-    }
-    @media(max-width:850px) {
-        background-color: #f9f9f9ee !important;
-    }
-}
+
+@import 'nav-light';
+
+@import 'hero';
+
 .columns .outline-3 {
     width: 15rem;
     @media (max-width:950px) {
         width: 12rem;
     }
 }
-
-div.banner {
-    &.hero {
-        // background-color: var(--dark-green);
-        // color: #eee;
-        background-color: #fff;
-        background-image: url(/resources/img/bgtile.webp);
-        text-align: left;
-        justify-content: center;
-        padding: 6rem 1rem 3rem 1rem;
-        > img {
-            height: 18rem;
-            @media(max-width:850px) {
-                max-height: 50vw;
-            }
-            @media(min-width:915px) {
-                margin-top: -5rem;
-            }
-            &[src="/resources/img/org-mode-unicorn.svg"] { // when we know the image, we can avoid page reflows on load
-                width: 16.3125rem;
-                @media(max-width:850px) {
-                    width: 45.3125vw;
-                }
-            }
-            margin: 0 3rem 0 2rem;
-        }
-        h2 {
-            font-family: var(--sans);
-            font-size: 3em;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-            .subtitle {
-                font-size: 0.4em;
-                margin: 0;
-            }
-        }
-        h2, p {
-            max-width: 40rem;
-        }
-        p {
-            line-height: 1.6;
-        }
-    }
-    p.bubble {
-        font-family: var(--sans);
-        color: inherit;
-        border: 1px solid currentColor;
-        a {
-            color: inherit;
-        }
-        // img.inline {
-        //     filter: brightness(100);
-        // }
-        margin-top: 2em;
-        border-radius: 2em;
-        padding: 0.3em 1em;
-        font-size: 1.2rem;
-        width: 95%;
-        text-align: center;
-    }
-}
-

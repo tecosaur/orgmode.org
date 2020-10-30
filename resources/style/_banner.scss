@@ -1,0 +1,47 @@
+$bg_banner_grey: mix($background, $text, 96.5%);
+
+div.banner {
+    margin-left: #{"min(calc(0px - var(--body-left) - var(--body-padding)), calc(30rem - 50vw - 0.5*var(--body-left) + 0.5*var(--body-right)))"};
+    width: 100vw;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    #a-quote {
+        flex-basis: 100%;
+        max-width: none;
+    }
+    &.slim {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-family: var(--sans);
+    }
+    &.inline {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        p {
+            display: inline-block;
+            margin: 0.2em;
+        }
+    }
+    &.grey {
+        background-color: $bg_banner_grey;
+        a {
+            color: mix($text, $background, 93%);;
+            font-weight: bold;
+        }
+    }
+    &.faded {
+        color: wcag-color(#888, $bg_banner_grey, 'AAA');
+        a {
+            color: wcag-color(#888, $bg_banner_grey, 'AAA', $bold: true);
+        }
+    }
+    p.small {
+        font-size: 0.7em;
+    }
+}

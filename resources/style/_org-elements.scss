@@ -1,0 +1,121 @@
+h1.title {
+    display: none;
+}
+
+h3 {
+    display: none;
+    font-size: 1.4em;
+}
+
+.outline-3 {
+    background-color: mix($background, $text, 94%);
+    border-left: 4px solid $secondary;
+    padding: 5pt;
+    width: 27em;
+    max-width: 80%;
+    font-size: 1em;
+    margin-top: 20pt;
+}
+
+.outline-3 p {
+    margin:3pt; 
+    padding:0;
+}
+
+h2 {
+    display: block;
+    padding-top: 30px;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 30pt;
+    line-height: 1.1;
+}
+
+.outline-2 {
+    font-size: 1em;
+    margin-top: 40px;
+    width: 100%;
+}
+
+*.outline-2 img {
+    margin-left: 50px;
+    max-width: 80%;
+}
+
+*.outline-2 p {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+.org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+.org-center { margin-left: auto; margin-right: auto; text-align: center; }
+
+table {
+    border-collapse:collapse;
+}
+caption.t-above {
+    caption-side: top; }
+caption.t-bottom {
+    caption-side: bottom; }
+td, th {
+    vertical-align:top; }
+th.org-right  {
+    text-align: center; }
+th.org-left   {
+    text-align: center; }
+th.org-center {
+    text-align: center; }
+td.org-right  {
+    text-align: right; }
+td.org-left   {
+    text-align: left; }
+td.org-center {
+    text-align: center; }
+
+dt {
+    font-weight: bold; }
+dd {
+    margin-bottom: 0.5em; }
+
+.footpara {
+    display: inline; }
+.footdef  {
+    margin-bottom: 1em; }
+
+.figure {
+    padding: 1em; }
+.figure p {
+    text-align: center; }
+
+.equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+.equation {
+    vertical-align: middle;
+}
+.equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+// non-standard org elements
+
+img.inline {
+    height: 1em;
+    margin-bottom: -0.15em;
+}
+
+#a-quote {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.inline {
+    display: inline-block;
+}

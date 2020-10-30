@@ -1,0 +1,57 @@
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: none;
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    &.no-heading {
+        h2 {
+            display: none;
+        }
+    }
+    h2 {
+        position: absolute;
+        left: 0;
+        top: -1.2em;
+    }
+    .outline-3 {
+        background: none;
+        border: none;
+        text-align: center;
+        width: 18rem;
+        min-height: 10rem;
+        margin-top: 1rem;
+        a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            a {
+                display: initial;
+            }
+        }
+        figure {
+            margin: 0
+        }
+        .org-svg, img {
+            width: auto;
+            margin-left: 0;
+            height: 9rem;
+            max-width: 80%;
+            padding-bottom: 2.5rem;
+            pointer-events: none;
+        }
+        h3 {
+            display: block;
+            position: relative;
+            top: 7rem;
+            margin-bottom: -2.5rem;
+            pointer-events: none;
+            height: 1em;
+            // allow heading to slightly exceed bounding box
+            width: 110%;
+            margin-left: -5%;
+        }
+    }
+}

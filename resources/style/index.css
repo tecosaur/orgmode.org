@@ -6,17 +6,16 @@ nav#main {
   background-image: none;
   position: absolute; }
   nav#main a {
-    color: #444; }
+    color: #444444; }
   nav#main label {
     color: #000; }
+  nav#main #translate {
+    color: #587e72; }
+    nav#main #translate a {
+      color: #587e72; }
   @media (max-width: 850px) {
     nav#main {
-      background-color: #f9f9f9ee !important; } }
-.columns .outline-3 {
-  width: 15rem; }
-  @media (max-width: 950px) {
-    .columns .outline-3 {
-      width: 12rem; } }
+      background-color: rgba(250, 250, 250, 0.06) !important; } }
 div.banner.hero {
   background-color: #fff;
   background-image: url(/resources/img/bgtile.webp);
@@ -63,3 +62,9 @@ div.banner p.bubble {
   text-align: center; }
   div.banner p.bubble a {
     color: inherit; }
+
+.columns .outline-3 {
+  width: 15rem; }
+  @media (max-width: 950px) {
+    .columns .outline-3 {
+      width: 12rem; } }

@@ -1,0 +1,17 @@
+.starred {
+    position: relative;
+    &::before {
+        content: '🟊';
+        text-align: right;
+        padding: 0 1.5px 4px 2.5px;
+        line-height: 0.9;
+        width: 22px;
+        height: 22px;
+        background: mix($blue, $background, 70%);
+        color: $background;
+        position: absolute;
+        top: 0;
+        right: 0;
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
+    }
+}

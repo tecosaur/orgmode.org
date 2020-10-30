@@ -44,7 +44,7 @@
     <meta itemprop="url" content="https://orgmode.org">
   </div>
   </div>
-  <div class="banner slim green inline">
+  <div class="banner slim grey faded inline">
     <p style="width:90vw; color:#515151">
       Created by
       <a target="new" href="https://staff.science.uva.nl/~dominik/"

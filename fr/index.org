@@ -46,7 +46,7 @@
     <meta itemprop="screenshot" content="https://orgmode.org/resources/img/main.svg">
   </div>
   </div>
-  <div class="banner slim green inline">
+  <div class="banner slim grey faded inline">
     <p style="width: 90vw">
       Crée par
       <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>

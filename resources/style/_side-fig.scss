@@ -1,0 +1,63 @@
+div.side-fig {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 5rem;
+    h2 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        @media(min-width:850px) {
+            width: 95%; // no idea why this is needed
+        }
+        left: 0;
+        text-align: center;
+        &:target {
+            top: calc(-10px - 3rem); // to account for added padding
+        }
+    }
+    > div.outline-text-2 { // figure & move
+        > figure {
+            width: #{"min(600px, 100vw)"};
+            margin: 26px 0 10px 0;
+            @media(min-width:850px) {
+                width: #{"min(700px, 50vw)"};
+            }
+            img,object {
+                width: 100%;
+                margin-left: 0;
+                max-height: 500px;
+                object-fit: contain;
+                object-position: left center;
+            }
+        }
+        .move {
+            position: absolute;
+            top: 5rem;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            @media(max-width:1800px) {
+                display: none;
+            }
+        }
+    }
+    > div.outline-3 { // description
+        border: none;
+        background-color: transparent;
+        width: 600px;
+        max-width: 100%;
+        > div.outline-4 { // more
+            background-color: mix($background, $text, 94%);
+            border-left: 4px solid $secondary;
+            padding: 5px;
+            h4 {
+                display: none;
+            }
+        }
+    }
+}

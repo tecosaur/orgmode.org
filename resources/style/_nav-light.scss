@@ -1,0 +1,20 @@
+nav#main {
+    background-color: transparent;
+    background-image: none;
+    position: absolute;
+    a {
+        color: mix($text, $background, 73%);
+    }
+    label {
+        color: $text;
+    }
+    #translate {
+        color: $secondary;
+        a {
+            color: $secondary;
+        }
+    }
+    @media(max-width:850px) {
+        background-color: adjust-color($background, $alpha: -0.94) !important;
+    }
+}
