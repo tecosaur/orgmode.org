@@ -1,0 +1,42 @@
+@import 'font';
+@import 'variables';
+@import 'color-contrast';
+@import 'layout';
+@import 'footer';
+
+@import 'nav';
+@import 'nav-light';
+nav#main #translate {
+    display: none;
+}
+
+body {
+    background-color: #fff;
+    background-image: url(/resources/img/bgtile.webp);
+}
+
+@import 'links';
+
+#content {
+    text-align: center;
+    font-size: 1.5rem;
+    h1 {
+        color: $primary;
+        font-size: 12rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-family: var(--sans);
+    }
+}
+
+#postamble {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    img.inline {
+        height: 1em;
+        margin-bottom: -0.15em;
+    }
+}

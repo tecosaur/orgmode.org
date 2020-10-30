@@ -1,0 +1,10 @@
+#+title: 400
+#+setupfile: setup.org
+#+description: Org: an Emacs Mode for Notes, Planning and Authoring
+#+html_head: <link rel="stylesheet" href="/resources/style/errors.min.css" type="text/css" />
+#+include: "../resources/preamble.html" export html
+
+There's something dodgy about your request...
+
+#+attr_html: :class btn :style text-align:center
+[[https://orgmode.org][Homepage]]
