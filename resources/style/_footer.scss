@@ -8,9 +8,12 @@
     margin: 5rem calc(0px - var(--body-right) - var(--body-padding)) 0 calc(0px - var(--body-left) - var(--body-padding));
     p {
         display: inline;
-        margin-left: 1rem;
+        margin: 0;
         a:hover {
             text-decoration: none;
+        }
+        &:not(:first-child) {
+            margin-left: 1rem;
         }
     }
 }

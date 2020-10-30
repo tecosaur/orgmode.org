@@ -584,9 +584,11 @@ div.banner {
   margin: 5rem calc(0px - var(--body-right) - var(--body-padding)) 0 calc(0px - var(--body-left) - var(--body-padding)); }
   #postamble p {
     display: inline;
-    margin-left: 1rem; }
+    margin: 0; }
     #postamble p a:hover {
       text-decoration: none; }
+    #postamble p:not(:first-child) {
+      margin-left: 1rem; }
 
 #src {
   position: fixed;
