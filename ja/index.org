@@ -6,20 +6,13 @@
 #+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg+xml">
 #+include: "../resources/preamble.html" export html
 
+#+html_head: <link rel="stylesheet" href="/resources/style/org-demo.min.css" type="text/css" />
 #+include: "../resources/normal-outline-3.html" export html
-
-#+begin_export html
-<style>
-  .columns .outline-3 {
-    width: 15rem;
-  }
-</style>
-#+end_export
 
 #+begin_export html
 <div class="banner hero" itemscope itemtype="https://schema.org/SoftwareApplication">
   <img src="/resources/img/org-mode-unicorn.svg"
-       alt="Org unicorn logo" itemprop="image"/>
+       alt="Org Mode のゆにこーんロゴ" itemprop="image"/>
   <div>
     <h2>
       <span itemprop="name">Org Mode</span>
@@ -46,17 +39,16 @@
     <meta itemprop="softwareVersion" content="9.3.8">
     <meta itemprop="datePublished" content="2020-08-07">
     <meta itemprop="url" content="https://orgmode.org">
-    <meta itemprop="screenshot" content="https://orgmode.org/resources/img/main.svg">
   </div>
   </div>
-  <div class="banner slim green inline">
-    <p style="width: 90vw">
+  <div class="banner slim grey faded inline">
+    <p style="width: 90vw; color:#515151">
       作成:
-      <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>&ensp;
-      (<a target="new" href="/manual/History-and-Acknowledgments.html">2003</a>)&ensp;
-      メンテナンス: <a target="new" href="https://bzg.fr">Bastien Guerry</a>&ensp;
+      <a target="new" href="https://staff.science.uva.nl/~dominik/" style="font-weight:500; color:inherit">Carsten Dominik</a>&ensp;
+      (<a target="new" href="/manual/History-and-Acknowledgments.html" style="color:#6e6e6e">2003</a>)&ensp;
+      メンテナンス: <a target="new" href="https://bzg.fr" style="font-weight:500; color:inherit">Bastien Guerry</a>&ensp;
       開発:
-      <a href="https://orgmode.org/org.html#History-and-Acknowledgments">多くの貢献者</a></p>
+      <a href="https://orgmode.org/org.html#History-and-Acknowledgments" style="color:#6e6e6e">多くの貢献者</a></p>
   </div>
 #+end_export
 
@@ -66,43 +58,54 @@
 :END:
 ** 機能
 @@html:<a href="features.html">@@
+#+attr_html: :alt Three stars :title 使いたい機能を探してみましょう。
 [[file:../resources/img/stars.svg]]
 
-使いたい機能を探してみましょう。
 @@html:</a>@@
+
 ** インストール
 @@html:<a href="install.html">@@
+#+attr_html: :alt Downwards facing arrow :title まずはインストールしましょう。
 [[file:../resources/img/install.svg]]
 
-まずはインストールしましょう。
 @@html:</a>@@
+
 ** クイックスタート
 @@html:<a href="quickstart.html">@@
+#+attr_html: :alt Running stickfigure :title 使い始めると、もう止められません。
 [[file:../resources/img/quickstart.svg]]
 
-使い始めると、もう止められません。
 @@html:</a>@@
+
 ** コントリビュート
 @@html:<a href="contribute.html">@@
+#+attr_html: :alt Git branch symbol :title 皆さんの貢献で支えられています。
 [[file:../resources/img/contribute.svg]]
 
-皆さんの貢献で支えられています。
 @@html:</a>@@
 
 * Elaboration + demo image :ignore:
 
+#+attr_html: :style margin-top:2rem;
 Org Mode は、極めて柔軟な構造化されたプレーンテキストのファイルフォーマットです。いくつかのシンプルな要素で構成されているのに、多用途で、簡単なことから複雑なことまで対応します。つまり、[[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][初心者]]から[[http://howardism.org/Technical/Emacs/literate-devops.html][熟練者]]まで幅広いユーザが満足できます。
 
-#+attr_html: :style max-width:min(45rem, 80vw) :alt Orgファイルの例。基本的な機能を示しています。
-[[file:../resources/img/main.svg]]
+Org Mode が提供する機能を以下に例示しました。そのパワフルさがひと目で分かります。（*で始まる）見出しをクリックしてみましょう。見出しに紐付いた構造化された記述が折りたたまれ、必要な情報だけが表示されるのを楽しんでください。
+
+#+include: org-demo.html export html
 
 * 関連文献
+  :PROPERTIES:
+  :CUSTOM_ID: reading
+  :END:
 
 [[file:quickstart.org][クイックスタート]]や[[file:manual/index.html][マニュアル]]以外に、[[file:guide/index.html][コンパクトガイド]] があります。また、コミュニティベースで更新される豊富な文書を [[https://orgmode.org/worg/][Worg]] で読めます。
 
 Org Mode の多くのユーザが、Org Mode をどんなことに使っていて、そしてどれだけのパワーを得ているのかについて語ることができるでしょう。あるユーザは、[[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][再現可能な研究]]を実施するために Org Mode が非常に便利であることを見い出し、いくつもの[[https://orgmode.org/worg/org-papers.html][科学論文]]を執筆してきました。またあるユーザは、Emacs 以外の環境でも Org Mode を使うためのサードパーティツールを作成しています。モバイルアプリケーションが良い例です。
 
 * さらに...
+  :PROPERTIES:
+  :CUSTOM_ID: more
+  :END:
 
 =text/org= が、Orgファイルの /デファクト/ なメディアタイプです。拡張子は ~.org~ を使います。ほとんどOSが、拡張子が ~.org~ のファイルを Emacs で開くことを知りませんが、ちょっとした設定をすることで開けるようになります。
 
@@ -114,8 +117,13 @@ EmacsLisp で書かれた Org Mode の模範的な実装が、最も高機能で
 #+end_center
 
 * [[https://orgmode.org/worg/][Worg]] (/World/ Org)
+  :PROPERTIES:
+  :CUSTOM_ID: worg
+  :END:
 
 Org Mode には多くのユースケースがあり、それらを文書化するのは簡単ではありません。単一のページですべて表示することも困難です。その代わりに、コミュニティベースの wiki である [[https://orgmode.org/worg/][Worg]] が、文書を記録したり情報を共有する場所として使われています。Org Modeの使い方から、Org Modeを使った様々な操作ついて知ることができるでしょう。
+
+次のようなコンテンツがあります。
 
 - [[https://orgmode.org/worg/org-faq.html][The FAQ]]
 - [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
