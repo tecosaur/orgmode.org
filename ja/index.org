@@ -1,0 +1,141 @@
+#+title:     Org mode for Emacs
+#+setupfile: ../setup.org
+#+language:  ja
+#+description: Org: an Emacs Mode for Notes, Planning, and Authoring
+#+html_head: <link rel="stylesheet" href="/resources/style/index.css" type="text/css" />
+#+html_head: <link rel="preload" href="/resources/img/org-mode-unicorn.svg" as="image" type="image/svg+xml">
+#+include: "../resources/preamble.html" export html
+
+#+include: "../resources/normal-outline-3.html" export html
+
+#+begin_export html
+<style>
+  .columns .outline-3 {
+    width: 15rem;
+  }
+</style>
+#+end_export
+
+#+begin_export html
+<div class="banner hero" itemscope itemtype="https://schema.org/SoftwareApplication">
+  <img src="/resources/img/org-mode-unicorn.svg"
+       alt="Org unicorn logo" itemprop="image"/>
+  <div>
+    <h2>
+      <span itemprop="name">Org Mode</span>
+      <p class="subtitle">お手軽 <span itemprop="applicationCategory">プレーンテキスト マークアップ</span>、...だけじゃない!!</p>
+    </h2>
+    <p>
+      <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a>の拡張可能なメジャーモード。もちろんオープンソース。</p>
+    <p>Org mode は様々な機能をサポートしています。メモを取る、タスクリストの管理、
+      プロジェクトの管理、文書の編集、再現性のある計算ノート、文芸的プログラミング、などです。
+      これらを高速で効率的なプレーンテキストシステムで実現しています。</p>
+    <p class="bubble">
+      プロジェクトを応援: &ensp;
+      <a href="https://liberapay.com/bzg" title="あなたの寄付がチカラになります"
+         style="font-weight: bold;">
+        <img class="inline" src="/resources/img/external/librepay.svg" alt="Liberapayのロゴ"/>
+        Liberapay</a>&ensp;
+      <a href="https://github.com/sponsors/bzg" title="あなたの寄付がチカラになります"
+         style="font-weight: bold;">
+        <img class="inline" src="/resources/img/external/github.svg" alt="GitHubのロゴ"/>
+        GitHub</a>&ensp;
+      <a href="https://www.paypal.com/paypalme/bzg/10" title="あなたの寄付がチカラになります"
+         style="font-weight: bold;">
+        <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypalのロゴ"/>
+        PayPal</a></p>
+    <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
+    <meta itemprop="softwareVersion" content="9.3.8">
+    <meta itemprop="datePublished" content="2020-08-07">
+    <meta itemprop="url" content="https://orgmode.org">
+    <meta itemprop="screenshot" content="https://orgmode.org/resources/img/main.svg">
+  </div>
+  </div>
+  <div class="banner slim green inline">
+    <p style="width: 90vw">
+      作成:
+      <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>
+      (<a target="new" href="/manual/History-and-Acknowledgments.html">2003)</a>、
+      メンテナンス: <a target="new" href="https://bzg.fr">Bastien Guerry</a>、
+      開発:
+      <a href="https://orgmode.org/org.html#History-and-Acknowledgments">多くの貢献者</a>.</p>
+  </div>
+#+end_export
+
+* Points forts
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: columns no-heading
+:END:
+** 機能
+@@html:<a href="features.html">@@
+[[file:../resources/img/stars.svg]]
+
+使いたい機能を探してみましょう。
+@@html:</a>@@
+** インストール
+@@html:<a href="install.html">@@
+[[file:../resources/img/install.svg]]
+
+まずはインストールしましょう。
+@@html:</a>@@
+** クイックスタート
+@@html:<a href="quickstart.html">@@
+[[file:../resources/img/quickstart.svg]]
+
+使い始めると、もう止められません。
+@@html:</a>@@
+** コントリビュート
+@@html:<a href="contribute.html">@@
+[[file:../resources/img/contribute.svg]]
+
+皆さんの貢献で支えられています。
+@@html:</a>@@
+
+* Elaboration + demo image :ignore:
+
+Org Modeは、極めて柔軟な構造化されたプレーンテキストのファイルフォーマットです。
+いくつかのシンプルな要素で構成されているのに、多用途で、簡単なことから複雑なことまで対応します。
+つまり、[[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][初心者]]から[[http://howardism.org/Technical/Emacs/literate-devops.html][熟練者]]まで幅広いユーザが満足できます。
+
+#+attr_html: :style max-width:min(45rem, 80vw) :alt Orgファイルの例。基本的な機能を示しています。
+[[file:../resources/img/main.svg]]
+
+* 関連文献
+
+[[file:quickstart.org][クイックスタート]] や [[file:manual/index.html][マニュアル]] 以外にも、[[file:guide/index.html][コンパクトガイド]] があります。また、コミュニティベースで更新される豊富な文書が [[https://orgmode.org/worg/][Worg]] で読めます。
+
+Org Modeの多くのユーザが、Org Modeをどんなことに使っていて、そしてどれだけのパワーを得ているのかについて語ることができるでしょう。あるユーザは、[[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][再現可能な研究]]を実施するために Org Mode が非常に便利であることを見い出し、いくつもの[[https://orgmode.org/worg/org-papers.html][科学論文]]を執筆してきました。またあるユーザは、Emacs 以外の環境でも Org Mode を使うためのサードパーティツールを作成しています。モバイルアプリケーションが良い例です。
+
+* さらに...
+
+=text/org= が、Orgファイルの /デファクト/ なメディアタイプです。拡張子は ~.org~ を使います。ほとんどOSが、拡張子が ~.org~ のファイルを Emacs で開くことを知りませんが、ちょっとした設定をすることで開けるようになります。
+
+EmacsLisp で書かれた Org Mode の模範的な実装が、最も高機能であることは間違いありません。その一方で、Org Modeと連携する[[file:tools.org][様々なツール]]が存在しています。
+
+#+begin_center
+#+attr_html: :class btn
+[[file:~/devel/git/orgweb/tools.org][Tools which work with Org]]
+#+end_center
+
+* [[https://orgmode.org/worg/][Worg]] (/World/ of Org)
+
+Org Mode には多くのユースケースがあり、それらを文書化するのは簡単ではありません。単一のページですべて表示することも困難です。代わりに、コミュニティベースの wiki である [[https://orgmode.org/worg/][Worg]] が、文書を記録したり情報を共有する場所として使われています。Org Modeの使い方から、Org Modeを使った様々な操作ついて知ることができるでしょう。
+
+- [[https://orgmode.org/worg/org-faq.html][The FAQ]]
+- [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
+- [[https://orgmode.org/worg/org-tutorials/index.html][A list of tutorials]]
+- [[https://orgmode.org/worg/doc.html][Documentation on all hooks, commands and options]]
+- [[https://orgmode.org/worg/org-in-the-wild.html][Org in the wild]]
+- ...などなど
+
+Worg は、Org ファイルを格納する Git リポジトリで管理されています。そして、それらのファイルがHTML形式に変換されてウェブページとなります。
+Worg is maintained as a Git repository of Org files that are published
+as an HTML website. 使い方は、[[https://orgmode.org/worg/worg-git.html#contribute-to-worg][contributors are welcome]] を見てください。
+
+#+BEGIN_SRC shell
+~$ git clone https://code.orgmode.org/bzg/worg.git
+#+END_SRC
+
+* Local community
+
+Org Mode について疑問が生じたり、もっと知りたくなったり、日本語圏のユーザと語り合いたくなったら、[[https://emacs-jp.github.io/][Emacs-JP]]が運営する ~Slack~ を訪れてください。 [[https://emacs-jp.slack.com/archives/C1B6M1RK2][#org-mode]] チャネルに入れば、たくさんのフィードバックが得られるでしょう。Slack への参加は[[https://slack-emacs-jp.herokuapp.com/][サインアップ]]が必要です。
