@@ -23,15 +23,13 @@
   <div>
     <h2>
       <span itemprop="name">Org Mode</span>
-      <p class="subtitle">お手軽 <span itemprop="applicationCategory">プレーンテキスト マークアップ</span>、...だけじゃない!!</p>
+      <p class="subtitle">お手軽<span itemprop="applicationCategory">プレーンテキストマークアップ</span> ...だけじゃない!!</p>
     </h2>
     <p>
-      <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a>の拡張可能なメジャーモード。もちろんオープンソース。</p>
-    <p>Org mode は様々な機能をサポートしています。メモを取る、タスクリストの管理、
-      プロジェクトの管理、文書の編集、再現性のある計算ノート、文芸的プログラミング、などです。
-      これらを高速で効率的なプレーンテキストシステムで実現しています。</p>
+      <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a> の拡張可能なメジャーモード、もちろんオープンソース。</p>
+    <p>Org mode は、様々な機能をサポートしています。メモを取ることから、タスクリストの管理、プロジェクトの管理、文書の編集、再現性のある計算ノート、文芸的プログラミングなどです。これらを高速で効率的なプレーンテキストシステムで実現しています。</p>
     <p class="bubble">
-      プロジェクトを応援: &ensp;
+      プロジェクトを応援:&ensp;
       <a href="https://liberapay.com/bzg" title="あなたの寄付がチカラになります"
          style="font-weight: bold;">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="Liberapayのロゴ"/>
@@ -42,7 +40,7 @@
         GitHub</a>&ensp;
       <a href="https://www.paypal.com/paypalme/bzg/10" title="あなたの寄付がチカラになります"
          style="font-weight: bold;">
-        <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypalのロゴ"/>
+        <img class="inline" src="/resources/img/external/paypal.svg" alt="PayPalのロゴ"/>
         PayPal</a></p>
     <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
     <meta itemprop="softwareVersion" content="9.3.8">
@@ -54,11 +52,11 @@
   <div class="banner slim green inline">
     <p style="width: 90vw">
       作成:
-      <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>
-      (<a target="new" href="/manual/History-and-Acknowledgments.html">2003)</a>、
-      メンテナンス: <a target="new" href="https://bzg.fr">Bastien Guerry</a>、
+      <a target="new" href="https://staff.science.uva.nl/~dominik/">Carsten Dominik</a>&ensp;
+      (<a target="new" href="/manual/History-and-Acknowledgments.html">2003</a>)&ensp;
+      メンテナンス: <a target="new" href="https://bzg.fr">Bastien Guerry</a>&ensp;
       開発:
-      <a href="https://orgmode.org/org.html#History-and-Acknowledgments">多くの貢献者</a>.</p>
+      <a href="https://orgmode.org/org.html#History-and-Acknowledgments">多くの貢献者</a></p>
   </div>
 #+end_export
 
@@ -93,18 +91,16 @@
 
 * Elaboration + demo image :ignore:
 
-Org Modeは、極めて柔軟な構造化されたプレーンテキストのファイルフォーマットです。
-いくつかのシンプルな要素で構成されているのに、多用途で、簡単なことから複雑なことまで対応します。
-つまり、[[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][初心者]]から[[http://howardism.org/Technical/Emacs/literate-devops.html][熟練者]]まで幅広いユーザが満足できます。
+Org Mode は、極めて柔軟な構造化されたプレーンテキストのファイルフォーマットです。いくつかのシンプルな要素で構成されているのに、多用途で、簡単なことから複雑なことまで対応します。つまり、[[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][初心者]]から[[http://howardism.org/Technical/Emacs/literate-devops.html][熟練者]]まで幅広いユーザが満足できます。
 
 #+attr_html: :style max-width:min(45rem, 80vw) :alt Orgファイルの例。基本的な機能を示しています。
 [[file:../resources/img/main.svg]]
 
 * 関連文献
 
-[[file:quickstart.org][クイックスタート]] や [[file:manual/index.html][マニュアル]] 以外にも、[[file:guide/index.html][コンパクトガイド]] があります。また、コミュニティベースで更新される豊富な文書が [[https://orgmode.org/worg/][Worg]] で読めます。
+[[file:quickstart.org][クイックスタート]]や[[file:manual/index.html][マニュアル]]以外に、[[file:guide/index.html][コンパクトガイド]] があります。また、コミュニティベースで更新される豊富な文書を [[https://orgmode.org/worg/][Worg]] で読めます。
 
-Org Modeの多くのユーザが、Org Modeをどんなことに使っていて、そしてどれだけのパワーを得ているのかについて語ることができるでしょう。あるユーザは、[[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][再現可能な研究]]を実施するために Org Mode が非常に便利であることを見い出し、いくつもの[[https://orgmode.org/worg/org-papers.html][科学論文]]を執筆してきました。またあるユーザは、Emacs 以外の環境でも Org Mode を使うためのサードパーティツールを作成しています。モバイルアプリケーションが良い例です。
+Org Mode の多くのユーザが、Org Mode をどんなことに使っていて、そしてどれだけのパワーを得ているのかについて語ることができるでしょう。あるユーザは、[[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][再現可能な研究]]を実施するために Org Mode が非常に便利であることを見い出し、いくつもの[[https://orgmode.org/worg/org-papers.html][科学論文]]を執筆してきました。またあるユーザは、Emacs 以外の環境でも Org Mode を使うためのサードパーティツールを作成しています。モバイルアプリケーションが良い例です。
 
 * さらに...
 
@@ -114,12 +110,12 @@ EmacsLisp で書かれた Org Mode の模範的な実装が、最も高機能で
 
 #+begin_center
 #+attr_html: :class btn
-[[file:~/devel/git/orgweb/tools.org][Tools which work with Org]]
+[[file:~/devel/git/orgweb/tools.org][Org Mode 連携ツール]]
 #+end_center
 
-* [[https://orgmode.org/worg/][Worg]] (/World/ of Org)
+* [[https://orgmode.org/worg/][Worg]] (/World/ Org)
 
-Org Mode には多くのユースケースがあり、それらを文書化するのは簡単ではありません。単一のページですべて表示することも困難です。代わりに、コミュニティベースの wiki である [[https://orgmode.org/worg/][Worg]] が、文書を記録したり情報を共有する場所として使われています。Org Modeの使い方から、Org Modeを使った様々な操作ついて知ることができるでしょう。
+Org Mode には多くのユースケースがあり、それらを文書化するのは簡単ではありません。単一のページですべて表示することも困難です。その代わりに、コミュニティベースの wiki である [[https://orgmode.org/worg/][Worg]] が、文書を記録したり情報を共有する場所として使われています。Org Modeの使い方から、Org Modeを使った様々な操作ついて知ることができるでしょう。
 
 - [[https://orgmode.org/worg/org-faq.html][The FAQ]]
 - [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
@@ -128,14 +124,12 @@ Org Mode には多くのユースケースがあり、それらを文書化す�
 - [[https://orgmode.org/worg/org-in-the-wild.html][Org in the wild]]
 - ...などなど
 
-Worg は、Org ファイルを格納する Git リポジトリで管理されています。そして、それらのファイルがHTML形式に変換されてウェブページとなります。
-Worg is maintained as a Git repository of Org files that are published
-as an HTML website. 使い方は、[[https://orgmode.org/worg/worg-git.html#contribute-to-worg][contributors are welcome]] を見てください。
+Worg は、Org ファイルを格納する Git リポジトリで管理されています。そして、それらのファイルが HTML 形式に変換されてウェブページとなります。使い方は、[[https://orgmode.org/worg/worg-git.html#contribute-to-worg][The first time you contribute to Worg (英語)]] を見てください。
 
 #+BEGIN_SRC shell
 ~$ git clone https://code.orgmode.org/bzg/worg.git
 #+END_SRC
 
-* Local community
+* ローカルコミュニティ
 
-Org Mode について疑問が生じたり、もっと知りたくなったり、日本語圏のユーザと語り合いたくなったら、[[https://emacs-jp.github.io/][Emacs-JP]]が運営する ~Slack~ を訪れてください。 [[https://emacs-jp.slack.com/archives/C1B6M1RK2][#org-mode]] チャネルに入れば、たくさんのフィードバックが得られるでしょう。Slack への参加は[[https://slack-emacs-jp.herokuapp.com/][サインアップ]]が必要です。
+Org Mode について疑問が生じたり、もっと知りたくなったり、日本語圏のユーザと語り合いたくなったら、[[https://emacs-jp.github.io/][Emacs-JP]] が運営する ~Slack~ を訪れてください。 [[https://emacs-jp.slack.com/archives/C1B6M1RK2][#org-mode]] チャネルに入れば、たくさんのフィードバックが得られるでしょう。なお、Slack への参加は[[https://slack-emacs-jp.herokuapp.com/][サインアップ]]が必要です。
