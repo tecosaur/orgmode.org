@@ -18,7 +18,7 @@
       <p class="subtitle">Your life in plain text</p>
     </h2>
     <p>
-      A <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">GNU Emacs</a> major mode for <span itemprop="applicationCategory">convenient plain text markup</span> &mdash; and more.</p>
+      A <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">GNU Emacs</a> major mode for <span itemprop="applicationCategory">convenient plain text markup</span> &mdash; and much more.</p>
     <p>Org mode is for keeping notes, maintaining to-do lists, planning
       projects, authoring documents, computational notebooks, literate
       programming and more &mdash; in a fast and effective plain text
