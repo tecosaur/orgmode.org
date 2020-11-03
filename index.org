@@ -15,11 +15,10 @@
   <div>
     <h2>
       <span itemprop="name">Org Mode</span>
-      <p class="subtitle">Convenient <span itemprop="applicationCategory">plain text markup</span> and more</p>
+      <p class="subtitle">Your life in plain text</p>
     </h2>
     <p>
-      An open-source extensible major mode for
-      <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a>.</p>
+      A <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">GNU Emacs</a> major mode for <span itemprop="applicationCategory">convenient plain text markup</span> and more.</p>
     <p>Org mode is for keeping notes, maintaining to-do lists, planning
       projects, authoring documents, computational notebooks, literate
       programming and more &mdash; in a fast and effective plain text

@@ -15,11 +15,10 @@
   <div>
     <h2>
       <span itemprop="name">Org Mode</span>
-      <p class="subtitle">Langage de balisage <span itemprop="applicationCategory">léger et pratique</span></p>
+      <p class="subtitle">Votre vie en texte brut</p>
     </h2>
     <p>
-      Un mode principal, extensible, et open-source pour
-      <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a>.</p>
+      Un mode majeur de <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">GNU Emacs</a> pour <span itemprop="applicationCategory">format de balisage léger et pratique</span> et bien plus.</p>
     <p>Org mode sert à prendre des notes, gérer des to-do lists, planifier
       des projets, rédiger des documents, des calepins de calculs, faire
       de la programmation littéraire, … le tout dans un système rapide et efficace,
