@@ -55,7 +55,7 @@ html {
   overflow-x: hidden; }
 
 body {
-  margin: calc(2.0rem + 14px) var(--body-right) 0 var(--body-left);
+  margin: calc(2.4rem + 16px) var(--body-right) 0 var(--body-left);
   padding: 0 var(--body-padding);
   background-color: #fafafa; }
 
