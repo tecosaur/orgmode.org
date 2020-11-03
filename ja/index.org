@@ -91,7 +91,7 @@ Org Mode は、極めて柔軟な構造化されたプレーンテキストの�
 
 Org Mode が提供する機能を以下に例示しました。そのパワフルさがひと目で分かります。（*で始まる）見出しをクリックしてみましょう。見出しに紐付いた構造化された記述が折りたたまれ、必要な情報だけが表示されるのを楽しんでください。
 
-#+include: org-demo.html export html
+#+include: ../org-demo.html export html
 
 * 関連文献
   :PROPERTIES:
