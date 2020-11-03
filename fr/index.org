@@ -18,7 +18,7 @@
       <p class="subtitle">Votre vie en texte brut</p>
     </h2>
     <p>
-      Un mode majeur de <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">GNU Emacs</a> pour <span itemprop="applicationCategory">format de balisage léger et pratique</span> et bien plus.</p>
+      Un mode majeur de <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">GNU Emacs</a> pour un <span itemprop="applicationCategory">format de balisage léger et pratique</span> &mdash; et bien plus.</p>
     <p>Org mode sert à prendre des notes, gérer des to-do lists, planifier
       des projets, rédiger des documents, des calepins de calculs, faire
       de la programmation littéraire, … le tout dans un système rapide et efficace,
