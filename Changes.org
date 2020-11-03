@@ -7,10 +7,6 @@
 
 #+include: "./resources/normal-outline-3.html" export html
 
-#+begin_export html
-<div class="banner slim"> <p id="a-quote"></p> </div>
-#+end_export
-
 You can keep up with upcoming changes, requests for help, bug reports
 and submitted patch by checking [[https://updates.orgmode.org][updates.orgmode.org]] and by subscribing
 to the RSS feeds there.

@@ -25,6 +25,7 @@
   }
 </style>
 
+<script type="text/javascript" async src="/resources/js/org-quotes.js"></script>
 <div class="banner slim"> <p id="a-quote"></p> </div>
 #+end_export
 

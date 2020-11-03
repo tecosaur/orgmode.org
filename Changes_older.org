@@ -7,10 +7,6 @@
 
 #+include: "./resources/normal-outline-3.html" export html
 
-#+begin_export html
-<div class="banner slim"> <p id="a-quote"></p> </div>
-#+end_export
-
 * Version 6.32
  :PROPERTIES:
  :CUSTOM_ID: v6.32
