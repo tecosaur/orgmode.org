@@ -62,7 +62,7 @@ Stand-alone blogging system that does not require any external software
 {{{end-link}}}
 ** Org2Blog
 {{{gh(org2blog/org2blog)}}}
-https://github.com/org2blog/org2blog/blob/master/svg/Org2Blog_shorthand.svg
+# [[https://raw.githubusercontent.com/org2blog/org2blog/master/svg/Org2Blog_shorthand.svg]]
 
 Blog from Org mode to WordPress.
 {{{end-link}}}
@@ -134,7 +134,7 @@ Org​::parser
 or textile.
 {{{end-link}}}
 ** Rust
-{{{gh(poiscript/orgize}}}
+{{{gh(poiscript/orgize)}}}
 [[https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg]]
 
 /Orgize/ parses org files and can render them to HTML.
