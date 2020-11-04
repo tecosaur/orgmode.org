@@ -15,11 +15,11 @@ support Org's primary maintainer Bastien Guerry.
 
 #+begin_export html
 <div class="banner"><p style="margin:0 0.5em">
-<a href="https://liberapay.com/bzg" title="Donations always help" style="color: #c7a416">
+<a href="https://liberapay.com/bzg" title="Donations always help" style="color: #c7a416; display: inline-block">
 <img class="inline" src="/resources/img/external/librepay.svg"/> Liberapay</a>
-<a href="https://github.com/sponsors/bzg" title="Donations always help" style="color: #222">
+<a href="https://github.com/sponsors/bzg" title="Donations always help" style="color: #222; display: inline-block">
 <img class="inline" src="/resources/img/external/github.svg"/> GitHub</a>
-<a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help" style="color: #253b80">
+<a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help" style="color: #253b80; display: inline-block">
 <img class="inline" src="/resources/img/external/paypal.svg"/> PayPal</a>
 </p></div>
 #+end_export

@@ -28,15 +28,15 @@
     <p class="bubble">
       Support via&ensp;
       <a href="https://liberapay.com/bzg" title="Donations always help"
-         style="font-weight: bold;">
+         style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="Liberapay logo"/>
         Liberapay</a>&ensp;
       <a href="https://github.com/sponsors/bzg" title="Donations always help"
-         style="font-weight: bold;">
+         style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/github.svg" alt="GitHub logo"/>
         GitHub</a>&ensp;
       <a href="https://www.paypal.com/paypalme/bzg/10" title="Donations always help"
-         style="font-weight: bold;">
+         style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/paypal.svg" alt="Paypal logo"/>
         PayPal</a></p>
     <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
