@@ -163,3 +163,28 @@ $demo_green: wcag-color($green, $demo_bg);
         height: 0;
     }
 }
+
+.countme label .org-list-dt::after {
+    color: $demo_green;
+    content: ' [ ]'
+}
+.chk {
+    position: absolute;
+    left: -200vw;
+    &:checked { counter-increment: chk 14; }
+    &.extra:checked { counter-increment: chk 15; }
+}
+.count-res::after {
+    content: '[' counter(chk) '%]';
+    color: $demo_green;
+}
+@for $i from 1 through 7 {
+    #chk#{$i}:checked ~ details > .countme label[for=chk#{$i}] {
+        color: wcag-color(#62686e, $demo_bg);
+        .org-list-dt::after {
+            color: wcag-color(#62686e, $demo_bg);
+            content: ' [X]';
+        }
+    }
+}
+

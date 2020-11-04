@@ -1,4 +1,4 @@
-<div id="org-demo">
+<div id="org-demo" style="counter-set: chk 0">
 <asside class="label-left">Metadata </asside>
 <pre class="label-left">
 #+title:  <span class="org-document-title">Example Org File</span>
@@ -38,16 +38,24 @@
 </pre></summary><pre>
    Go through <span class="org-link"><a href="/resources/style/org.css">[[file:style.scss][stylesheet]]</a></span>
 </pre></details>
+<input type="checkbox" class="chk" id="chk1" checked />
+<input type="checkbox" class="chk" id="chk2" checked />
+<input type="checkbox" class="chk extra" id="chk3" />
+<input type="checkbox" class="chk" id="chk4" />
+<input type="checkbox" class="chk" id="chk5" checked />
+<input type="checkbox" class="chk extra" id="chk6" />
+<input type="checkbox" class="chk" id="chk7" />
 <details><summary><pre>
-<span class="org-level-2">** <span class="org-todo">TODO</span> Check CSS on main pages <span class="org-checkbox-statistics-todo">[28%]</span></span>
-</pre></summary><pre>
-   <span class="org-list-dt">-</span> <span class="org-done">[X] Index page</span>
-   <span class="org-list-dt">-</span> <span class="org-checkbox">[-]</span> Quickstart
-   <span class="org-list-dt">-</span> <span class="org-done">[X] Features</span>
-   <span class="org-list-dt">-</span> <span class="org-checkbox">[ ]</span> Releases
-   <span class="org-list-dt">-</span> <span class="org-checkbox">[-]</span> Install
-   <span class="org-list-dt">-</span> <span class="org-checkbox">[ ]</span> Manual
-   <span class="org-list-dt">-</span> <span class="org-checkbox">[ ]</span> Contribute
+<span class="org-level-2">** <span class="org-todo">TODO</span> Check CSS on main pages <span class="count-res"></span></span>
+</pre></summary>
+<pre class="countme">
+    <label for="chk1"><span class="org-list-dt">-</span> Index page</label>
+    <label for="chk2"><span class="org-list-dt">-</span> Quickstart</label>
+    <label for="chk3"><span class="org-list-dt">-</span> Features</label>
+    <label for="chk4"><span class="org-list-dt">-</span> Releases</label>
+    <label for="chk5"><span class="org-list-dt">-</span> Install</label>
+    <label for="chk6"><span class="org-list-dt">-</span> Manual</label>
+    <label for="chk7"><span class="org-list-dt">-</span> Contribute</label>
 </pre></details>
 </details>
 <details open class="label-left"><summary>

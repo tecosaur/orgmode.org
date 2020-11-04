@@ -110,3 +110,61 @@
   #org-demo details.replace[open] summary {
     opacity: 0;
     height: 0; }
+
+.countme label .org-list-dt::after {
+  color: #29785f;
+  content: ' [ ]'; }
+
+.chk {
+  position: absolute;
+  left: -200vw; }
+  .chk:checked {
+    counter-increment: chk 14; }
+  .chk.extra:checked {
+    counter-increment: chk 15; }
+
+.count-res::after {
+  content: "[" counter(chk) "%]";
+  color: #29785f; }
+
+#chk1:checked ~ details > .countme label[for=chk1] {
+  color: #62686e; }
+  #chk1:checked ~ details > .countme label[for=chk1] .org-list-dt::after {
+    color: #62686e;
+    content: ' [X]'; }
+
+#chk2:checked ~ details > .countme label[for=chk2] {
+  color: #62686e; }
+  #chk2:checked ~ details > .countme label[for=chk2] .org-list-dt::after {
+    color: #62686e;
+    content: ' [X]'; }
+
+#chk3:checked ~ details > .countme label[for=chk3] {
+  color: #62686e; }
+  #chk3:checked ~ details > .countme label[for=chk3] .org-list-dt::after {
+    color: #62686e;
+    content: ' [X]'; }
+
+#chk4:checked ~ details > .countme label[for=chk4] {
+  color: #62686e; }
+  #chk4:checked ~ details > .countme label[for=chk4] .org-list-dt::after {
+    color: #62686e;
+    content: ' [X]'; }
+
+#chk5:checked ~ details > .countme label[for=chk5] {
+  color: #62686e; }
+  #chk5:checked ~ details > .countme label[for=chk5] .org-list-dt::after {
+    color: #62686e;
+    content: ' [X]'; }
+
+#chk6:checked ~ details > .countme label[for=chk6] {
+  color: #62686e; }
+  #chk6:checked ~ details > .countme label[for=chk6] .org-list-dt::after {
+    color: #62686e;
+    content: ' [X]'; }
+
+#chk7:checked ~ details > .countme label[for=chk7] {
+  color: #62686e; }
+  #chk7:checked ~ details > .countme label[for=chk7] .org-list-dt::after {
+    color: #62686e;
+    content: ' [X]'; }
