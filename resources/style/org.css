@@ -255,7 +255,8 @@ nav#main {
       nav#main > a:first-of-type {
         margin-top: -1.8em; }
       nav#main > a:last-child {
-        margin-bottom: -8px; }
+        margin-bottom: -8px;
+        z-index: 0; }
       nav#main p {
         align-self: center;
         margin-bottom: -0.4em; }
