@@ -1,4 +1,3 @@
 pub
 old
-*.html
 !resources/*.html
