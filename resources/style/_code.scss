@@ -57,51 +57,38 @@ pre.src {
 pre.src-org:before { content: 'Org mode'; }
 pre.src-shell:before { content: 'Shell'; }
 
-example, .src {
+.example {
     color: #2c3e50;
 }
-.example .org-keyword, .src .org-keyword {
-    color: $blue;
-}
-.example .org-variable-name, .src .org-variable-name {
-    color: $purple;
-}
-.example .org-rainbow-delimiters-depth-1,
-.example .org-rainbow-delimiters-depth-2,
-.example .org-rainbow-delimiters-depth-3,
-.example .org-rainbow-delimiters-depth-4,
-.example .org-rainbow-delimiters-depth-5,
-.example .org-rainbow-delimiters-depth-6,
-.example .org-rainbow-delimiters-depth-7,
-.example .org-rainbow-delimiters-depth-8,
-.example .org-rainbow-delimiters-depth-9,
-.src .org-rainbow-delimiters-depth-1,
-.src .org-rainbow-delimiters-depth-2,
-.src .org-rainbow-delimiters-depth-3,
-.src .org-rainbow-delimiters-depth-4,
-.src .org-rainbow-delimiters-depth-5,
-.src .org-rainbow-delimiters-depth-6,
-.src .org-rainbow-delimiters-depth-7,
-.src .org-rainbow-delimiters-depth-8,
-.src .org-rainbow-delimiters-depth-9 {
-    color: mix($text, $background, 66%);
-}
-.example .org-string, .src .org-string {
-    color: $green;
-}
-.example .org-comment,
-.example .org-comment-delimiter,
-.src .org-comment,
-.src .org-comment-delimiter {
-    color: mix($text, $background, 66%);
-}
-.example .org-function-name,
-.src .org-function-name {
-    color: #6c3163;
-}
-.example .org-constant,
-.example .org-highlight-numbers-number,
-.src .org-constant,
-.src .org-highlight-numbers-number {
-    color: #4e3163;
+.src {
+    color: #2c3e50;
+    .org-keyword {
+        color: $blue;
+    }
+    .org-variable-name {
+        color: $purple;
+    }
+    .org-rainbow-delimiters-depth-1,
+    .org-rainbow-delimiters-depth-2,
+    .org-rainbow-delimiters-depth-3,
+    .org-rainbow-delimiters-depth-4,
+    .org-rainbow-delimiters-depth-5,
+    .org-rainbow-delimiters-depth-6,
+    .org-rainbow-delimiters-depth-7,
+    .org-rainbow-delimiters-depth-8,
+    .org-rainbow-delimiters-depth-9 {
+        color: mix($text, $background, 66%);
+    }
+    .org-string {
+        color: $green;
+    }
+    .org-comment, .org-comment-delimiter {
+        color: mix($text, $background, 66%);
+    }
+    .org-function-name {
+        color: #6c3163;
+    }
+    .org-constant, .org-highlight-numbers-number, .org-builtin  {
+        color: #4e3163;
+    }
 }
