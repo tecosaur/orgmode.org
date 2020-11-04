@@ -18,7 +18,9 @@
       <p class="subtitle">Your life in plain text</p>
     </h2>
     <p>
-      A <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">GNU Emacs</a> major mode for <span itemprop="applicationCategory">convenient plain text markup</span> &mdash; and much more.</p>
+      A <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;"
+           title="A Lisp Machine which masquerades as an editor">GNU Emacs</a>
+      major mode for <span itemprop="applicationCategory">convenient plain text markup</span> &mdash; and much more.</p>
     <p>Org mode is for keeping notes, maintaining to-do lists, planning
       projects, authoring documents, computational notebooks, literate
       programming and more &mdash; in a fast and effective plain text
@@ -42,17 +44,17 @@
     <meta itemprop="datePublished" content="2020-08-07">
     <meta itemprop="url" content="https://orgmode.org">
   </div>
-  </div>
-  <div class="banner slim grey faded inline">
-    <p style="width:90vw; color:#515151">
-      Created by
-      <a target="new" href="https://staff.science.uva.nl/~dominik/"
-      style="font-weight:500; color:inherit">Carsten Dominik</a>
-      in <a target="new" href="/manual/History-and-Acknowledgments.html" style="color:#6e6e6e">2003</a>,
-      maintained by <a target="new" href="https://bzg.fr" style="font-weight:500; color:inherit">Bastien Guerry</a>
-      and developed by
-      <a href="https://orgmode.org/org.html#History-and-Acknowledgments" style="color:#6e6e6e">many others</a>.</p>
-  </div>
+</div>
+<div class="banner slim grey faded inline">
+  <p style="width:90vw; color:#515151">
+    Created by
+    <a target="new" href="https://staff.science.uva.nl/~dominik/"
+       style="font-weight:500; color:inherit">Carsten Dominik</a>
+    in <a target="new" href="/manual/History-and-Acknowledgments.html" style="color:#6e6e6e">2003</a>,
+    maintained by <a target="new" href="https://bzg.fr" style="font-weight:500; color:inherit">Bastien Guerry</a>
+    and developed by
+    <a href="https://orgmode.org/org.html#History-and-Acknowledgments" style="color:#6e6e6e">many others</a>.</p>
+</div>
 #+end_export
 
 * Highlights
