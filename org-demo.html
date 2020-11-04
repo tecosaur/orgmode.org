@@ -5,7 +5,8 @@
     #+author: <span class="org-document-info">TEC</span>
     #+date:   <span class="org-document-info">2020-10-27</span>
   </pre>
-  <details open><summary>
+  <details open>
+    <summary>
       <asside class="right" style="position: relative; z-index: -1">
 	<h4>Outlining</h4>
 	Headlines and folding make structured editing a breeze.
@@ -13,7 +14,8 @@
       </asside>
       <pre>
 	<span class="org-level-1">* Revamp orgmode.org website</span>
-    </pre> </summary>
+      </pre>
+    </summary>
     <asside class="left">
       <h4>Agenda</h4>
       List todos across all your files.
@@ -22,22 +24,34 @@
     <pre>
       The <i>/beauty/</i> of org <b>*must*</b> be shared.
     </pre>
-    <details class="replace"><summary>
+    <details class="replace">
+      <summary>
 	<pre>
 	  <span class="org-link">[[https://upload.wikimedia.org/wikipedia/commons/b/bd/Share_Icon.svg]]</span>
-      </pre> </summary>
+	</pre>
+      </summary>
       <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Share_Icon.svg" alt="share icon" style="height: 3em; margin-left: 1.5em"/>
     </details>
-    <details open class="br"><summary><pre>
+    <details open class="br">
+      <summary>
+	<pre>
 	  <span class="org-level-2">** <span class="org-done">DONE Make screenshots</span></span>
-      </pre></summary><pre>
+	</pre>
+      </summary>
+      <pre>
 	<span class="org-special-keyword">CLOSED:</span> <span class="org-date">[2020-09-03 Thu 18:24]</span>
-    </pre></details>
-    <details open><summary><pre>
+      </pre>
+    </details>
+    <details open>
+      <summary>
+	<pre>
 	  <span class="org-level-2">** <span class="org-done">DONE Restyle Site CSS</span></span>
-      </pre></summary><pre>
+	</pre>
+      </summary>
+      <pre>
 	Go through <span class="org-link"><a href="/resources/style/org.css">[[file:style.scss][stylesheet]]</a></span>
-    </pre></details>
+      </pre>
+    </details>
     <input type="checkbox" class="chk" id="chk1" checked />
     <input type="checkbox" class="chk" id="chk2" checked />
     <input type="checkbox" class="chk extra" id="chk3" />
@@ -45,9 +59,12 @@
     <input type="checkbox" class="chk" id="chk5" checked />
     <input type="checkbox" class="chk extra" id="chk6" />
     <input type="checkbox" class="chk" id="chk7" />
-    <details><summary><pre>
+    <details>
+      <summary>
+	<pre>
 	  <span class="org-level-2">** <span class="org-todo">TODO</span> Check CSS on main pages <span class="count-res"></span></span>
-      </pre></summary>
+	</pre>
+      </summary>
       <pre class="countme">
 	<label for="chk1"><span class="org-list-dt">-</span> Index page</label>
 	<label for="chk2"><span class="org-list-dt">-</span> Quickstart</label>
@@ -56,12 +73,15 @@
 	<label for="chk5"><span class="org-list-dt">-</span> Install</label>
 	<label for="chk6"><span class="org-list-dt">-</span> Manual</label>
 	<label for="chk7"><span class="org-list-dt">-</span> Contribute</label>
-    </pre></details>
+      </pre>
+    </details>
   </details>
-  <details open class="label-left"><summary>
+  <details open class="label-left">
+    <summary>
       <asside class="label-left">Prose</asside>
       <pre><span class="org-level-1">* Update Manual</span></pre>
-    </summary><pre>
+    </summary>
+    <pre>
       We should provide a simpler experience for new users.
       Org has a lot to offer, so it's worth making it easy for a
       newcommer to get started and discover the possibilities in Org.
@@ -70,24 +90,35 @@
       well in this regard.
       help with that.
     </pre>
-    <details open><summary><pre>
+    <details open>
+      <summary>
+	<pre>
 	  <span class="org-level-2">** Feedback</span>
-      </pre></summary><pre>
+	</pre>
+      </summary>
+      <pre>
 	<span class="org-special-keyword">#+include: "other/feedback.org*manual" :only-contents t</span>
-  </pre></details></details>
-  <details open><summary><pre>
+      </pre>
+    </details>
+  </details>
+  <details open>
+    <summary>
+      <pre>
 	<span class="org-level-1">* Check CSS minification ratios</span>
-    </pre></summary>
+      </pre>
+    </summary>
     <asside class="right">
       <h4>Babel</h4>
       Perform literate programing in org,
       with notebook-like live code execution in the buffer.
     </asside>
     <asside class="label-left">Code</asside>
-    <details open><summary>
+    <details open>
+      <summary>
 	<pre class="label-left" style="background-color: #ccc4">
 	  <span class="org-block-begin-line">#+begin_src python</span>
-      </pre></summary>
+	</pre>
+      </summary>
       <pre class="src label-left" style="background-color: #fff4">
 	<span class="org-keyword">from</span> pathlib <span class="org-keyword">import</span> Path
 	<span class="org-variable-name">cssRatios</span> = []
@@ -98,13 +129,17 @@
         css_min.stat().st_size / css.stat().st_size,
         css_min.stat().st_size / <b>1000</b>)])
 	<span class="org-keyword">return</span> cssRatios
-      </pre><pre class="label-left" style="background-color: #ccc4">
+      </pre>
+      <pre class="label-left" style="background-color: #ccc4">
 	<span class="org-block-end-line">#+end_src</span>
-    </pre></details>
-    <details open><summary>
+      </pre>
+    </details>
+    <details open>
+      <summary>
 	<asside class="label-left">Evaluated results</asside>
 	<pre class="label-left br">  <span class="org-block-begin-line">#+RESULTS:</span>
-      </pre></summary>
+	</pre>
+      </summary>
       <pre class="label-left">
 	<span class="org-table">| index.css    | 76% minified ( 1.4 KiB) |
 	  | org-demo.css | 77% minified ( 2.8 KiB) |
