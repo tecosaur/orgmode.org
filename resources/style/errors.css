@@ -190,7 +190,7 @@ nav#main {
       color: #587e72; }
   @media (max-width: 850px) {
     nav#main {
-      background-color: rgba(250, 250, 250, 0.06) !important; } }
+      background-color: rgba(250, 250, 250, 0.94) !important; } }
 nav#main #translate {
   display: none; }
 
