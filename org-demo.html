@@ -22,7 +22,7 @@
 <pre>
   The <i>/beauty/</i> of org <b>*must*</b> be shared.
 </pre>
-<details class="replace"> <summary>
+<details class="replace"><summary>
 <pre>
    <span class="org-link">[[https://upload.wikimedia.org/wikipedia/commons/b/bd/Share_Icon.svg]]</span>
 </pre> </summary>
@@ -34,7 +34,7 @@
    <span class="org-special-keyword">CLOSED:</span> <span class="org-date">[2020-09-03 Thu 18:24]</span>
 </pre></details>
 <details open><summary><pre>
-<span class="org-level-2">** <span class="org-todo-active">HOLD</span> Restyle Site CSS</span>
+<span class="org-level-2">** <span class="org-done">DONE Restyle Site CSS</span></span>
 </pre></summary><pre>
    Go through <span class="org-link"><a href="/resources/style/org.css">[[file:style.scss][stylesheet]]</a></span>
 </pre></details>
@@ -55,10 +55,12 @@
 <pre><span class="org-level-1">* Update Manual</span></pre>
 </summary><pre>
   We should provide a simpler experience for new users.
-  Org has a lot to offer, but it's easy to become overwhelmed.
-  Providing a clearer introduction to the basics would be a good improvement.
-  Hopefully the new "Quickstart" page will help with that.
-
+  Org has a lot to offer, so it's worth making it easy for a
+  newcommer to get started and discover the possibilities in Org.
+  A clear introduction to the basics could go a long way.
+  Hopefully the new "Quickstart" page will complement the manual
+  well in this regard.
+help with that.
 </pre>
 <details open><summary><pre>
 <span class="org-level-2">** Feedback</span>
@@ -66,7 +68,7 @@
    <span class="org-special-keyword">#+include: "other/feedback.org*manual" :only-contents t</span>
 </pre></details></details>
 <details open><summary><pre>
-<span class="org-level-1">* Investigate some prime moduli</span>
+<span class="org-level-1">* Check CSS minification ratios</span>
 </pre></summary>
 <asside class="right">
     <h4>Babel</h4>
@@ -79,11 +81,15 @@
   <span class="org-block-begin-line">#+begin_src python</span>
 </pre></summary>
 <pre class="src label-left" style="background-color: #fff4">
-  <span class="org-variable-name">primes</span> = [2, 5, 7, 11]
-  <span class="org-variable-name">remainders</span> = []
-  <span class="org-keyword">for</span> i <span class="org-keyword">in</span> <span class="org-builtin">range</span>(2, 6):
-      remainders.append([p % i <span class="org-keyword">for</span> p <span class="org-keyword">in</span> primes])
-  <span class="org-keyword">return</span> remainders
+  <span class="org-keyword">from</span> pathlib <span class="org-keyword">import</span> Path
+  <span class="org-variable-name">cssRatios</span> = []
+  <span class="org-keyword">for</span> css_min <span class="org-keyword">in</span> Path(<span class="org-string">"resources/style"</span>).glob(<span class="org-string">"*.min.css"</span>):
+      <span class="org-variable-name">css</span> = css_min.with_suffix(<span class="org-string">''</span>).with_suffix(<span class="org-string">'.css'</span>)
+      cssRatios.append([css.name,
+      <span class="org-string">"{:.0f}% minified ({:4.1f} KiB)"</span>.<span class="org-builtin">format</span>( <b>100</b> *
+                        css_min.stat().st_size / css.stat().st_size,
+                        css_min.stat().st_size / <b>1000</b>)])
+  <span class="org-keyword">return</span> cssRatios
 </pre><pre class="label-left" style="background-color: #ccc4">
   <span class="org-block-end-line">#+end_src</span>
 </pre></details>
@@ -92,10 +98,10 @@
 <pre class="label-left br">  <span class="org-block-begin-line">#+RESULTS:</span>
 </pre></summary>
 <pre class="label-left">
-  <span class="org-table">| 0 | 1 | 1 | 1 |
-  | 2 | 2 | 1 | 2 |
-  | 2 | 1 | 3 | 3 |
-  | 2 | 0 | 2 | 1 |
+  <span class="org-table">| index.css    | 76% minified ( 1.4 KiB) |
+  | org-demo.css | 77% minified ( 2.8 KiB) |
+  | errors.css   | 74% minified ( 4.9 KiB) |
+  | org.css      | 75% minified (10.7 KiB) |
 </span>
 </pre></details>
 </details>
