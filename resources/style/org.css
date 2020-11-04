@@ -351,11 +351,10 @@ pre {
   background-color: #eeeeee;
   border-left: 4px solid #aaaaaa;
   margin-right: 1pt;
-  padding: 0.4em 0.6em; }
+  padding: 0.4em 0.6em;
+  overflow-x: auto; }
 
 pre.src {
-  padding: 0.4em 0.6em;
-  overflow-x: auto;
   position: relative; }
   pre.src::before {
     display: none;
@@ -373,6 +372,9 @@ pre.src-org:before {
 
 pre.src-shell:before {
   content: 'Shell'; }
+
+pre.src-emacs-lisp:before {
+  content: 'Elisp'; }
 
 .example {
   color: #2c3e50; }

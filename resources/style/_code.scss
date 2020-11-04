@@ -35,10 +35,9 @@ pre {
     border-left: 4px solid mix($background, $text, 68%);
     margin-right: 1pt;
     padding: 0.4em 0.6em;
+    overflow-x: auto;
 }
 pre.src {
-    padding: 0.4em 0.6em; // override from `org-html-style-default'
-    overflow-x: auto;
     position: relative;
     &::before {
         display: none;
@@ -56,6 +55,7 @@ pre.src {
 
 pre.src-org:before { content: 'Org mode'; }
 pre.src-shell:before { content: 'Shell'; }
+pre.src-emacs-lisp:before { content: 'Elisp'; }
 
 .example {
     color: #2c3e50;
