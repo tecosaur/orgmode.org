@@ -22,7 +22,7 @@ You can also check this page for more [[https://orgmode.org/worg/org-web-social.
   :CUSTOM_ID: chatting
   :END:
 
-You can connect with other org-thusiasts via IRC at ~#orgmode~ on
+You can connect with other org-thusiasts via IRC at ~#org-mode~ on
 [[https://freenode.net/][freenode]].
 
 * Listing current contributors

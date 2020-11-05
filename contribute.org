@@ -65,7 +65,7 @@ assignment process fill out [[https://orgmode.org/request-assign-future.txt][thi
 ~$ git pull
 ~$ git checkout -b my-changes
 # make some changes
-~$ git commit -a -m "Definately following the commit conventions"
+~$ git commit -a -m "Definitely following the commit conventions"
 # repeat a few times, as appropriate
 ~$ git format-patch master
 # optional, see: https://git-send-email.io/
