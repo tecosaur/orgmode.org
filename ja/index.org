@@ -16,7 +16,7 @@
   <div>
     <h2>
       <span itemprop="name">Org Mode</span>
-      <p class="subtitle">お手軽<span itemprop="applicationCategory">プレーンテキストマークアップ</span> ...だけじゃない!!</p>
+      <p class="subtitle">お手軽な<span itemprop="applicationCategory">プレーンテキストマークアップ</span> ...だけじゃない!!</p>
     </h2>
     <p>
       <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a> の拡張可能なメジャーモード、もちろんオープンソース。</p>
@@ -44,8 +44,7 @@
   <div class="banner slim grey faded inline">
     <p style="width: 90vw; color:#515151">
       作成:
-      <a target="new" href="https://staff.science.uva.nl/~dominik/" style="font-weight:500; color:inherit">Carsten Dominik</a>&ensp;
-      (<a target="new" href="/manual/History-and-Acknowledgments.html" style="color:#6e6e6e">2003</a>)&ensp;
+      <a target="new" href="https://staff.science.uva.nl/~dominik/" style="font-weight:500; color:inherit">Carsten Dominik</a>&ensp;(<a target="new" href="/manual/History-and-Acknowledgments.html" style="color:#6e6e6e">2003</a>)&ensp;
       メンテナンス: <a target="new" href="https://bzg.fr" style="font-weight:500; color:inherit">Bastien Guerry</a>&ensp;
       開発:
       <a href="https://orgmode.org/org.html#History-and-Acknowledgments" style="color:#6e6e6e">多くの貢献者</a></p>
@@ -57,28 +56,28 @@
 :HTML_CONTAINER_CLASS: columns no-heading
 :END:
 ** 機能
-@@html:<a href="features.html">@@
+@@html:<a href="../features.html">@@
 #+attr_html: :alt Three stars :title 使いたい機能を探してみましょう。
 [[file:../resources/img/stars.svg]]
 
 @@html:</a>@@
 
 ** インストール
-@@html:<a href="install.html">@@
+@@html:<a href="../install.html">@@
 #+attr_html: :alt Downwards facing arrow :title まずはインストールしましょう。
 [[file:../resources/img/install.svg]]
 
 @@html:</a>@@
 
 ** クイックスタート
-@@html:<a href="quickstart.html">@@
+@@html:<a href="../quickstart.html">@@
 #+attr_html: :alt Running stickfigure :title 使い始めると、もう止められません。
 [[file:../resources/img/quickstart.svg]]
 
 @@html:</a>@@
 
 ** コントリビュート
-@@html:<a href="contribute.html">@@
+@@html:<a href="../contribute.html">@@
 #+attr_html: :alt Git branch symbol :title 皆さんの貢献で支えられています。
 [[file:../resources/img/contribute.svg]]
 
@@ -98,7 +97,7 @@ Org Mode が提供する機能を以下に例示しました。そのパワフ�
   :CUSTOM_ID: reading
   :END:
 
-[[file:quickstart.org][クイックスタート]]や[[file:manual/index.html][マニュアル]]以外に、[[file:guide/index.html][コンパクトガイド]] があります。また、コミュニティベースで更新される豊富な文書を [[https://orgmode.org/worg/][Worg]] で読めます。
+[[file:../quickstart.org][クイックスタート]]や[[file:../manual/index.html][マニュアル]]以外に、[[file:../guide/index.html][コンパクトガイド]] があります。また、コミュニティベースで更新される豊富な文書を [[https://orgmode.org/worg/][Worg]] で読めます。
 
 Org Mode の多くのユーザが、Org Mode をどんなことに使っていて、そしてどれだけのパワーを得ているのかについて語ることができるでしょう。あるユーザは、[[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][再現可能な研究]]を実施するために Org Mode が非常に便利であることを見い出し、いくつもの[[https://orgmode.org/worg/org-papers.html][科学論文]]を執筆してきました。またあるユーザは、Emacs 以外の環境でも Org Mode を使うためのサードパーティツールを作成しています。モバイルアプリケーションが良い例です。
 
@@ -109,11 +108,11 @@ Org Mode の多くのユーザが、Org Mode をどんなことに使ってい�
 
 =text/org= が、Orgファイルの /デファクト/ なメディアタイプです。拡張子は ~.org~ を使います。ほとんどOSが、拡張子が ~.org~ のファイルを Emacs で開くことを知りませんが、ちょっとした設定をすることで開けるようになります。
 
-EmacsLisp で書かれた Org Mode の模範的な実装が、最も高機能であることは間違いありません。その一方で、Org Modeと連携する[[file:tools.org][様々なツール]]が存在しています。
+EmacsLisp で書かれた Org Mode の模範的な実装が、最も高機能であることは間違いありません。その一方で、Org Modeと連携する[[file:../tools.org][様々なツール]]が存在しています。
 
 #+begin_center
 #+attr_html: :class btn
-[[file:~/devel/git/orgweb/tools.org][Org Mode 連携ツール]]
+[[file:../tools.org][Org Mode 連携ツール]]
 #+end_center
 
 * [[https://orgmode.org/worg/][Worg]] (/World/ Org)
