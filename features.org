@@ -146,7 +146,7 @@ guide and user manual can also be the source code for implementation
 and testing --- a single source of truth that won't drift out of sync.
 
 # Emacs. We will add your technological distinctiveness to our own.
-Org currently has support for over [[https://orgmode.org/worg/org-contrib/babel/languages.html][80 languages]], and projects like
+Org currently has support for over [[https://orgmode.org/worg/org-contrib/babel/languages/index.html][80 languages]], and projects like
 [[https://github.com/nnicandro/emacs-jupyter#org-mode-source-blocks][emacs-jupyter]] make it possible to leverage the Jupyter kernel
 ecosystem for even more languages.
 
@@ -154,7 +154,7 @@ ecosystem for even more languages.
 
 [[file:manual/Working-with-Source-Code.html][Working with source code]] (manual)
 
-List of [[https://orgmode.org/worg/org-contrib/babel/languages.html][supported languages]] (Worg)
+List of [[https://orgmode.org/worg/org-contrib/babel/languages/index.html][supported languages]] (Worg)
 * Export and Publish
   :PROPERTIES:
   :CUSTOM_ID: publishing
