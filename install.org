@@ -19,7 +19,7 @@ You can install the latest version of Org as a package by invoking
 ~M-x package-install RET org RET~ once you have configured Emacs
 to include [[file:elpa.html][Org ELPA]] as a package repository.
 
-Alternatively you can download the package as a [[https://orgmode.org/org-9.4.1.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.4.1.zip][zip]] archive.
+Alternatively you can download the package as a [[https://orgmode.org/org-9.4.2.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.4.2.zip][zip]] archive.
 
 The bleeding-edge development version or Org is available at [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]].
 You can clone the repo via:
