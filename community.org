@@ -15,10 +15,12 @@ community.
 You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the list]] and [[https://orgmode.org/list][browse the archive]] here at
 =orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU mailman archive]].
 
-Feel free to send an email to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]], we just won't
-see it till it's moderated if you're not subscribed to the list.
+If you are not a subscriber to the list, you can still send an email
+to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]], we will add you to the whitelist of people
+who can reach the list.
 
-You can also check this page for more [[https://orgmode.org/worg/org-web-social.html][Org news on the social web]].
+You can [[https://orgmode.org/worg/org-mailing-list.html][read more on the mailing list]] or more information on [[https://orgmode.org/worg/org-web-social.html][Org news
+on the social web]].
 
 * Chatting about Org
   :PROPERTIES:
