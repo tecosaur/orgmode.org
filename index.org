@@ -113,7 +113,7 @@ community-written documentation on [[https://orgmode.org/worg/][Worg]] .
 Nearly every Org user has a story to tell about how Org enables and
 empowers them --- some have found it so useful that they have written
 [[https://orgmode.org/worg/org-papers.html][(scientific) papers]] about the value of Org for conducting [[https://en.wikipedia.org/wiki/Reproducibility#Reproducible_research][reproducible
-research]]. Some have produced third-part tools to enjoy Org outside of
+research]]. Some have produced third party tools to enjoy Org outside of
 Emacs, such as mobile applications.
 
 * More Org
