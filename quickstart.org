@@ -75,13 +75,13 @@ markup in any order, however ~code~ and =verbatim= need to be the
 *_~inner-most~_* markers if they are present since their contents are
 interpreted =_literally_=.
 
-#+BEGIN_EXAMPLE
+#+begin_example
 To markup text in Org, simply surround it with one or more marker characters.
 *Bold*, /italic/ and _underline_ are fairly intuitive, and the ability to use
 +strikethrough+ is a plus.  You can _/*combine*/_ the basic markup in any
 order, however ~code~ and =verbatim= need to be the *_~inner-most~_* markers
 if they are present since their contents are interpreted =_literally_=.
-#+END_EXAMPLE
+#+end_example
 
 See [[https://orgmode.org/worg/dev/org-syntax.html#Emphasis_Markers][Emphasis Markers]] for more details.
 
@@ -175,18 +175,18 @@ Some of the basic blocks types quote, example, and src.
 
 If you all you need is monospace text, you can use an example block.
 #+BEGIN_SRC org
-,#+BEGIN_EXAMPLE
+,#+begin_example
 monospace
-,#+END_EXAMPLE
+,#+end_example
 #+END_SRC
 
 However, example blocks do not give you the power of [[https://orgmode.org/worg/org-contrib/babel/][Org babel]].
 For that you need a source block.
 Source blocks provide syntax highlighting, code execution, literate programming, and more.
 #+BEGIN_SRC org
-,#+BEGIN_SRC emacs-lisp
+,#+begin_src emacs-lisp
 (message "Hello world")
-,#+END_SRC
+,#+end_src
 #+END_SRC
 
 ** More info
@@ -247,14 +247,14 @@ Inline comments are used for end of line comments. @@comment:~#~ won't
 work@@ Since # only only works if preceeded by a newline follow by
 whitespace.
 
-,#+BEGIN_COMMENT
+,#+begin_comment
 This is a block comment.
 It can span multiple line.
 As well as other markup.
-,#+BEGIN_SRC elisp
+,#+begin_src emacs-lisp
 (+ 1 2)
-,#+END_SRC
-,#+END_COMMENT
+,#+end_src
+,#+end_comment
 
 ,* A top level headline
 ,** COMMENT This section and subsections are commented out
@@ -273,12 +273,12 @@ Org has many more advanced features built into its syntax.  To give
 only a single example, let's take a look at [[https://orgmode.org/manual/Macro-Replacement.html][macros]].
 
 #+BEGIN_SRC org
-,#+MACRO: attn _*/$1/*_
-{{{attn(ATTENTION! This text gets all the markup!)}}}
+,#+macro: attn _*/$1/*_
+{{{attn(Attention! This text gets all the markup!)}}}
 
-,#+HTML_HEAD: <style>.red{color:red;}</style>
-,#+LATEX_HEADER: \usepackage{xcolor}
-,#+MACRO: red @@html:<span class="red">$1</span>@@@@latex:\textcolor{red}{$1}@@
+,#+html_head: <style>.red{color:red;}</style>
+,#+latex_header: \usepackage{xcolor}
+,#+macro: red @@html:<span class="red">$1</span>@@@@latex:\textcolor{red}{$1}@@
 Regular text. {{{red(This text will be red.)}}} More regular text.
 #+END_SRC
 
