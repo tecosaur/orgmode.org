@@ -25,10 +25,18 @@ support Org's primary maintainer Bastien Guerry.
 #+end_export
 
 You can also support Org with your time, no matter your level of
-experience.  The fastest way to get involved is by joining the
-[[file:community.org][community]] and [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to the mailing list]].  You can also always
-get in touch via [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to help move the project
-forward.
+experience.
+
+#+begin_export html
+<div class="banner"><p style="margin:0 0.5em">
+<a href="https://code.orgmode.org/bzg/org-mode" style="color: #661a13; display: inline-block">
+<img class="inline" src="/resources/img/external/gogs.png"/> The Org Codebase</a>
+</p></div>
+#+end_export
+
+The fastest way to get involved is by joining the [[file:community.org][community]] and [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to
+the mailing list]].  You can also always get in touch via [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to
+help move the project forward.
 
 # FIXME this section needs links, e.g. to instructions for running tests
 
