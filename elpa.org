@@ -1,15 +1,16 @@
 #+title: Org Emacs lisp Package Archive
-#+date: 2012-09-26
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning and Authoring
 #+include: "./resources/preamble.html" export html
 
-* Org Emacs lisp Package Archive
+* Org Emacs lisp Package Archive (deprecated)
   :PROPERTIES:
   :CUSTOM_ID: introduction
   :END:
 
-[[https://orgmode.org][orgmode.org]] hosts Org ELPA archives.
+For versions <= 9.5, [[https://orgmode.org][orgmode.org]] hosts Org ELPA archives.
+
+*Beware that no new Org versions will be released on Org ELPA after 9.5.*
 
 Add this to your Emacs init file to be able to list the Org mode
 archives:
