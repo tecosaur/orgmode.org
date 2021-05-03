@@ -90,7 +90,7 @@ Commit messages also need to be structured according to Emacs
 conventions.
 
 #+BEGIN_EXAMPLE
-main file/feature: overall change summary
+main file/feature: Overall change summary
 
 ,* file-changed.el (function-changed, another-function): Description of
 the change implemented, reference any relevant `other-functions' or
@@ -101,14 +101,17 @@ and avoid passive forms.  Please write in full sentences.
 
 More formally,
 
-1. The first line should include the file/feature affected followed by
-   a colon and an short description of the overall change
+1. The first line should include the file/feature affected, followed
+   by a colon and an short description of the overall change (this
+   description starts with an uppercase letter and does not end with a
+   dot.)
 2. The second line should be left blank
 3. Start on the third line there should be a ChangeLog entry for each
    file changed, as seen in the example above
    - Quote variables and function names like ~`this'~
    - Separate sentences with *two* spaces
    - Use active voice instead of passive voice
+   - Try to be terse
 4. The line after the final ChangeLog entry should be left blank
 5. Optionally this may be followed by any supplementary information
    explaining the patch
