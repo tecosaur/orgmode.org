@@ -1,0 +1,12 @@
+This repository contains the Org files that are used to generate the
+https://orgmode.org website.
+
+The contents of this repository is licensed under the GNU Free
+Documentation License version 1.3 or later.  The code examples and CSS
+stylesheets are licensed under the GNU General Public License v3 or
+later.  See the license.org file or the LICENSES/ directory.
+
+This repository is part of a project with other resources related to
+orgmode.org: one is the worg repository for the community-driven Org
+documentation, another one is the org-contrib repository for files
+that used to live in Org's contrib/ directory.
