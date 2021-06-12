@@ -230,13 +230,13 @@ Org mode does it in a single keystroke -- =tab=.
 
 Org mode has a variety of ways to add comments.
 
-Line comments start with ~#~. \\
-Inline comments wrap ~@@comment:like so@@~. \\
-Block comments are wrapped with ~#+BEGIN_COMMENT~ and ~#+END_COMMENT~. \\
-Section comments can be created by adding the ~COMMENT~ keyword to a
-headline ~* COMMENT like so~[fn::There are a number of more granular
-ways to control the exact behavior of headlines, including use of the
-special tags ~:ARCHIVE:~ and ~:noexport:~.].
+- Line comments start with ~#~.
+- Inline comments wrap ~@@comment:like so@@~.
+- Block comments are wrapped with ~#+BEGIN_COMMENT~ and ~#+END_COMMENT~.
+- Section comments can be created by adding the ~COMMENT~ keyword to a headline ~*
+  COMMENT like so~[fn::There are a number of more granular ways to control the
+  exact behavior of headlines, including use of the special tags ~:ARCHIVE:~ and
+  ~:noexport:~.].
 
 #+BEGIN_SRC org
 # A line comment
