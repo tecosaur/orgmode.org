@@ -28,7 +28,7 @@ on the social web]].
   :END:
 
 You can connect with other org-thusiasts via IRC at ~#org-mode~ on
-[[https://freenode.net/][freenode]].
+[[https://libera.chat/][Libera.Chat]].
 
 * Listing current contributors
   :PROPERTIES:
