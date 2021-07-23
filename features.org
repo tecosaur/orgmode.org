@@ -288,7 +288,7 @@ spent your time.
 
 Org provides shortcuts to /clock in/ and /clock out/ of tasks.  When
 working in an =.org= file =C-c C-x C-i= clocks in and =C-c C-x C-o= clocks
-out. Time is stored in the property drawer of the headline for the
+out. Time is stored in the property drawer of the heading for the
 task at had.
 
 You can also use =I= and =O= when in an agenda view.

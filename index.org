@@ -98,7 +98,7 @@ of a few simple, yet versatile, structures --- constructed to be both
 [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
 
 Get a glimpse of the expressive power Org offers in the example below.
-Click the headlines and links to discover how Org intelligently folds structural content.
+Click the headings and links to discover how Org intelligently folds structural content.
 
 #+include: org-demo.html export html
 

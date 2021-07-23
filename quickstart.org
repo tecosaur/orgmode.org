@@ -25,7 +25,7 @@ that transforms Org syntax into a living, interactive document.
   :CUSTOM_ID: preamble
   :END:
 
-At the start of a file (before the first headline), it is common to
+At the start of a file (before the first heading), it is common to
 set the title, author and other [[https://orgmode.org/manual/Export-Settings.html][export options]].
 
 #+BEGIN_SRC org
@@ -33,15 +33,15 @@ set the title, author and other [[https://orgmode.org/manual/Export-Settings.htm
 ,#+author: A. Org Writer
 #+END_SRC
 
-* Headlines
+* Heading
   :PROPERTIES:
-  :CUSTOM_ID: headlines
+  :CUSTOM_ID: headings
   :END:
 
-Lines that start with an asterisk ~*~ are [[https://orgmode.org/worg/dev/org-syntax.html#Headlines_and_Sections][headlines]].
+Lines that start with an asterisk ~*~ are [[https://orgmode.org/worg/dev/org-syntax.html#Headlines_and_Sections][headings]].
 
-A single ~*~ denotes a 1st-level headline, ~**~ denotes a 2nd-level
-headline, etc.
+A single ~*~ denotes a 1st-level heading, ~**~ denotes a 2nd-level
+heading, etc.
 
 #+BEGIN_SRC org
 ,* Welcome to Org-mode
@@ -49,8 +49,8 @@ headline, etc.
 Each extra ~*~ increases the depth by one level.
 #+END_SRC
 
-In their simplest form headlines are just the start of a section.
-However, any headline can also become a [[https://orgmode.org/manual/TODO-Items.html][TODO item]].
+In their simplest form headings are just the start of a section.
+However, any heading can also become a [[https://orgmode.org/manual/TODO-Items.html][TODO item]].
 
 TODO items are the basic building block that Org uses to track and
 organize all kinds of tasks.
@@ -92,7 +92,7 @@ See [[https://orgmode.org/worg/dev/org-syntax.html#Emphasis_Markers][Emphasis Ma
 
 Unordered lists start with ~+~, ~-~, or ~*~[fn::~*~ cannot
 be used to start a plain list if it is immediately preceded by
-a newline because it will be interpreted as a headline.].
+a newline because it will be interpreted as a heading.].
 Ordered lists start with ~1.~, ~1)~, ~A.~, or ~A)~.
 Ordered and unordered bullets can be nested in any order.
 
@@ -134,7 +134,7 @@ parentheses because there are only square brackets!
 Org supports a wide variety of types of link targets, and you can also
 [[https://orgmode.org/manual/Adding-Hyperlink-Types.html][add your own]].
 Link types are indicated with a ~type:~ prefix, i.e., ~[type:target]~.
-If no ~type:~ is provided, org searches the current file for a headline
+If no ~type:~ is provided, org searches the current file for a heading
 that matches ~target~.
 
 Some examples:
@@ -233,9 +233,9 @@ Org mode has a variety of ways to add comments.
 - Line comments start with ~#~.
 - Inline comments wrap ~@@comment:like so@@~.
 - Block comments are wrapped with ~#+BEGIN_COMMENT~ and ~#+END_COMMENT~.
-- Section comments can be created by adding the ~COMMENT~ keyword to a headline ~*
+- Section comments can be created by adding the ~COMMENT~ keyword to a heading ~*
   COMMENT like so~[fn::There are a number of more granular ways to control the
-  exact behavior of headlines, including use of the special tags ~:ARCHIVE:~ and
+  exact behavior of headings, including use of the special tags ~:ARCHIVE:~ and
   ~:noexport:~.].
 
 #+BEGIN_SRC org
@@ -256,11 +256,11 @@ As well as other markup.
 ,#+end_src
 ,#+end_comment
 
-,* A top level headline
+,* A top level heading
 ,** COMMENT This section and subsections are commented out
-,*** This headline inherits the =COMMENT= keyword
+,*** This heading inherits the =COMMENT= keyword
 This text is commented out
-,** This headline is not commented
+,** This heading is not commented
 This text will be exported and code blocks will run.
 #+END_SRC
 
