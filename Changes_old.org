@@ -4,7 +4,7 @@
 #+setupfile: setup.org
 #+description: Org: an Emacs Mode for Notes, Planning and Authoring
 #+include: "./resources/preamble.html" export html
-#+link:      git https://code.orgmode.org/bzg/org-mode/commit/%s
+#+link:      git https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=%s
 #+link:      doc https://orgmode.org/worg/doc.html#%s
 #+html_head:     <link rel="stylesheet" href="/resources/style/org-changes.css" type="text/css" />
 #+include: "./resources/preamble.html" export html
@@ -4027,7 +4027,7 @@ entry will be shown several times.
 
 **** New =todo-unblocked= and =nottodo-unblocked= skip conditions
 
-See the [[https://code.orgmode.org/bzg/org-mode/commit/f426dadef0c410b5abded3dd9d6bf1123385f0c8][git commit]] for more explanations.
+See the [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=f426dadef0c410b5abded3dd9d6bf1123385f0c8][git commit]] for more explanations.
 
 **** Allow category filtering in the agenda
 
@@ -4318,7 +4318,7 @@ This option allows Beamer export to inherit some properties.
 Thanks to Carsten for implementing this.
 
 **** ODT: Add support for ODT export in org-bbdb.el
-**** ODT: Add support for indented tables (see [[https://code.orgmode.org/bzg/org-mode/commit/e9fd334eb4ce4253875d84c34cb9ab750794fda5][this commit]] for details)
+**** ODT: Add support for indented tables (see [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=e9fd334eb4ce4253875d84c34cb9ab750794fda5][this commit]] for details)
 **** ODT: Improve the conversion from ODT to other formats
 **** ASCII: Swap the level-1/level-2 characters to underline the headlines
 **** Support for Chinese, simplified Chinese, Russian, Ukrainian and Japanese
@@ -5713,7 +5713,7 @@ adding it to org.el and documenting it!
 This hook will be called when nothing special can be performed by
 the busy =C-c C-c= key.  Thanks to Paul Sexton for this idea!
 
-[[https://code.orgmode.org/bzg/org-mode/commit/eaafa42948427da37c065c8294edd0d0f30cccd4][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=eaafa42948427da37c065c8294edd0d0f30cccd4][(git commit)]]
 
 *** Allow relative time when scheduling/adding a deadline
 
@@ -5730,7 +5730,7 @@ You can also use this while (bulk-)rescheduling and
 
 Thanks to Memnon Anon for a heads up about this!
 
-[[https://code.orgmode.org/bzg/org-mode/commit/88eada52a63539b8866b9be861ea72ffbcafb37e][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=88eada52a63539b8866b9be861ea72ffbcafb37e][(git commit)]]
 
 *** New functions: =org-todo-yesterday= and =org-agenda-todo-yesterday=
 
@@ -5738,7 +5738,7 @@ This is useful when you need to mark things done yesterday.
 
 Thanks to Max Mikhanosha for this patch.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/dea1a6f87b1fcd0122796a6603948bf131d4ff69][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=dea1a6f87b1fcd0122796a6603948bf131d4ff69][(git commit)]]
 
 *** =org-set-property= defaults to the last interactively modified property
 
@@ -5747,7 +5747,7 @@ last interactively modified property as a default choice.  If
 this command is called on a property line, the property in this
 line will take precedence over the last set property.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/9a2bf023467ad97fd171422c06541651c24b6014][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=9a2bf023467ad97fd171422c06541651c24b6014][(git commit)]]
 
 *** Clock: Allow synchronous update of timestamps in CLOCK log
 
@@ -5758,7 +5758,7 @@ slightly modified in case a timestamp needs some rounding.
 
 Thanks to Rainer Stengele for this idea.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/db731a971546aef8a1003df8f73462fc6dfd6a5a][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=db731a971546aef8a1003df8f73462fc6dfd6a5a][(git commit)]]
 
 *** Clock: New function =org-clock-remove-empty-clock-drawer=
 
@@ -5766,7 +5766,7 @@ This function removes empty =CLOCK= drawers and has been added to
 =org-clock-out-hook=: when clocking out, if no CLOCK log has been
 inserted and the drawer is empty, the drawer will be removed.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/65b64bea53e73ea73a4b791a1057b074db144b23][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=65b64bea53e73ea73a4b791a1057b074db144b23][(git commit)]]
 
 *** Capture: new escape sequence =%F= for templates
 
@@ -5776,7 +5776,7 @@ file or the directory the capture mechanism was called from
 
 Thanks to Nicolas Goaziou for this change.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/819fbec64160c3c33884b116734c01f56be7606b][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=819fbec64160c3c33884b116734c01f56be7606b][(git commit)]]
 
 *** Agenda: new variable =org-agenda-bulk-custom-functions= for custom bulk functions
 
@@ -5794,7 +5794,7 @@ the latter ones take precedence.
 
 Thanks to Julien Cubizolles for triggering this idea.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/1029a9251741c2cdf10281866a2fbbdaf2e1cb25][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=1029a9251741c2cdf10281866a2fbbdaf2e1cb25][(git commit)]]
 
 *** Refile: exclude irrelevant headings
 
@@ -5841,7 +5841,7 @@ In this example, =0.92= is a fraction of hour, the default for
 
 Thanks to Daniel E. Doherty for discussions about this.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/70fab165e1966b32e08ed05776ca19e711d1d1e9][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=70fab165e1966b32e08ed05776ca19e711d1d1e9][(git commit)]]
 
 *** Table: display field's coordinates when editing it with =C-c `=
 
@@ -5850,7 +5850,7 @@ the displayed in the buffer.
 
 Thanks to Michael Brand for a patch to this effect.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/e7eb56f39b5b843bc1487bb49c58e99e51c81fc1][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=e7eb56f39b5b843bc1487bb49c58e99e51c81fc1][(git commit)]]
 
 *** Babel: support for =java= code blocks
 
@@ -5886,7 +5886,7 @@ The =contrib/babel/langs/= contains the new library
 
 Thanks to him for this addition.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/2249abb8ad4bb266c5eb808fce1f7e6be9173628][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=2249abb8ad4bb266c5eb808fce1f7e6be9173628][(git commit)]]
 
 *** Babel: support for the [[http://fomus.sourceforge.net/][fomus]] language by Torsten Anders
 
@@ -5894,7 +5894,7 @@ Thanks to him for this addition.
 
 Thanks to Torsten Anders for contributing this functionality.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/baa83dacc732c51e15a593b02218bc5f9ef7fb2e][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=baa83dacc732c51e15a593b02218bc5f9ef7fb2e][(git commit)]]
 
 *** Publish: hide .orgx files and use theindex.org directly
 
@@ -5907,7 +5907,7 @@ directly stored in the file =theindex.org=, not in the file
 Thanks to Nathan Neff and Carsten for pointing at the problems
 and solutions.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/f0d7acfb7867518529d63fe3d111f5f3cf39a61f][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=f0d7acfb7867518529d63fe3d111f5f3cf39a61f][(git commit)]]
 
 *** Export: new variable =org-export-html-divs= to allow custom divs
 
@@ -5925,7 +5925,7 @@ variable anymore.
 Thanks to Sébastian Vauban for a preliminary version of this
 patch.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/2f1fbc58be1dc48621217d666da7bc46c3c5d84e][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=2f1fbc58be1dc48621217d666da7bc46c3c5d84e][(git commit)]]
 
 *** Export: new variable =org-export-latex-quotes= to customize quotes in LaTeX export
 
@@ -5939,7 +5939,7 @@ of "some quoted text".
 Thanks to Frederik for bringing this issue up, and to Thomas S.
 Dye, Nick Dokos and Stefan Nobis for elaborating this solution.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/2b9afb9e63d2fd60a3bb09e33c9d4abb01586339][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=2b9afb9e63d2fd60a3bb09e33c9d4abb01586339][(git commit)]]
 
 ** Important bugfixes
 
@@ -5951,7 +5951,7 @@ Thanks to Christian Moe for signaling this problem.
 
 Thanks to Stefan Vollmar for mentioning this problem.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/bbb2ef510ae8fbf28296c8968b99a24408c7c3ce][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=bbb2ef510ae8fbf28296c8968b99a24408c7c3ce][(git commit)]]
 
 ** Details
 
@@ -5961,7 +5961,7 @@ Thanks to David Maus for suggesting related improvements to
 =org-map-entries=.  This one prepares the possibility of letting
 some commands to loop over the active region.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/59e7fc4d3a4ee441d4716ca37fd41a2fa64e04d5][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=59e7fc4d3a4ee441d4716ca37fd41a2fa64e04d5][(git commit)]]
 
 *** org-depend.el: new chain-find-next trigger option
 
@@ -5969,7 +5969,7 @@ See the updated docstring of this file.
 
 Thanks a lot to Max Mikhanosha for this!
 
-[[https://code.orgmode.org/bzg/org-mode/commit/b1279dde0fec5e043b294117d9b999eb99be9a0f][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=b1279dde0fec5e043b294117d9b999eb99be9a0f][(git commit)]]
 
 *** Export: new experimental exporter to MoinMoin by Puneeth Chaganti.
 
@@ -5978,7 +5978,7 @@ allows you to export an Org file to a MoinMoin file.
 
 Thanks to Puneeth Chaganti for this addition.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/a90b876b936820f6a80cc2ffa807bc29a9de73eb][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=a90b876b936820f6a80cc2ffa807bc29a9de73eb][(git commit)]]
 
 *** Export: new default for =org-export-html-preamble=
 
@@ -5999,7 +5999,7 @@ which makes more sense.
 
 Thanks to Sebastien Vauban for this suggestion.
 
-[[https://code.orgmode.org/bzg/org-mode/commit/46a5bde601980c47eccd06d87b82dbae85b20704][(git commit)]]
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=46a5bde601980c47eccd06d87b82dbae85b20704][(git commit)]]
 
 *** Export: allow =org-export-latex-href-format= to have only one "%s"
 

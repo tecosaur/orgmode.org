@@ -141,11 +141,11 @@ Worg contient entre autre:
 
 C'est un dépôt Git, de fichiers Org publiés en HTML sur un site
 web. Les nouvelles contributions sont bienvenues, pour celà créez-vous
-un compte sur [[https://code.orgmode.org][code.orgmode.org]] et demandez à être ajouté comme
-collaborateur.
+un compte sur [[https://savannah.gnu.org][savannah.gnu.org]] et demandez à être ajouté comme
+contributeur au [[https://savannah.gnu.org/git/?group=emacs][groupe Emacs]].
 
 #+BEGIN_SRC shell
-~$ git clone https://code.orgmode.org/bzg/worg.git
+~$ git clone https://git.sr.ht/~bzg/worg
 #+END_SRC
 
 * Discutter d'Org

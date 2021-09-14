@@ -157,5 +157,5 @@ Worg is maintained as a Git repository of Org files that are published
 as an HTML website.  New [[https://orgmode.org/worg/worg-git.html#contribute-to-worg][contributors are welcome]].
 
 #+BEGIN_SRC shell
-~$ git clone https://code.orgmode.org/bzg/worg.git
+~$ git clone https://git.sr.ht/~bzg/worg
 #+END_SRC

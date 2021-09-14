@@ -21,10 +21,10 @@ to include [[file:elpa.html][Org ELPA]] as a package repository.
 
 Alternatively you can download the package as a [[https://orgmode.org/org-9.4.6.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.4.6.zip][zip]] archive.
 
-The bleeding-edge development version or Org is available at [[https://code.orgmode.org/bzg/org-mode][code.orgmode.org]].
+The bleeding-edge development version or Org is available at [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/]]
 You can clone the repo via:
 #+BEGIN_SRC shell
-~$ git clone https://code.orgmode.org/bzg/org-mode.git
+~$ git clone https://git.savannah.gnu.org/git/emacs/org-mode.git
 #+END_SRC
 
 Daily snapshots of the development version are released as [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]] files.

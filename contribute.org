@@ -29,7 +29,7 @@ experience.
 
 #+begin_export html
 <div class="banner"><p style="margin:0 0.5em">
-<a href="https://code.orgmode.org/bzg/org-mode" style="color: #661a13; display: inline-block">
+<a href="https://git.savannah.gnu.org/cgit/emacs/org-mode.git/" style="color: #661a13; display: inline-block">
 <img class="inline" src="/resources/img/external/gogs.png"/> The Org Codebase</a>
 </p></div>
 #+end_export

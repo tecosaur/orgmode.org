@@ -134,7 +134,7 @@ Org Mode には多くのユースケースがあり、それらを文書化す�
 Worg は、Org ファイルを格納する Git リポジトリで管理されています。そして、それらのファイルが HTML 形式に変換されてウェブページとなります。使い方は、[[https://orgmode.org/worg/worg-git.html#contribute-to-worg][The first time you contribute to Worg (英語)]] を見てください。
 
 #+BEGIN_SRC shell
-~$ git clone https://code.orgmode.org/bzg/worg.git
+~$ git clone https://git.sr.ht/~bzg/worg
 #+END_SRC
 
 * ローカルコミュニティ

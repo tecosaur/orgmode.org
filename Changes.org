@@ -1,11 +1,15 @@
 #+title:     Release notes | Org mode
 #+setupfile: setup.org
-#+link:      git https://code.orgmode.org/bzg/org-mode?p=org-mode.git;a=commit;h=%s
+#+link:      git https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=%s
 #+link:      doc https://orgmode.org/worg/doc.html#%s
 #+description: Org Org-mode Emacs Changes ChangeLog release notes
 #+include: "./resources/preamble.html" export html
 
 #+include: "./resources/normal-outline-3.html" export html
+
+
+
+
 
 @@html:<br/>@@
 
@@ -352,7 +356,7 @@ source buffers are displayed by modifying ~display-buffer-alist~ or
 *** New option ~org-archive-subtree-save-file-p~
 
 Archiving a subtree used to always save the target archive buffer.
-Commit [[https://code.orgmode.org/bzg/org-mode/commit/b186d1d7][b186d1d7]] changed this behavior by always not saving the target
+Commit [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=b186d1d7][b186d1d7]] changed this behavior by always not saving the target
 buffer, because batch archiving from agenda could take too much time.
 
 This new option ~org-archive-subtree-save-file-p~ defaults to the
