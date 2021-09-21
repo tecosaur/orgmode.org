@@ -354,7 +354,7 @@ This was a request by Rainer Stengele.
 The LaTeX =listings= package can now be used for formatting
 fontified source code in many programming languages.  For more
 information, see
-https://orgmode.org/list/m2prb6t9lw.fsf@gmail.com and
+https://list.orgmode.org/m2prb6t9lw.fsf@gmail.com and
 https://orgmode.org/worg/org-faq.php#fontified_source_code_w_latex
 
 Thanks to Eric Schulte for this patch.
@@ -1321,7 +1321,7 @@ need to configure the feeds in the variable =org-feed-alist=.  The manual
 contains a short description, more detailed information is [[https://orgmode.org/worg/org-contrib/org-feed.php][available on
 Worg]].
 
-Full credit goes to Brad Bozarth who really [[https://orgmode.org/list/f47cd1b50903220338g79cb0d32gcef1c4496b243aac@mail.gmail.com][paved the way]] for this exciting
+Full credit goes to Brad Bozarth who really [[https://list.orgmode.org/f47cd1b50903220338g79cb0d32gcef1c4496b243aac@mail.gmail.com][paved the way]] for this exciting
 new feature.
 
 ** Export
@@ -1378,7 +1378,7 @@ the list, ignoring this item.  This is an experimental feature, it may
 disappear again if we find other ways to deal with literal examples right
 after lists.
 
-See [[https://orgmode.org/list/877i2g53px.fsf@fastmail.fm][this mailing list thread]] for context.
+See [[https://list.orgmode.org/877i2g53px.fsf@fastmail.fm][this mailing list thread]] for context.
 
 ** Agenda
 
@@ -1410,7 +1410,7 @@ normal agenda sorting, the treatment of these entries depends on the
 variable =org-sort-agenda-noeffort-is-high=.  Now this variable is also
 respected during filtering.
 
-This new feature resulted from a [[https://orgmode.org/list/87tz5aq48u.fsf@fastmail.fm][discussion]] with Matt Lundin and Bernt
+This new feature resulted from a [[https://list.orgmode.org/87tz5aq48u.fsf@fastmail.fm][discussion]] with Matt Lundin and Bernt
 Hansen.
 
 *** Introduce user-defined sorting operators
@@ -1627,7 +1627,7 @@ agenda view that will display the agenda, but hide all entries with tags
    ((org-agenda-filter-preset '("-FLUFF" "-BLUFF"))))
 #+end_src
 
-This is in response to a [[https://orgmode.org/list/87ocwjzts2.fsf@CPU107.opentrends.net][thread on the mailing list]], started by Daniel
+This is in response to a [[https://list.orgmode.org/87ocwjzts2.fsf@CPU107.opentrends.net][thread on the mailing list]], started by Daniel
 Clemente and with great contributions by Bernt Hansen and Matt Lundin.
 
 *** Exporting of citations to LaTeX and HTML, using BibTeX
@@ -1972,7 +1972,7 @@ tasks that are blocked will not be visible in the agenda.  If the
 blocking is due to child TODO entries, this does make sense because the
 children themselves will show up in the TODO list.
 
-However, as John Rakestraw has [[https://orgmode.org/list/20090201154424.2c07d9ff@johnrakestraw.com][pointed out]], if the blocking is done by
+However, as John Rakestraw has [[https://list.orgmode.org/20090201154424.2c07d9ff@johnrakestraw.com][pointed out]], if the blocking is done by
 checkboxes, no trace of these subtasks is left.  Therefore, when the
 blocking is done by checkboxes, we now overrule the =invisible= setting
 and replace it with mere dimming of the task.

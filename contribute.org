@@ -125,7 +125,7 @@ include them in an email to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.or
 you've done.  If you have configured git to use [[https://git-send-email.io/][send-email]], then you
 can use that.
 
-If your mail has not appeared on [[https://orgmode.org/list/][the list]] after waiting at least 15
+If your mail has not appeared on [[https://list.orgmode.org/][the list]] after waiting at least 15
 minutes, it may have been flagged as spam by the robot email
 overlords.  If this happens, you should be able to get the email to go
 through by [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing]] to the mailing list.

@@ -390,7 +390,7 @@ In all Babel libraries, the absence of a ~:results~ header should
 produce the same result than setting ~:results value~, unless there is
 an option to explicitly create an exception.
 
-See [[https://orgmode.org/list/CA+A2iZaziAfMeGpBqL6qGrzrWEVvLvC0DUw++T4gCF3NGuW-DQ@mail.gmail.com/][this thread]] for more context.
+See [[https://list.orgmode.org/CA+A2iZaziAfMeGpBqL6qGrzrWEVvLvC0DUw++T4gCF3NGuW-DQ@mail.gmail.com/][this thread]] for more context.
 
 *** New option in ~org-attach-store-link-p~
 

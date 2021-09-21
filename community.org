@@ -12,7 +12,7 @@
 Org mailing list is the central place where to connect with Org
 community.
 
-You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the list]] and [[https://orgmode.org/list][browse the archive]] here at
+You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the list]] and [[https://list.orgmode.org][browse the archive]] here at
 =orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU mailman archive]].
 
 If you are not a subscriber to the list, you can still send an email

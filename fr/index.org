@@ -153,5 +153,5 @@ Vous pouvez vous connecter à d'autres org-tousiastes via IRC sur les
 salons ~#org-mode~ et ~#org-mode-fr~ on [[https://libera.chat][Libera.Chat]].
 
 Il existe aussi une mailing list à laquelle vous pouvez vous [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][abonner]],
-ou visiter ses [[https://orgmode.org/list][archives]] ici sur =orgmode.org= ou via les
+ou visiter ses [[https://list.orgmode.org][archives]] ici sur =orgmode.org= ou via les
 [[https://lists.gnu.org/archive/html/emacs-orgmode/][archives GNU listserv]].

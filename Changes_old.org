@@ -4600,7 +4600,7 @@ explanations on why these changes were necessary.
 
     The new system has a technically cleaner implementation and more
     possibilities for capturing different types of data.  See
-    [[https://orgmode.org/list/C46F10DC-DE51-43D4-AFFE-F71E440D1E1F@gmail.com][Carsten's announcement]] for more details.
+    [[https://list.orgmode.org/C46F10DC-DE51-43D4-AFFE-F71E440D1E1F@gmail.com][Carsten's announcement]] for more details.
 
     To switch over to the new system:
 
@@ -4731,7 +4731,7 @@ explanations on why these changes were necessary.
 
 **** Modified link escaping
 
-     David Maus worked on `org-link-escape'.  See [[https://orgmode.org/list/87k4gysacq.wl%dmaus@ictsoc.de][his message]]:
+     David Maus worked on `org-link-escape'.  See [[https://list.orgmode.org/87k4gysacq.wl%dmaus@ictsoc.de][his message]]:
 
      : Percent escaping is used in Org mode to escape certain characters
      : in links that would either break the parser (e.g. square brackets
@@ -5497,7 +5497,7 @@ Reported by Erik Hetzner and fixed by Carsten.
 Carsten wrote org-sudoku.el, a little sudoku solver, which lives
 in the contrib/ directory.
 
-From [[https://orgmode.org/list/3692D35F-2C42-43E5-AB4C-731A1887BA12@gmail.com][his message]]: "my daughter got stuck with a couple of SUDOKU
+From [[https://list.orgmode.org/3692D35F-2C42-43E5-AB4C-731A1887BA12@gmail.com][his message]]: "my daughter got stuck with a couple of SUDOKU
 puzzles during the vacation (where wh had no internet
 connection), so I hacked a small SUDOKU solver that reads a 9x9
 Org table and solves it as a sudoku puzzle.  A little silly, but
@@ -6355,7 +6355,7 @@ Thanks a lot to Nicolas for all this!
 
 *** Modified link escaping
 
-David Maus worked on `org-link-escape'.  See [[https://orgmode.org/list/87k4gysacq.wl%dmaus@ictsoc.de][his message]]:
+David Maus worked on `org-link-escape'.  See [[https://list.orgmode.org/87k4gysacq.wl%dmaus@ictsoc.de][his message]]:
 
 : Percent escaping is used in Org mode to escape certain characters
 : in links that would either break the parser (e.g. square brackets
@@ -7480,7 +7480,7 @@ section [[https://orgmode.org/org-remember.pdf][chapter about remember]].
 
 The new system has a technically cleaner implementation and more
 possibilities for capturing different types of data.  See
-[[https://orgmode.org/list/C46F10DC-DE51-43D4-AFFE-F71E440D1E1F@gmail.com][Carsten's announcement]] for more details.
+[[https://list.orgmode.org/C46F10DC-DE51-43D4-AFFE-F71E440D1E1F@gmail.com][Carsten's announcement]] for more details.
 
 To switch over to the new system:
 
@@ -8570,7 +8570,7 @@ Sounds strange?  Try it, it is insanely fast when entering data.
 If you still don't like it, turn it off by customizing
 =org-cycle-level-after-item/entry-creation=.
 
-Thanks to [[https://orgmode.org/list/20524da70910071107s55fff3ecj4d92f2bc9511b970@mail.gmail.com][Samuel Wales]] and [[https://orgmode.org/list/F423AE52-4791-478E-AE96-5B80B088FF30@gmail.com][John Wiegley]] for ideas that
+Thanks to [[https://list.orgmode.org/20524da70910071107s55fff3ecj4d92f2bc9511b970@mail.gmail.com][Samuel Wales]] and [[https://list.orgmode.org/F423AE52-4791-478E-AE96-5B80B088FF30@gmail.com][John Wiegley]] for ideas that
 contributed to this new feature.
 
 *** Speed commands at the start of a headline
