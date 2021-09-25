@@ -12,8 +12,6 @@ secrets:
   - 7a38e4c8-2b08-446e-a478-2a114a50db86
 tasks:
   - install: |
-      cd orgweb
-      ./publish.sh
       cd ../org-mode
       git checkout bugfix
       cat mk/default.mk > local.mk
@@ -21,6 +19,8 @@ tasks:
       mkdir -p upload/guide upload/manual
       make autoloads
       make doc-up
+      cd orgweb
+      ./publish.sh
   - upload: |
       rsync -e "ssh -o StrictHostKeyChecking=no" -av orgweb/* bzg.fr:/home/build/orgmode/
       rsync -e "ssh -o StrictHostKeyChecking=no" -av org-mode/upload/* bzg.fr:/home/build/orgmode/
