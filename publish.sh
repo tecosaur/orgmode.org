@@ -2,6 +2,7 @@
 
 ":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
+(add-to-list 'load-path "~/org-mode/lisp/")
 (require 'ox-html)
 (load "/usr/share/emacs/site-lisp/elpa-src/htmlize-1.55/htmlize.el")
 
