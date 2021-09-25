@@ -3,7 +3,7 @@
 ":"; exec emacs --quick --script "$0" -- "$@" # -*- mode: emacs-lisp; lexical-binding: t; -*-
 
 (require 'ox-html)
-(load "/usr/share/emacs/site-lisp/htmlize.el")
+(load "/usr/share/emacs/site-lisp/elpa-src/htmlize-1.55/htmlize.el")
 
 (setq make-backup-files nil
       debug-on-error t)
