@@ -1,7 +1,7 @@
 image: debian/stable
 packages:
   - emacs
-  - emacs-htmlize
+  - elpa-htmlize
   - rsync
   - texinfo
 sources:
