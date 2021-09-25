@@ -1,15 +1,25 @@
-image: archlinux
+image: debian/stable
 packages:
   - emacs
-  - htmlize-git
+  - emacs-htmlize
   - rsync
+  - texinfo
 sources:
   - https://git.sr.ht/~bzg/orgweb
+  - https://git.savannah.gnu.org/git/emacs/org-mode.git
 secrets:
   - 7a38e4c8-2b08-446e-a478-2a114a50db86
 tasks:
   - install: |
       cd orgweb
       ./publish.sh
+      cd ../org-mode
+      git checkout bugfix
+      cat mk/default.mk > local.mk
+      cat mk/server.mk >> local.mk
+      mkdir -p upload/guide upload/manual
+      make autoloads
+      make doc-up
   - upload: |
       rsync -e "ssh -o StrictHostKeyChecking=no" -av orgweb/* bzg.fr:/home/build/orgmode/
+      rsync -e "ssh -o StrictHostKeyChecking=no" -av org-mode/upload/* bzg.fr:/home/build/orgmode/
