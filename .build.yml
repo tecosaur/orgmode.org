@@ -1,0 +1,15 @@
+image: archlinux
+packages:
+  - emacs
+  - htmlize-git
+  - rsync
+sources:
+  - https://git.sr.ht/~bzg/orgweb
+secrets:
+  - 7a38e4c8-2b08-446e-a478-2a114a50db86
+tasks:
+  - install: |
+      cd orgweb
+      ./publish.sh
+  - upload: |
+      rsync -e "ssh -o StrictHostKeyChecking=no" -av orgmode.org/* bzg.fr:/home/build/orgmode/
