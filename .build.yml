@@ -12,4 +12,4 @@ tasks:
       cd orgweb
       ./publish.sh
   - upload: |
-      rsync -e "ssh -o StrictHostKeyChecking=no" -av orgmode.org/* bzg.fr:/home/build/orgmode/
+      rsync -e "ssh -o StrictHostKeyChecking=no" -av orgweb/* bzg.fr:/home/build/orgmode/
