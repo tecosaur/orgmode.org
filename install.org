@@ -7,36 +7,39 @@
 :PROPERTIES:
 :CUSTOM_ID: installation
 :END:
-The reference implementation of Org is part of [[https://www.gnu.org/software/emacs/][Emacs]].
-If you already have Emacs installed, you can start using =org-mode= right away!
+
+Org is included in [[https://www.gnu.org/software/emacs/][GNU Emacs]].
+
+If you already have Emacs installed, you can start using =org-mode=
+right away!
 
 #+begin_center
 #+attr_html: :class btn
 [[https://www.gnu.org/software/emacs/][Get Emacs]]
 #+end_center
 
-You can install the latest version of Org as a package by invoking
-~M-x package-install RET org RET~ once you have configured Emacs
-to include [[file:elpa.html][Org ELPA]] as a package repository.
+You can also install the latest stable version of Org as a package by
+invoking ~M-x package-install RET org RET~.
 
-Alternatively you can download the package as a [[https://orgmode.org/org-9.4.6.tar.gz][tar.gz]] or [[https://orgmode.org/org-9.4.6.zip][zip]] archive.
+The bleeding-edge development version or Org is available on
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/][savannah.gnu.org]].
 
-The bleeding-edge development version or Org is available at [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/]]
 You can clone the repo via:
+
 #+BEGIN_SRC shell
 ~$ git clone https://git.savannah.gnu.org/git/emacs/org-mode.git
 #+END_SRC
 
-Daily snapshots of the development version are released as [[https://orgmode.org/org-latest.tar.gz][tar.gz]] or [[https://orgmode.org/org-latest.zip][zip]] files.
+Worg has documentation about [[https://orgmode.org/worg/dev/org-build-system.html][build options]] and about how to [[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on
+the bleeding edge]].
 
-Worg has documentation about [[https://orgmode.org/worg/dev/org-build-system.html][build options]] and about how to [[https://orgmode.org/worg/org-faq.html#keeping-current-with-Org-mode-development][stay on the bleeding edge]].
-
-There are also many packages that augment Org available on [[https://melpa.org/#/?q=org-mode&sort=downloads&asc=false][MELPA]].
+There are also many packages that augment Org available on [[https://elpa.gnu.org/][GNU ELPA]],
+[[https://elpa.nongnu.org/][NonGNU ELPA]] and [[https://melpa.org/#/?q=org-mode&sort=downloads&asc=false][MELPA]].
 
 ** Get started
 
-Once you're ready to Org, check out the [[file:quickstart.org][Quickstart]]
-page for an overview of the syntax.
+Once you're ready to Org, check out the [[file:quickstart.org][Quickstart]] page for an
+overview of the syntax.
 
 * Doom, Spacemacs, Scimax and popular configs
   :PROPERTIES:
@@ -45,15 +48,16 @@ page for an overview of the syntax.
 
 The Emacs starter kits [[https://github.com/hlissner/doom-emacs][Doom]], [[https://www.spacemacs.org/][Spacemacs]] and [[https://github.com/jkitchin/scimax][Scimax]] come with a curated
 set of packages and configurations that aim to enhance Org mode (and
-Emacs more generally) for particular use cases. They include Org along
-with integrations between =org-mode= and other modes (such as
-=evil-mode=). Here are links to the current packages included with [[https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/org/packages.el][Doom]],
-and [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bemacs/org/packages.el][Spacemacs]].  /Scimax/ is deeply integrated with Org so a good place
-to start is the [[https://github.com/jkitchin/scimax/blob/master/scimax.org#org-mode][manual]].  /Doom/ installs a version of Org that is close
-to the development ~HEAD~, while /Spacemacs/ and /Scimax/ track org elpa.
+Emacs more generally) for particular use cases.  They include Org
+along with integrations between =org-mode= and other modes (such as
+=evil-mode=).  Here are links to the current packages included with
+[[https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/org/packages.el][Doom]], and [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bemacs/org/packages.el][Spacemacs]].  /Scimax/ is deeply integrated with Org so a good
+place to start is the [[https://github.com/jkitchin/scimax/blob/master/scimax.org#org-mode][manual]].  /Doom/ installs a version of Org that is
+close to the development ~HEAD~, while /Spacemacs/ and /Scimax/ track org
+elpa.
 
 Starter kits often make significant changes to the default user
-experience for Emacs. If you are looking for something closer to
+experience for Emacs.  If you are looking for something closer to
 vanilla Emacs there are popular configs such as [[https://github.com/purcell/emacs.d/blob/master/lisp/init-org.el][Purcell's emacs.d]] that
 include org-mode customization and Org-related packages.
 
@@ -61,10 +65,13 @@ include org-mode customization and Org-related packages.
 :PROPERTIES:
 :CUSTOM_ID: editors
 :END:
-While the full set of Org [[file:features.html][features]] is currently exclusive to Emacs, basic
-functionality for Org files has been implemented for a variety of editors.
-Here are some extensions for other editors that enable support for Org files.
-+ Vim :: [[https://github.com/kristijanhusak/orgmode.nvim][orgmode.nvim]], [[https://github.com/jceb/vim-orgmode][vim-orgmode]], and [[https://github.com/axvr/org.vim][org.vim]]
-+ Atom :: [[https://atom.io/packages/org-mode][org-mode]]
-+ VS Code :: [[https://github.com/vscode-org-mode/vscode-org-mode][vscode-org-mode]]
-+ Sublime :: [[https://packagecontrol.io/packages/OrgExtended][OrgExtended]]
+
+While the full set of Org [[file:features.html][features]] is currently exclusive to Emacs,
+basic functionality for Org files has been implemented for a variety
+of editors.  Here are some extensions for other editors that enable
+support for Org files.
+
+- Vim :: [[https://github.com/kristijanhusak/orgmode.nvim][orgmode.nvim]], [[https://github.com/jceb/vim-orgmode][vim-orgmode]], and [[https://github.com/axvr/org.vim][org.vim]]
+- Atom :: [[https://atom.io/packages/org-mode][org-mode]]
+- VS Code :: [[https://github.com/vscode-org-mode/vscode-org-mode][vscode-org-mode]]
+- Sublime :: [[https://packagecontrol.io/packages/OrgExtended][OrgExtended]]

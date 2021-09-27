@@ -10,16 +10,14 @@
   :END:
 
 Org mailing list is the central place where to connect with Org
-community.
-
-You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the list]] and [[https://list.orgmode.org][browse the archive]] here at
-=orgmode.org= or via the [[https://lists.gnu.org/archive/html/emacs-orgmode/][GNU mailman archive]].
+community.  You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the list]] and browse the list archive 
+on [[https://list.orgmode.org][list.orgmode.org]] or on [[https://lists.gnu.org/archive/html/emacs-orgmode/][this mailman page]].
 
 If you are not a subscriber to the list, you can still send an email
 to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]], we will add you to the whitelist of people
 who can reach the list.
 
-You can [[https://orgmode.org/worg/org-mailing-list.html][read more on the mailing list]] or more information on [[https://orgmode.org/worg/org-web-social.html][Org news
+You can [[https://orgmode.org/worg/org-mailing-list.html][read more on the mailing list]] and more information on [[https://orgmode.org/worg/org-web-social.html][Org news
 on the social web]].
 
 * Chatting about Org

@@ -33,9 +33,9 @@ experience.
 </p></div>
 #+end_export
 
-The fastest way to get involved is by joining the [[file:community.org][community]] and [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to
-the mailing list]].  You can also always get in touch via [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to
-help move the project forward.
+The fastest way to get involved is by joining the [[file:community.org][community]] and
+[[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing to the mailing list]].  You can also always get in touch via
+[[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] to help move the project forward.
 
 # FIXME this section needs links, e.g. to instructions for running tests
 
@@ -80,9 +80,10 @@ assignment process fill out [[https://orgmode.org/request-assign-future.txt][thi
 #+END_SRC
 
 ** Coding conventions
-Org is part of Emacs, so any contribution should follow the
-[[https://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html][GNU Emacs Lisp coding conventions]]
-described in Emacs manual.
+
+Org is part of Emacs, so any contribution should follow the [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Coding-Conventions.html][GNU Emacs
+Lisp coding conventions]] described in Emacs manual.
+
 ** Commit messages
 
 Commit messages also need to be structured according to Emacs
