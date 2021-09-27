@@ -33,4 +33,5 @@ You can connect with other org-thusiasts via IRC at ~#org-mode~ on
   :CUSTOM_ID: contributors
   :END:
 
-The full [[https://orgmode.org/worg/org-contribute.html][list of contributors]] to Org mode is maintained in /Worg/.
+The full [[https://orgmode.org/worg/contributors.html][list of contributors]] to Org mode is maintained in /Worg/ and
+you can also check the manual's [[https://orgmode.org/org.html#History-and-Acknowledgments][acknowledgments]].
