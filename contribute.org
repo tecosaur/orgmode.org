@@ -120,16 +120,14 @@ More formally,
 
 ** Sending patches
 
-Use ~git diff~ or ~git format-patch~ to generate the patch files and
-then include them in an email to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] describing what
-you've done.  If you have configured git to use [[https://git-send-email.io/][send-email]], then you
-can use that.  If you are able to add the phrase =[PATCH]= to the
-beginning of the Subject: line of your e-mail, that will help to
-manage your submission.[fn:: Adding a [[https://github.com/bzg/woof]["X-Woof-Patch"]] header to your
-e-mail can also accomplish this.]
+You can use ~git format-patch~ or ~git diff~ to generate the patch files
+and then include them in an email to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]] describing
+what you've done.  If you have configured git to use [[https://git-send-email.io/][send-email]], then
+you can use that.  If you are sending the patch manually, please add
+the phrase =[PATCH]= to the beginning of the =Subject:= line of your
+e-mail, your submission will then be tracked on [[https://updates.orgmode.org][updates.orgmode.org]].
 
 If your mail has not appeared on [[https://list.orgmode.org/][the list]] after waiting at least 15
 minutes, it may have been flagged as spam by the robot email
 overlords.  If this happens, you should be able to get the email to go
 through by [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribing]] to the mailing list.
-
