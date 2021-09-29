@@ -18,7 +18,7 @@ right away!
 [[https://www.gnu.org/software/emacs/][Get Emacs]]
 #+end_center
 
-You can also install the latest stable version of Org as a package by
+You can also install the latest stable version of Org via [[https://elpa.gnu.org/][GNU ELPA]] by
 invoking ~M-x package-install RET org RET~.
 
 The bleeding-edge development version or Org is available on
