@@ -7,10 +7,6 @@
 
 #+include: "./resources/normal-outline-3.html" export html
 
-
-
-
-
 @@html:<br/>@@
 
 You can keep up with upcoming changes, requests for help, bug reports
@@ -555,4 +551,4 @@ Hyatt has been fixed.  Thanks to both of them.
 
 * Older changes
 
-For older Changes, see [[file:Changes_old.org][old changes]].
+For older Changes, see [[https://orgmode.org/worg/org-release-notes.html][the full release notes]].
