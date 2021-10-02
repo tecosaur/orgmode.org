@@ -84,7 +84,7 @@
 @@html:</a>@@
 
 ** Contribute
-@@html:<a href="contribute.html">@@
+@@html:<a href="worg/org-contribute.html">@@
 #+attr_html: :alt Git branch symbol :title Yes. Do this.
 [[file:resources/img/contribute.svg]]
 

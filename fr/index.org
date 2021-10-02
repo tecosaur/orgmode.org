@@ -79,7 +79,7 @@ Qu'est-ce que vous attendez ?
 Commencez à utiliser Org. Vous ne pourrez plus vous arrêter.
 @@html:</a>@@
 ** Contribuer
-@@html:<a href="contribute.html">@@
+@@html:<a href="worg/org-contribute.html">@@
 [[file:../resources/img/contribute.svg]]
 
 Oui oui, faites le.

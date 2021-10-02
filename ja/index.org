@@ -77,7 +77,7 @@
 @@html:</a>@@
 
 ** コントリビュート
-@@html:<a href="../contribute.html">@@
+@@html:<a href="../worg/org-contribute.html">@@
 #+attr_html: :alt Git branch symbol :title 皆さんの貢献で支えられています。
 [[file:../resources/img/contribute.svg]]
 
