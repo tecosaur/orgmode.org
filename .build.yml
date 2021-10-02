@@ -5,6 +5,7 @@ packages:
   - rsync
   - texinfo
   - texlive
+  - wget
 sources:
   - https://git.sr.ht/~bzg/orgweb
   - https://git.savannah.gnu.org/git/emacs/org-mode.git
