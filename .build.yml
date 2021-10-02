@@ -19,6 +19,7 @@ tasks:
       mkdir -p upload/guide upload/manual
       make autoloads
       make doc-up
+      wget -O orgweb/org-mode.tar.gz https://git.savannah.gnu.org/cgit/emacs/org-mode.git/snapshot/org-mode-$(git describe --abbrev=0).tar.gz
       cd ../orgweb
       ./publish.sh
   - upload: |
