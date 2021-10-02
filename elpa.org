@@ -28,7 +28,7 @@ Then =M-x list-packages RET= will list both the latest =org= and
   Emacs.
 
 - =org-plus-contrib= :: Contains these files plus all contribs files,
-  the ones you find in =contrib/= from the [[https://git.sr.ht/~bzg/org-contrib][git repo]].
+  the ones you used to find in =contrib/= from the [[https://git.sr.ht/~bzg/org-contrib][git repo]].
 
 * Installation
   :PROPERTIES:
@@ -68,7 +68,5 @@ See the [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.htm
   :PROPERTIES:
   :CUSTOM_ID: questions
   :END:
-
-If you think the package are not updated, please check [[https://orgmode.org/elpa/build-org-pkg.txt][this file]].
 
 Report any problem and ask any question on the Org mode [[https://orgmode.org/contribute.html#mailing-list][mailing list]].

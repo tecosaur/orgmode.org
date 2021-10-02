@@ -30,10 +30,10 @@
 #+end_export
 
 * Elegant Markup
-:PROPERTIES:
-:CUSTOM_ID: markup
-:HTML_CONTAINER_CLASS: side-fig
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: markup
+  :HTML_CONTAINER_CLASS: side-fig
+  :END:
 
 #+attr_html: :class main-image :style max-height:12em; :alt Example basic Org document showing the key textual elements
 [[file:resources/img/features/simple-syntax.svg]]
@@ -331,6 +331,7 @@ More on [[file:manual/Capture.html][capturing]] (manual)
 [[file:resources/img/features/links.svg]]
 
 ** Description
+
 Org mode isn't just extensible, it is /Emacs extensible/.
 
 Org started out as an extension. As a result, extensibility is present

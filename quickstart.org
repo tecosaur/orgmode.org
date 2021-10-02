@@ -90,11 +90,10 @@ See [[https://orgmode.org/worg/dev/org-syntax.html#Emphasis_Markers][Emphasis Ma
   :CUSTOM_ID: lists
   :END:
 
-Unordered lists start with ~+~, ~-~, or ~*~[fn::~*~ cannot
-be used to start a plain list if it is immediately preceded by
-a newline because it will be interpreted as a heading.].
-Ordered lists start with ~1.~, ~1)~, ~A.~, or ~A)~.
-Ordered and unordered bullets can be nested in any order.
+Unordered lists start with ~+~, ~-~, or ~*~[fn::~*~ cannot be used to start
+a plain list if it is immediately preceded by a newline because it
+will be interpreted as a heading.].  Ordered lists start with ~1.~, ~1)~,
+~A.~, or ~A)~.  Ordered and unordered bullets can be nested in any order.
 
 #+BEGIN_SRC org
 To buy:
@@ -202,6 +201,7 @@ Org mode comes with a table editor complete with support cell references
 and formulas.
 
 In its simplest form a table is text separated using pipes ~|~.
+
 #+BEGIN_SRC org
 | I    | am  | a    | table |
 | with | two | rows | !     |
