@@ -24,3 +24,7 @@ tasks:
   - upload: |
       rsync -e "ssh -o StrictHostKeyChecking=no" -av orgweb/* bzg.fr:/home/build/orgmode/
       rsync -e "ssh -o StrictHostKeyChecking=no" -av org-mode/upload/* bzg.fr:/home/build/orgmode/
+triggers:
+  - action: email
+    condition: failure
+    to: bzg@gnu.org
