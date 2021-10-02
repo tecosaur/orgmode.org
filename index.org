@@ -160,10 +160,32 @@ as an HTML website.  New [[https://orgmode.org/worg/worg-git.html#contribute-to-
 ~$ git clone https://git.sr.ht/~bzg/worg
 #+END_SRC
 
+* Joining the mailing list
+  :PROPERTIES:
+  :CUSTOM_ID: mailing-list
+  :END:
+
+Org mailing list is the central place where to connect with Org
+community.  You can [[https://lists.gnu.org/mailman/listinfo/emacs-orgmode][subscribe to the list]] and browse the list archive 
+on [[https://list.orgmode.org][list.orgmode.org]] or on [[https://lists.gnu.org/archive/html/emacs-orgmode/][this mailman page]].
+
+If you are not a subscriber to the list, you can still send an email
+to [[mailto:emacs-orgmode@gnu.org][emacs-orgmode@gnu.org]], we will add you to the whitelist of people
+who can reach the list.
+
+You can [[https://orgmode.org/worg/org-mailing-list.html][read more on the mailing list]] and more information on [[https://orgmode.org/worg/org-web-social.html][Org news
+on the social web]].
+
+You can also connect with other org-thusiasts via IRC at ~#org-mode~ on
+[[https://libera.chat/][Libera.Chat]].
+
+The full [[https://orgmode.org/worg/contributors.html][list of contributors]] to Org mode is maintained in /Worg/ and
+you can also check the manual's [[https://orgmode.org/org.html#History-and-Acknowledgments][acknowledgments]].
+
 * Doom, Spacemacs, Scimax and popular configs
-:PROPERTIES:
-:CUSTOM_ID: configs
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: configs
+  :END:
 
 The Emacs starter kits [[https://github.com/hlissner/doom-emacs][Doom]], [[https://www.spacemacs.org/][Spacemacs]] and [[https://github.com/jkitchin/scimax][Scimax]] come with a curated
 set of packages and configurations that aim to enhance Org mode (and
@@ -181,9 +203,9 @@ vanilla Emacs there are popular configs such as [[https://github.com/purcell/ema
 include org-mode customization and Org-related packages.
 
 * In Other Editors
-:PROPERTIES:
-:CUSTOM_ID: editors
-:END:
+  :PROPERTIES:
+  :CUSTOM_ID: editors
+  :END:
 
 While the full set of Org [[file:features.html][features]] is currently exclusive to Emacs,
 basic functionality for Org files has been implemented for a variety

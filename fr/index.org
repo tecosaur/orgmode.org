@@ -123,8 +123,8 @@ loin celle qui a le plus de fonctionalités, il existe quelques
 
 * [[https://orgmode.org/worg/][Worg]], l'écosystème Org
 
-[[https://orgmode.org/worg/][Worg]] (pour /World/ of Org) est la plateforme d'expression
-communautaire d'Org.
+[[https://orgmode.org/worg/][Worg]] (pour /World/ of Org) est la plateforme d'expression communautaire
+d'Org.
 
 Org et Org-mode sont utilisables dans beaucoup de contextes, pour
 beaucoup de choses, il est impossible de tout documenter ici, ou en
@@ -132,12 +132,13 @@ une page. On a donc crée [[https://orgmode.org/worg/][Worg]], un wiki communaut
 partager les différents moyens d'utiliser Org.
 
 Worg contient entre autre:
-+ [[https://orgmode.org/worg/org-faq.html][La FAQ]]
-+ [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
-+ [[https://orgmode.org/worg/org-tutorials/index.html][Une liste de tutoriels]]
-+ [[https://orgmode.org/worg/doc.html][La documentations de tous les hooks, commandes, et options]]
-+ [[https://orgmode.org/worg/org-in-the-wild.html][Org en action]]
-+ /...et bien plus/
+
+- [[https://orgmode.org/worg/org-faq.html][La FAQ]]
+- [[https://orgmode.org/worg/org-hacks.html][Org hacks]]
+- [[https://orgmode.org/worg/org-tutorials/index.html][Une liste de tutoriels]]
+- [[https://orgmode.org/worg/doc.html][La documentations de tous les hooks, commandes, et options]]
+- [[https://orgmode.org/worg/org-in-the-wild.html][Org en action]]
+- /...et bien plus/
 
 C'est un dépôt Git, de fichiers Org publiés en HTML sur un site
 web. Les nouvelles contributions sont bienvenues, pour celà créez-vous
@@ -148,7 +149,7 @@ contributeur au [[https://savannah.gnu.org/git/?group=emacs][groupe Emacs]].
 ~$ git clone https://git.sr.ht/~bzg/worg
 #+END_SRC
 
-* Discutter d'Org
+* Discuter d'Org
 Vous pouvez vous connecter à d'autres org-tousiastes via IRC sur les
 salons ~#org-mode~ et ~#org-mode-fr~ on [[https://libera.chat][Libera.Chat]].
 
