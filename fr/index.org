@@ -67,7 +67,7 @@
 Explorez les possibilités.
 @@html:</a>@@
 ** Installation
-@@html:<a href="install.html">@@
+@@html:<a href="https://orgmode.org/org.html#Installation">@@
 [[file:../resources/img/install.svg]]
 
 Qu'est-ce que vous attendez ?

@@ -63,7 +63,7 @@
 @@html:</a>@@
 
 ** インストール
-@@html:<a href="../install.html">@@
+@@html:<a href="https://orgmode.org/org.html#Installation">@@
 #+attr_html: :alt Downwards facing arrow :title まずはインストールしましょう。
 [[file:../resources/img/install.svg]]
 

@@ -17,7 +17,7 @@ that transforms Org syntax into a living, interactive document.
 
 #+begin_center
 #+attr_html: :class btn
-*[[file:install.org][Install Org]]*
+*[[https://orgmode.org/org.html#Installation][Install Org]]*
 #+end_center
 
 * Preamble
