@@ -8,6 +8,7 @@ packages:
   - wget
 sources:
   - https://git.sr.ht/~bzg/orgweb
+  - https://git.sr.ht/~bzg/org-contrib
   - https://git.savannah.gnu.org/git/emacs/org-mode.git
 secrets:
   - 7a38e4c8-2b08-446e-a478-2a114a50db86
