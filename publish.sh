@@ -6,6 +6,7 @@
 (add-to-list 'load-path "~/org-contrib/lisp/")
 (require 'ox-html)
 (require 'ox-extra)
+(ox-extras-activate '(ignore-headlines))
 (load "/usr/share/emacs/site-lisp/elpa-src/htmlize-1.55/htmlize.el")
 
 (setq make-backup-files nil
