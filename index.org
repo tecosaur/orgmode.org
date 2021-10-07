@@ -212,7 +212,7 @@ basic functionality for Org files has been implemented for a variety
 of editors.  Here are some extensions for other editors that enable
 support for Org files.
 
-- Vim :: [[https://github.com/kristijanhusak/orgmode.nvim][orgmode.nvim]], [[https://github.com/jceb/vim-orgmode][vim-orgmode]], and [[https://github.com/axvr/org.vim][org.vim]]
-- Atom :: [[https://atom.io/packages/org-mode][org-mode]]
-- VS Code :: [[https://github.com/vscode-org-mode/vscode-org-mode][vscode-org-mode]]
-- Sublime :: [[https://packagecontrol.io/packages/OrgExtended][OrgExtended]]
+- *Vim* : [[https://github.com/kristijanhusak/orgmode.nvim][orgmode.nvim]], [[https://github.com/jceb/vim-orgmode][vim-orgmode]], and [[https://github.com/axvr/org.vim][org.vim]]
+- *Atom* : [[https://atom.io/packages/org-mode][org-mode]]
+- *VS Code* : [[https://github.com/vscode-org-mode/vscode-org-mode][vscode-org-mode]]
+- *Sublime* : [[https://packagecontrol.io/packages/OrgExtended][OrgExtended]]
