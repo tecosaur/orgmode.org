@@ -10,3 +10,6 @@ This repository is part of a project with other resources related to
 orgmode.org: one is the worg repository for the community-driven Org
 documentation, another one is the org-contrib repository for files
 that used to live in Org's contrib/ directory.
+
+To contribute to this repository, please send an email to
+emacs-orgmode@gnu.org.
