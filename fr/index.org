@@ -29,6 +29,8 @@
          style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="logo de Liberapay"/>
         Liberapay</a></p>
+    <p>Download: <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
+    <p>Rapports de bug: <code>emacs-orgmode@gnu.org</code></p>
     <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
     <meta itemprop="softwareVersion" content="9.3.8">
     <meta itemprop="datePublished" content="2020-08-07">
