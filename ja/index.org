@@ -26,15 +26,7 @@
       <a href="https://liberapay.com/bzg" title="あなたの寄付がチカラになります"
          style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="Liberapayのロゴ"/>
-        Liberapay</a>&ensp;
-      <a href="https://github.com/sponsors/bzg" title="あなたの寄付がチカラになります"
-         style="font-weight: bold; display: inline-block">
-        <img class="inline" src="/resources/img/external/github.svg" alt="GitHubのロゴ"/>
-        GitHub</a>&ensp;
-      <a href="https://www.paypal.com/paypalme/bzg/10" title="あなたの寄付がチカラになります"
-         style="font-weight: bold; display: inline-block">
-        <img class="inline" src="/resources/img/external/paypal.svg" alt="PayPalのロゴ"/>
-        PayPal</a></p>
+        Liberapay</a></p>
     <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
     <meta itemprop="softwareVersion" content="9.3.8">
     <meta itemprop="datePublished" content="2020-08-07">

@@ -28,16 +28,7 @@
       <a href="https://liberapay.com/bzg" title="Les dons sont toujours utiles"
          style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="logo de Liberapay"/>
-        Liberapay</a>&ensp;
-      <a href="https://github.com/sponsors/bzg" title="Les dons sont toujours utiles"
-         style="font-weight: bold; display: inline-block">
-        <img class="inline" src="/resources/img/external/github.svg" alt="logo de GitHub"/>
-        GitHub</a>&emsp14;
-      ou&emsp14;
-      <a href="https://www.paypal.com/paypalme/bzg/10" title="Les dons sont toujours utiles"
-         style="font-weight: bold; display: inline-block">
-        <img class="inline" src="/resources/img/external/paypal.svg" alt="Logo de Paypal"/>
-        PayPal</a></p>
+        Liberapay</a></p>
     <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
     <meta itemprop="softwareVersion" content="9.3.8">
     <meta itemprop="datePublished" content="2020-08-07">
