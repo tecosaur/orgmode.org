@@ -172,7 +172,7 @@ buffer with =C-c C-x C-v=.
 Org mode uses =#+BEGIN= ... =#+END= blocks for many purposes.
 Some of the basic blocks types quote, example, and src.
 
-If you all you need is monospace text, you can use an example block.
+If all you need is monospace text, you can use an example block.
 #+BEGIN_SRC org
 ,#+begin_example
 monospace
