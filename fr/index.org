@@ -54,7 +54,7 @@
 :HTML_CONTAINER_CLASS: columns no-heading
 :END:
 ** Fonctionalités
-@@html:<a href="features.html">@@
+@@html:<a href="/features.html">@@
 [[file:../resources/img/stars.svg]]
 
 Explorez les possibilités.
@@ -66,13 +66,13 @@ Explorez les possibilités.
 Qu'est-ce que vous attendez ?
 @@html:</a>@@
 ** Démarrage rapide
-@@html:<a href="quickstart.html">@@
+@@html:<a href="/quickstart.html">@@
 [[file:../resources/img/quickstart.svg]]
 
 Commencez à utiliser Org. Vous ne pourrez plus vous arrêter.
 @@html:</a>@@
 ** Contribuer
-@@html:<a href="worg/org-contribute.html">@@
+@@html:<a href="/worg/org-contribute.html">@@
 [[file:../resources/img/contribute.svg]]
 
 Oui oui, faites le.
