@@ -1,0 +1,34 @@
+#+title: Manuals | Org mode
+#+setupfile: setup.org
+#+description: Org: an Emacs Mode for Notes, Planning and Authoring
+#+include: "./resources/preamble.html" export html
+
+* Org manual
+
+The Org manual is the comprehensive and official resource for features
+in Org's core.
+
+- As [[https://orgmode.org/org.html][a single HTML page]]
+- As [[https://orgmode.org/manual/][multiple HTML pages]]
+- As [[https://orgmode.org/org.pdf][a PDF document]]
+
+* Org Mode compact guide
+
+The Org Mode compact guide is a shorter introduction to the main
+feature of Org Mode.
+
+- As [[https://orgmode.org/orgguide.html][a single HTML page]]
+- As [[https://orgmode.org/guide/][multiple HTML pages]]
+- As [[https://orgmode.org/orgguide.pdf][a PDF document]]
+
+* Worg: the community-drive documentation
+
+- As [[https://orgmode.org/worg/][HTML]]
+- As a Git repository: =~$ git clone https://git.sr.ht/~bzg/worg=
+- [[https://orgmode.org/worg/worg-about.html][About Worg]]: how to contribute?
+
+* Org manual for the GNU Emacs version
+
+GNU Emacs publishes manual for core features, included Org.
+
+You can access the [[https://www.gnu.org/software/emacs/manual/org.html][GNU Emacs Org manual from here]].
