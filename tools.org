@@ -91,6 +91,12 @@ A module to help managing a large collection of org files.
 
 A script to try to repair file links.
 {{{end-link}}}
+** Logseq
+{{{gh(logseq/logseq)}}}
+[[https://pbs.twimg.com/profile_images/1284058782012563464/oQFKw8uM_400x400.png]]
+
+A privacy-first knowledge base using the Org syntax.
+{{{end-link}}}
 * Parsers
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: columns
