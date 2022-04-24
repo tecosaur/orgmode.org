@@ -101,6 +101,15 @@ latest stable version of Org should be compatible with Emacs 28.x,
 
 See [[https://orgmode.org/worg/org-maintenance.html#emacs-compatibility][this note on Worg]] and [[git::519947e508e081e71bf67db99e27b1c171ba4dfe][this commit]].
 
+*** The keybinding for ~org-table-blank-field~ has been removed
+
+If you prefer to keep the keybinding, you can add it back to
+~org-mode-map~ like so:
+
+#+begin_src emacs-lisp
+(define-key org-mode-map (kbd "C-c SPC") #'org-table-blank-field)
+#+end_src
+
 ** New features
 
 *** New citation engine
@@ -430,6 +439,9 @@ See [[msg:498dbe2e-0cd2-c81e-7960-4a26c566a1f7@memebeam.org][this thread]].
 This is the CSS class name to use for the top level content wrapper.
 
 *** New option ~org-babel-plantuml-svg-text-to-path~
+
+** New features
+*** =ob-python= improvements to =:return= header argument
 
 This option, nil by default, allows to add a SVG-specific post-export
 step that runs inkscape text-to-path replacement over the output file.
