@@ -21,7 +21,7 @@ feature of Org Mode.
 - As [[https://orgmode.org/guide/][multiple HTML pages]]
 - As [[https://orgmode.org/orgguide.pdf][a PDF document]]
 
-* Worg: the community-drive documentation
+* Worg: the community-driven documentation
 
 - As [[https://orgmode.org/worg/][HTML]]
 - As a Git repository: =~$ git clone https://git.sr.ht/~bzg/worg=
