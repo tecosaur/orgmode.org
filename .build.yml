@@ -9,11 +9,13 @@ packages:
 sources:
   - https://git.sr.ht/~bzg/orgweb
   - https://git.sr.ht/~bzg/org-contrib
+  - https://git.sr.ht/~bzg/worg
   - https://git.savannah.gnu.org/git/emacs/org-mode.git
 secrets:
   - 7a38e4c8-2b08-446e-a478-2a114a50db86
 tasks:
   - install: |
+      cp worg/code/org-info-js/org-info.js orgweb/
       cd org-mode
       git checkout bugfix
       cat mk/default.mk > local.mk
