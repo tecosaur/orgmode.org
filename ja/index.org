@@ -23,7 +23,7 @@
     <p>Install via GNU ELPA: <code>M-x package-install RET org RET</code></p>
     <p>Download: <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
     <p>Bug reports: <code>emacs-orgmode@gnu.org</code></p>
-    <p>Org project: <a href="https://git.sr.ht/~bzg/org">https://git.sr.ht/~bzg/org</a></p>
+    <p>Org project: <a href="https://sr.ht/~bzg/org">https://sr.ht/~bzg/org</a></p>
     <p class="bubble">
       プロジェクトを応援:&ensp;
       <a href="https://liberapay.com/bzg" title="あなたの寄付がチカラになります"
