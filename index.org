@@ -24,8 +24,10 @@
       computational notebooks, literate programming, maintaining to-do lists, planning
       projects, and more &mdash; in a fast and effective plain text
       system.</p>
+    <p>Install via GNU ELPA: <code>M-x package-install RET org RET</code></p>
     <p>Download: <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
     <p>Bug reports: <code>emacs-orgmode@gnu.org</code></p>
+    <p>Org project: <a href="https://git.sr.ht/~bzg/org">https://git.sr.ht/~bzg/org</a></p>
     <p class="bubble">
       Support via&ensp;
       <a href="https://liberapay.com/bzg" title="Donations always help"

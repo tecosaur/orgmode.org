@@ -18,9 +18,12 @@
       <span itemprop="name">Org Mode</span>
       <p class="subtitle">お手軽な<span itemprop="applicationCategory">プレーンテキストマークアップ</span> ...だけじゃない!!</p>
     </h2>
-    <p>
-      <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a> の拡張可能なメジャーモード、もちろんオープンソース。</p>
+    <p><a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;">Emacs</a> の拡張可能なメジャーモード、もちろんオープンソース。</p>
     <p>Org mode は、様々な機能をサポートしています。メモを取ることから、タスクリストの管理、プロジェクトの管理、文書の編集、再現性のある計算ノート、文芸的プログラミングなどです。これらを高速で効率的なプレーンテキストシステムで実現しています。</p>
+    <p>Install via GNU ELPA: <code>M-x package-install RET org RET</code></p>
+    <p>Download: <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
+    <p>Bug reports: <code>emacs-orgmode@gnu.org</code></p>
+    <p>Org project: <a href="https://git.sr.ht/~bzg/org">https://git.sr.ht/~bzg/org</a></p>
     <p class="bubble">
       プロジェクトを応援:&ensp;
       <a href="https://liberapay.com/bzg" title="あなたの寄付がチカラになります"

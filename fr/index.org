@@ -29,8 +29,10 @@
          style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="logo de Liberapay"/>
         Liberapay</a></p>
+    <p>Installer via GNU ELPA: <code>M-x package-install RET org RET</code></p>
     <p>Téléchargement : <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
     <p>Rapports de bug : <code>emacs-orgmode@gnu.org</code></p>
+    <p>Projet Org: <a href="https://git.sr.ht/~bzg/org">https://git.sr.ht/~bzg/org</a></p>
     <meta itemprop="operatingSystem" content="Linux, MacOS, Windows">
     <meta itemprop="softwareVersion" content="9.3.8">
     <meta itemprop="datePublished" content="2020-08-07">
