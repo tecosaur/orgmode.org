@@ -26,7 +26,7 @@
     <p>Org project: <a href="https://sr.ht/~bzg/org">https://sr.ht/~bzg/org</a></p>
     <p class="bubble">
       プロジェクトを応援:&ensp;
-      <a href="https://liberapay.com/bzg" title="あなたの寄付がチカラになります"
+      <a href="https://liberapay.com/org-mode" title="あなたの寄付がチカラになります"
          style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="Liberapayのロゴ"/>
         Liberapay</a></p>

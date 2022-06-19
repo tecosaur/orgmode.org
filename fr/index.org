@@ -25,7 +25,7 @@
       en texte simple.</p>
     <p class="bubble">
       Nous soutenir via&ensp;
-      <a href="https://liberapay.com/bzg" title="Les dons sont toujours utiles"
+      <a href="https://liberapay.com/org-mode" title="Les dons sont toujours utiles"
          style="font-weight: bold; display: inline-block">
         <img class="inline" src="/resources/img/external/librepay.svg" alt="logo de Liberapay"/>
         Liberapay</a></p>
