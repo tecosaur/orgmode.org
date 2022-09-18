@@ -1,9 +1,0 @@
-#+title:     Page not found | Org mode
-#+setupfile: setup.org
-#+description: 404 error page
-#+include: "./resources/preamble.html" export html
-#+include: "./resources/normal-outline-3.html" export html
-
-This page was not found.
-
-You probably want to check our [[https://orgmode.org/manuals.html][manuals]].
