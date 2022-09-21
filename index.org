@@ -26,7 +26,7 @@
       system.</p>
     <p><a href="https://elpa.gnu.org/packages/org.html"><img src="https://elpa.gnu.org/packages/org.svg" alt="Install from ELPA" /></a>
       <a href="https://sr.ht/~bzg/org"><img src="/resources/img/badge-srht-project.svg" alt="sr.ht project page"/></a>
-      <a href="mailto:emacs-orgmode@gnu.org?subject=[BUG] <short description>"><img src="/resources/img/badge-bug-report.svg" alt="Report bug" /></a>
+      <a href="mailto:emacs-orgmode@gnu.org?subject=[BUG] <short description>"><img src="/resources/img/badge-report-bug.svg" alt="Report bug" /></a>
       <a href="mailto:emacs-orgmode@gnu.org"><img src="/resources/img/badge-feedback.svg" alt="Send feedback" /></a></p>
     <p><span style="color: #567b70;font-family: var(--sans);font-size: 0.9em;">Repository</span>
       <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
