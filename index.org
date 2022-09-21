@@ -20,14 +20,16 @@
     <p>
       A <a href="https://www.gnu.org/software/emacs/" style="color: inherit; font-weight: bold; font-style: italic;"
            title="An extensible, customizable, free/libre text editor">GNU Emacs</a>
-      major mode for <span itemprop="applicationCategory"> keeping notes, authoring documents, 
+      major mode for <span itemprop="applicationCategory"> keeping notes, authoring documents,
       computational notebooks, literate programming, maintaining to-do lists, planning
       projects, and more &mdash; in a fast and effective plain text
       system.</p>
-    <p>Install via <a title="Go to the GNU ELPA website" href="https://elpa.gnu.org/">GNU ELPA</a>: <code>M-x package-install RET org RET</code></p>
-    <p>Download: <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
-    <p>Bug reports: <code>emacs-orgmode@gnu.org</code></p>
-    <p>Org project: <a href="https://sr.ht/~bzg/org">https://sr.ht/~bzg/org</a></p>
+    <p><a href="https://elpa.gnu.org/packages/org.html"><img src="https://elpa.gnu.org/packages/org.svg" alt="Install from ELPA" /></a>
+      <a href="https://sr.ht/~bzg/org"><img src="/resources/img/badge-srht-project.svg" alt="sr.ht project page"/></a>
+      <a href="mailto:emacs-orgmode@gnu.org?subject=[BUG] <short description>"><img src="/resources/img/badge-bug-report.svg" alt="Report bug" /></a>
+      <a href="mailto:emacs-orgmode@gnu.org"><img src="/resources/img/badge-feedback.svg" alt="Send feedback" /></a></p>
+    <p><span style="color: #567b70;font-family: var(--sans);font-size: 0.9em;">Repository</span>
+      <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
     <p class="bubble">
       Support via&ensp;
       <a href="https://liberapay.com/org-mode" title="Donations always help"
