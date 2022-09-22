@@ -24,12 +24,13 @@
       computational notebooks, literate programming, maintaining to-do lists, planning
       projects, and more &mdash; in a fast and effective plain text
       system.</p>
-    <p><a href="https://elpa.gnu.org/packages/org.html"><img src="https://elpa.gnu.org/packages/org.svg" alt="Install from ELPA" /></a>
-      <a href="https://sr.ht/~bzg/org"><img src="/resources/img/badge-srht-project.svg" alt="sr.ht project page"/></a>
-      <a href="mailto:emacs-orgmode@gnu.org?subject=[BUG] <short description>"><img src="/resources/img/badge-report-bug.svg" alt="Report bug" /></a>
-      <a href="mailto:emacs-orgmode@gnu.org"><img src="/resources/img/badge-feedback.svg" alt="Send feedback" /></a></p>
+      <p><a title="Install from ELPA" href="https://elpa.gnu.org/packages/org.html"><img src="https://elpa.gnu.org/packages/org.svg" alt="Install from GNU ELPA" /></a>
+	<a title="How to send feedback" href="https://orgmode.org/manual/Feedback.html"><img src="/resources/img/badge-feedback.svg" alt="How to send feedback" /></a>
+	<a title="sr.ht project page" href="https://sr.ht/~bzg/org"><img src="/resources/img/badge-srht-project.svg" alt="sr.ht project page"/></a></p>
     <p><span style="color: #567b70;font-family: var(--sans);font-size: 0.9em;">Repository</span>
       <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
+    <p><span style="color: #567b70;font-family: var(--sans);font-size: 0.9em;">Report bug</span>
+      <code>M-x org-submit-bug-report RET</code></p>
     <p class="bubble">
       Support via&ensp;
       <a href="https://liberapay.com/org-mode" title="Donations always help"
@@ -60,44 +61,44 @@
   :END:
 
 ** Features
-@@html:<a href="features.html">@@
-#+attr_html: :alt Three stars :title Delve into the possibilities
-[[file:resources/img/stars.svg]]
+   @@html:<a href="features.html">@@
+   #+attr_html: :alt Three stars :title Delve into the possibilities
+   [[file:resources/img/stars.svg]]
 
-@@html:</a>@@
+   @@html:</a>@@
 
 ** Install
-@@html:<a href="https://orgmode.org/org.html#Installation">@@
-#+attr_html: :alt Downwards facing arrow :title What are you waiting for?
-[[file:resources/img/install.svg]]
+   @@html:<a href="https://orgmode.org/org.html#Installation">@@
+   #+attr_html: :alt Downwards facing arrow :title What are you waiting for?
+   [[file:resources/img/install.svg]]
 
-@@html:</a>@@
+   @@html:</a>@@
 
 ** Quickstart
-@@html:<a href="quickstart.html">@@
-#+attr_html: :alt Running stickfigure :title Start using Org. You'll never stop.
-[[file:resources/img/quickstart.svg]]
+   @@html:<a href="quickstart.html">@@
+   #+attr_html: :alt Running stickfigure :title Start using Org. You'll never stop.
+   [[file:resources/img/quickstart.svg]]
 
-@@html:</a>@@
+   @@html:</a>@@
 
 ** Contribute
-@@html:<a href="worg/org-contribute.html">@@
-#+attr_html: :alt Git branch symbol :title Yes. Do this.
-[[file:resources/img/contribute.svg]]
+   @@html:<a href="worg/org-contribute.html">@@
+   #+attr_html: :alt Git branch symbol :title Yes. Do this.
+   [[file:resources/img/contribute.svg]]
 
-@@html:</a>@@
+   @@html:</a>@@
 
 * Elaboration + demo image                                        :ignore:
 
-#+attr_html: :style margin-top:2rem;
-Org is a highly flexible structured plain text file format, composed
-of a few simple, yet versatile, structures --- constructed to be both
-[[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
+  #+attr_html: :style margin-top:2rem;
+  Org is a highly flexible structured plain text file format, composed
+  of a few simple, yet versatile, structures --- constructed to be both
+  [[https://karl-voit.at/2017/09/23/orgmode-as-markup-only/][simple enough for the novice]] and [[http://howardism.org/Technical/Emacs/literate-devops.html][powerful enough for the expert]].
 
-Get a glimpse of the expressive power Org offers in the example below.
-Click the headings and links to discover how Org intelligently folds structural content.
+  Get a glimpse of the expressive power Org offers in the example below.
+  Click the headings and links to discover how Org intelligently folds structural content.
 
-#+include: org-demo.html export html
+  #+include: org-demo.html export html
 
 * Further reading
   :PROPERTIES:
