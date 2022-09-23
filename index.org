@@ -25,6 +25,7 @@
       projects, and more &mdash; in a fast and effective plain text
       system.</p>
       <p><a title="Install from ELPA" href="https://elpa.gnu.org/packages/org.html"><img src="https://elpa.gnu.org/packages/org.svg" alt="Install from GNU ELPA" /></a>
+	<a title="Report a bug" href="https://orgmode.org/manual/Feedback.html"><img src="/resources/img/badge-report-bug.svg" alt="Report a bug" /></a>
 	<a title="How to send feedback" href="https://orgmode.org/manual/Feedback.html"><img src="/resources/img/badge-feedback.svg" alt="How to send feedback" /></a>
 	<a title="sr.ht project page" href="https://sr.ht/~bzg/org"><img src="/resources/img/badge-srht-project.svg" alt="sr.ht project page"/></a></p>
     <p><span style="color: #567b70;font-family: var(--sans);font-size: 0.9em;">Repository</span>
