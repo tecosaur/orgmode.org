@@ -25,13 +25,10 @@
       projects, and more &mdash; in a fast and effective plain text
       system.</p>
       <p><a title="Install from GNU ELPA" href="https://elpa.gnu.org/packages/org.html"><img src="https://elpa.gnu.org/packages/org.svg" alt="Install from GNU ELPA" /></a>
-	<a title="How to report a bug" href="https://orgmode.org/manual/Feedback.html"><img src="/resources/img/badge-report-bug.svg" alt="How to report a bug" /></a>
-	<a title="Email the Org-mode mailing list" href="mailto:emacs-orgmode@gnu.org"><img src="/resources/img/badge-feedback.svg" alt="Email the Org-mode mailing list" /></a>
-	<a title="sr.ht project page" href="https://sr.ht/~bzg/org"><img src="/resources/img/badge-srht-project.svg" alt="sr.ht project page"/></a></p>
-    <p><span style="color: #567b70;font-family: var(--sans);font-size: 0.9em;">Repository</span>
-      <code>git clone git://git.sv.gnu.org/emacs/org-mode.git</code></p>
-    <p><span style="color: #567b70;font-family: var(--sans);font-size: 0.9em;">Report bug</span>
-      <code>M-x org-submit-bug-report RET</code></p>
+        <a title="How to report a bug" href="https://orgmode.org/manual/Feedback.html"><img src="/resources/img/badge-report-bug.svg" alt="How to report a bug" /></a>
+        <a title="Email the Org-mode mailing list" href="mailto:emacs-orgmode@gnu.org"><img src="/resources/img/badge-feedback.svg" alt="Email the Org-mode mailing list" /></a>
+        <a title="Git clone repository URL" href="https://git.savannah.gnu.org/cgit/emacs/org-mode.git"><img src="/resources/img/badge-source-code.svg" alt="Git clone repository URL" /></a>
+        <a title="sr.ht project page" href="https://sr.ht/~bzg/org"><img src="/resources/img/badge-srht-project.svg" alt="sr.ht project page"/></a></p>
     <p class="bubble">
       Support via&ensp;
       <a href="https://liberapay.com/org-mode" title="Donations always help"
